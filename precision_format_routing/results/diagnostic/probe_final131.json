@@ -1,0 +1,70 @@
+{
+  "mode": "probe",
+  "label": "probe_final131",
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0",
+  "records": [],
+  "ptxas_version": "13.1",
+  "source_sha256": {
+    "kernels.py": "7bae2b52e42725ed3774d2261c95b22a7dabb4582b118faccead5d7900729d5c",
+    "retained.py": "f56039be19d0953e96e26fa7fa04e64ae2f7861b4b2a8b4695f9d7e05ab4547e",
+    "guard.py": "a532c432d4e963f83270c7f3822f306a830ff5024bfd64e2fd530fe214488fca",
+    "native.py": "34b1be624cfa4c5769e71729b6ef246ccecf677cb494f6a2e0d2ae68419c9df1",
+    "experiment.py": "e2b0f7c7121851527731c76611cd7ce91ac7b6c2504eb207e75512ecf3e32a33"
+  },
+  "native": {
+    "e4m3": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 0.0625
+    },
+    "e5m2": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 1.52587890625e-05
+    },
+    "e3m4": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 4.0
+    },
+    "documented_selector_control": "A bit 78 / B bit 79 verified; E3M4 relative bits 82/84 validated by exhaustive native codebook"
+  },
+  "producer": {
+    "midpoints_neighbor_values": 505,
+    "tie_rule": "nearest even",
+    "max_error": 0.015625
+  },
+  "numeric": {
+    "int8": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 5.824717845825944e-06,
+      "metadata_and_intervals": true
+    },
+    "e3m4": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 2.384185791015625e-07,
+      "metadata_and_intervals": true
+    },
+    "e4m3": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 2.644956111907959e-07,
+      "metadata_and_intervals": true
+    },
+    "e5m2": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 1.7229467630386353e-07,
+      "metadata_and_intervals": true
+    },
+    "fp16": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 0.0003381803981028497,
+      "metadata_and_intervals": true
+    },
+    "fp32": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 4.0890419171546455e-05,
+      "metadata_and_intervals": true
+    }
+  }
+}

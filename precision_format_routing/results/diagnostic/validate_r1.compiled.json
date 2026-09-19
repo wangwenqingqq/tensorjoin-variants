@@ -1,0 +1,460 @@
+{
+  "fp64": {
+    "cubin_sha256": "58d10e4ad1ef78d2a412e297dce6629e79aae36f3d08727f89e83f5ba97a73e7",
+    "n_regs": 30,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_int8": {
+    "cubin_sha256": "b93873e6cedcbac0727836075313725213987e64118849ef29f6cabade398959",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_31_512": {
+    "cubin_sha256": "d915fc29ccd9286dde390d8b57f89cfac18884d9797a7e1058f8c403c6d14d2d",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_int8": {
+    "cubin_sha256": "d449b5033c71f7de0766a3a8856b780d38527b42556ccb3763664bf1e4a310ee",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "fp32_refine": {
+    "cubin_sha256": "462a935752ee7404f9f42d1b947ece109ffa55e36002c8f04c44808f062fe684",
+    "n_regs": 32,
+    "n_spills": 0,
+    "shared": 16,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e3m4": {
+    "cubin_sha256": "61c42392b558d44429686e1f616daa891cf4b4bd667714057f16a053db27741c",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e3m4_e3m4_31_512": {
+    "cubin_sha256": "46262380f1307ee2796519719b91ecfa1b0b3bd8ab46e436bdd909d87e2d9946",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e3m4": {
+    "cubin_sha256": "ef6b7da7a7d1f0f794892ac4b7dcf6d44bc42528950128bb1ada629db17646a5",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e4m3": {
+    "cubin_sha256": "fcf28e36687d0c5469226eea1c0e5f854dc5ac8d0d6644e28e7892162dcd0f00",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e4m3_e4m3_31_512": {
+    "cubin_sha256": "0f8c6ae249087455114357c0d69838927d719171311998827b6157f9f73cb132",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e4m3": {
+    "cubin_sha256": "ef6b7da7a7d1f0f794892ac4b7dcf6d44bc42528950128bb1ada629db17646a5",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e5m2": {
+    "cubin_sha256": "6a4cfbb9ce2d0c11d4ad7e563aa309c0ca72a7f114677cffdc1ad1269db17af9",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e5m2_e5m2_31_512": {
+    "cubin_sha256": "c88dab7f7ef43b409fbb346f681743f9afdc3ffe2c427a8e0892630c34276b1e",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e5m2": {
+    "cubin_sha256": "ef6b7da7a7d1f0f794892ac4b7dcf6d44bc42528950128bb1ada629db17646a5",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp16": {
+    "cubin_sha256": "97bc236f937fabe7cfc692e724ab8e7d9712a223c7fb912dec236cabebe714db",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp16_fp16_31_512": {
+    "cubin_sha256": "b0ce6a37613d9c1386ea6cac62aa7df47fc335635e7de6c5608ff98d27a37272",
+    "n_regs": 56,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp16": {
+    "cubin_sha256": "ef6b7da7a7d1f0f794892ac4b7dcf6d44bc42528950128bb1ada629db17646a5",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp32": {
+    "cubin_sha256": "75e44956f9548410a2087c630ffe479529cbb3871b992f6358a6dbd41bcb9c85",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp32_fp32_31_512": {
+    "cubin_sha256": "b6d9fcac82edb2db8c267d18a14d34a6eaa33234ed9275261b7b767dcbf50b65",
+    "n_regs": 72,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp32": {
+    "cubin_sha256": "ef6b7da7a7d1f0f794892ac4b7dcf6d44bc42528950128bb1ada629db17646a5",
+    "n_regs": 74,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_4096_512": {
+    "cubin_sha256": "3772b7e4f335c50a6406739f25dfaf3c6fdb23976ba28cfcff4e43bc3ccef38e",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e3m4_e3m4_4096_512": {
+    "cubin_sha256": "c0e4b21db4cba093ddefa4a18aff4eaf9fdc510c12847e9d18b01cebce061603",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e4m3_4096_512": {
+    "cubin_sha256": "f83bd85c4a529fb48a3d3ffb1cbe7e36e09be2f630214d9b55193c7c725beecb",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e5m2_4096_512": {
+    "cubin_sha256": "da3e9bfa078e5d72f0281e531d69ba0b4425c6fefd1f92f11441bed7f2e0e612",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp16_fp16_4096_512": {
+    "cubin_sha256": "fc8b412dbef0a06c481cbf10808e9ab223009673ffbcd034adb8d470da5a7e40",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp32_fp32_4096_512": {
+    "cubin_sha256": "9fc7613a63917817dd68fefad85de3303b50ec6aa95c09aa3452c0317e74a617",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_int8_int8_32_512": {
+    "cubin_sha256": "0486ae5b17c4705dc04a313591fac318086711e1bfcce1794d434e824f285d6c",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e3m4_e3m4_32_512": {
+    "cubin_sha256": "bf8c5ab1cf5887aa47d99e931a47035f25e5d8fa040b0807af9858e681530a70",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e4m3_32_512": {
+    "cubin_sha256": "d4d885d6ae14ad5511966ade674036d1e777f7b1158408df87aac9760452174a",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e5m2_32_512": {
+    "cubin_sha256": "bb229cf340964c49e421a379820759454a236790e3060b3d65ed67af4627e546",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp16_fp16_32_512": {
+    "cubin_sha256": "74542ffbf15d167c15aa3a409520de19e0ca9a174814d6bd4cd57af5327f0d8e",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp32_fp32_32_512": {
+    "cubin_sha256": "7b9cfde277853fe0ea74e15ee8e849de6c11d21a0ec60221fb8fc18ffde4c4f2",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_int8_int8_1024_512": {
+    "cubin_sha256": "6eecd1ccee12276bd6d058c0be417387442402ef927d988831fce890736ab8b5",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e3m4_e3m4_1024_512": {
+    "cubin_sha256": "f2edc9160cd50c031ec52511f0020eb7015f8df1ee45d47393495de87cc4520d",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e4m3_1024_512": {
+    "cubin_sha256": "6d6883656a1e54c75fbb30d0db52c53dc1d21c4e8628fb24fc4fdbdabcee4276",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e5m2_1024_512": {
+    "cubin_sha256": "9c6c31a662543074cbbe1a521bb10df922dde3452beae3d51b864885c5d614cc",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp16_fp16_1024_512": {
+    "cubin_sha256": "14520e33d9dc2b15d9b63c926fe6bb3b786b7d6dc0bbf847652df66918880329",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp32_fp32_1024_512": {
+    "cubin_sha256": "b2975de0c50c3a47688b842bae793a1f3d1673c91a7dde6be81817b75c7f5c98",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  }
+}

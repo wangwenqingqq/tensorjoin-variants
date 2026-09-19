@@ -1,0 +1,340 @@
+{
+  "fp64": {
+    "cubin_sha256": "9d565a04830a4748fcae2a3a50d064d0a40018b343aaccfbd761ac793b5699d7",
+    "n_regs": 30,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_int8": {
+    "cubin_sha256": "af35fa055c0adab5c81a5bf66846eb1bb62c11170265156d01a064310ff71c50",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_512_512": {
+    "cubin_sha256": "20bd93346c76f595307e8dcdf9cb150b0b1f305874007f02e00bcbde572cac56",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_int8": {
+    "cubin_sha256": "327be43de2f767bd439b0e6ef1412e02422d3efcf40e46d18c36ba3547f4dbf7",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "fp32_refine": {
+    "cubin_sha256": "307fcd449675d6382b299fc1a5dfbc88f28e6c74ac47a18d7c259f20311dfa4e",
+    "n_regs": 32,
+    "n_spills": 0,
+    "shared": 16,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e3m4": {
+    "cubin_sha256": "8bec6f31a30de1cd381bb37c6666f929cda394c48dbc96148c48e2763a858d2c",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e3m4_e3m4_512_512": {
+    "cubin_sha256": "0485298c2cfc57ebc9bf3caf31c8e6e1d42526bf606bc6d68ff58ca2ec15a18f",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e3m4": {
+    "cubin_sha256": "f27cb447d1a06c0990ae3b9b33b16c04536a81024c016f9663e261f97be93656",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e4m3": {
+    "cubin_sha256": "bb6280793bc10ab34037575175efe58e2bb24467d96312d2f6e24f152c5bc605",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e4m3_e4m3_512_512": {
+    "cubin_sha256": "3c9fd9a712fa2cddd7e2aa2f058fc777dcda556575a389a5be5c747ecc4778a9",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e4m3": {
+    "cubin_sha256": "f27cb447d1a06c0990ae3b9b33b16c04536a81024c016f9663e261f97be93656",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e5m2": {
+    "cubin_sha256": "a158a15daf3f2d9a03c6c32e054160b1eac5a73c183327de0681395309fa2ffd",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e5m2_e5m2_512_512": {
+    "cubin_sha256": "4b84a377751323c272175f1136417fa7484ce819693216a82c4f2f4d1eb7442c",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e5m2": {
+    "cubin_sha256": "f27cb447d1a06c0990ae3b9b33b16c04536a81024c016f9663e261f97be93656",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp16": {
+    "cubin_sha256": "45237a5d2de3946cf2f2265e3311e88d36210c2bbdf058efa4c1e84727608d86",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp16_fp16_512_512": {
+    "cubin_sha256": "8a41a9eb19afdd1cb6b7f9ec935c373883f9265bfb7758aaeb6b038ded785ca7",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp16": {
+    "cubin_sha256": "0a99d9d4bf1c0c8fb69438c86c61a7ae52ba0d3c79d5ed1d663b9db8e85c7d1a",
+    "n_regs": 76,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp32": {
+    "cubin_sha256": "6aed2327eee5dc431b04f6987490d94c7b3833e458302918938df7f676942be7",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp32_fp32_512_512": {
+    "cubin_sha256": "86b231d597dbb57d13fa306c5ee3d6d64d1ee78f76e413e5ae38e7f2eeebeb95",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp32": {
+    "cubin_sha256": "f27cb447d1a06c0990ae3b9b33b16c04536a81024c016f9663e261f97be93656",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_128_512": {
+    "cubin_sha256": "fd1ce1ad280cb6725d5da63da2f14d913ef0b327f5b3195e756c38c76715ca7f",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e3m4_e3m4_128_512": {
+    "cubin_sha256": "ed35e93c28ff4c07a2d290301cb36a030410211d427295bb399bf7b24064bb46",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e4m3_128_512": {
+    "cubin_sha256": "98b351867135d7d1826cec6d1bf3a7696f469d24f8ca032ef93a20a5a71eed7c",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e5m2_128_512": {
+    "cubin_sha256": "78a0a603a3d0bf6ba449d334d73dc9826656b71f5feca74cc6e2a1de1661db7e",
+    "n_regs": 42,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp16_fp16_128_512": {
+    "cubin_sha256": "a54f2146abcf1e97cec204997c0c71bda5fe7ed73895364c3f4318a7b381b205",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_fp32_fp32_128_512": {
+    "cubin_sha256": "fe86c56cd461d564e218bf758547bb1826ff1c30e5c73c842caf3453f01c3829",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  }
+}

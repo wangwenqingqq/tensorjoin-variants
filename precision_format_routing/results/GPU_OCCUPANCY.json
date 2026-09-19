@@ -1,0 +1,2316 @@
+{
+  "columns": "index,pstate,temperature.gpu,power.draw,clocks.sm,clocks.mem,memory.used,utilization.gpu",
+  "scope": "Selected GPU only; identifiers and process paths omitted. Matching successful guards establish descendant-only occupancy.",
+  "runs": {
+    "v1b_synccheck_cifar4096.occupancy.jsonl": {
+      "original_sha256": "c0aff20781a9027ff775638b099317397380ab043e49227e7bca39641553070f",
+      "records": [
+        {
+          "time": 1789800288.3350537,
+          "gpu_state": "1, P0, 34, 88.38, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800289.5121796,
+          "gpu_state": "1, P0, 34, 88.65, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800290.6942198,
+          "gpu_state": "1, P8, 33, 37.53, 375, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800291.8692417,
+          "gpu_state": "1, P8, 32, 37.46, 217, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800293.0527854,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800294.233197,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800295.1627471,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800296.136766,
+          "gpu_state": "1, P8, 32, 35.54, 180, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800297.0478904,
+          "gpu_state": "1, P0, 34, 84.68, 2362, 12481, 752, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800297.962401,
+          "gpu_state": "1, P0, 36, 127.46, 2362, 12481, 808, 21",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800298.87476,
+          "gpu_state": "1, P0, 34, 89.96, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800299.7933583,
+          "gpu_state": "1, P0, 34, 88.01, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800300.711555,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800301.6376648,
+          "gpu_state": "1, P0, 34, 87.43, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800302.5686123,
+          "gpu_state": "1, P0, 34, 87.43, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800303.495244,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800304.4233198,
+          "gpu_state": "1, P0, 34, 88.40, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800305.3483624,
+          "gpu_state": "1, P0, 34, 88.99, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800306.2762046,
+          "gpu_state": "1, P0, 34, 88.30, 2362, 12481, 830, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_memcheck_churn.occupancy.jsonl": {
+      "original_sha256": "190473084c1dd1a92a14bfbcc7a393c9de6ddc9984e4f78e9a286b498fe36dda",
+      "records": [
+        {
+          "time": 1789800418.3189404,
+          "gpu_state": "1, P0, 34, 88.50, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800419.490987,
+          "gpu_state": "1, P8, 34, 88.46, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800420.667258,
+          "gpu_state": "1, P8, 32, 35.86, 240, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800421.8439002,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800423.0186596,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800424.2025993,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800425.1245532,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800426.101793,
+          "gpu_state": "1, P8, 32, 35.48, 180, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800427.034631,
+          "gpu_state": "1, P0, 33, 71.97, 2362, 12481, 848, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800427.9563994,
+          "gpu_state": "1, P0, 33, 89.17, 2362, 12481, 850, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800428.8823566,
+          "gpu_state": "1, P0, 34, 94.68, 2362, 12481, 922, 26",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800429.8163235,
+          "gpu_state": "1, P0, 34, 94.27, 2362, 12481, 926, 18",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800430.7369814,
+          "gpu_state": "1, P0, 34, 94.59, 2362, 12481, 924, 21",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800431.6575687,
+          "gpu_state": "1, P0, 34, 91.50, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800432.5825634,
+          "gpu_state": "1, P0, 33, 88.94, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800433.4985914,
+          "gpu_state": "1, P0, 33, 87.91, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800434.4181867,
+          "gpu_state": "1, P0, 34, 88.07, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800435.4073465,
+          "gpu_state": "1, P0, 34, 88.65, 2362, 12481, 926, 0",
+          "compute_process_count": 0
+        }
+      ]
+    },
+    "v1b_bench_2.occupancy.jsonl": {
+      "original_sha256": "0c9e06f2e044128147f10dbe6cd9dcc25b3958d7a6872e6f125a73139994da48",
+      "records": [
+        {
+          "time": 1789800501.3515773,
+          "gpu_state": "1, P0, 34, 90.10, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800502.5308025,
+          "gpu_state": "1, P0, 34, 88.58, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800503.706085,
+          "gpu_state": "1, P8, 33, 36.36, 2362, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800504.898498,
+          "gpu_state": "1, P8, 33, 36.12, 330, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800506.0979223,
+          "gpu_state": "1, P8, 32, 37.42, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800507.2766902,
+          "gpu_state": "1, P8, 32, 36.72, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800508.1994412,
+          "gpu_state": "1, P8, 32, 35.36, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800509.1640131,
+          "gpu_state": "1, P8, 32, 35.36, 180, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800510.0846086,
+          "gpu_state": "1, P0, 34, 69.11, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800511.0090992,
+          "gpu_state": "1, P0, 34, 90.39, 2362, 12481, 754, 6",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800511.937275,
+          "gpu_state": "1, P0, 34, 92.79, 2362, 12481, 752, 7",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800512.8578446,
+          "gpu_state": "1, P0, 34, 110.18, 2362, 12481, 1422, 6",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800513.7859023,
+          "gpu_state": "1, P0, 37, 151.25, 2355, 12481, 1422, 79",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800514.7031162,
+          "gpu_state": "1, P0, 34, 120.04, 2355, 12481, 1224, 10",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800515.6303024,
+          "gpu_state": "1, P0, 34, 90.79, 2355, 12481, 758, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800516.5550187,
+          "gpu_state": "1, P0, 34, 90.54, 2355, 12481, 818, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800517.4900355,
+          "gpu_state": "1, P0, 35, 98.60, 2355, 12481, 800, 10",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800518.4163072,
+          "gpu_state": "1, P0, 34, 90.90, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800519.3383315,
+          "gpu_state": "1, P0, 34, 88.70, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800520.2717972,
+          "gpu_state": "1, P0, 34, 87.93, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800521.1829462,
+          "gpu_state": "1, P0, 34, 88.11, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800522.0956912,
+          "gpu_state": "1, P0, 34, 87.86, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800523.019444,
+          "gpu_state": "1, P0, 34, 87.89, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800523.9285762,
+          "gpu_state": "1, P0, 34, 87.89, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800524.8758397,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800525.7872066,
+          "gpu_state": "1, P0, 34, 88.10, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800526.69297,
+          "gpu_state": "1, P0, 34, 88.78, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800527.6118624,
+          "gpu_state": "1, P0, 34, 87.90, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800528.5241003,
+          "gpu_state": "1, P0, 34, 88.33, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800529.4346333,
+          "gpu_state": "1, P0, 34, 87.80, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800530.3568044,
+          "gpu_state": "1, P0, 34, 88.34, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800531.2685947,
+          "gpu_state": "1, P0, 34, 88.34, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800532.179616,
+          "gpu_state": "1, P0, 34, 88.10, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_initcheck_cifar4096.occupancy.jsonl": {
+      "original_sha256": "f8fd9773ce2a123a5e068002bf4738359c233eee5610a8aec6c928c1bdadcf88",
+      "records": [
+        {
+          "time": 1789800254.8163698,
+          "gpu_state": "1, P0, 35, 88.83, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800255.999947,
+          "gpu_state": "1, P8, 35, 84.23, 2130, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800257.177078,
+          "gpu_state": "1, P8, 33, 36.38, 315, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800258.3588188,
+          "gpu_state": "1, P8, 33, 35.36, 187, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800259.5380008,
+          "gpu_state": "1, P8, 33, 35.37, 172, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800260.7211802,
+          "gpu_state": "1, P8, 33, 35.87, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800261.6449974,
+          "gpu_state": "1, P8, 33, 35.62, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800262.6170328,
+          "gpu_state": "1, P8, 33, 35.96, 180, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800263.540951,
+          "gpu_state": "1, P0, 34, 82.93, 2362, 12481, 918, 6",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800264.4645903,
+          "gpu_state": "1, P0, 34, 110.72, 2355, 12481, 974, 22",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800265.4102528,
+          "gpu_state": "1, P0, 34, 89.15, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800266.338564,
+          "gpu_state": "1, P0, 34, 89.16, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800267.2621117,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800268.19091,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800269.1144483,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800270.0373783,
+          "gpu_state": "1, P0, 34, 88.19, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800270.9640737,
+          "gpu_state": "1, P0, 34, 88.52, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800271.8924065,
+          "gpu_state": "1, P0, 34, 88.46, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800272.8209918,
+          "gpu_state": "1, P0, 34, 88.64, 2355, 12481, 996, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_memcheck_cifar4096.occupancy.jsonl": {
+      "original_sha256": "19508f837a457b7f0fc6acdc541a3df207aafc4db1be5975866f56863282d6a3",
+      "records": [
+        {
+          "time": 1789800150.2410688,
+          "gpu_state": "1, P0, 34, 89.41, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800151.4231615,
+          "gpu_state": "1, P8, 33, 88.98, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800152.596885,
+          "gpu_state": "1, P8, 33, 35.89, 225, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800153.7810805,
+          "gpu_state": "1, P8, 33, 35.37, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800154.9728398,
+          "gpu_state": "1, P8, 33, 37.20, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800156.1509445,
+          "gpu_state": "1, P8, 33, 36.76, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800157.0765092,
+          "gpu_state": "1, P8, 33, 35.87, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800158.0664308,
+          "gpu_state": "1, P8, 32, 35.62, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800158.9918773,
+          "gpu_state": "1, P0, 34, 61.06, 2362, 12481, 868, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800159.9140537,
+          "gpu_state": "1, P0, 34, 88.67, 2355, 12481, 870, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800160.8330405,
+          "gpu_state": "1, P0, 34, 100.42, 2355, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800161.7556312,
+          "gpu_state": "1, P0, 34, 90.31, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800162.679296,
+          "gpu_state": "1, P0, 34, 88.79, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800163.599503,
+          "gpu_state": "1, P0, 34, 88.01, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800164.5190272,
+          "gpu_state": "1, P0, 34, 88.01, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800165.4409647,
+          "gpu_state": "1, P0, 34, 88.40, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800166.3668606,
+          "gpu_state": "1, P0, 34, 88.40, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800167.2933939,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800168.220463,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800169.1433432,
+          "gpu_state": "1, P0, 34, 88.09, 2362, 12481, 948, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_stress.occupancy.jsonl": {
+      "original_sha256": "ab854875683e8bf1415ca03e245532ed7f7bff9c0254dbcc3fc2351d40903079",
+      "records": [
+        {
+          "time": 1789800321.7756555,
+          "gpu_state": "1, P0, 34, 90.12, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800322.9582455,
+          "gpu_state": "1, P8, 34, 88.89, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800324.145679,
+          "gpu_state": "1, P8, 32, 35.62, 292, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800325.3226914,
+          "gpu_state": "1, P8, 32, 35.38, 172, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800326.5082078,
+          "gpu_state": "1, P8, 32, 35.37, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800327.6874986,
+          "gpu_state": "1, P8, 32, 35.94, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800328.6169682,
+          "gpu_state": "1, P8, 32, 35.40, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800329.5365686,
+          "gpu_state": "1, P0, 33, 46.54, 1012, 12481, 682, 2",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800330.4651186,
+          "gpu_state": "1, P0, 33, 89.59, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800331.3937283,
+          "gpu_state": "1, P0, 34, 91.42, 2362, 12481, 754, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800332.318063,
+          "gpu_state": "1, P0, 34, 92.36, 2362, 12481, 754, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800333.2460444,
+          "gpu_state": "1, P0, 34, 92.56, 2362, 12481, 754, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800334.1687002,
+          "gpu_state": "1, P0, 34, 90.93, 2362, 12481, 778, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800335.0893435,
+          "gpu_state": "1, P0, 34, 91.86, 2362, 12481, 756, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800336.0156865,
+          "gpu_state": "1, P0, 34, 92.04, 2362, 12481, 778, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800336.9467833,
+          "gpu_state": "1, P0, 34, 90.75, 2362, 12481, 758, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800337.8745055,
+          "gpu_state": "1, P0, 34, 92.69, 2362, 12481, 758, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800338.796084,
+          "gpu_state": "1, P0, 34, 90.44, 2362, 12481, 780, 1",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800339.7236722,
+          "gpu_state": "1, P0, 34, 95.63, 2362, 12481, 780, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800340.6458883,
+          "gpu_state": "1, P0, 34, 95.82, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800341.5673904,
+          "gpu_state": "1, P0, 34, 88.43, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800342.4885824,
+          "gpu_state": "1, P0, 34, 88.47, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800343.415254,
+          "gpu_state": "1, P0, 34, 88.05, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800344.3375034,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800345.2607822,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800346.18292,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800347.101576,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800348.0218933,
+          "gpu_state": "1, P0, 34, 87.57, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800348.941858,
+          "gpu_state": "1, P0, 34, 88.82, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800349.857272,
+          "gpu_state": "1, P0, 34, 88.82, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800350.7759514,
+          "gpu_state": "1, P0, 34, 88.39, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800351.69511,
+          "gpu_state": "1, P0, 34, 88.40, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800352.6179545,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_synccheck_boundary_zero32.occupancy.jsonl": {
+      "original_sha256": "dec743fc4a84d70570ed8c1805c7281e9ead70072285aec5ac147095c869b0a1",
+      "records": [
+        {
+          "time": 1789800307.3396122,
+          "gpu_state": "1, P0, 34, 90.86, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800308.5170214,
+          "gpu_state": "1, P0, 34, 88.54, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800309.6987104,
+          "gpu_state": "1, P8, 33, 49.03, 2137, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800310.879885,
+          "gpu_state": "1, P8, 33, 42.46, 322, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800312.0560186,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800313.2448244,
+          "gpu_state": "1, P8, 32, 36.01, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800314.1728373,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800315.1486378,
+          "gpu_state": "1, P8, 32, 35.83, 180, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800316.0819623,
+          "gpu_state": "1, P0, 33, 82.24, 2362, 12481, 730, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800317.0153856,
+          "gpu_state": "1, P0, 34, 89.76, 2362, 12481, 808, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800317.9407024,
+          "gpu_state": "1, P0, 34, 89.66, 2362, 12481, 808, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800318.8615475,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 808, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800319.792467,
+          "gpu_state": "1, P0, 34, 88.03, 2362, 12481, 808, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800320.7146647,
+          "gpu_state": "1, P0, 34, 88.22, 2362, 12481, 808, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_racecheck_boundary_zero32.occupancy.jsonl": {
+      "original_sha256": "27a441826e7a38146046fed3357838a856f2865e222b51da9775736116986cf0",
+      "records": [
+        {
+          "time": 1789800232.9268034,
+          "gpu_state": "1, P0, 35, 89.46, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800234.1063733,
+          "gpu_state": "1, P8, 34, 68.49, 480, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800235.2988682,
+          "gpu_state": "1, P8, 34, 36.14, 255, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800236.4834368,
+          "gpu_state": "1, P8, 33, 35.87, 172, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800237.6670232,
+          "gpu_state": "1, P8, 33, 35.86, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800238.8490355,
+          "gpu_state": "1, P8, 33, 35.86, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800239.7786243,
+          "gpu_state": "1, P8, 33, 35.62, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800240.7513163,
+          "gpu_state": "1, P8, 33, 36.25, 187, 405, 17, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800241.671452,
+          "gpu_state": "1, P0, 34, 79.58, 2362, 12481, 714, 17",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800242.5931954,
+          "gpu_state": "1, P0, 34, 90.13, 2362, 12481, 714, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800243.5298035,
+          "gpu_state": "1, P0, 35, 94.36, 2362, 12481, 790, 85",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800244.4507542,
+          "gpu_state": "1, P0, 35, 102.64, 2355, 12481, 790, 97",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800245.3758783,
+          "gpu_state": "1, P0, 35, 101.54, 2355, 12481, 792, 95",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800246.3016694,
+          "gpu_state": "1, P0, 35, 102.28, 2355, 12481, 790, 90",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800247.2205186,
+          "gpu_state": "1, P0, 35, 101.80, 2355, 12481, 792, 98",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800248.142676,
+          "gpu_state": "1, P0, 35, 102.43, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800249.063939,
+          "gpu_state": "1, P0, 35, 96.78, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800249.9880962,
+          "gpu_state": "1, P0, 35, 89.82, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800250.9165404,
+          "gpu_state": "1, P0, 35, 88.40, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800251.8417106,
+          "gpu_state": "1, P0, 35, 87.96, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800252.77682,
+          "gpu_state": "1, P0, 35, 87.94, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800253.7497191,
+          "gpu_state": "1, P0, 35, 89.52, 2355, 12481, 14, 1",
+          "compute_process_count": 0
+        }
+      ]
+    },
+    "v1b_probe.occupancy.jsonl": {
+      "original_sha256": "bd07562fbe85f807cc24ec7357150ebb3b0f1c90ba7bcb4d76d3a40c176d142d",
+      "records": [
+        {
+          "time": 1789800097.383415,
+          "gpu_state": "1, P8, 32, 36.09, 187, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800098.5710487,
+          "gpu_state": "1, P8, 32, 36.27, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800099.7518628,
+          "gpu_state": "1, P8, 32, 35.41, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800100.9458783,
+          "gpu_state": "1, P8, 32, 35.41, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800102.1299174,
+          "gpu_state": "1, P8, 32, 34.90, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800103.3116925,
+          "gpu_state": "1, P8, 32, 35.40, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800104.2408652,
+          "gpu_state": "1, P8, 32, 35.59, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800105.1713295,
+          "gpu_state": "1, P0, 33, 41.47, 180, 12481, 572, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800106.1053529,
+          "gpu_state": "1, P0, 33, 84.75, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800107.0264971,
+          "gpu_state": "1, P0, 34, 88.12, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800107.9468806,
+          "gpu_state": "1, P0, 34, 88.17, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800108.8733814,
+          "gpu_state": "1, P0, 34, 88.15, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800109.7991536,
+          "gpu_state": "1, P0, 34, 88.63, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800110.7240248,
+          "gpu_state": "1, P0, 34, 88.49, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800111.6542547,
+          "gpu_state": "1, P0, 34, 87.51, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800112.5759103,
+          "gpu_state": "1, P0, 34, 88.62, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800113.5034313,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800114.4196672,
+          "gpu_state": "1, P0, 34, 87.72, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800115.3396559,
+          "gpu_state": "1, P0, 34, 87.72, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800116.3224273,
+          "gpu_state": "1, P0, 34, 87.72, 2362, 12481, 682, 0",
+          "compute_process_count": 0
+        }
+      ]
+    },
+    "v1b_bench_1.occupancy.jsonl": {
+      "original_sha256": "d9c59b033b0bb8a22966f799d835a0e23d1ec93bfc4102f99a510e229bb5d835",
+      "records": [
+        {
+          "time": 1789800469.4026759,
+          "gpu_state": "1, P0, 34, 88.40, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800470.6103115,
+          "gpu_state": "1, P8, 33, 42.64, 375, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800471.775985,
+          "gpu_state": "1, P8, 33, 35.89, 330, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800472.9392264,
+          "gpu_state": "1, P8, 33, 35.64, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800474.1028898,
+          "gpu_state": "1, P8, 32, 35.41, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800475.2807145,
+          "gpu_state": "1, P8, 32, 35.40, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800476.2023742,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800477.1143336,
+          "gpu_state": "1, P0, 33, 48.03, 997, 12481, 682, 2",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800478.0393727,
+          "gpu_state": "1, P0, 34, 88.22, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800478.9607265,
+          "gpu_state": "1, P0, 34, 90.79, 2362, 12481, 756, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800479.8766472,
+          "gpu_state": "1, P0, 35, 100.58, 2362, 12481, 1422, 25",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800480.7950718,
+          "gpu_state": "1, P0, 34, 104.44, 2362, 12481, 756, 37",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800481.7163117,
+          "gpu_state": "1, P0, 37, 105.23, 2362, 12481, 1486, 86",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800482.638586,
+          "gpu_state": "1, P0, 35, 137.50, 2355, 12481, 1486, 6",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800483.5648024,
+          "gpu_state": "1, P0, 34, 92.61, 2362, 12481, 756, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800484.487479,
+          "gpu_state": "1, P0, 34, 90.99, 2362, 12481, 818, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800485.4108293,
+          "gpu_state": "1, P0, 34, 99.20, 2362, 12481, 820, 10",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800486.336062,
+          "gpu_state": "1, P0, 34, 90.17, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800487.260893,
+          "gpu_state": "1, P0, 34, 88.72, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800488.3356037,
+          "gpu_state": "1, P0, 34, 88.54, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800489.2603538,
+          "gpu_state": "1, P0, 34, 89.37, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800490.1817994,
+          "gpu_state": "1, P0, 34, 88.64, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800491.1036444,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800492.021667,
+          "gpu_state": "1, P0, 34, 87.91, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800492.9468474,
+          "gpu_state": "1, P0, 34, 88.08, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800493.866847,
+          "gpu_state": "1, P0, 34, 88.10, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800494.7875712,
+          "gpu_state": "1, P0, 34, 87.47, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800495.7081425,
+          "gpu_state": "1, P0, 34, 87.72, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800496.6249359,
+          "gpu_state": "1, P0, 34, 87.96, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800497.543236,
+          "gpu_state": "1, P0, 34, 87.48, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800498.4602585,
+          "gpu_state": "1, P0, 34, 87.99, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800499.3818917,
+          "gpu_state": "1, P0, 34, 88.01, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800500.302343,
+          "gpu_state": "1, P0, 34, 88.13, 2362, 12481, 820, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_validate.occupancy.jsonl": {
+      "original_sha256": "f27bb918d7cdfaa6b167a5ef2dca1e53f06d720057c366aa3bb7dec5c11e04d3",
+      "records": [
+        {
+          "time": 1789800117.381142,
+          "gpu_state": "1, P0, 34, 90.10, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800118.5643458,
+          "gpu_state": "1, P8, 33, 35.99, 412, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800119.7474296,
+          "gpu_state": "1, P8, 33, 36.38, 217, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800120.9285858,
+          "gpu_state": "1, P8, 33, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800122.1102514,
+          "gpu_state": "1, P8, 33, 35.40, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800123.29454,
+          "gpu_state": "1, P8, 33, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800124.220311,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800125.1455886,
+          "gpu_state": "1, P8, 32, 35.55, 180, 405, 50, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800126.0747395,
+          "gpu_state": "1, P0, 34, 87.52, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800127.0008194,
+          "gpu_state": "1, P0, 34, 88.50, 2362, 12481, 756, 2",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800127.9366663,
+          "gpu_state": "1, P0, 34, 99.29, 2362, 12481, 1422, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800128.8651671,
+          "gpu_state": "1, P0, 35, 89.65, 2362, 12481, 1422, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800129.7861423,
+          "gpu_state": "1, P0, 34, 90.47, 2355, 12481, 756, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800130.7004848,
+          "gpu_state": "1, P0, 34, 88.88, 2355, 12481, 1224, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800131.6344752,
+          "gpu_state": "1, P0, 34, 88.50, 2355, 12481, 758, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800132.5555317,
+          "gpu_state": "1, P0, 34, 88.87, 2355, 12481, 818, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800133.4763665,
+          "gpu_state": "1, P0, 34, 88.24, 2355, 12481, 756, 5",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800134.4021537,
+          "gpu_state": "1, P0, 34, 89.79, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800135.333371,
+          "gpu_state": "1, P0, 34, 88.42, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800136.253694,
+          "gpu_state": "1, P0, 34, 87.43, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800137.1745872,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800138.099508,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800139.0256722,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800139.9512055,
+          "gpu_state": "1, P0, 34, 87.70, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800140.8779356,
+          "gpu_state": "1, P0, 34, 88.48, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800141.8030684,
+          "gpu_state": "1, P0, 34, 88.60, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800142.7233818,
+          "gpu_state": "1, P0, 34, 87.56, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800143.6453226,
+          "gpu_state": "1, P0, 34, 87.67, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800144.5636811,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800145.4883924,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800146.414666,
+          "gpu_state": "1, P0, 34, 87.91, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800147.3420773,
+          "gpu_state": "1, P0, 34, 88.20, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800148.2649076,
+          "gpu_state": "1, P0, 34, 88.72, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800149.1851752,
+          "gpu_state": "1, P0, 34, 88.72, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_churn.occupancy.jsonl": {
+      "original_sha256": "89e39b63689c8a77b90533c2970fa0d1e7724acca90cbd9ad21e8c6c050aebb6",
+      "records": [
+        {
+          "time": 1789800386.326712,
+          "gpu_state": "1, P8, 31, 34.92, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800387.507193,
+          "gpu_state": "1, P8, 31, 35.41, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800388.6842697,
+          "gpu_state": "1, P8, 31, 35.36, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800389.8577492,
+          "gpu_state": "1, P8, 31, 35.12, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800391.0328102,
+          "gpu_state": "1, P8, 31, 35.07, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800392.2153542,
+          "gpu_state": "1, P8, 31, 35.44, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800393.1500347,
+          "gpu_state": "1, P8, 31, 34.94, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800394.0885117,
+          "gpu_state": "1, P0, 32, 36.23, 180, 12481, 50, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800395.0123656,
+          "gpu_state": "1, P0, 32, 59.49, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800395.9374442,
+          "gpu_state": "1, P0, 32, 89.37, 2362, 12481, 756, 6",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800396.8660128,
+          "gpu_state": "1, P0, 33, 91.41, 2362, 12481, 756, 7",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800397.7874184,
+          "gpu_state": "1, P0, 33, 91.45, 2362, 12481, 754, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800398.7232878,
+          "gpu_state": "1, P0, 33, 91.92, 2362, 12481, 756, 5",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800399.6557577,
+          "gpu_state": "1, P0, 33, 89.84, 2362, 12481, 776, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800400.5956807,
+          "gpu_state": "1, P0, 33, 89.76, 2362, 12481, 756, 3",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800401.5304904,
+          "gpu_state": "1, P0, 33, 91.86, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800402.4670732,
+          "gpu_state": "1, P0, 33, 91.47, 2362, 12481, 758, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800403.386213,
+          "gpu_state": "1, P0, 33, 92.03, 2362, 12481, 778, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800404.3170586,
+          "gpu_state": "1, P0, 33, 98.31, 2362, 12481, 758, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800405.2623875,
+          "gpu_state": "1, P0, 33, 96.61, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800406.1869998,
+          "gpu_state": "1, P0, 33, 88.06, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800407.106255,
+          "gpu_state": "1, P0, 33, 88.06, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800408.0321639,
+          "gpu_state": "1, P0, 33, 89.48, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800408.960262,
+          "gpu_state": "1, P0, 33, 89.18, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800409.88259,
+          "gpu_state": "1, P0, 33, 88.18, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800410.8081205,
+          "gpu_state": "1, P0, 33, 87.43, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800411.7278442,
+          "gpu_state": "1, P0, 33, 87.48, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800412.6492996,
+          "gpu_state": "1, P0, 33, 87.74, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800413.5807807,
+          "gpu_state": "1, P0, 33, 87.93, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800414.5013332,
+          "gpu_state": "1, P0, 33, 87.52, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800415.4248,
+          "gpu_state": "1, P0, 33, 87.52, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800416.3449214,
+          "gpu_state": "1, P0, 33, 87.45, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800417.2690904,
+          "gpu_state": "1, P0, 33, 87.91, 2362, 12481, 780, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_racecheck_cifar4096.occupancy.jsonl": {
+      "original_sha256": "c148b6d09549361c29ccf28c732fc49e2bf1ebd981a31df59abda01662d79d5a",
+      "records": [
+        {
+          "time": 1789800184.6136026,
+          "gpu_state": "1, P0, 34, 88.64, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800185.7970521,
+          "gpu_state": "1, P0, 34, 49.49, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800186.9855042,
+          "gpu_state": "1, P8, 33, 35.87, 330, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800188.1662698,
+          "gpu_state": "1, P8, 32, 35.36, 195, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800189.34818,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800190.5261238,
+          "gpu_state": "1, P8, 32, 36.28, 187, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800191.456615,
+          "gpu_state": "1, P8, 32, 36.49, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800192.3895283,
+          "gpu_state": "1, P0, 33, 41.81, 180, 12481, 668, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800193.320602,
+          "gpu_state": "1, P0, 34, 84.84, 2362, 12481, 734, 33",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800194.238186,
+          "gpu_state": "1, P0, 34, 94.25, 2362, 12481, 734, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800195.1639643,
+          "gpu_state": "1, P0, 34, 110.21, 2362, 12481, 734, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800196.0852926,
+          "gpu_state": "1, P0, 35, 110.40, 2362, 12481, 734, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800197.0190957,
+          "gpu_state": "1, P0, 34, 100.61, 2362, 12481, 736, 47",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800197.9559855,
+          "gpu_state": "1, P0, 35, 93.89, 2362, 12481, 738, 97",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800198.8771245,
+          "gpu_state": "1, P0, 35, 107.39, 2362, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800199.9372435,
+          "gpu_state": "1, P0, 35, 106.69, 2362, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800201.0156949,
+          "gpu_state": "1, P0, 35, 107.76, 2362, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800201.9414413,
+          "gpu_state": "1, P0, 35, 105.45, 2362, 12481, 738, 94",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800202.8770204,
+          "gpu_state": "1, P0, 35, 106.49, 2362, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800203.8084779,
+          "gpu_state": "1, P0, 35, 110.61, 2355, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800204.747439,
+          "gpu_state": "1, P0, 35, 109.38, 2355, 12481, 738, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800205.726157,
+          "gpu_state": "1, P0, 35, 106.56, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800206.7046988,
+          "gpu_state": "1, P0, 35, 109.40, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800207.6759555,
+          "gpu_state": "1, P0, 35, 109.61, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800208.6483788,
+          "gpu_state": "1, P0, 35, 109.15, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800209.5883656,
+          "gpu_state": "1, P0, 35, 107.51, 2355, 12481, 790, 92",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800210.5261016,
+          "gpu_state": "1, P0, 35, 100.88, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800211.4563127,
+          "gpu_state": "1, P0, 35, 109.24, 2355, 12481, 790, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800212.3803885,
+          "gpu_state": "1, P0, 35, 104.60, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800213.304068,
+          "gpu_state": "1, P0, 35, 98.85, 2355, 12481, 792, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800214.2289798,
+          "gpu_state": "1, P0, 35, 89.24, 2355, 12481, 790, 94",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800215.1569936,
+          "gpu_state": "1, P0, 35, 103.17, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800216.0867107,
+          "gpu_state": "1, P0, 35, 102.88, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800217.016668,
+          "gpu_state": "1, P0, 35, 102.59, 2355, 12481, 792, 99",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800217.940299,
+          "gpu_state": "1, P0, 35, 103.28, 2355, 12481, 790, 98",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800218.868284,
+          "gpu_state": "1, P0, 36, 103.23, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800219.7967153,
+          "gpu_state": "1, P0, 36, 102.83, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800220.7350442,
+          "gpu_state": "1, P0, 36, 103.44, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800221.6596065,
+          "gpu_state": "1, P0, 36, 103.43, 2355, 12481, 792, 100",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800222.5979946,
+          "gpu_state": "1, P0, 35, 101.36, 2355, 12481, 814, 49",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800223.5181885,
+          "gpu_state": "1, P0, 35, 89.36, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800224.4409316,
+          "gpu_state": "1, P0, 35, 87.91, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800225.3641207,
+          "gpu_state": "1, P0, 35, 88.16, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800226.2884774,
+          "gpu_state": "1, P0, 35, 87.85, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800227.2148633,
+          "gpu_state": "1, P0, 35, 88.05, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800228.1446576,
+          "gpu_state": "1, P0, 35, 87.96, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800229.0781574,
+          "gpu_state": "1, P0, 35, 88.94, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800229.9993982,
+          "gpu_state": "1, P0, 35, 88.94, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800230.9224792,
+          "gpu_state": "1, P0, 35, 87.91, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800231.8638246,
+          "gpu_state": "1, P0, 35, 88.73, 2355, 12481, 814, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_bench_3.occupancy.jsonl": {
+      "original_sha256": "5f764f07734accfbdc2cb9a05afc61ae5b6989fe1b9830dc930cc11c54bf1e3f",
+      "records": [
+        {
+          "time": 1789800533.2408264,
+          "gpu_state": "1, P0, 34, 90.44, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800534.40067,
+          "gpu_state": "1, P0, 34, 88.35, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800535.565484,
+          "gpu_state": "1, P8, 33, 65.54, 427, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800536.756034,
+          "gpu_state": "1, P8, 33, 35.87, 255, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800537.9436047,
+          "gpu_state": "1, P8, 33, 35.60, 172, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800539.1269846,
+          "gpu_state": "1, P8, 33, 35.34, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800540.0455837,
+          "gpu_state": "1, P8, 32, 35.34, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800540.9749882,
+          "gpu_state": "1, P0, 32, 35.84, 180, 12481, 576, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800541.891376,
+          "gpu_state": "1, P0, 34, 87.94, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800542.8356674,
+          "gpu_state": "1, P0, 34, 90.66, 2362, 12481, 756, 7",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800543.7676334,
+          "gpu_state": "1, P0, 34, 92.53, 2362, 12481, 1422, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800544.6884966,
+          "gpu_state": "1, P0, 34, 109.29, 2362, 12481, 756, 20",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800545.610143,
+          "gpu_state": "1, P0, 37, 116.81, 2362, 12481, 1486, 38",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800546.5293696,
+          "gpu_state": "1, P0, 35, 153.83, 2355, 12481, 1486, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800547.4527967,
+          "gpu_state": "1, P0, 34, 94.84, 2355, 12481, 758, 9",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800548.3739283,
+          "gpu_state": "1, P0, 34, 91.21, 2355, 12481, 818, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800549.2942011,
+          "gpu_state": "1, P0, 35, 98.68, 2355, 12481, 820, 16",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800550.2160537,
+          "gpu_state": "1, P0, 34, 92.89, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800551.1334908,
+          "gpu_state": "1, P0, 34, 89.94, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800552.0503113,
+          "gpu_state": "1, P0, 34, 89.32, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800552.9824407,
+          "gpu_state": "1, P0, 34, 88.83, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800553.9198718,
+          "gpu_state": "1, P0, 34, 88.34, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800554.8479495,
+          "gpu_state": "1, P0, 34, 88.10, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800555.761637,
+          "gpu_state": "1, P0, 34, 88.10, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800556.6842825,
+          "gpu_state": "1, P0, 34, 88.49, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800557.6010299,
+          "gpu_state": "1, P0, 34, 88.67, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800558.5413635,
+          "gpu_state": "1, P0, 34, 87.94, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800559.4661386,
+          "gpu_state": "1, P0, 34, 88.07, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800560.3893042,
+          "gpu_state": "1, P0, 34, 88.34, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800561.312491,
+          "gpu_state": "1, P0, 34, 87.86, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800562.231886,
+          "gpu_state": "1, P0, 34, 88.10, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800563.1523983,
+          "gpu_state": "1, P0, 34, 87.76, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800564.0823877,
+          "gpu_state": "1, P0, 34, 88.60, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800565.0231776,
+          "gpu_state": "1, P0, 34, 88.43, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800565.951028,
+          "gpu_state": "1, P0, 34, 88.43, 2355, 12481, 820, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_initcheck_boundary_zero32.occupancy.jsonl": {
+      "original_sha256": "1bb2e4501ef0e73a45622e15ad524a5dc157e3a888fdc8ccf6ba2407d83b15a5",
+      "records": [
+        {
+          "time": 1789800273.887824,
+          "gpu_state": "1, P0, 34, 88.42, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800275.0672405,
+          "gpu_state": "1, P0, 34, 89.26, 2355, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800276.2489014,
+          "gpu_state": "1, P8, 33, 36.36, 390, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800277.435698,
+          "gpu_state": "1, P8, 33, 37.28, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800278.6180553,
+          "gpu_state": "1, P8, 33, 35.41, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800279.7954926,
+          "gpu_state": "1, P8, 33, 35.39, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800280.7248354,
+          "gpu_state": "1, P8, 32, 35.37, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800281.6910286,
+          "gpu_state": "1, P8, 32, 35.87, 180, 405, 17, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800282.6208127,
+          "gpu_state": "1, P0, 34, 79.54, 2362, 12481, 896, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800283.5595562,
+          "gpu_state": "1, P0, 34, 88.71, 2362, 12481, 974, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800284.4806561,
+          "gpu_state": "1, P0, 34, 88.60, 2362, 12481, 974, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800285.4130027,
+          "gpu_state": "1, P0, 34, 88.37, 2362, 12481, 974, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800286.3412302,
+          "gpu_state": "1, P0, 34, 88.45, 2362, 12481, 974, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800287.2754827,
+          "gpu_state": "1, P0, 34, 88.88, 2362, 12481, 974, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_memcheck_boundary_zero32.occupancy.jsonl": {
+      "original_sha256": "f52575850dedcf89addac611ec177664cbb8cf85f1c6af5ead3fd2f82f7f39bc",
+      "records": [
+        {
+          "time": 1789800170.2106059,
+          "gpu_state": "1, P0, 34, 89.73, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800171.3926027,
+          "gpu_state": "1, P0, 34, 88.79, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800172.5784814,
+          "gpu_state": "1, P8, 33, 49.03, 382, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800173.773589,
+          "gpu_state": "1, P8, 33, 35.37, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800174.9596264,
+          "gpu_state": "1, P8, 33, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800176.13737,
+          "gpu_state": "1, P8, 32, 36.36, 187, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800177.0637672,
+          "gpu_state": "1, P8, 32, 36.55, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800178.0080583,
+          "gpu_state": "1, P0, 32, 41.74, 187, 12481, 36, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800178.9252076,
+          "gpu_state": "1, P0, 34, 85.13, 2362, 12481, 848, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800179.8582456,
+          "gpu_state": "1, P0, 34, 89.03, 2362, 12481, 926, 18",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800180.7856948,
+          "gpu_state": "1, P0, 34, 88.68, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800181.7028618,
+          "gpu_state": "1, P0, 34, 87.52, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800182.6210752,
+          "gpu_state": "1, P0, 34, 86.94, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800183.5566106,
+          "gpu_state": "1, P0, 34, 87.54, 2362, 12481, 926, 0",
+          "compute_process_count": 1
+        }
+      ]
+    },
+    "v1b_bench_0.occupancy.jsonl": {
+      "original_sha256": "3e90bb6a91a48700e4972e00a7f059bba5fd62dfb628719b358051c7fde977fe",
+      "records": [
+        {
+          "time": 1789800436.496172,
+          "gpu_state": "1, P0, 34, 89.68, 2362, 12481, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800437.6792014,
+          "gpu_state": "1, P8, 33, 35.97, 405, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800438.8608096,
+          "gpu_state": "1, P8, 32, 35.87, 247, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800440.0466657,
+          "gpu_state": "1, P8, 32, 35.38, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800441.2229059,
+          "gpu_state": "1, P8, 32, 36.15, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800442.4058466,
+          "gpu_state": "1, P8, 32, 36.19, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800443.3428636,
+          "gpu_state": "1, P8, 32, 35.36, 180, 405, 14, 0",
+          "compute_process_count": 0
+        },
+        {
+          "time": 1789800444.267163,
+          "gpu_state": "1, P0, 33, 46.27, 1500, 12481, 682, 2",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800445.1961067,
+          "gpu_state": "1, P0, 33, 89.02, 2362, 12481, 682, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800446.1258292,
+          "gpu_state": "1, P0, 33, 91.59, 2362, 12481, 754, 7",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800447.0543516,
+          "gpu_state": "1, P0, 34, 94.13, 2362, 12481, 1422, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800447.9780252,
+          "gpu_state": "1, P0, 35, 107.16, 2362, 12481, 1422, 7",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800448.8987284,
+          "gpu_state": "1, P0, 37, 133.51, 2355, 12481, 756, 53",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800449.821164,
+          "gpu_state": "1, P0, 34, 91.98, 2355, 12481, 1224, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800450.762833,
+          "gpu_state": "1, P0, 34, 90.03, 2355, 12481, 756, 8",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800451.6815364,
+          "gpu_state": "1, P0, 34, 90.99, 2355, 12481, 818, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800452.604546,
+          "gpu_state": "1, P0, 34, 99.18, 2355, 12481, 800, 28",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800453.5424085,
+          "gpu_state": "1, P0, 34, 88.52, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800454.4627793,
+          "gpu_state": "1, P0, 34, 88.52, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800455.382679,
+          "gpu_state": "1, P0, 34, 88.00, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800456.3140645,
+          "gpu_state": "1, P0, 34, 88.74, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800457.2440283,
+          "gpu_state": "1, P0, 34, 88.76, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800458.1629877,
+          "gpu_state": "1, P0, 34, 88.89, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800459.0952237,
+          "gpu_state": "1, P0, 34, 88.16, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800460.0310428,
+          "gpu_state": "1, P0, 34, 87.48, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800460.950739,
+          "gpu_state": "1, P0, 34, 87.48, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800461.8716667,
+          "gpu_state": "1, P0, 34, 87.21, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800462.7911148,
+          "gpu_state": "1, P0, 34, 88.03, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800463.716865,
+          "gpu_state": "1, P0, 34, 88.50, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800464.6397934,
+          "gpu_state": "1, P0, 34, 87.56, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800465.5642574,
+          "gpu_state": "1, P0, 34, 87.56, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800466.4861164,
+          "gpu_state": "1, P0, 34, 88.39, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800467.4025056,
+          "gpu_state": "1, P0, 34, 88.39, 2355, 12481, 800, 0",
+          "compute_process_count": 1
+        },
+        {
+          "time": 1789800468.3656592,
+          "gpu_state": "1, P0, 34, 88.43, 2355, 12481, 800, 0",
+          "compute_process_count": 0
+        }
+      ]
+    }
+  }
+}

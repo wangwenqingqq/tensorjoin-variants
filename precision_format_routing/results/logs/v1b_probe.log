@@ -1,0 +1,6 @@
+readelf: Warning: [18]: Unexpected value (12) in info field.
+readelf: Warning: [18]: Unexpected value (12) in info field.
+readelf: Warning: [18]: Unexpected value (12) in info field.
+readelf: Warning: [18]: Unexpected value (12) in info field.
+readelf: Warning: [18]: Unexpected value (12) in info field.
+{"pass": true, "label": "v1b_probe"}

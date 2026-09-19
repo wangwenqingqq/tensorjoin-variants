@@ -1,0 +1,30 @@
+{
+  "mode": "probe",
+  "label": "probe_cuda131",
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0",
+  "records": [],
+  "native": {
+    "e4m3": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 0.0625
+    },
+    "e5m2": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 1.52587890625e-05
+    },
+    "e3m4": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 4.0
+    },
+    "documented_selector_control": "A bit 78 / B bit 79 verified; E3M4 relative bits 82/84 validated by exhaustive native codebook"
+  },
+  "producer": {
+    "midpoints_neighbor_values": 505,
+    "tie_rule": "nearest even",
+    "max_error": 0.015625
+  }
+}

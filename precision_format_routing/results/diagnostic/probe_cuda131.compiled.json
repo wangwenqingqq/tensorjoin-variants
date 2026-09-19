@@ -1,0 +1,99 @@
+{
+  "dot_e4m3_e4m3_256_64": {
+    "cubin_sha256": "6fab6ab137135d90106e54df4c2e10e895b4dab06b33569a7e86bb5a83321f08",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e5m2_256_64": {
+    "cubin_sha256": "59236cab65534c0c25334e2b5cb5da340d4bd4da6138067346da5b184b08a8e8",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e3m4_e3m4_256_64": {
+    "cubin_sha256": "de803e924f86a5031002a4d19f8d5499190616cb97d665283b5b6153f8089e4f",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e4m3_32_64": {
+    "cubin_sha256": "81385c7833bb33d3ea22ba689dde6857be4e9c284fede52db51a8962b3e30215",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e5m2_e4m3_32_64": {
+    "cubin_sha256": "86a2b96f376711d56cb5c3ca9d80680034b0a19f94cc8b714f85be03227c825e",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "dot_e4m3_e5m2_32_64": {
+    "cubin_sha256": "075e0122b52c136f39eb691d7cfa889cb7c8f07d9ded4790a79bb2324541219e",
+    "n_regs": 38,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "metadata_e3m4": {
+    "cubin_sha256": "61c42392b558d44429686e1f616daa891cf4b4bd667714057f16a053db27741c",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  }
+}

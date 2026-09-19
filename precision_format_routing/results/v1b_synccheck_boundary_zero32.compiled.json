@@ -1,0 +1,220 @@
+{
+  "fp64": {
+    "cubin_sha256": "f8d324f170cd4eca7930c669794cf1525ef1ee760fac88a25f95cf4d70c191ae",
+    "n_regs": 30,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_int8": {
+    "cubin_sha256": "af35fa055c0adab5c81a5bf66846eb1bb62c11170265156d01a064310ff71c50",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_32_512": {
+    "cubin_sha256": "c946485c1ade4902c0da59ec94ad4dff1f5f9317ad4fdf85292a5c916290a828",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 4,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_int8": {
+    "cubin_sha256": "cba44f12d4e12796fd4e28f3b360897323ea2a0d36f41808dabc35593c3cbd6f",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "fp32_refine": {
+    "cubin_sha256": "8b4487254ad52b9143049b4f1fe890b54de3792f6e57ec7e55e95902d07da9c1",
+    "n_regs": 32,
+    "n_spills": 0,
+    "shared": 16,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e3m4": {
+    "cubin_sha256": "8bec6f31a30de1cd381bb37c6666f929cda394c48dbc96148c48e2763a858d2c",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e3m4_e3m4_32_512": {
+    "cubin_sha256": "cc363d326ac18741e6db54ad28d1287b79790104559972c931b7f5d561a06b85",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e3m4": {
+    "cubin_sha256": "270c887394239ab8efc6853814d6fd3abd9f4a201a1098aeb15e982e567fc530",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e4m3": {
+    "cubin_sha256": "bb6280793bc10ab34037575175efe58e2bb24467d96312d2f6e24f152c5bc605",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e4m3_e4m3_32_512": {
+    "cubin_sha256": "afbd1c179e2ab9370c3aa49103ac87a91e6cba5e19049ec90e4eb03b6986e791",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e4m3": {
+    "cubin_sha256": "270c887394239ab8efc6853814d6fd3abd9f4a201a1098aeb15e982e567fc530",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e5m2": {
+    "cubin_sha256": "a158a15daf3f2d9a03c6c32e054160b1eac5a73c183327de0681395309fa2ffd",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e5m2_e5m2_32_512": {
+    "cubin_sha256": "243943c4d74cc0a895f18e17105099d75c772a36ec3e1bd2974a701d734d3aaf",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 4096,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 4,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_e5m2": {
+    "cubin_sha256": "270c887394239ab8efc6853814d6fd3abd9f4a201a1098aeb15e982e567fc530",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp16": {
+    "cubin_sha256": "45237a5d2de3946cf2f2265e3311e88d36210c2bbdf058efa4c1e84727608d86",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp16_fp16_32_512": {
+    "cubin_sha256": "9e7fe526d4984b946cee1013bbd2676aadfe4055484bfb48e2dccfa012d02239",
+    "n_regs": 48,
+    "n_spills": 0,
+    "shared": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 8,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp16": {
+    "cubin_sha256": "270c887394239ab8efc6853814d6fd3abd9f4a201a1098aeb15e982e567fc530",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp32": {
+    "cubin_sha256": "6aed2327eee5dc431b04f6987490d94c7b3833e458302918938df7f676942be7",
+    "n_regs": 40,
+    "n_spills": 0,
+    "shared": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp32_fp32_32_512": {
+    "cubin_sha256": "0ff5ac425fe2bfad3960519467992f18bcef67a25c909bbfdf6957f863068748",
+    "n_regs": 78,
+    "n_spills": 0,
+    "shared": 16384,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "ptx_target": [
+      ".target sm_120a"
+    ],
+    "opcodes": {
+      "QMMA": 0,
+      "IMMA": 0,
+      "HMMA": 0,
+      "FFMA": 0,
+      "FADD": 0,
+      "FMUL": 0,
+      "LDL": 0,
+      "STL": 0
+    }
+  },
+  "classify_fp32": {
+    "cubin_sha256": "270c887394239ab8efc6853814d6fd3abd9f4a201a1098aeb15e982e567fc530",
+    "n_regs": 73,
+    "n_spills": 0,
+    "shared": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  }
+}

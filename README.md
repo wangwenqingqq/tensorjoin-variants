@@ -1,5 +1,14 @@
 # TensorJoin — certified-exact-join
 
+## New bounded experiment on this branch
+
+The `precision-format-routing` branch adds the native E3M4 / INT8 / documented
+FP8 / FP16 / FP32 / FP64 experiment under
+[precision_format_routing](precision_format_routing/). Read its report for the
+new measured scope and negative results. The inherited certified-exact-join
+archive below is unchanged; none of its old production paths is replaced.
+
+
 This branch contains the `tensorjoin_20260902_certified_exact_join/` snapshot only, plus archive metadata and the
 shared path-materialization helper. Original directory names, source bytes,
 third-party notices, nested experiments, and historical evidence are preserved.

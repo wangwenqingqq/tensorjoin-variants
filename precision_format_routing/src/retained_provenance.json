@@ -1,0 +1,50 @@
+[
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "upadd",
+    "function_sha256": "8336b40ebf1c8a2291949b97b63a162c55b7688b7aefc156389b8b0b24dd0be1"
+  },
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "dnadd",
+    "function_sha256": "7bbcbe4bff7e966235cb13813a01d12ec9dbc7f861888f30e1c3c60db34df687"
+  },
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "upmul",
+    "function_sha256": "2a222687dde35000864490c5a8c95e35aba4f7e3d167a750b5362fa2928f5200"
+  },
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "cvup",
+    "function_sha256": "9c9498d274a8b5fc0af36bfe5aaa0af604b4fd1b5e649bd50964de2c0e5679ce"
+  },
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "cvdown",
+    "function_sha256": "8e330c3a9306e6bd0702d5baaf2dcd9e0a8e6c6f26e543eeabb334e30c534d17"
+  },
+  {
+    "source": "fp16_original_confirm_20260908/src/gpu_kernels.py",
+    "file_sha256": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "function": "half_classify",
+    "function_sha256": "b9cb1b353d9ca18014412e025994b11512ef9bb7ee701011cc6f591bb0fe6213"
+  },
+  {
+    "source": "src/run_g3c_b_r1_gpu_cascade.py",
+    "file_sha256": "637e9455fdcdffcc8cddbed625ef74ef371f117876bc3f25977a79b4a95f706d",
+    "function": "certified_fp32_filter_i64",
+    "function_sha256": "122b21efbaa97a6c9a6c919fb5b8fc8f9f8cde0c9d2571cf779ab44c90b96fe6"
+  },
+  {
+    "source": "src/run_g2a_tensorjoin.py",
+    "file_sha256": "84f611fa029e0ce798c3945fad54600598bc7a708f630ebd5fc07fe7dac1e6d8",
+    "function": "refine_ambiguous_fp64_i64",
+    "function_sha256": "be30bb276d1c09077750bf672af4bb67dba7d6a999974303f23602f4eae60ab5"
+  }
+]
