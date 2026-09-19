@@ -46,6 +46,7 @@ Keep INT8 and the conventional FP16 control as distinct baselines. Do not promot
 
 ## Evidence and reproduction
 
+- [Follow-up: callable E3M4 instruction survey](../e3m4_interface_probe/README.md) independently tests plain and block-scaled format combinations. It is not a new TensorJoin performance result.
 - [Frozen contract and pre-timing repairs](docs/CONTRACT.md)
 - [Certificate and format identity](docs/CERTIFICATE.md)
 - [Full 14-fixture summary](results/SUMMARY.json): p10/p50/p90, all process medians, paired ratios/intervals and per-shape screen gates.

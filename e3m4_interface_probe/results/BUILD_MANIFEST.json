@@ -1,0 +1,718 @@
+{
+  "nvcc_version": "nvcc: NVIDIA (R) Cuda compiler driver\nCopyright (c) 2005-2025 NVIDIA Corporation\nBuilt on Tue_Dec_16_07:23:41_PM_PST_2025\nCuda compilation tools, release 13.1, V13.1.115\nBuild cuda_13.1.r13.1/compiler.37061995_0\n",
+  "target": "sm_120a",
+  "source_sha256": {
+    "probe.cu": "55c4ae6d27c1ffcee8d6e1d5c1201b3eba1bdab74c75c22f9a4bf784375f5e08",
+    "launch.cpp": "4d7c2d81028bb89e5f15792f66bf70cbceab43be874b0db927ec5303332ba5c9",
+    "survey.py": "91b02691bc9cdca77a6171d430cbce3603a43714a9649bb66bd9bd44922dea47"
+  },
+  "families": {
+    "plain": {
+      "controls": {
+        "e4m3_e4m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000002cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E4M3.E4M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.984 ms\n"
+        },
+        "e4m3_e5m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000000acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E4M3.E5M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "a88ca99e06c35485e68ccc0ac00d77a929f9b3601fdf995938b4ce44d7ab5e9a",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.322 ms\n"
+        },
+        "e4m3_e3m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000010acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E4M3.E3M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "1fa3ce610bfc5938bbd33b99ff4dedcc2083419257cf24232961a2266a09d780",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.158 ms\n"
+        },
+        "e4m3_e2m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000202cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E4M3.E2M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "a3e403a8d1c7cf3e5734e69247842c78137771ff119c025100dcb2311146599b",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.158 ms\n"
+        },
+        "e4m3_e2m1": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000020acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E4M3.E2M1 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "1c9721db0c9b956b1da03055ac1c77984409cc2e9eb4811e87cf29180828d48f",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.383 ms\n"
+        },
+        "e5m2_e4m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000006cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E5M2.E4M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "6a2068490f9d26d5d68d18ce9c1b7ccc2a728d2d77ca9fd4eca64405f1a7cddd",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.147 ms\n"
+        },
+        "e5m2_e5m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000000ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E5M2.E5M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "3b147f8c10f4eaa46a4e6030a418f671dc9309ff2cfbbcfe2645e3b7a62e9e1f",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.270 ms\n"
+        },
+        "e5m2_e3m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000010ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E5M2.E3M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "e678b98739cd3b024bbac81036db7fdc191b79428eda946df2676254339f0e49",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.239 ms\n"
+        },
+        "e5m2_e2m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000206cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E5M2.E2M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "4793d7751bef02fb2c9402fc3f34dcd8b05bc162da5876efe10a212ac0d3aa44",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.241 ms\n"
+        },
+        "e5m2_e2m1": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000020ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E5M2.E2M1 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "98af72675c3edb2c5447b417f5e052dcfaac892fcff41fbdacce7b3c7a758cbe",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.246 ms\n"
+        },
+        "e3m2_e4m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000046cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E3M2.E4M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "087a7837b36cd407431bbeaf8f8c2a7db3fdbb2aa98f193a83a728919020840b",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.218 ms\n"
+        },
+        "e3m2_e5m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000004ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E3M2.E5M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "6ea6b49d1ec9d339d980d8bb10c7c567ae0d7d844fdc8c6f69db2b8bbea68f06",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.727 ms\n"
+        },
+        "e3m2_e3m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000014ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E3M2.E3M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "37a12c57637359a5866976d9e60568e8c58b1d5fd0d3f120ae67df9dd44691da",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.711 ms\n"
+        },
+        "e3m2_e2m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000246cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E3M2.E2M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "e6a334b2d70229155da4364e0ba6314554150c9b778cfe0ec6e814c14faed355",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.643 ms\n"
+        },
+        "e3m2_e2m1": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000024ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E3M2.E2M1 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "965dc1efec3332438a04bf9ff7badb59ea33ad128378f8d7d5c746702c9ed358",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.670 ms\n"
+        },
+        "e2m3_e4m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000082cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M3.E4M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "74c26cc4f8028d9b9c798d4ec5b5a36561b41b31620a6546dd08e92866a14bbb",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.746 ms\n"
+        },
+        "e2m3_e5m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000008acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M3.E5M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "f3a45e66c922e48859cd306b4712b5456b75062900b0f40d2348ee45622aa108",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.750 ms\n"
+        },
+        "e2m3_e3m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000018acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M3.E3M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "236ed189ffd701176bc21c20a0fbdd42e01fa6f610ec90f0608e23d522224b3c",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 3.056 ms\n"
+        },
+        "e2m3_e2m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000282cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M3.E2M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "b976eb6a1108ba14d87b3ff2b1b599d6fd9c740b9230322daf847e552b80bbdf",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.911 ms\n"
+        },
+        "e2m3_e2m1": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000028acff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M3.E2M1 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "f7f48e2ab5491b576f47fc071e6d2328397c8b8940417fc0b508812c637ffd9d",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.893 ms\n"
+        },
+        "e2m1_e4m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000086cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M1.E4M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "54e38e4a554d08f005f689087e5cce908ec0f8f5d27387a13cf44c6fca5fbb3f",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.320 ms\n"
+        },
+        "e2m1_e5m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000008ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M1.E5M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "5c09121ef9ed9ba1431b5340be3888ab6a96d13f41c75b22a91e9ef1870d2904",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.919 ms\n"
+        },
+        "e2m1_e3m2": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000018ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M1.E3M2 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "6427c9ff636248d3361478730563821e8c8bf0c581fde5e52f6cf11f6c9fd38c",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.865 ms\n"
+        },
+        "e2m1_e2m3": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff00000286cff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M1.E2M3 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "ea5220f7b27b6a79cbee85a1180489e245baf616ee708742738c0c976e5142d8",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.999 ms\n"
+        },
+        "e2m1_e2m1": {
+          "file_offset": 3552,
+          "instruction_address": 224,
+          "word": "0xff0000028ecff000000060808727a",
+          "sass": "/*00e0*/                   QMMA.16832.F32.E2M1.E2M1 R8, R8, R6, RZ ;  /* 0x000000060808727a */",
+          "sha256": "a3d82b7d61f8c99a93090d26a2b8c456e4947b808ca56b0938abe3276b88875a",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 16 registers, used 0 barriers\nptxas info    : Compile time = 2.905 ms\n"
+        }
+      },
+      "patches": {
+        "e4m3_e3m4": {
+          "sha256": "f63aeb8701fa917c95a150e8d640e0d59544502382c34b47e1f351aac63950bf",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            84
+          ],
+          "word": "0xff00000102cff000000060808727a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "be1955513b74080f3507fc7cb0c746fb6e3f89562ef20037e25166f3e769d301"
+        },
+        "e5m2_e3m4": {
+          "sha256": "53e406daf3a8cc8b41ade16aaea6676b83866f34f3516e37868c0accaed31287",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            78,
+            84
+          ],
+          "word": "0xff00000106cff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "62135069863116a59147131e97b11e11ca3ecf2f09a2bd95e4b109188d4a0188"
+        },
+        "e3m4_e4m3": {
+          "sha256": "30072335c5ba9b885f98fb6c851d9bc9acdce728a82e1f28a9b323fb216c1fa7",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            82
+          ],
+          "word": "0xff00000042cff000000060808727a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "dd0753c010ca7e245e0bd592d0bc91572f99a20c49ffd14a366a6140878fb384"
+        },
+        "e3m4_e5m2": {
+          "sha256": "ee3575d38771e05ef46f3ea1b2e92d1c540b9a6139c772b9c3aa907b86035e15",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            79,
+            82
+          ],
+          "word": "0xff0000004acff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "66740360955388f33af8a67db9e44f43a50cc312de491deb82efa93e030ba70a"
+        },
+        "e3m4_e3m4": {
+          "sha256": "6b8a680fd3e078600a8541c2d3b68fc325b41a7563f25dd5639f0e07f1533ebc",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            82,
+            84
+          ],
+          "word": "0xff00000142cff000000060808727a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "317ccca7d1d6929d483bf14e4af995277b5a9f3b174e378a4c414c8c43859f8f"
+        },
+        "e3m4_e3m2": {
+          "sha256": "e1ea3d50407df68d7e403599c05ca997dd65c906c1b618362a14011d7963619b",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            79,
+            82,
+            84
+          ],
+          "word": "0xff0000014acff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "ff0a438ea01d813959e65785a825d29a8a117d5e4b0ded2f9bea9bec6c77c2ed"
+        },
+        "e3m4_e2m3": {
+          "sha256": "d472042acbde56f3b5e0f40d1d2add1ad32c177bb0150623c126a04a147af492",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            82,
+            85
+          ],
+          "word": "0xff00000242cff000000060808727a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "f4a9b0a642e37f83eb77cb32dfcc402bb871983c8ee86ca07074fa089a1bf732"
+        },
+        "e3m4_e2m1": {
+          "sha256": "7ad76f8fedb03e1ad39edb56144f2bda85f9b0b1abd7453e5e79002461b46f1c",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            79,
+            82,
+            85
+          ],
+          "word": "0xff0000024acff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "d0c41283edc8256bdf2b8a57398b0046bd3f763daff8607e91cb0fcbd192fb39"
+        },
+        "e3m2_e3m4": {
+          "sha256": "1de6fb49cdb16d633d3174066939ef92789aadc26777fe4172265cf2cced8a87",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            78,
+            82,
+            84
+          ],
+          "word": "0xff00000146cff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "25ee91aaf0e86a663228ce944e31a27b7c3dc876eb65544edf4dc7a274c2fb4c"
+        },
+        "e2m3_e3m4": {
+          "sha256": "095107ea1ae0534d6bf985a9756bb2c36162dcb75321cb1efd295e928aab9171",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            83,
+            84
+          ],
+          "word": "0xff00000182cff000000060808727a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "dc116197d784bf836874cd3ec10abf44f4ad5fe5c8e3d32b6d08d6adf46b2fc5"
+        },
+        "e2m1_e3m4": {
+          "sha256": "0e3c7bb6be548f88ce94ba892a272c1ed76e293cfe41badef25b47a2143bed62",
+          "base_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+          "instruction_address": 224,
+          "file_offset": 3552,
+          "xor_bits": [
+            78,
+            83,
+            84
+          ],
+          "word": "0xff00000186cff000000060808727a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "9b64e213caa2cc247e631e92fb1b148d4c6af0b01e7dc640dee2857ce57bab74"
+        }
+      }
+    },
+    "scaled": {
+      "controls": {
+        "e4m3_e4m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000003eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E4M3.E4M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.044 ms\n"
+        },
+        "e4m3_e5m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000000beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E4M3.E5M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "376795f0a17342476e1cba0ba1cc3e631d5debd588585f097181d59516966793",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.490 ms\n"
+        },
+        "e4m3_e3m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000010beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E4M3.E3M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "d243df4576ea2efaed1e4b51d54fa61cf032f5dd5ec1dbf1b4ffd7288414eebf",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.033 ms\n"
+        },
+        "e4m3_e2m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000203eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E4M3.E2M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "af28c67192d7f336a5efe91f9318effa3a4dce5cd65c11c76fa32482cc00c137",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.463 ms\n"
+        },
+        "e4m3_e2m1": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000020beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E4M3.E2M1.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "f7b2e59d67ec7b6b94f6290c31d1a221f51dcfb1d3459cca35d8041ee0a459ab",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.003 ms\n"
+        },
+        "e5m2_e4m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000007eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E5M2.E4M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "14dd60a4cb8845a6a7cfe7d5172b6f97bb52040ba3dba808b28368414be0ff5b",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.007 ms\n"
+        },
+        "e5m2_e5m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000000feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E5M2.E5M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "bcde72fb6fe3a9d244afc84abf4baa96606692ad350e49d68d69ff666ef6b8b5",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.983 ms\n"
+        },
+        "e5m2_e3m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000010feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E5M2.E3M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "15807e0c5c6339467625e45eb9c7daa802b648820d5aabc6bc4385206dda98aa",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.491 ms\n"
+        },
+        "e5m2_e2m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000207eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E5M2.E2M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "17222af23e682ae3e9dee6776fa51ead2eb918771b443a8687a3abaf638e158f",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.051 ms\n"
+        },
+        "e5m2_e2m1": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000020feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E5M2.E2M1.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "f957cbc9d0758ffa76800b73fb9e8305a9cbe093b4ad8528df3bb3d9980d11a4",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.088 ms\n"
+        },
+        "e3m2_e4m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000047eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E3M2.E4M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "969d64a20dfa9cdc062b2ac534aadd8a56177e0b5456e16723c33e81591aac97",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.086 ms\n"
+        },
+        "e3m2_e5m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000004feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E3M2.E5M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "32e79311214c65f5115adc8ad327ee6e7bb6b08e191bddee104d2763462ebbcf",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.099 ms\n"
+        },
+        "e3m2_e3m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000014feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E3M2.E3M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "6eacb7521fdcc016323c748b786d6957f60200eaaf0083e6cf123e4feb109804",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.083 ms\n"
+        },
+        "e3m2_e2m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000247eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E3M2.E2M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "ad7d78f558c3329b361a54387d64ccd65d24412e5e6b9355556e773a71ad24ad",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.003 ms\n"
+        },
+        "e3m2_e2m1": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000024feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E3M2.E2M1.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "ef5bb12c9d34b448ae7885fd44bc712fe667b0d8fa404d0f1d941f745db788e9",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.015 ms\n"
+        },
+        "e2m3_e4m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000083eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M3.E4M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "9e0b19aec4838c534414d29038bf3e6377f185508f26bd4aad5fef4da39e0986",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.117 ms\n"
+        },
+        "e2m3_e5m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000008beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M3.E5M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "4edde47410dd840b640ed7c383b786f0c3005ed6241b03c50d96c7c58b8d2ffd",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.006 ms\n"
+        },
+        "e2m3_e3m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000018beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M3.E3M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "6bd9e7f4f865082343aae186007645f0348f45d18223dbe3049115c827104a9e",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.453 ms\n"
+        },
+        "e2m3_e2m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000283eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M3.E2M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "27759de4aeb88c5603ce1996912740e04b4a0a8f752847470e955a119f8261e9",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.038 ms\n"
+        },
+        "e2m3_e2m1": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000028beff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M3.E2M1.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "85f0bea75a1b4af7d5071b379bc3ad9ab3b5d6472ed894caeab8cf7222e4e9a9",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.030 ms\n"
+        },
+        "e2m1_e4m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000087eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M1.E4M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "c214372a5361eaba75f8baecbfa6f151d793c0262b2ff08851cf71d1abec6bcb",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.049 ms\n"
+        },
+        "e2m1_e5m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000008feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M1.E5M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "4cf3dd49202883a0502f5529595504cdf9ea86565afdb40c253e7d416b5e8469",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.046 ms\n"
+        },
+        "e2m1_e3m2": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000018feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M1.E3M2.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "e88f478683c205ff17b99ef8c25b376d5ad1f6c5bac3129ead04e27a0af72817",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.504 ms\n"
+        },
+        "e2m1_e2m3": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff00000287eff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M1.E2M3.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "e78a059128c11b25660f631b8c4d29d2b9f094f7095171dd82f933137c2a2fa9",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 2.991 ms\n"
+        },
+        "e2m1_e2m1": {
+          "file_offset": 3840,
+          "instruction_address": 256,
+          "word": "0x10ff0000028feff70d00006080c747a",
+          "sass": "/*0100*/                   QMMA.SF.16832.F32.E2M1.E2M1.E8 R12, R8, R6, RZ, R0, R13, URZ ;  /* 0x70d00006080c747a */",
+          "sha256": "b62cd3996243809bd8c87087bbdf6a4e6253055c1279830125c8d9b41a373bb8",
+          "ptxas": "ptxas info    : 0 bytes gmem\nptxas info    : Compiling entry function 'probe' for 'sm_120a'\nptxas info    : Function properties for probe\n    0 bytes stack frame, 0 bytes spill stores, 0 bytes spill loads\nptxas info    : Used 20 registers, used 0 barriers\nptxas info    : Compile time = 3.048 ms\n"
+        }
+      },
+      "patches": {
+        "e4m3_e3m4": {
+          "sha256": "c8cc3edba1f5b84af8160616d17057049415ca7a0174d9437dff80fd92c1c00a",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            84
+          ],
+          "word": "0x10ff00000103eff70d00006080c747a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "301600beebf4b287b15114c22166301de4cb9f478d7b75558be4f4f3f59453fb"
+        },
+        "e5m2_e3m4": {
+          "sha256": "e18f7329f8c88536882d65550c7fcbb7056a7104e903a1d4806a7087a4b79549",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            78,
+            84
+          ],
+          "word": "0x10ff00000107eff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "d6336976d87af09a705c2ca1721b64e2062efcf5d1780853b8c9c9d886b0af06"
+        },
+        "e3m4_e4m3": {
+          "sha256": "f7dc2bd3c4fd656d5636bd06318d7c7ff6a34355f3f3df9ffb638420da6a2412",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            82
+          ],
+          "word": "0x10ff00000043eff70d00006080c747a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "655ca29ec25de7031d48b8bcbef788b0bd5eff8e17062f26dae38a01f8239994"
+        },
+        "e3m4_e5m2": {
+          "sha256": "1ee4d2aefec847e1caf078f80b92f1e7a491262ebaa75ba291ca7156cf7b912f",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            79,
+            82
+          ],
+          "word": "0x10ff0000004beff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "f6afca69457df8069f203fbcb0fc3183baaf8acced49d5d97f52167db25ed00e"
+        },
+        "e3m4_e3m4": {
+          "sha256": "1346186573c4d88589d2495af312cf40bed64286ae408f3544cc52b82ddb4492",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            82,
+            84
+          ],
+          "word": "0x10ff00000143eff70d00006080c747a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "8dbe318c7b32cc02c70ee3a76b74d3ad6eaf18915b385b86d1fc024b1e686dd1"
+        },
+        "e3m4_e3m2": {
+          "sha256": "4023f4ea38c9d7440905ffdbbd414c40c2a826902c40e54654f983e84de8b49b",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            79,
+            82,
+            84
+          ],
+          "word": "0x10ff0000014beff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "de63c59254a6ccfaf5ddc68833cbbf0250fe76bfa81587f97bf3f9f49106436d"
+        },
+        "e3m4_e2m3": {
+          "sha256": "0b32eda184f3b7b2223de658b4e21667ff9a97c4dce402517751a854c3a01205",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            82,
+            85
+          ],
+          "word": "0x10ff00000243eff70d00006080c747a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "42399fbcd2b335714fde3dddb0808dfd6e6115261eb9fcd558892fc6792387b7"
+        },
+        "e3m4_e2m1": {
+          "sha256": "9cfdcbdd65dac6ff190d9c0b5f19bd5cf0a59ef2078fd91249a68eb96dd60e67",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            79,
+            82,
+            85
+          ],
+          "word": "0x10ff0000024beff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "a2aec14d431ddc2fad36b8add2613e6ea454a4dd1043cb7395b54b604baed25b"
+        },
+        "e3m2_e3m4": {
+          "sha256": "eccf008dfe9e73bee036c02237e92aac25cffd79e649c6a119ec2b14f967977c",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            78,
+            82,
+            84
+          ],
+          "word": "0x10ff00000147eff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "114370c8c3e967f04cbf910a50dc9ea44cf14295000b06fa0c9c38f419d9dab2"
+        },
+        "e2m3_e3m4": {
+          "sha256": "000db91220df1689a55a19801bc524837aae97f969ac4c623acc3e5b14312a3c",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            83,
+            84
+          ],
+          "word": "0x10ff00000183eff70d00006080c747a",
+          "changed_bytes": 1,
+          "disassembly_sha256": "ddece486b5f232de521fff252d9aa133d7a0fbd2dce250e428ec97f83117c916"
+        },
+        "e2m1_e3m4": {
+          "sha256": "c0625545880af6bfdb554a32de8a7fd66e38060b67eb8b9ac0f0979641222107",
+          "base_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+          "instruction_address": 256,
+          "file_offset": 3840,
+          "xor_bits": [
+            78,
+            83,
+            84
+          ],
+          "word": "0x10ff00000187eff70d00006080c747a",
+          "changed_bytes": 2,
+          "disassembly_sha256": "a5071238763b05f723634320851df2d0a65b6cd351e86471c691734979610993"
+        }
+      }
+    }
+  },
+  "reserved_not_executed": [
+    6,
+    7
+  ],
+  "launcher_sha256": "06363591afd904507ff42f085e077704352a8b55b19cbe4201edf464c8a839d3"
+}

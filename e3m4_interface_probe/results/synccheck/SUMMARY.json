@@ -1,0 +1,54 @@
+{
+  "mode": "synccheck",
+  "pass": true,
+  "probes": [
+    {
+      "family": "plain",
+      "a": "e3m4",
+      "b": "e3m4",
+      "repeats": 1,
+      "sanitizer": "synccheck",
+      "input_sha256": "edf7fe79425c3404af5a7fed13d452fe4f263984e8e43edcc75aa640045d0a0f",
+      "cubin_sha256": "6b8a680fd3e078600a8541c2d3b68fc325b41a7563f25dd5639f0e07f1533ebc",
+      "pass": true,
+      "exit_code": 0,
+      "resources": {
+        "sm": 120,
+        "driver_api": 13010,
+        "records": 644,
+        "repeats": 1,
+        "registers": 16,
+        "local_bytes": 0,
+        "shared_bytes": 0
+      },
+      "output_sha256": "81514e0094375471179e5ecafa15ec49dc109f14db540da44a22118708379ffe",
+      "checked_outputs": 82432,
+      "mismatch_examples": [],
+      "anti_e4m3_discriminating_records": 628
+    },
+    {
+      "family": "scaled",
+      "a": "e3m4",
+      "b": "e3m4",
+      "repeats": 1,
+      "sanitizer": "synccheck",
+      "input_sha256": "aab824731f2f68c5e3628268baacf50390d140996a34c5d7b34e75b4955965c6",
+      "cubin_sha256": "1346186573c4d88589d2495af312cf40bed64286ae408f3544cc52b82ddb4492",
+      "pass": true,
+      "exit_code": 0,
+      "resources": {
+        "sm": 120,
+        "driver_api": 13010,
+        "records": 660,
+        "repeats": 1,
+        "registers": 20,
+        "local_bytes": 0,
+        "shared_bytes": 0
+      },
+      "output_sha256": "3650aa4b2056a0dc17cb556538671ca609f39f1fe25d4ae1285cd0ebaf258230",
+      "checked_outputs": 84480,
+      "mismatch_examples": [],
+      "anti_e4m3_discriminating_records": 644
+    }
+  ]
+}

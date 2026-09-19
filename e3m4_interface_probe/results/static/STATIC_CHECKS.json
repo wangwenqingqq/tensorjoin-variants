@@ -1,0 +1,222 @@
+{
+  "pass": true,
+  "low_optimization_controls": [
+    {
+      "family": "plain",
+      "a": "e4m3",
+      "b": "e4m3",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc00000002cff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E4M3.E4M3 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "9374d16f4de76dbd7e34e5d1070aab65a9044f3d76580748ecd3ef111cad3a85"
+    },
+    {
+      "family": "plain",
+      "a": "e5m2",
+      "b": "e4m3",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc00000006cff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E5M2.E4M3 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "6064c56e4a8572727adafde6912bc7835fe39ac82262ad0926c8008d7c8a90c5"
+    },
+    {
+      "family": "plain",
+      "a": "e4m3",
+      "b": "e5m2",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc0000000acff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E4M3.E5M2 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "2778439f09406a2e43b01172a560837fccf7101ad077ddbf453bda9aabe3081f"
+    },
+    {
+      "family": "plain",
+      "a": "e3m2",
+      "b": "e3m2",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc0000014ecff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E3M2.E3M2 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "0642162d5a0c31745c4251ab829dd7da192f666c8ba167a0e80ab478a586721f"
+    },
+    {
+      "family": "plain",
+      "a": "e2m3",
+      "b": "e2m3",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc00000282cff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E2M3.E2M3 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "9c6bb2564c560a308e8ab1ea97db1b759748cbd2f1e839638b3b345772bd047e"
+    },
+    {
+      "family": "plain",
+      "a": "e2m1",
+      "b": "e2m1",
+      "file_offset": 2128,
+      "instruction_address": 464,
+      "word": "0x3fc0000028ecff000000040c0c727a",
+      "sass": "/*01d0*/                   QMMA.16832.F32.E2M1.E2M1 R12, R12, R4, RZ ;  /* 0x000000040c0c727a */",
+      "sha256": "5aca9079f33d9f4e5067de074193b2c69c66025eba1be33661e60fb6852d5988"
+    },
+    {
+      "family": "scaled",
+      "a": "e4m3",
+      "b": "e4m3",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc000000000084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E4M3.E4M3.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "db65d66ab3dd46c90076123abd9a84085a2ad01b4d61aa750d56d713f4635e18"
+    },
+    {
+      "family": "scaled",
+      "a": "e5m2",
+      "b": "e4m3",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc000000040084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E5M2.E4M3.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "d3aa50a3dd6ad3c6ed01899edcf5514bd9fba4e136e1f67095ea8788a0dac6ad"
+    },
+    {
+      "family": "scaled",
+      "a": "e4m3",
+      "b": "e5m2",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc000000080084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E4M3.E5M2.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "a50175c309db1f7c0d8aa15580fc6313c87c51bcf60e05e6b3cdf70ebd5f9610"
+    },
+    {
+      "family": "scaled",
+      "a": "e3m2",
+      "b": "e3m2",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc0000014c0084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E3M2.E3M2.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "ff61afffa56b15745ba9a804d240ce7273a6d5e7dfa603e8a6e3b2b2f628ff97"
+    },
+    {
+      "family": "scaled",
+      "a": "e2m3",
+      "b": "e2m3",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc000002800084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E2M3.E2M3.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "736ffe37910d8e7372d59d4f210a55ac13206a3a44a5347d6c92c15a80cebf05"
+    },
+    {
+      "family": "scaled",
+      "a": "e2m1",
+      "b": "e2m1",
+      "file_offset": 2496,
+      "instruction_address": 832,
+      "word": "0x3fc0000028c0084110100c0408747a",
+      "sass": "/*0340*/                   QMMA.SF.16832.F32.E2M1.E2M1.E8 R8, R4, R12, R8, R16, R17, UR4 ;  /* 0x4110100c0408747a */",
+      "sha256": "59c6598ae08f77cfde781bf2e91e0de4d3d236a9b46858939ee661d0fb98bee6"
+    }
+  ],
+  "decoders": [
+    {
+      "family": "plain",
+      "format": "e4m3",
+      "tool": "cuobjdump",
+      "exit_code": 0,
+      "cubin_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+      "raw_text_sha256": "6413660e8a636b38c36f8f2c2bcea74e607220a3c5032fe7dc8c1b26c09bd597",
+      "curated_file": "plain_e4m3_cuobjdump.txt"
+    },
+    {
+      "family": "plain",
+      "format": "e4m3",
+      "tool": "nvdisasm",
+      "exit_code": 0,
+      "cubin_sha256": "af0591369d62252048bab958e23dd92d74329a923b5e77ca51a2070821b89bf0",
+      "raw_text_sha256": "ecbe9ef954192c5c197c4c292e17179430e6fc5b8442f5a608228dff035f2b7c",
+      "curated_file": "plain_e4m3_nvdisasm.txt"
+    },
+    {
+      "family": "plain",
+      "format": "e3m4",
+      "tool": "cuobjdump",
+      "exit_code": 0,
+      "cubin_sha256": "6b8a680fd3e078600a8541c2d3b68fc325b41a7563f25dd5639f0e07f1533ebc",
+      "raw_text_sha256": "317ccca7d1d6929d483bf14e4af995277b5a9f3b174e378a4c414c8c43859f8f",
+      "curated_file": "plain_e3m4_cuobjdump.txt"
+    },
+    {
+      "family": "plain",
+      "format": "e3m4",
+      "tool": "nvdisasm",
+      "exit_code": 0,
+      "cubin_sha256": "6b8a680fd3e078600a8541c2d3b68fc325b41a7563f25dd5639f0e07f1533ebc",
+      "raw_text_sha256": "29ea02f990e2a45ab9c2ada2b27dfba0d4f1c1ba077b80ff68588938d6acce86",
+      "curated_file": "plain_e3m4_nvdisasm.txt"
+    },
+    {
+      "family": "scaled",
+      "format": "e4m3",
+      "tool": "cuobjdump",
+      "exit_code": 0,
+      "cubin_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+      "raw_text_sha256": "9ac007bce5fb8326d3f8d1a07598623e731c82e8c0f6acf5b5dc4c3c8fa5e628",
+      "curated_file": "scaled_e4m3_cuobjdump.txt"
+    },
+    {
+      "family": "scaled",
+      "format": "e4m3",
+      "tool": "nvdisasm",
+      "exit_code": 0,
+      "cubin_sha256": "09a594be8d424ff424b14cf1bf72a01956eee32409111171358bca83bb4386c0",
+      "raw_text_sha256": "bf1f7791ce915b484a32ce248e817fc29d23d347b241b0021f3871e77d129f3c",
+      "curated_file": "scaled_e4m3_nvdisasm.txt"
+    },
+    {
+      "family": "scaled",
+      "format": "e3m4",
+      "tool": "cuobjdump",
+      "exit_code": 0,
+      "cubin_sha256": "1346186573c4d88589d2495af312cf40bed64286ae408f3544cc52b82ddb4492",
+      "raw_text_sha256": "8dbe318c7b32cc02c70ee3a76b74d3ad6eaf18915b385b86d1fc024b1e686dd1",
+      "curated_file": "scaled_e3m4_cuobjdump.txt"
+    },
+    {
+      "family": "scaled",
+      "format": "e3m4",
+      "tool": "nvdisasm",
+      "exit_code": 0,
+      "cubin_sha256": "1346186573c4d88589d2495af312cf40bed64286ae408f3544cc52b82ddb4492",
+      "raw_text_sha256": "c25c0faa47f19bda2d655e132f5a238c66c0b493b14bf89a08ce468f11bbc2bf",
+      "curated_file": "scaled_e3m4_nvdisasm.txt"
+    }
+  ],
+  "direct_e3m4_ptx_rejection": [
+    {
+      "family": "plain",
+      "exit_code": 255,
+      "diagnostic": [
+        "error   : Unknown modifier '.e3m4'",
+        "error   : Unknown modifier '.e3m4'",
+        "error   : Arguments mismatch for instruction 'mma'",
+        "ptxas fatal   : Ptx assembly aborted due to errors"
+      ]
+    },
+    {
+      "family": "scaled",
+      "exit_code": 255,
+      "diagnostic": [
+        "error   : Unknown modifier '.e3m4'",
+        "error   : Unknown modifier '.e3m4'",
+        "error   : Unexpected instruction types specified for 'mma'",
+        "ptxas fatal   : Ptx assembly aborted due to errors"
+      ]
+    }
+  ],
+  "source_sha256": "55c4ae6d27c1ffcee8d6e1d5c1201b3eba1bdab74c75c22f9a4bf784375f5e08"
+}
