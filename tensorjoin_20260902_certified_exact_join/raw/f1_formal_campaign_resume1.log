@@ -1,8 +1,0 @@
-FORMAL_RESUME1_START_UTC 2026-09-02T17:28:17Z
-HOST gpu-host-8
-19fd8341a61a72ede6c7f3f036f3ac7889a3c598b9c94dd78ec1457c4f32a8e6  src/run_f1_gpu_cascade.py
-a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f  src/run_d1_triton.py
-bac7d0cff27f9ab47d7c1ecd34df7904e9cff4f26d6019a0bdc63fef7ddbffe2  src/summarize_f1.py
-507814bfb332c874472ee925b96ddf42bdf2ed7c2e842d600ba258328ce3947e  PROTOCOL_F1.md
-0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 12 %, 9486 MiB, 86.37 W, 2422 MHz
-ABORT_GPU0_OCCUPIED label=before_video_3_replacement pids=2244244

@@ -1,9 +1,0 @@
-=== D1 target=64 stress preflight ===
-2026-09-02T16:05:21Z
-gpu-host-8
-0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %
-a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_d1_triton.py
-e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_panns_cnn14_1s_2048d.npz
-CORRECTNESS {"ambiguous_fraction": 0.003341197967529297, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "ambiguous_pairs": 7007, "direct_accept_pairs": 29419, "direct_false_accepts": 0, "duplicates": 0, "final_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "final_mismatch": 0, "final_pairs": 32778, "keeper_mismatch": 0, "oracle_pairs": 32778, "overflow_before_refine": 0, "overflow_final": 0}
-PROCESS_SUMMARY {"correctness_pass": true, "order": "AB", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/d1_t64_stress1000.json", "process_id": 0, "target_results_per_query": 64}
-=== D1 target=64 stress complete ===

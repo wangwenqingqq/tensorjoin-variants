@@ -1,1 +1,0 @@
-541141fa2ee191a88f24a3219fff024e  Cnn14_mAP=0.431.pth

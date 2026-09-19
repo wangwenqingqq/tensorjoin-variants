@@ -1,37 +1,0 @@
-@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/cuda/__init__.py:1243: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:335.)
-  return torch._C._cuda_getCurrentBlasHandle()
-{
-  "cublas": {
-    "algorithm": -1,
-    "compute_type": 69,
-    "handle": 237529440,
-    "input_output_type": 0,
-    "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
-    "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
-    "math_mode": 2,
-    "nvidia_tf32_override": "0",
-    "pointer_mode": 0,
-    "required_math_mode": 2,
-    "version": 130100
-  },
-  "dataset": "ucf101_r3d18",
-  "k_dimension": 512,
-  "m_query_tokens": 662,
-  "n_base_tokens": 2684,
-  "output_max": 0.9589484930038452,
-  "output_min": 0.33027151226997375,
-  "output_nonfinite": 0,
-  "output_sha256": "39f68b4fbb762457ecd317a2e7ca0610820831e0d94de2961a223030ab61a42f",
-  "range": "H2B_P2_PEDANTIC_SGEMM_ucf101_r3d18",
-  "sources": {
-    "p1_correctness_sha256": "68f7e58713e4552ab43743b4a1b089a0b3df046d298f20b01f1ca6e889387e99",
-    "p1_kernel_sha256": "33103f092b50241944f9bfcee0851fdab2a9578067ecc217ebaa706d132dfb43",
-    "p1_runner_sha256": "d747b7c28e7fb1f196a45ce45ce027710cae338f876c973c8f98be4ca966eef1",
-    "trace_runner_sha256": "83a9cc8a6341d8a23854685b462d6688c57f0764c9d3451e919a4b2fa266203e"
-  }
-}
-Collecting data...
-Generating '/tmp/nsys-report-e2ed.qdstrm'
-[1/1] [0%                          ] nsys_ucf101_r3d18.nsys-rep[1/1] [0%                          ] nsys_ucf101_r3d18.nsys-rep[1/1] [=15%                        ] nsys_ucf101_r3d18.nsys-rep[1/1] [============56%             ] nsys_ucf101_r3d18.nsys-rep[1/1] [========================98% ] nsys_ucf101_r3d18.nsys-rep[1/1] [========================99% ] nsys_ucf101_r3d18.nsys-rep[1/1] [========================100%] nsys_ucf101_r3d18.nsys-rep[1/1] [========================100%] nsys_ucf101_r3d18.nsys-rep
-Generated:
-	@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/h2b_p2/nsys_ucf101_r3d18.nsys-rep

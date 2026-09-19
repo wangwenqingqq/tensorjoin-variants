@@ -1,65 +1,57 @@
-# TensorJoin Variants
+# TensorJoin — pruning-objective
 
-Private source-and-evidence archive of six TensorJoin experiment directories,
-snapshotted on 2026-09-19. The original directory names and nested experiment
-structure are preserved, including rejected experiments and negative results.
-This is an archival upload, **not a newly validated benchmark or a complete machine backup**.
+This branch contains the `tensorjoin_20260908_pruning_objective/` snapshot only, plus archive metadata and the
+shared path-materialization helper. Original directory names, source bytes,
+third-party notices, nested experiments, and historical evidence are preserved.
 
-## Projects
+- **Source directory:** [tensorjoin_20260908_pruning_objective](tensorjoin_20260908_pruning_objective/)
+- **Curated source entries:** 71
+- **Associated release entries:** 32
+- **Snapshot origin:** [`bf01120`](https://github.com/wangwenqingqq/tensorjoin-variants/commit/bf01120b51f4c7d88117fe0fb5b0ba67a1eb4c9b)
+- **All variants and branch index:** [main](https://github.com/wangwenqingqq/tensorjoin-variants/tree/main)
+- **Shared result attachments:** [snapshot-2026-09-19](https://github.com/wangwenqingqq/tensorjoin-variants/releases/tag/snapshot-2026-09-19)
 
-| Directory | Contents |
-| --- | --- |
-| [tensorjoin_20260902_certified_exact_join](tensorjoin_20260902_certified_exact_join/) | Main exploration, CUDA/Triton implementations, baseline adapters, protocols, decisions, experiment records, paper sources, and nested follow-up experiments |
-| [tensorjoin_20260908_block_feasibility](tensorjoin_20260908_block_feasibility/) | Block-feasibility experiment and numerical-scope documentation |
-| [tensorjoin_20260908_learned_layout](tensorjoin_20260908_learned_layout/) | Learned-layout experiment, reports, and analysis |
-| [tensorjoin_20260908_pruning_objective](tensorjoin_20260908_pruning_objective/) | Pruning-objective experiment, reports, and analysis |
-| [tensorjoin_20260908_fm_control](tensorjoin_20260908_fm_control/) | Flow-matching controls and experiment records |
-| [tensorjoin_20260908_fm_solver](tensorjoin_20260908_fm_solver/) | Conditional flow-matching solver, certificates, controls, and resolution checks |
+## Scope
 
-Read each project's `REPORT.md`, `CURRENT_STATUS.md`, protocols, and decision
-records for its historical scope. Their dates and claims describe the original
-experiments, not a fresh validation performed during this upload.
+This is a branch-specific view of the existing archive, not a new benchmark,
+a newly independent implementation, or a complete server backup. The parent
+commit retains the combined archive; only this branch's tip is narrowed.
+`archive_manifest.jsonl` and `publication_summary.json` describe this project only.
+`result_assets.json` describes the unchanged combined release for all six projects.
+Source datasets, pretrained packages, environments, caches, and opaque profiler
+containers remain excluded as recorded in the manifest.
 
-## Archive scope
+## Cross-variant dependencies
 
-- Git contains source code, build inputs, third-party notices, research documents,
-  paper sources and existing figures, raw text logs, JSON/CSV records, summaries,
-  and small upstream test fixtures.
-- Bulk numeric result arrays are kept separately as release assets, where listed
-  in [archive_manifest.jsonl](archive_manifest.jsonl).
-- Bulk source datasets, pretrained model packages, installed environments,
-  downloaded dependency packages, build/cache output, and operating-system
-  metadata are not included in Git.
-- [ARCHIVE_SCOPE.md](ARCHIVE_SCOPE.md) describes exclusions, path redactions,
-  binary evidence limitations, and integrity checks. The manifest accounts for
-  every inventoried source entry, including entries not uploaded.
-- Existing source and result hashes remain historical evidence. A path-redacted
-  publication file is not byte-identical to its original; the manifest records
-  both hashes where applicable.
+Historical scripts still refer to sibling projects. Branch splitting changes
+repository organization, not their imports or execution contract. Direct sibling
+names found in the inspected source include:
 
-## Working with the sources
+- [certified-exact-join](https://github.com/wangwenqingqq/tensorjoin-variants/tree/certified-exact-join): `tensorjoin_20260902_certified_exact_join/`
+- [block-feasibility](https://github.com/wangwenqingqq/tensorjoin-variants/tree/block-feasibility): `tensorjoin_20260908_block_feasibility/`
+- [learned-layout](https://github.com/wangwenqingqq/tensorjoin-variants/tree/learned-layout): `tensorjoin_20260908_learned_layout/`
 
-Private absolute paths have been replaced by explicit `@TOKEN@` placeholders.
-Do not run the historical campaign scripts directly against this archive.
-Create a separate working copy first:
+The list is a text-reference inventory, not proof that all runtime dependencies
+are known. For execution, use the combined `main` checkout or materialize the
+required sibling directories at their original names before a new preflight.
+Do not infer self-contained execution from a separate Git branch.
 
-```sh
-python3 tools/materialize.py /path/to/new/tensorjoin-workspace
-```
+## Paths and binary results
 
-`@TENSORJOIN_ROOT@` is resolved to that new directory. Other external locations
-can be supplied with repeated `--map TOKEN=/configured/location` arguments.
-Destination and mapped paths must be absolute and contain only ASCII letters,
-digits, `/`, `.`, `_`, and `-`; this avoids corrupting embedded source literals.
-The helper refuses to overwrite an existing destination and never starts an
-experiment or installs dependencies. External dependencies, datasets, GPU
-selection, and machine-specific launch settings still require a new preflight.
-Host aliases in historical logs are descriptive, not usable SSH configuration.
+Private paths remain explicit `@TOKEN@` placeholders. `tools/materialize.py`
+creates a separate working copy, never overwrites an existing destination, and
+does not start experiments. See [ARCHIVE_SCOPE.md](ARCHIVE_SCOPE.md).
 
-## Rights and provenance
+The release is shared and unchanged. Verify its part hashes, then restore only
+archive entries under `tensorjoin_20260908_pruning_objective/` into a fresh checkout of this branch. Do not
+extract the full release over a working experiment or assume all release files
+belong to this branch.
 
-This private collection does not relicense the included material. Existing
-third-party copyright and license notices are retained, including NVIDIA OptiX,
-OWL, pybind11, GLFW, and baseline implementations. Paper and literature PDFs
-retain their original attribution. Do not redistribute the collection publicly
-without a separate rights review.
+## Validation and rights
+
+This branch's project subtree is byte-for-byte identical to its subtree in the
+original archived commit, including modes and symlink targets. The branch-specific
+file manifest was checked against the committed tree. No CUDA compilation,
+GPU correctness check, or performance experiment was performed for this split.
+Existing third-party licenses remain applicable; this branch does not relicense
+any material and remains private.

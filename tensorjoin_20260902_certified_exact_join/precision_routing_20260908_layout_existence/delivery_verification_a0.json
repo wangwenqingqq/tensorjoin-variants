@@ -1,8 +1,0 @@
-{
-  "pass": true,
-  "host": "gpu-host-8",
-  "verified_at_utc": "2026-09-07T18:49:29.508203+00:00",
-  "manifest_sha256": "3284ccfb3c060dab225997b0ffd1d138ad26bf90cc69322c6046e0f4469c2b9b",
-  "verified_files": 29,
-  "scope": "Remote copy hashes match the local delivery manifest; not an experiment rerun"
-}

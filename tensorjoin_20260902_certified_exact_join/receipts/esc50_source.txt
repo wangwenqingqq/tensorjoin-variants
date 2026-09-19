@@ -1,7 +1,0 @@
-url=https://codeload.github.com/karolpiczak/ESC-50/tar.gz/33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6
-commit=33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6
-archive=@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6.tar.gz
-sha256=f3dabe6adb09c39a566f1498cb959accf8370f3e32b9c40d4f8f07f2484ff2ba
-extracted=@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6
-wav_count=2000
-retrieved_utc=2026-09-02T14:26:11Z

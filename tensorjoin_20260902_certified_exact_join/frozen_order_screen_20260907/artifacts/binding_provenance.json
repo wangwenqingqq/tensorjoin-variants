@@ -1,6 +1,0 @@
-{
-  "source": "src/run_h2b_p1_pedantic_correctness.py",
-  "source_sha256": "d747b7c28e7fb1f196a45ce45ce027710cae338f876c973c8f98be4ca966eef1",
-  "class_source_sha256": "b698b0bfe73c47a4154456633ed27c37c4888f154d99b2e254442d770181b86a",
-  "precision_policy_unchanged": true
-}

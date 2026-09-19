@@ -1,5 +1,0 @@
-2026-09-03T10:34:14Z
-gpu-host-8
-4, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-863c06a5-9f33-0265-b098-013fa840d5db, 14 MiB, 0 %
-COMPUTE_APPS
-GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, 4163069, @TENSORJOIN_ROOT@/bayesworld_gate1_20260902/.venv/bin/python, 5204 MiB

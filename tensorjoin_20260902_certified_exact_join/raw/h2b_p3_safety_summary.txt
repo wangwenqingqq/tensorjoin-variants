@@ -1,9 +1,0 @@
-decision=PASS
-sanitizer_clean=4/4
-stress_cells=4/4
-stress_retained_invocations=4000
-unique_signatures_per_cell=1/1/1/1
-leak_free_claim=false
-known_cublas_handle_allocations=3
-known_cublas_handle_bytes=8520704
-result_sha256=3a02d1a55016c70989d59ace2b1003d1ccbde9ba2bb7720bee45354ae9efd245

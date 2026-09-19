@@ -1,6 +1,0 @@
-
-Resource usage:
- Common:
-  GLOBAL:0
- Function fp32_subset:
-  REG:134 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:944 TEXTURE:0 SURFACE:0 SAMPLER:0

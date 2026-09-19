@@ -1,4 +1,0 @@
-========= COMPUTE-SANITIZER
-RUN_START {"dataset": "esc50_panns", "experiment_id": "tensorjoin_20260903_h1_r1_exact_gpu_multivector_screen", "host": "gpu-host-8", "kernel_sha256": "c24d6e94b81dc94f8ad50699eadac82a8a593e175c519a8d704947ab8e5db0db", "phase": "memcheck", "script_sha256": "11aaa72447266fef26286d80cbbe0bd22bc1626af437c0c9a0b121352600713e", "variant": "keeper"}
-MEMCHECK_SMOKE {"base_counts": [5, 5, 5, 5, 5, 5, 5, 5], "base_objects": 8, "dataset": "esc50_panns", "dimension": 2048, "final_count": 2, "ids_sha256": "76d36a031c7dce139f708e259b7c2f073c6080e39fd47a76bff0237142318a10", "query_counts": [5, 5, 5, 5], "query_objects": 4, "variant": "keeper"}
-========= ERROR SUMMARY: 0 errors
