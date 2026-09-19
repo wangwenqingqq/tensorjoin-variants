@@ -1,4 +1,0 @@
-{
-  "exception": "Traceback (most recent call last):\n  File \"@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/preflight.py\", line 112, in <module>\n    try:main()\n        ^^^^^^\n  File \"@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/preflight.py\", line 63, in main\n    assert set(used.tolist())<={8,16,32}\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError\n",
-  "time": 1788858305.8620372
-}
