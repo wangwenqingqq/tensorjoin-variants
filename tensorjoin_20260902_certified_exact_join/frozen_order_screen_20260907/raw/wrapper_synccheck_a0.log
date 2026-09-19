@@ -1,3 +1,0 @@
-COMMAND ["compute-sanitizer", "--tool", "synccheck", "--target-processes", "all", "--error-exitcode", "86", "--log-file", "raw/wrapper_synccheck_a0_sanitizer.log", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/runner.py", "--label", "wrapper_synccheck_a0", "--mode", "probes"]
-{"phase": "initialized", "mode": "probes", "order": "AB"}
-{"result": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/frozen_order_screen_20260907/results/wrapper_synccheck_a0.json", "pass": true}

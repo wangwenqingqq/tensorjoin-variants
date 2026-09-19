@@ -1,2 +1,0 @@
-{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3677764, "process_name": "./sparse_n8_bm64", "used_memory_mib": "656"}], "elapsed_s": 0.08220767999591772, "phase": "quiescence", "wall_time": 1788411071.1460679}
-{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3677764, "process_name": "./sparse_n8_bm64", "used_memory_mib": "656"}], "phase": "prelaunch_blocked", "wall_time": 1788411071.22744}

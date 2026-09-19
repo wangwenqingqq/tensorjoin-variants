@@ -1,8 +1,0 @@
-@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/fp32_gpu_norm_operator.py:110: UserWarning: The given NumPy array is not writable, and PyTorch does not support non-writable tensors. This means writing to this tensor will result in undefined behavior. You may want to copy the array to protect its data or make it writable before converting it to a tensor. This type of warning will be suppressed for the rest of this program. (Triggered internally at /pytorch/torch/csrc/utils/tensor_numpy.cpp:213.)
-  vg = torch.from_numpy(vectors).to('cuda')
-{"record_id": "fp32_profile_nsys_r3", "passed": true, "calls": 2, "error": null}
-Collecting data...
-Generating '/tmp/nsys-report-85b3.qdstrm'
-[1/1] [0%                          ] fp32_profile_nsys_r3.nsys-rep[1/1] [0%                          ] fp32_profile_nsys_r3.nsys-rep[1/1] [====28%                     ] fp32_profile_nsys_r3.nsys-rep[1/1] [==============61%           ] fp32_profile_nsys_r3.nsys-rep[1/1] [=======================93%  ] fp32_profile_nsys_r3.nsys-rep[1/1] [=======================94%  ] fp32_profile_nsys_r3.nsys-rep[1/1] [=======================95%  ] fp32_profile_nsys_r3.nsys-rep[1/1] [========================100%] fp32_profile_nsys_r3.nsys-rep[1/1] [========================100%] fp32_profile_nsys_r3.nsys-rep
-Generated:
-	@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/artifacts/fp32_profile_nsys_r3.nsys-rep

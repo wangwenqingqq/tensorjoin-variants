@@ -1,1 +1,0 @@
-{"time": 1788797627.49748, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 30, 41.95, 202, 12481, 786, 1", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "571421", "@EXTERNAL_DATA_ROOT@/envs/pro6000-sota/.venv/bin/python", "764"]]}

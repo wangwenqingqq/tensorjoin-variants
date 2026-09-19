@@ -1,6 +1,0 @@
-
-Resource usage:
- Common:
-  GLOBAL:28 CONSTANT[4]:16
- Function analytic_certificate_ragged_safe_i64:
-  REG:140 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0

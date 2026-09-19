@@ -1,9 +1,0 @@
-COMMAND ["ncu", "--section", "LaunchStats", "--section", "SourceCounters", "--nvtx", "--nvtx-include", "G2_TILE_BATCH/", "--clock-control", "none", "--cache-control", "none", "--export", "artifacts/g2_trace_S16_a1", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_trace_r1.py", "--method", "S16", "--label", "g2_trace_S16_a1"]
-==WARNING== Note: Running with uncontrolled GPU caches. Profiling results may be inconsistent.
-==WARNING== Note: Running with unmodified GPU clocks. If not controlled otherwise, profiling results may be inconsistent.
-==PROF== Connected to process 627160 (/usr/bin/python3.12)
-==PROF== Profiling "scan16" - 0: 0%....50%....100% - 6 passes
-==PROF== Profiling "scan16" - 1: 0%....50%....100% - 6 passes
-PASS S16
-==PROF== Disconnected from process 627160
-==PROF== Report: @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/two_gate_campaign_20260908/artifacts/g2_trace_S16_a1.ncu-rep

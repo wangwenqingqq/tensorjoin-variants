@@ -1,5 +1,0 @@
-========= COMPUTE-SANITIZER
-CORRECTNESS {"ambiguous_fraction": 0.000766754150390625, "ambiguous_pairs": 1608, "direct_accept_pairs": 81, "direct_reject_pairs": 2095463, "exact_pairs": 512, "false_accept_pairs": 0, "false_reject_pairs": 0, "final_classification_mismatch": 0, "invalid_status": 0, "threshold_d2": 0.04491402423105895}
-RUN_SUMMARY {"correctness_pass": true, "median_us": 3902.751922607422, "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0a_memcheck.json", "p90_us": 3902.751922607422, "timing_pass": false}
-========= Target application returned an error
-========= ERROR SUMMARY: 0 errors

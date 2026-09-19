@@ -1,9 +1,0 @@
-RUN_START {"batch_size": 8, "checkpoint": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/r3d_18-b3b3357e.pth", "checkpoint_sha256": "b3b3357ead25631ec9c57362ff2128a92d0427e01e2cd184951a44380c3f2e9d", "dataset_manifest_sha256": "aa5734f8123b5beb3d8dc8f0d23813483cfc209d135e34deb3faf3c77bde78d7", "dataset_root": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/ucf101", "decode_workers": 8, "experiment_id": "tensorjoin_20260903_ucf101_r3d18_embedding_d2", "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "host": "gpu-host-8", "limit": 32, "opencv": "4.13.0", "seed": 20260903, "torch": "2.11.0+cu130", "torchvision_weights": "R3D_18_Weights.KINETICS400_V1"}
-EXTRACT_PROGRESS attempted=32/32 valid=32 failures=0 elapsed_s=0.832
-Traceback (most recent call last):
-  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_r3d18_ucf101.py", line 268, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_r3d18_ucf101.py", line 222, in main
-    raise ValueError(f"Only {len(matrix)} valid videos")
-ValueError: Only 32 valid videos

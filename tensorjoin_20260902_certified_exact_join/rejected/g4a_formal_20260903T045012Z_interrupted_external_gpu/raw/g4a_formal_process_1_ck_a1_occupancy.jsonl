@@ -1,3 +1,0 @@
-{"compute_rows": [], "elapsed_s": 0.1726389730029041, "phase": "quiescence", "wall_time": 1788411068.8545518}
-{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3677686, "process_name": "./sparse_n8_bm64", "used_memory_mib": "656"}], "elapsed_s": 1.2598849030036945, "phase": "quiescence", "wall_time": 1788411069.9417982}
-{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3677686, "process_name": "./sparse_n8_bm64", "used_memory_mib": "656"}], "phase": "prelaunch_blocked", "wall_time": 1788411070.0259244}

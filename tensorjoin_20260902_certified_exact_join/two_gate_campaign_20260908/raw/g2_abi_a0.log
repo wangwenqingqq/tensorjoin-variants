@@ -1,2 +1,0 @@
-COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_audit.py", "--label", "g2_abi_a0"]
-{"pass_": true, "label": "g2_abi_a0"}

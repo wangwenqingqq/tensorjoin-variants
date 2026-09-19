@@ -1,4 +1,0 @@
-target_results_per_query,threshold_d2,exact_pairs,exact_results_per_query,direct_accept_pairs,direct_reject_pairs,ambiguous_pairs,ambiguous_fraction,ambiguous_to_output,lower_containment_violations,upper_containment_violations,false_accept_pairs,false_reject_pairs,final_classification_mismatch
-1,0.0,1392,2.71875,0,2085928,11224,0.005352020263671875,8.063218390804598,0,0,0,0,0
-8,2.1183055309847987e-13,6471,12.638671875,0,2085928,11224,0.005352020263671875,1.7345078040488333,0,0,0,0,0
-64,0.15197266946330235,32778,64.01953125,29463,2060743,6946,0.0033121109008789062,0.21191042772591373,0,0,0,0,0

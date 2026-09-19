@@ -1,4 +1,0 @@
-========= COMPUTE-SANITIZER
-CORRECTNESS {"ambiguous_fraction": 0.005352497100830078, "ambiguous_id_sha256": "897237c7b7131a482ddf0741c30e0121d6714f6e38eec2840958d960687c4e98", "ambiguous_pairs": 11225, "direct_accept_pairs": 0, "direct_false_accepts": 0, "duplicates": 0, "final_id_sha256": "4216edc5ff95afd1dd0fca135bf1f22c9423ed932cffe6e65951b63b3a52911b", "final_mismatch": 0, "final_pairs": 3597, "keeper_mismatch": 0, "oracle_pairs": 3597, "overflow_before_refine": 0, "overflow_final": 0}
-PROCESS_SUMMARY {"correctness_pass": true, "order": "AB", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/d1_t1_memcheck.json", "process_id": 0, "target_results_per_query": 1}
-========= ERROR SUMMARY: 0 errors

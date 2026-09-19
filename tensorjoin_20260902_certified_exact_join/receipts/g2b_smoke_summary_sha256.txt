@@ -1,2 +1,0 @@
-b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c  results/g2b_smoke_summary.json
-8eaf611ec3177cc07eb66d488b6a3bca01be53cd29d9b11d95c6b1b8647ea35f  src/summarize_g2b_smoke.py
