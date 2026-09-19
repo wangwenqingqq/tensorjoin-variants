@@ -1,0 +1,12 @@
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 200 OK
+Date: Wed, 02 Sep 2026 22:10:14 GMT
+Server: Apache
+Last-Modified: Thu, 02 Aug 2018 07:21:55 GMT
+ETag: "6b13967-5726eaa7e7266"
+Accept-Ranges: bytes
+Content-Length: 112277863
+Content-Type: application/x-gzip
+Connection: close
+

@@ -1,0 +1,18 @@
+{
+  "host": "gpu-host-8",
+  "scope": "Host-local additive route update; old history retained",
+  "files": {
+    "CURRENT_STATUS.md": {
+      "before_sha256": "edfdf61ac4992e453d6a1c4c864ce1c3e0c121a28ab662b8e0064250c074ecc9",
+      "after_sha256": "7d3021d0c311660c68b9ac7be8bfcd35b1aba6c382c4528d57d3ecf1335bde3f"
+    },
+    "EXPERIMENTS.md": {
+      "before_sha256": "ded54a9975e5e811364a8537f8fd3a6e0dacc4a2afe92c4d8d0cbc5e5fc68c59",
+      "after_sha256": "ad17e9c9f767e485fd3c1680b201eb7c5780eb537bbb7f6786d4812967883236"
+    },
+    "CLAIMS.md": {
+      "before_sha256": "01195d1d52430e1521a506bda246b3997a5b98990d9efe955a60ae4d13c72473",
+      "after_sha256": "f939e00130befd41efde35a968b909cd335104936588bb49c3e3fd7845911bc8"
+    }
+  }
+}

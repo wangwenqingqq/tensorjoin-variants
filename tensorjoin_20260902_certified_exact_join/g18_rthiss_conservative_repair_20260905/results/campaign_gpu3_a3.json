@@ -1,0 +1,631 @@
+{
+  "complete": true,
+  "passed": true,
+  "records": [
+    {
+      "slot": {
+        "kind": "probe",
+        "rid": "predicate_ab_g3_a2",
+        "iterations": 2
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_predicate_ab_g3_a2",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/predicate_ab_g3_a2.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_probe_gpu3.py",
+        "--record-id",
+        "predicate_ab_g3_a2",
+        "--iterations",
+        "2"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/predicate_ab_g3_a2.json",
+      "guard_path": "results/g5_guard_g18_predicate_ab_g3_a2.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "real31",
+        "rid": "correct_real31_g3_a2",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_real31_g3_a2",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_real31_g3_a2.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3.py",
+        "--case",
+        "real31",
+        "--record-id",
+        "correct_real31_g3_a2",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_real31_g3_a2.json",
+      "guard_path": "results/g5_guard_g18_correct_real31_g3_a2.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "signed31",
+        "rid": "correct_signed31_g3_a2",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_signed31_g3_a2",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_signed31_g3_a2.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3.py",
+        "--case",
+        "signed31",
+        "--record-id",
+        "correct_signed31_g3_a2",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_signed31_g3_a2.json",
+      "guard_path": "results/g5_guard_g18_correct_signed31_g3_a2.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "shuffled_onehot31",
+        "rid": "correct_shuffled_onehot31_g3_a2",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_shuffled_onehot31_g3_a2",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_shuffled_onehot31_g3_a2.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3.py",
+        "--case",
+        "shuffled_onehot31",
+        "--record-id",
+        "correct_shuffled_onehot31_g3_a2",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_shuffled_onehot31_g3_a2.json",
+      "guard_path": "results/g5_guard_g18_correct_shuffled_onehot31_g3_a2.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "zeros31",
+        "rid": "correct_zeros31_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_zeros31_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_zeros31_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "zeros31",
+        "--record-id",
+        "correct_zeros31_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_zeros31_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_zeros31_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary31",
+        "rid": "correct_boundary31_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_boundary31_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_boundary31_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary31",
+        "--record-id",
+        "correct_boundary31_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_boundary31_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_boundary31_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cancellation31",
+        "rid": "correct_cancellation31_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_cancellation31_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_cancellation31_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cancellation31",
+        "--record-id",
+        "correct_cancellation31_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_cancellation31_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_cancellation31_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "subnormal31",
+        "rid": "correct_subnormal31_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_subnormal31_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_subnormal31_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "subnormal31",
+        "--record-id",
+        "correct_subnormal31_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_subnormal31_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_subnormal31_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cifar4096",
+        "rid": "correct_cifar4096_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_cifar4096_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_cifar4096_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cifar4096",
+        "--record-id",
+        "correct_cifar4096_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_cifar4096_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_cifar4096_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "correct_boundary_zero32_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_correct_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_correct_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "correct_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_correct_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_correct_boundary_zero32_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "memcheck_boundary_zero32_g3_a3",
+        "tool": "memcheck"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_memcheck_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_memcheck_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "memcheck_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "memcheck"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_memcheck_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_memcheck_boundary_zero32_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cifar4096",
+        "rid": "memcheck_cifar4096_g3_a3",
+        "tool": "memcheck"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_memcheck_cifar4096_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_memcheck_cifar4096_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cifar4096",
+        "--record-id",
+        "memcheck_cifar4096_g3_a3",
+        "--sanitizer",
+        "memcheck"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_memcheck_cifar4096_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_memcheck_cifar4096_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "synccheck_boundary_zero32_g3_a3",
+        "tool": "synccheck"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_synccheck_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_synccheck_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "synccheck_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "synccheck"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_synccheck_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_synccheck_boundary_zero32_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cifar4096",
+        "rid": "synccheck_cifar4096_g3_a3",
+        "tool": "synccheck"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_synccheck_cifar4096_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_synccheck_cifar4096_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cifar4096",
+        "--record-id",
+        "synccheck_cifar4096_g3_a3",
+        "--sanitizer",
+        "synccheck"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_synccheck_cifar4096_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_synccheck_cifar4096_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cifar4096",
+        "rid": "repeat0_cifar4096_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_repeat0_cifar4096_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_repeat0_cifar4096_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cifar4096",
+        "--record-id",
+        "repeat0_cifar4096_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_repeat0_cifar4096_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_repeat0_cifar4096_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "repeat0_boundary_zero32_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_repeat0_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_repeat0_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "repeat0_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_repeat0_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_repeat0_boundary_zero32_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "repeat1_boundary_zero32_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_repeat1_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_repeat1_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "repeat1_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_repeat1_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_repeat1_boundary_zero32_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "cifar4096",
+        "rid": "repeat1_cifar4096_g3_a3",
+        "tool": "none"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_repeat1_cifar4096_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_repeat1_cifar4096_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "cifar4096",
+        "--record-id",
+        "repeat1_cifar4096_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_repeat1_cifar4096_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_repeat1_cifar4096_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "probe",
+        "rid": "predicate_stress_g3_a3",
+        "iterations": 1000
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_predicate_stress_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/predicate_stress_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_probe_gpu3.py",
+        "--record-id",
+        "predicate_stress_g3_a3",
+        "--iterations",
+        "1000"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/predicate_stress_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_predicate_stress_g3_a3.json"
+    },
+    {
+      "slot": {
+        "kind": "case",
+        "name": "boundary_zero32",
+        "rid": "nsys_boundary_zero32_g3_a3",
+        "tool": "nsys"
+      },
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g18_nsys_boundary_zero32_g3_a3",
+        "--expected-result",
+        "g18_rthiss_conservative_repair_20260905/results/case_nsys_boundary_zero32_g3_a3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "nsys",
+        "profile",
+        "--trace=cuda,nvtx",
+        "--sample=none",
+        "--cpuctxsw=none",
+        "--force-overwrite=false",
+        "-o",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/artifacts/nsys_repair_gpu3_a3",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/src/run_case_gpu3_a3.py",
+        "--case",
+        "boundary_zero32",
+        "--record-id",
+        "nsys_boundary_zero32_g3_a3",
+        "--sanitizer",
+        "none"
+      ],
+      "returncode": 0,
+      "passed": true,
+      "result_path": "g18_rthiss_conservative_repair_20260905/results/case_nsys_boundary_zero32_g3_a3.json",
+      "guard_path": "results/g5_guard_g18_nsys_boundary_zero32_g3_a3.json"
+    }
+  ],
+  "retained_original_passes": 4,
+  "prior_failed_proxy": "results/campaign_gpu3_a2.json",
+  "performance_admitted": false
+}

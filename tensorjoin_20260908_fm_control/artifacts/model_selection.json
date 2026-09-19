@@ -1,0 +1,215 @@
+{
+  "created": 1788854862.0881991,
+  "pca": {
+    "family": "pca",
+    "rule": "first",
+    "validation": {
+      "rule": "first",
+      "mean_pair_pruning": 0.12424314901843149,
+      "cells": [
+        {
+          "cell": "k4",
+          "pruned_tiles": 2573,
+          "tiles": 12403,
+          "tile_fraction": 0.20744981052971057,
+          "pair_fraction": 0.20436996300369964
+        },
+        {
+          "cell": "k16",
+          "pruned_tiles": 2006,
+          "tiles": 12403,
+          "tile_fraction": 0.1617350640973958,
+          "pair_fraction": 0.15872460753924608
+        },
+        {
+          "cell": "k64",
+          "pruned_tiles": 1523,
+          "tiles": 12403,
+          "tile_fraction": 0.12279287269209062,
+          "pair_fraction": 0.11995984401559844
+        },
+        {
+          "cell": "original",
+          "pruned_tiles": 1515,
+          "tiles": 12403,
+          "tile_fraction": 0.12214786745142305,
+          "pair_fraction": 0.11936598340165984
+        },
+        {
+          "cell": "k256",
+          "pruned_tiles": 1097,
+          "tiles": 12403,
+          "tile_fraction": 0.08844634362654197,
+          "pair_fraction": 0.08586405359464054
+        },
+        {
+          "cell": "k1024",
+          "pruned_tiles": 737,
+          "tiles": 12403,
+          "tile_fraction": 0.059421107796500845,
+          "pair_fraction": 0.05717444255574443
+        }
+      ],
+      "grouping_seconds": 0.0009987660014303401,
+      "bound_seconds": 0.004737586001283489,
+      "permutation_sha256": "26214d89aa974a19f44d4e02b68066ac71780b1c6fe08bc2c4627eae5d336559"
+    }
+  },
+  "models": {
+    "direct": {
+      "name": "direct_s2026090832_t4000",
+      "family": "direct",
+      "seed": 2026090832,
+      "step": 4000,
+      "rule": "first",
+      "solver_steps": 0,
+      "nfe": 1,
+      "parameters": 24864,
+      "validation": {
+        "rule": "first",
+        "mean_pair_pruning": 0.06783662967036631,
+        "cells": [
+          {
+            "cell": "k4",
+            "pruned_tiles": 1537,
+            "tiles": 12403,
+            "tile_fraction": 0.12392163186325889,
+            "pair_fraction": 0.1215980801919808
+          },
+          {
+            "cell": "k16",
+            "pruned_tiles": 1138,
+            "tiles": 12403,
+            "tile_fraction": 0.09175199548496331,
+            "pair_fraction": 0.08959104089591041
+          },
+          {
+            "cell": "k64",
+            "pruned_tiles": 825,
+            "tiles": 12403,
+            "tile_fraction": 0.06651616544384423,
+            "pair_fraction": 0.06450554944505549
+          },
+          {
+            "cell": "original",
+            "pruned_tiles": 819,
+            "tiles": 12403,
+            "tile_fraction": 0.06603241151334355,
+            "pair_fraction": 0.06401407859214078
+          },
+          {
+            "cell": "k256",
+            "pruned_tiles": 546,
+            "tiles": 12403,
+            "tile_fraction": 0.04402160767556237,
+            "pair_fraction": 0.04226649335066494
+          },
+          {
+            "cell": "k1024",
+            "pruned_tiles": 329,
+            "tiles": 12403,
+            "tile_fraction": 0.026525840522454245,
+            "pair_fraction": 0.025044535546445354
+          }
+        ],
+        "grouping_seconds": 0.001187540008686483,
+        "bound_seconds": 0.004422688012709841,
+        "permutation_sha256": "ec6d41853a148077ab122381a70c2790a62910e66774bc4c91822581f90b5c70"
+      },
+      "distribution": {
+        "sliced_w2_squared_normalized": 0.31933451555237874,
+        "mean_point_squared_displacement": 1.622070634234122,
+        "mean_coordinate_variance": 0.028782088785302768,
+        "norm_of_mean": 0.03479126007291391,
+        "finite": true
+      },
+      "training_seconds": 30.609065279481,
+      "update_seconds": 8.936932914017234,
+      "coupling_seconds": 21.672132365463767,
+      "initialization_seconds": 0.0009281330130761489,
+      "checkpoint_sha256": "7a4dc5ae0dad9ea52de3c364679e9bc6f87cac55be02be22778a3c7bee25f137",
+      "trained": true
+    },
+    "fm": {
+      "name": "fm_s2026090832_t1000",
+      "family": "fm",
+      "seed": 2026090832,
+      "step": 1000,
+      "rule": "first",
+      "solver_steps": 8,
+      "nfe": 16,
+      "parameters": 24992,
+      "validation": {
+        "rule": "first",
+        "mean_pair_pruning": 0.06556357697563577,
+        "cells": [
+          {
+            "cell": "k4",
+            "pruned_tiles": 1490,
+            "tiles": 12403,
+            "tile_fraction": 0.12013222607433685,
+            "pair_fraction": 0.11762535746425358
+          },
+          {
+            "cell": "k16",
+            "pruned_tiles": 1109,
+            "tiles": 12403,
+            "tile_fraction": 0.08941385148754334,
+            "pair_fraction": 0.0870927307269273
+          },
+          {
+            "cell": "k64",
+            "pruned_tiles": 795,
+            "tiles": 12403,
+            "tile_fraction": 0.0640973957913408,
+            "pair_fraction": 0.0618024597540246
+          },
+          {
+            "cell": "original",
+            "pruned_tiles": 788,
+            "tiles": 12403,
+            "tile_fraction": 0.06353301620575667,
+            "pair_fraction": 0.06122907709229077
+          },
+          {
+            "cell": "k256",
+            "pruned_tiles": 535,
+            "tiles": 12403,
+            "tile_fraction": 0.04313472546964444,
+            "pair_fraction": 0.04124259574042596
+          },
+          {
+            "cell": "k1024",
+            "pruned_tiles": 324,
+            "tiles": 12403,
+            "tile_fraction": 0.026122712247037008,
+            "pair_fraction": 0.02438924107589241
+          }
+        ],
+        "grouping_seconds": 0.0012086329952580854,
+        "bound_seconds": 0.004367450004792772,
+        "permutation_sha256": "61b76dfb348f0ad345605d8a153cc064757228cacf3f8935b66459e6147450c7"
+      },
+      "distribution": {
+        "sliced_w2_squared_normalized": 0.006330080863774819,
+        "mean_point_squared_displacement": 1.3532955256882733,
+        "mean_coordinate_variance": 0.16290736376887885,
+        "norm_of_mean": 0.10269273540244929,
+        "finite": true
+      },
+      "training_seconds": 7.718183484845213,
+      "update_seconds": 2.300182128077722,
+      "coupling_seconds": 5.4180013567674905,
+      "initialization_seconds": 0.000588787006563507,
+      "checkpoint_sha256": "5abc5a8f20f40a28d22396a5c168a95406d8655026dc7e2fb03e3319396f703e",
+      "trained": true
+    }
+  },
+  "rule": "Validation certified pair pruning; trained checkpoints only; then updates, seed, steps, grouping.",
+  "candidate_counts": {
+    "pca": 2,
+    "direct": 18,
+    "fm": 54
+  },
+  "test_scope": "Reused prior test split; adaptive follow-up."
+}

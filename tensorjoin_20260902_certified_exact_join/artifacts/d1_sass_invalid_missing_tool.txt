@@ -1,0 +1,2 @@
+===== @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/d1_triton_cache/7GL2MWTZ66FSHHBK25DNTPG6JIAKSG6B2AFURDHBFS5YQQ5QW63A/fused_int8_certificate_compact.cubin =====
+01d59e4527573a26fe658629e90c6578d820502c1fdc86faf885cc1bec161967  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/d1_triton_cache/7GL2MWTZ66FSHHBK25DNTPG6JIAKSG6B2AFURDHBFS5YQQ5QW63A/fused_int8_certificate_compact.cubin

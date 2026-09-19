@@ -1,0 +1,1 @@
+Check A1 stopped when serializing Triton GPUTarget metadata after the first workload. No timing was collected; full correctness run incomplete. GPU kernels unchanged. Original source, compiled artifacts and remote raw log are retained.

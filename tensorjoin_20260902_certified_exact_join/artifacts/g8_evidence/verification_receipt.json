@@ -1,0 +1,9 @@
+{
+  "verified_at_utc": "2026-09-04T09:33:37.958857+00:00",
+  "manifest_sha256": "87425101d393c19d0ed7c16b0d83b73f58853c0e98d4fdc88fd23c5014c5a3f9",
+  "entries": 251,
+  "local_pass": true,
+  "remote_pass": true,
+  "old_g6_g7_manifest_checks": "raw/g8_previous_keeper_checks.log",
+  "note": "Receipt generated after manifest; not itself part of that manifest. One initially unsynchronized local preflight file was copied before the final remote verification."
+}

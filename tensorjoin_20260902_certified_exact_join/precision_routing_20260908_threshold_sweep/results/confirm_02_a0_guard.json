@@ -1,0 +1,38 @@
+{
+  "label": "confirm_02_a0",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/precision_routing_20260908_threshold_sweep/src/runner.py",
+    "--phase",
+    "confirm",
+    "--index",
+    "2"
+  ],
+  "pid": 820325,
+  "pass": true,
+  "started": 1788834367.0915062,
+  "target": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  },
+  "target_config_sha256": "463fb551956c08e424c8174a02c0676f37429c1b93eea8895cf77b0fd2894c87",
+  "source_sha256": {
+    "guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+    "admit.py": "402aa1ed53761210da058cd1fa0b0b11502ecfdda0e15809a42e9bbb209dd39b",
+    "runner.py": "2ae460bdc36462a9488f16d0c983129b8478aaa8c26fd30fd0abbf19bec83181",
+    "select_thresholds.py": "b62c8f1c8f7086e84a377d715cd47ba585b678c1b3f39de8ee5a498efffbe67f",
+    "common.py": "d6d5f11498e1d51f77ad811335b28ebf72708ff1a3bbb12319ea280c69ae8103",
+    "reference.py": "7640c720a9b5a960bcba26dca64d53a84ffe3776b6eac316fe85e75fd2fd5653"
+  },
+  "gpu_uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+  "exit_code": 0,
+  "pass_": true,
+  "max_device_used_mib": 1392,
+  "ended": 1788834470.531223,
+  "verified_descendants": {
+    "820325": 8957200
+  },
+  "nvml_tombstones": []
+}

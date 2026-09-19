@@ -1,0 +1,12 @@
+[
+  {
+    "build": "build_off_a0",
+    "binary_sha256": "3e33443e50e3f300afba22f48a9180644c5b573579aa21f9775b5bb84d41b52c",
+    "libowl_sha256": "383818df195bc1b295f4960ebc5818fc0043e88b307ca6d66eac1f201c124896"
+  },
+  {
+    "build": "build_on_a0",
+    "binary_sha256": "6e826f1d41aa76d2be2aebd5a5215b9140753b0ed4ac2d1da3d0299f30f85fdf",
+    "libowl_sha256": "cd57478547248423c4a8f7b02ae34503aca51cdd27bf80d346168bc32dccd362"
+  }
+]

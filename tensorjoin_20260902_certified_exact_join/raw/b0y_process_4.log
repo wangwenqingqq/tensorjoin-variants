@@ -1,0 +1,21 @@
+PROCESS_PREFLIGHT id=4 order=BA utc=2026-09-02T14:49:33Z
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, P0, 129.83 W, 600.00 W, 2332 MHz, 12481 MHz, 14 MiB, 0 %
+18b82ded95c998e617016cb3a375120ae87436048b5bbc3373f4c850011607fc  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_b0y_gpu.py
+4012dc9a541fa3ff37640c565f2ebb51c4ca6ceff26a676d45e7153f755234f9  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/PROTOCOL_B0Y.md
+66f6292129029f63ee7bd237e15f390e949531a275a3463e786fe5c03893dd41  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_windows_logstft_32x32.npz
+CORRECTNESS {"ambiguous_fraction": 0.0007653236389160156, "ambiguous_pairs": 1605, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 107, "keeper_mismatch": 0, "oracle_pairs": 512, "target": 1, "threshold_d2": 0.04491402423105895}
+CORRECTNESS {"ambiguous_fraction": 0.0034809112548828125, "ambiguous_pairs": 7300, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 418, "keeper_mismatch": 0, "oracle_pairs": 4096, "target": 8, "threshold_d2": 0.07363405343530216}
+CORRECTNESS {"ambiguous_fraction": 0.012485980987548828, "ambiguous_pairs": 26185, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 993, "keeper_mismatch": 0, "oracle_pairs": 32768, "target": 64, "threshold_d2": 0.14719462156999386}
+TIMING metric=dense_int8 median_us=43.407999 p10_us=42.617600 p90_us=44.835199
+TIMING metric=dense_fp32 median_us=93.120001 p10_us=91.775998 p90_us=93.763199
+TIMING metric=dense_fp64 median_us=2945.919991 p10_us=2941.820765 p90_us=2950.115299
+TIMING metric=candidate_e2e_s1 median_us=427.535996 p10_us=422.127995 p90_us=434.406394
+TIMING metric=baseline_fp32_certified_e2e_s1 median_us=327.199996 p10_us=325.084794 p90_us=334.006390
+TIMING metric=candidate_scan_bounds_s1 median_us=218.848005
+TIMING metric=candidate_e2e_s8 median_us=588.880002 p10_us=583.584011 p90_us=597.167975
+TIMING metric=baseline_fp32_certified_e2e_s8 median_us=326.800004 p10_us=324.505603 p90_us=332.835200
+TIMING metric=candidate_scan_bounds_s8 median_us=218.912005
+TIMING metric=candidate_e2e_s64 median_us=1575.135946 p10_us=1570.713556 p90_us=1583.273590
+TIMING metric=baseline_fp32_certified_e2e_s64 median_us=325.888008 p10_us=323.961595 p90_us=331.516811
+TIMING metric=candidate_scan_bounds_s64 median_us=218.656003
+PROCESS_SUMMARY {"correctness_pass": true, "order": "BA", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0y_process_4.json", "process_id": 4}

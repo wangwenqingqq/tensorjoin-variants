@@ -1,0 +1,143 @@
+{
+  "g2b_external": {
+    "exact_output_count": 3926078,
+    "methods": {
+      "fasted": {
+        "exact": false,
+        "false_negatives": 598,
+        "false_positives": 1130,
+        "median_s": 0.22940992100000002,
+        "p10_s": 0.2000031815,
+        "p90_s": 0.2314095683
+      },
+      "gds": {
+        "ci95": [
+          11.715760108935276,
+          11.84616340539117
+        ],
+        "exact": true,
+        "median_s": 10.927797372998612,
+        "p10_s": 10.820869643201878,
+        "p90_s": 10.990203090903378,
+        "paired_speedup": 11.78340675151286
+      },
+      "mistic": {
+        "ci95": [
+          5.030295455948034,
+          5.1333238752986965
+        ],
+        "exact": true,
+        "median_s": 4.732176586,
+        "p10_s": 4.6318411237,
+        "p90_s": 4.7709328402999995,
+        "paired_speedup": 5.082749286344372
+      },
+      "tensorjoin": {
+        "exact": true,
+        "median_s": 0.9261533720018633,
+        "p10_s": 0.9243690803967184,
+        "p90_s": 0.9288411420995544
+      }
+    },
+    "scope": "CIFAR-10-GIST 60000x512, epsilon 0.62890625, gpu-host-8 physical GPU0"
+  },
+  "g4c_dynamic": {
+    "CIFAR-GIST-512": {
+      "candidate_median_us": 355.4345,
+      "ci95": [
+        2.299469225341516,
+        2.358064819384324
+      ],
+      "d": 512,
+      "keeper_median_us": 826.6795,
+      "process_wins": 8,
+      "speedup": 2.3289247643207407
+    },
+    "Fashion-MNIST-784": {
+      "candidate_median_us": 287.77700000000004,
+      "ci95": [
+        1.687169243679244,
+        1.7356716101248608
+      ],
+      "d": 784,
+      "keeper_median_us": 487.0185,
+      "process_wins": 8,
+      "speedup": 1.7098100551868938
+    },
+    "SIFT-128": {
+      "candidate_median_us": 207.95850000000002,
+      "ci95": [
+        1.2670999712960531,
+        1.274315706626803
+      ],
+      "d": 128,
+      "keeper_median_us": 264.449,
+      "process_wins": 8,
+      "speedup": 1.270874870520224
+    }
+  },
+  "g5_boundary": {
+    "paired_geometric_mean": 1.9722473513089156,
+    "paired_speedups": [
+      4.091683977094041,
+      0.9506500591249434
+    ],
+    "samples_seconds_by_round": {
+      "gds": [
+        10.823552317000576,
+        11.108409444990684
+      ],
+      "mistic": [
+        4.822745722,
+        5.024049803
+      ],
+      "tensorjoin": [
+        1.1786701389937662,
+        5.284857193008065
+      ]
+    },
+    "screen_pass": false
+  },
+  "g5_precision_funnel": {
+    "accepted_upper": 1993039,
+    "batches": 108,
+    "d": 512,
+    "directed_output": 3926078,
+    "directed_output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "epsilon": 0.62890625,
+    "n": 60000,
+    "scheduled_tiles": 440391,
+    "stage1_ambiguous": 1827007,
+    "stage1_ambiguous_percent": 0.10149869724393483,
+    "stage1_direct_accept": 1278504,
+    "stage1_direct_reject": 1796924489,
+    "stage2_direct_accept": 713664,
+    "stage2_direct_reject": 1111609,
+    "stage3_accept": 871,
+    "stage3_fp64": 1734,
+    "stage3_fraction_of_all_percent": 9.633172780453659e-05,
+    "stage3_fraction_of_stage2_percent": 0.09490932437587814,
+    "stage3_reject": 863,
+    "tiles_per_batch": 4096,
+    "upper_pairs": 1800030000
+  },
+  "schema": "tensorjoin-paper-numbers-v1",
+  "source_sha256": {
+    "g2b": {
+      "path": "results/g2b_public_formal_summary.json",
+      "sha256": "893e4b63a4df40af6bf3bb6854275e58b9a737287e7fec0cbb0a5c34a21b8c30"
+    },
+    "g4c": {
+      "path": "results/g4c_formal_summary.json",
+      "sha256": "43ed0a578636a47bceff009b14570b8898df5fdfea200c4a853c5db93a309cf3"
+    },
+    "g5_p1": {
+      "path": "results/g5_compatibility_tensorjoin_p1_r1_a0.json",
+      "sha256": "7fcdd2786db413ee9f56347c27eceb9542e41e8fc644e9dd3a55d9ec59bff2a5"
+    },
+    "g5_p4": {
+      "path": "results/g5_p4_screen_summary.json",
+      "sha256": "3cd2a9847a453182e65e1d12245a2cb6e3a6b9af7d15bd85c787bbe9bab736c5"
+    }
+  }
+}

@@ -1,0 +1,9 @@
+COMMAND ["/usr/local/cuda-13.1/bin/compute-sanitizer", "--tool", "racecheck", "--error-exitcode", "99", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "-u", "src/safety_r1.py", "--label", "racecheck_a0"]
+========= COMPUTE-SANITIZER
+{"layout": "original", "method": "F8", "tiles": 175, "u1": 1336, "u2": 0, "count": 2630, "output_sha": "8b00d991122a99e496cab8a43e824f58b1c09a0081f843235f040a4d73af4356", "pass": true}
+{"layout": "original", "method": "F16", "tiles": 175, "u1": 155, "u2": 6, "count": 2024, "output_sha": "252dc8bc165bd747d90b7769f4afd7e6ec89fb51a0bbf4b9a98aa7074aac9350", "pass": true}
+{"layout": "clustered", "method": "F8", "tiles": 175, "u1": 1336, "u2": 0, "count": 2630, "output_sha": "8b00d991122a99e496cab8a43e824f58b1c09a0081f843235f040a4d73af4356", "pass": true}
+{"layout": "clustered", "method": "F16", "tiles": 175, "u1": 155, "u2": 6, "count": 2024, "output_sha": "252dc8bc165bd747d90b7769f4afd7e6ec89fb51a0bbf4b9a98aa7074aac9350", "pass": true}
+{"layout": "interleaved", "method": "F8", "tiles": 175, "u1": 1336, "u2": 0, "count": 2630, "output_sha": "8b00d991122a99e496cab8a43e824f58b1c09a0081f843235f040a4d73af4356", "pass": true}
+{"layout": "interleaved", "method": "F16", "tiles": 175, "u1": 155, "u2": 6, "count": 2024, "output_sha": "252dc8bc165bd747d90b7769f4afd7e6ec89fb51a0bbf4b9a98aa7074aac9350", "pass": true}
+========= RACECHECK SUMMARY: 0 hazards displayed (0 errors, 0 warnings)

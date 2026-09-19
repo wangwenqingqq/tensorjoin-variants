@@ -1,0 +1,16 @@
+# H2B-P1 device-preflight history
+
+initial_observation_source=direct nvidia-smi command output in the active execution session immediately before the pre-run device revision
+initial_observation_note=the first command output was not redirected to a project file; it is transcribed verbatim below and is not represented as an independently timestamped raw capture
+-- initial GPU3 --
+3, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, P0, 28074 MiB, 96 %
+GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, 4169406, @EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python, 28052 MiB
+
+followup_utc=2026-09-03T10:10:37Z
+followup_note=the external process had exited before the retained follow-up snapshot; the device revision had already been frozen and no H2B GPU launch had occurred
+-- follow-up GPU3 --
+3, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, P8, 14 MiB, 0 %
+none
+-- selected GPU1 --
+1, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, P8, 14 MiB, 0 %
+none

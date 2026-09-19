@@ -1,0 +1,19 @@
+{
+  "src/pedantic_binding.py": "dfc343d2bca2e7d46a0aa7b6257071c34c73faddb3cc3b861d73189aaeb3e02c",
+  "src/g2_operator.py": "e011cad07ec2d08b6d237055684782b777753f86bf5bb95b7fbc1281fa839723",
+  "src/owned_half.py": "7b705b9458d4d660cd64aa44d31afef463cbfaee098e0a4f4e58ff120f667b25",
+  "src/g1_analyze.py": "c5893b53987fd7399550dcfb1c06be2a54a9dd9474589fb1f3029ce5bef9b9bd",
+  "src/g2_qualify.py": "7bc5149d1f1dc429aaca17e1f08fe2fd51cc3f6c37bc764b4085b4cae86aa8ba",
+  "src/retained_ops.py": "eb8faffcf7bbafb1f5ebd8a6c2ed34598739c26c199ef3ffbab68b7ccaf266f9",
+  "src/guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+  "src/g2_kernels.py": "970348365a26381332441357cf58e76fb13a9d2d55fae2f250b5232e3074ecfb",
+  "src/gpu_kernels.py": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+  "src/frozen_driver.py": "784f209f6abcf33fe7177d9eeb7bcf8b2a61c4a3254e39cb84afb2554b880572",
+  "src/control_r2.py": "f2a110013a9bd42af4ed55f01b94b55e47016e4c099929c908248f4bfffcfc2f",
+  "src/g1_runner.py": "ced6979a3383923982cc55c35c6a69faf49c6b4675bbab216f377b59987c74aa",
+  "PROTOCOL_G2.md": "c4f289df2a6f66947c3ceb71ca3bc8e83967d99e2c57e49f2c67eb685aa8734c",
+  "DESIGN_G2.md": "2f19711d7b504a90f7b96515cb634f03ef763be20a4bbaa07fbb22216e09eab9",
+  "SOURCES_GATE0.md": "82e4e0b28b9a8de8e08b95fa647a69d6704ccfc0beb61dc73bd6c6b6d0a995b0",
+  "targets_r2.json": "463fb551956c08e424c8174a02c0676f37429c1b93eea8895cf77b0fd2894c87",
+  "frozen_manifest.json": "dc27f2e0bad82c2a1232f77f6aa451f7f6af24c03a957e03d5a4c18b06286356"
+}

@@ -1,0 +1,45 @@
+{
+  "admitted": true,
+  "binary_identity_pass": true,
+  "block": 0,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g14_b0_p1_default_a0_mistic",
+    "--expected-result",
+    "results/g5_screen_mistic_g14_b0_p1_default_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_mistic_public.py",
+    "--record-id",
+    "g14_b0_p1_default_a0",
+    "--phase",
+    "screen"
+  ],
+  "exact_contract_pass": true,
+  "guard_admitted": true,
+  "guard_path": "results/g5_guard_g14_b0_p1_default_a0_mistic.json",
+  "guard_sha256": "d702486ed2bb27c39f743dc071ff2d0a40aaac56a2b6c6a9814ea3c9b1394ded",
+  "loadavg_after": [
+    10.13427734375,
+    9.0595703125,
+    7.81396484375
+  ],
+  "loadavg_before": [
+    11.53662109375,
+    9.123046875,
+    7.775390625
+  ],
+  "method": "mistic",
+  "placement": "default",
+  "position": 1,
+  "public_seconds": 5.021749381,
+  "record_id": "g14_b0_p1_default_a0",
+  "result_path": "results/g5_screen_mistic_g14_b0_p1_default_a0.json",
+  "result_sha256": "58455c1a455908c54fe61d4da5cafbbd44ebdb916001f70fc78f2ecffe2d574a",
+  "returncode": 0,
+  "started_unix": 1788577483.8658912
+}

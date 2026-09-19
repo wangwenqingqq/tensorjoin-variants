@@ -1,0 +1,39 @@
+# Build / IDE / caches
+build/
+CMakeFiles/
+cmake-build-debug/
+.cache
+.idea
+.vscode
+venv/
+third_party/
+
+# Profiler / run artifacts (contain local absolute paths)
+*.ncu-rep
+*.nsys-rep
+*.out
+find_eps_*/
+runs_*/
+plots/
+partition_upd/
+datasetGenerator/
+dataset/
+OWL_backup/
+
+# Program output
+results.txt
+
+# Local helper scripts (kept locally, not tracked)
+*.sh
+compare_times.py
+
+# Datasets: ignore stray .txt, but keep CMakeLists.txt and the sample dataset
+*.txt
+!CMakeLists.txt
+!sampleDataset/
+!sampleDataset/**
+
+# Big archives: ignore all tarballs except the dataset (tracked via LFS).
+# OptiX SDK is a manual download (license), not committed.
+*.tar.gz
+!scDatasets.tar.gz

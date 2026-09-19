@@ -1,0 +1,20 @@
+{
+  "actual_average_directed_nonself_degree": 16.0,
+  "actual_upper_nonself_pairs": 32768,
+  "dataset_id": "fashion784",
+  "dimension": 784,
+  "epsilon": 1203.898043855874,
+  "lower_order_statistic_d2": 1449361.0,
+  "n": 4096,
+  "oracle_seconds_for_shared_scale_distance_array": 2.5667197620059596,
+  "oracle_upper_count_including_self": 36864,
+  "oracle_upper_file_sha256": "73d98b34509524bd80125788c9453698e2dbd3ca49144d202a3f2478b6b16c78",
+  "oracle_upper_raw_sha256": "a83d89ad155d0159cd3ff6f902105abe484e84f285f410d0ebf7ac1262faaa04",
+  "source_row_prefix_raw_sha256": "b81e1097ad1142ebae65a6928fad64c85820e9aa899e00be3c22c0dc69ed0120",
+  "target_average_directed_nonself_degree": 16,
+  "target_upper_nonself_pairs": 32768,
+  "threshold_d2": 1449370.5,
+  "tie_expansion_upper_pairs": 0,
+  "upper_order_statistic_d2": 1449380.0,
+  "vector_prefix_raw_sha256": "95ed19b83a1739d6d41e4851ae3206a80631cf1cfd939ce825a95bbc9b2bce76"
+}

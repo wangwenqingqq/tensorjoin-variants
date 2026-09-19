@@ -1,0 +1,39 @@
+{
+  "admitted": true,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g16_fp32_full_a0",
+    "--expected-result",
+    "g16_gpu_preparation_20260905/results/fp32_gpu_compatibility_full_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+    "--phase",
+    "compatibility",
+    "--record-id",
+    "full_a0"
+  ],
+  "correctness": {
+    "canonical_pair_count": 3926078,
+    "canonical_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "duplicate_pairs": 0,
+    "exact_contract_pass": true,
+    "expected_pair_count": 3926078,
+    "expected_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "invalid_pairs": 0,
+    "overflow_events": 0,
+    "self_pairs": 60000,
+    "sorted_output": true,
+    "symmetry_missing_pairs": 0
+  },
+  "diagnostic_seconds": 0.2728332029946614,
+  "guard_path": "results/g5_guard_g16_fp32_full_a0.json",
+  "label": "g16_fp32_full_a0",
+  "result_path": "g16_gpu_preparation_20260905/results/fp32_gpu_compatibility_full_a0.json",
+  "result_sha256": "d0fca566c5a7e4245e9654621c4c41f82d4baa89a63b16a414a4acf9d65d7595",
+  "returncode": 0
+}

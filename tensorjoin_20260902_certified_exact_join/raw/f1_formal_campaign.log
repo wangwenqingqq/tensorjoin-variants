@@ -1,0 +1,79 @@
+FORMAL_START_UTC 2026-09-02T17:22:59Z
+HOST gpu-host-8
+OWNED_SHELL_PID 2235083
+19fd8341a61a72ede6c7f3f036f3ac7889a3c598b9c94dd78ec1457c4f32a8e6  src/run_f1_gpu_cascade.py
+a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f  src/run_d1_triton.py
+8a14b46af3b3a529747fcf153d4bc6f1d419670348ab58c594b682ea3d6c4d27  src/summarize_f1.py
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 0 %, 14 MiB, 34.62 W, 180 MHz
+PROCESS_START modality=audio process=0 order=GTC utc=2026-09-02T17:22:59Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=guarded_fp32 median_us=400.080010 p10_us=396.220794 p90_us=411.520010
+TIMING metric=two_stage median_us=259.296000 p10_us=257.072005 p90_us=262.035191
+TIMING metric=cascade median_us=163.567998 p10_us=160.816002 p90_us=166.131206
+PROCESS_END modality=audio process=0 utc=2026-09-02T17:23:15Z
+PROCESS_START modality=audio process=1 order=CTG utc=2026-09-02T17:23:15Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=cascade median_us=160.927996 p10_us=158.271998 p90_us=165.353607
+TIMING metric=two_stage median_us=258.576006 p10_us=256.511986 p90_us=261.740789
+TIMING metric=guarded_fp32 median_us=393.439993 p10_us=387.411192 p90_us=402.249601
+PROCESS_END modality=audio process=1 utc=2026-09-02T17:23:30Z
+PROCESS_START modality=audio process=2 order=TCG utc=2026-09-02T17:23:30Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=two_stage median_us=257.936001 p10_us=255.071998 p90_us=261.161599
+TIMING metric=cascade median_us=163.103998 p10_us=161.036797 p90_us=166.444807
+TIMING metric=guarded_fp32 median_us=396.448001 p10_us=390.092811 p90_us=404.182392
+PROCESS_END modality=audio process=2 utc=2026-09-02T17:23:45Z
+PROCESS_START modality=audio process=3 order=GCT utc=2026-09-02T17:23:45Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=guarded_fp32 median_us=398.783997 p10_us=394.972792 p90_us=408.848000
+TIMING metric=cascade median_us=164.192006 p10_us=161.497600 p90_us=168.668795
+TIMING metric=two_stage median_us=260.383993 p10_us=258.121592 p90_us=265.369588
+PROCESS_END modality=audio process=3 utc=2026-09-02T17:24:00Z
+PROCESS_START modality=audio process=4 order=CGT utc=2026-09-02T17:24:00Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=cascade median_us=162.368007 p10_us=159.577601 p90_us=166.441594
+TIMING metric=guarded_fp32 median_us=394.896001 p10_us=389.200005 p90_us=403.526390
+TIMING metric=two_stage median_us=259.039998 p10_us=255.868810 p90_us=261.967999
+PROCESS_END modality=audio process=4 utc=2026-09-02T17:24:15Z
+PROCESS_START modality=audio process=5 order=TGC utc=2026-09-02T17:24:15Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=two_stage median_us=262.255996 p10_us=260.348794 p90_us=265.318388
+TIMING metric=guarded_fp32 median_us=406.655997 p10_us=401.216000 p90_us=415.215990
+TIMING metric=cascade median_us=167.216003 p10_us=164.598401 p90_us=170.236807
+PROCESS_END modality=audio process=5 utc=2026-09-02T17:24:30Z
+PROCESS_START modality=audio process=6 order=GTC utc=2026-09-02T17:24:30Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=guarded_fp32 median_us=402.624011 p10_us=395.865598 p90_us=480.671987
+TIMING metric=two_stage median_us=259.232000 p10_us=256.822404 p90_us=264.131200
+TIMING metric=cascade median_us=164.320000 p10_us=161.695996 p90_us=169.299199
+PROCESS_END modality=audio process=6 utc=2026-09-02T17:24:45Z
+PROCESS_START modality=audio process=7 order=CTG utc=2026-09-02T17:24:45Z
+CORRECTNESS {"actual_results_per_query": 64.01953125, "ambiguous_id_sha256": "b34d934acf0693516eb3031b2cd1c9289f871faf4ff01ff023cfaa4aae1a3f39", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "99787f46f6651f07aa42dae176182ddf1f424a9a0443dcfc6c6228a47fbd0ac9", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 366, "fp32_direct_accept_pairs": 3182, "fp32_direct_reject_pairs": 3459, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "ec115c1a132a4046c887a4f9da7cc052b65cdec71e9edf260cc4cf535e5eaea0", "fp64_refine_pairs": 366, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 7007, "int8_direct_accept_pairs": 29419, "int8_false_accepts": 0, "oracle_pairs": 32778, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=cascade median_us=161.056004 p10_us=158.643201 p90_us=165.833597
+TIMING metric=two_stage median_us=258.031994 p10_us=255.606407 p90_us=260.976005
+TIMING metric=guarded_fp32 median_us=394.255996 p10_us=388.371214 p90_us=401.011205
+PROCESS_END modality=audio process=7 utc=2026-09-02T17:25:01Z
+PROCESS_START modality=video process=0 order=GTC utc=2026-09-02T17:25:01Z
+CORRECTNESS {"actual_results_per_query": 64.0, "ambiguous_id_sha256": "3b4cfdbd409fd3733b49163f85bc648a2666c46332ddd1ee1652d7cdc671f5f0", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "84670992dc3eeaaf2dd54de7d73d1c8929ae672e3624603e185206a0f0c50ed2", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 1061, "fp32_direct_accept_pairs": 10359, "fp32_direct_reject_pairs": 15863, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "9268d4aaf95546dd6054a116ffe587ee6ab8e047acc6c891f18cb02742d2e54a", "fp64_refine_pairs": 1061, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 27283, "int8_direct_accept_pairs": 21873, "int8_false_accepts": 0, "oracle_pairs": 32768, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=guarded_fp32 median_us=287.423998 p10_us=283.996809 p90_us=295.507193
+TIMING metric=two_stage median_us=253.647998 p10_us=250.681588 p90_us=257.110405
+TIMING metric=cascade median_us=148.208000 p10_us=145.049594 p90_us=152.857594
+PROCESS_END modality=video process=0 utc=2026-09-02T17:25:07Z
+PROCESS_START modality=video process=1 order=CTG utc=2026-09-02T17:25:07Z
+CORRECTNESS {"actual_results_per_query": 64.0, "ambiguous_id_sha256": "3b4cfdbd409fd3733b49163f85bc648a2666c46332ddd1ee1652d7cdc671f5f0", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "84670992dc3eeaaf2dd54de7d73d1c8929ae672e3624603e185206a0f0c50ed2", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 1061, "fp32_direct_accept_pairs": 10359, "fp32_direct_reject_pairs": 15863, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "9268d4aaf95546dd6054a116ffe587ee6ab8e047acc6c891f18cb02742d2e54a", "fp64_refine_pairs": 1061, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 27283, "int8_direct_accept_pairs": 21873, "int8_false_accepts": 0, "oracle_pairs": 32768, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=cascade median_us=153.216004 p10_us=151.145597 p90_us=157.507206
+TIMING metric=two_stage median_us=257.376000 p10_us=254.780790 p90_us=260.934404
+TIMING metric=guarded_fp32 median_us=298.767999 p10_us=292.182410 p90_us=308.310404
+PROCESS_END modality=video process=1 utc=2026-09-02T17:25:14Z
+PROCESS_START modality=video process=2 order=TCG utc=2026-09-02T17:25:14Z
+CORRECTNESS {"actual_results_per_query": 64.0, "ambiguous_id_sha256": "3b4cfdbd409fd3733b49163f85bc648a2666c46332ddd1ee1652d7cdc671f5f0", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "84670992dc3eeaaf2dd54de7d73d1c8929ae672e3624603e185206a0f0c50ed2", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 1061, "fp32_direct_accept_pairs": 10359, "fp32_direct_reject_pairs": 15863, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "9268d4aaf95546dd6054a116ffe587ee6ab8e047acc6c891f18cb02742d2e54a", "fp64_refine_pairs": 1061, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 27283, "int8_direct_accept_pairs": 21873, "int8_false_accepts": 0, "oracle_pairs": 32768, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=two_stage median_us=257.472008 p10_us=253.974405 p90_us=260.566401
+TIMING metric=cascade median_us=156.016000 p10_us=153.232004 p90_us=159.792002
+TIMING metric=guarded_fp32 median_us=302.624002 p10_us=295.193592 p90_us=310.691196
+PROCESS_END modality=video process=2 utc=2026-09-02T17:25:20Z
+PROCESS_START modality=video process=3 order=GCT utc=2026-09-02T17:25:20Z
+CORRECTNESS {"actual_results_per_query": 64.0, "ambiguous_id_sha256": "3b4cfdbd409fd3733b49163f85bc648a2666c46332ddd1ee1652d7cdc671f5f0", "bitwise_equal_pairs": 0, "cascade_duplicates": 0, "cascade_id_sha256": "84670992dc3eeaaf2dd54de7d73d1c8929ae672e3624603e185206a0f0c50ed2", "cascade_mismatch": 0, "cascade_overflow": 0, "expected_fp64_refine_pairs": 1061, "fp32_direct_accept_pairs": 10359, "fp32_direct_reject_pairs": 15863, "fp32_false_accepts": 0, "fp32_false_rejects": 0, "fp64_id_sha256": "9268d4aaf95546dd6054a116ffe587ee6ab8e047acc6c891f18cb02742d2e54a", "fp64_refine_pairs": 1061, "guarded_fp32_mismatch": 0, "int8_ambiguous_pairs": 27283, "int8_direct_accept_pairs": 21873, "int8_false_accepts": 0, "oracle_pairs": 32768, "overflow_after_fp32": 0, "overflow_after_scan": 0, "two_stage_duplicates": 0, "two_stage_mismatch": 0, "two_stage_overflow": 0}
+TIMING metric=guarded_fp32 median_us=293.839991 p10_us=289.465612 p90_us=304.031998
+TIMING metric=cascade median_us=151.791997 p10_us=148.201597 p90_us=155.593593
+TIMING metric=two_stage median_us=255.584002 p10_us=252.860802 p90_us=259.142411
+ABORT_GPU0_OCCUPIED_AFTER modality=video process=3 pids=2237400

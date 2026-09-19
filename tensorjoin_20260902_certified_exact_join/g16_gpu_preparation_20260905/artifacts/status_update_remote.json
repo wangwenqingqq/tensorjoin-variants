@@ -1,0 +1,17 @@
+{
+  "CURRENT_STATUS.md": {
+    "before_sha256": "f2db2c3f885e37a31cf9f05a149cf0ed357ec75a860886b9d51bc9b145e15a47",
+    "after_sha256": "de962167d2b93ff079b2bb0ef746999a9386d624b8c0ff7adef8bad7874cb7d9",
+    "backup": "g16_gpu_preparation_20260905/artifacts/CURRENT_STATUS.md.remote_before_G15_G16"
+  },
+  "EXPERIMENTS.md": {
+    "before_sha256": "4c0c1db7d71b6f683319a4f35f0406138edfc7f25daccd6b12451e109b190b7c",
+    "after_sha256": "0e8cbc10e5d781a82da4eb1282ce18b1cbd009fcea1c88d4b6d7ff78fa6f69f5",
+    "backup": "g16_gpu_preparation_20260905/artifacts/EXPERIMENTS.md.remote_before_G15_G16"
+  },
+  "CLAIMS.md": {
+    "before_sha256": "9852e20c5286b73eae982929895682fca812557449d7388a65cc161c4364828d",
+    "after_sha256": "1e03de91ecc66874c22d0cd2e403ac538148474a7a19686c9b73fde26d46ea1e",
+    "backup": "g16_gpu_preparation_20260905/artifacts/CLAIMS.md.remote_before_G15_G16"
+  }
+}

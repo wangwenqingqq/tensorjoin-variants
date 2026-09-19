@@ -1,0 +1,59 @@
+{
+  "created": 1788833688.4111845,
+  "protocol_sha256": "3656aefd4b2ec7e7fa2a7919452d763f05001ecb6f94e3d7fd159f56febdbd75",
+  "input_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+  "sample_seed": 2026090801,
+  "sample_size": 4194304,
+  "sample_pairs_sha256": "0040a052dcf5691fde92d23a19eecef6e9acad2ef4501b68ebaaf96d456597eb",
+  "sample_distances_sha256": "08438c275dee53ac3b44a4f621fda76c08adffdba47ed82058fb04da1f15df02",
+  "cells": [
+    {
+      "name": "k4",
+      "target_degree": 4,
+      "m": 2092,
+      "eps": 0.5107421875,
+      "T": 0.26085758209228516,
+      "sample_degree": 3.991060495376587
+    },
+    {
+      "name": "k16",
+      "target_degree": 16,
+      "m": 2330,
+      "eps": 0.56884765625,
+      "T": 0.32358765602111816,
+      "sample_degree": 15.949937105178833
+    },
+    {
+      "name": "k64",
+      "target_degree": 64,
+      "m": 2573,
+      "eps": 0.628173828125,
+      "T": 0.39460235834121704,
+      "sample_degree": 63.78544354438782
+    },
+    {
+      "name": "original",
+      "target_degree": null,
+      "m": 2576,
+      "eps": 0.62890625,
+      "T": 0.3955230712890625,
+      "sample_degree": 64.90122389793396
+    },
+    {
+      "name": "k256",
+      "target_degree": 256,
+      "m": 2834,
+      "eps": 0.69189453125,
+      "T": 0.4787180423736572,
+      "sample_degree": 255.78549361228943
+    },
+    {
+      "name": "k1024",
+      "target_degree": 1024,
+      "m": 3120,
+      "eps": 0.76171875,
+      "T": 0.5802154541015625,
+      "sample_degree": 1023.4709866046906
+    }
+  ]
+}

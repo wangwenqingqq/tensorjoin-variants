@@ -1,0 +1,7 @@
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g6_gts.py", line 232, in <module>
+    sys.exit(main())
+             ^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g6_gts.py", line 165, in main
+    raise RuntimeError("oracle missing or hash mismatch")
+RuntimeError: oracle missing or hash mismatch

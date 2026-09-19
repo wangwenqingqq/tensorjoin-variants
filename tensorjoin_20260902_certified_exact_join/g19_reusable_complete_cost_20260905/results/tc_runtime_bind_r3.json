@@ -1,0 +1,19 @@
+{
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/runtime_probe.py",
+    "--method",
+    "tc",
+    "--record-id",
+    "tc_runtime_bind_r3"
+  ],
+  "returncode": 0,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_tc_runtime_bind_r3.json",
+  "inner_sha256": "82cab7d945308503c70f06954dee2e2f713f6e9d5581f9ecd4ff38b89fe2fd67",
+  "log_sha256": "01f754c55cab062b53ffb754752c8f2d9afdb9bd1041c2e7e740985ccc71de5c",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "diagnostic_only": true,
+  "performance_admitted": false
+}

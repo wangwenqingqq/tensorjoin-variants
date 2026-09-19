@@ -1,0 +1,49 @@
+2026-09-02T15:43:33Z
+gpu-host-8
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %
+541141fa2ee191a88f24a3219fff024e  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth
+f385f2a1c6dfd35c71f112bcb8b0921aab1244eb07f166dacdd8825ed6960f16  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_panns_esc50.py
+Traceback (most recent call last):
+  File "<stdin>", line 9, in <module>
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/third_party/panns_inference_f673f604/panns_inference/models.py", line 97, in __init__
+    self.spectrogram_extractor = Spectrogram(n_fft=window_size, hop_length=hop_size, 
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/torchlibrosa/stft.py", line 645, in __init__
+    self.stft = STFT(n_fft=n_fft, hop_length=hop_length,
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/torchlibrosa/stft.py", line 190, in __init__
+    fft_window = librosa.filters.get_window(window, self.win_length, fftbins=True)
+                 ^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/lazy_loader/__init__.py", line 75, in __getattr__
+    return importlib.import_module(f"{package_name}.{name}")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/importlib/__init__.py", line 90, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<frozen importlib._bootstrap>", line 1387, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 1360, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 1331, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 935, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 995, in exec_module
+  File "<frozen importlib._bootstrap>", line 488, in _call_with_frames_removed
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/librosa/filters.py", line 52, in <module>
+    from numba import jit
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/__init__.py", line 92, in <module>
+    from numba.core.decorators import (cfunc, jit, njit, stencil,
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/core/decorators.py", line 13, in <module>
+    from numba.stencils.stencil import stencil
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/stencils/stencil.py", line 11, in <module>
+    from numba.core import types, typing, utils, ir, config, ir_utils, registry
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/core/ir_utils.py", line 14, in <module>
+    from numba.core.extending import _Intrinsic
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/core/extending.py", line 20, in <module>
+    from numba.core.pythonapi import box, unbox, reflect, NativeValue  # noqa: F401
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/core/pythonapi.py", line 12, in <module>
+    from numba.core import (
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/core/lowering.py", line 19, in <module>
+    from numba.misc.coverage_support import get_registered_loc_notify
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/envs/panns_py312/lib/python3.12/site-packages/numba/misc/coverage_support.py", line 114, in <module>
+    class NumbaTracer(coverage.types.Tracer):
+                      ^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'coverage.types' has no attribute 'Tracer'

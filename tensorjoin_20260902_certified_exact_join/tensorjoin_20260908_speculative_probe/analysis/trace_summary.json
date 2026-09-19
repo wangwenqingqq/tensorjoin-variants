@@ -1,0 +1,69 @@
+{
+  "methods": {
+    "pipeline": {
+      "groups": 108,
+      "kernels": 649,
+      "verify_kernels": 108,
+      "scan_kernels": 108,
+      "draft_kernels": 0,
+      "verify_streams": [
+        17
+      ],
+      "scan_streams": [
+        7
+      ],
+      "verify_kernel_ms": 1.790065,
+      "scan_kernel_ms": 10.032381,
+      "draft_kernel_ms": 0.0,
+      "verify_scan_overlap_ms": 0.0,
+      "verify_firstscan_overlap_ms": 0.0,
+      "current_verification_done_before_scan": 108,
+      "current_verification_draft_overlap_ms": 0.0,
+      "trace_sqlite_sha256": "6523b7594c64181db8dea20686286ab921c4d228ee3a0324bdac446e2cea0e69"
+    },
+    "draft_serial": {
+      "groups": 108,
+      "kernels": 651,
+      "verify_kernels": 1,
+      "scan_kernels": 216,
+      "draft_kernels": 1,
+      "verify_streams": [
+        7
+      ],
+      "scan_streams": [
+        7
+      ],
+      "verify_kernel_ms": 1.275482,
+      "scan_kernel_ms": 11.105675,
+      "draft_kernel_ms": 0.402654,
+      "verify_scan_overlap_ms": 0.0,
+      "verify_firstscan_overlap_ms": 0.0,
+      "current_verification_done_before_scan": 108,
+      "current_verification_draft_overlap_ms": 0.0,
+      "trace_sqlite_sha256": "3e195467ed2c7a849cf908e148d45730f59f9b6e59809dd04892343c53bac55e"
+    },
+    "speculative": {
+      "groups": 108,
+      "kernels": 758,
+      "verify_kernels": 108,
+      "scan_kernels": 216,
+      "draft_kernels": 1,
+      "verify_streams": [
+        17
+      ],
+      "scan_streams": [
+        7
+      ],
+      "verify_kernel_ms": 1.701784,
+      "scan_kernel_ms": 11.141169,
+      "draft_kernel_ms": 0.403519,
+      "verify_scan_overlap_ms": 0.020864,
+      "verify_firstscan_overlap_ms": 0.020864,
+      "current_verification_done_before_scan": 107,
+      "current_verification_draft_overlap_ms": 0.004832,
+      "trace_sqlite_sha256": "642c7f730dff32b09dfb1dc7e3a2436042ce00fb522cf3dc0ef353eae0e8d615"
+    }
+  },
+  "scope": "one separately profiled original-threshold query per method; profiler times excluded from retained timing",
+  "measurement": "intersection of unions of actual kernel start/end intervals from Nsight Systems"
+}

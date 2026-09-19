@@ -1,0 +1,71 @@
+{
+  "accumulator_pass": true,
+  "accumulator_worst_case": 31999936,
+  "ambiguity_pass": true,
+  "base_row_range": [
+    51,
+    142
+  ],
+  "base_shape": [
+    4096,
+    1984
+  ],
+  "bound_pad": 0.0001,
+  "elapsed_s": 15.837818622589111,
+  "exactness_pass": true,
+  "experiment_id": "tensorjoin_20260903_indian_pines_geometry_d3a",
+  "feature_cache_sha256": "b95402cec4fd6037fea32934b8b8170ab51c9baa866d7c392737c06b6398adb2",
+  "gate_pass": true,
+  "host": "gpu-host-8",
+  "query_row_range": [
+    0,
+    47
+  ],
+  "query_shape": [
+    512,
+    1984
+  ],
+  "script_sha256": "eb942edcd16a0120851e84daaba3953d73e0147a77db2a37553ca06027dccd94",
+  "seed": 20260903,
+  "source_pixel_overlap": false,
+  "thresholds": [
+    {
+      "ambiguous_fraction": 0.00022220611572265625,
+      "ambiguous_pairs": 466,
+      "ambiguous_to_output": 0.91015625,
+      "direct_accept_pairs": 325,
+      "direct_reject_pairs": 2096361,
+      "exact_pairs": 512,
+      "exact_results_per_query": 1.0,
+      "false_accept_pairs": 0,
+      "false_reject_pairs": 0,
+      "final_classification_mismatch": 0,
+      "gap_d2": 3.356343541355278e-05,
+      "lower_containment_violations": 0,
+      "lower_distance_d2": 0.1294342525972209,
+      "target_results_per_query": 1,
+      "threshold_d2": 0.1294510343149277,
+      "upper_containment_violations": 0,
+      "upper_distance_d2": 0.12946781603263446
+    },
+    {
+      "ambiguous_fraction": 0.005514621734619141,
+      "ambiguous_pairs": 11565,
+      "ambiguous_to_output": 0.352935791015625,
+      "direct_accept_pairs": 27371,
+      "direct_reject_pairs": 2058216,
+      "exact_pairs": 32768,
+      "exact_results_per_query": 64.0,
+      "false_accept_pairs": 0,
+      "false_reject_pairs": 0,
+      "final_classification_mismatch": 0,
+      "gap_d2": 6.106098216496214e-07,
+      "lower_containment_violations": 0,
+      "lower_distance_d2": 0.26291302118419035,
+      "target_results_per_query": 64,
+      "threshold_d2": 0.26291332648910115,
+      "upper_containment_violations": 0,
+      "upper_distance_d2": 0.262913631794012
+    }
+  ]
+}

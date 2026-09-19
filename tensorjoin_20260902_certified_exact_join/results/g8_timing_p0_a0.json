@@ -1,0 +1,5114 @@
+{
+  "cases": [
+    {
+      "active_tiles": 87479,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.0,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.0729310748865442,
+      "name": "real_identity",
+      "occupancy_histogram": [
+        0,
+        74764,
+        11069,
+        1445,
+        171,
+        24,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 7.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "oracle_true_count": 42174,
+      "padded_pairs": 1399664,
+      "padding_amplification": 13.71157632813801,
+      "queue_and_row_copy_host_seconds": 0.020384184026625007,
+      "row_permutation_sha256": "b83e23eb1db808bf694ae4894d62b50c9840bcd869ba7ac2456f40ddf0530bf3",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.13495199680328368,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.0670304000377655,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5732992172241211,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06715840101242065,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5750944137573242,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.14005759954452515,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5756432056427002,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13456640243530274,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.06728479862213135,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13441599607467652,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06693440079689025,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5714176177978516,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06500319838523864,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5590159893035889,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13055200576782228,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5586863994598389,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13047200441360474,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.065038400888443,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06502879858016967,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.558835220336914,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06501280069351197,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5587552070617676,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.13052159547805786,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5590864181518554,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13047679662704467,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.06486560106277466,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040319681167603,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475039720535278,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591279983520507,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06488479971885681,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5595695972442627,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041759729385377,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591807842254639,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304255962371826,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.0647376000881195,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035839796066284,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06468160152435302,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5589759826660157,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648352026939392,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593200206756592,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304784059524536,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5592495918273925,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304144024848938,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.06485120058059693,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033440113067626,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481919884681701,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591519832611084,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06494560241699218,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5590112209320068,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13049440383911132,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5592512130737305,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13039519786834716,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484320163726806,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303936004638672,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06477760076522827,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5594096183776855,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06489920020103454,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5588960170745849,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303104043006897,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591072082519531,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044960498809816,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.06480479836463929,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13026080131530762,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06469600200653076,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5596000194549561,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475840210914612,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5589791774749756,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.13048319816589354,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5590047836303711,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037760257720948,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.06487039923667907,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13027360439300537,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06476960182189942,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593855857849122,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483359932899475,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593071937561035,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.130513596534729,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5590896129608154,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042399883270264,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.06490079760551452,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038239479064942,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472319960594178,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5594160079956054,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06506400108337403,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591663837432861,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.13071839809417723,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593423843383789,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303760051727295,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.06492480039596557,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032959699630736,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472640037536621,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5594367980957031,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06492959856986999,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5592976093292237,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.13036160469055175,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593776226043701,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303328037261963,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.06476799845695495,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032159805297852,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06485440135002137,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5592688083648681,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06502559781074524,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593488216400146,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.1305184006690979,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.559659194946289,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037439584732055,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.06482880115509033,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13025439977645875,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.0649407982826233,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5591792106628418,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.0650223970413208,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5593311786651611,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303328037261963,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5594511985778808,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304751992225647,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.06493920087814331,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033440113067626,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484320163726806,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5594848155975342,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.12902560424804688,
+        "P16": 0.0635140495300293,
+        "T4x4": 0.5580505981445313
+      },
+      "synthetic": false
+    },
+    {
+      "active_tiles": 87890,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.006668698013527319,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.07259002730686084,
+      "name": "real_random",
+      "occupancy_histogram": [
+        0,
+        75547,
+        10725,
+        1421,
+        167,
+        29,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 6.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "oracle_true_count": 42174,
+      "padded_pairs": 1406240,
+      "padding_amplification": 13.7759970219144,
+      "queue_and_row_copy_host_seconds": 0.028407314996002242,
+      "row_permutation_sha256": "d4e90b0ba4e4f7293dae4078774ea011005691ea35a034842150cd6405a05f28",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.13478080034255982,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06684960126876831,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5791391849517822,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06682239770889283,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5784304141998291,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.13455679416656494,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.571999979019165,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038079738616942,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648863971233368,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302639961242676,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648800015449524,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623167991638184,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481760144233703,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.562227201461792,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031519651412965,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623616218566895,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046560287475586,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475200057029724,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302575945854187,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06466559767723083,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623487949371337,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06503520011901856,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.562286376953125,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.13070080280303956,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622960090637207,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303439974784851,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484159827232361,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033920526504517,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06463199853897095,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622352123260498,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06493120193481446,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622799873352051,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303439974784851,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5624896049499511,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038079738616942,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483839750289917,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302847981452942,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472960114479065,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623968124389649,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648959994316101,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.562172794342041,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304527997970581,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.562175989151001,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038560152053832,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474720239639283,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032000064849852,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06471679806709289,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5624127864837647,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474400162696839,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623695850372314,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040640354156494,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623680114746094,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041119575500487,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.06479359865188598,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029279708862304,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06504639983177185,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623055934906006,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484320163726806,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5621903896331787,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303647994995117,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623151779174804,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042720556259155,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.06496000289916992,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13020639419555663,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483359932899475,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623072147369385,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475200057029724,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622960090637207,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.130457603931427,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5624000072479248,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031200170516968,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.06480000019073487,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029439449310304,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481919884681701,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622655868530273,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483200192451477,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623311996459961,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303984045982361,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622335910797119,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041919469833374,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.06490079760551452,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302623987197876,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06466879844665527,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622896194458008,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06498240232467652,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622367858886719,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037120103836058,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623648166656494,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044159412384032,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473119854927063,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029119968414307,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648527979850769,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623248100280762,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06491519808769226,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622704029083252,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303231954574585,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623727798461914,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035839796066284,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.0647279977798462,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13025439977645875,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06478559970855713,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5624415874481201,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06499199867248535,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622528076171875,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042399883270264,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623248100280762,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040640354156494,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.0646399974822998,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.130404794216156,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473600268363952,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622831821441651,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06480479836463929,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5623663902282715,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303663969039917,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622399806976318,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031840324401855,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474559903144836,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13030400276184081,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648576021194458,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.5622015953063965,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.12902674865722658,
+        "P16": 0.06352127838134766,
+        "T4x4": 0.560940673828125
+      },
+      "synthetic": false
+    },
+    {
+      "active_tiles": 60135,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.0016275999951176345,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.10609358110917103,
+      "name": "real_degree_oracle",
+      "occupancy_histogram": [
+        0,
+        36835,
+        12800,
+        5699,
+        2736,
+        1238,
+        500,
+        236,
+        67,
+        15,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 10.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 3.0
+      },
+      "oracle_true_count": 42174,
+      "padded_pairs": 962160,
+      "padding_amplification": 9.425640925165803,
+      "queue_and_row_copy_host_seconds": 0.028055515023879707,
+      "row_permutation_sha256": "521ff369a4551a2abb6256d940910534657fbf2e269c17c49e7acb8c0ffb7f82",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.13531999588012694,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06724799871444702,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.39753921031951905,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06721919775009155,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.39682080745697024,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.13477599620819092,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3968400001525879,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13273279666900634,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.06510080099105835,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13056639432907105,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06486719846725464,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38554720878601073,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06477439999580384,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38513119220733644,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041919469833374,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3857232093811035,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034080266952514,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.06471999883651733,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303439974784851,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06487360000610351,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3854032039642334,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481279730796814,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3856368064880371,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044480085372925,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3852799892425537,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042240142822265,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.06478880047798156,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303887963294983,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06470879912376404,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3853503942489624,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648863971233368,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3854032039642334,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304527997970581,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3857903957366943,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046239614486693,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648751974105835,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13030400276184081,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06478080153465271,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3855887889862061,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0648256003856659,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3856224060058594,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303647994995117,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3856287956237793,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303984045982361,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472319960594178,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13043359518051148,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483839750289917,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38529119491577146,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481760144233703,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38575038909912107,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038719892501832,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38570239543914797,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044960498809816,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.06485440135002137,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031200170516968,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473439931869507,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38575520515441897,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06482399702072143,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38537280559539794,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303007960319519,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38573598861694336,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303104043006897,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484159827232361,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304095983505249,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.0647055983543396,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38548479080200193,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481119990348816,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3857343912124634,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041759729385377,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3852704048156738,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475840210914612,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037919998168945,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.0646016001701355,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3854640007019043,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06488959789276123,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38536479473114016,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303536057472229,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3856384038925171,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302880048751831,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.06469759941101075,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13043680191040039,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472960114479065,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38541760444641116,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06492959856986999,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3851759910583496,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.13028639554977417,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3857343912124634,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034720420837403,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.0646943986415863,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303455948829651,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06465439796447754,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.385752010345459,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474720239639283,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3852751970291138,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303936004638672,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3991424083709717,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303663969039917,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473439931869507,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029439449310304,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06470080018043518,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38543360233306884,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06483039855957032,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38522241115570066,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.130348801612854,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38582720756530764,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13036160469055175,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.06489760279655457,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13023840188980101,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06479679942131042,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3856512069702148,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06490240097045899,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3853264093399048,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046879768371583,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.3852576017379761,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042080402374268,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.06489760279655457,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032480478286743,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.06467040181159973,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.38589599132537844,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.1290247039794922,
+        "P16": 0.06351865768432617,
+        "T4x4": 0.38424288940429685
+      },
+      "synthetic": false
+    },
+    {
+      "active_tiles": 72029,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "P16": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        },
+        "T4x4": {
+          "counts": [
+            59859,
+            42123,
+            97
+          ],
+          "logical_state_sha256": "4dc991cc5645a258abe16ce2d9c02f1f38f34e3863503fbfb9be43fa89d68179"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.0795553820207715,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.08857456718821585,
+      "name": "real_pca1",
+      "occupancy_histogram": [
+        0,
+        51224,
+        14389,
+        4385,
+        1426,
+        448,
+        129,
+        21,
+        6,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 9.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "oracle_true_count": 42174,
+      "padded_pairs": 1152464,
+      "padding_amplification": 11.289922510996385,
+      "queue_and_row_copy_host_seconds": 0.08345578299486078,
+      "row_permutation_sha256": "93709e5c919b0e9554aaae5661d63de7d13d9a2140900ce3973ee2148864632c",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.13484159708023072,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06692479848861695,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.47543678283691404,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06688960194587708,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4751728057861328,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.13055520057678222,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620944023132324,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040319681167603,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.06469600200653076,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029119968414307,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06467999815940857,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620975971221924,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06496319770812989,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46204161643981934,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035520315170288,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620255947113037,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13043520450592042,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.06478080153465271,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303455948829651,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06466240286827088,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620031833648682,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06484159827232361,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619904041290283,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037120103836058,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620384216308594,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304543972015381,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.0646943986415863,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029439449310304,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06471199989318847,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619935989379883,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473119854927063,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620031833648682,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038719892501832,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620528221130371,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038560152053832,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.06468160152435302,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035199642181397,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06464800238609314,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620512008666992,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475359797477723,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619935989379883,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.13047679662704467,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619296073913574,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042399883270264,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474080085754394,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040800094604493,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06467999815940857,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620368003845215,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06481599807739258,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46199841499328614,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041599988937377,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46201281547546386,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.06471199989318847,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033119440078736,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06462879776954651,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46208958625793456,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06477760076522827,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46198720932006837,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.130457603931427,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46204161643981934,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303647994995117,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472640037536621,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032640218734742,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06472640037536621,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619999885559082,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06482080221176148,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620800018310547,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037120103836058,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620192050933838,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13050240278244019,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473119854927063,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032159805297852,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06458399891853332,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46201438903808595,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06474080085754394,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619999885559082,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037120103836058,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46201281547546386,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035839796066284,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.0646992027759552,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034080266952514,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.0647376000881195,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46210718154907227,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.064792001247406,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619904041290283,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.13051199913024902,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46204319000244143,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13063839673995972,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.06480640172958374,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13036320209503174,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06463040113449096,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620512008666992,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06471679806709289,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.47298398017883303,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.13093600273132325,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46222238540649413,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.1305567979812622,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.0649616003036499,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042399883270264,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06477119922637939,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46215357780456545,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06491680145263672,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46198558807373047,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.13047679662704467,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46203999519348143,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046239614486693,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.06479359865188598,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033599853515626,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06473919749259949,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620672225952148,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06476160287857055,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.46207680702209475,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038560152053832,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4619887828826904,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.06479520201683045,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032959699630736,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.06475840210914612,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4620368003845215,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.1290223388671875,
+        "P16": 0.06350867080688477,
+        "T4x4": 0.46063909912109374
+      },
+      "synthetic": false
+    },
+    {
+      "active_tiles": 6500,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "P16": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "T4x4": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "P16": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "T4x4": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.0,
+      "logical_ids_sha256": "9c3c072a1118ba6d3a8b4c01780e1260b2a6a201e1f9f723e733d383472d4a39",
+      "mean_tile_occupancy_fraction": 0.9815288461538462,
+      "name": "synthetic_clustered",
+      "occupancy_histogram": [
+        0,
+        0,
+        1,
+        0,
+        103,
+        0,
+        0,
+        0,
+        2,
+        1,
+        104,
+        0,
+        6,
+        0,
+        0,
+        0,
+        6283
+      ],
+      "occupancy_quantiles": {
+        "max": 16.0,
+        "min": 2.0,
+        "p50": 16.0,
+        "p90": 16.0
+      },
+      "oracle_true_count": 2138,
+      "padded_pairs": 104000,
+      "padding_amplification": 1.0188187580207486,
+      "queue_and_row_copy_host_seconds": 0.016269931016722694,
+      "row_permutation_sha256": "b83e23eb1db808bf694ae4894d62b50c9840bcd869ba7ac2456f40ddf0530bf3",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.1347599983215332,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06277920007705688,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04855040013790131,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06270880103111268,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04848319888114929,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.13436959981918334,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.048260799050331114,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13439840078353882,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.061617600917816165,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13433439731597902,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.0622655987739563,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.048235198855400084,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.061654400825500486,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04816800057888031,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13458559513092042,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04826880097389221,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13441120386123656,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.061686402559280394,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.1343600034713745,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.061380797624588014,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.048240000009536745,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.061771202087402347,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.048179200291633605,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.13415039777755738,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.048049598932266235,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13025120496749878,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.05967040061950683,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13027520179748536,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.05958880186080932,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04629440009593964,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.059785598516464235,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046312001347541806,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.13028639554977417,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04624800086021423,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13036160469055175,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.05920000076293945,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031200170516968,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.06001120209693909,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046275201439857486,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0599727988243103,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04638879895210266,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.13042080402374268,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04629440009593964,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033440113067626,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.05979679822921753,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038719892501832,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06016319990158081,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046356800198554995,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.05968639850616455,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04641759991645813,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13048959970474244,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046305599808692935,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038239479064942,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.0592848002910614,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032480478286743,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06034240126609802,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04639520049095154,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.05968480110168457,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046312001347541806,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046326398849487305,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041919469833374,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.05921440124511719,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13033759593963623,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.05945919752120972,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04630880057811737,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.060171198844909665,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04625920057296753,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.130404794216156,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046331200003623965,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035039901733397,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.05974239706993103,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034240007400513,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06035360097885132,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04631519913673401,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.05932160019874573,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046342399716377256,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303056001663208,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04629440009593964,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303760051727295,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.059331202507019044,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035199642181397,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.05997920036315918,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04631359875202179,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06002399921417236,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046372801065444946,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.1305199980735779,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04632000029087067,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303647994995117,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.059652799367904664,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038400411605836,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.059920001029968264,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046296000480651855,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06010720133781433,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04636319875717163,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303328037261963,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04636479914188385,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034080266952514,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.05967680215835571,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13029119968414307,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.05956320166587829,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046291199326515195,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.05915840268135071,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046312001347541806,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032959699630736,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04635039865970612,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031840324401855,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.059961599111557004,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.1302575945854187,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.05999839901924133,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04634079933166504,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06050879955291748,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046331200003623965,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303920030593872,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.046260800957679746,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303104043006897,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.05915679931640625,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032959699630736,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.059552001953125,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.04625760018825531,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.12902278137207032,
+        "P16": 0.05840326309204102,
+        "T4x4": 0.045096958160400394
+      },
+      "synthetic": true
+    },
+    {
+      "active_tiles": 75477,
+      "correctness_after": {
+        "P1": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "P16": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "T4x4": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        }
+      },
+      "correctness_before": {
+        "P1": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "P16": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        },
+        "T4x4": {
+          "counts": [
+            99941,
+            2138,
+            0
+          ],
+          "logical_state_sha256": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+        }
+      },
+      "correctness_pass": true,
+      "count": 102079,
+      "layout_host_seconds": 0.006668698013527319,
+      "logical_ids_sha256": "9c3c072a1118ba6d3a8b4c01780e1260b2a6a201e1f9f723e733d383472d4a39",
+      "mean_tile_occupancy_fraction": 0.08452823376657789,
+      "name": "synthetic_scattered",
+      "occupancy_histogram": [
+        0,
+        54160,
+        18234,
+        1346,
+        1503,
+        20,
+        208,
+        0,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 9.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "oracle_true_count": 2138,
+      "padded_pairs": 1207632,
+      "padding_amplification": 11.830366676789545,
+      "queue_and_row_copy_host_seconds": 0.0355095179984346,
+      "row_permutation_sha256": "d4e90b0ba4e4f7293dae4078774ea011005691ea35a034842150cd6405a05f28",
+      "samples": [
+        {
+          "method": "P1",
+          "ms": 0.13487199544906617,
+          "position": 0,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.0649936020374298,
+          "position": 1,
+          "round": 0
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.49540162086486816,
+          "position": 2,
+          "round": 0
+        },
+        {
+          "method": "P16",
+          "ms": 0.06500319838523864,
+          "position": 0,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.49524478912353515,
+          "position": 1,
+          "round": 1
+        },
+        {
+          "method": "P1",
+          "ms": 0.13456000089645387,
+          "position": 2,
+          "round": 1
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4872591972351074,
+          "position": 0,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304095983505249,
+          "position": 1,
+          "round": 2
+        },
+        {
+          "method": "P16",
+          "ms": 0.062745600938797,
+          "position": 2,
+          "round": 2
+        },
+        {
+          "method": "P1",
+          "ms": 0.13038239479064942,
+          "position": 0,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06300960183143615,
+          "position": 1,
+          "round": 3
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48095197677612306,
+          "position": 2,
+          "round": 3
+        },
+        {
+          "method": "P16",
+          "ms": 0.06289759874343873,
+          "position": 0,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48076481819152833,
+          "position": 1,
+          "round": 4
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046720027923583,
+          "position": 2,
+          "round": 4
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4809904098510742,
+          "position": 0,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304095983505249,
+          "position": 1,
+          "round": 5
+        },
+        {
+          "method": "P16",
+          "ms": 0.06268640160560608,
+          "position": 2,
+          "round": 5
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031200170516968,
+          "position": 0,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.06280959844589233,
+          "position": 1,
+          "round": 6
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4808032035827637,
+          "position": 2,
+          "round": 6
+        },
+        {
+          "method": "P16",
+          "ms": 0.062881600856781,
+          "position": 0,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4809760093688965,
+          "position": 1,
+          "round": 7
+        },
+        {
+          "method": "P1",
+          "ms": 0.130404794216156,
+          "position": 2,
+          "round": 7
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4813231945037842,
+          "position": 0,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035839796066284,
+          "position": 1,
+          "round": 8
+        },
+        {
+          "method": "P16",
+          "ms": 0.06278079748153687,
+          "position": 2,
+          "round": 8
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044480085372925,
+          "position": 0,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.0628271996974945,
+          "position": 1,
+          "round": 9
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4813248157501221,
+          "position": 2,
+          "round": 9
+        },
+        {
+          "method": "P16",
+          "ms": 0.06287840008735657,
+          "position": 0,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48128318786621094,
+          "position": 1,
+          "round": 10
+        },
+        {
+          "method": "P1",
+          "ms": 0.13040159940719603,
+          "position": 2,
+          "round": 10
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48126559257507323,
+          "position": 0,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304304003715515,
+          "position": 1,
+          "round": 11
+        },
+        {
+          "method": "P16",
+          "ms": 0.06277279853820801,
+          "position": 2,
+          "round": 11
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303056001663208,
+          "position": 0,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0627232015132904,
+          "position": 1,
+          "round": 12
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4817296028137207,
+          "position": 2,
+          "round": 12
+        },
+        {
+          "method": "P16",
+          "ms": 0.0627615988254547,
+          "position": 0,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4813712120056152,
+          "position": 1,
+          "round": 13
+        },
+        {
+          "method": "P1",
+          "ms": 0.13124159574508668,
+          "position": 2,
+          "round": 13
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48172798156738283,
+          "position": 0,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13055039644241334,
+          "position": 1,
+          "round": 14
+        },
+        {
+          "method": "P16",
+          "ms": 0.0627951979637146,
+          "position": 2,
+          "round": 14
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044159412384032,
+          "position": 0,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06290240287780761,
+          "position": 1,
+          "round": 15
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48138880729675293,
+          "position": 2,
+          "round": 15
+        },
+        {
+          "method": "P16",
+          "ms": 0.06284160017967225,
+          "position": 0,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4811232089996338,
+          "position": 1,
+          "round": 16
+        },
+        {
+          "method": "P1",
+          "ms": 0.13045120239257812,
+          "position": 2,
+          "round": 16
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48129119873046877,
+          "position": 0,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13043359518051148,
+          "position": 1,
+          "round": 17
+        },
+        {
+          "method": "P16",
+          "ms": 0.06282879710197449,
+          "position": 2,
+          "round": 17
+        },
+        {
+          "method": "P1",
+          "ms": 0.13034080266952514,
+          "position": 0,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06273919939994813,
+          "position": 1,
+          "round": 18
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48082399368286133,
+          "position": 2,
+          "round": 18
+        },
+        {
+          "method": "P16",
+          "ms": 0.06294879913330079,
+          "position": 0,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4811088085174561,
+          "position": 1,
+          "round": 19
+        },
+        {
+          "method": "P1",
+          "ms": 0.13036320209503174,
+          "position": 2,
+          "round": 19
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4812880039215088,
+          "position": 0,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.1305184006690979,
+          "position": 1,
+          "round": 20
+        },
+        {
+          "method": "P16",
+          "ms": 0.06277120113372803,
+          "position": 2,
+          "round": 20
+        },
+        {
+          "method": "P1",
+          "ms": 0.13025920391082763,
+          "position": 0,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06275839805603027,
+          "position": 1,
+          "round": 21
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4813488006591797,
+          "position": 2,
+          "round": 21
+        },
+        {
+          "method": "P16",
+          "ms": 0.06293439865112305,
+          "position": 0,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48134398460388184,
+          "position": 1,
+          "round": 22
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304255962371826,
+          "position": 2,
+          "round": 22
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48152642250061034,
+          "position": 0,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.13044320344924926,
+          "position": 1,
+          "round": 23
+        },
+        {
+          "method": "P16",
+          "ms": 0.0628719985485077,
+          "position": 2,
+          "round": 23
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303760051727295,
+          "position": 0,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06263999938964844,
+          "position": 1,
+          "round": 24
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.481382417678833,
+          "position": 2,
+          "round": 24
+        },
+        {
+          "method": "P16",
+          "ms": 0.06284000277519226,
+          "position": 0,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48153119087219237,
+          "position": 1,
+          "round": 25
+        },
+        {
+          "method": "P1",
+          "ms": 0.1304128050804138,
+          "position": 2,
+          "round": 25
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4812623977661133,
+          "position": 0,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303439974784851,
+          "position": 1,
+          "round": 26
+        },
+        {
+          "method": "P16",
+          "ms": 0.06275680065155029,
+          "position": 2,
+          "round": 26
+        },
+        {
+          "method": "P1",
+          "ms": 0.13031840324401855,
+          "position": 0,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.0627776026725769,
+          "position": 1,
+          "round": 27
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48133602142333987,
+          "position": 2,
+          "round": 27
+        },
+        {
+          "method": "P16",
+          "ms": 0.06283040046691894,
+          "position": 0,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48134398460388184,
+          "position": 1,
+          "round": 28
+        },
+        {
+          "method": "P1",
+          "ms": 0.13046720027923583,
+          "position": 2,
+          "round": 28
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4812464237213135,
+          "position": 0,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041759729385377,
+          "position": 1,
+          "round": 29
+        },
+        {
+          "method": "P16",
+          "ms": 0.06279680132865906,
+          "position": 2,
+          "round": 29
+        },
+        {
+          "method": "P1",
+          "ms": 0.13035839796066284,
+          "position": 0,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06275359988212585,
+          "position": 1,
+          "round": 30
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48139681816101076,
+          "position": 2,
+          "round": 30
+        },
+        {
+          "method": "P16",
+          "ms": 0.06282240152359009,
+          "position": 0,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4814720153808594,
+          "position": 1,
+          "round": 31
+        },
+        {
+          "method": "P1",
+          "ms": 0.13051680326461793,
+          "position": 2,
+          "round": 31
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4814000129699707,
+          "position": 0,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13043839931488038,
+          "position": 1,
+          "round": 32
+        },
+        {
+          "method": "P16",
+          "ms": 0.06271520256996155,
+          "position": 2,
+          "round": 32
+        },
+        {
+          "method": "P1",
+          "ms": 0.13039519786834716,
+          "position": 0,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06286720037460328,
+          "position": 1,
+          "round": 33
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4815216064453125,
+          "position": 2,
+          "round": 33
+        },
+        {
+          "method": "P16",
+          "ms": 0.06284480094909668,
+          "position": 0,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48170719146728513,
+          "position": 1,
+          "round": 34
+        },
+        {
+          "method": "P1",
+          "ms": 0.13049440383911132,
+          "position": 2,
+          "round": 34
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4812448024749756,
+          "position": 0,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13037439584732055,
+          "position": 1,
+          "round": 35
+        },
+        {
+          "method": "P16",
+          "ms": 0.06276640295982361,
+          "position": 2,
+          "round": 35
+        },
+        {
+          "method": "P1",
+          "ms": 0.13032000064849852,
+          "position": 0,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06279360055923462,
+          "position": 1,
+          "round": 36
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.4815663814544678,
+          "position": 2,
+          "round": 36
+        },
+        {
+          "method": "P16",
+          "ms": 0.06284480094909668,
+          "position": 0,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48143839836120605,
+          "position": 1,
+          "round": 37
+        },
+        {
+          "method": "P1",
+          "ms": 0.13041599988937377,
+          "position": 2,
+          "round": 37
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48165597915649416,
+          "position": 0,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.13057440519332886,
+          "position": 1,
+          "round": 38
+        },
+        {
+          "method": "P16",
+          "ms": 0.06281599998474122,
+          "position": 2,
+          "round": 38
+        },
+        {
+          "method": "P1",
+          "ms": 0.1303231954574585,
+          "position": 0,
+          "round": 39
+        },
+        {
+          "method": "P16",
+          "ms": 0.06272799968719482,
+          "position": 1,
+          "round": 39
+        },
+        {
+          "method": "T4x4",
+          "ms": 0.48139362335205077,
+          "position": 2,
+          "round": 39
+        }
+      ],
+      "sustained_ms_per_call": {
+        "P1": 0.12913990783691406,
+        "P16": 0.061515262603759766,
+        "T4x4": 0.48009490966796875
+      },
+      "synthetic": true
+    }
+  ],
+  "compiled": {
+    "P1": {
+      "cubin_sha256": "c1e207ca53192ebe2a1e503fba6cbd97146071574207d8b3247251ff741a01c7",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "c9e6980e753247fe6381f1c5b7174c830e2db52080697d1fd2d8bcbc2093b9e6",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 16,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 34,
+      "n_spills": 0,
+      "ptx_sha256": "ae14c9fb75a63f6ee9186d386b24dc19cf4a4567b0d1f9e49d071cd80bbe4425"
+    },
+    "P16": {
+      "cubin_sha256": "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "ddffa238f4865342c2592d299e023b8c7a21e31075ada29f93a34d4d368c1cf4",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 137,
+      "n_spills": 0,
+      "ptx_sha256": "a7ef9a60f011ae1261163db6818d33e0cb4bd31b827ed59ffca35bf04824f99c"
+    },
+    "T4x4": {
+      "cubin_sha256": "41746e020cbd2845af65ab809ce4692a2b5289dc9358570b971f28fb33ec8395",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "34c98b11bef55cc6f4b1b1f0af77d78244df6c3d77618d9caf87bee4282b7a09",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "tile_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 2048,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 96,
+      "n_spills": 0,
+      "ptx_sha256": "66a72636f738a84ecd2c7445fab81d87b2d3c3f92f6867cc827ebc986fea5909"
+    }
+  },
+  "correctness_pass": true,
+  "cuda_runtime": "13.0",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "experiment_id": "tensorjoin_20260904_g8_refinement_layout_g2a4096",
+  "host": "gpu-host-8",
+  "kernel_source_sha256": "a75cfd7b3269a0fa070d110cb25bd6fda0aff43c1747a248074163e00acc4d36",
+  "label": "g8_timing_p0_a0",
+  "mode": "timing",
+  "numpy": "2.3.1",
+  "pid": 1016394,
+  "protocol_sha256": "336e62583c9a76eecfceb1bd3e7f08e1cbfcf7caa7ac6c002597d5d18538a4dd",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "reverse": false,
+  "runner_sha256": "2fda83d0950bdfd278b278ce577440a5acb1271ef7bd578d8267e19af7bdb7ca",
+  "scope": "resident GPU three-way FP32 refinement only; no FP64 repair or planning",
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0"
+}

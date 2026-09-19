@@ -1,0 +1,137 @@
+{
+  "frozen": {
+    "g16_gpu_preparation_20260905/ADDENDUM_FAIR_GPU_NORMS.md": "fdf3a6a9f54f8591965c46ef644f156ae71a91eea46f01617d34e77dab250b2d",
+    "g16_gpu_preparation_20260905/PROTOCOL.md": "6dc0503e7fcf50032de7fee1c54f7add72648230fbc2cdb848d01ec6791e17d6",
+    "g16_gpu_preparation_20260905/src/fp32_gpu_norm_operator.py": "978f1bc77b45e3e2805cddda25ddb5a5849ce6c76b0ffb3bc23fc602a9e16374",
+    "g16_gpu_preparation_20260905/src/gpu_norms.py": "4c552661f0dad52b65ac57ab34cb172d3c13e28c5560a0ac5562cf93602e9485",
+    "g16_gpu_preparation_20260905/src/gpu_preparation.py": "08cdf46b3a1478fa0c6a70c811dd2c315eb4735836f87a3f7705e407874279cc",
+    "g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py": "278183c8013f4d635b6ddeecdeac2250d8320fb125b5bf5f7ead31191f1ab233",
+    "g16_gpu_preparation_20260905/src/run_gpu_prepared_g5.py": "878a772b09a0df2eb9239b1a59c5e83dd37c718783c1209632363f78dfd6c01b",
+    "g16_gpu_preparation_20260905/src/validate_metadata.py": "bad840a0888f849c2546a96df411ccc190d21d174f37d4c7de02c1c312cd63d2",
+    "g16_gpu_preparation_20260905/src/validate_norms.py": "b913b7a887cb26e149a1c5eaa2d650889a789fe17355e0916d91509524d7835c"
+  },
+  "jobs": [
+    [
+      "nsys_tc_a0",
+      "gpu_prepare_compatibility_nsys_a0.json",
+      [
+        "nsys",
+        "profile",
+        "--trace=cuda,nvtx",
+        "--sample=none",
+        "--cpuctxsw=none",
+        "--force-overwrite=false",
+        "-o",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/artifacts/nsys_tc_a0",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_gpu_prepared_g5.py",
+        "--phase",
+        "compatibility",
+        "--record-id",
+        "nsys_a0"
+      ]
+    ],
+    [
+      "nsys_public_a0",
+      "fp32_gpu_compatibility_nsys_a0.json",
+      [
+        "nsys",
+        "profile",
+        "--trace=cuda,nvtx",
+        "--sample=none",
+        "--cpuctxsw=none",
+        "--force-overwrite=false",
+        "-o",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/artifacts/nsys_public_a0",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+        "--phase",
+        "compatibility",
+        "--record-id",
+        "nsys_a0"
+      ]
+    ],
+    [
+      "ncu_shape0_a0",
+      "fp32_gpu_trace_ncu_shape0_a0.json",
+      [
+        "ncu",
+        "--nvtx",
+        "--nvtx-include",
+        "G15_PEDANTIC_4096_4096_512/",
+        "--section",
+        "LaunchStats",
+        "--section",
+        "SourceCounters",
+        "--export",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/artifacts/ncu_shape0_a0",
+        "--page",
+        "raw",
+        "--csv",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+        "--phase",
+        "trace",
+        "--record-id",
+        "ncu_shape0_a0",
+        "--shape-index",
+        "0"
+      ]
+    ],
+    [
+      "ncu_shape1_a0",
+      "fp32_gpu_trace_ncu_shape1_a0.json",
+      [
+        "ncu",
+        "--nvtx",
+        "--nvtx-include",
+        "G15_PEDANTIC_4096_2656_512/",
+        "--section",
+        "LaunchStats",
+        "--section",
+        "SourceCounters",
+        "--export",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/artifacts/ncu_shape1_a0",
+        "--page",
+        "raw",
+        "--csv",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+        "--phase",
+        "trace",
+        "--record-id",
+        "ncu_shape1_a0",
+        "--shape-index",
+        "1"
+      ]
+    ],
+    [
+      "ncu_shape2_a0",
+      "fp32_gpu_trace_ncu_shape2_a0.json",
+      [
+        "ncu",
+        "--nvtx",
+        "--nvtx-include",
+        "G15_PEDANTIC_2656_2656_512/",
+        "--section",
+        "LaunchStats",
+        "--section",
+        "SourceCounters",
+        "--export",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/artifacts/ncu_shape2_a0",
+        "--page",
+        "raw",
+        "--csv",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+        "--phase",
+        "trace",
+        "--record-id",
+        "ncu_shape2_a0",
+        "--shape-index",
+        "2"
+      ]
+    ]
+  ],
+  "pid": 1661346
+}

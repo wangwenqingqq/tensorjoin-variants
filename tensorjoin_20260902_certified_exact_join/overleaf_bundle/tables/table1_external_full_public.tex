@@ -1,0 +1,24 @@
+\begin{table*}[t]
+  \centering
+  \caption{Full public-denominator comparison on CIFAR-GIST-512, 60K
+  self-join.  The denominator runs from pageable-host FP32 input through sorted
+  canonical host IDs.  Exact methods return 3,926,078 directed pairs.}
+  \label{tab:external}
+  \small
+  \begin{tabular}{llrrrrl}
+    \toprule
+    Method & Contract & p10 (s) & Median (s) & p90 (s) & Exact & Relative result \\
+    \midrule
+    \system & certified mixed precision & 0.924 & 0.926 & 0.929 & yes & $1.000\times$ \\
+    MiSTIC & FP64 & 4.632 & 4.732 & 4.771 & yes & $5.083\times$ slower \\
+    GDS-Join & FP64 & 10.821 & 10.928 & 10.990 & yes & $11.783\times$ slower \\
+    FaSTED & FP16 input/FP32 accumulate & 0.200 & 0.229 & 0.231 & no & 598 FN; 1,130 FP \\
+    \bottomrule
+  \end{tabular}
+  \vspace{2pt}
+
+  \footnotesize MiSTIC 95\% paired-speedup CI:
+  $[5.030\times,5.133\times]$; GDS-Join:
+  $[11.716\times,11.846\times]$.  FaSTED is approximate context, not an
+  exact comparator.
+\end{table*}

@@ -1,0 +1,123 @@
+{
+  "seed": 17052026,
+  "source_npy_sha256": "e6a720399067e9753bc6f45ff6f67b73a3861964255e85e1ed9a1ce7906df462",
+  "inputs": [
+    {
+      "name": "real31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/real31.f32",
+      "source_sha256": "31f9d2814044309d863b53822db50268a2d5be1e02d36fc4832f33df876ca29b",
+      "epsilon": 0.62890625,
+      "reference_threshold": 0.3955230712890625,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/pairs.u64",
+      "g19_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+      "g19_oracle_count": 31
+    },
+    {
+      "name": "signed31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/signed31.f32",
+      "source_sha256": "54122a84428999c9bbb6637570dd437232c2b64d9300b5f3776ec9dfb86aafb4",
+      "epsilon": 0.62890625,
+      "reference_threshold": 0.3955230712890625,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/pairs.u64",
+      "g19_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+      "g19_oracle_count": 31
+    },
+    {
+      "name": "shuffled_onehot31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/shuffled_onehot31.f32",
+      "source_sha256": "4ad888a62d430c06d0c4ab9fef690fc9ccc4b1d6e651c5a909576534cf7dc37d",
+      "epsilon": 1.0,
+      "reference_threshold": 1.0,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_shuffled_onehot31_g3_a2/pairs.u64",
+      "g19_oracle_sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+      "g19_oracle_count": 97
+    },
+    {
+      "name": "zeros31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/zeros31.f32",
+      "source_sha256": "921b4c5cb9b967f9aad5ceafcd333c84c715f5f5d25a3dfb86ab01db88485e78",
+      "epsilon": 0.000244140625,
+      "reference_threshold": 5.960464477539063e-08,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_zeros31_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+      "g19_oracle_count": 961
+    },
+    {
+      "name": "boundary31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/boundary31.f32",
+      "source_sha256": "a07dd926ddcdac801f49703d531322c1314899e73c3aa9fbab78038a6f58e43a",
+      "epsilon": 1.0,
+      "reference_threshold": 1.0,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_boundary31_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+      "g19_oracle_count": 43
+    },
+    {
+      "name": "cancellation31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/cancellation31.f32",
+      "source_sha256": "429eae3586f5f93e65578d86f5c0dc20701672da0a9885dd21ab7ec8801c8ee2",
+      "epsilon": 0.03125,
+      "reference_threshold": 0.0009765625,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_cancellation31_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+      "g19_oracle_count": 961
+    },
+    {
+      "name": "subnormal31",
+      "n": 31,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/subnormal31.f32",
+      "source_sha256": "bd3dc592b579757372d48fec6d6c58423e31ecdd5baf692f1870483b0553563e",
+      "epsilon": 0.000244140625,
+      "reference_threshold": 5.960464477539063e-08,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_subnormal31_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+      "g19_oracle_count": 961
+    },
+    {
+      "name": "cifar4096",
+      "n": 4096,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/cifar4096.f32",
+      "source_sha256": "a5f7a96f26f63682319525046fdad1e4f7a03fced211557f4559a158bc72d24d",
+      "epsilon": 0.7541135250198396,
+      "reference_threshold": 0.5686872086178483,
+      "oracle_path": "data/g2a_cifar4096/oracle_pairs_u64.npy",
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_cifar4096_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+      "g19_oracle_count": 262144
+    },
+    {
+      "name": "boundary_zero32",
+      "n": 32,
+      "d": 512,
+      "path": "g17_rthiss_pair_contract_20260905/data/boundary_zero32.f32",
+      "source_sha256": "88d045cf7a6162d2c8659fffa34e61ee5f0916334a72eb3b751e98079ac7b6f5",
+      "epsilon": 1.0,
+      "reference_threshold": 1.0,
+      "oracle_path": null,
+      "g19_oracle_path": "g18_rthiss_conservative_repair_20260905/raw/correct_boundary_zero32_g3_a3/pairs.u64",
+      "g19_oracle_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+      "g19_oracle_count": 104
+    }
+  ]
+}

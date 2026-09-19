@@ -1,0 +1,43 @@
+{
+  "admitted": true,
+  "artifacts": {
+    "log": {
+      "path": "raw/g9_graph_check_a0.log",
+      "sha256": "6c540ee5ab5435817028ecca3ce934ae178af3e808ddc0fc8c2af7eec93ed8b5"
+    },
+    "occupancy": {
+      "path": "raw/g9_graph_check_a0_occupancy.jsonl",
+      "sha256": "b1652ba83f0c663b90313ebc648a233335eef69e3dfaec44af87a55adc65a470"
+    },
+    "preflight": {
+      "path": "raw/g9_graph_check_a0_preflight.log",
+      "sha256": "b4a9d6a123ec769993f656c982306883bf4920e672c3c82ecb79298886d84e45"
+    },
+    "result": {
+      "path": "results/g9_graph_check_a0.json",
+      "sha256": "7deeaae863268e9dc7cff7bbd8854fabf615db678bf28e88302f3ebbfe732067"
+    }
+  },
+  "child_pid": 1097679,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_graph_diagnostic.py",
+    "--label",
+    "g9_graph_check_a0",
+    "--mode",
+    "check"
+  ],
+  "end_unix": 1788520137.7912436,
+  "foreign_rows": [],
+  "gpu_uuid": "GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603",
+  "label": "g9_graph_check_a0",
+  "launched": true,
+  "own_pids": [
+    1097679
+  ],
+  "postflight_compute_rows": [],
+  "returncode": 0,
+  "runner_sha256": "8d0ae163e6681193b2fe10171a6870c8327b604babc7b9fa8b763598f6e935b6",
+  "start_unix": 1788520116.8459523,
+  "status": "clean_component_slot"
+}

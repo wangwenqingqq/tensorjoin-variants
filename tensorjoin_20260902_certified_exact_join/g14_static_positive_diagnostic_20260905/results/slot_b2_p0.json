@@ -1,0 +1,50 @@
+{
+  "admitted": true,
+  "binary_identity_pass": true,
+  "block": 2,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g14_b2_p0_node0_a0_g5",
+    "--expected-result",
+    "g14_static_positive_diagnostic_20260905/results/g5_g14_b2_p0_node0_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "numactl",
+    "--cpunodebind=0",
+    "--membind=0",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g14_static_positive_diagnostic_20260905/src/run_g5_diagnostic.py",
+    "--record-id",
+    "g14_b2_p0_node0_a0",
+    "--phase",
+    "screen"
+  ],
+  "exact_contract_pass": true,
+  "guard_admitted": true,
+  "guard_path": "results/g5_guard_g14_b2_p0_node0_a0_g5.json",
+  "guard_sha256": "8a5e74eb61bff8325ed25b39551b621c8777cc9a137b0bf4ef4d5f1356c9f52d",
+  "loadavg_after": [
+    1.47705078125,
+    5.19287109375,
+    6.51025390625
+  ],
+  "loadavg_before": [
+    1.6669921875,
+    5.7451171875,
+    6.73828125
+  ],
+  "method": "g5",
+  "phase_closure_abs_seconds": 0.0,
+  "phase_closure_pass": true,
+  "placement": "node0",
+  "position": 0,
+  "public_seconds": 0.9114899109990802,
+  "record_id": "g14_b2_p0_node0_a0",
+  "result_path": "g14_static_positive_diagnostic_20260905/results/g5_g14_b2_p0_node0_a0.json",
+  "result_sha256": "2206c91991bdc3ab9e78b005c8dc1d0ede348f21046018f385adb27ba571e084",
+  "returncode": 0,
+  "started_unix": 1788577672.0103652
+}

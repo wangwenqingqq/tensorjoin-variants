@@ -1,0 +1,36 @@
+{
+  "stage": "runtime_smoke_only",
+  "status": "unvalidated",
+  "exactness": "not_tested",
+  "started_utc": "2026-09-04T07:14:53.182475+00:00",
+  "upstream_commit": "a42fc69cc4b602dc83071b029d185a41e69a04bd",
+  "owl_commit": "c7c3a3ea35b17b5c096a3802ba74b9d8b4e2772a",
+  "n": 1000,
+  "d": 2,
+  "epsilon_text": "0.01",
+  "command": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/rthiss_g7_a0/build_sample_sm120_a1/RT-HiSS",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/rthiss_g7_a0/sampleDataset/iono_57_1000.txt",
+    "0.01",
+    "highest"
+  ],
+  "cwd": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/g7_rthiss_smoke_a0",
+  "binary_sha256": "543229bbb6e3dbb174cb10d5dd81bc2388592c53938252d042ec7293d4f2e64b",
+  "sample_sha256": "5c3fa39b0ca0f46c37b7c095e498461b1898164b2f42f9d08af432e00374f49e",
+  "public_time_seconds": null,
+  "output_pair_ids_exported": false,
+  "explanation": "Count-only runtime smoke, not oracle equality or latency evidence.",
+  "libowl_sha256": "df75c1bf36524381a0b9869c03e3d82e0bff4e62362a64300c5ff0d4419b1ffa",
+  "gpu_before": {
+    "index": 1,
+    "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "memory_mib": 23386,
+    "utilization_percent": 0,
+    "compute_apps": [
+      "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 919685, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python"
+    ]
+  },
+  "error": "RuntimeError('GPU1 isolation preflight failed; no process touched')",
+  "finished_utc": "2026-09-04T07:14:53.353878+00:00"
+}

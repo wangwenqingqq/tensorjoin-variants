@@ -1,0 +1,214 @@
+{
+  "all_exact_outputs_pass": true,
+  "bootstrap_lower_bound_gate_1_50_vs_faster_keeper": true,
+  "clean_admitted_processes": 32,
+  "complete_eight_four_method_rounds": true,
+  "experiment_id": "tensorjoin_20260903_g2b_public_formal",
+  "fasted_context_only": {
+    "approximate_only_pairs": [
+      1130,
+      1130,
+      1130,
+      1130,
+      1130,
+      1130,
+      1130,
+      1130
+    ],
+    "exact_intersection_pairs": [
+      3925480,
+      3925480,
+      3925480,
+      3925480,
+      3925480,
+      3925480,
+      3925480,
+      3925480
+    ],
+    "exact_only_pairs": [
+      598,
+      598,
+      598,
+      598,
+      598,
+      598,
+      598,
+      598
+    ],
+    "f1": [
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681,
+      0.9997799479617681
+    ],
+    "pair_counts": [
+      3926610,
+      3926610,
+      3926610,
+      3926610,
+      3926610,
+      3926610,
+      3926610,
+      3926610
+    ],
+    "pair_hashes": [
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29",
+      "e3cecea9a02fc3ca2098ba09f53722ecf1a74e6af1093e51fe1996914924da29"
+    ],
+    "precision": [
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361,
+      0.9997122199556361
+    ],
+    "recall": [
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283,
+      0.9998476851453283
+    ]
+  },
+  "faster_exact_keeper_by_marginal_median": "mistic",
+  "formal_acceptance_pass": true,
+  "manifest_sha256": "d1d85dad54250989d24dbf0492e125e068df28f9a1bb85e1d4adbabcb7ee3a61",
+  "marginal_distributions_seconds": {
+    "fasted": {
+      "arithmetic_mean": 0.22115669437500002,
+      "geometric_mean": 0.22074267626735852,
+      "median": 0.22940992100000002,
+      "p10": 0.2000031815,
+      "p90": 0.2314095683
+    },
+    "gds": {
+      "arithmetic_mean": 10.916672434501379,
+      "geometric_mean": 10.91646566720948,
+      "median": 10.927797372998612,
+      "p10": 10.820869643201878,
+      "p90": 10.990203090903378
+    },
+    "mistic": {
+      "arithmetic_mean": 4.70920983725,
+      "geometric_mean": 4.708795957696026,
+      "median": 4.732176586,
+      "p10": 4.6318411237,
+      "p90": 4.7709328402999995
+    },
+    "tensorjoin": {
+      "arithmetic_mean": 0.9264300526247098,
+      "geometric_mean": 0.9264269576205477,
+      "median": 0.9261533720018633,
+      "p10": 0.9243690803967184,
+      "p90": 0.9288411420995544
+    }
+  },
+  "measurement_status": "formal_public_denominator",
+  "paired_tensorjoin_speedup_by_exact_keeper": {
+    "gds": {
+      "ci95_lower": 11.715760108935276,
+      "ci95_upper": 11.84616340539117,
+      "generator": "NumPy PCG64",
+      "paired_geometric_mean": 11.78340675151286,
+      "replicates": 100000,
+      "round_speedups": [
+        11.790125845745454,
+        11.611375902435615,
+        11.68213400173532,
+        11.836093238238705,
+        11.893583919780243,
+        11.792034498294711,
+        11.757435484209045,
+        11.907488788554735
+      ],
+      "seed": 20260903,
+      "tensorjoin_losses": 0,
+      "tensorjoin_wins": 8
+    },
+    "mistic": {
+      "ci95_lower": 5.030295455948034,
+      "ci95_upper": 5.1333238752986965,
+      "generator": "NumPy PCG64",
+      "paired_geometric_mean": 5.082749286344372,
+      "replicates": 100000,
+      "round_speedups": [
+        5.152209249122445,
+        4.97687342907965,
+        5.147568712548935,
+        4.983739799345503,
+        5.167502115644613,
+        5.075786301803218,
+        5.01980796259945,
+        5.142932302402074
+      ],
+      "seed": 20260903,
+      "tensorjoin_losses": 0,
+      "tensorjoin_wins": 8
+    }
+  },
+  "performance_claim_allowed_within_frozen_scope": true,
+  "protocol_sha256": "1f470cb29aa589975b8bde367e5afa086d60eff7e4495bbf5402e0d11c874896",
+  "runner_sha256": "d981e9149fcae87d835a19bb74f991a7a1386e363032c8c8fe0623ca435c7278",
+  "safety_gate_pass": true,
+  "safety_manifest_sha256": "ef3d99189cc6811c1bd22b516560858e8b22c41c0cad5572ccf1cd86b409e324",
+  "samples_seconds_by_round": {
+    "fasted": [
+      0.217382001,
+      0.231831263,
+      0.198053195,
+      0.231228842,
+      0.229588095,
+      0.229231747,
+      0.20083889,
+      0.231099522
+    ],
+    "gds": [
+      10.918270504000247,
+      10.8209718490034,
+      10.820631162998325,
+      10.965725542002474,
+      10.980557988004875,
+      10.937324241996976,
+      10.87718985700485,
+      11.012708330999885
+    ],
+    "mistic": [
+      4.771214066,
+      4.63809007,
+      4.767959554,
+      4.617260249,
+      4.770812315,
+      4.707883154,
+      4.643989272,
+      4.756470018
+    ],
+    "tensorjoin": [
+      0.9260520750030992,
+      0.9319284759985749,
+      0.9262546690006275,
+      0.9264649510005256,
+      0.9232337419962278,
+      0.9275179989999742,
+      0.9251328550017206,
+      0.9248556539969286
+    ]
+  },
+  "scope": "CIFAR-10-GIST 60000x512, epsilon 0.62890625, gpu-host-8 physical GPU0",
+  "seven_of_eight_win_gate_both_exact_keepers": true
+}

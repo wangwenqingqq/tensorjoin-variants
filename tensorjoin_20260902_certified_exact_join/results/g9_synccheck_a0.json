@@ -1,0 +1,2843 @@
+{
+  "canonical_final_state_hashes": {
+    "real": "34bf78842a2c75e22fa03cf07cc96a8b9773bfab6889bcafc059530662f87c4a",
+    "synthetic": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+  },
+  "cases": [
+    {
+      "correctness_pass": true,
+      "count": 2079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": -127,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 67108864,
+        "max_residual_norm": 0.0008324975934801885,
+        "q_max": 16316,
+        "scale_exponent_max": -13,
+        "scale_exponent_min": -53
+      },
+      "encoding_host_seconds": 0.0016137610073201358,
+      "fixture": true,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            2005,
+            68,
+            6
+          ],
+          "compiled_stage_hashes": [
+            "76597107516ca9de87687195724693903f98dc10a774dd178669f0d135d8eb58",
+            "4578d493d146825959c377018aaef472a1be5c02c66cea08b5bdb8c32178f445"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "fp64_pending_count": 6,
+          "fp64_queue_sha256": "c7c8a9992911c008b36bbcba66bc7682dc9a6e4ea05fced6b7bbb4259a356c1f",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            2007,
+            68,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "15af92afd210da8b4a695648941222b5521c2d19bbdd9e4c21aaed4f72ce0d4f",
+            "6a12799cac388bb67738516e79c8a961efa4301fa3eb3f1ad68a1aca2f800527",
+            "4578d493d146825959c377018aaef472a1be5c02c66cea08b5bdb8c32178f445"
+          ],
+          "correctness_after": {
+            "counts": [
+              2009,
+              70,
+              0
+            ],
+            "sha256": "f62d100bfc77cea176e1dbda04017067b9990ca3695ea0482cbc2983b7e41cb5"
+          },
+          "correctness_before": {
+            "counts": [
+              2009,
+              70,
+              0
+            ],
+            "sha256": "f62d100bfc77cea176e1dbda04017067b9990ca3695ea0482cbc2983b7e41cb5"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 130,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.0002511269995011389,
+          "padding": 16.00769600769601,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2007,
+            68,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "bb565dba1e589a43cb01c8f62d60658ae44de962468b662fc8e855e53d528f11"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            2007,
+            68,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "15af92afd210da8b4a695648941222b5521c2d19bbdd9e4c21aaed4f72ce0d4f",
+            "6a12799cac388bb67738516e79c8a961efa4301fa3eb3f1ad68a1aca2f800527",
+            "4578d493d146825959c377018aaef472a1be5c02c66cea08b5bdb8c32178f445"
+          ],
+          "correctness_after": {
+            "counts": [
+              2009,
+              70,
+              0
+            ],
+            "sha256": "f62d100bfc77cea176e1dbda04017067b9990ca3695ea0482cbc2983b7e41cb5"
+          },
+          "correctness_before": {
+            "counts": [
+              2009,
+              70,
+              0
+            ],
+            "sha256": "f62d100bfc77cea176e1dbda04017067b9990ca3695ea0482cbc2983b7e41cb5"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 10,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00039151599048636854,
+          "padding": 1.2313612313612314,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2007,
+            68,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "bb565dba1e589a43cb01c8f62d60658ae44de962468b662fc8e855e53d528f11"
+        }
+      },
+      "name": "fixture_below",
+      "synthetic": true,
+      "threshold": 0.5624999999999999
+    },
+    {
+      "correctness_pass": true,
+      "count": 2079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": -127,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 67108864,
+        "max_residual_norm": 0.0008324975934801885,
+        "q_max": 16316,
+        "scale_exponent_max": -13,
+        "scale_exponent_min": -53
+      },
+      "encoding_host_seconds": 0.0018507640052121133,
+      "fixture": true,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            2005,
+            68,
+            6
+          ],
+          "compiled_stage_hashes": [
+            "61d570fed0585c3d8241569c591402a6740305b59c83590f4696fb83aa405d5b",
+            "b813242aacb44bc359dc7d1f495a634c2ff5f13c9b744cb9eda9422eab58739a"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "fp64_pending_count": 6,
+          "fp64_queue_sha256": "c7c8a9992911c008b36bbcba66bc7682dc9a6e4ea05fced6b7bbb4259a356c1f",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            2005,
+            70,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "a64d0601243ad8f406fe321b6bd06936f5e3ee653341c3adadab3560700f1804",
+            "cd14975f42e1d642b6171e33ae43ed4cf50a65c65e6a2621c2f8c47cba90bc5a",
+            "b813242aacb44bc359dc7d1f495a634c2ff5f13c9b744cb9eda9422eab58739a"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 130,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00021013000514358282,
+          "padding": 16.00769600769601,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2005,
+            70,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "724f3312d856585cb0e93dda738b7a8057df938c39d79d6d1e6ba0a0325f3254"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            2005,
+            70,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "a64d0601243ad8f406fe321b6bd06936f5e3ee653341c3adadab3560700f1804",
+            "cd14975f42e1d642b6171e33ae43ed4cf50a65c65e6a2621c2f8c47cba90bc5a",
+            "b813242aacb44bc359dc7d1f495a634c2ff5f13c9b744cb9eda9422eab58739a"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 10,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00039041799027472734,
+          "padding": 1.2313612313612314,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2005,
+            70,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "724f3312d856585cb0e93dda738b7a8057df938c39d79d6d1e6ba0a0325f3254"
+        }
+      },
+      "name": "fixture_equal",
+      "synthetic": true,
+      "threshold": 0.5625
+    },
+    {
+      "correctness_pass": true,
+      "count": 2079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": -127,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 67108864,
+        "max_residual_norm": 0.0008324975934801885,
+        "q_max": 16316,
+        "scale_exponent_max": -13,
+        "scale_exponent_min": -53
+      },
+      "encoding_host_seconds": 0.0014428799913730472,
+      "fixture": true,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            2005,
+            68,
+            6
+          ],
+          "compiled_stage_hashes": [
+            "4483c0371821f7e4fe94a75cb4c3168ee89cdb5853022d10cd6300c352712034",
+            "36ed2af3ba71e44d73f7ef8414e146393122aca78d18ace42a4db80f0c13fb2b"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              70,
+              2
+            ],
+            "sha256": "4a86792144c49d2dcd90338fbb5891b8ff6d5db16df60e53f5b3738d6efe1488"
+          },
+          "fp64_pending_count": 6,
+          "fp64_queue_sha256": "c7c8a9992911c008b36bbcba66bc7682dc9a6e4ea05fced6b7bbb4259a356c1f",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            2005,
+            70,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "a1f31f68dde2ea4e9e10667f7b3ea4454b34adb95aa4e733613f9cfeef8fd02c",
+            "6bcd5925b177e8064e27b812592c167ac927fcc83754bc0e97119823b8ae6653",
+            "36ed2af3ba71e44d73f7ef8414e146393122aca78d18ace42a4db80f0c13fb2b"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 130,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00020530499750748277,
+          "padding": 16.00769600769601,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2005,
+            70,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "724f3312d856585cb0e93dda738b7a8057df938c39d79d6d1e6ba0a0325f3254"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            2005,
+            70,
+            4
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "a1f31f68dde2ea4e9e10667f7b3ea4454b34adb95aa4e733613f9cfeef8fd02c",
+            "6bcd5925b177e8064e27b812592c167ac927fcc83754bc0e97119823b8ae6653",
+            "36ed2af3ba71e44d73f7ef8414e146393122aca78d18ace42a4db80f0c13fb2b"
+          ],
+          "correctness_after": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "correctness_before": {
+            "counts": [
+              2007,
+              72,
+              0
+            ],
+            "sha256": "7040d14fee2e6edc7928baed7ff86ed295e0e4b2631eee8d26e58572a14d5b3b"
+          },
+          "fp64_pending_count": 4,
+          "fp64_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "groups": 10,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.0003000569995492697,
+          "padding": 1.2313612313612314,
+          "quantized_dot_sha256": "294c6905b2e88aa832a93cef8b06ede736f62e1c744bce60ce4ac9ef218599ee",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            2005,
+            70,
+            4
+          ],
+          "tc_pending_count": 4,
+          "tc_queue_sha256": "5ee51f486277dc54d732c7465c26f7680746651502b30254044b6dd3d8a96c49",
+          "tc_state_sha256": "724f3312d856585cb0e93dda738b7a8057df938c39d79d6d1e6ba0a0325f3254"
+        }
+      },
+      "name": "fixture_above",
+      "synthetic": true,
+      "threshold": 0.5625000000000001
+    },
+    {
+      "active_tiles": 87479,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.19662346597760916,
+      "fixture": false,
+      "layout_host_seconds": 0.0,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.0729310748865442,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005591272987658158,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "5d457ceaee95b2bbfe37bbf070e390a1265d3498dcfd8898d405cd7dd9a2384e",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "3c86161ea83b09b37417b9e54cd0fb2167fa078c4602044dd43cc2d639455afa",
+          "tc_state_sha256": "ea4792dbdef7a4bb762d7e813a973b6fbd0b10ac73c00cafd067b2a18219a68d"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "groups": 29836,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.024206652014981955,
+          "padding": 74.82455745060199,
+          "quantized_dot_sha256": "5d457ceaee95b2bbfe37bbf070e390a1265d3498dcfd8898d405cd7dd9a2384e",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "3c86161ea83b09b37417b9e54cd0fb2167fa078c4602044dd43cc2d639455afa",
+          "tc_state_sha256": "ea4792dbdef7a4bb762d7e813a973b6fbd0b10ac73c00cafd067b2a18219a68d"
+        }
+      },
+      "name": "real_identity",
+      "occupancy_histogram": [
+        0,
+        74764,
+        11069,
+        1445,
+        171,
+        24,
+        4,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 7.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "padded_pairs": 1399664,
+      "padding_amplification": 13.71157632813801,
+      "queue_and_row_copy_host_seconds": 0.01842600599047728,
+      "row_permutation_sha256": "b83e23eb1db808bf694ae4894d62b50c9840bcd869ba7ac2456f40ddf0530bf3",
+      "synthetic": false,
+      "threshold": 0.5686872086178483
+    },
+    {
+      "active_tiles": 87890,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.16257435802253895,
+      "fixture": false,
+      "layout_host_seconds": 0.007481041015125811,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.07259002730686084,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.008379157981835306,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "92c035b88a097e9b07d1e34dd3c713dbf5cbd124b3d2a3b565bfcbf23e85c2a1",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "e779e619611d814729dd991154acf0a0d5241054149bd9d179987c625f190358",
+          "tc_state_sha256": "a204f6758ca68ac1b9c503a467bf3a33c7f446a25611afd9d4d3a191587889ad"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "groups": 29713,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.029729698988376185,
+          "padding": 74.51609047894279,
+          "quantized_dot_sha256": "92c035b88a097e9b07d1e34dd3c713dbf5cbd124b3d2a3b565bfcbf23e85c2a1",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "e779e619611d814729dd991154acf0a0d5241054149bd9d179987c625f190358",
+          "tc_state_sha256": "a204f6758ca68ac1b9c503a467bf3a33c7f446a25611afd9d4d3a191587889ad"
+        }
+      },
+      "name": "real_random",
+      "occupancy_histogram": [
+        0,
+        75547,
+        10725,
+        1421,
+        167,
+        29,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 6.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "padded_pairs": 1406240,
+      "padding_amplification": 13.7759970219144,
+      "queue_and_row_copy_host_seconds": 0.025229418999515474,
+      "row_permutation_sha256": "d4e90b0ba4e4f7293dae4078774ea011005691ea35a034842150cd6405a05f28",
+      "synthetic": false,
+      "threshold": 0.5686872086178483
+    },
+    {
+      "active_tiles": 60135,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.15068720298586413,
+      "fixture": false,
+      "layout_host_seconds": 0.0016368979995604604,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.10609358110917103,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00629880401538685,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "ca0cb0e775107714665dad28e5eb0f62ec2c4b58182e5e52b2cf9411a4289dc5",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "8c67e6f345eb491bb9d04f256bfa597299d58e73d497356f7e04ffbf43ceed2d",
+          "tc_state_sha256": "cb5abe3d1787f3e9fe3d894433b54c639db3adfad79f8cfddca93ad999391f94"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "groups": 11998,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.01435055400361307,
+          "padding": 30.089322975342625,
+          "quantized_dot_sha256": "ca0cb0e775107714665dad28e5eb0f62ec2c4b58182e5e52b2cf9411a4289dc5",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "8c67e6f345eb491bb9d04f256bfa597299d58e73d497356f7e04ffbf43ceed2d",
+          "tc_state_sha256": "cb5abe3d1787f3e9fe3d894433b54c639db3adfad79f8cfddca93ad999391f94"
+        }
+      },
+      "name": "real_degree_oracle",
+      "occupancy_histogram": [
+        0,
+        36835,
+        12800,
+        5699,
+        2736,
+        1238,
+        500,
+        236,
+        67,
+        15,
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 10.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 3.0
+      },
+      "padded_pairs": 962160,
+      "padding_amplification": 9.425640925165803,
+      "queue_and_row_copy_host_seconds": 0.022665573022095487,
+      "row_permutation_sha256": "521ff369a4551a2abb6256d940910534657fbf2e269c17c49e7acb8c0ffb7f82",
+      "synthetic": false,
+      "threshold": 0.5686872086178483
+    },
+    {
+      "active_tiles": 72029,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.17566574399825186,
+      "fixture": false,
+      "layout_host_seconds": 0.06617564201587811,
+      "logical_ids_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+      "mean_tile_occupancy_fraction": 0.08857456718821585,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005958202003967017,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "f645df178807c00cfeea095ebc64e0e648d7aabf66c74af1ed520037f8350573",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "256ffe82752dc601200fbbc7a30121322a5d8e9f4c5650296cc121f8be514263",
+          "tc_state_sha256": "fac3c6b610e69809b3f93e34945abe377203d91cf0231c75dd152d62a8ab74ca"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "groups": 16798,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.016549116000533104,
+          "padding": 42.12705845472624,
+          "quantized_dot_sha256": "f645df178807c00cfeea095ebc64e0e648d7aabf66c74af1ed520037f8350573",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "256ffe82752dc601200fbbc7a30121322a5d8e9f4c5650296cc121f8be514263",
+          "tc_state_sha256": "fac3c6b610e69809b3f93e34945abe377203d91cf0231c75dd152d62a8ab74ca"
+        }
+      },
+      "name": "real_pca1",
+      "occupancy_histogram": [
+        0,
+        51224,
+        14389,
+        4385,
+        1426,
+        448,
+        129,
+        21,
+        6,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 9.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "padded_pairs": 1152464,
+      "padding_amplification": 11.289922510996385,
+      "queue_and_row_copy_host_seconds": 0.022106300020823255,
+      "row_permutation_sha256": "93709e5c919b0e9554aaae5661d63de7d13d9a2140900ce3973ee2148864632c",
+      "synthetic": false,
+      "threshold": 0.5686872086178483
+    },
+    {
+      "active_tiles": 6500,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.13902342799701728,
+      "fixture": false,
+      "layout_host_seconds": 0.0,
+      "logical_ids_sha256": "9c3c072a1118ba6d3a8b4c01780e1260b2a6a201e1f9f723e733d383472d4a39",
+      "mean_tile_occupancy_fraction": 0.9815288461538462,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.0060860700032208115,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "1d92782522053517bb4545b4ea935f9d0e29afd90895566e694e875a877c5170",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "24c34262ca6182d0b959d7d59e758bde11bfdbbc9b08a7820f08b5fd080115cc",
+          "tc_state_sha256": "227138a8ef48cb58111059f10af35f47d4ffebf30d7ed0022386592bb25f242f"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 429,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.0052551450207829475,
+          "padding": 1.0758726084699106,
+          "quantized_dot_sha256": "1d92782522053517bb4545b4ea935f9d0e29afd90895566e694e875a877c5170",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "24c34262ca6182d0b959d7d59e758bde11bfdbbc9b08a7820f08b5fd080115cc",
+          "tc_state_sha256": "227138a8ef48cb58111059f10af35f47d4ffebf30d7ed0022386592bb25f242f"
+        }
+      },
+      "name": "synthetic_clustered",
+      "occupancy_histogram": [
+        0,
+        0,
+        1,
+        0,
+        103,
+        0,
+        0,
+        0,
+        2,
+        1,
+        104,
+        0,
+        6,
+        0,
+        0,
+        0,
+        6283
+      ],
+      "occupancy_quantiles": {
+        "max": 16.0,
+        "min": 2.0,
+        "p50": 16.0,
+        "p90": 16.0
+      },
+      "padded_pairs": 104000,
+      "padding_amplification": 1.0188187580207486,
+      "queue_and_row_copy_host_seconds": 0.009282822982640937,
+      "row_permutation_sha256": "b83e23eb1db808bf694ae4894d62b50c9840bcd869ba7ac2456f40ddf0530bf3",
+      "synthetic": true,
+      "threshold": 0.5686872086178483
+    },
+    {
+      "active_tiles": 75477,
+      "correctness_pass": true,
+      "count": 102079,
+      "encoding_audit": {
+        "exact_grid_and_norm_checks": true,
+        "h_max": 127,
+        "h_min": 0,
+        "l_max": 63,
+        "l_min": -64,
+        "max_residual_grid_integer": 16777216,
+        "max_residual_norm": 0.0002117611472595227,
+        "q_max": 16319,
+        "scale_exponent_max": -15,
+        "scale_exponent_min": -17
+      },
+      "encoding_host_seconds": 0.17240556600154378,
+      "fixture": false,
+      "layout_host_seconds": 0.007481041015125811,
+      "logical_ids_sha256": "9c3c072a1118ba6d3a8b4c01780e1260b2a6a201e1f9f723e733d383472d4a39",
+      "mean_tile_occupancy_fraction": 0.08452823376657789,
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005167368013644591,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "14c5805c11568f32b87235af90a4f277935f16280c0119114ac613fdb7d3483a",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "816facb5d2ece6839bcc9f2825154ac5cc33b82127c00766fee4ae468baa9faf",
+          "tc_state_sha256": "6283a0b17091cf8b12117c82fda1c12be1b8f064e58d3e832f9661f582d1a491"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 24219,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.01971285298350267,
+          "padding": 60.73789907816495,
+          "quantized_dot_sha256": "14c5805c11568f32b87235af90a4f277935f16280c0119114ac613fdb7d3483a",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "816facb5d2ece6839bcc9f2825154ac5cc33b82127c00766fee4ae468baa9faf",
+          "tc_state_sha256": "6283a0b17091cf8b12117c82fda1c12be1b8f064e58d3e832f9661f582d1a491"
+        }
+      },
+      "name": "synthetic_scattered",
+      "occupancy_histogram": [
+        0,
+        54160,
+        18234,
+        1346,
+        1503,
+        20,
+        208,
+        0,
+        1,
+        5,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "occupancy_quantiles": {
+        "max": 9.0,
+        "min": 1.0,
+        "p50": 1.0,
+        "p90": 2.0
+      },
+      "padded_pairs": 1207632,
+      "padding_amplification": 11.830366676789545,
+      "queue_and_row_copy_host_seconds": 0.019130370987113565,
+      "row_permutation_sha256": "d4e90b0ba4e4f7293dae4078774ea011005691ea35a034842150cd6405a05f28",
+      "synthetic": true,
+      "threshold": 0.5686872086178483
+    }
+  ],
+  "compiled": {
+    "15af92afd210da8b4a695648941222b5521c2d19bbdd9e4c21aaed4f72ce0d4f": {
+      "cubin_sha256": "15af92afd210da8b4a695648941222b5521c2d19bbdd9e4c21aaed4f72ce0d4f",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "33229e94576f15b0cd23c0e419492725be8bac21ed31e66732886e331ea00cfc",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "tc_certificate",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 0,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 40,
+      "n_spills": 0,
+      "ptx_sha256": "92c1084bc1ffeb9650d3d6c9c302ed758f79fb7878d95a4f27594ea1e785d967",
+      "tags": [
+        "fixture_below/TC16physical/certificate",
+        "fixture_below/TC16diagonal/certificate"
+      ]
+    },
+    "36ed2af3ba71e44d73f7ef8414e146393122aca78d18ace42a4db80f0c13fb2b": {
+      "cubin_sha256": "36ed2af3ba71e44d73f7ef8414e146393122aca78d18ace42a4db80f0c13fb2b",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "1a41be80c3b107cde237e165ad70c894793af481360fd06d754d647bd6be6793",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp64_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 28,
+      "n_spills": 0,
+      "ptx_sha256": "2dce3bc694089299bcdafbc4b54face9ed3bebfaa58847e17a6d8881ff7b77df",
+      "tags": [
+        "fixture_above/P16/fp64_repair",
+        "fixture_above/TC16physical/fp64_repair",
+        "fixture_above/TC16diagonal/fp64_repair"
+      ]
+    },
+    "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49": {
+      "cubin_sha256": "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "ddffa238f4865342c2592d299e023b8c7a21e31075ada29f93a34d4d368c1cf4",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 137,
+      "n_spills": 0,
+      "ptx_sha256": "a7ef9a60f011ae1261163db6818d33e0cb4bd31b827ed59ffca35bf04824f99c",
+      "tags": [
+        "real_identity/P16/fp32_full",
+        "real_random/P16/fp32_full",
+        "real_degree_oracle/P16/fp32_full",
+        "real_pca1/P16/fp32_full",
+        "synthetic_clustered/P16/fp32_full",
+        "synthetic_scattered/P16/fp32_full"
+      ]
+    },
+    "4483c0371821f7e4fe94a75cb4c3168ee89cdb5853022d10cd6300c352712034": {
+      "cubin_sha256": "4483c0371821f7e4fe94a75cb4c3168ee89cdb5853022d10cd6300c352712034",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "e841dc8592ea58082ab51b8a10b76a66788e19f877e46650af374ec470a6acf0",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 140,
+      "n_spills": 0,
+      "ptx_sha256": "a27235f63e682d038f7b7459c406350bc9a01d71818a926b9125777610aa2962",
+      "tags": [
+        "fixture_above/P16/fp32_full"
+      ]
+    },
+    "4578d493d146825959c377018aaef472a1be5c02c66cea08b5bdb8c32178f445": {
+      "cubin_sha256": "4578d493d146825959c377018aaef472a1be5c02c66cea08b5bdb8c32178f445",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "f814e2dc218d3f6e60e73357462e74cb245b85b054bcb91d0ac7e3f9b35d8b89",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp64_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 28,
+      "n_spills": 0,
+      "ptx_sha256": "58d2db8d6f47427635875cd1352fa62b015823acaee98cd2b33e565d86e7ccad",
+      "tags": [
+        "fixture_below/P16/fp64_repair",
+        "fixture_below/TC16physical/fp64_repair",
+        "fixture_below/TC16diagonal/fp64_repair"
+      ]
+    },
+    "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573": {
+      "cubin_sha256": "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "2a3ab009218029e1355c0a99c1ded9cb522eba62f922e24625abe0db1b5dcb12",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "limb_dot",
+        "num_ctas": 1,
+        "num_stages": 2,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 4096,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 74,
+      "n_spills": 0,
+      "ptx_sha256": "3067651575b11dbc4af86d6f1f613f13799d3132a66d50ea1d68240fc49f4805",
+      "tags": [
+        "fixture_below/TC16physical/tc_dot",
+        "fixture_below/TC16diagonal/tc_dot",
+        "fixture_equal/TC16physical/tc_dot",
+        "fixture_equal/TC16diagonal/tc_dot",
+        "fixture_above/TC16physical/tc_dot",
+        "fixture_above/TC16diagonal/tc_dot",
+        "real_identity/TC16physical/tc_dot",
+        "real_identity/TC16diagonal/tc_dot",
+        "real_random/TC16physical/tc_dot",
+        "real_random/TC16diagonal/tc_dot",
+        "real_degree_oracle/TC16physical/tc_dot",
+        "real_degree_oracle/TC16diagonal/tc_dot",
+        "real_pca1/TC16physical/tc_dot",
+        "real_pca1/TC16diagonal/tc_dot",
+        "synthetic_clustered/TC16physical/tc_dot",
+        "synthetic_clustered/TC16diagonal/tc_dot",
+        "synthetic_scattered/TC16physical/tc_dot",
+        "synthetic_scattered/TC16diagonal/tc_dot"
+      ]
+    },
+    "61d570fed0585c3d8241569c591402a6740305b59c83590f4696fb83aa405d5b": {
+      "cubin_sha256": "61d570fed0585c3d8241569c591402a6740305b59c83590f4696fb83aa405d5b",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "18122b983cf4d0a01697bd8e8766faf1ce18c33f440f2ce24d5aec068e69b670",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 140,
+      "n_spills": 0,
+      "ptx_sha256": "d36fdf3654199b788f436251a5ce5810f88de7dd9112fbd49e10f61e93737a8c",
+      "tags": [
+        "fixture_equal/P16/fp32_full"
+      ]
+    },
+    "6a12799cac388bb67738516e79c8a961efa4301fa3eb3f1ad68a1aca2f800527": {
+      "cubin_sha256": "6a12799cac388bb67738516e79c8a961efa4301fa3eb3f1ad68a1aca2f800527",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "53073b2b843a5064d09ee7336a3e181634e8ce69dc21a29c5e9b51ea3c255dc7",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp32_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 134,
+      "n_spills": 0,
+      "ptx_sha256": "2c8b75c2add2ecc796c62281e054712a827dd5e276549f95af560db9f2270b0a",
+      "tags": [
+        "fixture_below/TC16physical/fp32_repair",
+        "fixture_below/TC16diagonal/fp32_repair"
+      ]
+    },
+    "6bcd5925b177e8064e27b812592c167ac927fcc83754bc0e97119823b8ae6653": {
+      "cubin_sha256": "6bcd5925b177e8064e27b812592c167ac927fcc83754bc0e97119823b8ae6653",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "fab3058a563adf5726b77fa2c83156f2b4e585db68114ef480ddfcbf64b8e8f9",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp32_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 134,
+      "n_spills": 0,
+      "ptx_sha256": "fae50f333571ec4872bfe6b634f20a068a4a3a76483560cab9ec0d15d872e6ac",
+      "tags": [
+        "fixture_above/TC16physical/fp32_repair",
+        "fixture_above/TC16diagonal/fp32_repair"
+      ]
+    },
+    "76597107516ca9de87687195724693903f98dc10a774dd178669f0d135d8eb58": {
+      "cubin_sha256": "76597107516ca9de87687195724693903f98dc10a774dd178669f0d135d8eb58",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "9fce16ced8363666c340d4753c64d3b119817bba709296e98aa03d28eb653061",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "pair_filter",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 140,
+      "n_spills": 0,
+      "ptx_sha256": "5b8b3ba3e6c5ea8306172d9e501bcda4d4c0249876928d46e0293e6d70af50af",
+      "tags": [
+        "fixture_below/P16/fp32_full"
+      ]
+    },
+    "a1f31f68dde2ea4e9e10667f7b3ea4454b34adb95aa4e733613f9cfeef8fd02c": {
+      "cubin_sha256": "a1f31f68dde2ea4e9e10667f7b3ea4454b34adb95aa4e733613f9cfeef8fd02c",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "574a5f2828c7829c4e7a597e18baaba0eeec274c0c4468eb0e3b2d257ba3f76d",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "tc_certificate",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 0,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 40,
+      "n_spills": 0,
+      "ptx_sha256": "f18472d1af38f9cb2639cb470ab1cfff35b176601c330d200be193847d674043",
+      "tags": [
+        "fixture_above/TC16physical/certificate",
+        "fixture_above/TC16diagonal/certificate"
+      ]
+    },
+    "a64d0601243ad8f406fe321b6bd06936f5e3ee653341c3adadab3560700f1804": {
+      "cubin_sha256": "a64d0601243ad8f406fe321b6bd06936f5e3ee653341c3adadab3560700f1804",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "e51338088823bf5ed9583ebfd5d770e70e5be0bf5db5c990f3df496a072bc50b",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "tc_certificate",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 0,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 40,
+      "n_spills": 0,
+      "ptx_sha256": "0af4f9216211c3b0324ace5e61067614aea20a76fbd882941d61f6fb82921f5f",
+      "tags": [
+        "fixture_equal/TC16physical/certificate",
+        "fixture_equal/TC16diagonal/certificate"
+      ]
+    },
+    "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415": {
+      "cubin_sha256": "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "a561b5f95831d379312977cc6de050773ecdbcabeb694318243a188010238a94",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp64_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 28,
+      "n_spills": 0,
+      "ptx_sha256": "dcf239547441634653ef5baeac2e2f47e16039475911451b5d5a1bb92c2f38f4",
+      "tags": [
+        "real_identity/P16/fp64_repair",
+        "real_identity/TC16physical/fp64_repair",
+        "real_identity/TC16diagonal/fp64_repair",
+        "real_random/P16/fp64_repair",
+        "real_random/TC16physical/fp64_repair",
+        "real_random/TC16diagonal/fp64_repair",
+        "real_degree_oracle/P16/fp64_repair",
+        "real_degree_oracle/TC16physical/fp64_repair",
+        "real_degree_oracle/TC16diagonal/fp64_repair",
+        "real_pca1/P16/fp64_repair",
+        "real_pca1/TC16physical/fp64_repair",
+        "real_pca1/TC16diagonal/fp64_repair"
+      ]
+    },
+    "b813242aacb44bc359dc7d1f495a634c2ff5f13c9b744cb9eda9422eab58739a": {
+      "cubin_sha256": "b813242aacb44bc359dc7d1f495a634c2ff5f13c9b744cb9eda9422eab58739a",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "505fb5f453f1bec105ebbd1c3907e8e3e7788f608a5b308ddb43b7aa6e2f52ee",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp64_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 28,
+      "n_spills": 0,
+      "ptx_sha256": "de5227fa6d80ec0f465e73de9cc50741e0eef1ebd1d2156103f7d132f2396b73",
+      "tags": [
+        "fixture_equal/P16/fp64_repair",
+        "fixture_equal/TC16physical/fp64_repair",
+        "fixture_equal/TC16diagonal/fp64_repair"
+      ]
+    },
+    "cd14975f42e1d642b6171e33ae43ed4cf50a65c65e6a2621c2f8c47cba90bc5a": {
+      "cubin_sha256": "cd14975f42e1d642b6171e33ae43ed4cf50a65c65e6a2621c2f8c47cba90bc5a",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "2b73bf2cd2e7da9f9779f6a98f45971613599325adafc3dc9c1b0291d9b3483e",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp32_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 134,
+      "n_spills": 0,
+      "ptx_sha256": "09e7ba3efb496b34b7c422483e34e248abb36fba60234255a6f8dcb247e59748",
+      "tags": [
+        "fixture_equal/TC16physical/fp32_repair",
+        "fixture_equal/TC16diagonal/fp32_repair"
+      ]
+    },
+    "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965": {
+      "cubin_sha256": "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "b8bafb37e2171e9dfbf7c881d60680f14ad10f043d490a89ea21a0e6659a9be3",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp32_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 134,
+      "n_spills": 0,
+      "ptx_sha256": "3a24c462f9eb5b55fbb7de7ab6bc470fd7a1ab5f4027305f70614b126bfb8e33",
+      "tags": [
+        "real_identity/TC16physical/fp32_repair",
+        "real_identity/TC16diagonal/fp32_repair",
+        "real_random/TC16physical/fp32_repair",
+        "real_random/TC16diagonal/fp32_repair",
+        "real_degree_oracle/TC16physical/fp32_repair",
+        "real_degree_oracle/TC16diagonal/fp32_repair",
+        "real_pca1/TC16physical/fp32_repair",
+        "real_pca1/TC16diagonal/fp32_repair"
+      ]
+    },
+    "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc": {
+      "cubin_sha256": "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "2035f2ea5113a578ee66b5bc1383a62245263335805bef22848bb8f447658f83",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "tc_certificate",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 0,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 40,
+      "n_spills": 0,
+      "ptx_sha256": "b00e7cd09dfcef55b8171cec56c7bc79376b13699826e5b586324491e5145b68",
+      "tags": [
+        "real_identity/TC16physical/certificate",
+        "real_identity/TC16diagonal/certificate",
+        "real_random/TC16physical/certificate",
+        "real_random/TC16diagonal/certificate",
+        "real_degree_oracle/TC16physical/certificate",
+        "real_degree_oracle/TC16diagonal/certificate",
+        "real_pca1/TC16physical/certificate",
+        "real_pca1/TC16diagonal/certificate",
+        "synthetic_clustered/TC16physical/certificate",
+        "synthetic_clustered/TC16diagonal/certificate",
+        "synthetic_scattered/TC16physical/certificate",
+        "synthetic_scattered/TC16diagonal/certificate"
+      ]
+    },
+    "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7": {
+      "cubin_sha256": "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "432aa9c2a41dcee791b062c10cc71e91e1ed822c1b38df694388b4690234d832",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "fp32_subset",
+        "num_ctas": 1,
+        "num_stages": 1,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 128,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32
+      },
+      "n_regs": 140,
+      "n_spills": 0,
+      "ptx_sha256": "873e10ed0705e4b065d8c4245437459e91d518a5c800ae7fea5a4b69569db7e4",
+      "tags": [
+        "synthetic_clustered/TC16physical/fp32_repair",
+        "synthetic_clustered/TC16diagonal/fp32_repair",
+        "synthetic_scattered/TC16physical/fp32_repair",
+        "synthetic_scattered/TC16diagonal/fp32_repair"
+      ]
+    }
+  },
+  "correctness_pass": true,
+  "cuda_runtime": "13.0",
+  "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "experiment_id": "tensorjoin_20260904_g9_int14_tc_refinement_optimistic",
+  "gpu_revision_sha256": "2c50d500b356f7522f49a7662d0ffd71ffae391be859c483d52a65c1c83899f3",
+  "gpu_uuid": "GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603",
+  "host": "gpu-host-8",
+  "label": "g9_synccheck_a0",
+  "mode": "check",
+  "numerics_sha256": "af4d1fe2c43841a6f93b6f4f0d74c797e93f6e74edbb6f4abe88824cd1df4275",
+  "numpy": "2.3.1",
+  "pid": 1094468,
+  "protocol_sha256": "b322dfd410074bdd314966b879da8827aa4887a66089dbdc925e1cdac3689bac",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "reverse": false,
+  "scope": "TC+certificate+all actual FP32/FP64 repair; free preprocessing and intermediate queues",
+  "source_hashes": {
+    "src/g8_layout_kernels.py": "a75cfd7b3269a0fa070d110cb25bd6fda0aff43c1747a248074163e00acc4d36",
+    "src/g9_host_contract.py": "f864036fc662c191a3c4946987eaee4d95451a8790475731bd780249969f1ec1",
+    "src/g9_tc_kernels.py": "e4d4fcff9ae3e8d4508236dd46781e730b625085bc3a3db83a47c16b9072d080",
+    "src/run_g8_layout_probe.py": "2fda83d0950bdfd278b278ce577440a5acb1271ef7bd578d8267e19af7bdb7ca",
+    "src/run_g9_tc_refinement.py": "d0dc254fb52688bb6a615cd9927ec4fc38a8890214d85779b14c4f247d712dda"
+  },
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0"
+}

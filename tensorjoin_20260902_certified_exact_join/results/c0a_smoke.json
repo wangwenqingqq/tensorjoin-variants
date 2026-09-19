@@ -1,0 +1,107 @@
+{
+  "bound_pad": 0.0001,
+  "correctness": {
+    "ambiguous_fraction": 0.000766754150390625,
+    "ambiguous_pairs": 1608,
+    "direct_accept_pairs": 81,
+    "direct_reject_pairs": 2095463,
+    "exact_pairs": 512,
+    "false_accept_pairs": 0,
+    "false_reject_pairs": 0,
+    "final_classification_mismatch": 0,
+    "invalid_status": 0,
+    "threshold_d2": 0.04491402423105895
+  },
+  "correctness_pass": true,
+  "dependency_sha256": "b0321ec6e01aaede79bbd077a0ba3635ef44b116488088ca055e857b653e8376",
+  "experiment_id": "tensorjoin_20260902_triton_fused_status_c0a",
+  "feature_cache_sha256": "66f6292129029f63ee7bd237e15f390e949531a275a3463e786fe5c03893dd41",
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "latency_median_us": 66.01600162684917,
+  "latency_p10_us": 57.56800137460232,
+  "latency_p90_us": 74.46400187909603,
+  "latency_us": [
+    76.57600194215775,
+    55.456001311540604
+  ],
+  "num_stages": 3,
+  "num_warps": 4,
+  "observations": 2,
+  "pre_sass_gate_pass": true,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "script_sha256": "41a7ea0936e2a0435852801dff0b3a53db4a5be9a9f69ba38eec7676edfed577",
+  "shape": [
+    512,
+    4096,
+    1024
+  ],
+  "tile": [
+    64,
+    64,
+    64
+  ],
+  "timestamp_utc": "2026-09-02T14:59:14Z",
+  "timing_pass": true,
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.6.0",
+  "triton_cache_artifacts": [
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/__grp__fused_int8_certificate_status.json",
+      "sha256": "9588a178b606312e9010f79f6d891b0dfa1b180fd090008a13f34f41662a37da",
+      "size": 1549
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.cubin",
+      "sha256": "6bebe98090f2c53d62cc777f63872aef2903b259b5837db3abb289cfdf6f1dcd",
+      "size": 81744
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.json",
+      "sha256": "7f37f829dcaa638fae01807d009909e4af2390aeb4178b62a916b359feb5ffb5",
+      "size": 1141
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.llir",
+      "sha256": "a148bae757cbd6ad9526648fd38e1fe7b211581f9c463189d45545b09e4e05f3",
+      "size": 128766
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.ptx",
+      "sha256": "1cda780fbee3546a4cbd7b2ecf5c3a644b679ad40ce9ddd0db0bac6c63042dfe",
+      "size": 56930
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.source",
+      "sha256": "032ebab63d2d4820cacc44e7180f996d64a2cde93ff931386a54792f29d7b412",
+      "size": 42069
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.ttgir",
+      "sha256": "a07d13da52bccd11da289dde00229f49c4af7a80aef1a4eda47b6cfa0dc3a917",
+      "size": 35849
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.ttir",
+      "sha256": "4a7c4620cc01c4e7d08e82336b5f852921b6a52a77d087e22b8b24e155343730",
+      "size": 24956
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/XQICNRXNYPXMKZFPRAIX42I2GJMQGMWS53F2RZ7X3WGBQNM23ALQ/__triton_launcher.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "fbd41d32589ee165759f6ea5a95a49413546a2913862d892187382e399f16aa0",
+      "size": 25808
+    },
+    {
+      "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/XU5DT2AO5BD5AEHEYGLPP5LRDFHHCUEJT4LGDVLB4STXUGVGHFPA/cuda_utils.cpython-312-x86_64-linux-gnu.so",
+      "sha256": "7828814f8e481f993b84089885f064334c023bcd6387a7f5f654ed2d49c44a2b",
+      "size": 31944
+    }
+  ],
+  "triton_cache_dir": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache",
+  "warmups": 1
+}

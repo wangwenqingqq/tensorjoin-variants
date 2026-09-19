@@ -1,0 +1,45 @@
+gpu-host-8
+2026-09-03T15:35:15+00:00
+CLAIMS.md: OK
+DECISION_G5_P4.md: OK
+PAPER_ASSET_CONTRACT.md: OK
+PAPER_MAIN_RESULTS_TABLE.md: OK
+PAPER_SPINE_LOCK.md: OK
+paper_assets/FIGURE_CAPTIONS.md: OK
+paper_assets/README.md: OK
+paper_assets/build.py: OK
+paper_assets/data/paper_numbers.json: OK
+paper_assets/figures/fig1_evidence_separated_teaser.pdf: OK
+paper_assets/figures/fig2_exact_precision_routing_pipeline.pdf: OK
+paper_assets/figures/table1_external_full_public.pdf: OK
+paper_assets/qa/QA_REPORT.md: OK
+paper_assets/qa/fig1_300dpi.png: OK
+paper_assets/qa/fig1_600dpi.png: OK
+paper_assets/qa/fig1_600dpi_gray.png: OK
+paper_assets/qa/fig2_300dpi.png: OK
+paper_assets/qa/fig2_600dpi.png: OK
+paper_assets/qa/fig2_600dpi_gray.png: OK
+paper_assets/qa/paper_figures_placement.pdf: OK
+paper_assets/qa/paper_figures_placement_200dpi.png: OK
+paper_assets/qa/paper_table_placement.pdf: OK
+paper_assets/qa/paper_table_placement_200dpi.png: OK
+paper_assets/qa/placement_base_figures.pdf: OK
+paper_assets/qa/placement_base_table.pdf: OK
+paper_assets/qa/placement_first_merge.pdf: OK
+paper_assets/qa/table1_600dpi.png: OK
+paper_assets/qa/table1_600dpi_gray.png: OK
+paper_assets/src/extract_paper_numbers.py: OK
+paper_assets/src/make_main_table.py: OK
+paper_assets/src/make_paper_figures.py: OK
+paper_assets/src/make_qa_pages.py: OK
+paper_assets/src/validate_paper_assets.py: OK
+paper_assets/tables/table1_external_full_public.tex: OK
+receipts/G5_RECEIPT_EVOLUTION.md: OK
+receipts/g5_historical_docs/PAPER_SPINE_LOCK.md: OK
+results/g2b_public_formal_summary.json: OK
+results/g4c_formal_summary.json: OK
+results/g5_compatibility_tensorjoin_p1_r1_a0.json: OK
+results/g5_p4_screen_summary.json: OK
+RECEIPTS
+6598c62a1268c9153849e6f985c71b73f7c9cd52bf7fecc367d36de3d09468a0  receipts/paper_assets_r1_paths.txt
+bb85b5d68d5622200679bfff45216a8326a683779143ff9085af602742afc7ec  receipts/paper_assets_r1_sha256.txt

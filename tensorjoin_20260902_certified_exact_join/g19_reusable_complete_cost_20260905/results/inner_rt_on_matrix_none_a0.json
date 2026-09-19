@@ -1,0 +1,1262 @@
+{
+  "method": "rt_on",
+  "kind": "matrix",
+  "record_id": "rt_on_matrix_none_a0",
+  "pid": 1847581,
+  "torch_version": "2.11.0+cu130",
+  "gpu": "_CudaDeviceProperties(name='NVIDIA RTX PRO 6000 Blackwell Server Edition', major=12, minor=0, total_memory=97252MB, multi_processor_count=188, uuid=a149f5af-55ab-ce33-8d3d-371a7ae61dd2, pci_bus_id=90, pci_device_id=0, pci_domain_id=0, L2_cache_size=128MB)",
+  "source_manifest_sha256": "01ea40cae6370ec3f17181d5ba4c8218184237f39e14033993e2c85c7925bd84",
+  "public_timing": false,
+  "rows": [
+    {
+      "cycle": 0,
+      "iteration": 0,
+      "case": "real31",
+      "host_pointer": 1185541232,
+      "output_pointer": 1177451104,
+      "work": {
+        "pairs": 31
+      },
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 31,
+        "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_oracle_pairs": 31,
+        "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 31,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.3955230712890625,
+        "native_threshold": 0.3955230712890625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 31,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        930,
+        31,
+        0,
+        0,
+        105536,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1601961984,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935370752
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 1,
+      "case": "signed31",
+      "host_pointer": 1183927552,
+      "output_pointer": 1179873872,
+      "work": {
+        "pairs": 31
+      },
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 31,
+        "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_oracle_pairs": 31,
+        "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 31,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.3955230712890625,
+        "native_threshold": 0.3955230712890625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 31,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        930,
+        31,
+        0,
+        0,
+        60496,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935538688
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 2,
+      "case": "shuffled_onehot31",
+      "host_pointer": 1185541232,
+      "output_pointer": 1184622880,
+      "work": {
+        "pairs": 97
+      },
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 97,
+        "output_sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "frozen_oracle_pairs": 97,
+        "frozen_oracle_sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 97,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 97,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        864,
+        97,
+        0,
+        0,
+        57344,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935636992
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 3,
+      "case": "zeros31",
+      "host_pointer": 1183927552,
+      "output_pointer": 1185453760,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 5.960464477539063e-08,
+        "native_threshold": 5.960464477539063e-08,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935743488
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 4,
+      "case": "boundary31",
+      "host_pointer": 1185138560,
+      "output_pointer": 1177788896,
+      "work": {
+        "pairs": 43
+      },
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 43,
+        "output_sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "frozen_oracle_pairs": 43,
+        "frozen_oracle_sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 43,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 43,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        918,
+        43,
+        0,
+        0,
+        39544,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935772160
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 5,
+      "case": "cancellation31",
+      "host_pointer": 1183927552,
+      "output_pointer": 1185193984,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.0009765625,
+        "native_threshold": 0.0009765625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 935927808
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 6,
+      "case": "subnormal31",
+      "host_pointer": 1186501216,
+      "output_pointer": 1187059680,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 5.960464477539063e-08,
+        "native_threshold": 5.960464477539063e-08,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 936153088
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 7,
+      "case": "cifar4096",
+      "host_pointer": 1188020704,
+      "output_pointer": 1196409328,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 262144,
+        "output_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "frozen_oracle_pairs": 262144,
+        "frozen_oracle_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 262144,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 16777216,
+        "all_pair_count": 16777216,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 4096,
+        "reference_threshold": 0.5686872086178483,
+        "native_threshold": 0.5686871409416199,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 262144,
+            "candidate_entries": 1048576,
+            "mask_words": 524288
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        16514984,
+        262048,
+        96,
+        88,
+        2659208992,
+        94208
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 961429504
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 8,
+      "case": "boundary_zero32",
+      "host_pointer": 1205396384,
+      "output_pointer": 1183981184,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 104,
+        "output_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "frozen_oracle_pairs": 104,
+        "frozen_oracle_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 104,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 1024,
+        "all_pair_count": 1024,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 32,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 104,
+            "candidate_entries": 256,
+            "mask_words": 32
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        918,
+        44,
+        60,
+        2,
+        71800,
+        31744
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 961433600
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 9,
+      "case": "boundary_zero32",
+      "host_pointer": 1205461936,
+      "output_pointer": 1183955024,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 104,
+        "output_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "frozen_oracle_pairs": 104,
+        "frozen_oracle_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 104,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 1024,
+        "all_pair_count": 1024,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 32,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 104,
+            "candidate_entries": 256,
+            "mask_words": 32
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        918,
+        44,
+        60,
+        2,
+        71800,
+        31744
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 961449984
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 10,
+      "case": "cifar4096",
+      "host_pointer": 1188020704,
+      "output_pointer": 1196409328,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 262144,
+        "output_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "frozen_oracle_pairs": 262144,
+        "frozen_oracle_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 262144,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 16777216,
+        "all_pair_count": 16777216,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 4096,
+        "reference_threshold": 0.5686872086178483,
+        "native_threshold": 0.5686871409416199,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 262144,
+            "candidate_entries": 1048576,
+            "mask_words": 524288
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        16514984,
+        262048,
+        96,
+        88,
+        2659208992,
+        94208
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962895872
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 11,
+      "case": "subnormal31",
+      "host_pointer": 1205986352,
+      "output_pointer": 1206787056,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 5.960464477539063e-08,
+        "native_threshold": 5.960464477539063e-08,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962904064
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 12,
+      "case": "cancellation31",
+      "host_pointer": 1206861584,
+      "output_pointer": 1206787056,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.0009765625,
+        "native_threshold": 0.0009765625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962908160
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 13,
+      "case": "boundary31",
+      "host_pointer": 1205986352,
+      "output_pointer": 1091915168,
+      "work": {
+        "pairs": 43
+      },
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 43,
+        "output_sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "frozen_oracle_pairs": 43,
+        "frozen_oracle_sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 43,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 43,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        918,
+        43,
+        0,
+        0,
+        39544,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962916352
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 14,
+      "case": "zeros31",
+      "host_pointer": 1188020704,
+      "output_pointer": 1206787056,
+      "work": {
+        "pairs": 961
+      },
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 961,
+        "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_oracle_pairs": 961,
+        "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 961,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 5.960464477539063e-08,
+        "native_threshold": 5.960464477539063e-08,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 961,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        0,
+        961,
+        0,
+        0,
+        492032,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962920448
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 15,
+      "case": "shuffled_onehot31",
+      "host_pointer": 1205986352,
+      "output_pointer": 1184627360,
+      "work": {
+        "pairs": 97
+      },
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 97,
+        "output_sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "frozen_oracle_pairs": 97,
+        "frozen_oracle_sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 97,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 1.0,
+        "native_threshold": 1,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 97,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        864,
+        97,
+        0,
+        0,
+        57344,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962936832
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 16,
+      "case": "signed31",
+      "host_pointer": 1188020704,
+      "output_pointer": 1181361776,
+      "work": {
+        "pairs": 31
+      },
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 31,
+        "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_oracle_pairs": 31,
+        "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 31,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.3955230712890625,
+        "native_threshold": 0.3955230712890625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 31,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        930,
+        31,
+        0,
+        0,
+        60496,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962940928
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 17,
+      "case": "real31",
+      "host_pointer": 1205986352,
+      "output_pointer": 1173106560,
+      "work": {
+        "pairs": 31
+      },
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "independent_decoder": {
+        "adapter_structure_pass": true,
+        "all_original_ids_decoded": true,
+        "output_pairs": 31,
+        "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_oracle_pairs": 31,
+        "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "frozen_reference_pass": true,
+        "missing_pairs": 0,
+        "extra_pairs": 0,
+        "first_missing": [],
+        "first_extra": [],
+        "native_threshold_reference_pass": true,
+        "native_threshold_oracle_pairs": 31,
+        "native_threshold_missing": 0,
+        "native_threshold_extra": 0,
+        "unique_rt_candidate_pairs": 961,
+        "all_pair_count": 961,
+        "rt_candidate_missing_frozen_pairs": 0,
+        "first_rt_candidate_missing": [],
+        "self_pairs": 31,
+        "reference_threshold": 0.3955230712890625,
+        "native_threshold": 0.3955230712890625,
+        "scalar_fmaf_replays": [],
+        "replay_complete": true,
+        "batches": [
+          {
+            "batch": 0,
+            "accepted_bits": 31,
+            "candidate_entries": 248,
+            "mask_words": 31
+          }
+        ],
+        "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+      },
+      "predicate_counters": [
+        930,
+        31,
+        0,
+        0,
+        105536,
+        0
+      ],
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 962990080
+      }
+    }
+  ],
+  "engine_records": [
+    {
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.33974562399089336,
+      "library_sha256": "6e826f1d41aa76d2be2aebd5a5215b9140753b0ed4ac2d1da3d0299f30f85fdf",
+      "after_prepare_memory": {
+        "cuda_used": 689700864,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 903901184
+      },
+      "destruction_seconds_diagnostic": 0.05068472400307655,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 903561216
+      }
+    }
+  ],
+  "cache": {},
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false,
+  "novelty_pass": false
+}

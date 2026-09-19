@@ -1,0 +1,47 @@
+{
+  "admitted": true,
+  "cache_path": "artifacts/g4b_r1_opportunity_cifar_gist512_triton_cache",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4b_r1_public_opportunity.py",
+    "--dataset",
+    "cifar_gist512"
+  ],
+  "dataset_id": "cifar_gist512",
+  "experiment_id": "tensorjoin_20260903_g4b_r1_public_breadth_opportunity",
+  "external_monitor_max_gpu_utilization_percent": 3,
+  "external_monitor_max_process_memory_mib": 878,
+  "foreign_rows": [],
+  "gpu1": {
+    "clocks.mem": "405",
+    "clocks.sm": "187",
+    "driver_version": "590.48.01",
+    "index": "1",
+    "memory.used": "14",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "34.60",
+    "power.limit": "600.00",
+    "pstate": "P8",
+    "utilization.gpu": "0",
+    "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"
+  },
+  "occupancy_log": "raw/g4b_r1_opportunity_cifar_gist512_occupancy.jsonl",
+  "occupancy_log_sha256": "6242672076f4311d760e6899f9d00fd9fe081dd45a3a3fcb22f46244a8e1e53e",
+  "orchestrator_sha256": "1a95e653498cd79a933ae7a87e79faccdd7d9f042094028ab7661c0d350ab085",
+  "postflight_compute_rows": [],
+  "preflight_log": "raw/g4b_r1_opportunity_cifar_gist512_preflight.log",
+  "preflight_log_sha256": "aebd3715da0713f701f24cd5073ee169a7b8306ae79fb12e4d29d41ad4f34fbf",
+  "protocol_sha256": "9f7a44ee7bee8a0a656ddfa3cfeb88cef3802d432829eba6018e03b58ea0fe1a",
+  "raw_log": "raw/g4b_r1_opportunity_cifar_gist512.log",
+  "raw_log_sha256": "eb54af29748c9fc6f39b045eda1b95b38e502ef8dce6578a4bfe68a6a25496bb",
+  "result": "results/g4b_r1_opportunity_cifar_gist512.json",
+  "result_sha256": "1bb98444527f64aba34a59df3b9ae96184b9477560c8b19471b1e2c25e00a09b",
+  "returncode": 0,
+  "runner_sha256": "c1d539458233fb3268149e74847d8e6a5c8f4e3a3400954e7a5ee44a74f36234",
+  "runner_was_launched": true,
+  "status": "clean_dataset_complete",
+  "target_gpu_pids": [
+    3951590
+  ],
+  "wall_seconds": 38.40755796432495
+}

@@ -1,0 +1,16 @@
+COMMAND @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/gts_g6_r1/build_sm120/GTS_G6 @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/g2a_cifar4096/vectors_f32.raw 4096 512 0.7541135250198396 @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g6/g6_gts_g2a_a1_pairs_u64_le.bin
+
+STDOUT
+Index construction...
+Tree height: 4
+Searching...
+qnum_l_low: 4096
+G6_METRIC elapsed_seconds=8.02248
+G6_METRIC pair_count=262146
+G6_METRIC tree_height=4
+G6_METRIC tree_order=10
+G6_METRIC max_leaf_size=20
+G6_METRIC max_height=5
+G6_METRIC workspace_cap_bytes=7516192768
+
+STDERR

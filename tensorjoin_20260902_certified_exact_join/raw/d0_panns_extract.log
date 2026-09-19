@@ -1,0 +1,33 @@
+=== D0 PANNs extraction preflight ===
+2026-09-02T15:48:07Z
+gpu-host-8
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %
+f673f604ec6f4805a61c5b3be087e24776ec5fda
+541141fa2ee191a88f24a3219fff024e  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth
+0dc499e40e9761ef5ea061ffc77697697f277f6a960894903df3ada000e34b31  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth
+b66dcc7dca54633460eb12a206ad22e8dd28a5255c71c6f9b8fc8ba730612508  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_panns_esc50.py
+RUN_START {"batch_size": 64, "checkpoint": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth", "checkpoint_md5": "541141fa2ee191a88f24a3219fff024e", "dataset_root": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6", "experiment_id": "tensorjoin_20260902_panns_embedding_extract_d0", "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "host": "gpu-host-8", "panns_repo": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/third_party/panns_inference_f673f604", "seed": 20260902, "torch": "2.11.0+cu130", "torchaudio": "2.11.0+cu130"}
+EXTRACT_PROGRESS clips=100/2000 vectors=500 elapsed_s=0.737
+EXTRACT_PROGRESS clips=200/2000 vectors=1000 elapsed_s=1.041
+EXTRACT_PROGRESS clips=300/2000 vectors=1500 elapsed_s=1.338
+EXTRACT_PROGRESS clips=400/2000 vectors=2000 elapsed_s=1.615
+EXTRACT_PROGRESS clips=500/2000 vectors=2500 elapsed_s=1.892
+EXTRACT_PROGRESS clips=600/2000 vectors=3000 elapsed_s=2.178
+EXTRACT_PROGRESS clips=700/2000 vectors=3500 elapsed_s=2.457
+EXTRACT_PROGRESS clips=800/2000 vectors=4000 elapsed_s=2.722
+EXTRACT_PROGRESS clips=900/2000 vectors=4500 elapsed_s=2.992
+EXTRACT_PROGRESS clips=1000/2000 vectors=5000 elapsed_s=3.258
+EXTRACT_PROGRESS clips=1100/2000 vectors=5500 elapsed_s=3.524
+EXTRACT_PROGRESS clips=1200/2000 vectors=6000 elapsed_s=3.788
+EXTRACT_PROGRESS clips=1300/2000 vectors=6500 elapsed_s=4.053
+EXTRACT_PROGRESS clips=1400/2000 vectors=7000 elapsed_s=4.318
+EXTRACT_PROGRESS clips=1500/2000 vectors=7500 elapsed_s=4.588
+EXTRACT_PROGRESS clips=1600/2000 vectors=8000 elapsed_s=4.851
+EXTRACT_PROGRESS clips=1700/2000 vectors=8500 elapsed_s=5.114
+EXTRACT_PROGRESS clips=1800/2000 vectors=9000 elapsed_s=5.373
+EXTRACT_PROGRESS clips=1900/2000 vectors=9500 elapsed_s=5.631
+EXTRACT_PROGRESS clips=2000/2000 vectors=10000 elapsed_s=5.888
+RUN_SUMMARY {"checkpoint_md5": "541141fa2ee191a88f24a3219fff024e", "checkpoint_sha256": "0dc499e40e9761ef5ea061ffc77697697f277f6a960894903df3ada000e34b31", "elapsed_s": 6.418286561965942, "esc50_commit": "33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6", "experiment_id": "tensorjoin_20260902_panns_embedding_extract_d0", "finite": true, "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "host": "gpu-host-8", "norm_max": 1.0000001192092896, "norm_min": 0.9999998807907104, "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_panns_cnn14_1s_2048d.npz", "output_sha256": "e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1", "panns_commit": "ref: refs/heads/master", "script_sha256": "b66dcc7dca54633460eb12a206ad22e8dd28a5255c71c6f9b8fc8ba730612508", "shape": [10000, 2048], "torch": "2.11.0+cu130", "torchaudio": "2.11.0+cu130", "zero_norm_vectors": 0}
+=== D0 PANNs extraction postflight ===
+e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_panns_cnn14_1s_2048d.npz
+48e51bcbc06519f21395f624a95914e9f5c4f894b63d33347ed6199835a33ffc  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/receipts/d0_panns_embedding.json

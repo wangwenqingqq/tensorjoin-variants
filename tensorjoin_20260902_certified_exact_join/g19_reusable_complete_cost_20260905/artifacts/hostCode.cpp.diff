@@ -1,0 +1,414 @@
+--- G18/hostCode.cpp
++++ G19/hostCode.cpp
+@@ -34,39 +34,55 @@
+ uint32_t urCall = 0;
+ 
+ 
+-int main(int argc, char** argv)
+-{
+-    g17::require(argc>=3,"G17 input and epsilon required");
+-    char* fileName = argv[1];
+-    const float EPSILON = atof(argv[2]);
+-
+-    ReorderMode reorderMode = REORDER_HIGHEST_VARIANCE;
+-    if (argc > 3)
+-    {
+-        if (strcmp(argv[3], "highest") == 0)      reorderMode = REORDER_HIGHEST_VARIANCE;
+-        else if (strcmp(argv[3], "lowest") == 0)  reorderMode = REORDER_LOWEST_VARIANCE;
+-        else if (strcmp(argv[3], "random") == 0)  reorderMode = REORDER_RANDOM;
+-        else
+-        {
+-            std::cerr << "\nUnknown reorder mode '" << argv[3]
+-                      << "'. Use one of: highest | lowest | random" << std::endl;
+-            exit(1);
+-        }
+-    }
+-
+-    THRESHOLD = THRESHOLD * EPSILON;
+-
+-    unsigned int N, DIM;
+-
+-    float* dataset = g17::read_input(fileName, &N, &DIM, EPSILON);
+-
+-    printf("\n Warming up gpu ...\n");
+-    warmUpGPU();
+-
+-    assert(DIM == DATASET_DIM);
+-
+-    double start = omp_get_wtime();
+-
++
++struct G19Engine {
++    OWLContext context=nullptr; OWLModule module=nullptr;
++    OWLGeom geom=nullptr; OWLRayGen raygen=nullptr; OWLParams params=nullptr;
++    bool running=false;
++};
++static G19Engine g19_engine;
++static std::string g19_error;
++extern "C" const char* g19Error(){return g19_error.c_str();}
++extern "C" int g19Diagnostics(){return G19_DIAGNOSTICS;}
++extern "C" int g19Create() {
++    try {
++        g17::require(!g19_engine.context,"G19 singleton engine already exists");
++        setupModuleAndContext(deviceCode_ptx,g19_engine.context,g19_engine.module);
++        setupVarsForShaderPrograms(g19_engine.context,g19_engine.module,g19_engine.geom,g19_engine.raygen,g19_engine.params);
++        owlBuildPrograms(g19_engine.context);owlBuildPipeline(g19_engine.context);
++        cudaErrorCheck(cudaDeviceSynchronize(),"G19 engine initialization");
++        return 0;
++    }catch(const std::exception& e){g19_error=e.what();return 1;}
++}
++extern "C" int g19Destroy() {
++    try {
++        g17::require(g19_engine.context && !g19_engine.running,"G19 destroy invalid state");
++        cudaErrorCheck(cudaDeviceSynchronize(),"G19 engine final synchronization");
++        owlContextDestroy(g19_engine.context);g19_engine=G19Engine{};
++        g17::release_input_state();return 0;
++    }catch(const std::exception& e){g19_error=e.what();return 1;}
++}
++extern "C" const uint64_t* g19ResultData(void* result) {
++    return static_cast<std::vector<uint64_t>*>(result)->data();
++}
++extern "C" uint64_t g19ResultCount(void* result) {
++    return static_cast<std::vector<uint64_t>*>(result)->size();
++}
++extern "C" void g19ResultRelease(void* result) {delete static_cast<std::vector<uint64_t>*>(result);}
++
++extern "C" int g19Run(const float* input,uint32_t N,double threshold,float EPSILON,
++                      float low,float high,const char* directory,void** result) {
++    try {
++        g17::require(g19_engine.context && !g19_engine.running,"G19 unavailable/concurrent engine");
++        g17::require(input && result && std::isfinite(threshold) && threshold>=0 && threshold<=2048
++            && std::isfinite(EPSILON) && EPSILON>0 && std::isfinite(low) && std::isfinite(high) && low<=high,"G19 invalid call");
++        g19_engine.running=true;*result=nullptr;
++        const unsigned DIM=DATASET_DIM;
++        ReorderMode reorderMode=REORDER_HIGHEST_VARIANCE;
++        THRESHOLD=0.01*EPSILON;MAX_KD_LEVELS=MAX_KD_LEVELS_OPT;
++        cudaOnlyTime=timeToCopyResults=timeToCompress=kdTreeConstructionTime=0;
++        rCall=urCall=0;numPointComparisons=0;
++        float* dataset=g17::begin_input(input,N,EPSILON,directory);
+     if (MAX_KD_LEVELS <= 0)
+     {
+         MAX_KD_LEVELS = (N > 1u) ? static_cast<int>(std::log(static_cast<double>(N))) : 1;
+@@ -81,58 +97,54 @@
+     FILE * file;
+ 
+     #if PARAM_VERBOSE
+-        printf("\n Number of points in the dataset are: %u", N);
+-        printf("\n Number of dataset dimensions are %u", DIM);
+-        printf("\n Dataset file : %s", fileName);
+-        printf("\n=========================================================");
+-        printf("\n Param USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING: %d", USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING);
+-        printf("\n Param USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING: %d", USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING);
+-        printf("\n Param USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING: %d", USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING);
+-        printf("\n Param USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING: %d", USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING);
+-        printf("\n Param USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING: %d", USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING);
+-        printf("\n=========================================================");
+-        printf("\n Param MAX_KD_LEVELS: %d", MAX_KD_LEVELS);
+-        printf("\n Param THREADS_TO_COPY: %d", THREADS_TO_COPY);
+-        printf("\n Param USE_UNCOMPRESSED_MASK: %d", USE_UNCOMPRESSED_MASK);
+-        printf("\n Param USE_PAGEABLE_MEMORY: %d", USE_PAGEABLE_MEMORY);
+-        printf("\n Param USE_FIXED_WORK_PER_BLOCK: %d", USE_FIXED_WORK_PER_BLOCK);
+-        printf("\n Param SORT_BY_WORKLOAD: %d", SORT_BY_WORKLOAD);
+-        printf("\n Param USE_CANDIDATE_POINT_COPY: %d", USE_CANDIDATE_POINT_COPY);
+-        printf("\n Param PINNED_MEMORY_OPT: %d", PINNED_MEMORY_SIZE_OPT);
+-        printf("\n=========================================================\n");
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
+     #endif
+ 
+-    OWLContext context;
+-    OWLModule module;
++    OWLContext context=g19_engine.context;
++    OWLModule module=g19_engine.module;
+ 
+     // Setup module
+-    setupModuleAndContext(deviceCode_ptx, context, module);
++    // Data-independent context/module/programs were created by g19Create.
+ 
+     // Reorder dimensions by variance
+     double timeReorderStart = omp_get_wtime();
+     dataset = reorderByDimensions(dataset, N, DIM, reorderMode);
+-    g17::require(std::getenv("G18_T") && std::getenv("G18_LOW") && std::getenv("G18_HIGH"),"G18 cutoffs required");
+-    double g18T=std::stod(std::getenv("G18_T"));
+-    float g18Low=std::strtof(std::getenv("G18_LOW"),nullptr),g18High=std::strtof(std::getenv("G18_HIGH"),nullptr);
+-    g17::require(std::isfinite(g18T) && g18T>=0 && g18T<=2048 && std::isfinite(g18Low) && std::isfinite(g18High) && g18Low<=g18High,"G18 invalid threshold");
+     g17::require(g17::dimension_map.size()==512,"G18 dimension map missing");
+     std::vector<uint32_t> g18Inverse(512);
+     for(uint32_t j=0;j<512;++j)g18Inverse[g17::dimension_map[j]]=j;
+-    g18Configure(g18Inverse.data(),g18T,g18Low,g18High);
++    g18Configure(g18Inverse.data(),threshold,low,high);
+ 
+     double timeReorderEnd = omp_get_wtime();
+ 
+-    printf("\nTime to reorder is %.3f seconds",timeReorderEnd - timeReorderStart);
++    (void)0;
+ 
+     double totalTimeStart = omp_get_wtime();
+ 
+     // RT PIPELINE TO ESTIMATE CANDIDATES AND ALLOCATE BUFFER ACCORDINGLY
+-    OWLGeom userSpheresGeom;
+-    OWLRayGen rayGen;
+-    OWLParams subPartition_lp;
++    OWLGeom userSpheresGeom=g19_engine.geom;
++    OWLRayGen rayGen=g19_engine.raygen;
++    OWLParams subPartition_lp=g19_engine.params;
+ 
+     // Setup params and build shader programs
+-    setupVarsForShaderPrograms(context, module, userSpheresGeom, rayGen, subPartition_lp);
++    // Fixed shader parameter objects are reused; buffers are bound anew.
+ 
+     OWLBuffer dataPointsSpheresBuffer;
+     OWLBuffer candidatePoints;
+@@ -188,7 +200,7 @@
+ 
+ 
+     double intersectionCountTestStart = omp_get_wtime();
+-    printf("\n Performing intersection count test");
++    (void)0;
+ 
+     owlParamsSet1ui(subPartition_lp, "intersectionCountTest", 1);
+ 
+@@ -217,15 +229,15 @@
+ 
+     double intersectionEnd = omp_get_wtime();
+ 
+-    printf("\nTime for intersection test is %.3f", (intersectionEnd - intersectionStart));
++    (void)0;
+ 
+     cudaError_t initialTestError = cudaGetLastError();
+     if (initialTestError != cudaSuccess)
+     {
+-        printf("\n RT initial intersection test - CUDA error: %s\n",cudaGetErrorString(initialTestError));
++    (void)0;
+     }
+ 
+-    printf("\nIntersection test done.");
++    (void)0;
+ 
+     double intersectionCountTestEnd = omp_get_wtime();
+ 
+@@ -264,17 +276,15 @@
+     cudaErrorCheck(cudaMemGetInfo(&freeMem, &totalMem), "cudaMemGetInfo(&freeMem, &totalMem)");
+     float availmemory = (float)freeMem;
+ 
+-    fprintf(stderr, "\nNode intersections are %lu", totalNodeIntersections);
+-    fprintf(stderr, "\nRequire %.2f GB memory for candidatePoints. Available %.2f GB global memory",
+-            requiredMemory / 1024 / 1024 / 1024,
+-            availmemory / 1024 / 1024 / 1024);
++    (void)0;
++    (void)0;
+     
+     uint32_t*h_pinnedResultMask;
+     g17::require(totalNodeIntersections>0 && totalNodeIntersections<UINT32_MAX,"G17 intersection count not admitted");
+     uint32_t intersectionsPerBatch = totalNodeIntersections;
+     if (availmemory < requiredMemory)
+     {
+-        fprintf(stderr, "\nINSUFFICIENT MEMORY... Using batching scheme");
++    (void)0;
+         //TODO : WE are already working on conservative memory here. Do we need this again?
+         float conservativeAvailMemory = availmemory * NODE_INTERSECTION_FRACTION_OF_MEMORY;
+ 
+@@ -286,7 +296,7 @@
+     uint64_t * h_refinedCandidatePoints = nullptr;
+     uint64_t * d_refinedCandidatePoints = nullptr;
+     #if USE_CANDIDATE_POINT_COPY
+-        printf("\nAllocating memory for candidate points key value pairs");
++    (void)0;
+         size_t freeMemory, totalMemory;
+         cudaErrorCheck(cudaMemGetInfo(&freeMemory, &totalMemory), "cudaMemGetInfo(&freeMemory, &totalMemory)");
+         
+@@ -304,8 +314,8 @@
+         // Check free memory and then find intersections per batch
+         if(errorAlloc != cudaSuccess)
+         {
+-            fprintf(stderr, "\nError after memory allocation - %s", cudaGetErrorString(errorAlloc));
+-            fprintf(stderr, " This is due to allocating more than available memory. Reduce the number of intersections processed per batch to fix this.");
++    (void)0;
++    (void)0;
+             exit(1);
+         }
+     #endif
+@@ -325,7 +335,7 @@
+ 
+     double pinnedEnd = omp_get_wtime();
+ 
+-    printf("\n Time to allocate pinned memory %lff\n", pinnedEnd - pinnedStart);
++    (void)0;
+ 
+     unsigned long long sampledCount = 0;
+     uint32_t queriesSize = sampledQueryDataset.queries.size();
+@@ -347,7 +357,7 @@
+                                                
+     uint32_t* d_candidatePoints = (uint32_t*)owlBufferGetPointer(owl_candidatePointsBuffer, 0);
+ 
+-    fprintf(stderr, "\n\nMemory allocated for candidate points is %.3lf GiB\n\n", sizeof(uint32_t)*(double)intersectionsPerBatch/1024/1024/1024);
++    (void)0;
+ 
+     owlParamsSetBuffer(subPartition_lp, "candidatePoints", owl_candidatePointsBuffer);
+ 
+@@ -358,12 +368,12 @@
+     uint32_t* d_primitiveOrder;
+     cudaErrorCheck(cudaMalloc(&d_primitiveOrder, sizeof(uint32_t)*( NUM_PRIMITIVES)), "cudaMalloc(&d_primitiveOrder, sizeof(uint32_t)*( NUM_PRIMITIVES))");
+ 
+-	static double workGenTime = 0;
++	double workGenTime = 0;
+ 	
+     while (curProcessedQueries != queriesSize)
+     {
+         double workGenStart = omp_get_wtime();
+-        fprintf(stderr, "\nProcessing batch number - %u\n", curBatch);
++    (void)0;
+ 
+         curBatch += 1;
+         uint32_t curIntersectionCount = 0;
+@@ -394,7 +404,7 @@
+ 
+         owlParamsSet1ui(subPartition_lp, "maxCandidatePointsPerQueryPoint", curIntersectionCount);
+ 
+-        printf("\n max intersections are %u whereas current count is %u" , intersectionsPerBatch, curIntersectionCount);
++    (void)0;
+ 
+         cudaErrorCheck(cudaDeviceSynchronize(), "cudaDeviceSynchronize()");
+ 
+@@ -462,7 +472,7 @@
+         cudaError_t error = cudaGetLastError();
+         if (error != cudaSuccess)
+         {
+-            printf("\n RT Query - CUDA error: %s\n", cudaGetErrorString(error));
++    (void)0;
+         }
+ 
+         
+@@ -476,7 +486,7 @@
+         double workGenEnd = omp_get_wtime();
+ 
+         workGenTime += workGenEnd - workGenStart;
+-        printf("\nCum Work Gen time is %.3f seconds", workGenTime);
++    (void)0;
+ 
+         double refineStart = omp_get_wtime();
+ 
+@@ -493,77 +503,33 @@
+         sampledCount += h_refinedCount;
+     }
+ 
+-    unsigned long long g18Stats[6];g18ReadStats(g18Stats);
+-    g17::save("g18_stats.u64",std::vector<unsigned long long>(g18Stats,g18Stats+6));
+-    g17::finish(sampledCount);
+-    double allBatchEnd = omp_get_wtime();
+-    double end = omp_get_wtime();
+-    printf("\nAll batches time is %.3f seconds", allBatchEnd-allBatchTime);
+-
+- 
+-    puts("\n=============================================================");
+-    printf("\n Total number of queries are %lu", sampledQueryDataset.queries.size());
+-    printf("\n Time to perform only intersection test = %.3f seconds",
+-           (intersectionCountTestEnd - intersectionCountTestStart));
+-    puts("\n=============================================================");
+-    printf("\n TOTAL NUMBER OF IDENTIFIED NEIGHBORS ARE %llu", sampledCount);
+-    // printf("\n NUM POINT COMPARIONS is %llu", numPointComparisons);
+-    printf("\n Refine time is %.3f seconds", refineTime);
+-    printf("\n RT time is %.3f seconds", RTTime);
+-    // printf("\n CUDA ONLY TIME is %.3f", cudaOnlyTime);
+-    printf("\nTOTAL TIME (REFINE + QUERY) is %.3f seconds", (refineTime) + (RTTime));
+-    printf("\n\nTOTAL TIME INCLUDINF EVERYTHING - %.3f seconds\n\n", end-start);
+-
+-    const char* reorderModeName = (reorderMode == REORDER_RANDOM)          ? "random"
+-                                  : (reorderMode == REORDER_LOWEST_VARIANCE) ? "lowest"
+-                                                                             : "highest";
+-
+-    FILE* resultsFile = fopen("./results.txt", "a");
+-    if (resultsFile)
+-    {
+-        fprintf(resultsFile, "\n**********************START OF RESULT**********************\n");
+-        fprintf(resultsFile, "\n=============================================================\n");
+-        fprintf(resultsFile, "Dataset file: %s\n", fileName);
+-        fprintf(resultsFile, "Dataset points: %u\n", N);
+-        fprintf(resultsFile, "Dataset dimensions: %u\n", DIM);
+-        fprintf(resultsFile, "Epsilon: %.6f\n", EPSILON);
+-        fprintf(resultsFile, "Reorder mode: %s\n", reorderModeName);
+-        fprintf(resultsFile, "USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING: %d\n", USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING);
+-        fprintf(resultsFile, "USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING: %d\n", USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING);
+-        fprintf(resultsFile, "USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING: %d\n", USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING);
+-        fprintf(resultsFile, "USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING: %d\n", USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING);
+-        fprintf(resultsFile, "USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING: %d\n", USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING);
+-        fprintf(resultsFile, "MAX_KD_LEVELS: %d\n", MAX_KD_LEVELS);
+-        fprintf(resultsFile, "THREADS_TO_COPY: %d\n", THREADS_TO_COPY);
+-        fprintf(resultsFile, "USE_UNCOMPRESSED_MASK: %d\n", USE_UNCOMPRESSED_MASK);
+-        fprintf(resultsFile, "USE_PAGEABLE_MEMORY: %d\n", USE_PAGEABLE_MEMORY);
+-        fprintf(resultsFile, "USE_FIXED_WORK_PER_BLOCK: %d\n", USE_FIXED_WORK_PER_BLOCK);
+-        fprintf(resultsFile, "SORT_BY_WORKLOAD: %d\n", SORT_BY_WORKLOAD);
+-        fprintf(resultsFile, "USE_CANDIDATE_POINT_COPY: %d\n", USE_CANDIDATE_POINT_COPY);
+-        fprintf(resultsFile, "PINNED_MEMORY_OPT: %d\n", PINNED_MEMORY_SIZE_OPT);
+-        fprintf(resultsFile, "-------------------------------------------------------------\n");
+-        fprintf(resultsFile, "Total number of queries: %zu\n", sampledQueryDataset.queries.size());
+-        fprintf(resultsFile, "Time to perform only intersection test: %.3f seconds\n",
+-                (intersectionCountTestEnd - intersectionCountTestStart));
+-        fprintf(resultsFile, "Total identified neighbors: %llu\n", sampledCount);
+-        fprintf(resultsFile, "Time for KD tree construction: %.3f seconds\n", kdTreeConstructionTime);
+-        fprintf(resultsFile, "CUDA kernel only time: %.3lf\n", cudaOnlyTime);
+-        fprintf(resultsFile, "Time to copy results only: %.3lf\n", timeToCopyResults);
+-        fprintf(resultsFile, "Time to compress results: %.3lf\n", timeToCompress);
+-        // Work generation time is the amount of time spent on RT + generating device and host pointers and other prep
+-        fprintf(resultsFile, "Work Generation time: %.3lf\n", workGenTime);
+-        fprintf(resultsFile, "Refine time: %.3f seconds\n", refineTime);
+-        fprintf(resultsFile, "RT time: %.3f seconds\n", RTTime);
+-        fprintf(resultsFile, "TOTAL TIME (REFINE + QUERY): %.3f seconds\n", (refineTime) + (RTTime));
+-        fprintf(resultsFile, "TOTAL TIME INCLUDING EVERYTHING: %.3f seconds\n", end-start);
+-        fprintf(resultsFile, "\n");
+-        fprintf(resultsFile, "\n**********************END OF RESULT**********************\n");
+-        fclose(resultsFile);
+-    }
+-    else
+-    {
+-        printf("\nFailed to open results.txt for writing.\n");
+-    }
+-
+-    return 0;
++
++#if G19_DIAGNOSTICS
++        unsigned long long counters[6];g18ReadStats(counters);
++        g17::save("g18_stats.u64",std::vector<unsigned long long>(counters,counters+6));
++#endif
++        g17::finish(sampledCount);
++        // All consumers are complete before releasing input-specific references.
++        cudaErrorCheck(cudaDeviceSynchronize(),"G19 operation cleanup boundary");
++        owlRayGenSetGroup(rayGen,"handle",nullptr);
++        owlGeomSetBuffer(userSpheresGeom,"prims",nullptr);
++        for(const char* name : {"candidatePoints","spheres","totalCandidateCount","queryIndices",
++             "intersectionCount","primitiveIntersectionCount","primitivePosTowrite"})
++            owlParamsSetBuffer(subPartition_lp,name,nullptr);
++        owlGroupRelease(handle);owlGroupRelease(spheresGroups);
++        for(OWLBuffer buffer : {queryIndices,OWL_datasetReordered,owl_groupCountBuffer,
++             dataPointsSpheresBuffer,sampledPointsToSearchSpheresBuffer,owl_groupedPointsBuffer,
++             sampledCandidateCount,owl_intersectionCountBuffer,owl_primitiveIntersectionCount,
++             owl_primitivePosToWrite,owl_candidatePointsBuffer,owl_totalCandidateCount})
++            owlBufferRelease(buffer);
++        cudaErrorCheck(cudaFree(d_primitiveOrder),"G19 primitive order cleanup");
++#if !USE_PAGEABLE_MEMORY
++        cudaErrorCheck(cudaFreeHost(h_pinnedResultMask),"G19 pinned staging cleanup");
++#else
++        free(h_pinnedResultMask);
++#endif
++        free(dataset);
++        *result=new std::vector<uint64_t>(std::move(g17::output));
++        g17::release_input_state();g19_engine.running=false;return 0;
++    }catch(const std::exception& e){g19_error=e.what();return 1;}
+ }

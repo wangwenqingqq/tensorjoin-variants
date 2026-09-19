@@ -1,0 +1,63 @@
+{
+  "candidate_source_sha256": "637e9455fdcdffcc8cddbed625ef74ef371f117876bc3f25977a79b4a95f706d",
+  "capacity": 8519680,
+  "certified_fp32_kernel_launches": 1,
+  "completed_iterations": 1,
+  "compute_capability": [
+    12,
+    0
+  ],
+  "count_mismatches": 0,
+  "cuda_visible_devices": "0",
+  "diagnostic_elapsed_seconds": 3.167386613000417,
+  "duplicate_mismatches": 0,
+  "exact_output_mismatches": 0,
+  "expected_counts": {
+    "final_upper": 133120,
+    "fp32_accept": 42123,
+    "fp32_reject": 59859,
+    "fp64": 97,
+    "g3b_ambiguous": 102079,
+    "g3b_direct": 90946
+  },
+  "experiment_id": "tensorjoin_20260903_g3c_b_r1_gpu_cascade",
+  "fp64_refinement_kernel_launches": 1,
+  "fp64_source_sha256": "84f611fa029e0ce798c3945fad54600598bc7a708f630ebd5fc07fe7dac1e6d8",
+  "g3b_kernel_launches": 1,
+  "g3b_source_sha256": "057245c5288763702e7b916c6739980d07b622d595bb9d946fa14011437a67ec",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "hash_mismatches": 0,
+  "host": "gpu-host-8",
+  "iterations": 1,
+  "measurement_status": "complete_cascade_safety_only_no_performance_claim",
+  "mode": "memcheck",
+  "numpy": "2.3.1",
+  "observed_hashes": {
+    "accepted_upper": "036a4d84c1f1a10076287b9e4ad1cd950f979dac456093878c3cfd09d27ca959",
+    "fp32_accept": "454f909731f284d0351858c2394fcd5889f2b1126f8a6ad7fd758ce5e0bf71c1",
+    "fp32_reject": "bf4c7d837e5cc9811e6fda88df77e2e31c5556de1821ab7444a7ec3eb86691bc",
+    "fp64": "4a7fbf0c05fefcfbe8b5ff36d05ca39803895c18b22a1c2c7db9614690416a13",
+    "g3b_ambiguous": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+    "g3b_direct": "25c50dbd760b3f25766153e9188686ce73c504e2f65169aea831cef6f11655d5"
+  },
+  "oracle_file_sha256": "ac93d96ac39ea5a2bc2d1e81baa179a533a6344aae97f058b3b33a8155e6c0c9",
+  "overflow_events": 0,
+  "partition_mismatches": 0,
+  "performance_claim_allowed": false,
+  "pointer_buffer_sets": 2,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "runner_sha256": "a06ae281497daafc8777640b13e964b027eaa57da70aca0046db4c17ee0104ee",
+  "safety_pass": true,
+  "scheduled_tiles": 2080,
+  "shape": [
+    4096,
+    512
+  ],
+  "torch": "2.11.0+cu130",
+  "torch_memory_allocated_after_cleanup_bytes": 0,
+  "torch_memory_reserved_after_cleanup_bytes": 0,
+  "torch_peak_memory_allocated_bytes": 427886592,
+  "torch_peak_memory_reserved_bytes": 438304768,
+  "triton": "3.6.0",
+  "vector_sha256": "e6a720399067e9753bc6f45ff6f67b73a3861964255e85e1ed9a1ce7906df462"
+}

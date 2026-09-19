@@ -1,0 +1,1949 @@
+{
+  "actual_qualifiers": [],
+  "advance_to_fully_costed_protocol": false,
+  "all_main_outputs_fully_resolved": true,
+  "canonical_final_state_hashes": {
+    "real": "34bf78842a2c75e22fa03cf07cc96a8b9773bfab6889bcafc059530662f87c4a",
+    "synthetic": "5737bb173ef91036ff4fb21dc41098ee86975b538c365f9ee4a964100c47c3cb"
+  },
+  "cases": [
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            1.097825066746709,
+            1.1649283739773735
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.1308791137503802,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            0.30045596888858345,
+            0.3567455844003464
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 0.3273932500949432,
+          "process_wins": 0,
+          "qualifies": false
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005651454994222149,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "5d457ceaee95b2bbfe37bbf070e390a1265d3498dcfd8898d405cd7dd9a2384e",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "3c86161ea83b09b37417b9e54cd0fb2167fa078c4602044dd43cc2d639455afa",
+          "tc_state_sha256": "ea4792dbdef7a4bb762d7e813a973b6fbd0b10ac73c00cafd067b2a18219a68d"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "49a8278cd56a18e719131f662959a0270b622f06a7f71288e5e94e3968190141"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "8c014417835ef9cff9f96c2796107fc22cad03fadc1edb6aa70c1ee3c5e328c3",
+          "groups": 29836,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.022760045976610854,
+          "padding": 74.82455745060199,
+          "quantized_dot_sha256": "5d457ceaee95b2bbfe37bbf070e390a1265d3498dcfd8898d405cd7dd9a2384e",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "3c86161ea83b09b37417b9e54cd0fb2167fa078c4602044dd43cc2d639455afa",
+          "tc_state_sha256": "ea4792dbdef7a4bb762d7e813a973b6fbd0b10ac73c00cafd067b2a18219a68d"
+        }
+      },
+      "name": "real_identity",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06800320148468017,
+              "p10_ms": 0.06776176154613495,
+              "p90_ms": 0.070172638297081,
+              "position_medians_ms": {
+                "0": 0.06805920004844665,
+                "1": 0.06800000071525573,
+                "2": 0.06800000071525573
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.060339197516441345,
+              "p10_ms": 0.05977263867855072,
+              "p90_ms": 0.06368720054626464,
+              "position_medians_ms": {
+                "0": 0.0602944016456604,
+                "1": 0.06039680242538452,
+                "2": 0.06017199754714966
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.20918639898300173,
+              "p10_ms": 0.20644880056381226,
+              "p90_ms": 0.2175153660774231,
+              "position_medians_ms": {
+                "0": 0.20918879508972169,
+                "1": 0.20907039642333985,
+                "2": 0.2092992067337036
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.1270153446464137,
+              "paired_arithmetic_mean": 1.1236236854156414,
+              "paired_geometric_mean": 1.1235375550801117,
+              "paired_log_median": 0.12066067625837253,
+              "primary_p16_over_candidate": 1.1282420081071125,
+              "round_wins": 40,
+              "sustained_ratio": 1.1342240150863458
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.3250842397751014,
+              "paired_arithmetic_mean": 0.3257929171426709,
+              "paired_geometric_mean": 0.32578083249336764,
+              "paired_log_median": -1.1233506248952518,
+              "primary_p16_over_candidate": 0.3251883828970858,
+              "round_wins": 0,
+              "sustained_ratio": 0.32714980449742914
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.09335520267486572,
+              "fp64_repair": 0.024967999756336214
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.020982399582862854,
+              "fp64_repair": 0.01797119975090027,
+              "tc_certificate": 0.025668799877166748,
+              "tc_dot": 0.04306240081787109
+            },
+            "TC16physical": {
+              "fp32_repair": 0.022588799893856048,
+              "fp64_repair": 0.01841920018196106,
+              "tc_certificate": 0.031436800956726074,
+              "tc_dot": 0.18811839818954468
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06741798400878907,
+            "TC16diagonal": 0.05943974304199219,
+            "TC16physical": 0.20607679748535157
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06782640218734742,
+              "p10_ms": 0.06753856062889099,
+              "p90_ms": 0.06819135785102844,
+              "position_medians_ms": {
+                "0": 0.06779680252075196,
+                "1": 0.06783519983291626,
+                "2": 0.06782400012016296
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05978640019893647,
+              "p10_ms": 0.059693917632102966,
+              "p90_ms": 0.06033104181289674,
+              "position_medians_ms": {
+                "0": 0.05981279909610748,
+                "1": 0.059772801399230954,
+                "2": 0.0597760021686554
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.20535919666290284,
+              "p10_ms": 0.20528448820114137,
+              "p90_ms": 0.20834879398345948,
+              "position_medians_ms": {
+                "0": 0.20535678863525392,
+                "1": 0.20538719892501833,
+                "2": 0.20532479286193847
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.1344787771409255,
+              "paired_arithmetic_mean": 1.13128018394448,
+              "paired_geometric_mean": 1.1312574078999154,
+              "paired_log_median": 0.12532993779649632,
+              "primary_p16_over_candidate": 1.1335223832539933,
+              "round_wins": 40,
+              "sustained_ratio": 1.1355775393307213
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.3302817857175614,
+              "paired_arithmetic_mean": 0.3291334068591808,
+              "paired_geometric_mean": 0.3291282903875566,
+              "paired_log_median": -1.1098358370045935,
+              "primary_p16_over_candidate": 0.329613066902368,
+              "round_wins": 0,
+              "sustained_ratio": 0.32937179147323553
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.06536639928817749,
+              "fp64_repair": 0.018350400030612946
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.022217600047588347,
+              "fp64_repair": 0.018836799263954162,
+              "tc_certificate": 0.0273391991853714,
+              "tc_dot": 0.04911519885063172
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02091359943151474,
+              "fp64_repair": 0.01793760061264038,
+              "tc_certificate": 0.02568959891796112,
+              "tc_dot": 0.18417439460754395
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06747532653808594,
+            "TC16diagonal": 0.05941939163208008,
+            "TC16physical": 0.2048606719970703
+          }
+        }
+      ],
+      "synthetic": false
+    },
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            1.1212297584090793,
+            1.1482233930928483
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.1346463050824023,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            0.3273315391055792,
+            0.333445352701334
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 0.33037430364259623,
+          "process_wins": 0,
+          "qualifies": false
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.004656409000745043,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "92c035b88a097e9b07d1e34dd3c713dbf5cbd124b3d2a3b565bfcbf23e85c2a1",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "e779e619611d814729dd991154acf0a0d5241054149bd9d179987c625f190358",
+          "tc_state_sha256": "a204f6758ca68ac1b9c503a467bf3a33c7f446a25611afd9d4d3a191587889ad"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "29bca6f7ef52b34a6cfd71e93278b05a510083001425e0d39eed21d836d80e6b"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c16e86e02601cdf88fbad8980df078984aaa5aa085e318c99c553f46f32366b5",
+          "groups": 29713,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.02194505400257185,
+          "padding": 74.51609047894279,
+          "quantized_dot_sha256": "92c035b88a097e9b07d1e34dd3c713dbf5cbd124b3d2a3b565bfcbf23e85c2a1",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "e779e619611d814729dd991154acf0a0d5241054149bd9d179987c625f190358",
+          "tc_state_sha256": "a204f6758ca68ac1b9c503a467bf3a33c7f446a25611afd9d4d3a191587889ad"
+        }
+      },
+      "name": "real_random",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06788319945335389,
+              "p10_ms": 0.06779951751232147,
+              "p90_ms": 0.07004384040832519,
+              "position_medians_ms": {
+                "0": 0.06788479983806611,
+                "1": 0.0678816020488739,
+                "2": 0.06788640022277832
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.059824800491333006,
+              "p10_ms": 0.0597822380065918,
+              "p90_ms": 0.06325280129909515,
+              "position_medians_ms": {
+                "0": 0.05981600284576416,
+                "1": 0.059836798906326295,
+                "2": 0.059824800491333006
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.2055224061012268,
+              "p10_ms": 0.20530815601348876,
+              "p90_ms": 0.21678400039672852,
+              "position_medians_ms": {
+                "0": 0.2055504083633423,
+                "1": 0.20559599399566653,
+                "2": 0.2054624080657959
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.134699972182746,
+              "paired_arithmetic_mean": 1.1282198217527164,
+              "paired_geometric_mean": 1.1281541176138838,
+              "paired_log_median": 0.12538482832244685,
+              "primary_p16_over_candidate": 1.1335846046014524,
+              "round_wins": 40,
+              "sustained_ratio": 1.1362246979492876
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.33029585796070865,
+              "paired_arithmetic_mean": 0.32853223663150344,
+              "paired_geometric_mean": 0.3285177718294022,
+              "paired_log_median": -1.1082572192321278,
+              "primary_p16_over_candidate": 0.33013381086751353,
+              "round_wins": 0,
+              "sustained_ratio": 0.32924120428346276
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.07366399765014649,
+              "fp64_repair": 0.01929599940776825
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.020465600490570068,
+              "fp64_repair": 0.017827199399471284,
+              "tc_certificate": 0.025007998943328856,
+              "tc_dot": 0.04312480092048645
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02130720019340515,
+              "fp64_repair": 0.01860000044107437,
+              "tc_certificate": 0.026044800877571106,
+              "tc_dot": 0.18484480381011964
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.067525634765625,
+            "TC16diagonal": 0.059429824829101564,
+            "TC16physical": 0.2050947265625
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06788400113582611,
+              "p10_ms": 0.0678062391281128,
+              "p90_ms": 0.0700710391998291,
+              "position_medians_ms": {
+                "0": 0.06787840127944947,
+                "1": 0.06790879964828492,
+                "2": 0.06789680123329163
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.059772801399230954,
+              "p10_ms": 0.0596700781583786,
+              "p90_ms": 0.06224992096424103,
+              "position_medians_ms": {
+                "0": 0.05981119871139526,
+                "1": 0.0597648024559021,
+                "2": 0.05976639986038208
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.205297589302063,
+              "p10_ms": 0.20515312671661376,
+              "p90_ms": 0.2156168007850647,
+              "position_medians_ms": {
+                "0": 0.20530400276184083,
+                "1": 0.2053048014640808,
+                "2": 0.20528960227966309
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.135700511716346,
+              "paired_arithmetic_mean": 1.1342797065637336,
+              "paired_geometric_mean": 1.134263417123495,
+              "paired_log_median": 0.12725712545754764,
+              "primary_p16_over_candidate": 1.135708999938105,
+              "round_wins": 40,
+              "sustained_ratio": 1.1373095746081885
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.3306614625461847,
+              "paired_arithmetic_mean": 0.3298857472584146,
+              "paired_geometric_mean": 0.3298796642656625,
+              "paired_log_median": -1.1068008084451777,
+              "primary_p16_over_candidate": 0.33061497160959497,
+              "round_wins": 0,
+              "sustained_ratio": 0.32993571329790977
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.0657151997089386,
+              "fp64_repair": 0.018300800025463103
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.02189279943704605,
+              "fp64_repair": 0.019356800615787505,
+              "tc_certificate": 0.02770400047302246,
+              "tc_dot": 0.05235999822616577
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02051360011100769,
+              "fp64_repair": 0.01844000071287155,
+              "tc_certificate": 0.025591999292373657,
+              "tc_dot": 0.18421119451522827
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06756601715087891,
+            "TC16diagonal": 0.05940864181518555,
+            "TC16physical": 0.204785400390625
+          }
+        }
+      ],
+      "synthetic": false
+    },
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            1.134106992121509,
+            1.1417783893461142
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.137936226161494,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            0.6958719633119177,
+            0.7073338794401621
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 0.7015795146689083,
+          "process_wins": 0,
+          "qualifies": false
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005103376985061914,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "ca0cb0e775107714665dad28e5eb0f62ec2c4b58182e5e52b2cf9411a4289dc5",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "8c67e6f345eb491bb9d04f256bfa597299d58e73d497356f7e04ffbf43ceed2d",
+          "tc_state_sha256": "cb5abe3d1787f3e9fe3d894433b54c639db3adfad79f8cfddca93ad999391f94"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "46fd7dca7691b10c9d0cea159d1d2daf7df787800247ee7ee7c0a76fa7a9f497"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "c067c64bc4be7c78380dc935faa465ff5396b0f5db86f024b52c33c5e13979d6",
+          "groups": 11998,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.013383827987127006,
+          "padding": 30.089322975342625,
+          "quantized_dot_sha256": "ca0cb0e775107714665dad28e5eb0f62ec2c4b58182e5e52b2cf9411a4289dc5",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "8c67e6f345eb491bb9d04f256bfa597299d58e73d497356f7e04ffbf43ceed2d",
+          "tc_state_sha256": "cb5abe3d1787f3e9fe3d894433b54c639db3adfad79f8cfddca93ad999391f94"
+        }
+      },
+      "name": "real_degree_oracle",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06800079941749573,
+              "p10_ms": 0.06781071722507477,
+              "p90_ms": 0.07023343801498412,
+              "position_medians_ms": {
+                "0": 0.06798479855060577,
+                "1": 0.06807039976119995,
+                "2": 0.06798719763755798
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05969919860363007,
+              "p10_ms": 0.05955696105957031,
+              "p90_ms": 0.06177599966526032,
+              "position_medians_ms": {
+                "0": 0.05974239706993103,
+                "1": 0.05968160033226013,
+                "2": 0.05976240038871765
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.09714560210704803,
+              "p10_ms": 0.09655487775802613,
+              "p90_ms": 0.10097760200500489,
+              "position_medians_ms": {
+                "0": 0.09721760153770446,
+                "1": 0.09774479866027833,
+                "2": 0.0970736026763916
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.1390571566795014,
+              "paired_arithmetic_mean": 1.1386794628065193,
+              "paired_geometric_mean": 1.1386730955644049,
+              "paired_log_median": 0.12948157713525338,
+              "primary_p16_over_candidate": 1.1382381416622902,
+              "round_wins": 40,
+              "sustained_ratio": 1.1386170248404819
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.6999884497351032,
+              "paired_arithmetic_mean": 0.6989680012199185,
+              "paired_geometric_mean": 0.6989481620613686,
+              "paired_log_median": -0.3550639159818252,
+              "primary_p16_over_candidate": 0.7011286284517249,
+              "round_wins": 0,
+              "sustained_ratio": 0.7014500974667364
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.07206559777259827,
+              "fp64_repair": 0.019361600279808044
+            },
+            "TC16diagonal": {
+              "fp32_repair": 5.237161636352539,
+              "fp64_repair": 0.02003680020570755,
+              "tc_certificate": 0.025088000297546386,
+              "tc_dot": 0.0429280012845993
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02084160000085831,
+              "fp64_repair": 0.017735999822616578,
+              "tc_certificate": 0.025443199276924133,
+              "tc_dot": 0.08010079860687255
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06754975891113281,
+            "TC16diagonal": 0.05932614517211914,
+            "TC16physical": 0.09630016326904296
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06788879930973053,
+              "p10_ms": 0.06777167797088622,
+              "p90_ms": 0.07026399970054627,
+              "position_medians_ms": {
+                "0": 0.06792799830436706,
+                "1": 0.06780319809913635,
+                "2": 0.06786400079727173
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05964560210704803,
+              "p10_ms": 0.059580642580986026,
+              "p90_ms": 0.06175760090351105,
+              "position_medians_ms": {
+                "0": 0.0596448004245758,
+                "1": 0.05965120196342468,
+                "2": 0.059640002250671384
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.09661680161952974,
+              "p10_ms": 0.09654832124710083,
+              "p90_ms": 0.10074031591415405,
+              "position_medians_ms": {
+                "0": 0.09660000205039979,
+                "1": 0.09661680161952974,
+                "2": 0.09662879705429077
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.1382029338540023,
+              "paired_arithmetic_mean": 1.1388639121421558,
+              "paired_geometric_mean": 1.1388482093574548,
+              "paired_log_median": 0.12895101057263014,
+              "primary_p16_over_candidate": 1.1376343907432098,
+              "round_wins": 40,
+              "sustained_ratio": 1.1377815286809172
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.7026603879630783,
+              "paired_arithmetic_mean": 0.7008029480800166,
+              "paired_geometric_mean": 0.7007963621110909,
+              "paired_log_median": -0.35377815675978364,
+              "primary_p16_over_candidate": 0.702030690844842,
+              "round_wins": 0,
+              "sustained_ratio": 0.7020016732869561
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.06600639820098878,
+              "fp64_repair": 0.017998400330543517
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.02194720059633255,
+              "fp64_repair": 0.018729600310325622,
+              "tc_certificate": 0.027507200837135315,
+              "tc_dot": 0.04933759868144989
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02088640034198761,
+              "fp64_repair": 0.018108800053596497,
+              "tc_certificate": 0.025809600949287415,
+              "tc_dot": 0.07969440221786499
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06755596923828125,
+            "TC16diagonal": 0.059375167846679684,
+            "TC16physical": 0.09623334503173828
+          }
+        }
+      ],
+      "synthetic": false
+    },
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            0.9354693726671748,
+            1.3540576414536778
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.125468547941641,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            0.488906259355609,
+            0.5767281786852116
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 0.5310047236192538,
+          "process_wins": 0,
+          "qualifies": false
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full",
+            "fp64_repair"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.0053049109992571175,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "f645df178807c00cfeea095ebc64e0e648d7aabf66c74af1ed520037f8350573",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "256ffe82752dc601200fbbc7a30121322a5d8e9f4c5650296cc121f8be514263",
+          "tc_state_sha256": "fac3c6b610e69809b3f93e34945abe377203d91cf0231c75dd152d62a8ab74ca"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            59859,
+            42123,
+            97
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "d99d7162cf5ce1f00d89ead720382dd133c1b2b19fd96f67b2ffed3e78aa5965",
+            "ab6506f5c66757e1a683149982698de827551f92a2f4699b37d9ff5670142415"
+          ],
+          "correctness_after": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "correctness_before": {
+            "counts": [
+              59905,
+              42174,
+              0
+            ],
+            "sha256": "0aa13ceaca2cfb328a4740f240ea88de8dca24902beac32e8327755e5385bb00"
+          },
+          "fp64_pending_count": 97,
+          "fp64_queue_sha256": "b1a3aca111afc14015c614fe44314038bf02ce899aada40b2bfe9dc45dd58de9",
+          "groups": 16798,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.015254936995916069,
+          "padding": 42.12705845472624,
+          "quantized_dot_sha256": "f645df178807c00cfeea095ebc64e0e648d7aabf66c74af1ed520037f8350573",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair",
+            "fp64_repair"
+          ],
+          "tc_initial_counts": [
+            58114,
+            40409,
+            3556
+          ],
+          "tc_pending_count": 3556,
+          "tc_queue_sha256": "256ffe82752dc601200fbbc7a30121322a5d8e9f4c5650296cc121f8be514263",
+          "tc_state_sha256": "fac3c6b610e69809b3f93e34945abe377203d91cf0231c75dd152d62a8ab74ca"
+        }
+      },
+      "name": "real_pca1",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06615360081195831,
+              "p10_ms": 0.06594959974288941,
+              "p90_ms": 0.07003296077251435,
+              "position_medians_ms": {
+                "0": 0.06613280177116394,
+                "1": 0.06608800292015075,
+                "2": 0.06633920073509217
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05968399941921235,
+              "p10_ms": 0.0595932799577713,
+              "p90_ms": 0.06178592085838318,
+              "position_medians_ms": {
+                "0": 0.05963680148124695,
+                "1": 0.059716802835464475,
+                "2": 0.05969039797782898
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.12552400231361388,
+              "p10_ms": 0.12535168051719667,
+              "p90_ms": 0.13162383675575257,
+              "position_medians_ms": {
+                "0": 0.12553600072860718,
+                "1": 0.1254607975482941,
+                "2": 0.12547039985656738
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.108397584875376,
+              "paired_arithmetic_mean": 1.117967599531967,
+              "paired_geometric_mean": 1.1178845799799175,
+              "paired_log_median": 0.10364699390318041,
+              "primary_p16_over_candidate": 1.1092088283173187,
+              "round_wins": 40,
+              "sustained_ratio": 1.104666850440476
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.5270195308677115,
+              "paired_arithmetic_mean": 0.5291080787698548,
+              "paired_geometric_mean": 0.5290958062467701,
+              "paired_log_median": -0.6394851344284257,
+              "primary_p16_over_candidate": 0.5275639786594029,
+              "round_wins": 0,
+              "sustained_ratio": 0.5249670588666296
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.07248319983482361,
+              "fp64_repair": 0.019444799423217772
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.020793600380420683,
+              "fp64_repair": 0.01785759925842285,
+              "tc_certificate": 0.025217598676681517,
+              "tc_dot": 0.04285280108451843
+            },
+            "TC16physical": {
+              "fp32_repair": 0.021323199570178985,
+              "fp64_repair": 0.020231999456882477,
+              "tc_certificate": 0.026015999913215637,
+              "tc_dot": 0.10889919996261596
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06559564971923829,
+            "TC16diagonal": 0.0593804817199707,
+            "TC16physical": 0.12495193481445313
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06599680185317994,
+              "p10_ms": 0.06592640280723572,
+              "p90_ms": 0.06994032204151154,
+              "position_medians_ms": {
+                "0": 0.06596639752388,
+                "1": 0.06598399877548218,
+                "2": 0.06600719988346099
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.0577567994594574,
+              "p10_ms": 0.05768736124038697,
+              "p90_ms": 0.061464321017265316,
+              "position_medians_ms": {
+                "0": 0.057778400182723996,
+                "1": 0.057740801572799684,
+                "2": 0.0577455997467041
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.12352560162544252,
+              "p10_ms": 0.12346992135047913,
+              "p90_ms": 0.12977055788040162,
+              "position_medians_ms": {
+                "0": 0.1234895944595337,
+                "1": 0.12353840470314026,
+                "2": 0.12355999946594239
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.14266722655757,
+              "paired_arithmetic_mean": 1.1413385243960905,
+              "paired_geometric_mean": 1.1413311082379927,
+              "paired_log_median": 0.132751878114737,
+              "primary_p16_over_candidate": 1.1419666162659667,
+              "round_wins": 40,
+              "sustained_ratio": 1.1428496026465722
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.5342763037357804,
+              "paired_arithmetic_mean": 0.535737618083995,
+              "paired_geometric_mean": 0.5357321728345303,
+              "paired_log_median": -0.6264835897214849,
+              "primary_p16_over_candidate": 0.5344679089396253,
+              "round_wins": 0,
+              "sustained_ratio": 0.5333061635276938
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.0651423990726471,
+              "fp64_repair": 0.01815039962530136
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.021524800360202788,
+              "fp64_repair": 0.019020800292491914,
+              "tc_certificate": 0.02701599895954132,
+              "tc_dot": 0.048635199666023254
+            },
+            "TC16physical": {
+              "fp32_repair": 0.021219199895858763,
+              "fp64_repair": 0.01798879951238632,
+              "tc_certificate": 0.025414401292800905,
+              "tc_dot": 0.1064736008644104
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06558252716064453,
+            "TC16diagonal": 0.057385089874267575,
+            "TC16physical": 0.12297350311279297
+          }
+        }
+      ],
+      "synthetic": false
+    },
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            1.0023245045761473,
+            1.1675655682596293
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.0817946107122187,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            2.972105091142328,
+            3.0239569308586325
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 2.997918909777259,
+          "process_wins": 2,
+          "qualifies": true
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005508439993718639,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "1d92782522053517bb4545b4ea935f9d0e29afd90895566e694e875a877c5170",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "24c34262ca6182d0b959d7d59e758bde11bfdbbc9b08a7820f08b5fd080115cc",
+          "tc_state_sha256": "227138a8ef48cb58111059f10af35f47d4ffebf30d7ed0022386592bb25f242f"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "233be8f904147b3ea426a8586214a164a3e7a1f125582d70b26eebea1e6e1136"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 429,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.005141767003806308,
+          "padding": 1.0758726084699106,
+          "quantized_dot_sha256": "1d92782522053517bb4545b4ea935f9d0e29afd90895566e694e875a877c5170",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "24c34262ca6182d0b959d7d59e758bde11bfdbbc9b08a7820f08b5fd080115cc",
+          "tc_state_sha256": "227138a8ef48cb58111059f10af35f47d4ffebf30d7ed0022386592bb25f242f"
+        }
+      },
+      "name": "synthetic_clustered",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06165199875831604,
+              "p10_ms": 0.05980623841285705,
+              "p90_ms": 0.06181791841983795,
+              "position_medians_ms": {
+                "0": 0.06164640188217163,
+                "1": 0.06165279746055603,
+                "2": 0.061710399389266965
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05650720000267029,
+              "p10_ms": 0.05540880143642425,
+              "p90_ms": 0.057041440010070804,
+              "position_medians_ms": {
+                "0": 0.05616800189018249,
+                "1": 0.05683519840240479,
+                "2": 0.056538400053977964
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.02056319937109947,
+              "p10_ms": 0.01870368018746376,
+              "p90_ms": 0.020668639838695525,
+              "position_medians_ms": {
+                "0": 0.020422400534152986,
+                "1": 0.020580799877643587,
+                "2": 0.020559999346733093
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.0910467826295167,
+              "paired_arithmetic_mean": 1.0887824952815268,
+              "paired_geometric_mean": 1.0887500947546513,
+              "paired_log_median": 0.08462624202879662,
+              "primary_p16_over_candidate": 1.0883102260510387,
+              "round_wins": 40,
+              "sustained_ratio": 1.068554622069063
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 2.9981715221301983,
+              "paired_arithmetic_mean": 3.0461019878532936,
+              "paired_geometric_mean": 3.0449505741240706,
+              "paired_log_median": 1.0985989529100515,
+              "primary_p16_over_candidate": 2.9999599929925878,
+              "round_wins": 40,
+              "sustained_ratio": 3.2198158223597297
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.06824640035629273
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.020499199628829956,
+              "tc_certificate": 0.025459200143814087,
+              "tc_dot": 0.044670400023460385
+            },
+            "TC16physical": {
+              "fp32_repair": 0.021246400475502015,
+              "tc_certificate": 0.029057601094245912,
+              "tc_dot": 0.020977599918842314
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.05938988876342773,
+            "TC16diagonal": 0.05557964706420898,
+            "TC16physical": 0.018445119857788086
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06166239976882934,
+              "p10_ms": 0.061622399091720584,
+              "p90_ms": 0.06184256076812744,
+              "position_medians_ms": {
+                "0": 0.061768001317977904,
+                "1": 0.06165120005607605,
+                "2": 0.06164160072803497
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.057331201434135434,
+              "p10_ms": 0.05703840017318726,
+              "p90_ms": 0.057533121705055236,
+              "position_medians_ms": {
+                "0": 0.05743919909000397,
+                "1": 0.057252800464630126,
+                "2": 0.05726240277290344
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.02058800011873245,
+              "p10_ms": 0.02056304007768631,
+              "p90_ms": 0.020613120049238206,
+              "position_medians_ms": {
+                "0": 0.02059040069580078,
+                "1": 0.020580800622701644,
+                "2": 0.02059520035982132
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.0755469661606476,
+              "paired_arithmetic_mean": 1.0766114367697326,
+              "paired_geometric_mean": 1.076602370636039,
+              "paired_log_median": 0.07261643530013395,
+              "primary_p16_over_candidate": 1.0753180037758077,
+              "round_wins": 40,
+              "sustained_ratio": 1.0652069591424365
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 2.9950650579569618,
+              "paired_arithmetic_mean": 2.9965538830052836,
+              "paired_geometric_mean": 2.996550681785094,
+              "paired_log_median": 1.0972377495065118,
+              "primary_p16_over_candidate": 2.995879215254014,
+              "round_wins": 40,
+              "sustained_ratio": 3.2153743029973723
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.061179202795028684
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.02249760031700134,
+              "tc_certificate": 0.026804798841476442,
+              "tc_dot": 0.04944320023059845
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02051679939031601,
+              "tc_certificate": 0.02559039890766144,
+              "tc_dot": 0.0191648006439209
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.059324222564697264,
+            "TC16diagonal": 0.05569267272949219,
+            "TC16physical": 0.018450176239013672
+          }
+        }
+      ],
+      "synthetic": true
+    },
+    {
+      "aggregate": {
+        "TC16diagonal": {
+          "diagnostic_t95_interval": [
+            0.9989238146549371,
+            1.26365512740291
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 1.1235191143338796,
+          "process_wins": 2,
+          "qualifies": false
+        },
+        "TC16physical": {
+          "diagnostic_t95_interval": [
+            0.3187779217432079,
+            0.42318299785635294
+          ],
+          "interval_limit": "Two processes; log-normal assumption untested; directional screen only.",
+          "primary_p16_over_candidate": 0.3672892546395941,
+          "process_wins": 0,
+          "qualifies": false
+        }
+      },
+      "methods": {
+        "P16": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "3e5883e356ef15423bef157c1e5e2385193fa10e2a67e0d574a9619323217c49"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "padding": 1.0,
+          "stage_names": [
+            "fp32_full"
+          ],
+          "tc_pending_count": null
+        },
+        "TC16diagonal": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 6380,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.00536733798799105,
+          "padding": 16.00015674134739,
+          "quantized_dot_sha256": "14c5805c11568f32b87235af90a4f277935f16280c0119114ac613fdb7d3483a",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "816facb5d2ece6839bcc9f2825154ac5cc33b82127c00766fee4ae468baa9faf",
+          "tc_state_sha256": "6283a0b17091cf8b12117c82fda1c12be1b8f064e58d3e832f9661f582d1a491"
+        },
+        "TC16physical": {
+          "after_fp32_counts": [
+            99941,
+            2138,
+            0
+          ],
+          "compiled_stage_hashes": [
+            "51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573",
+            "df32a5be338377635e49587df97645e4f61ee801c23c159631d6b481441f2cfc",
+            "e6ded98f14d39199fd12f739a83e204e1fcccaa3931e90f44543ddb3518eb9c7"
+          ],
+          "correctness_after": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "correctness_before": {
+            "counts": [
+              99941,
+              2138,
+              0
+            ],
+            "sha256": "88179fe082b4b4b9077df3942757eb438ee7f21d94d2664e9dfb580e6923804d"
+          },
+          "fp64_pending_count": 0,
+          "fp64_queue_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "groups": 24219,
+          "integer_dot_exact": true,
+          "interval_enclosure_pass": true,
+          "packing_host_seconds": 0.019135687995003536,
+          "padding": 60.73789907816495,
+          "quantized_dot_sha256": "14c5805c11568f32b87235af90a4f277935f16280c0119114ac613fdb7d3483a",
+          "stage_names": [
+            "tc_dot",
+            "tc_certificate",
+            "fp32_repair"
+          ],
+          "tc_initial_counts": [
+            99914,
+            2122,
+            43
+          ],
+          "tc_pending_count": 43,
+          "tc_queue_sha256": "816facb5d2ece6839bcc9f2825154ac5cc33b82127c00766fee4ae468baa9faf",
+          "tc_state_sha256": "6283a0b17091cf8b12117c82fda1c12be1b8f064e58d3e832f9661f582d1a491"
+        }
+      },
+      "name": "synthetic_scattered",
+      "processes": [
+        {
+          "label": "g9_graph_p0_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.06191760003566742,
+              "p10_ms": 0.061815840601921086,
+              "p90_ms": 0.06574832141399384,
+              "position_medians_ms": {
+                "0": 0.0619344025850296,
+                "1": 0.06190239787101746,
+                "2": 0.061899197101593015
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.05568559765815735,
+              "p10_ms": 0.05551664054393768,
+              "p90_ms": 0.05771136224269867,
+              "position_medians_ms": {
+                "0": 0.055580800771713255,
+                "1": 0.05572479963302612,
+                "2": 0.055712801218032834
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.17046560049057008,
+              "p10_ms": 0.17038848519325256,
+              "p90_ms": 0.17900815725326538,
+              "position_medians_ms": {
+                "0": 0.17057759761810304,
+                "1": 0.17048240303993223,
+                "2": 0.17041759490966796
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.1119140790365054,
+              "paired_arithmetic_mean": 1.1212521823905874,
+              "paired_geometric_mean": 1.1211550340209393,
+              "paired_log_median": 0.10721502320110499,
+              "primary_p16_over_candidate": 1.1131735868954322,
+              "round_wins": 40,
+              "sustained_ratio": 1.1119819208079296
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.36322636272350217,
+              "paired_arithmetic_mean": 0.3647150524564591,
+              "paired_geometric_mean": 0.36470358637015843,
+              "paired_log_median": -1.0127540724233177,
+              "primary_p16_over_candidate": 0.36321727414164096,
+              "round_wins": 0,
+              "sustained_ratio": 0.3617003259954223
+            }
+          },
+          "reverse": false,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.06864320039749146
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.020598399639129638,
+              "tc_certificate": 0.025388801097869874,
+              "tc_dot": 0.042656001448631284
+            },
+            "TC16physical": {
+              "fp32_repair": 0.021515199542045595,
+              "tc_certificate": 0.02844800055027008,
+              "tc_dot": 0.15407199859619142
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06149491119384766,
+            "TC16diagonal": 0.05530207824707031,
+            "TC16physical": 0.17001618957519532
+          }
+        },
+        {
+          "label": "g9_graph_p1_a0",
+          "methods": {
+            "P16": {
+              "median_ms": 0.061882400512695314,
+              "p10_ms": 0.06183024108409882,
+              "p90_ms": 0.06577551901340485,
+              "position_medians_ms": {
+                "0": 0.06184800267219544,
+                "1": 0.061896002292633055,
+                "2": 0.06189360022544861
+              }
+            },
+            "TC16diagonal": {
+              "median_ms": 0.054895997047424316,
+              "p10_ms": 0.054367842078208925,
+              "p90_ms": 0.05756064236164093,
+              "position_medians_ms": {
+                "0": 0.054872000217437746,
+                "1": 0.054816001653671266,
+                "2": 0.054895997047424316
+              }
+            },
+            "TC16physical": {
+              "median_ms": 0.16696079969406127,
+              "p10_ms": 0.16642623543739318,
+              "p90_ms": 0.17555455923080443,
+              "position_medians_ms": {
+                "0": 0.16739360094070435,
+                "1": 0.1668887972831726,
+                "2": 0.16671520471572876
+              }
+            }
+          },
+          "ratios": {
+            "TC16diagonal": {
+              "marginal_median_ratio": 1.127266173146204,
+              "paired_arithmetic_mean": 1.1335094126402658,
+              "paired_geometric_mean": 1.1334772864414104,
+              "paired_log_median": 0.12571662820249305,
+              "primary_p16_over_candidate": 1.1339607902430056,
+              "round_wins": 40,
+              "sustained_ratio": 1.1228665348902185
+            },
+            "TC16physical": {
+              "marginal_median_ratio": 0.37064029775904606,
+              "paired_arithmetic_mean": 0.37227548464069754,
+              "paired_geometric_mean": 0.3722685395809504,
+              "paired_log_median": -0.9904570907396268,
+              "primary_p16_over_candidate": 0.3714068855687249,
+              "round_wins": 0,
+              "sustained_ratio": 0.36909226081827234
+            }
+          },
+          "reverse": true,
+          "stage_diagnostic_ms": {
+            "P16": {
+              "fp32_full": 0.06331679821014405
+            },
+            "TC16diagonal": {
+              "fp32_repair": 0.022228799760341644,
+              "tc_certificate": 0.027451199293136597,
+              "tc_dot": 0.049039998650550844
+            },
+            "TC16physical": {
+              "fp32_repair": 0.02081120014190674,
+              "tc_certificate": 0.026161599159240722,
+              "tc_dot": 0.15144480466842652
+            }
+          },
+          "sustained_ms": {
+            "P16": 0.06147782516479492,
+            "TC16diagonal": 0.05475078582763672,
+            "TC16physical": 0.16656492614746093
+          }
+        }
+      ],
+      "synthetic": true
+    }
+  ],
+  "claim_boundary": "Not an online implementation, full join speedup, novelty result, or production admission.",
+  "compiled_kernel_count": 18,
+  "denominator": "CUDA-event complete captured refinement, 20 Graph replays per observation; capture excluded",
+  "excluded": "initial filter, encoding, layout/tile metadata, intermediate queue construction/count discovery, Graph capture, final ID export, ingest",
+  "experiment_id": "tensorjoin_20260904_g9_int14_tc_refinement_optimistic",
+  "gpu_uuid": "GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603",
+  "graph_mode": true,
+  "identical_cubin_set_across_correctness_sanitizers_and_timing": true,
+  "identical_source_hashes_across_admitted_processes": true,
+  "included": "TC dot, directed certificate and endpoint writes, actual FP32 repair, actual FP64 repair, aligned output updates",
+  "same_cubins_as_eager_a0": true,
+  "status": "partial_optimistic_graph_refinement_evidence"
+}

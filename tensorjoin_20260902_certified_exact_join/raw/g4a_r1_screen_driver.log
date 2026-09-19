@@ -1,0 +1,170 @@
+G4A_R1_SCREEN_DRIVER_START 2026-09-03T05:03:56+00:00 host=gpu-host-8
+SLOT_START slot=0 order=kc attempt=0 time=2026-09-03T05:03:56+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_screen_process_0_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "screen", "--process-id", "0", "--attempt", "0", "--order", "KC", "--warmups", "10", "--observations", "50", "--sustained-launches", "200"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 49, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "34.45", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_screen_process_0_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "c32962f970bea3d64fd20b8b6d793253900edcd24fc14f9d9a12c6c33dd3e4f5", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "KC", "phase": "screen", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_screen_process_0_kc_a0_preflight.log", "preflight_log_sha256": "6895068266750104d518b3b5186c3f6da6a02c9b2b1c41161b9a95cc465cfab3", "process_id": 0, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_screen_process_0_kc_a0.log", "raw_log_sha256": "924bf9d2f6d5dbe8e82d30051305345d625d9647b5d4beafdceb1202a45ec20b", "result": "results/g4a_r1_screen_process_0_kc_a0.json", "result_sha256": "a4beb2f9bc3be3568040b9a004bf5c19b7ee26a1bbd5570092794d5c12a3afe0", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 50, "sustained_launches": 200, "warmups": 10}, "status": "clean_slot_complete", "target_gpu_pids": [3816200], "wall_seconds": 36.66922068595886}
+SLOT_RETURN slot=0 order=kc attempt=0 rc=0 manifest=results/g4a_r1_screen_process_0_kc_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 36.66922068595886}
+SLOT_START slot=1 order=ck attempt=0 time=2026-09-03T05:04:34+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_screen_process_1_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "screen", "--process-id", "1", "--attempt", "0", "--order", "CK", "--warmups", "10", "--observations", "50", "--sustained-launches", "200"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 27, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "87.13", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_screen_process_1_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "a3a2a7b6e9f953f92ea17d43926cab7a731041e625d569df429f285392778ba8", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "CK", "phase": "screen", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_screen_process_1_ck_a0_preflight.log", "preflight_log_sha256": "0955759148ddbee0c24b753db09296b54bc49f581047cffdb5a7303638b0f2cd", "process_id": 1, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_screen_process_1_ck_a0.log", "raw_log_sha256": "2242dd6ff1aa75bd984405bfa5458e1bb96f89af744bfea5319a895836748984", "result": "results/g4a_r1_screen_process_1_ck_a0.json", "result_sha256": "66d1444f8e07dfcdb47a280819a3f913d4883f601d7d8c34a7d4a318e1873f32", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 50, "sustained_launches": 200, "warmups": 10}, "status": "clean_slot_complete", "target_gpu_pids": [3816822], "wall_seconds": 36.759795904159546}
+SLOT_RETURN slot=1 order=ck attempt=0 rc=0 manifest=results/g4a_r1_screen_process_1_ck_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 36.759795904159546}
+{
+  "auditor_sha256": "9ba08eb65961ca6334119df24e3447f2b3e9913056714dbc7460a1e169fee0a5",
+  "expected_cubins": {
+    "analytic_certificate_compact_i64.cubin": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "certified_fp32_filter_i64.cubin": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670",
+    "refine_ambiguous_fp64_i64.cubin": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+  },
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "measurement_status": "runtime_binary_identity_not_performance",
+  "phase": "screen",
+  "processes": [
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_screen_process_0_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_0_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_0_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_0_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 0
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_screen_process_1_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_1_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_1_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_screen_process_1_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 1
+    }
+  ],
+  "runtime_binary_gate_pass": true
+}
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "admit_formal",
+  "dynamic_count_contract_pass": true,
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 362.898,
+      "p10_us": 339.7945,
+      "p90_us": 426.5924
+    },
+    "keeper_two_stage": {
+      "median_us": 792.5625,
+      "p10_us": 773.8652,
+      "p90_us": 809.9621
+    }
+  },
+  "measurement_scope": "host-dispatched dynamic-count resident-GPU operator",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 406.128,
+        "p10_us": 394.40139999999997,
+        "p90_us": 434.1833
+      },
+      "keeper_two_stage": {
+        "median_us": 775.466,
+        "p10_us": 772.4952000000001,
+        "p90_us": 780.0575
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 341.59749999999997,
+        "p10_us": 339.01640000000003,
+        "p90_us": 345.63280000000003
+      },
+      "keeper_two_stage": {
+        "median_us": 800.4845,
+        "p10_us": 796.9457,
+        "p90_us": 825.4993
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.1152857125355236,
+  "phase": "screen",
+  "process_median_wins": 2,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 341.59749999999997,
+      "candidate_sustained_mean_us": 337.966455,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 775.466,
+      "keeper_sustained_mean_us": 774.86442,
+      "median_speedup_keeper_over_candidate": 2.2701161454635943,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g4a_r1_screen_process_0_kc_a0.json",
+      "result_sha256": "a4beb2f9bc3be3568040b9a004bf5c19b7ee26a1bbd5570092794d5c12a3afe0",
+      "sustained_speedup_keeper_over_candidate": 2.2927258268871684
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 406.128,
+      "candidate_sustained_mean_us": 345.44913,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 800.4845,
+      "keeper_sustained_mean_us": 778.104755,
+      "median_speedup_keeper_over_candidate": 1.9710152956703306,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g4a_r1_screen_process_1_ck_a0.json",
+      "result_sha256": "66d1444f8e07dfcdb47a280819a3f913d4883f601d7d8c34a7d4a318e1873f32",
+      "sustained_speedup_keeper_over_candidate": 2.2524438113362737
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "screen_gate_pass": true,
+  "screen_thresholds": {
+    "each_process_median_speedup_minimum": 1.2,
+    "each_process_sustained_speedup_minimum": 1.2
+  },
+  "single_protocol_sha256": [
+    "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac"
+  ],
+  "single_runner_sha256": [
+    "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6"
+  ],
+  "sustained_geometric_mean_speedup": 2.2724955665221533,
+  "sustained_wins": 2
+}
+G4A_R1_SCREEN_DRIVER_DONE 2026-09-03T05:05:12+00:00

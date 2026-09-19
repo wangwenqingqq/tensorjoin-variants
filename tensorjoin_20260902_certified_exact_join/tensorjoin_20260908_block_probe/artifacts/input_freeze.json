@@ -1,0 +1,13 @@
+{
+  "data/g2b_cifar60000/vectors_f32.npy": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+  "precision_routing_20260908_threshold_sweep/artifacts/thresholds.json": "f04a0cca4ec5c99bfb84e99b82546607cf7aea50c039037c784c583c19d01516",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_manifest.json": "7751b0f92de9c0c716302f43bdd7b6f9abd0a046620bfe1ca4d27a841f610a78",
+  "tensorjoin_20260908_block_probe/src/probe.py": "2eb5eb1778fc91779d9300826034df7875c47714ed6544b783866fce3ffd19bc",
+  "tensorjoin_20260908_block_probe/PROTOCOL.md": "5d34da9b0505ef128a9d1674383b79668943d8ac73aeeccf0a792b5a00301283",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_k4.npy": "73f0473e01f96772b6c4d054f3c6a082dff86a190835b3de29e353d347fb1410",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_k16.npy": "08b853056b21b3876a4339a2e1334d5f64e12d743d9d68af82571ff4b587559b",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_k64.npy": "f77719ebe4229a3db8af16c6d3bff33d1efc06ef87ccaec2d8074c7d163a1803",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_original.npy": "b566e59c35bf431d128a9161f71142e476c4ff2b4278847029dbbd6a2ead8632",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_k256.npy": "0a903b9092542ab368b919ca724125e2c8f7a32b89f65b29dd4f92da345ad7a5",
+  "precision_routing_20260908_threshold_sweep/artifacts/reference_k1024.npy": "75d3518689ae8ef05d35ab79bfed02c86fb8655d4bd0aebd4f96c18c60432462"
+}

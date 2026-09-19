@@ -1,0 +1,36 @@
+{
+  "orders": [
+    [
+      "rt",
+      "tc",
+      "fp32"
+    ],
+    [
+      "fp32",
+      "tc",
+      "rt"
+    ]
+  ],
+  "source_hashes": {
+    "g19_reusable_complete_cost_20260905/src/screen.py": "4c597678a4de9b16653c0b3b668ee704d0d8f90869dd0be2b8f78dbce6f94c35",
+    "g19_reusable_complete_cost_20260905/results/admission_r3.json": "ac50b83b86e96e40c1acb92251f9dc50f654fba69a43b06f2f3ae5996291767a",
+    "g19_reusable_complete_cost_20260905/results/code_audit.json": "39355f8af18147475280c6df8828e04ab260639c03e6d706ebefdcb76e05daea",
+    "g19_reusable_complete_cost_20260905/artifacts/frozen_execution.json": "01ea40cae6370ec3f17181d5ba4c8218184237f39e14033993e2c85c7925bd84",
+    "g19_reusable_complete_cost_20260905/artifacts/frozen_r1.json": "9cb0968af317cb68f4662806b06b97ca93cb12ef48b28cc674bf1917ca8d8d61",
+    "g19_reusable_complete_cost_20260905/artifacts/frozen_r2.json": "3f68569834ba6e289061a8656b0e8bbd02730822bf9e4a343768f7043ffea381",
+    "g19_reusable_complete_cost_20260905/artifacts/frozen_r3.json": "bb7ba2ad0e4551da66f96ef64246b00c3cdcfe6c62441017cfdeaffb3db6fcab",
+    "g19_reusable_complete_cost_20260905/ADDENDUM_OWNED_CUBLAS_R3.md": "eb875c5b194ac0f8b83c6ec60f9c2ffa60e13d69abbdbc2e9470fa035927a346",
+    "g19_reusable_complete_cost_20260905/PROTOCOL.md": "29c17ec3e0310b3d7b0d3fe33548766250a5b9da78d860de4cf5818d2635ca40",
+    "g19_reusable_complete_cost_20260905/ADDENDUM_PINNED_LIFETIME_R1.md": "715c6b58852f61adb9dd20dabd35a16b925235492706ad9dca632efdcf896a23",
+    "g19_reusable_complete_cost_20260905/ADDENDUM_TORCH_SHUTDOWN_R2.md": "ca454bb7fc071bcab5240e27d432014a1ce9def29ee6409907895a40866920ce"
+  },
+  "libraries": {
+    "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublasLt.so.13": "656298c804f5adbb0df930545c17911b9584ab4e5101c0eeb65d1fe881d880f8"
+  },
+  "observations": 5,
+  "warmups": 2,
+  "primary": "Within each block: min(median(RT), median(FP32))/median(TC); both blocks >=1.10",
+  "confidence_interval": null,
+  "scope": "Cheap screen only; two independent blocks"
+}

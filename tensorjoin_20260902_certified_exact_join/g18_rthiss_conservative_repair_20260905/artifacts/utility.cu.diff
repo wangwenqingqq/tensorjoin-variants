@@ -1,0 +1,69 @@
+--- g17/utility.cu
++++ g18/utility.cu
+@@ -1,5 +1,7 @@
+ #include "utility.h"
+ #include "g17_export.h"
++#include "g18_predicate.cuh"
++#include "g18_host.h"
+ #include <cooperative_groups.h>
+ #include <cuda/pipeline>
+ #include <algorithm>
+@@ -336,36 +338,28 @@
+ 
+ 
+ // Use this when all coordinates of the same dimensions are packed together
+-__inline__ __device__ bool pointWithinEps(const float* query, const float* candidate, uint32_t pointsInBatch, uint32_t DIM, float EPSILON_SQ)
+-{
+-    uint32_t d = 0;
+-    float distance = 0.0f;
+-
+-    // candidate coordinate for dim d is candidate[d * pointsInBatch]
+-    for (; d + 3 < DIM; d += 4)
+-    {
+-        float dx = query[d + 0] - candidate[(d + 0) * pointsInBatch];
+-        distance = fmaf(dx, dx, distance);
+-        dx = query[d + 1] - candidate[(d + 1) * pointsInBatch];
+-        distance = fmaf(dx, dx, distance);
+-        dx = query[d + 2] - candidate[(d + 2) * pointsInBatch];
+-        distance = fmaf(dx, dx, distance);
+-        dx = query[d + 3] - candidate[(d + 3) * pointsInBatch];
+-        distance = fmaf(dx, dx, distance);
+-        if (distance > EPSILON_SQ) return false;
+-    }
+-
+-    for (; d < DIM; ++d)
+-    {
+-        float dx = query[d] - candidate[d * pointsInBatch];
+-        distance = fmaf(dx, dx, distance);
+-        if (distance > EPSILON_SQ) return false;
+-    }
+-
+-    return true;
+-}
+-
+-
++__constant__ uint32_t g18_inverse[512];
++__constant__ float g18_low,g18_high;
++__constant__ double g18_threshold;
++__device__ unsigned long long g18_stats[6];
++void g18Configure(const uint32_t* inverse,double threshold,float low,float high) {
++    cudaErrorCheck(cudaMemcpyToSymbol(g18_inverse,inverse,512*sizeof(uint32_t)),"G18 inverse upload");
++    cudaErrorCheck(cudaMemcpyToSymbol(g18_threshold,&threshold,sizeof(double)),"G18 threshold upload");
++    cudaErrorCheck(cudaMemcpyToSymbol(g18_low,&low,sizeof(float)),"G18 low upload");
++    cudaErrorCheck(cudaMemcpyToSymbol(g18_high,&high,sizeof(float)),"G18 high upload");
++    unsigned long long zeros[6]={};
++    cudaErrorCheck(cudaMemcpyToSymbol(g18_stats,zeros,sizeof(zeros)),"G18 counter reset");
++}
++void g18ReadStats(unsigned long long* counters) {
++    cudaErrorCheck(cudaMemcpyFromSymbol(counters,g18_stats,6*sizeof(unsigned long long)),"G18 counter read");
++}
++__inline__ __device__ bool pointWithinEps(const float* query,const float* candidate,uint32_t pointsInBatch,uint32_t DIM,float EPSILON_SQ) {
++    G18Decision r=g18Decide(query,candidate,pointsInBatch,DIM,g18_low,g18_high,g18_threshold,g18_inverse);
++    atomicAdd(&g18_stats[r.stage],1ull);
++    atomicAdd(&g18_stats[4],static_cast<unsigned long long>(r.dims));
++    if(r.stage>=2)atomicAdd(&g18_stats[5],static_cast<unsigned long long>(DIM));
++    return g18Accept(r.stage);
++}
+ 
+ // Kernel
+ // All blocks do mostly same amount of work

@@ -1,0 +1,37 @@
+{
+  "pass_": true,
+  "checks": [
+    {
+      "cell": "k4",
+      "same_mask": true,
+      "retained_tiles": 346802
+    },
+    {
+      "cell": "k16",
+      "same_mask": true,
+      "retained_tiles": 367280
+    },
+    {
+      "cell": "k64",
+      "same_mask": true,
+      "retained_tiles": 384759
+    },
+    {
+      "cell": "original",
+      "same_mask": true,
+      "retained_tiles": 384971
+    },
+    {
+      "cell": "k256",
+      "same_mask": true,
+      "retained_tiles": 400071
+    },
+    {
+      "cell": "k1024",
+      "same_mask": true,
+      "retained_tiles": 413156
+    }
+  ],
+  "bound_seconds": 0.16173137599253096,
+  "source_scope": "@TENSORJOIN_ROOT@/tensorjoin_20260908_block_feasibility/NUMERICAL_SCOPE.md"
+}

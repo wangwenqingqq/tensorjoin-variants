@@ -1,0 +1,34 @@
+{
+  "admitted": true,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g16_fp32_synccheck_a0",
+    "--expected-result",
+    "g16_gpu_preparation_20260905/results/fp32_gpu_validation_synccheck_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "compute-sanitizer",
+    "--tool",
+    "synccheck",
+    "--error-exitcode",
+    "99",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+    "--phase",
+    "validation",
+    "--record-id",
+    "synccheck_a0"
+  ],
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "diagnostic_seconds": null,
+  "guard_path": "results/g5_guard_g16_fp32_synccheck_a0.json",
+  "label": "g16_fp32_synccheck_a0",
+  "result_path": "g16_gpu_preparation_20260905/results/fp32_gpu_validation_synccheck_a0.json",
+  "result_sha256": "8e64cfd930efc8cba71e96294e3a72822af4b7eee862302b359aa0fcd5899d84",
+  "returncode": 0
+}

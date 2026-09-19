@@ -1,0 +1,29 @@
+{
+  "admitted": true,
+  "block": 0,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g15_b0_p2_chunked_a0",
+    "--expected-result",
+    "g15_strong_control_20260905/results/chunked_screen_g15_b0_p2_chunked_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g15_strong_control_20260905/src/run_chunked_g5.py",
+    "--phase",
+    "screen",
+    "--record-id",
+    "g15_b0_p2_chunked_a0"
+  ],
+  "exact_contract_pass": true,
+  "guard_path": "results/g5_guard_g15_b0_p2_chunked_a0.json",
+  "method": "chunked",
+  "position": 2,
+  "public_seconds": 0.7456454219936859,
+  "result_path": "g15_strong_control_20260905/results/chunked_screen_g15_b0_p2_chunked_a0.json",
+  "result_sha256": "18b60bf8cc7da62c0b7fbcc3a6aea827843e1e7561ba3a897384f1d262f31eea",
+  "returncode": 0
+}

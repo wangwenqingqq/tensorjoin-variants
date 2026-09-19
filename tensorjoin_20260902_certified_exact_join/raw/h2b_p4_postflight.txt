@@ -1,0 +1,13 @@
+2026-09-03T10:43:14Z
+gpu-host-8
+4, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-863c06a5-9f33-0265-b098-013fa840d5db, P8, 29, 34.01 W, 180 MHz, 405 MHz, 14 MiB, 0 %
+COMPUTE_APPS
+UNEXECUTED_ARTIFACT_CHECK
+slot_1=not_created
+slot_2=not_created
+slot_3=not_created
+slot_4=not_created
+slot_5=not_created
+slot_6=not_created
+slot_7=not_created
+sustained=not_created

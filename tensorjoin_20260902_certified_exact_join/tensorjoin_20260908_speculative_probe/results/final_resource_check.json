@@ -1,0 +1,14 @@
+{
+  "time": 1788868691.9480152,
+  "host": "gpu-host-8",
+  "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %",
+  "gpu2_processes": [],
+  "audit_locks_available": {
+    "/tmp/tensorjoin_gpu2_campaign.lock": true,
+    "/tmp/tensorjoin_g5_gpu2.lock": true
+  },
+  "own_live_descendants": [],
+  "all_guards_pass": true,
+  "guard_count": 8,
+  "own_resources_released": true
+}

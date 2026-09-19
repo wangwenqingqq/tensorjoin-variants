@@ -1,0 +1,5 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/runner.py", "--label", "validate_a0", "--mode", "validate"]
+{"phase": "initialized", "mode": "validate", "order": "AB"}
+{"seconds": 0.1779287179961102, "batches": 108, "input_pointer": 133769675669504, "method": "A", "phase": "diagnostic", "iteration": 0, "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "count": 3926078}
+{"seconds": 0.23703467100131093, "batches": 120, "input_pointer": 133769675669504, "method": "B", "phase": "diagnostic", "iteration": 0, "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "count": 3926078}
+{"result": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/frozen_order_screen_20260907/results/validate_a0.json", "pass": true}

@@ -1,0 +1,47 @@
+{
+  "cube_shape": [
+    145,
+    145,
+    220
+  ],
+  "dataset": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/IndianPines.mat",
+  "dataset_md5": "cea396f8a7bdf947f26a7a36c7b7c81a",
+  "dataset_sha256": "878548fc22e4740a9700698c70c6ec513e74934036eae434b108667b89eb6508",
+  "elapsed_s": 2.0768141746520996,
+  "experiment_id": "tensorjoin_20260903_indian_pines_embedding_d3",
+  "finite": true,
+  "host": "gpu-host-8",
+  "mat_inventory": [
+    {
+      "dtype": "uint16",
+      "name": "INDIANC",
+      "shape": [
+        145,
+        145,
+        220
+      ]
+    }
+  ],
+  "norm_max": 1.0,
+  "norm_min": 0.9999999403953552,
+  "numpy": "2.4.4",
+  "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/indian_pines_patches_1984d.npz",
+  "output_sha256": "b95402cec4fd6037fea32934b8b8170ab51c9baa866d7c392737c06b6398adb2",
+  "padded_dimension": 1984,
+  "patch_shape": [
+    3,
+    3,
+    220
+  ],
+  "python": "3.12.3 (main, Jan 22 2026, 20:57:42) [GCC 13.3.0]",
+  "raw_dimension": 1980,
+  "scipy": "1.17.1",
+  "script_sha256": "5ac045deaf827f8d57d4b8dfc419e0f03ec8d3b11d11c639ad252b1258a5b8e5",
+  "selected_variable": "INDIANC",
+  "shape": [
+    20449,
+    1984
+  ],
+  "timestamp_utc": "2026-09-02T16:53:08Z",
+  "zero_norm_vectors": 0
+}

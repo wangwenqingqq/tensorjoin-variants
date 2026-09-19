@@ -1,0 +1,10 @@
+{
+  "pass_": true,
+  "configurations": 384,
+  "native_records": 96,
+  "branch_records": 192,
+  "layout_invariant_pair_counts": true,
+  "all_counts_dominate_reference": true,
+  "all_aggregates_preserve_pair_count": true,
+  "seconds": 123.68386104000092
+}

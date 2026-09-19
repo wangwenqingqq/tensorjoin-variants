@@ -1,0 +1,272 @@
+--- G18/utility.cu
++++ G19/utility.cu
+@@ -54,7 +54,7 @@
+     unsigned int *h_ptr;
+     unsigned int *d_ptr;
+ 
+-    printf("\n\nAllocating %.3lf GiB to copy\n", (double)bytes/1024/1024/1024);
++    (void)0;
+ 
+     h_ptr = (unsigned int*)malloc(bytes);
+     cudaErrorCheck(cudaMalloc(&d_ptr, bytes), "cudaMalloc(&d_ptr, bytes)");
+@@ -64,9 +64,9 @@
+     cudaErrorCheck(cudaMemcpy(h_ptr, d_ptr, bytes, cudaMemcpyDeviceToHost), "cudaMemcpy(h_ptr, d_ptr, bytes, cudaMemcpyDeviceToHost)");
+     double e = omp_get_wtime();
+ 
+-    puts("\n======================================================================\n");
+-    printf("Total time to copy using pageable memory is %lf seconds", e-s);
+-     puts("\n======================================================================\n");
++    (void)0;
++    (void)0;
++    (void)0;
+ 
+     unsigned int*h_pinned_ptr;
+ 
+@@ -74,28 +74,28 @@
+     cudaErrorCheck(cudaMallocHost(&h_pinned_ptr, bytes), "cudaMallocHost(&h_pinned_ptr, bytes)");
+     double e1 = omp_get_wtime();
+ 
+-    printf("\n Time to allocate pinned memory is %.3lf", e1-s1);
++    (void)0;
+ 
+     s = omp_get_wtime();
+     cudaErrorCheck(cudaMemcpy(h_pinned_ptr, d_ptr, bytes, cudaMemcpyDeviceToHost), "cudaMemcpy(h_pinned_ptr, d_ptr, bytes, cudaMemcpyDeviceToHost)");
+     e = omp_get_wtime();
+ 
+-    printf("\n\nTime to copy using pinned memory is %lf seconds", e-s);
+-     puts("\n======================================================================\n");
+-    printf("Total time for pinned memory is %lf seconds", (e1-s1) + (e-s));
+-     puts("\n======================================================================\n");
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
+ 
+     unsigned int*h_pinned_staged_ptr;
+     unsigned int stagedElements = 1024*1024;
+     size_t stagedBytes = sizeof(unsigned int) * stagedElements;
+ 
+-    printf("\n\n Allocating only %.3lf MiB of Pinned memory", (double)stagedBytes/1024/1024);
++    (void)0;
+     
+     s = omp_get_wtime();
+     cudaErrorCheck(cudaMallocHost(&h_pinned_staged_ptr, stagedBytes), "cudaMallocHost(&h_pinned_staged_ptr, stagedBytes)");
+     e = omp_get_wtime();
+     
+-    printf("\n Time to allocate staged pinned memory is %.3lf", e-s);
++    (void)0;
+ 
+     s1 = omp_get_wtime();
+ 
+@@ -120,10 +120,10 @@
+     }
+     e1 = omp_get_wtime();
+ 
+-    printf("\n\nTime to copy using staged pinned memory is %lf seconds", e1-s1);
+-    puts("\n======================================================================\n");
+-    printf("Total time using staged pinned memory is %lf seconds", (e1-s1) + (e - s));
+-    puts("\n======================================================================\n");
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
+ 
+ 
+ 
+@@ -138,7 +138,7 @@
+     cudaErrorCheck(cudaMallocHost(&h_pinned_allThreads, stagedBytesAllThreads), "cudaMallocHost(&h_pinned_allThreads, stagedBytesAllThreads)");
+     e1 = omp_get_wtime();
+ 
+-    printf("\n Time to allocate all threads pinned memory is %.3lf", e1-s1);
++    (void)0;
+     
+     s = omp_get_wtime();
+     omp_set_num_threads(THREADS_TO_COPY);
+@@ -148,7 +148,7 @@
+     for(unsigned int chunk = 0; chunk < THREADS_TO_COPY ; ++chunk)
+     {
+         unsigned int tid = omp_get_thread_num();
+-        printf("%d", tid);
++    (void)0;
+         size_t startElem = static_cast<size_t>(chunk) * numIterPerThread;
+         if (startElem >= numIter) {
+             continue;
+@@ -178,10 +178,10 @@
+         }
+     }
+     e = omp_get_wtime();
+-    printf("\n H2H copy is %lf seconds and count is %d", hostCopyTime, count);
+-    puts("\n======================================================================\n");
+-    printf("Total time using staged pinned memory using %u threads is %lf seconds", THREADS_TO_COPY, (e1-s1) + (e - s));
+-    puts("\n======================================================================\n");
++    (void)0;
++    (void)0;
++    (void)0;
++    (void)0;
+ 
+     cudaErrorCheck(cudaFreeHost(h_pinned_allThreads), "cudaFreeHost(h_pinned_allThreads)");
+     cudaErrorCheck(cudaFreeHost(h_pinned_staged_ptr), "cudaFreeHost(h_pinned_staged_ptr)");
+@@ -341,23 +341,33 @@
+ __constant__ uint32_t g18_inverse[512];
+ __constant__ float g18_low,g18_high;
+ __constant__ double g18_threshold;
++#if G19_DIAGNOSTICS
+ __device__ unsigned long long g18_stats[6];
++#endif
+ void g18Configure(const uint32_t* inverse,double threshold,float low,float high) {
+     cudaErrorCheck(cudaMemcpyToSymbol(g18_inverse,inverse,512*sizeof(uint32_t)),"G18 inverse upload");
+     cudaErrorCheck(cudaMemcpyToSymbol(g18_threshold,&threshold,sizeof(double)),"G18 threshold upload");
+     cudaErrorCheck(cudaMemcpyToSymbol(g18_low,&low,sizeof(float)),"G18 low upload");
+     cudaErrorCheck(cudaMemcpyToSymbol(g18_high,&high,sizeof(float)),"G18 high upload");
++#if G19_DIAGNOSTICS
+     unsigned long long zeros[6]={};
+     cudaErrorCheck(cudaMemcpyToSymbol(g18_stats,zeros,sizeof(zeros)),"G18 counter reset");
++#endif
+ }
+ void g18ReadStats(unsigned long long* counters) {
++#if G19_DIAGNOSTICS
+     cudaErrorCheck(cudaMemcpyFromSymbol(counters,g18_stats,6*sizeof(unsigned long long)),"G18 counter read");
++#else
++    std::fill(counters,counters+6,0ull);
++#endif
+ }
+ __inline__ __device__ bool pointWithinEps(const float* query,const float* candidate,uint32_t pointsInBatch,uint32_t DIM,float EPSILON_SQ) {
+     G18Decision r=g18Decide(query,candidate,pointsInBatch,DIM,g18_low,g18_high,g18_threshold,g18_inverse);
++#if G19_DIAGNOSTICS
+     atomicAdd(&g18_stats[r.stage],1ull);
+     atomicAdd(&g18_stats[4],static_cast<unsigned long long>(r.dims));
+     if(r.stage>=2)atomicAdd(&g18_stats[5],static_cast<unsigned long long>(DIM));
++#endif
+     return g18Accept(r.stage);
+ }
+ 
+@@ -1068,7 +1078,7 @@
+     cudaErrorCheck(cudaMalloc(&d_blockQueryIdx, sizeof(uint32_t)*totalBlocks), "cudaMalloc(&d_blockQueryIdx, sizeof(uint32_t)*totalBlocks)");
+     cudaErrorCheck(cudaMemcpy(d_blockQueryIdx, blockQueryIdx.data(), sizeof(uint32_t)*totalBlocks, cudaMemcpyHostToDevice), "cudaMemcpy(d_blockQueryIdx, blockQueryIdx.data(), sizeof(uint32_t)*totalBlocks, cudaMemcpyHostToDevice)");
+ 
+-    printf("\n TOTAL BLOCKS are : %d", totalBlocks);
++    (void)0;
+ 
+     // For results mask
+     // NUM_PRIM_POINTS point to number of points in each primitive
+@@ -1104,8 +1114,8 @@
+     g17::require(numTotalResultWords>0 && numTotalResultWords*32<(uint64_t(1)<<32),"G17 mask capacity not admitted");
+ 
+ 
+-    printf("\nTotal result words: %lu, Total queries: %u N: %u\n", numTotalResultWords, totalQueries, N);
+-    printf("\nMemory required: %.3f GiB\n", sizeof(uint32_t) * (float)numTotalResultWords / 1024 / 1024 / 1024);
++    (void)0;
++    (void)0;
+ 
+     // Allocate on device
+     uint32_t* d_resultMaskPrefix;
+@@ -1117,7 +1127,7 @@
+     cudaErrorCheck(cudaMalloc(&d_resultMask, sizeof(uint32_t) * numTotalResultWords), "cudaMalloc(&d_resultMask, sizeof(uint32_t) * numTotalResultWords)");
+     cudaErrorCheck(cudaMemset(d_resultMask, 0, sizeof(uint32_t) * numTotalResultWords), "cudaMemset(d_resultMask, 0, sizeof(uint32_t) * numTotalResultWords)");
+ 
+-    uint32_t*h_resultmask = (uint32_t*)malloc(sizeof(uint32_t)* numTotalResultWords);
++    uint32_t*h_resultmask = nullptr; // No uncompressed host output is materialized.
+ 
+     // static double cudaOnlyTime = 0;
+ 
+@@ -1174,7 +1184,7 @@
+                 d_dataset, NUM_PRIMITIVES, DIM, EPSILON_SQ,
+                 d_blockQueryIdx, queriesPerBlock, d_resultMaskPrefix, d_resultMask, numTotalResultWords);
+     #else
+-        fprintf(stderr, "\nNo kernel is selected for candidate refinement\n");
++    (void)0;
+         exit(1);
+     #endif
+ 
+@@ -1185,7 +1195,7 @@
+     double end = omp_get_wtime();
+ 
+     cudaOnlyTime += (end - start);
+-    printf("\nCum CUDA TIME IS %.3lf\n", cudaOnlyTime);
++    (void)0;
+     cudaErrorCheck(cudaMemcpy(h_refinedCount, d_refinedCount, sizeof(unsigned long long), cudaMemcpyDeviceToHost), "cudaMemcpy(h_refinedCount, d_refinedCount, sizeof(unsigned long long), cudaMemcpyDeviceToHost)");
+     cudaErrorCheck(cudaDeviceSynchronize(), "cudaDeviceSynchronize()");
+ 
+@@ -1201,8 +1211,8 @@
+             cudaErrorCheck(cudaMemGetInfo(&freeMem, &totalMem), "cudaMemGetInfo(&freeMem, &totalMem)");
+             if((sizeof(uint32_t)* (*h_refinedCount) > freeMem) )
+             {
+-                fprintf(stderr, "Memory available is not enough to store results");
+-                fprintf(stderr, "Memory avail = %.2f GiB and memory required is %.2f GiB", (float)freeMem/1024/1024/1024, (sizeof(uint32_t)* (float)(*h_refinedCount)/1024/1024/1024));
++    (void)0;
++    (void)0;
+                 enoughMemory = false;
+             }
+         }
+@@ -1239,7 +1249,7 @@
+             double compressTimeEnd = omp_get_wtime();
+ 
+             timeToCompress += (compressTimeEnd - compressTimeStart);
+-            printf("\n Cum time to compress is %.3f", timeToCompress);
++    (void)0;
+             unsigned long long exportedCount=0;
+             cudaErrorCheck(cudaMemcpy(&exportedCount,d_counter,sizeof(exportedCount),cudaMemcpyDeviceToHost),"G17 compressed count");
+             g17::require(exportedCount==*h_refinedCount,"G17 compression count mismatch");
+@@ -1254,7 +1264,7 @@
+         {
+             // Without page locked memory
+             g17::require(false,"G17 admits only default compressed output");
+-            fprintf(stderr, "\nCopying uncompressed mask");
++    (void)0;
+         
+             uint32_t* h_resultMask = static_cast<uint32_t*>(malloc(sizeof(uint32_t) * numTotalResultWords));
+ 
+@@ -1273,7 +1283,7 @@
+ 
+         }else
+         {
+-            fprintf(stderr, "\n Copying compressed mask");
++    (void)0;
+ 
+             uint32_t* h_compressedResultMask = static_cast<uint32_t*>(malloc(sizeof(uint32_t) * (*h_refinedCount)));
+ 
+@@ -1300,7 +1310,7 @@
+         double resultCopyEnd = omp_get_wtime();
+ 
+         timeToCopyResults += (resultCopyEnd - resultCopyStart);
+-        printf("\nTime to copy back the results is %.3f", timeToCopyResults);
++    (void)0;
+     #else
+         double resultCopyStart = omp_get_wtime();
+ 
+@@ -1315,7 +1325,7 @@
+         #endif
+         double resultCopyEnd = omp_get_wtime();
+         timeToCopyResults += (resultCopyEnd - resultCopyStart);
+-        printf("\nTime to copy back the results is %.3f", timeToCopyResults);
++    (void)0;
+     #endif
+     // NOTE - We are freeing result mask here as the result size is huge for large datasets and we quickly run out of memory
+     free(h_resultmask);
+@@ -1337,7 +1347,7 @@
+ 
+     *maxNeighborCount = 0;
+ 
+-    printf("Sampling %d points for max neighbor Count\n", N / sampleSize);
++    (void)0;
+ 
+     for (int i = 0; i < N; i = i + sampleSize)
+     {
+@@ -1558,8 +1568,7 @@
+         cudaError_t status = cudaStreamCreate(&kdStreams[static_cast<size_t>(i)]);
+         if (status != cudaSuccess)
+         {
+-            fprintf(stderr, "Unable to create stream for parallel sort on Thrust: %s\n",
+-                    cudaGetErrorString(status));
++    (void)0;
+             streamsAllocated = false;
+             break;
+         }
+@@ -1700,6 +1709,6 @@
+     thrust::copy(H.begin(), H.end(), D.begin()); 
+     // print D 
+     for(int i = 0; i < D.size(); i++) 
+-    std::cout << " D[" << i << "] = " << D[i]; 
++    (void)0; 
+     return;
+ }

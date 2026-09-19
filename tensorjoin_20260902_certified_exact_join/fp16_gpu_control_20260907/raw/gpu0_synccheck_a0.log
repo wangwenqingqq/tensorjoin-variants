@@ -1,0 +1,4 @@
+COMMAND ["compute-sanitizer", "--tool", "synccheck", "--error-exitcode", "86", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/safety_probe.py", "--label", "gpu0_synccheck_a0", "--mode", "probe"]
+========= COMPUTE-SANITIZER
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_gpu_control_20260907/results/gpu0_synccheck_a0.json"}
+========= ERROR SUMMARY: 0 errors

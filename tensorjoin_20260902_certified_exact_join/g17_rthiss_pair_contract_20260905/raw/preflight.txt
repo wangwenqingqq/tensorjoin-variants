@@ -1,0 +1,14 @@
+Sat Sep  5 06:19:41 UTC 2026
+gpu-host-8
+USER         PID     ELAPSED COMMAND
+external-user 1460887    08:00:16 @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=13) --multiprocessing-fork
+GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 1460887, 53446 MiB
+cba18097f1b8374e72f655d46292b05447bc85fb63535cfd589f77f1af573bb2  adapters/rthiss_g7_a0/hostCode.cpp
+49811272ffe00f40e7778c8bbf320226b462e1ea3f4df051469affc7c6b3bc73  adapters/rthiss_g7_a0/utility.cu
+a9d3efc44cffa5be7bbef9948f93340a965b7b980615bbfdf52fe91a771004a4  adapters/rthiss_g7_a0/utility_seq.cpp
+7807814fda1883343644d66e10acfd72f88c3bb03dd1e3e7a2f9f8a0e13cce0a  adapters/rthiss_g7_a0/CMakeLists.txt
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Tue_Dec_16_07:23:41_PM_PST_2025
+Cuda compilation tools, release 13.1, V13.1.115
+Build cuda_13.1.r13.1/compiler.37061995_0

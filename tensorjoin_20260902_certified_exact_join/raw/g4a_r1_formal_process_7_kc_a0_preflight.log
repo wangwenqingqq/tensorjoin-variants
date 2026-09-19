@@ -1,0 +1,110 @@
+experiment_id=tensorjoin_20260903_g2b_public_screen
+project=@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join
+gpu_uuid=GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3
+python=@TENSORJOIN_ROOT@/isaacsim6/env/bin/python
+thread_env={"MKL_NUM_THREADS": null, "NUMEXPR_NUM_THREADS": null, "OMP_NUM_THREADS": null, "OPENBLAS_NUM_THREADS": null}
+
+--- date ---
+2026-09-03T05:10:09+00:00
+
+
+--- hostname ---
+gpu-host-8
+
+
+--- who ---
+
+
+--- uptime ---
+ 05:10:09 up 20:55,  0 user,  load average: 9.08, 9.10, 8.22
+
+
+--- nvidia_smi ---
+Thu Sep  3 05:10:09 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:16:00.0 Off |                    0 |
+| N/A   34C    P0             85W /  600W |   78445MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   1  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:27:00.0 Off |                    0 |
+| N/A   31C    P0             89W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   2  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:38:00.0 Off |                    0 |
+| N/A   28C    P8             34W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   3  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:5A:00.0 Off |                    0 |
+| N/A   28C    P8             34W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   4  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:98:00.0 Off |                    0 |
+| N/A   27C    P8             33W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   5  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:A8:00.0 Off |                    0 |
+| N/A   26C    P8             33W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   6  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:B8:00.0 Off |                    0 |
+| N/A   27C    P8             33W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+|   7  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:D8:00.0 Off |                    0 |
+| N/A   26C    P8             35W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|    0   N/A  N/A         3818539      C   sglang::scheduler                     78422MiB |
++-----------------------------------------------------------------------------------------+
+
+
+--- compute_apps ---
+GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 3818539, sglang::scheduler, 78422 MiB
+
+
+--- top_cpu ---
+USER         PID    PPID %CPU %MEM     ELAPSED COMMAND
+root     3910182 3817307 1198  0.0       00:00 python
+root     3909725 3909724  100  2.2       00:32 cicc
+root     3909709 3909708 99.9  0.5       00:34 cicc
+external-user 3776943 3729363 94.0  0.1       07:21 python
+external-user 3776942 3729363 93.8  0.1       07:21 python
+external-user 3776940 3729363 93.2  0.1       07:21 python
+external-user 3776941 3729363 93.0  0.1       07:21 python
+root     3818539 3818254 19.0  0.9       03:22 sglang::schedul
+root     3818254 3818251 17.0  0.5       03:33 python
+root     3818540 3818254 13.9  0.5       03:22 sglang::detoken
+external-user 3937889 3937705 11.9  1.0       28:16 MainThread
+external-user 3937763 3937705  4.0  0.1       28:16 MainThread
+external-user 3937050 3937032  3.7  0.0       28:37 code-08d4889f9e
+external-user 3939405 3937889  3.0  0.8       28:10 MainThread
+br       3349472    1948  2.7  0.3    02:24:36 MainThread
+br       3355170 3355095  2.3  0.1    02:16:56 MainThread
+external-user 3937012 3937001  2.2  0.0       28:37 sshd
+br       3349529 3349472  1.2  0.0    02:24:35 codex
+br       3349301 3349283  0.7  0.0    02:24:37 code-110a328ea5
+external-user 3729363 3709445  0.6  0.1       11:54 python
+external-user 3937211 3937050  0.5  0.0       28:37 code-08d4889f9e
+br       3355245 3355170  0.4  0.0    02:16:55 codex
+root         808     780  0.4  0.1    20:04:00 MainThread
+br       3349279 3349268  0.3  0.0    02:24:37 sshd
+
+
+--- nvcc ---
+nvcc: NVIDIA (R) Cuda compiler driver
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Tue_Dec_16_07:23:41_PM_PST_2025
+Cuda compilation tools, release 13.1, V13.1.115
+Build cuda_13.1.r13.1/compiler.37061995_0

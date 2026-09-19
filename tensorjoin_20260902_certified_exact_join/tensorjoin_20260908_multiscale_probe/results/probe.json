@@ -1,0 +1,32 @@
+{
+  "pass_": true,
+  "started": 1788858840.142151,
+  "ended": 1788859526.3603847,
+  "layouts": [
+    "original",
+    "random",
+    "kd_variance",
+    "pca_sort"
+  ],
+  "ranks": [
+    16,
+    32,
+    64
+  ],
+  "block_sizes": [
+    16,
+    32,
+    64,
+    256
+  ],
+  "cells": [
+    "k4",
+    "k16",
+    "k64",
+    "original",
+    "k256",
+    "k1024"
+  ],
+  "scanned_upper_pairs_per_layout_rank": 1800030000,
+  "peak_rss_kib": 2021964
+}

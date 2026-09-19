@@ -1,0 +1,148 @@
+--- src/run_g2b_tensorjoin_public.py
++++ g14_static_positive_diagnostic_20260905/src/run_g2b_diagnostic.py
+@@ -35,6 +35,12 @@
+ from run_g2a2_tensorjoin_triangular import triangular_int8_certificate_compact_i64
+ 
+ 
++from g14_diagnostics import Diagnostics, KernelProxy
++diag = Diagnostics()
++triangular_int8_certificate_compact_i64 = KernelProxy(triangular_int8_certificate_compact_i64, "stage1", diag)
++filter_ambiguous_fp32_i64 = KernelProxy(filter_ambiguous_fp32_i64, "stage2", diag)
++refine_ambiguous_fp64_i64 = KernelProxy(refine_ambiguous_fp64_i64, "stage3", diag)
++
+ EXPERIMENT_ID = "tensorjoin_20260903_g2b_public_screen"
+ BOUND_PAD = 1e-4
+ FP32_DISTANCE_GUARD = 1e-3
+@@ -140,11 +146,11 @@
+     args = parse_public_args(__doc__ or "TensorJoin public adapter")
+     record_id = args.record_id
+     visible = os.environ.get("CUDA_VISIBLE_DEVICES")
+-    if visible != "0":
+-        raise RuntimeError(f"Expected CUDA_VISIBLE_DEVICES=0, got {visible!r}")
++    if visible != os.environ.get("G5_PHYSICAL_GPU", "2"):
++        raise RuntimeError(f"Expected campaign CUDA_VISIBLE_DEVICES, got {visible!r}")
+     if not torch.cuda.is_available() or torch.cuda.device_count() != 1:
+         raise RuntimeError("Expected exactly one visible CUDA device")
+-    result_path = PROJECT / f"results/g2b_public_{args.phase}_tensorjoin_{record_id}.json"
++    result_path = PROJECT / f"g14_static_positive_diagnostic_20260905/results/g2b_{record_id}.json"
+     if result_path.exists():
+         raise FileExistsError(result_path)
+ 
+@@ -200,20 +206,24 @@
+     }
+     print("RUN_START " + json.dumps(run, sort_keys=True), flush=True)
+ 
++    diag.prepare()
+     torch.cuda.reset_peak_memory_stats()
+     public_started = time.perf_counter()
++    diag.start(public_started)
+ 
+     codes, scales, errors = quantize_per_vector(vectors)
+     reconstructed_norm2 = (
+         np.sum(codes.astype(np.int64) ** 2, axis=1).astype(np.float64)
+         * scales.astype(np.float64) ** 2
+     )
++    diag.mark("preprocess")
+     tile_rows, tile_columns = np.triu_indices(tile_extent)
+     tile_rows = np.asarray(tile_rows, dtype=np.int32)
+     tile_columns = np.asarray(tile_columns, dtype=np.int32)
+     if tile_rows.size != scheduled_tiles:
+         raise AssertionError("Triangular tile schedule size mismatch")
+ 
++    diag.mark("schedule")
+     device = torch.device("cuda:0")
+     vectors_gpu = torch.from_numpy(vectors).to(device)
+     codes_gpu = torch.from_numpy(codes).to(device)
+@@ -227,6 +237,7 @@
+     ambiguous_ids = torch.empty(capacity, dtype=torch.int64, device=device)
+     fp64_ids = torch.empty(capacity, dtype=torch.int64, device=device)
+ 
++    diag.mark("h2d_alloc")
+     accepted_parts: list[np.ndarray] = []
+     batch_records: list[dict[str, int]] = []
+     total_direct = 0
+@@ -235,10 +246,13 @@
+     total_fp64 = 0
+     total_equality = 0
+     total_overflow = 0
++    diag.mark("loop_setup")
+     for batch_index, tile_start in enumerate(range(0, scheduled_tiles, TILES_PER_BATCH)):
++        diag.batch = batch_index
+         tile_stop = min(tile_start + TILES_PER_BATCH, scheduled_tiles)
+         batch_tiles = tile_stop - tile_start
+         counters = torch.zeros(5, dtype=torch.int32, device=device)
++        diag.mark("batch_setup")
+         triangular_int8_certificate_compact_i64[(batch_tiles,)](
+             codes_gpu,
+             codes_t_gpu,
+@@ -267,9 +281,11 @@
+         )
+         torch.cuda.synchronize()
+         scan_counts = counters.cpu().numpy().astype(np.int64)
++        diag.mark("stage1_and_count")
+         direct_count = int(scan_counts[0])
+         ambiguous_count = int(scan_counts[1])
+ 
++        diag.mark("decode_s1")
+         if ambiguous_count:
+             filter_ambiguous_fp32_i64[(ambiguous_count,)](
+                 vectors_gpu,
+@@ -288,10 +304,12 @@
+             )
+             torch.cuda.synchronize()
+         after_fp32 = counters.cpu().numpy().astype(np.int64)
++        diag.mark("stage2_and_count")
+         after_fp32_count = int(after_fp32[0])
+         fp64_count = int(after_fp32[3])
+         equality_count = int(after_fp32[4])
+ 
++        diag.mark("decode_s2")
+         if fp64_count:
+             refine_ambiguous_fp64_i64[(fp64_count,)](
+                 vectors_gpu,
+@@ -308,6 +326,7 @@
+             )
+             torch.cuda.synchronize()
+         final_counts = counters.cpu().numpy().astype(np.int64)
++        diag.mark("stage3_and_count")
+         final_count = int(final_counts[0])
+         overflow = int(final_counts[2])
+         if max(direct_count, ambiguous_count, after_fp32_count, fp64_count, final_count) > capacity:
+@@ -318,6 +337,7 @@
+             .numpy()
+             .astype(np.uint64, copy=True)
+         )
++        diag.mark("accepted_readback")
+         total_direct += direct_count
+         total_ambiguous += ambiguous_count
+         total_fp32_accept += after_fp32_count - direct_count
+@@ -339,7 +359,10 @@
+             }
+         )
+ 
++        diag.mark("bookkeeping_logging")
++
+     torch.cuda.synchronize()
++    diag.mark("loop_drain")
+     accepted_upper = np.sort(
+         np.concatenate(accepted_parts).astype(np.uint64, copy=False)
+     )
+@@ -350,7 +373,9 @@
+     canonical = np.sort(
+         np.concatenate((accepted_upper, reverse)).astype(np.uint64, copy=False)
+     )
+-    public_seconds = time.perf_counter() - public_started
++    public_stopped = time.perf_counter()
++    public_seconds = public_stopped - public_started
++    diagnostic = diag.finish(public_stopped)
+ 
+     correctness = validate_canonical(canonical, contract)
+     correctness["upper_duplicates"] = int(
+@@ -377,6 +402,7 @@
+             else "diagnostic_public_denominator_cheap_screen"
+         ),
+         "public_seconds": public_seconds,
++        "g14_diagnostic": diagnostic,
+         "batch_count": len(batch_records),
+         "batches": batch_records,
+         "direct_accept_upper_pairs": total_direct,

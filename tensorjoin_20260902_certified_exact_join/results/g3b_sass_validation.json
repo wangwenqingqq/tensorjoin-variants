@@ -1,0 +1,62 @@
+{
+  "candidate_source_sha256": "48ca8b1076db31dddf0a60f05564db0a2e1f037a6f007cc988226bce92eff2f6",
+  "cubin": "artifacts/g3b_triton_cache_run0/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+  "cubin_sha256": "c80141730aecd650b57be14ecee6422be1477fc704d9a09e0ecc6949a3ad06af",
+  "experiment_id": "tensorjoin_20260903_gpu_analytic_certificate_g3b",
+  "floating_margin_assessment": {
+    "conservative_gamma16": 9.536752259018191e-07,
+    "expression_radius_over_gamma16": 15.999984741210938,
+    "expression_relative_radius": 1.52587890625e-05,
+    "final_radius_has_unit_floor_via_max_magnitude_1": true,
+    "final_radius_over_sqrt_documented_bound": 8.0,
+    "float32_unit_roundoff": 5.960464477539063e-08,
+    "ftz_subnormal_sqrt_absolute_error_bounded_by_unit_floor": true,
+    "fusion_and_reordering_covered_by_gamma16_envelope": true,
+    "sqrt_approx_documented_max_relative_error": 1.1920928955078125e-07,
+    "sqrt_residual_final_relative_radius": 9.5367431640625e-07
+  },
+  "generated_code_gate_pass": true,
+  "host": "gpu-host-8",
+  "integer_exactness": {
+    "dimension": 512,
+    "int32_to_float32_exact_under_precondition": true,
+    "less_than_2_pow_24": true,
+    "less_than_int32_max": true,
+    "max_abs_code": 127,
+    "max_abs_full_accumulator": 8258048,
+    "satfinite_inactive_under_precondition": true
+  },
+  "measurement_status": "generated_code_semantics_audit_not_performance",
+  "metadata": "artifacts/g3b_triton_cache_run0/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.json",
+  "metadata_sha256": "dc274bef9b20f36f86d694023c085a6284e592320578f6c1a49836ca5d52bcaf",
+  "observations": [
+    "The integer MMA uses saturating syntax, but saturation cannot activate under the frozen dimension/code bound.",
+    "Fused FP32 evaluation is admitted against a conservative 16-rounding envelope rather than a source-order assumption.",
+    "The generated square-root path is approximate and FTZ; the declared final margin is 8x the documented normal-domain relative bound and at least 2^-20 in absolute value because magnitude is floored at one.",
+    "Instruction counts are static generated-code evidence, not dynamic work or timing evidence."
+  ],
+  "performance_claim_allowed": false,
+  "ptx": "artifacts/g3b_triton_cache_run0/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.ptx",
+  "ptx_sha256": "917848a0f93c847cc491e7a17a9b6c71aa011a4e734abbb3e8b376fcdb56d8b3",
+  "raw_audit_log": "raw/g3b_generated_code_audit.log",
+  "raw_audit_log_sha256": "44038f09097dbb024108680352ed2c62a105997432150f6ea897164c2f72b6cf",
+  "resource_usage": {
+    "global_scratch_bytes": 0,
+    "local_bytes": 0,
+    "registers_per_thread": 140,
+    "shared_bytes_cuobjdump": 1024,
+    "stack_bytes": 0,
+    "triton_metadata_shared_bytes": 16384
+  },
+  "sass": "artifacts/g3b_analytic_certificate.sass",
+  "sass_sha256": "0d8208c6e853da78db814eecf3f982ef5cfe0f05c1855748af0d5e890752eda4",
+  "static_instruction_counts": {
+    "ptx_mma_sync_m16n8k32_satfinite_s32_s8_s8_s32": 16,
+    "ptx_sqrt_approx_ftz_f32": 64,
+    "sass_imma_16832_s8_s8_sat": 16,
+    "sass_ldl": 0,
+    "sass_mufu_sqrt": 64,
+    "sass_stl": 0
+  },
+  "target": "sm_120a"
+}

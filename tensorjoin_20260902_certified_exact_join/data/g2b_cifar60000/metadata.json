@@ -1,0 +1,33 @@
+{
+  "canonical_pair_encoding": "uint64(i) * 60000 + uint64(j), directed including self",
+  "coordinate_stats": {
+    "maximum": 0.5362154245376587,
+    "mean": 0.05160531893189587,
+    "minimum": 3.8699716242263094e-05,
+    "stddev": 0.04064172187799117
+  },
+  "dataset_redistribution": "internal experiment only; no license found on source page",
+  "diagnostic_expected_exact_count": {
+    "role": "capacity/smoke diagnostic only; not the sole full-output oracle",
+    "source_file": "external/fasted/results/accuracy_results/global_averaged_real_world_accuracies.json",
+    "source_file_sha256": "4971ba764fa46e6d056006eaf54b9585ab4152220d2a2530ca0b4722e6d39709",
+    "source_record": "cifar60k_unscaled_0.628906.txt, flattened_stripped_neighbortable_FP64_cifar60k_eps_0.62890625.txt",
+    "value": 3926074
+  },
+  "diagnostic_fasted_count": 3926078,
+  "diagnostic_fasted_test_only": 838,
+  "diagnostic_fasted_truth_only": 834,
+  "effective_epsilon_d2": 0.3955230712890625,
+  "epsilon": 0.62890625,
+  "experiment_id": "tensorjoin_20260903_cifar60000_prepare_g2b",
+  "finite": true,
+  "host": "gpu-host-8",
+  "shape": [
+    60000,
+    512
+  ],
+  "source": "data/cifar60k/cifar60k_base.fvecs",
+  "source_coordinate_dtype": "little-endian float32",
+  "source_format": "fvecs: little-endian int32 dimension prefix plus float32 coordinates",
+  "source_sha256": "a7170faaa80a072cd603ed472104049ead87fbaff224e94a529021d161f8aea4"
+}

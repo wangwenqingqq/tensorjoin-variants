@@ -1,0 +1,35 @@
+{"compute_rows": [], "elapsed_s": 0.08377918799669715, "phase": "quiescence", "wall_time": 1788393604.7946951}
+{"compute_rows": [], "elapsed_s": 1.1708212859957712, "phase": "quiescence", "wall_time": 1788393605.8817372}
+{"compute_rows": [], "elapsed_s": 2.2589940759935416, "phase": "quiescence", "wall_time": 1788393606.9699094}
+{"compute_rows": [], "elapsed_s": 3.3451036240003305, "phase": "quiescence", "wall_time": 1788393608.0560195}
+{"compute_rows": [], "elapsed_s": 4.431188760994701, "phase": "quiescence", "wall_time": 1788393609.1421044}
+{"compute_rows": [], "elapsed_s": 5.516600420996838, "phase": "quiescence", "wall_time": 1788393610.227516}
+{"compute_rows": [], "elapsed_s": 6.603214628994465, "phase": "quiescence", "wall_time": 1788393611.31413}
+{"compute_rows": [], "elapsed_s": 7.688184644997818, "phase": "quiescence", "wall_time": 1788393612.3991}
+{"compute_rows": [], "elapsed_s": 8.774149321994628, "phase": "quiescence", "wall_time": 1788393613.4850645}
+{"compute_rows": [], "elapsed_s": 9.859485974993731, "phase": "quiescence", "wall_time": 1788393614.5704014}
+{"compute_rows": [], "elapsed_s": 10.945705414000258, "phase": "quiescence", "wall_time": 1788393615.656621}
+{"compute_rows": [], "elapsed_s": 12.032239397995, "phase": "quiescence", "wall_time": 1788393616.7431548}
+{"compute_rows": [], "elapsed_s": 13.118256616995495, "phase": "quiescence", "wall_time": 1788393617.8291721}
+{"compute_rows": [], "elapsed_s": 14.204706944998179, "phase": "quiescence", "wall_time": 1788393618.9156222}
+{"compute_rows": [], "elapsed_s": 15.291214911994757, "phase": "quiescence", "wall_time": 1788393620.0021305}
+{"compute_rows": [], "elapsed_s": 16.377822199996444, "phase": "quiescence", "wall_time": 1788393621.0887377}
+{"compute_rows": [], "elapsed_s": 17.46306757599814, "phase": "quiescence", "wall_time": 1788393622.1739829}
+{"compute_rows": [], "elapsed_s": 18.548950262993458, "phase": "quiescence", "wall_time": 1788393623.2598655}
+{"compute_rows": [], "elapsed_s": 19.635288659999787, "phase": "quiescence", "wall_time": 1788393624.3462038}
+{"compute_rows": [], "elapsed_s": 20.72751815799711, "phase": "quiescence", "wall_time": 1788393625.4384336}
+{"compute_rows": [], "elapsed_s": 21.814826993999304, "phase": "quiescence", "wall_time": 1788393626.5257423}
+{"compute_rows": [], "elapsed_s": 22.90312608099339, "phase": "quiescence", "wall_time": 1788393627.6140413}
+{"compute_rows": [], "elapsed_s": 23.990542016996187, "phase": "quiescence", "wall_time": 1788393628.7014575}
+{"compute_rows": [], "elapsed_s": 25.076487257996632, "phase": "quiescence", "wall_time": 1788393629.7874029}
+{"compute_rows": [], "elapsed_s": 26.16132783399371, "phase": "quiescence", "wall_time": 1788393630.8722434}
+{"compute_rows": [], "elapsed_s": 27.24759932899906, "phase": "quiescence", "wall_time": 1788393631.9585147}
+{"compute_rows": [], "elapsed_s": 28.335138302994892, "phase": "quiescence", "wall_time": 1788393633.046054}
+{"compute_rows": [], "elapsed_s": 29.420612488000188, "phase": "quiescence", "wall_time": 1788393634.131528}
+{"compute_rows": [], "elapsed_s": 30.506786690995796, "phase": "quiescence", "wall_time": 1788393635.217702}
+{"compute_rows": [], "elapsed_s": 0.19954538345336914, "foreign_rows": [], "gpu": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "35.11", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3151558, "wall_time": 1788393635.4173543}
+{"compute_rows": [], "elapsed_s": 0.6474227905273438, "foreign_rows": [], "gpu": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "35.55", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3151558, "wall_time": 1788393635.8652303}
+{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3151630, "process_name": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/fasted_g2b_public/build/main", "used_memory_mib": "14"}], "elapsed_s": 1.1701850891113281, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "572", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "39.57", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3151558, "wall_time": 1788393636.3879924}
+{"compute_rows": [], "elapsed_s": 1.6701784133911133, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2325", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "69.02", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "2", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3151558, "wall_time": 1788393636.887986}
+{"compute_rows": [], "elapsed_s": 2.1124606132507324, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "98.65", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3151558, "wall_time": 1788393637.3302681}
+{"compute_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "84.34", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "postflight", "wall_time": 1788393637.7754338}

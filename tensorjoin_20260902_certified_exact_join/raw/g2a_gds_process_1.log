@@ -1,0 +1,642 @@
+RUN_START {"cuda_visible_devices": "0", "epsilon": 0.7541135250198396, "experiment_id": "tensorjoin_20260903_gds_cifar4096_g2a", "host": "gpu-host-8", "input_sha256": "e6a720399067e9753bc6f45ff6f67b73a3861964255e85e1ed9a1ce7906df462", "library_sha256": "e0d31f51a8a2ed844b988b2c2b1c08ed9757a55dfceda338c787d999b34b54bb", "numpy": "2.3.1", "oracle_file_sha256": "ac93d96ac39ea5a2bc2d1e81baa179a533a6344aae97f058b3b33a8155e6c0c9", "oracle_raw_u64_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d", "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]", "run_id": 1, "runner_sha256": "642ea7d096b542d68d6e2d662e8234fd684b8369af8097684b7dd735468ff87d"}
+
+Epsilon: 0.754114
+Number of dimensions (NDIM): 512
+
+Calculating variance based on on the following fraction of pts: 0.010000
+Reodering dimension by: dim: 143, variance: 0.003748
+Reodering dimension by: dim: 142, variance: 0.003632
+Reodering dimension by: dim: 13, variance: 0.003494
+Reodering dimension by: dim: 136, variance: 0.003472
+Reodering dimension by: dim: 131, variance: 0.003413
+Reodering dimension by: dim: 195, variance: 0.003407
+Reodering dimension by: dim: 140, variance: 0.003370
+Reodering dimension by: dim: 153, variance: 0.003363
+Reodering dimension by: dim: 199, variance: 0.003350
+Reodering dimension by: dim: 75, variance: 0.003127
+Reodering dimension by: dim: 59, variance: 0.003117
+Reodering dimension by: dim: 141, variance: 0.003024
+Reodering dimension by: dim: 14, variance: 0.002941
+Reodering dimension by: dim: 183, variance: 0.002879
+Reodering dimension by: dim: 12, variance: 0.002839
+Reodering dimension by: dim: 138, variance: 0.002837
+Reodering dimension by: dim: 128, variance: 0.002821
+Reodering dimension by: dim: 187, variance: 0.002770
+Reodering dimension by: dim: 137, variance: 0.002768
+Reodering dimension by: dim: 132, variance: 0.002695
+Reodering dimension by: dim: 9, variance: 0.002681
+Reodering dimension by: dim: 194, variance: 0.002647
+Reodering dimension by: dim: 8, variance: 0.002633
+Reodering dimension by: dim: 204, variance: 0.002543
+Reodering dimension by: dim: 229, variance: 0.002541
+Reodering dimension by: dim: 129, variance: 0.002459
+Reodering dimension by: dim: 130, variance: 0.002392
+Reodering dimension by: dim: 3, variance: 0.002386
+Reodering dimension by: dim: 216, variance: 0.002372
+Reodering dimension by: dim: 200, variance: 0.002357
+Reodering dimension by: dim: 2, variance: 0.002324
+Reodering dimension by: dim: 254, variance: 0.002313
+Reodering dimension by: dim: 67, variance: 0.002305
+Reodering dimension by: dim: 241, variance: 0.002268
+Reodering dimension by: dim: 71, variance: 0.002264
+Reodering dimension by: dim: 196, variance: 0.002253
+Reodering dimension by: dim: 54, variance: 0.002219
+Reodering dimension by: dim: 184, variance: 0.002214
+Reodering dimension by: dim: 4, variance: 0.002209
+Reodering dimension by: dim: 1, variance: 0.002150
+Reodering dimension by: dim: 181, variance: 0.002145
+Reodering dimension by: dim: 198, variance: 0.002143
+Reodering dimension by: dim: 167, variance: 0.002132
+Reodering dimension by: dim: 192, variance: 0.002116
+Reodering dimension by: dim: 205, variance: 0.002102
+Reodering dimension by: dim: 171, variance: 0.002100
+Reodering dimension by: dim: 90, variance: 0.002099
+Reodering dimension by: dim: 139, variance: 0.002096
+Reodering dimension by: dim: 25, variance: 0.002084
+Reodering dimension by: dim: 15, variance: 0.002060
+Reodering dimension by: dim: 135, variance: 0.002040
+Reodering dimension by: dim: 10, variance: 0.002030
+Reodering dimension by: dim: 201, variance: 0.002026
+Reodering dimension by: dim: 78, variance: 0.001997
+Reodering dimension by: dim: 134, variance: 0.001991
+Reodering dimension by: dim: 224, variance: 0.001989
+Reodering dimension by: dim: 185, variance: 0.001985
+Reodering dimension by: dim: 268, variance: 0.001985
+Reodering dimension by: dim: 269, variance: 0.001975
+Reodering dimension by: dim: 270, variance: 0.001970
+Reodering dimension by: dim: 55, variance: 0.001970
+Reodering dimension by: dim: 6, variance: 0.001960
+Reodering dimension by: dim: 157, variance: 0.001949
+Reodering dimension by: dim: 203, variance: 0.001930
+Reodering dimension by: dim: 197, variance: 0.001930
+Reodering dimension by: dim: 111, variance: 0.001903
+Reodering dimension by: dim: 206, variance: 0.001896
+Reodering dimension by: dim: 186, variance: 0.001895
+Reodering dimension by: dim: 7, variance: 0.001850
+Reodering dimension by: dim: 154, variance: 0.001847
+Reodering dimension by: dim: 225, variance: 0.001844
+Reodering dimension by: dim: 116, variance: 0.001844
+Reodering dimension by: dim: 68, variance: 0.001840
+Reodering dimension by: dim: 79, variance: 0.001824
+Reodering dimension by: dim: 150, variance: 0.001811
+Reodering dimension by: dim: 74, variance: 0.001808
+Reodering dimension by: dim: 34, variance: 0.001801
+Reodering dimension by: dim: 113, variance: 0.001793
+Reodering dimension by: dim: 76, variance: 0.001752
+Reodering dimension by: dim: 240, variance: 0.001742
+Reodering dimension by: dim: 53, variance: 0.001738
+Reodering dimension by: dim: 57, variance: 0.001735
+Reodering dimension by: dim: 73, variance: 0.001729
+Reodering dimension by: dim: 228, variance: 0.001721
+Reodering dimension by: dim: 51, variance: 0.001719
+Reodering dimension by: dim: 65, variance: 0.001715
+Reodering dimension by: dim: 178, variance: 0.001709
+Reodering dimension by: dim: 257, variance: 0.001692
+Reodering dimension by: dim: 125, variance: 0.001691
+Reodering dimension by: dim: 0, variance: 0.001686
+Reodering dimension by: dim: 217, variance: 0.001681
+Reodering dimension by: dim: 182, variance: 0.001669
+Reodering dimension by: dim: 258, variance: 0.001657
+Reodering dimension by: dim: 66, variance: 0.001641
+Reodering dimension by: dim: 320, variance: 0.001641
+Reodering dimension by: dim: 239, variance: 0.001629
+Reodering dimension by: dim: 162, variance: 0.001622
+Reodering dimension by: dim: 180, variance: 0.001615
+Reodering dimension by: dim: 189, variance: 0.001615
+Reodering dimension by: dim: 246, variance: 0.001613
+Reodering dimension by: dim: 259, variance: 0.001609
+Reodering dimension by: dim: 179, variance: 0.001608
+Reodering dimension by: dim: 97, variance: 0.001605
+Reodering dimension by: dim: 256, variance: 0.001604
+Reodering dimension by: dim: 324, variance: 0.001601
+Reodering dimension by: dim: 255, variance: 0.001591
+Reodering dimension by: dim: 213, variance: 0.001568
+Reodering dimension by: dim: 158, variance: 0.001560
+Reodering dimension by: dim: 262, variance: 0.001559
+Reodering dimension by: dim: 260, variance: 0.001556
+Reodering dimension by: dim: 70, variance: 0.001546
+Reodering dimension by: dim: 207, variance: 0.001537
+Reodering dimension by: dim: 100, variance: 0.001536
+Reodering dimension by: dim: 30, variance: 0.001535
+Reodering dimension by: dim: 236, variance: 0.001533
+Reodering dimension by: dim: 169, variance: 0.001531
+Reodering dimension by: dim: 147, variance: 0.001529
+Reodering dimension by: dim: 64, variance: 0.001528
+Reodering dimension by: dim: 151, variance: 0.001517
+Reodering dimension by: dim: 96, variance: 0.001500
+Reodering dimension by: dim: 118, variance: 0.001495
+Reodering dimension by: dim: 152, variance: 0.001493
+Reodering dimension by: dim: 266, variance: 0.001490
+Reodering dimension by: dim: 18, variance: 0.001489
+Reodering dimension by: dim: 160, variance: 0.001488
+Reodering dimension by: dim: 174, variance: 0.001482
+Reodering dimension by: dim: 28, variance: 0.001476
+Reodering dimension by: dim: 101, variance: 0.001466
+Reodering dimension by: dim: 69, variance: 0.001464
+Reodering dimension by: dim: 263, variance: 0.001456
+Reodering dimension by: dim: 5, variance: 0.001455
+Reodering dimension by: dim: 126, variance: 0.001452
+Reodering dimension by: dim: 245, variance: 0.001442
+Reodering dimension by: dim: 170, variance: 0.001438
+Reodering dimension by: dim: 124, variance: 0.001436
+Reodering dimension by: dim: 50, variance: 0.001435
+Reodering dimension by: dim: 164, variance: 0.001434
+Reodering dimension by: dim: 145, variance: 0.001430
+Reodering dimension by: dim: 244, variance: 0.001424
+Reodering dimension by: dim: 156, variance: 0.001422
+Reodering dimension by: dim: 86, variance: 0.001417
+Reodering dimension by: dim: 168, variance: 0.001416
+Reodering dimension by: dim: 221, variance: 0.001411
+Reodering dimension by: dim: 159, variance: 0.001406
+Reodering dimension by: dim: 35, variance: 0.001404
+Reodering dimension by: dim: 80, variance: 0.001400
+Reodering dimension by: dim: 214, variance: 0.001399
+Reodering dimension by: dim: 328, variance: 0.001399
+Reodering dimension by: dim: 271, variance: 0.001393
+Reodering dimension by: dim: 264, variance: 0.001392
+Reodering dimension by: dim: 344, variance: 0.001390
+Reodering dimension by: dim: 88, variance: 0.001378
+Reodering dimension by: dim: 43, variance: 0.001363
+Reodering dimension by: dim: 144, variance: 0.001362
+Reodering dimension by: dim: 177, variance: 0.001362
+Reodering dimension by: dim: 19, variance: 0.001355
+Reodering dimension by: dim: 29, variance: 0.001354
+Reodering dimension by: dim: 267, variance: 0.001350
+Reodering dimension by: dim: 77, variance: 0.001349
+Reodering dimension by: dim: 89, variance: 0.001346
+Reodering dimension by: dim: 31, variance: 0.001342
+Reodering dimension by: dim: 218, variance: 0.001340
+Reodering dimension by: dim: 85, variance: 0.001340
+Reodering dimension by: dim: 122, variance: 0.001335
+Reodering dimension by: dim: 37, variance: 0.001330
+Reodering dimension by: dim: 345, variance: 0.001329
+Reodering dimension by: dim: 226, variance: 0.001325
+Reodering dimension by: dim: 165, variance: 0.001323
+Reodering dimension by: dim: 42, variance: 0.001321
+Reodering dimension by: dim: 39, variance: 0.001307
+Reodering dimension by: dim: 91, variance: 0.001297
+Reodering dimension by: dim: 237, variance: 0.001292
+Reodering dimension by: dim: 210, variance: 0.001291
+Reodering dimension by: dim: 47, variance: 0.001289
+Reodering dimension by: dim: 95, variance: 0.001279
+Reodering dimension by: dim: 112, variance: 0.001279
+Reodering dimension by: dim: 332, variance: 0.001275
+Reodering dimension by: dim: 17, variance: 0.001275
+Reodering dimension by: dim: 163, variance: 0.001275
+Reodering dimension by: dim: 49, variance: 0.001270
+Reodering dimension by: dim: 107, variance: 0.001269
+Reodering dimension by: dim: 242, variance: 0.001262
+Reodering dimension by: dim: 238, variance: 0.001255
+Reodering dimension by: dim: 247, variance: 0.001253
+Reodering dimension by: dim: 251, variance: 0.001242
+Reodering dimension by: dim: 106, variance: 0.001236
+Reodering dimension by: dim: 114, variance: 0.001236
+Reodering dimension by: dim: 243, variance: 0.001226
+Reodering dimension by: dim: 219, variance: 0.001226
+Reodering dimension by: dim: 46, variance: 0.001225
+Reodering dimension by: dim: 223, variance: 0.001225
+Reodering dimension by: dim: 58, variance: 0.001224
+Reodering dimension by: dim: 261, variance: 0.001217
+Reodering dimension by: dim: 191, variance: 0.001209
+Reodering dimension by: dim: 193, variance: 0.001207
+Reodering dimension by: dim: 250, variance: 0.001205
+Reodering dimension by: dim: 173, variance: 0.001203
+Reodering dimension by: dim: 148, variance: 0.001200
+Reodering dimension by: dim: 265, variance: 0.001198
+Reodering dimension by: dim: 215, variance: 0.001192
+Reodering dimension by: dim: 22, variance: 0.001185
+Reodering dimension by: dim: 253, variance: 0.001178
+Reodering dimension by: dim: 222, variance: 0.001175
+Reodering dimension by: dim: 341, variance: 0.001169
+Reodering dimension by: dim: 24, variance: 0.001166
+Reodering dimension by: dim: 109, variance: 0.001165
+Reodering dimension by: dim: 36, variance: 0.001161
+Reodering dimension by: dim: 127, variance: 0.001159
+Reodering dimension by: dim: 357, variance: 0.001156
+Reodering dimension by: dim: 94, variance: 0.001145
+Reodering dimension by: dim: 41, variance: 0.001143
+Reodering dimension by: dim: 117, variance: 0.001140
+Reodering dimension by: dim: 56, variance: 0.001138
+Reodering dimension by: dim: 108, variance: 0.001136
+Reodering dimension by: dim: 175, variance: 0.001135
+Reodering dimension by: dim: 87, variance: 0.001134
+Reodering dimension by: dim: 26, variance: 0.001129
+Reodering dimension by: dim: 63, variance: 0.001121
+Reodering dimension by: dim: 48, variance: 0.001119
+Reodering dimension by: dim: 38, variance: 0.001118
+Reodering dimension by: dim: 83, variance: 0.001117
+Reodering dimension by: dim: 23, variance: 0.001114
+Reodering dimension by: dim: 234, variance: 0.001114
+Reodering dimension by: dim: 211, variance: 0.001113
+Reodering dimension by: dim: 21, variance: 0.001109
+Reodering dimension by: dim: 16, variance: 0.001106
+Reodering dimension by: dim: 146, variance: 0.001105
+Reodering dimension by: dim: 61, variance: 0.001104
+Reodering dimension by: dim: 72, variance: 0.001098
+Reodering dimension by: dim: 176, variance: 0.001090
+Reodering dimension by: dim: 313, variance: 0.001088
+Reodering dimension by: dim: 82, variance: 0.001086
+Reodering dimension by: dim: 32, variance: 0.001085
+Reodering dimension by: dim: 227, variance: 0.001079
+Reodering dimension by: dim: 11, variance: 0.001068
+Reodering dimension by: dim: 208, variance: 0.001067
+Reodering dimension by: dim: 84, variance: 0.001065
+Reodering dimension by: dim: 333, variance: 0.001061
+Reodering dimension by: dim: 161, variance: 0.001060
+Reodering dimension by: dim: 202, variance: 0.001051
+Reodering dimension by: dim: 278, variance: 0.001047
+Reodering dimension by: dim: 115, variance: 0.001031
+Reodering dimension by: dim: 93, variance: 0.001031
+Reodering dimension by: dim: 121, variance: 0.001030
+Reodering dimension by: dim: 252, variance: 0.001030
+Reodering dimension by: dim: 52, variance: 0.001027
+Reodering dimension by: dim: 212, variance: 0.001026
+Reodering dimension by: dim: 98, variance: 0.001013
+Reodering dimension by: dim: 92, variance: 0.001005
+Reodering dimension by: dim: 149, variance: 0.000999
+Reodering dimension by: dim: 123, variance: 0.000998
+Reodering dimension by: dim: 360, variance: 0.000994
+Reodering dimension by: dim: 81, variance: 0.000991
+Reodering dimension by: dim: 105, variance: 0.000990
+Reodering dimension by: dim: 309, variance: 0.000987
+Reodering dimension by: dim: 110, variance: 0.000979
+Reodering dimension by: dim: 281, variance: 0.000975
+Reodering dimension by: dim: 166, variance: 0.000973
+Reodering dimension by: dim: 133, variance: 0.000959
+Reodering dimension by: dim: 220, variance: 0.000957
+Reodering dimension by: dim: 232, variance: 0.000954
+Reodering dimension by: dim: 102, variance: 0.000950
+Reodering dimension by: dim: 340, variance: 0.000943
+Reodering dimension by: dim: 277, variance: 0.000942
+Reodering dimension by: dim: 356, variance: 0.000939
+Reodering dimension by: dim: 329, variance: 0.000939
+Reodering dimension by: dim: 282, variance: 0.000933
+Reodering dimension by: dim: 285, variance: 0.000926
+Reodering dimension by: dim: 321, variance: 0.000926
+Reodering dimension by: dim: 33, variance: 0.000925
+Reodering dimension by: dim: 20, variance: 0.000922
+Reodering dimension by: dim: 249, variance: 0.000921
+Reodering dimension by: dim: 45, variance: 0.000909
+Reodering dimension by: dim: 172, variance: 0.000907
+Reodering dimension by: dim: 361, variance: 0.000882
+Reodering dimension by: dim: 209, variance: 0.000868
+Reodering dimension by: dim: 334, variance: 0.000867
+Reodering dimension by: dim: 308, variance: 0.000865
+Reodering dimension by: dim: 99, variance: 0.000862
+Reodering dimension by: dim: 276, variance: 0.000862
+Reodering dimension by: dim: 314, variance: 0.000854
+Reodering dimension by: dim: 325, variance: 0.000844
+Reodering dimension by: dim: 286, variance: 0.000834
+Reodering dimension by: dim: 104, variance: 0.000826
+Reodering dimension by: dim: 44, variance: 0.000823
+Reodering dimension by: dim: 27, variance: 0.000809
+Reodering dimension by: dim: 188, variance: 0.000802
+Reodering dimension by: dim: 248, variance: 0.000795
+Reodering dimension by: dim: 312, variance: 0.000780
+Reodering dimension by: dim: 233, variance: 0.000774
+Reodering dimension by: dim: 382, variance: 0.000765
+Reodering dimension by: dim: 230, variance: 0.000765
+Reodering dimension by: dim: 365, variance: 0.000764
+Reodering dimension by: dim: 372, variance: 0.000761
+Reodering dimension by: dim: 103, variance: 0.000753
+Reodering dimension by: dim: 323, variance: 0.000750
+Reodering dimension by: dim: 330, variance: 0.000749
+Reodering dimension by: dim: 235, variance: 0.000740
+Reodering dimension by: dim: 119, variance: 0.000738
+Reodering dimension by: dim: 155, variance: 0.000727
+Reodering dimension by: dim: 190, variance: 0.000724
+Reodering dimension by: dim: 322, variance: 0.000720
+Reodering dimension by: dim: 335, variance: 0.000718
+Reodering dimension by: dim: 364, variance: 0.000710
+Reodering dimension by: dim: 62, variance: 0.000699
+Reodering dimension by: dim: 120, variance: 0.000697
+Reodering dimension by: dim: 354, variance: 0.000696
+Reodering dimension by: dim: 40, variance: 0.000695
+Reodering dimension by: dim: 383, variance: 0.000681
+Reodering dimension by: dim: 292, variance: 0.000681
+Reodering dimension by: dim: 304, variance: 0.000671
+Reodering dimension by: dim: 366, variance: 0.000669
+Reodering dimension by: dim: 387, variance: 0.000664
+Reodering dimension by: dim: 296, variance: 0.000664
+Reodering dimension by: dim: 273, variance: 0.000662
+Reodering dimension by: dim: 373, variance: 0.000655
+Reodering dimension by: dim: 279, variance: 0.000652
+Reodering dimension by: dim: 362, variance: 0.000648
+Reodering dimension by: dim: 293, variance: 0.000647
+Reodering dimension by: dim: 280, variance: 0.000642
+Reodering dimension by: dim: 349, variance: 0.000641
+Reodering dimension by: dim: 342, variance: 0.000638
+Reodering dimension by: dim: 353, variance: 0.000637
+Reodering dimension by: dim: 288, variance: 0.000636
+Reodering dimension by: dim: 60, variance: 0.000631
+Reodering dimension by: dim: 338, variance: 0.000630
+Reodering dimension by: dim: 326, variance: 0.000627
+Reodering dimension by: dim: 378, variance: 0.000622
+Reodering dimension by: dim: 290, variance: 0.000617
+Reodering dimension by: dim: 274, variance: 0.000615
+Reodering dimension by: dim: 298, variance: 0.000607
+Reodering dimension by: dim: 331, variance: 0.000606
+Reodering dimension by: dim: 369, variance: 0.000604
+Reodering dimension by: dim: 346, variance: 0.000602
+Reodering dimension by: dim: 272, variance: 0.000598
+Reodering dimension by: dim: 231, variance: 0.000586
+Reodering dimension by: dim: 318, variance: 0.000582
+Reodering dimension by: dim: 300, variance: 0.000579
+Reodering dimension by: dim: 295, variance: 0.000552
+Reodering dimension by: dim: 315, variance: 0.000542
+Reodering dimension by: dim: 370, variance: 0.000542
+Reodering dimension by: dim: 379, variance: 0.000540
+Reodering dimension by: dim: 302, variance: 0.000536
+Reodering dimension by: dim: 305, variance: 0.000530
+Reodering dimension by: dim: 283, variance: 0.000525
+Reodering dimension by: dim: 352, variance: 0.000524
+Reodering dimension by: dim: 374, variance: 0.000514
+Reodering dimension by: dim: 299, variance: 0.000512
+Reodering dimension by: dim: 337, variance: 0.000511
+Reodering dimension by: dim: 284, variance: 0.000508
+Reodering dimension by: dim: 289, variance: 0.000508
+Reodering dimension by: dim: 297, variance: 0.000507
+Reodering dimension by: dim: 358, variance: 0.000493
+Reodering dimension by: dim: 310, variance: 0.000492
+Reodering dimension by: dim: 294, variance: 0.000490
+Reodering dimension by: dim: 355, variance: 0.000486
+Reodering dimension by: dim: 319, variance: 0.000480
+Reodering dimension by: dim: 363, variance: 0.000476
+Reodering dimension by: dim: 311, variance: 0.000474
+Reodering dimension by: dim: 380, variance: 0.000465
+Reodering dimension by: dim: 368, variance: 0.000462
+Reodering dimension by: dim: 377, variance: 0.000460
+Reodering dimension by: dim: 336, variance: 0.000456
+Reodering dimension by: dim: 386, variance: 0.000456
+Reodering dimension by: dim: 359, variance: 0.000443
+Reodering dimension by: dim: 348, variance: 0.000440
+Reodering dimension by: dim: 350, variance: 0.000438
+Reodering dimension by: dim: 303, variance: 0.000434
+Reodering dimension by: dim: 287, variance: 0.000431
+Reodering dimension by: dim: 347, variance: 0.000429
+Reodering dimension by: dim: 351, variance: 0.000428
+Reodering dimension by: dim: 327, variance: 0.000423
+Reodering dimension by: dim: 275, variance: 0.000417
+Reodering dimension by: dim: 376, variance: 0.000416
+Reodering dimension by: dim: 317, variance: 0.000412
+Reodering dimension by: dim: 367, variance: 0.000405
+Reodering dimension by: dim: 371, variance: 0.000403
+Reodering dimension by: dim: 396, variance: 0.000399
+Reodering dimension by: dim: 460, variance: 0.000389
+Reodering dimension by: dim: 306, variance: 0.000385
+Reodering dimension by: dim: 448, variance: 0.000383
+Reodering dimension by: dim: 307, variance: 0.000375
+Reodering dimension by: dim: 456, variance: 0.000373
+Reodering dimension by: dim: 343, variance: 0.000366
+Reodering dimension by: dim: 301, variance: 0.000366
+Reodering dimension by: dim: 391, variance: 0.000359
+Reodering dimension by: dim: 399, variance: 0.000354
+Reodering dimension by: dim: 397, variance: 0.000343
+Reodering dimension by: dim: 375, variance: 0.000341
+Reodering dimension by: dim: 398, variance: 0.000330
+Reodering dimension by: dim: 339, variance: 0.000329
+Reodering dimension by: dim: 381, variance: 0.000318
+Reodering dimension by: dim: 452, variance: 0.000316
+Reodering dimension by: dim: 291, variance: 0.000314
+Reodering dimension by: dim: 468, variance: 0.000309
+Reodering dimension by: dim: 392, variance: 0.000281
+Reodering dimension by: dim: 469, variance: 0.000271
+Reodering dimension by: dim: 472, variance: 0.000269
+Reodering dimension by: dim: 449, variance: 0.000264
+Reodering dimension by: dim: 390, variance: 0.000250
+Reodering dimension by: dim: 388, variance: 0.000249
+Reodering dimension by: dim: 451, variance: 0.000246
+Reodering dimension by: dim: 316, variance: 0.000245
+Reodering dimension by: dim: 463, variance: 0.000226
+Reodering dimension by: dim: 485, variance: 0.000223
+Reodering dimension by: dim: 464, variance: 0.000223
+Reodering dimension by: dim: 459, variance: 0.000219
+Reodering dimension by: dim: 450, variance: 0.000217
+Reodering dimension by: dim: 395, variance: 0.000216
+Reodering dimension by: dim: 389, variance: 0.000215
+Reodering dimension by: dim: 385, variance: 0.000212
+Reodering dimension by: dim: 393, variance: 0.000211
+Reodering dimension by: dim: 455, variance: 0.000211
+Reodering dimension by: dim: 473, variance: 0.000209
+Reodering dimension by: dim: 436, variance: 0.000209
+Reodering dimension by: dim: 426, variance: 0.000201
+Reodering dimension by: dim: 484, variance: 0.000201
+Reodering dimension by: dim: 409, variance: 0.000192
+Reodering dimension by: dim: 440, variance: 0.000191
+Reodering dimension by: dim: 432, variance: 0.000191
+Reodering dimension by: dim: 394, variance: 0.000191
+Reodering dimension by: dim: 465, variance: 0.000189
+Reodering dimension by: dim: 453, variance: 0.000183
+Reodering dimension by: dim: 384, variance: 0.000181
+Reodering dimension by: dim: 501, variance: 0.000179
+Reodering dimension by: dim: 480, variance: 0.000177
+Reodering dimension by: dim: 425, variance: 0.000172
+Reodering dimension by: dim: 422, variance: 0.000172
+Reodering dimension by: dim: 431, variance: 0.000170
+Reodering dimension by: dim: 402, variance: 0.000169
+Reodering dimension by: dim: 413, variance: 0.000167
+Reodering dimension by: dim: 430, variance: 0.000166
+Reodering dimension by: dim: 470, variance: 0.000165
+Reodering dimension by: dim: 498, variance: 0.000165
+Reodering dimension by: dim: 403, variance: 0.000165
+Reodering dimension by: dim: 454, variance: 0.000161
+Reodering dimension by: dim: 406, variance: 0.000160
+Reodering dimension by: dim: 495, variance: 0.000159
+Reodering dimension by: dim: 497, variance: 0.000157
+Reodering dimension by: dim: 488, variance: 0.000157
+Reodering dimension by: dim: 489, variance: 0.000152
+Reodering dimension by: dim: 437, variance: 0.000151
+Reodering dimension by: dim: 457, variance: 0.000151
+Reodering dimension by: dim: 481, variance: 0.000149
+Reodering dimension by: dim: 427, variance: 0.000147
+Reodering dimension by: dim: 486, variance: 0.000141
+Reodering dimension by: dim: 499, variance: 0.000140
+Reodering dimension by: dim: 421, variance: 0.000140
+Reodering dimension by: dim: 475, variance: 0.000140
+Reodering dimension by: dim: 502, variance: 0.000139
+Reodering dimension by: dim: 474, variance: 0.000139
+Reodering dimension by: dim: 429, variance: 0.000139
+Reodering dimension by: dim: 405, variance: 0.000137
+Reodering dimension by: dim: 458, variance: 0.000137
+Reodering dimension by: dim: 461, variance: 0.000137
+Reodering dimension by: dim: 500, variance: 0.000136
+Reodering dimension by: dim: 438, variance: 0.000136
+Reodering dimension by: dim: 496, variance: 0.000132
+Reodering dimension by: dim: 439, variance: 0.000130
+Reodering dimension by: dim: 494, variance: 0.000130
+Reodering dimension by: dim: 423, variance: 0.000129
+Reodering dimension by: dim: 479, variance: 0.000129
+Reodering dimension by: dim: 401, variance: 0.000129
+Reodering dimension by: dim: 410, variance: 0.000129
+Reodering dimension by: dim: 443, variance: 0.000128
+Reodering dimension by: dim: 433, variance: 0.000127
+Reodering dimension by: dim: 408, variance: 0.000125
+Reodering dimension by: dim: 492, variance: 0.000124
+Reodering dimension by: dim: 428, variance: 0.000124
+Reodering dimension by: dim: 412, variance: 0.000123
+Reodering dimension by: dim: 419, variance: 0.000123
+Reodering dimension by: dim: 441, variance: 0.000122
+Reodering dimension by: dim: 491, variance: 0.000122
+Reodering dimension by: dim: 483, variance: 0.000121
+Reodering dimension by: dim: 424, variance: 0.000120
+Reodering dimension by: dim: 416, variance: 0.000120
+Reodering dimension by: dim: 442, variance: 0.000120
+Reodering dimension by: dim: 493, variance: 0.000119
+Reodering dimension by: dim: 471, variance: 0.000116
+Reodering dimension by: dim: 490, variance: 0.000116
+Reodering dimension by: dim: 447, variance: 0.000114
+Reodering dimension by: dim: 482, variance: 0.000112
+Reodering dimension by: dim: 462, variance: 0.000111
+Reodering dimension by: dim: 414, variance: 0.000111
+Reodering dimension by: dim: 435, variance: 0.000111
+Reodering dimension by: dim: 509, variance: 0.000110
+Reodering dimension by: dim: 466, variance: 0.000109
+Reodering dimension by: dim: 407, variance: 0.000109
+Reodering dimension by: dim: 418, variance: 0.000106
+Reodering dimension by: dim: 420, variance: 0.000105
+Reodering dimension by: dim: 467, variance: 0.000105
+Reodering dimension by: dim: 508, variance: 0.000104
+Reodering dimension by: dim: 400, variance: 0.000103
+Reodering dimension by: dim: 478, variance: 0.000102
+Reodering dimension by: dim: 476, variance: 0.000099
+Reodering dimension by: dim: 504, variance: 0.000099
+Reodering dimension by: dim: 434, variance: 0.000099
+Reodering dimension by: dim: 505, variance: 0.000098
+Reodering dimension by: dim: 506, variance: 0.000097
+Reodering dimension by: dim: 487, variance: 0.000094
+Reodering dimension by: dim: 404, variance: 0.000090
+Reodering dimension by: dim: 510, variance: 0.000088
+Reodering dimension by: dim: 444, variance: 0.000086
+Reodering dimension by: dim: 511, variance: 0.000085
+Reodering dimension by: dim: 446, variance: 0.000084
+Reodering dimension by: dim: 417, variance: 0.000084
+Reodering dimension by: dim: 477, variance: 0.000082
+Reodering dimension by: dim: 503, variance: 0.000068
+Reodering dimension by: dim: 415, variance: 0.000067
+Reodering dimension by: dim: 411, variance: 0.000060
+Reodering dimension by: dim: 507, variance: 0.000056
+Reodering dimension by: dim: 445, variance: 0.000055
+Dimension with greatest variance: 143
+Time to reorder cols by variance (this gets added to the time because its an optimization): 0.018345
+
+*****************************
+Generating grid dimensions.
+*****************************
+
+Number of dimensions data: 512, Number of dimensions indexed: 6
+Data Dim: 0, min/max: 0.000348,0.448716
+Data Dim: 1, min/max: 0.000200,0.431596
+Data Dim: 2, min/max: 0.000189,0.409896
+Data Dim: 3, min/max: 0.000595,0.372086
+Data Dim: 4, min/max: 0.001514,0.357347
+Data Dim: 5, min/max: 0.000337,0.355365
+Appended by epsilon Dim: 0, min/max: -0.753765,1.202829
+Appended by epsilon Dim: 1, min/max: -0.753914,1.185709
+Appended by epsilon Dim: 2, min/max: -0.753925,1.164009
+Appended by epsilon Dim: 3, min/max: -0.753518,1.126200
+Appended by epsilon Dim: 4, min/max: -0.752600,1.111460
+Appended by epsilon Dim: 5, min/max: -0.753777,1.109479
+Number of cells dim: 0: 3
+Number of cells dim: 1: 3
+Number of cells dim: 2: 3
+Number of cells dim: 3: 3
+Number of cells dim: 4: 3
+Number of cells dim: 5: 3
+
+Grid: total cells (including empty) 729
+
+*****************************
+Populating Grid Index and lookup array:
+*****************************
+
+Full cells: 1 (0.001372, fraction full)
+Empty cells: 728 (0.998628, fraction empty)
+Size of index that would be sent to GPU (GiB) -- (if full index sent), excluding the data lookup arr: 0.000005
+Size of compressed index to be sent to GPU (GiB) , excluding the data and grid lookup arr: 0.000000
+When copying from entire index to compressed index: number of non-empty cells: 1
+Time to index (not counted in the time): 0.023937
+** Sometimes the GPU will error on a previous execution and you won't know. 
+Last error start of function: 0
+In main GPU method: DBSIZE is: 4096
+Size of index sent to GPU (MiB): 0.000008
+
+***********************************
+Estimating Batches:
+** BATCH ESTIMATOR: Sometimes the GPU will error on a previous execution and you won't know. 
+Last error start of function: 0
+Offset: 66
+total blocks: 1
+** ERROR FROM KERNEL LAUNCH OF BATCH ESTIMATOR: 0
+GPU: result set size for estimating the number of batches (sampled): 3874
+From gpu cnt: 3874, offset rate: 66
+Estimated total result set size: 255684
+Estimated total result set size (with Alpha 0.100000): 281252
+Small buffer size, increasing alpha to: 0.300000
+Number of batches: 3, buffer size: 110796
+End Batch Estimator
+***********************************
+
+Time to estimate batches: 0.331615
+In Calling fn: Estimated neighbors: 281252, num. batches: 3, GPU Buffer size: 110796
+Time to allocate pinned memory for results (tid: 0): 0.002493
+memory requested for results ON GPU (GiB): 0.002476
+memory requested for results in MAIN MEMORY (GiB): 0.002476
+Batches that have one more GPU thread: 1 batchSize(N): 1365, 
+
+tid: 0, starting iteration: 0
+N (GPU threads): 1366, tid: 0
+tid: 2, starting iteration: 2
+N (1 less): 1365 tid: 2
+tid: 1, starting iteration: 1
+N (1 less): 1365 tid: 1
+total blocks: 6
+
+KERNEL LAUNCH RETURN: 0
+
+
+total blocks: 6
+total blocks: 6
+
+KERNEL LAUNCH RETURN: 0
+
+
+
+KERNEL LAUNCH RETURN: 0
+
+
+GPU: result set size within epsilon (GPU grid): 87826
+GPU: result set size within epsilon (GPU grid): 85280
+GPU: result set size within epsilon (GPU grid): 89038
+total blocks: 344
+
+ UNIQUE KEY KERNEL LAUNCH RETURN: 0
+
+
+total blocks: 348
+
+ UNIQUE KEY KERNEL LAUNCH RETURN: 0
+
+
+GPU: unique keys (batch: 0): 1366
+total blocks: 334
+GPU: unique keys (batch: 1): 1365
+
+ UNIQUE KEY KERNEL LAUNCH RETURN: 0
+
+
+GPU: unique keys (batch: 2): 1365RUN_COMPLETE {"canonical_pair_count": 262144, "canonical_raw_u64_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d", "canonical_unique_pair_count": 262144, "counts_max": 873, "counts_median": 9.0, "counts_min": 1, "counts_sum": 262144, "cuda_visible_devices": "0", "diagnostic_wall_s": 1.0851014130021213, "duplicate_pairs": 0, "epsilon": 0.7541135250198396, "exact_match": true, "experiment_id": "tensorjoin_20260903_gds_cifar4096_g2a", "extra_pairs": 0, "first_extra_pairs": [], "first_missing_pairs": [], "host": "gpu-host-8", "input_sha256": "e6a720399067e9753bc6f45ff6f67b73a3861964255e85e1ed9a1ce7906df462", "invalid_neighbor_ids": 0, "library_sha256": "e0d31f51a8a2ed844b988b2c2b1c08ed9757a55dfceda338c787d999b34b54bb", "measurement_status": "correctness_admission_only_no_performance_claim", "missing_pairs": 0, "numpy": "2.3.1", "oracle_file_sha256": "ac93d96ac39ea5a2bc2d1e81baa179a533a6344aae97f058b3b33a8155e6c0c9", "oracle_raw_u64_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d", "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]", "run_id": 1, "runner_sha256": "642ea7d096b542d68d6e2d662e8234fd684b8369af8097684b7dd735468ff87d"}
+
+Time to do the copy: 0.001470
+Table construct time: 0.003055
+Running total of total size of result array, tid: 2: 85280
+Time to do the copy: 0.001707
+Time to do the copy: 0.001562
+Table construct time: 0.003646
+Running total of total size of result array, tid: 0: 87826
+Table construct time: 0.003831
+Running total of total size of result array, tid: 1: 89038
+TOTAL RESULT SET SIZE ON HOST:  262144
+Time to launch kernel and execute everything (get results etc.) except freeing memory: 0.637118
+Time freeing memory: 0.001412
+** last error at end of fn batches (could be from freeing memory): 0
+Time: 0.658204

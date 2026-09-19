@@ -1,0 +1,9 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py", "--phase", "validation", "--record-id", "a0"]
+ENV {"CUDA_VISIBLE_DEVICES": "2", "G5_PHYSICAL_GPU": "2", "TRITON_CACHE_DIR": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g5_g16_fp32_validation_a0_triton_cache"}
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py", line 242, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py", line 186, in main
+    raise RuntimeError('GPU 2 and explicit TF32 override are mandatory')
+RuntimeError: GPU 2 and explicit TF32 override are mandatory

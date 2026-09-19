@@ -1,0 +1,1485 @@
+{
+  "pass_": false,
+  "records": [
+    {
+      "kernel": "16_0_0",
+      "cubin_sha256": "3f583803121b0dc6d6ad51339182742618f098a3e53831c319f74d15942e18b2",
+      "normalized_sass_sha256": "643d220fdf7442b4787d8edae1fe025b095b338b425aa49a74d31102cdbf062c",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          8
+        ],
+        [
+          112,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 640,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 96
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 4,
+        "LDC.64": 2,
+        "LDCU.64": 3,
+        "IMAD.WIDE.U32": 10,
+        "LDG.E": 2,
+        "LOP3.LUT": 51,
+        "IMAD.SHL.U32": 31,
+        "S2UR": 1,
+        "IMAD": 4,
+        "UMOV": 3,
+        "SHF.R.U32.HI": 1,
+        "IMAD.HI.U32": 1,
+        "CS2R": 16,
+        "SGXT.U32": 1,
+        "ULEA": 3,
+        "IADD3": 3,
+        "IMAD.HI": 9,
+        "ISETP.GE.AND": 4,
+        "IADD.64": 20,
+        "MOV.64": 1,
+        "LDGSTS.E.BYPASS.128": 24,
+        "LDGDEPBAR": 6,
+        "IMAD.WIDE": 8,
+        "BAR.SYNC.DEFER_BLOCKING": 7,
+        "DEPBAR.LE": 2,
+        "UIADD3": 2,
+        "UISETP.GT.AND": 2,
+        "ISETP.GE.U64.AND": 2,
+        "USEL": 2,
+        "LDSM.16.M88.4": 16,
+        "HMMA.16816.F32": 32,
+        "NOP": 29,
+        "SEL": 6,
+        "MOV": 40,
+        "ISETP.NE.U32.AND": 5,
+        "BRA": 2,
+        "SHF.R.S32.HI": 1,
+        "SGXT": 1,
+        "STS.128": 8,
+        "LDS.128": 8,
+        "STG.E.128": 8,
+        "EXIT": 1
+      },
+      "dynamic_shared_bytes": 32768,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan16:\n  REG:96 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "16_1_0",
+      "cubin_sha256": "a5f6d20edb951be11085ab21d6e26c547748aeeda79fd47eaa02b564cdbf0c10",
+      "normalized_sass_sha256": "505e567e67750b8dab423bfa139b800c67df5241372115c428a254dfbdac6024",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          8
+        ],
+        [
+          112,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 152
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 195,
+        "LDC.64": 40,
+        "LDCU.64": 3,
+        "IMAD.WIDE.U32": 2,
+        "LDG.E": 34,
+        "HFMA2": 23,
+        "CS2R": 33,
+        "SHF.R.U32.HI": 3,
+        "IMAD.SHL.U32": 86,
+        "SGXT.U32": 2,
+        "LOP3.LUT": 670,
+        "MOV": 23,
+        "IMAD.WIDE": 40,
+        "ISETP.GE.AND": 3,
+        "SHF.R.S32.HI": 33,
+        "SHF.L.U64.HI": 1,
+        "IADD.64": 77,
+        "LDG.E.128": 12,
+        "IMAD": 2,
+        "IADD3": 65,
+        "IMAD.HI": 72,
+        "ISETP.LT.AND": 66,
+        "ISETP.LE.AND": 32,
+        "FMUL.RP": 200,
+        "FADD.RP": 288,
+        "FMUL": 32,
+        "FADD.RM": 96,
+        "FADD": 32,
+        "FSETP.GTU.AND": 32,
+        "FMNMX": 32,
+        "FSETP.LEU.AND": 32,
+        "PLOP3.LUT": 96,
+        "FSETP.LE.AND": 32,
+        "SEL": 64,
+        "P2R": 28,
+        "ISETP.NE.AND": 28,
+        "S2UR": 1,
+        "UMOV": 1,
+        "PRMT": 48,
+        "ULEA": 1,
+        "LEA.HI": 1,
+        "STS": 16,
+        "BAR.SYNC.DEFER_BLOCKING": 3,
+        "LDS.U8": 64,
+        "BSSY.RECONVERGENT": 127,
+        "BRA": 128,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "STG.E.64": 64,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2,
+        "NOP": 11
+      },
+      "dynamic_shared_bytes": 4096,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan16:\n  REG:152 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "16_1_1",
+      "cubin_sha256": "fe4095fb44d87429ee02035dff8125b04f464a17aed20fc01947573cbe366b4f",
+      "normalized_sass_sha256": "a4622bde5fca4028fab6c619c61a6f60caa4a4d9335bf32df330768fc45e39e5",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          8
+        ],
+        [
+          112,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 168
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 194,
+        "LDC.64": 42,
+        "LDCU.64": 3,
+        "IMAD.WIDE.U32": 2,
+        "CS2R": 37,
+        "HFMA2": 19,
+        "LDG.E": 34,
+        "SHF.R.U32.HI": 3,
+        "IMAD.SHL.U32": 78,
+        "SGXT.U32": 2,
+        "LOP3.LUT": 670,
+        "IMAD.WIDE": 64,
+        "ISETP.GE.AND": 3,
+        "LDG.E.128": 12,
+        "IMAD": 2,
+        "IADD3": 65,
+        "SHF.R.S32.HI": 33,
+        "SHF.L.U64.HI": 1,
+        "IADD.64": 69,
+        "MOV": 23,
+        "ISETP.LT.AND": 66,
+        "ISETP.LE.AND": 32,
+        "FMUL.RP": 200,
+        "FADD.RP": 288,
+        "FMUL": 32,
+        "FADD.RM": 96,
+        "FADD": 32,
+        "FMNMX": 32,
+        "FSETP.LE.AND": 32,
+        "SEL": 64,
+        "FSETP.GTU.AND": 32,
+        "FSETP.LEU.AND": 32,
+        "PLOP3.LUT": 96,
+        "P2R": 33,
+        "ISETP.NE.AND": 33,
+        "PRMT": 48,
+        "S2UR": 1,
+        "UMOV": 1,
+        "LEA.HI": 1,
+        "ULEA": 1,
+        "STG.E.128": 16,
+        "STS": 16,
+        "BAR.SYNC.DEFER_BLOCKING": 3,
+        "LDS.U8": 64,
+        "BSSY.RECONVERGENT": 127,
+        "BRA": 128,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "IMAD.HI": 64,
+        "STG.E.64": 64,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2,
+        "NOP": 8
+      },
+      "dynamic_shared_bytes": 4096,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan16:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "16_2_0",
+      "cubin_sha256": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+      "normalized_sass_sha256": "5cdcaeb828ff46c377d3450b4fa54bb373224cf225fa1d3391a630d38403c25d",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          8
+        ],
+        [
+          112,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 140
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 194,
+        "LDC.64": 39,
+        "LDCU.64": 4,
+        "S2UR": 1,
+        "UMOV": 3,
+        "IMAD.WIDE.U32": 10,
+        "LDG.E": 18,
+        "LOP3.LUT": 670,
+        "IMAD.SHL.U32": 97,
+        "ULEA": 3,
+        "R2UR": 2,
+        "IMAD": 14,
+        "SHF.R.U32.HI": 57,
+        "CS2R": 48,
+        "SGXT.U32": 2,
+        "IMAD.HI.U32": 1,
+        "MOV": 130,
+        "IADD3": 81,
+        "USHF.L.U32": 2,
+        "IMAD.HI": 72,
+        "ISETP.GE.AND": 8,
+        "IADD.64": 83,
+        "LDGSTS.E.BYPASS.128": 24,
+        "LDGDEPBAR": 6,
+        "IMAD.WIDE": 48,
+        "BAR.SYNC.DEFER_BLOCKING": 7,
+        "UMOV.64": 1,
+        "DEPBAR.LE": 2,
+        "UIADD3": 33,
+        "UIADD3.64": 1,
+        "UISETP.GT.AND": 2,
+        "USEL": 3,
+        "UISETP.GE.U64.AND": 2,
+        "LDSM.16.M88.4": 16,
+        "HMMA.16816.F32": 32,
+        "NOP": 32,
+        "SEL": 68,
+        "ISETP.NE.U32.AND": 8,
+        "BRA.U": 1,
+        "LEA.HI": 9,
+        "LDG.E.64": 16,
+        "FMUL": 32,
+        "FMUL.RP": 196,
+        "FADD.RP": 288,
+        "ISETP.LT.AND": 68,
+        "ISETP.LE.AND": 32,
+        "FSETP.LE.AND": 32,
+        "FSETP.GTU.AND": 32,
+        "FADD": 32,
+        "FADD.RM": 96,
+        "FMNMX": 32,
+        "FSETP.LEU.AND": 32,
+        "PLOP3.LUT": 94,
+        "P2R": 25,
+        "ISETP.NE.AND": 25,
+        "PRMT": 64,
+        "STSM.16.M88.4": 4,
+        "LDS.128": 4,
+        "ULEA.HI": 1,
+        "USHF.R.S32.HI": 32,
+        "BSSY.RECONVERGENT": 127,
+        "BRA": 128,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "STG.E.64": 64,
+        "ISETP.NE.U32.XOR": 2,
+        "IMAD.U32": 1,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2
+      },
+      "dynamic_shared_bytes": 32768,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan16:\n  REG:140 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "16_2_1",
+      "cubin_sha256": "a5a5856c223074983faf6804279f7578f8fafb9e04b522e6ec63624ae82b57e2",
+      "normalized_sass_sha256": "9e66ba7ba60071cfc21d0e674d1b5f6e6ef25e83c7f994c0b18e115f518db035",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          8
+        ],
+        [
+          112,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 154
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 194,
+        "LDC.64": 42,
+        "LDCU.64": 4,
+        "IMAD.WIDE.U32": 10,
+        "LDG.E": 18,
+        "LOP3.LUT": 648,
+        "IMAD.SHL.U32": 100,
+        "S2UR": 1,
+        "SHF.R.U32.HI": 57,
+        "IMAD": 17,
+        "UMOV": 3,
+        "SGXT.U32": 2,
+        "IMAD.HI.U32": 1,
+        "MOV.64": 1,
+        "CS2R": 53,
+        "ULEA": 3,
+        "IADD.64": 84,
+        "IMAD.WIDE": 51,
+        "ISETP.GE.AND": 8,
+        "IMAD.HI": 72,
+        "IADD3": 112,
+        "LDGSTS.E.BYPASS.128": 24,
+        "LDGDEPBAR": 6,
+        "BAR.SYNC.DEFER_BLOCKING": 19,
+        "DEPBAR.LE": 2,
+        "UIADD3": 2,
+        "UISETP.GT.AND": 2,
+        "ISETP.GE.U64.AND": 2,
+        "USEL": 2,
+        "SEL": 70,
+        "ISETP.NE.U32.AND": 7,
+        "LDSM.16.M88.4": 16,
+        "HMMA.16816.F32": 32,
+        "NOP": 31,
+        "MOV": 131,
+        "BRA": 129,
+        "SHF.R.S32.HI": 33,
+        "SGXT": 1,
+        "LEA.HI": 10,
+        "STS.128": 24,
+        "LDS.128": 28,
+        "STG.E.128": 24,
+        "LDG.E.64": 16,
+        "FMUL.RP": 196,
+        "FADD.RP": 288,
+        "FMUL": 32,
+        "FADD.RM": 96,
+        "FADD": 32,
+        "ISETP.LT.AND": 68,
+        "FMNMX": 32,
+        "FSETP.GTU.AND": 32,
+        "ISETP.LE.AND": 32,
+        "FSETP.LEU.AND": 32,
+        "FSETP.LE.AND": 32,
+        "P2R": 26,
+        "PLOP3.LUT": 94,
+        "ISETP.NE.AND": 26,
+        "LEA": 1,
+        "PRMT": 64,
+        "STSM.16.M88.4": 4,
+        "BSSY.RECONVERGENT": 127,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "STG.E.64": 64,
+        "ISETP.NE.U32.XOR": 2,
+        "IMAD.U32": 1,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2
+      },
+      "dynamic_shared_bytes": 32768,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan16:\n  REG:154 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1016 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "8_0_0",
+      "cubin_sha256": "c7889fc3188ff6e8484dd71f70de829c63f68a74f05fbbb66f3ab66e0ac90620",
+      "normalized_sass_sha256": "80dc9b32e37e440310731a7e98c436c7b0554facda6137e7250afabd0694e60a",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          4
+        ],
+        [
+          108,
+          4
+        ],
+        [
+          112,
+          4
+        ],
+        [
+          116,
+          4
+        ],
+        [
+          120,
+          4
+        ],
+        [
+          124,
+          4
+        ],
+        [
+          128,
+          8
+        ],
+        [
+          136,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 896,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 72
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 3,
+        "LDC.64": 3,
+        "LDCU.64": 3,
+        "S2UR": 1,
+        "IMAD.WIDE.U32": 4,
+        "LDG.E": 2,
+        "IMAD.SHL.U32": 19,
+        "SHF.R.U32.HI": 4,
+        "LOP3.LUT": 43,
+        "UMOV": 3,
+        "ULEA": 3,
+        "SGXT.U32": 3,
+        "IMAD": 6,
+        "MOV.64": 2,
+        "MOV": 28,
+        "CS2R": 15,
+        "IADD.64": 26,
+        "ISETP.GE.AND": 3,
+        "SHF.R.S32.HI": 6,
+        "LEA.HI": 1,
+        "PRMT": 49,
+        "IADD3": 7,
+        "LDGSTS.E.BYPASS.128": 6,
+        "LDGDEPBAR": 6,
+        "LDGSTS.E.64": 12,
+        "BAR.SYNC.DEFER_BLOCKING": 7,
+        "DEPBAR.LE": 2,
+        "UIADD3": 2,
+        "UISETP.GT.AND": 2,
+        "USEL": 2,
+        "LDS.U8": 64,
+        "LDSM.16.M88.4": 4,
+        "IMMA.16832.S8.S8.SAT": 16,
+        "NOP": 23,
+        "ISETP.GE.U64.AND": 2,
+        "SEL": 6,
+        "ISETP.NE.U32.AND": 4,
+        "BRA": 2,
+        "SGXT": 1,
+        "STS.128": 8,
+        "LDS.128": 8,
+        "IMAD.HI": 2,
+        "STG.E.128": 8,
+        "EXIT": 1
+      },
+      "dynamic_shared_bytes": 16384,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function scan8:\n  REG:72 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1040 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "8_1_0",
+      "cubin_sha256": "40fa4ef2c36c50314aa15211dac3d589773ce14be22e9b3ca4300d1b4a1d9d2f",
+      "normalized_sass_sha256": "bbf0b8ac79abf9d325743dd6aaf2379a2b227fd20bc5ba5dd89da281a1e6495f",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          4
+        ],
+        [
+          108,
+          4
+        ],
+        [
+          112,
+          4
+        ],
+        [
+          116,
+          4
+        ],
+        [
+          120,
+          4
+        ],
+        [
+          124,
+          4
+        ],
+        [
+          128,
+          8
+        ],
+        [
+          136,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 168
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 195,
+        "LDC.64": 41,
+        "LDCU.64": 4,
+        "IMAD.WIDE.U32": 2,
+        "HFMA2": 22,
+        "CS2R": 28,
+        "LDG.E": 26,
+        "IMAD.SHL.U32": 86,
+        "LOP3.LUT": 657,
+        "SHF.R.U32.HI": 3,
+        "IMAD": 2,
+        "IADD3": 65,
+        "SGXT.U32": 2,
+        "IMAD.HI": 72,
+        "IADD.64": 76,
+        "LDG.E.128": 11,
+        "IMAD.WIDE": 38,
+        "ISETP.GE.AND": 3,
+        "I2FP.F32.S32": 32,
+        "ISETP.LT.AND": 66,
+        "ISETP.LE.AND": 32,
+        "P2R": 31,
+        "FMUL": 64,
+        "FADD": 288,
+        "FFMA": 128,
+        "FMNMX": 128,
+        "MUFU.SQRT": 64,
+        "FSETP.LE.AND": 32,
+        "SEL": 64,
+        "FSETP.GT.AND": 32,
+        "FSETP.GTU.AND": 32,
+        "PLOP3.LUT": 96,
+        "SHF.R.S32.HI": 33,
+        "SHF.L.U64.HI": 1,
+        "MOV": 22,
+        "ISETP.NE.AND": 31,
+        "S2UR": 1,
+        "UMOV": 1,
+        "PRMT": 48,
+        "ULEA": 1,
+        "STS": 16,
+        "LEA.HI": 1,
+        "BAR.SYNC.DEFER_BLOCKING": 3,
+        "LDS.U8": 64,
+        "BSSY.RECONVERGENT": 127,
+        "BRA": 128,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "STG.E.64": 64,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2,
+        "NOP": 11
+      },
+      "dynamic_shared_bytes": 4096,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:28 CONSTANT[4]:16\n Function scan8:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1040 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "8_1_1",
+      "cubin_sha256": "976f36ecf8441a9e9e2892f71b4c7bf780424efff090977c23c5e657e85fdee1",
+      "normalized_sass_sha256": "ad15bccc93b0aabbde2750ff45c27aeae43b6548c298374dc065a934dd1558f0",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          4
+        ],
+        [
+          108,
+          4
+        ],
+        [
+          112,
+          4
+        ],
+        [
+          116,
+          4
+        ],
+        [
+          120,
+          4
+        ],
+        [
+          124,
+          4
+        ],
+        [
+          128,
+          8
+        ],
+        [
+          136,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 168
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 194,
+        "LDC.64": 43,
+        "LDCU.64": 4,
+        "IMAD.WIDE.U32": 2,
+        "CS2R": 27,
+        "LDG.E": 26,
+        "SHF.R.U32.HI": 3,
+        "IMAD.SHL.U32": 78,
+        "LOP3.LUT": 652,
+        "SGXT.U32": 2,
+        "IMAD": 2,
+        "MOV": 25,
+        "IADD3": 65,
+        "HFMA2": 23,
+        "IMAD.WIDE": 62,
+        "LDG.E.128": 11,
+        "ISETP.GE.AND": 3,
+        "SHF.R.S32.HI": 33,
+        "SHF.L.U64.HI": 1,
+        "IADD.64": 68,
+        "I2FP.F32.S32": 32,
+        "ISETP.LT.AND": 66,
+        "ISETP.LE.AND": 32,
+        "FMUL": 64,
+        "FADD": 288,
+        "FFMA": 128,
+        "FMNMX": 128,
+        "MUFU.SQRT": 64,
+        "FSETP.LE.AND": 32,
+        "SEL": 64,
+        "FSETP.GT.AND": 32,
+        "FSETP.GTU.AND": 32,
+        "PLOP3.LUT": 96,
+        "P2R": 29,
+        "ISETP.NE.AND": 29,
+        "S2UR": 1,
+        "PRMT": 48,
+        "UMOV": 1,
+        "ULEA": 1,
+        "LEA.HI": 1,
+        "STG.E.128": 16,
+        "STS": 16,
+        "BAR.SYNC.DEFER_BLOCKING": 3,
+        "LDS.U8": 64,
+        "BSSY.RECONVERGENT": 127,
+        "BRA": 128,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "IMAD.HI": 64,
+        "STG.E.64": 64,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2,
+        "NOP": 8
+      },
+      "dynamic_shared_bytes": 4096,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:28 CONSTANT[4]:16\n Function scan8:\n  REG:168 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1040 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "8_2_1",
+      "cubin_sha256": "bc6ab0b6dcf0d768c01efc67e272b230bc317a8be19cb7c094e21048531896f3",
+      "normalized_sass_sha256": "59696f3d784647f31eb70636926003cd48fb9a8d238b230bbf152047a59500b2",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          8
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ],
+        [
+          104,
+          4
+        ],
+        [
+          108,
+          4
+        ],
+        [
+          112,
+          4
+        ],
+        [
+          116,
+          4
+        ],
+        [
+          120,
+          4
+        ],
+        [
+          124,
+          4
+        ],
+        [
+          128,
+          8
+        ],
+        [
+          136,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 384,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 148
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 194,
+        "LDC.64": 44,
+        "LDCU.64": 21,
+        "S2UR": 1,
+        "IMAD.WIDE.U32": 4,
+        "LDG.E": 14,
+        "IMAD.SHL.U32": 87,
+        "LOP3.LUT": 618,
+        "R2UR": 2,
+        "SHF.R.U32.HI": 60,
+        "IMAD": 17,
+        "SGXT.U32": 4,
+        "MOV": 188,
+        "UMOV": 3,
+        "LEA.HI": 10,
+        "IADD.64": 89,
+        "MOV.64": 2,
+        "CS2R": 44,
+        "USHF.L.U32": 1,
+        "ISETP.GE.AND": 7,
+        "LEA": 2,
+        "SHF.R.S32.HI": 6,
+        "ULEA": 3,
+        "IADD3": 85,
+        "LDGSTS.E.BYPASS.128": 6,
+        "LDGDEPBAR": 6,
+        "LDGSTS.E.64": 12,
+        "BAR.SYNC.DEFER_BLOCKING": 19,
+        "PRMT": 113,
+        "DEPBAR.LE": 2,
+        "UIADD3": 33,
+        "UISETP.GT.AND": 2,
+        "USEL": 2,
+        "LDS.U8": 64,
+        "LDSM.16.M88.4": 4,
+        "IMMA.16832.S8.S8.SAT": 16,
+        "ISETP.GE.U64.AND": 2,
+        "SEL": 70,
+        "ISETP.NE.U32.AND": 6,
+        "BRA": 129,
+        "SGXT": 1,
+        "IMAD.WIDE": 44,
+        "STS.128": 24,
+        "I2FP.F32.S32": 32,
+        "LDCU": 20,
+        "LDS.128": 28,
+        "STG.E.128": 24,
+        "LDG.E.64": 12,
+        "FMUL": 64,
+        "FADD": 288,
+        "FFMA": 128,
+        "FMNMX": 128,
+        "MUFU.SQRT": 64,
+        "ISETP.LT.AND": 68,
+        "P2R": 23,
+        "ISETP.LE.AND": 32,
+        "FSETP.LE.AND": 32,
+        "FSETP.GT.AND": 32,
+        "FSETP.GTU.AND": 32,
+        "PLOP3.LUT": 94,
+        "ISETP.NE.AND": 23,
+        "STSM.16.M88.4": 4,
+        "ULEA.HI": 1,
+        "USHF.R.S32.HI": 32,
+        "BSSY.RECONVERGENT": 127,
+        "VOTEU.ANY": 128,
+        "FLO.U32": 64,
+        "POPC": 192,
+        "ISETP.EQ.U32.AND": 128,
+        "ATOMG.E.ADD.STRONG.GPU": 64,
+        "SHFL.IDX": 64,
+        "BSYNC.RECONVERGENT": 127,
+        "IMAD.HI": 64,
+        "STG.E.64": 64,
+        "ISETP.NE.U32.XOR": 2,
+        "IMAD.U32": 1,
+        "UFLO.U32": 64,
+        "REDG.E.ADD.STRONG.GPU": 64,
+        "EXIT": 2,
+        "NOP": 13
+      },
+      "dynamic_shared_bytes": 16384,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:28 CONSTANT[4]:16\n Function scan8:\n  REG:148 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:1040 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    },
+    {
+      "kernel": "metadata",
+      "cubin_sha256": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+      "normalized_sass_sha256": "e2059717aa6fce45c898873f9c9dc73c98dae4145bbda6829ce16a11a512d65d",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 1024,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 40
+      },
+      "opcodes": {
+        "LDC": 1,
+        "S2R": 3,
+        "LDCU.128": 1,
+        "LDCU.64": 1,
+        "IMAD.SHL.U32": 6,
+        "LOP3.LUT": 6,
+        "IMAD.HI": 2,
+        "IADD.64": 9,
+        "IMAD.HI.U32": 2,
+        "LDG.E.128": 1,
+        "S2UR": 2,
+        "UMOV": 2,
+        "UMOV.64": 5,
+        "ULEA": 2,
+        "F2FP.F16.F32.PACK_AB": 5,
+        "F2F.F64.F32": 9,
+        "NOP": 376,
+        "DMUL": 27,
+        "HADD2.F32": 5,
+        "FSETP.GEU.AND": 5,
+        "FSEL": 7,
+        "DADD": 44,
+        "SHF.R.U32.HI": 1,
+        "SHFL.BFLY": 44,
+        "LEA": 2,
+        "ISETP.GE.U32.AND": 4,
+        "ISETP.LT.U32.AND": 2,
+        "SGXT.U32": 1,
+        "STG.E.64": 1,
+        "STS.64": 6,
+        "BAR.SYNC.DEFER_BLOCKING": 11,
+        "LDS.64": 6,
+        "MUFU.RSQ64H": 3,
+        "IADD3": 10,
+        "MOV.64": 6,
+        "DFMA": 15,
+        "MOV": 25,
+        "BRA": 13,
+        "CALL.REL.NOINC": 2,
+        "DSETP.NAN.AND": 2,
+        "DSETP.NEU.AND": 2,
+        "DSETP.NE.AND": 3,
+        "DSETP.LT.AND": 2,
+        "SEL.64": 4,
+        "DSETP.GT.AND": 3,
+        "FSETP.GTU.AND": 4,
+        "F2F.F32.F64.RP": 3,
+        "LDC.64": 5,
+        "SEL": 4,
+        "IMAD": 2,
+        "IMAD.WIDE.U32": 4,
+        "POPC": 1,
+        "REDUX.SUM.S32": 1,
+        "F2F.F32.F64.RM": 1,
+        "FMNMX": 1,
+        "STG.E": 4,
+        "STS": 2,
+        "LDS": 2,
+        "ISETP.GT.AND": 2,
+        "EXIT": 2,
+        "VOTEU.ANY": 1,
+        "UFLO.U32": 1,
+        "REDUX.OR": 1,
+        "ISETP.EQ.U32.AND": 1,
+        "REDG.E.OR.STRONG.GPU": 1,
+        "DFMA.RM": 1,
+        "DFMA.RP": 1,
+        "ISETP.GE.AND": 1,
+        "RET.REL.NODEC": 1
+      },
+      "dynamic_shared_bytes": 32,
+      "resource": "\nResource usage:\n Common:\n  GLOBAL:0\n Function half_metadata:\n  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:968 TEXTURE:0 SURFACE:0 SAMPLER:0\n",
+      "pass_": true
+    }
+  ],
+  "pass": true
+}

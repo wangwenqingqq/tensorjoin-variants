@@ -1,0 +1,6 @@
+Sat Sep  5 04:37:10 UTC 2026
+gpu-host-8
+2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 31, 35.60, 180, 405, 14, 0
+GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 1460887, 53446 MiB
+USER         PID     ELAPSED COMMAND
+external-user 1460887    06:17:45 @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python -c from multiprocessing.spawn import spawn_main; spawn_main(tracker_fd=9, pipe_handle=13) --multiprocessing-fork

@@ -1,0 +1,16 @@
+ENV
+3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]
+2.11.0+cu130 13.0 3.6.0 2.3.1
+NVIDIA (R) Compute Sanitizer
+Copyright (c) 2020-2025 NVIDIA Corporation
+Version 2025.4.1.0 (build 37093031) (public-release)
+OWNERS
+    PID USER                 COMMAND
+ 222557 external-user           VLLM::EngineCore
+ 222647 external-user           VLLM::EngineCore
+SOURCE TREE
+KERNEL/DATA HASH
+fatal: not a git repository (or any parent up to mount point @EXTERNAL_DATA_ROOT@)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+FROZEN_IDENTITY 28 True
+95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c  data/g2b_cifar60000/vectors_f32.npy

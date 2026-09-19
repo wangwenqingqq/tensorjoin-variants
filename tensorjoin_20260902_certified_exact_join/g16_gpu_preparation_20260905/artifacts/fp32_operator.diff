@@ -1,0 +1,43 @@
+--- G15 immutable
++++ G16 GPU norms
+@@ -12,6 +12,7 @@
+ from run_h2b_p1_pedantic_correctness import CuBLAS, norm_metadata
+ from run_g2a_tensorjoin import refine_ambiguous_fp64_i64
+ from fp32_first_kernels import classify_pedantic_panel
++from gpu_norms import prepare_norm_device
+ 
+ PANEL = 4096
+ CAPACITY = PANEL * PANEL
+@@ -77,6 +78,8 @@
+     # Exact full/tail specializations, without retained method-prepared inputs.
+     size = min(PANEL, n)
+     warm = torch.zeros((size, DIMENSION), dtype=torch.float32, device='cuda')
++    temporary = prepare_norm_device(warm)
++    del temporary
+     norm = torch.ones(n, dtype=torch.float64, device='cuda')
+     zero = torch.zeros(n, dtype=torch.float64, device='cuda')
+     scores = torch.empty(CAPACITY, dtype=torch.float32, device='cuda')
+@@ -104,10 +107,10 @@
+ def run_operator(vectors, threshold, blas, return_trace=False):
+     n = int(vectors.shape[0])
+     started = time.perf_counter()
+-    metadata_host = norm_metadata(vectors)
++    vg = torch.from_numpy(vectors).to('cuda')
++    h2d_done = time.perf_counter()
++    metadata = prepare_norm_device(vg)
+     metadata_done = time.perf_counter()
+-    vg = torch.from_numpy(vectors).to('cuda')
+-    metadata = tuple(torch.from_numpy(x).to('cuda') for x in metadata_host)
+     scores = torch.empty(CAPACITY, dtype=torch.float32, device='cuda')
+     results = torch.empty(CAPACITY, dtype=torch.int64, device='cuda')
+     ambiguous = torch.empty_like(results)
+@@ -142,7 +145,8 @@
+     canonical = np.sort(np.concatenate((accepted_upper, reverse)).astype(np.uint64, copy=False))
+     stopped = time.perf_counter()
+     record = {'public_seconds': stopped-started,
+-              'phase_seconds': {'norm_metadata': metadata_done-started, 'h2d_alloc': setup_done-metadata_done,
++              'phase_seconds': {'h2d_source': h2d_done-started, 'gpu_norm_metadata': metadata_done-h2d_done,
++                                'alloc': setup_done-metadata_done,
+                                 'all_panels_and_readback': device_done-setup_done,
+                                 'canonicalize': stopped-device_done},
+               'panel_count': len(records), 'panels': records,

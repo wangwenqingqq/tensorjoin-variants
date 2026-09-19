@@ -1,0 +1,1183 @@
+{
+  "complete": true,
+  "records": [
+    {
+      "block": 0,
+      "position": 0,
+      "method": "rt",
+      "record_id": "screen_b0_p0_rt_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b0_p0_rt_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b0_p0_rt_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "rt",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b0_p0_rt_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b0_p0_rt_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.07460174700000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.07280035500000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.074608532,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.072754708,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.074063632,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        }
+      ],
+      "inner_sha256": "f0c18d2ad6741899d43c354bb23648edf032ff15ad1df3fdd7919791e106233e",
+      "runtime_audited_cache_hashes": [],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.074063632,
+      "p10": 0.0727729668,
+      "p90": 0.074605818
+    },
+    {
+      "block": 0,
+      "position": 1,
+      "method": "tc",
+      "record_id": "screen_b0_p1_tc_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b0_p1_tc_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b0_p1_tc_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "tc",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b0_p1_tc_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b0_p1_tc_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.007917149,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 128504656035840
+          }
+        },
+        {
+          "seconds": 0.007962460000000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 128504656035840
+          }
+        },
+        {
+          "seconds": 0.006595716000000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 128504656035840
+          }
+        },
+        {
+          "seconds": 0.00660248,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 128504656035840
+          }
+        },
+        {
+          "seconds": 0.0065580280000000005,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 128504656035840
+          }
+        }
+      ],
+      "inner_sha256": "dfccbe3fb708a0aba5434150c795d6af0ecd1a17ac9e8eb1ef4437bf63c85080",
+      "runtime_audited_cache_hashes": [
+        "028e1a231cb553df10b2754e7ff935d3d2fa534812608f4a9b7170f4502da21a",
+        "28f2504eb007ca318cb7ec0af7de5797965aac6555effbe24ff302798f0fd0dd",
+        "2edce77a93dc86751bdf29677cf4f69403fff21ac1117a5e1227a94a4d816492",
+        "4bc1a433618cf63c0f845b2c3af092748b268db87919f678cad0b8aa89e7cbef",
+        "517ebafab36e1bfe34b5def780cb5d59f426fd043114ce9b59844cf3087aa32e",
+        "67f75d627e85de25cf27692017f244397ab7f6d45d32955ae7d26764238fa1fa",
+        "a98544160b75295a2fbadfc25a78d140ffbf583e021224ee59dea3e7f399e63c",
+        "dcc86ffa8fc8a6b81a581fdd8795d6ccfe00f08801c601ada863e49852e5b7ea"
+      ],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.00660248,
+      "p10": 0.0065731032,
+      "p90": 0.007944335600000001
+    },
+    {
+      "block": 0,
+      "position": 2,
+      "method": "fp32",
+      "record_id": "screen_b0_p2_fp32_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b0_p2_fp32_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b0_p2_fp32_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "fp32",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b0_p2_fp32_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b0_p2_fp32_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.008498871,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008418626966886222,
+            "phase_seconds": {
+              "h2d_source": 0.0009199799969792366,
+              "gpu_norm_metadata": 0.00022996700135990977,
+              "alloc": 2.1848012693226337e-05,
+              "all_panels_and_readback": 0.0015434779925271869,
+              "canonicalize": 0.005703353963326663
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 135811853058048
+          }
+        },
+        {
+          "seconds": 0.00867211,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008599531021900475,
+            "phase_seconds": {
+              "h2d_source": 0.0009869430214166641,
+              "gpu_norm_metadata": 0.000305837020277977,
+              "alloc": 2.5743967853486538e-05,
+              "all_panels_and_readback": 0.0015328680165112019,
+              "canonicalize": 0.0057481389958411455
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 135811853058048
+          }
+        },
+        {
+          "seconds": 0.008478723,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008404913009144366,
+            "phase_seconds": {
+              "h2d_source": 0.0009013919625431299,
+              "gpu_norm_metadata": 0.0002324000233784318,
+              "alloc": 2.3671018425375223e-05,
+              "all_panels_and_readback": 0.0015243789530359209,
+              "canonicalize": 0.005723071051761508
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 135811853058048
+          }
+        },
+        {
+          "seconds": 0.008427325000000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.00835432397434488,
+            "phase_seconds": {
+              "h2d_source": 0.0009216750040650368,
+              "gpu_norm_metadata": 0.0002349159913137555,
+              "alloc": 2.35619954764843e-05,
+              "all_panels_and_readback": 0.0015216509927995503,
+              "canonicalize": 0.0056525199906900525
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 135811853058048
+          }
+        },
+        {
+          "seconds": 0.008787776,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008711292000953108,
+            "phase_seconds": {
+              "h2d_source": 0.0009545119828544557,
+              "gpu_norm_metadata": 0.00032549898605793715,
+              "alloc": 3.068003570660949e-05,
+              "all_panels_and_readback": 0.0015655409661121666,
+              "canonicalize": 0.005835060030221939
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 135811853058048
+          }
+        }
+      ],
+      "inner_sha256": "2964729663aa15818a5a83c4642710f31278080cdd07d2830e979fd96c01cf05",
+      "runtime_audited_cache_hashes": [
+        "28f2504eb007ca318cb7ec0af7de5797965aac6555effbe24ff302798f0fd0dd",
+        "4b1d15101a1e4e7234c1945e6922fc2532145d2bd510f08ddcd566a73fe0f5dd",
+        "4b9b0373b3511123d13cf707bc656012839624f2165f36512911e533223734be",
+        "517ebafab36e1bfe34b5def780cb5d59f426fd043114ce9b59844cf3087aa32e",
+        "b2ea205b83e75907b484b9e634e82e2f4e17c009f554193638d10bfd7a45ef09",
+        "f614ed3b531cd3a9b6df674d0cdef959b3553cb0d7b4dcc587bff398d1ee4a1b"
+      ],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.008498871,
+      "p10": 0.0084478842,
+      "p90": 0.0087415096
+    },
+    {
+      "block": 1,
+      "position": 0,
+      "method": "fp32",
+      "record_id": "screen_b1_p0_fp32_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b1_p0_fp32_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b1_p0_fp32_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "fp32",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b1_p0_fp32_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b1_p0_fp32_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.008536028000000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008464679005555809,
+            "phase_seconds": {
+              "h2d_source": 0.0009776090155355632,
+              "gpu_norm_metadata": 0.00023601698921993375,
+              "alloc": 2.318399492651224e-05,
+              "all_panels_and_readback": 0.0015528569929301739,
+              "canonicalize": 0.0056750120129436255
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 134972589604864
+          }
+        },
+        {
+          "seconds": 0.008876489000000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008806044002994895,
+            "phase_seconds": {
+              "h2d_source": 0.0010014039580710232,
+              "gpu_norm_metadata": 0.0003163250512443483,
+              "alloc": 2.7707952540367842e-05,
+              "all_panels_and_readback": 0.001602902018930763,
+              "canonicalize": 0.005857705022208393
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 134972589604864
+          }
+        },
+        {
+          "seconds": 0.008586318,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008517222013324499,
+            "phase_seconds": {
+              "h2d_source": 0.0010084210080094635,
+              "gpu_norm_metadata": 0.00023745198268443346,
+              "alloc": 2.407905412837863e-05,
+              "all_panels_and_readback": 0.0015280019724741578,
+              "canonicalize": 0.005719267996028066
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 134972589604864
+          }
+        },
+        {
+          "seconds": 0.008546741,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008474012021906674,
+            "phase_seconds": {
+              "h2d_source": 0.0008309200056828558,
+              "gpu_norm_metadata": 0.0002406570129096508,
+              "alloc": 2.221198519691825e-05,
+              "all_panels_and_readback": 0.0015349930035881698,
+              "canonicalize": 0.005845230014529079
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 134972589604864
+          }
+        },
+        {
+          "seconds": 0.00899188,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "public_seconds": 0.008910711971111596,
+            "phase_seconds": {
+              "h2d_source": 0.001000465010292828,
+              "gpu_norm_metadata": 0.00029451894806697965,
+              "alloc": 2.776703331619501e-05,
+              "all_panels_and_readback": 0.001578237977810204,
+              "canonicalize": 0.006009723001625389
+            },
+            "panel_count": 1,
+            "panels": [
+              {
+                "row": 0,
+                "column": 0,
+                "rows": 4096,
+                "columns": 4096,
+                "computed_dot_pairs": 16777216,
+                "upper_pairs": 8390656,
+                "direct_accept": 132811,
+                "ambiguous": 589,
+                "direct_reject": 8257256,
+                "accepted_upper": 133120,
+                "overflow": 0
+              }
+            ],
+            "computed_dot_pairs": 16777216,
+            "upper_pairs": 8390656,
+            "ambiguous_upper_pairs": 589,
+            "direct_accept_upper_pairs": 132811,
+            "direct_reject_upper_pairs": 8257256,
+            "accepted_upper_pairs": 133120,
+            "overflow_events": 0,
+            "input_device_pointer": 134972589604864
+          }
+        }
+      ],
+      "inner_sha256": "822ab069e77d6f768a6698d07d8c5c5209f6fea8745562a25e60c9139e4b4203",
+      "runtime_audited_cache_hashes": [
+        "28f2504eb007ca318cb7ec0af7de5797965aac6555effbe24ff302798f0fd0dd",
+        "4b1d15101a1e4e7234c1945e6922fc2532145d2bd510f08ddcd566a73fe0f5dd",
+        "4b9b0373b3511123d13cf707bc656012839624f2165f36512911e533223734be",
+        "517ebafab36e1bfe34b5def780cb5d59f426fd043114ce9b59844cf3087aa32e",
+        "b2ea205b83e75907b484b9e634e82e2f4e17c009f554193638d10bfd7a45ef09",
+        "f614ed3b531cd3a9b6df674d0cdef959b3553cb0d7b4dcc587bff398d1ee4a1b"
+      ],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.008586318,
+      "p10": 0.0085403132,
+      "p90": 0.0089457236
+    },
+    {
+      "block": 1,
+      "position": 1,
+      "method": "tc",
+      "record_id": "screen_b1_p1_tc_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b1_p1_tc_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b1_p1_tc_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "tc",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b1_p1_tc_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b1_p1_tc_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.008200427,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 129590007693312
+          }
+        },
+        {
+          "seconds": 0.007987843,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 129590007693312
+          }
+        },
+        {
+          "seconds": 0.0081067,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 129590007693312
+          }
+        },
+        {
+          "seconds": 0.008074611,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 129590007693312
+          }
+        },
+        {
+          "seconds": 0.008239054,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "batches": [
+              {
+                "direct": 90946,
+                "ambiguous": 102079,
+                "fp64": 97,
+                "accepted_upper": 133120,
+                "fp32_reject": 59859,
+                "fp32_equal": 0,
+                "overflow": 0
+              }
+            ],
+            "scheduled_tiles": 2080,
+            "pairs": 262144,
+            "input_device_pointer": 129590007693312
+          }
+        }
+      ],
+      "inner_sha256": "5cbb6853d06694753cc39438382ab020443edc4659727731bd2377bb8de6e81c",
+      "runtime_audited_cache_hashes": [
+        "028e1a231cb553df10b2754e7ff935d3d2fa534812608f4a9b7170f4502da21a",
+        "28f2504eb007ca318cb7ec0af7de5797965aac6555effbe24ff302798f0fd0dd",
+        "2edce77a93dc86751bdf29677cf4f69403fff21ac1117a5e1227a94a4d816492",
+        "4bc1a433618cf63c0f845b2c3af092748b268db87919f678cad0b8aa89e7cbef",
+        "517ebafab36e1bfe34b5def780cb5d59f426fd043114ce9b59844cf3087aa32e",
+        "67f75d627e85de25cf27692017f244397ab7f6d45d32955ae7d26764238fa1fa",
+        "a98544160b75295a2fbadfc25a78d140ffbf583e021224ee59dea3e7f399e63c",
+        "dcc86ffa8fc8a6b81a581fdd8795d6ccfe00f08801c601ada863e49852e5b7ea"
+      ],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.0081067,
+      "p10": 0.0080225502,
+      "p90": 0.0082236032
+    },
+    {
+      "block": 1,
+      "position": 2,
+      "method": "rt",
+      "record_id": "screen_b1_p2_rt_a0",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_screen_b1_p2_rt_a0",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/screen_b1_p2_rt_a0.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/supervise_r3.py",
+        "--method",
+        "rt",
+        "--kind",
+        "screen",
+        "--record-id",
+        "screen_b1_p2_rt_a0"
+      ],
+      "returncode": 0,
+      "guard_path": "results/g5_guard_g19_screen_b1_p2_rt_a0.json",
+      "passed": true,
+      "observations": [
+        {
+          "seconds": 0.075120716,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.07376066,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.08957124100000001,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.083041719,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        },
+        {
+          "seconds": 0.085591517,
+          "output": {
+            "pairs": 262144,
+            "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+            "missing": 0,
+            "extra": 0,
+            "ordered_unique": true,
+            "in_range": true,
+            "exact": true
+          },
+          "work": {
+            "pairs": 262144
+          }
+        }
+      ],
+      "inner_sha256": "723d672968255fa916e2daa0c0c1a8ca03672a2c1e102542535a9bea21d36827",
+      "runtime_audited_cache_hashes": [],
+      "runtime_audited_code_reproduced": true,
+      "median": 0.083041719,
+      "p10": 0.0743046824,
+      "p90": 0.0879793514
+    }
+  ],
+  "pairs": [
+    {
+      "block": 0,
+      "medians": {
+        "rt": 0.074063632,
+        "tc": 0.00660248,
+        "fp32": 0.008498871
+      },
+      "rt_over_tc": 11.217547345845803,
+      "fp32_over_tc": 1.28722404308684,
+      "strongest_control_over_tc": 1.28722404308684
+    },
+    {
+      "block": 1,
+      "medians": {
+        "fp32": 0.008586318,
+        "tc": 0.0081067,
+        "rt": 0.083041719
+      },
+      "rt_over_tc": 10.243590980300246,
+      "fp32_over_tc": 1.0591631613356853,
+      "strongest_control_over_tc": 1.0591631613356853
+    }
+  ],
+  "descriptive_statistics": {
+    "process_block_wins": 2,
+    "arithmetic_ratio_mean": 1.1731936022112626,
+    "geometric_process_paired_ratio": 1.1676387655534395,
+    "marginal_method_medians": {
+      "rt": 0.0746051395,
+      "tc": 0.0079751515,
+      "fp32": 0.0085665295
+    },
+    "marginal_strongest_control_ratio": 1.0741525725247978,
+    "confidence_interval": null,
+    "reason": "Only two independent blocks; no formal CI/tail/sustained claim"
+  },
+  "narrow_screen_pass": false,
+  "formal_or_sustained_promotion": false,
+  "novelty_pass": false
+}

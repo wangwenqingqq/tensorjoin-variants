@@ -1,0 +1,13 @@
+HTTP/1.1 200 Connection established
+
+HTTP/1.1 206 Partial Content
+Date: Fri, 04 Sep 2026 12:58:49 GMT
+Server: Apache
+Last-Modified: Mon, 04 May 2020 22:32:30 GMT
+ETag: "2c805c7-4f35e70-5a4da1b445cd2"
+Accept-Ranges: bytes
+Content-Length: 22535792
+Content-Range: bytes 60522496-83058287/83058288
+Connection: close
+Content-Type: application/zip
+

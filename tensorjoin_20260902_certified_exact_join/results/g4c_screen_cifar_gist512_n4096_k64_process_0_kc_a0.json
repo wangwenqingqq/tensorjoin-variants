@@ -1,0 +1,1424 @@
+{
+  "attempt": 0,
+  "buffer_capacity": 8519680,
+  "clock_policy": "natural_dynamic_clocks_not_modified",
+  "compute_capability": [
+    12,
+    0
+  ],
+  "correctness_pass": true,
+  "cuda_visible_devices": "1",
+  "dataset_id": "cifar_gist512",
+  "dimension": 512,
+  "dtype": "f32 source; int8/int32 G3B; f32 G3C; f64 exact refinement",
+  "expected_dynamic_counts": {
+    "final_upper": 135168,
+    "fp64_candidate": 117,
+    "g3b_ambiguous": 109499
+  },
+  "experiment_id": "tensorjoin_20260903_g4c_public_anchor_timing",
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "gpu_state_after": "1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, P0, 36, 132.52, 2355, 12481, 1032, 90",
+  "gpu_state_before": "1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, P0, 28, 45.69, 180, 12481, 1032, 0",
+  "gpu_uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3",
+  "host": "gpu-host-8",
+  "layout": "contiguous row-major vectors; transposed contiguous int8 codes",
+  "measurement_status": "screen_not_paper_claim",
+  "medians_us": {
+    "candidate_three_stage": 365.12249999999995,
+    "keeper_two_stage": 835.928
+  },
+  "metrics_us": {
+    "candidate_three_stage": [
+      366.614,
+      360.721,
+      362.959,
+      356.573,
+      363.757,
+      352.765,
+      362.246,
+      355.561,
+      366.564,
+      362.703,
+      359.558,
+      359.578,
+      353.662,
+      350.003,
+      356.958,
+      368.823,
+      361.236,
+      367.243,
+      368.001,
+      354.645,
+      363.165,
+      370.564,
+      358.553,
+      357.833,
+      366.866,
+      368.073,
+      366.955,
+      369.625,
+      365.891,
+      357.676,
+      371.374,
+      364.477,
+      360.515,
+      367.752,
+      368.187,
+      360.668,
+      369.616,
+      372.664,
+      362.39,
+      367.516,
+      361.462,
+      360.3,
+      371.179,
+      369.326,
+      365.768,
+      366.585,
+      368.552,
+      367.573,
+      370.027,
+      368.088
+    ],
+    "keeper_two_stage": [
+      839.211,
+      841.729,
+      840.807,
+      839.798,
+      831.703,
+      841.43,
+      840.977,
+      835.184,
+      829.698,
+      829.71,
+      836.93,
+      833.524,
+      838.023,
+      835.818,
+      846.548,
+      838.947,
+      831.772,
+      834.684,
+      838.636,
+      846.501,
+      836.215,
+      836.227,
+      837.903,
+      838.388,
+      829.655,
+      829.805,
+      830.171,
+      831.421,
+      836.586,
+      838.933,
+      836.687,
+      832.176,
+      828.876,
+      836.653,
+      835.216,
+      835.209,
+      826.468,
+      828.098,
+      839.288,
+      836.038,
+      826.692,
+      832.376,
+      830.975,
+      839.066,
+      829.283,
+      826.597,
+      831.954,
+      839.204,
+      826.478,
+      837.261
+    ]
+  },
+  "n": 4096,
+  "numpy": "2.3.1",
+  "opportunity_result_sha256": "1bb98444527f64aba34a59df3b9ae96184b9477560c8b19471b1e2c25e00a09b",
+  "opportunity_summary_sha256": "4cc069e20b52412d267e5bb945f11362df7dbcf443fbbd5c7a96d4ddc097d1de",
+  "order": "KC",
+  "ordered_samples": [
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 839.211,
+      "observation": 0,
+      "sequence": 0,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 841.729,
+      "observation": 1,
+      "sequence": 1,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 840.807,
+      "observation": 2,
+      "sequence": 2,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 839.798,
+      "observation": 3,
+      "sequence": 3,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 831.703,
+      "observation": 4,
+      "sequence": 4,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 841.43,
+      "observation": 5,
+      "sequence": 5,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 840.977,
+      "observation": 6,
+      "sequence": 6,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 835.184,
+      "observation": 7,
+      "sequence": 7,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 829.698,
+      "observation": 8,
+      "sequence": 8,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 829.71,
+      "observation": 9,
+      "sequence": 9,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.93,
+      "observation": 10,
+      "sequence": 10,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 833.524,
+      "observation": 11,
+      "sequence": 11,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 838.023,
+      "observation": 12,
+      "sequence": 12,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 835.818,
+      "observation": 13,
+      "sequence": 13,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 846.548,
+      "observation": 14,
+      "sequence": 14,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 838.947,
+      "observation": 15,
+      "sequence": 15,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 831.772,
+      "observation": 16,
+      "sequence": 16,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 834.684,
+      "observation": 17,
+      "sequence": 17,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 838.636,
+      "observation": 18,
+      "sequence": 18,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 846.501,
+      "observation": 19,
+      "sequence": 19,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.215,
+      "observation": 20,
+      "sequence": 20,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.227,
+      "observation": 21,
+      "sequence": 21,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 837.903,
+      "observation": 22,
+      "sequence": 22,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 838.388,
+      "observation": 23,
+      "sequence": 23,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 829.655,
+      "observation": 24,
+      "sequence": 24,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 829.805,
+      "observation": 25,
+      "sequence": 25,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 830.171,
+      "observation": 26,
+      "sequence": 26,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 831.421,
+      "observation": 27,
+      "sequence": 27,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.586,
+      "observation": 28,
+      "sequence": 28,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 838.933,
+      "observation": 29,
+      "sequence": 29,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.687,
+      "observation": 30,
+      "sequence": 30,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 832.176,
+      "observation": 31,
+      "sequence": 31,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 828.876,
+      "observation": 32,
+      "sequence": 32,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.653,
+      "observation": 33,
+      "sequence": 33,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 835.216,
+      "observation": 34,
+      "sequence": 34,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 835.209,
+      "observation": 35,
+      "sequence": 35,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 826.468,
+      "observation": 36,
+      "sequence": 36,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 828.098,
+      "observation": 37,
+      "sequence": 37,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 839.288,
+      "observation": 38,
+      "sequence": 38,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 836.038,
+      "observation": 39,
+      "sequence": 39,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 826.692,
+      "observation": 40,
+      "sequence": 40,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 832.376,
+      "observation": 41,
+      "sequence": 41,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 830.975,
+      "observation": 42,
+      "sequence": 42,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 839.066,
+      "observation": 43,
+      "sequence": 43,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 829.283,
+      "observation": 44,
+      "sequence": 44,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 826.597,
+      "observation": 45,
+      "sequence": 45,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 831.954,
+      "observation": 46,
+      "sequence": 46,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 839.204,
+      "observation": 47,
+      "sequence": 47,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 826.478,
+      "observation": 48,
+      "sequence": 48,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 837.261,
+      "observation": 49,
+      "sequence": 49,
+      "variant": "keeper_two_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 366.614,
+      "observation": 0,
+      "sequence": 50,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 360.721,
+      "observation": 1,
+      "sequence": 51,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 362.959,
+      "observation": 2,
+      "sequence": 52,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 356.573,
+      "observation": 3,
+      "sequence": 53,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 363.757,
+      "observation": 4,
+      "sequence": 54,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 352.765,
+      "observation": 5,
+      "sequence": 55,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 362.246,
+      "observation": 6,
+      "sequence": 56,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 355.561,
+      "observation": 7,
+      "sequence": 57,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 366.564,
+      "observation": 8,
+      "sequence": 58,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 362.703,
+      "observation": 9,
+      "sequence": 59,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 359.558,
+      "observation": 10,
+      "sequence": 60,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 359.578,
+      "observation": 11,
+      "sequence": 61,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 353.662,
+      "observation": 12,
+      "sequence": 62,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 350.003,
+      "observation": 13,
+      "sequence": 63,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 356.958,
+      "observation": 14,
+      "sequence": 64,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.823,
+      "observation": 15,
+      "sequence": 65,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 361.236,
+      "observation": 16,
+      "sequence": 66,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 367.243,
+      "observation": 17,
+      "sequence": 67,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.001,
+      "observation": 18,
+      "sequence": 68,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 354.645,
+      "observation": 19,
+      "sequence": 69,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 363.165,
+      "observation": 20,
+      "sequence": 70,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 370.564,
+      "observation": 21,
+      "sequence": 71,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 358.553,
+      "observation": 22,
+      "sequence": 72,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 357.833,
+      "observation": 23,
+      "sequence": 73,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 366.866,
+      "observation": 24,
+      "sequence": 74,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.073,
+      "observation": 25,
+      "sequence": 75,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 366.955,
+      "observation": 26,
+      "sequence": 76,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 369.625,
+      "observation": 27,
+      "sequence": 77,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 365.891,
+      "observation": 28,
+      "sequence": 78,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 357.676,
+      "observation": 29,
+      "sequence": 79,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 371.374,
+      "observation": 30,
+      "sequence": 80,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 364.477,
+      "observation": 31,
+      "sequence": 81,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 360.515,
+      "observation": 32,
+      "sequence": 82,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 367.752,
+      "observation": 33,
+      "sequence": 83,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.187,
+      "observation": 34,
+      "sequence": 84,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 360.668,
+      "observation": 35,
+      "sequence": 85,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 369.616,
+      "observation": 36,
+      "sequence": 86,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 372.664,
+      "observation": 37,
+      "sequence": 87,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 362.39,
+      "observation": 38,
+      "sequence": 88,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 367.516,
+      "observation": 39,
+      "sequence": 89,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 361.462,
+      "observation": 40,
+      "sequence": 90,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 360.3,
+      "observation": 41,
+      "sequence": 91,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 371.179,
+      "observation": 42,
+      "sequence": 92,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 369.326,
+      "observation": 43,
+      "sequence": 93,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 365.768,
+      "observation": 44,
+      "sequence": 94,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 366.585,
+      "observation": 45,
+      "sequence": 95,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.552,
+      "observation": 46,
+      "sequence": 96,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 367.573,
+      "observation": 47,
+      "sequence": 97,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 370.027,
+      "observation": 48,
+      "sequence": 98,
+      "variant": "candidate_three_stage"
+    },
+    {
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "elapsed_us": 368.088,
+      "observation": 49,
+      "sequence": 99,
+      "variant": "candidate_three_stage"
+    }
+  ],
+  "paired_process_median_speedup_keeper_over_candidate": 2.2894453231449723,
+  "percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 365.12249999999995,
+      "p10_us": 356.4718,
+      "p90_us": 369.6652
+    },
+    "keeper_two_stage": {
+      "median_us": 835.928,
+      "p10_us": 828.7982,
+      "p90_us": 840.8240000000001
+    }
+  },
+  "phase": "screen",
+  "process_id": 0,
+  "process_measurement_pass": true,
+  "protocol_sha256": "07e48e01e942159af5551c198b01df0d61f9d70339bfdbade4725c376457f4e8",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "quality_contract": "exact sorted upper-triangle u64 pair IDs",
+  "ragged_safe_kernel_sha256": "439058576f156e75074995a29b048448ae480c5dfc72f2c2b537b23f8e79e9f6",
+  "retained_observations_per_variant": 50,
+  "runner_sha256": "a9fac56d17becca52eeedc3dafa99e3bd3d49e4bcfc8a9ce40a2a15f952b6f15",
+  "scheduled_tiles": 2080,
+  "scope_exclusions": [
+    "host input ingest and quantization",
+    "host-to-device resident-data setup",
+    "device-to-host output copy and sort"
+  ],
+  "shape": [
+    4096,
+    512
+  ],
+  "sustained": {
+    "candidate_three_stage": {
+      "launches": 200,
+      "mean_us_per_pipeline": 363.27259,
+      "total_us": 72654.518,
+      "unique_dynamic_stage_counts": [
+        {
+          "final_upper": 135168,
+          "fp64_refined": 117,
+          "g3b_ambiguous": 109499
+        }
+      ]
+    },
+    "keeper_two_stage": {
+      "launches": 200,
+      "mean_us_per_pipeline": 833.58254,
+      "total_us": 166716.508,
+      "unique_dynamic_stage_counts": [
+        {
+          "final_upper": 135168,
+          "fp64_refined": 109499,
+          "g3b_ambiguous": 109499
+        }
+      ]
+    }
+  },
+  "sustained_launches_per_variant": 200,
+  "sustained_speedup_keeper_over_candidate": 2.294647498728159,
+  "target_average_directed_nonself_degree": 64,
+  "threshold_d2": 0.5770702172173405,
+  "timestamp_utc": "2026-09-03T06:05:27Z",
+  "timing_scope": "host perf_counter from before device counter zero through the D2H final count; includes actual D2H dynamic-count reads, their stream synchronizations, dynamic GPU launches, and final completion",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.6.0",
+  "validation_after": {
+    "candidate": {
+      "counts": [
+        135168,
+        109499,
+        0,
+        117,
+        64958,
+        0
+      ],
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "expected_counts": [
+        135168,
+        109499,
+        0,
+        117,
+        64958,
+        0
+      ],
+      "final_upper_count": 135168,
+      "final_upper_sha256": "c9d78c9b0df96d4fb556d362364637547dbb779ab80e36b9014fad90231f6574",
+      "pass": true
+    },
+    "keeper": {
+      "counts": [
+        135168,
+        109499,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "expected_counts": [
+        135168,
+        109499,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_upper_count": 135168,
+      "final_upper_sha256": "c9d78c9b0df96d4fb556d362364637547dbb779ab80e36b9014fad90231f6574",
+      "pass": true
+    }
+  },
+  "validation_before": {
+    "candidate": {
+      "counts": [
+        135168,
+        109499,
+        0,
+        117,
+        64958,
+        0
+      ],
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 117,
+        "g3b_ambiguous": 109499
+      },
+      "expected_counts": [
+        135168,
+        109499,
+        0,
+        117,
+        64958,
+        0
+      ],
+      "final_upper_count": 135168,
+      "final_upper_sha256": "c9d78c9b0df96d4fb556d362364637547dbb779ab80e36b9014fad90231f6574",
+      "pass": true
+    },
+    "keeper": {
+      "counts": [
+        135168,
+        109499,
+        0,
+        0,
+        0,
+        0
+      ],
+      "dynamic_stage_counts": {
+        "final_upper": 135168,
+        "fp64_refined": 109499,
+        "g3b_ambiguous": 109499
+      },
+      "expected_counts": [
+        135168,
+        109499,
+        0,
+        0,
+        0,
+        0
+      ],
+      "final_upper_count": 135168,
+      "final_upper_sha256": "c9d78c9b0df96d4fb556d362364637547dbb779ab80e36b9014fad90231f6574",
+      "pass": true
+    }
+  },
+  "variants": {
+    "candidate_three_stage": "identical ragged-safe G3B plus certified FP32 filter plus FP64 over measured residual ambiguity",
+    "keeper_two_stage": "ragged-safe G3B plus FP64 over all G3B ambiguity"
+  },
+  "warmups_per_variant": 10
+}

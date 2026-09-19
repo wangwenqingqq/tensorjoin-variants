@@ -1,0 +1,222 @@
+{
+  "auditor_sha256": "9ba08eb65961ca6334119df24e3447f2b3e9913056714dbc7460a1e169fee0a5",
+  "expected_cubins": {
+    "analytic_certificate_compact_i64.cubin": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "certified_fp32_filter_i64.cubin": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670",
+    "refine_ambiguous_fp64_i64.cubin": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+  },
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "measurement_status": "runtime_binary_identity_not_performance",
+  "phase": "formal",
+  "processes": [
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 0
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 1
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 2
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 3
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 4
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 5
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 6
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 7
+    }
+  ],
+  "runtime_binary_gate_pass": true
+}

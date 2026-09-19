@@ -1,0 +1,245 @@
+HTTP/2 302 
+access-control-allow-origin: https://hf-mirror.com
+access-control-expose-headers: X-Repo-Commit,X-Request-Id,X-Error-Code,X-Error-Message,X-Total-Count,ETag,Link,Accept-Ranges,Content-Range,X-Linked-Size,X-Linked-ETag,X-Xet-Hash
+access-control-max-age: 86400
+alt-svc: h3=":443"; ma=2592000
+cache-control: no-cache
+cache-control: no-store
+content-type: text/plain; charset=utf-8
+cross-origin-opener-policy: same-origin
+date: Wed, 02 Sep 2026 16:24:04 GMT
+link: <https://hf-mirror.com/api/datasets/quchenyuan/UCF101-ZIP/xet-read-token/04d4e5ca1dc93606cb58752b0c08331e598743a4>; rel="xet-auth", <https://cas-server.xethub.hf.co/v1/reconstructions/4b4786739acfc28b816418ca88e8adc41b4fb2bde80467f5e587a7e93c902803>; rel="xet-reconstruction-info"
+location: https://us.aws.cdn.hf.co/xet-bridge-us/6449031dd16a70c015907740/4b4786739acfc28b816418ca88e8adc41b4fb2bde80467f5e587a7e93c902803?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27UCF-101.zip%3B+filename%3D%22UCF-101.zip%22%3B&X-Xet-Cas-Uid=62171e3b6a99db28e0b3159d&user_id=62171e3b6a99db28e0b3159d&response-content-type=application%2Fzip&Expires=1788369844&Policy=REDACTED&Signature=REDACTED&Key-Pair-Id=REDACTED
+ratelimit: "resolvers";r=79109;t=191
+ratelimit-policy: "fixed window";"resolvers";q=100000;w=300
+referrer-policy: strict-origin-when-cross-origin
+server: hf-mirror
+strict-transport-security: max-age=31536000
+vary: Origin, Accept
+vary: Accept-Encoding
+via: 2.0 Caddy
+via: 1.1 495b2c01d1ffa830c505307f4f8075bc.cloudfront.net (CloudFront)
+x-amz-cf-id: NoXsLrXRl7te8Viplp40Cska3hO1b0WwBE48ugGrCdu3EUDOfDhYvg==
+x-amz-cf-pop: NRT12-P2
+x-cache: Miss from cloudfront
+x-linked-etag: "eb77e54dfafd9c77e7b086f5e5ef7738cabd16a701b3f5c301a1f6c81fc4756e"
+x-linked-size: 6957373664
+x-powered-by: huggingface-moon
+x-repo-commit: 04d4e5ca1dc93606cb58752b0c08331e598743a4
+x-request-id: Root=1-6a984da4-4c96031e29b9650430c5fa0e
+
+HTTP/2 200 
+content-type: application/zip
+accept-ranges: bytes
+content-disposition: inline; filename*=UTF-8''UCF-101.zip; filename="UCF-101.zip";
+etag: "4b4786739acfc28b816418ca88e8adc41b4fb2bde80467f5e587a7e93c902803"
+access-control-allow-headers: Content-Range, Content-Type, Content-Disposition, ETag
+access-control-expose-headers: *
+content-length: 6957373664
+vary: origin, access-control-request-method, access-control-request-headers
+access-control-allow-origin: *
+x-request-id: 01M1HEYJQV3SR16J6TM264JND9
+x-hf-cdn-pop: aws-ap-southeast-1
+date: Wed, 02 Sep 2026 16:24:04 GMT
+alt-svc: h3=":443";ma=60;
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Wed, 02 Sep 2026 17:20:23 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Wed, 02 Sep 2026 21:51:10 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Wed, 02 Sep 2026 21:58:22 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 03 Sep 2026 03:38:15 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 03 Sep 2026 11:58:52 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 03 Sep 2026 19:09:32 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 03 Sep 2026 23:48:35 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Thu, 03 Sep 2026 23:55:43 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Fri, 04 Sep 2026 00:06:45 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+
+HTTP/1.1 200 OK
+Server: nginx/1.24.0 (Ubuntu)
+Date: Fri, 04 Sep 2026 01:12:57 GMT
+Content-Type: application/x-rar-compressed
+Content-Length: 6932971618
+Connection: keep-alive
+Last-Modified: Wed, 21 Nov 2012 19:40:04 GMT
+ETag: "50ad2e14-19d3cc062"
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Powered-By: Hopes, dreams, and rainbows.
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+Accept-Ranges: bytes
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-Frame-Options: SAMEORIGIN
+X-XSS-Protection: 1; mode=block
+X-Content-Type-Options: nosniff
+X-Powered-By: Hopes, dreams, and rainbows.
+

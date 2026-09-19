@@ -1,0 +1,145 @@
+{
+  "decision": "accepted_for_g2b_admission",
+  "experiment_id": "tensorjoin_20260903_external_exact_selfjoin_g2a",
+  "gate_pass": true,
+  "methods": {
+    "gds": {
+      "diagnostic_only_no_performance_claim": true,
+      "pass": true,
+      "repeated_hash_pass": true,
+      "runs": [
+        {
+          "diagnostic_wall_s": 1.0602403140001115,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 0
+        },
+        {
+          "diagnostic_wall_s": 1.0851014130021213,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 1
+        }
+      ]
+    },
+    "mistic": {
+      "diagnostic_only_no_performance_claim": true,
+      "pass": true,
+      "repeated_hash_pass": true,
+      "runs": [
+        {
+          "diagnostic_wall_s": 0.797065257000213,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 0
+        },
+        {
+          "diagnostic_wall_s": 0.7660721779975574,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 1
+        }
+      ]
+    },
+    "tensorjoin": {
+      "accepted_capacity": 262144,
+      "ambiguous_pairs": 204555,
+      "capacity_attempts": [
+        {
+          "ambiguous_pairs": 204555,
+          "capacity": 32768,
+          "direct_accept_pairs": 177618,
+          "overflow_events": 316637
+        },
+        {
+          "ambiguous_pairs": 204555,
+          "capacity": 65536,
+          "direct_accept_pairs": 177618,
+          "overflow_events": 251101
+        },
+        {
+          "ambiguous_pairs": 204555,
+          "capacity": 131072,
+          "direct_accept_pairs": 177618,
+          "overflow_events": 120029
+        },
+        {
+          "ambiguous_pairs": 204555,
+          "capacity": 262144,
+          "direct_accept_pairs": 177618,
+          "overflow_events": 0
+        }
+      ],
+      "deterministic_work_pass": true,
+      "diagnostic_only_no_performance_claim": true,
+      "direct_accept_pairs": 177618,
+      "fp32_accept_pairs": 81380,
+      "fp32_reject_pairs": 116825,
+      "fp64_refine_pairs": 6350,
+      "pass": true,
+      "repeated_hash_pass": true,
+      "runs": [
+        {
+          "diagnostic_wall_s": 3.713375146006001,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 0
+        },
+        {
+          "diagnostic_wall_s": 0.903788028001145,
+          "isolation_pass": true,
+          "pair_count": 262144,
+          "pair_hash": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+          "pass": true,
+          "run_id": 1
+        }
+      ]
+    }
+  },
+  "oracle": {
+    "effective_epsilon_d2": 0.5686872086178483,
+    "epsilon": 0.7541135250198396,
+    "pair_count": 262144,
+    "raw_u64_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d"
+  },
+  "performance_claim_allowed": false,
+  "scope": "4096x4096x512 Cifar60K subset canonical-ID correctness and scalable-capacity admission",
+  "source_build_receipts": {
+    "gds": "receipts/g2a_gds_adapter_build.json",
+    "mistic": "receipts/g2a_mistic_adapter_build.json"
+  },
+  "source_hashes": {
+    "raw/g2a_gds_process_0_occupancy.log": "b7066b082468bbe585f70a254e2208dfdc08ea88c20baeab6ded8c6eb771595b",
+    "raw/g2a_gds_process_0_preflight.log": "1ab6d440d9d1fd86dd0a1cd7e1e5371bac04bdabaad606f560054ebe0b974ac5",
+    "raw/g2a_gds_process_1_occupancy.log": "9f8f0bd0dbd10908b48e58c15258087c0105672009af2fca1d9524e367163ebf",
+    "raw/g2a_gds_process_1_preflight.log": "34dd399af135751859edcbf07fb5aaffbd766870eeb4906c7dbf5dbec510c03b",
+    "raw/g2a_mistic_process_0_occupancy.log": "83ce9135754d4a0e0cfab054f65dd44aee827733b5e72797778ef7144274898b",
+    "raw/g2a_mistic_process_0_preflight.log": "e6154477ed9a2a490d48939b71941368afd6e03fc65476b1f255b0453389a2b4",
+    "raw/g2a_mistic_process_1_occupancy.log": "2eb94a87c991fdf565d2e9f16fd38eb16267397837e79bb2b739597cdfb5ad49",
+    "raw/g2a_mistic_process_1_preflight.log": "097208671551a15b75e3009ce214782e794dc80520d48d07da8e883f1e47fed6",
+    "raw/g2a_tensorjoin_process_0_occupancy.log": "52ccb3b0633a0fa574f213ec2ab6e03b87a853e162200134adbb452fcf6e0282",
+    "raw/g2a_tensorjoin_process_0_preflight.log": "07515524028d0f01d0a29d2eaf263db752c3f72fcca07d6a91a6ff4e69712ceb",
+    "raw/g2a_tensorjoin_process_1_occupancy.log": "279dfc26d6ed8b1f628f00a57a3c34be4de863b7771b60f33519b924a171bd4c",
+    "raw/g2a_tensorjoin_process_1_preflight.log": "d1417fb86553fabc74e9c097948c46d4a610cca48ded6d86026cfb3ba004ebbd",
+    "receipts/g2a_gds_adapter_build.json": "f0ff60b53132ecf6b888bd0b8fd9b118c39189719efee080c91e17a4e1a44f11",
+    "receipts/g2a_mistic_adapter_build.json": "061e9234e7a8a3078d28f5b8275bc94ff472d74989af6bea087bd3b63900d54c",
+    "results/g2a_gds_process_0.json": "fb4b247d0ddb9ddf8e5184b14bc5489a896b7d933c996d177ffaa98c1e8d2961",
+    "results/g2a_gds_process_1.json": "e63915154572546f88f73019c17cd0062c7569f08f1a2273a8f0bd3156b66663",
+    "results/g2a_mistic_process_0.json": "212c181a52d7a68915357f5d4f873f3e21c31365633455fac7679142ec96db0f",
+    "results/g2a_mistic_process_1.json": "665619d453845fa20d91f44ce38e4ee9edb7d04d03aba14f9247ddaef18a8b01",
+    "results/g2a_prepare.json": "e6fd529cde743356d3cdf3ad86e66fd4678784fab52bf5ac8c70896bb101fea9",
+    "results/g2a_tensorjoin_process_0.json": "cccead6037402ac70d85d0835ab92816e8ddffe1f2adf6c24e1f2bdc056576b0",
+    "results/g2a_tensorjoin_process_1.json": "dc0f794d87829e083229d8391865051bff5eae4952c1b2050358f57f81ff2550",
+    "src/summarize_g2a.py": "3be7d4ec56779a4a613b25b4445384d105571d2d427c93998456596f6071119b"
+  }
+}

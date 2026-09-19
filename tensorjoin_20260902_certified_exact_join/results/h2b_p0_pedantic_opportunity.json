@@ -1,0 +1,122 @@
+{
+  "constants": {
+    "absolute_reconstruction_guard": 1e-12,
+    "dot_path_operations": "2D+2",
+    "fp64_reconstruction_factor": 32.0,
+    "maximum_ambiguous_fraction": 0.05,
+    "maximum_target8_ambiguous_fraction": 0.02,
+    "p0_worst_placement_multiplier": 2.0,
+    "underflow_floor": "4D*tiny32",
+    "unit_roundoff": 5.960464477539063e-08
+  },
+  "datasets": [
+    {
+      "base_objects": 512,
+      "base_tokens": 2560,
+      "cache": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_panns_cnn14_1s_2048d.npz",
+      "cache_sha256": "e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1",
+      "cells": [
+        {
+          "ambiguous_fraction": 9.1552734375e-05,
+          "ambiguous_objects": 6,
+          "direct_accepts": 125,
+          "direct_rejects": 65405,
+          "maximum_ambiguous_fraction": 0.05,
+          "opportunity_pass": true,
+          "target_results_per_query": 1,
+          "threshold": 0.10046949360590472,
+          "unsafe_direct_accepts": 0,
+          "unsafe_direct_rejects": 0
+        },
+        {
+          "ambiguous_fraction": 0.0002899169921875,
+          "ambiguous_objects": 19,
+          "direct_accepts": 1018,
+          "direct_rejects": 64499,
+          "maximum_ambiguous_fraction": 0.02,
+          "opportunity_pass": true,
+          "target_results_per_query": 8,
+          "threshold": 0.21376101900257954,
+          "unsafe_direct_accepts": 0,
+          "unsafe_direct_rejects": 0
+        }
+      ],
+      "dataset": "esc50_panns",
+      "dimension": 2048,
+      "elapsed_s": 18.30168128013611,
+      "gamma_path_operations": 4098,
+      "gamma_value": 0.0002443195117330004,
+      "maximum_distance_radius": 0.0004886390538306732,
+      "maximum_worst_envelope_half_width": 0.0009772781076613465,
+      "object_lower_containment_violations": 0,
+      "object_upper_containment_violations": 0,
+      "opportunity_pass": true,
+      "query_objects": 128,
+      "query_tokens": 640,
+      "token_lower_containment_violations": 0,
+      "token_upper_containment_violations": 0
+    },
+    {
+      "base_objects": 512,
+      "base_tokens": 2684,
+      "cache": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/ucf101_r3d18_512d.npz",
+      "cache_sha256": "132eb8b816cee384fbcf0c070a106a0a6a0162167ab8d4e71e03feb16c6c80ae",
+      "cells": [
+        {
+          "ambiguous_fraction": 0.0,
+          "ambiguous_objects": 0,
+          "direct_accepts": 128,
+          "direct_rejects": 65408,
+          "maximum_ambiguous_fraction": 0.05,
+          "opportunity_pass": true,
+          "target_results_per_query": 1,
+          "threshold": 0.4127116006737944,
+          "unsafe_direct_accepts": 0,
+          "unsafe_direct_rejects": 0
+        },
+        {
+          "ambiguous_fraction": 0.0001220703125,
+          "ambiguous_objects": 8,
+          "direct_accepts": 1020,
+          "direct_rejects": 64508,
+          "maximum_ambiguous_fraction": 0.02,
+          "opportunity_pass": true,
+          "target_results_per_query": 8,
+          "threshold": 0.5390221500257888,
+          "unsafe_direct_accepts": 0,
+          "unsafe_direct_rejects": 0
+        }
+      ],
+      "dataset": "ucf101_r3d18",
+      "dimension": 512,
+      "elapsed_s": 4.940563440322876,
+      "gamma_path_operations": 1026,
+      "gamma_value": 6.115810562469786e-05,
+      "maximum_distance_radius": 0.0001223162196144711,
+      "maximum_worst_envelope_half_width": 0.0002446324392289422,
+      "object_lower_containment_violations": 0,
+      "object_upper_containment_violations": 0,
+      "opportunity_pass": true,
+      "query_objects": 128,
+      "query_tokens": 662,
+      "token_lower_containment_violations": 0,
+      "token_upper_containment_violations": 0
+    }
+  ],
+  "experiment_id": "tensorjoin_20260903_h2b_p0_pedantic_opportunity",
+  "gpu_work_executed": false,
+  "host": "gpu-host-8",
+  "numpy": "2.3.1",
+  "opportunity_pass": true,
+  "phase": "cpu_only_pessimistic_opportunity",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "real_vs_synthetic": "real public feature caches",
+  "sources": {
+    "h1_kernel_sha256": "c24d6e94b81dc94f8ad50699eadac82a8a593e175c519a8d704947ab8e5db0db",
+    "h1_runner_sha256": "11aaa72447266fef26286d80cbbe0bd22bc1626af437c0c9a0b121352600713e",
+    "h2a_correctness_sha256": "d773c3cf08578af1b4845d5dc3bdddced4138f167659e24c7bf25eb3a3b5c9be",
+    "h2a_safety_sha256": "d10f7dab881175cb742325104d1f93479a0c76aacf5f107a5768505b42e39da4",
+    "h2a_timing_sha256": "a97efa258375b3bc87949fc6a0efaf15fb863958dc8d099aa6f1344952cfdcb4",
+    "runner_sha256": "57c7e9c7733c16768baa0759df7b9ad72522206502c92facba0b12cf93e73676"
+  }
+}

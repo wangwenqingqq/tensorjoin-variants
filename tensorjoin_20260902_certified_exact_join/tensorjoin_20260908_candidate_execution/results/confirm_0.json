@@ -1,0 +1,6136 @@
+{
+  "label": "confirm_0",
+  "started": 1788861220.6903534,
+  "samples": [
+    {
+      "method": "original_full",
+      "cell": "k4",
+      "seconds": 0.048230836997390725,
+      "query_seconds": 0.048230457003228366,
+      "build_seconds": 3.799941623583436e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608008192,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0009091489919228479,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k4",
+      "seconds": 0.04894107498694211,
+      "query_seconds": 0.04894075798802078,
+      "build_seconds": 3.169989213347435e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608488448,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0006056379934307188,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k4",
+      "seconds": 0.03975757000443991,
+      "query_seconds": 0.03975727900979109,
+      "build_seconds": 2.9099464882165194e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 351840,
+          "capacity": 1441136640
+        }
+      ],
+      "batches": 86,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 606429696,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.000576639999053441,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k4",
+      "seconds": 0.03147811000235379,
+      "query_seconds": 0.03147785700275563,
+      "build_seconds": 2.529995981603861e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 206549,
+          "capacity": 846024704
+        }
+      ],
+      "batches": 51,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 607260160,
+      "peak_reserved_bytes": 616562688,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0005068809987278655,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k4",
+      "seconds": 0.026829153997823596,
+      "query_seconds": 0.02682887799164746,
+      "build_seconds": 2.760061761364341e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 1138030,
+          "capacity": 291335680
+        }
+      ],
+      "batches": 18,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 620755456,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.00046275800559669733,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k4",
+      "seconds": 0.024122613001964055,
+      "query_seconds": 0.024122369999531657,
+      "build_seconds": 2.4300243239849806e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 10654,
+          "capacity": 43638784
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 142222,
+          "capacity": 145635328
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 53673,
+          "capacity": 54961152
+        }
+      ],
+      "batches": 16,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 661790720,
+      "peak_reserved_bytes": 675282944,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0004509659920586273,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k16",
+      "seconds": 0.05054154100071173,
+      "query_seconds": 0.05054126300092321,
+      "build_seconds": 2.7799978852272034e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625402880,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.002894017001381144,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k16",
+      "seconds": 0.048455184005433694,
+      "query_seconds": 0.048454832009156235,
+      "build_seconds": 3.519962774589658e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625883136,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011247929942328483,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k16",
+      "seconds": 0.04286805298761465,
+      "query_seconds": 0.042867734999163076,
+      "build_seconds": 3.1798845157027245e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 371058,
+          "capacity": 1519853568
+        }
+      ],
+      "batches": 91,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 624218112,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0010714200034271926,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k16",
+      "seconds": 0.03720739998971112,
+      "query_seconds": 0.037207182991551235,
+      "build_seconds": 2.169981598854065e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 272786,
+          "capacity": 1117331456
+        }
+      ],
+      "batches": 67,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625788928,
+      "peak_reserved_bytes": 656408576,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011600080033531412,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k16",
+      "seconds": 0.03882414099643938,
+      "query_seconds": 0.03882381100265775,
+      "build_seconds": 3.299937816336751e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 2794192,
+          "capacity": 715313152
+        }
+      ],
+      "batches": 43,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 652114432,
+      "peak_reserved_bytes": 679477248,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011025880085071549,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k16",
+      "seconds": 0.029650363998371176,
+      "query_seconds": 0.029650116004631855,
+      "build_seconds": 2.479937393218279e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 90153,
+          "capacity": 369266688
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 123405,
+          "capacity": 126366720
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 59228,
+          "capacity": 60649472
+        }
+      ],
+      "batches": 35,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 680314368,
+      "peak_reserved_bytes": 719323136,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0010820650059031323,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k64",
+      "seconds": 0.05888866299937945,
+      "query_seconds": 0.0588884919998236,
+      "build_seconds": 1.7099955584853888e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694363648,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.010566871002083644,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k64",
+      "seconds": 0.060330742999212816,
+      "query_seconds": 0.060330453008646145,
+      "build_seconds": 2.899905666708946e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694843904,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.008586781012127176,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k64",
+      "seconds": 0.05464096600189805,
+      "query_seconds": 0.054640649002976716,
+      "build_seconds": 3.169989213347435e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387601,
+          "capacity": 1587613696
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 693577728,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0028694909997284412,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k64",
+      "seconds": 0.04368004899879452,
+      "query_seconds": 0.043679764989065006,
+      "build_seconds": 2.8400972951203585e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 317829,
+          "capacity": 1301827584
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 695290368,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0027789819869212806,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k64",
+      "seconds": 0.06938507599988952,
+      "query_seconds": 0.06938473400077783,
+      "build_seconds": 3.4199911169707775e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4220753,
+          "capacity": 1080512768
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 731772928,
+      "peak_reserved_bytes": 771751936,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.00478699199447874,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k64",
+      "seconds": 0.04479175800224766,
+      "query_seconds": 0.044791488006012514,
+      "build_seconds": 2.6999623514711857e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 226728,
+          "capacity": 928677888
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63923,
+          "capacity": 65457152
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 27178,
+          "capacity": 27830272
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 750727680,
+      "peak_reserved_bytes": 792723456,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.004501339994021691,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "original",
+      "seconds": 0.060224871995160356,
+      "query_seconds": 0.06022459699306637,
+      "build_seconds": 2.7500209398567677e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 696690176,
+      "peak_reserved_bytes": 746586112,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.009022523008752614,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "original",
+      "seconds": 0.07176495000021532,
+      "query_seconds": 0.07176465800148435,
+      "build_seconds": 2.9199873097240925e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697170432,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.016909056997974403,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "original",
+      "seconds": 0.06465130099968519,
+      "query_seconds": 0.06465103400114458,
+      "build_seconds": 2.66998540610075e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387840,
+          "capacity": 1588592640
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 695907840,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.018023911994532682,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "original",
+      "seconds": 0.059055097997770645,
+      "query_seconds": 0.05905481200898066,
+      "build_seconds": 2.8598878998309374e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 318306,
+          "capacity": 1303781376
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697622016,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.018028885999228805,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "original",
+      "seconds": 0.06872067099902779,
+      "query_seconds": 0.06872022499737795,
+      "build_seconds": 4.4600164983421564e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4234015,
+          "capacity": 1083907840
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 734205440,
+      "peak_reserved_bytes": 775946240,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.018350144993746653,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "original",
+      "seconds": 0.056614875997183844,
+      "query_seconds": 0.056614574990817346,
+      "build_seconds": 3.0100636649876833e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 227820,
+          "capacity": 933150720
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63499,
+          "capacity": 65022976
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 26987,
+          "capacity": 27634688
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 753066496,
+      "peak_reserved_bytes": 796917760,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.018093609003699385,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k256",
+      "seconds": 0.13119257500511594,
+      "query_seconds": 0.13119222200475633,
+      "build_seconds": 3.530003596097231e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973868544,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07109010599378962,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k256",
+      "seconds": 0.12094399699708447,
+      "query_seconds": 0.12094365499797277,
+      "build_seconds": 3.4199911169707775e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 974348800,
+      "peak_reserved_bytes": 1107296256,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.06971978698857129,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k256",
+      "seconds": 0.12345677100529429,
+      "query_seconds": 0.12345643500157166,
+      "build_seconds": 3.360037226229906e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 402156,
+          "capacity": 1647230976
+        }
+      ],
+      "batches": 99,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973430272,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.0713931400096044,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k256",
+      "seconds": 0.11569472299015615,
+      "query_seconds": 0.11569440599123482,
+      "build_seconds": 3.169989213347435e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 352745,
+          "capacity": 1444843520
+        }
+      ],
+      "batches": 87,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 975213568,
+      "peak_reserved_bytes": 1119879168,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.06935644199256785,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k256",
+      "seconds": 0.13157279200095218,
+      "query_seconds": 0.1315725150052458,
+      "build_seconds": 2.76995706371963e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5128378,
+          "capacity": 1312864768
+        }
+      ],
+      "batches": 79,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1019454464,
+      "peak_reserved_bytes": 1172307968,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07025898899883032,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k256",
+      "seconds": 0.15317707500071265,
+      "query_seconds": 0.15317677400889806,
+      "build_seconds": 3.0099181458353996e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 298790,
+          "capacity": 1223843840
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 37434,
+          "capacity": 38332416
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 16521,
+          "capacity": 16917504
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1031367680,
+      "peak_reserved_bytes": 1166016512,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07384355799877085,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k1024",
+      "seconds": 0.34109180100494996,
+      "query_seconds": 0.3410914599953685,
+      "build_seconds": 3.410095814615488e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088335872,
+      "peak_reserved_bytes": 2600468480,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2848843190004118,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k1024",
+      "seconds": 0.337087852996774,
+      "query_seconds": 0.3370872689993121,
+      "build_seconds": 5.839974619448185e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088816128,
+      "peak_reserved_bytes": 2594177024,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.28110813300008886,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k1024",
+      "seconds": 0.3345225359953474,
+      "query_seconds": 0.3345221700001275,
+      "build_seconds": 3.659952199086547e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 414593,
+          "capacity": 1698172928
+        }
+      ],
+      "batches": 102,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088198144,
+      "peak_reserved_bytes": 2606759936,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2800815920054447,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k1024",
+      "seconds": 0.3357214189891238,
+      "query_seconds": 0.3357211349939462,
+      "build_seconds": 2.839951775968075e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 380873,
+          "capacity": 1560055808
+        }
+      ],
+      "batches": 93,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2090067968,
+      "peak_reserved_bytes": 2596274176,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2785468369984301,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k1024",
+      "seconds": 0.34754531299404334,
+      "query_seconds": 0.3475449480029056,
+      "build_seconds": 3.649911377578974e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5770725,
+          "capacity": 1477305600
+        }
+      ],
+      "batches": 89,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2138144768,
+      "peak_reserved_bytes": 2648702976,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2788956869917456,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k1024",
+      "seconds": 0.3471050850057509,
+      "query_seconds": 0.3471046600025147,
+      "build_seconds": 4.250032361596823e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 347573,
+          "capacity": 1423659008
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 22352,
+          "capacity": 22888448
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 10948,
+          "capacity": 11210752
+        }
+      ],
+      "batches": 88,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2146255360,
+      "peak_reserved_bytes": 2654994432,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.28074198598915245,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 0,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k1024",
+      "seconds": 0.3354626350046601,
+      "query_seconds": 0.3354623009945499,
+      "build_seconds": 3.3401011023670435e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088335872,
+      "peak_reserved_bytes": 2600468480,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27978127398819197,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k256",
+      "seconds": 0.1207724190026056,
+      "query_seconds": 0.1207721110113198,
+      "build_seconds": 3.079912858083844e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 298790,
+          "capacity": 1223843840
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 37434,
+          "capacity": 38332416
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 16521,
+          "capacity": 16917504
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1031367680,
+      "peak_reserved_bytes": 1166016512,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.071016232992406,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k256",
+      "seconds": 0.12882711298880167,
+      "query_seconds": 0.12882681799237616,
+      "build_seconds": 2.949964255094528e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5128378,
+          "capacity": 1312864768
+        }
+      ],
+      "batches": 79,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1019454464,
+      "peak_reserved_bytes": 1172307968,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.06965177699748892,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k256",
+      "seconds": 0.12144118601281662,
+      "query_seconds": 0.1214408760133665,
+      "build_seconds": 3.0999945010989904e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 352745,
+          "capacity": 1444843520
+        }
+      ],
+      "batches": 87,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 975213568,
+      "peak_reserved_bytes": 1119879168,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.0708907460066257,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k256",
+      "seconds": 0.11863579900818877,
+      "query_seconds": 0.11863543700019363,
+      "build_seconds": 3.6200799513608217e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 402156,
+          "capacity": 1647230976
+        }
+      ],
+      "batches": 99,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973430272,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.06948236298921984,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k256",
+      "seconds": 0.12717278899799567,
+      "query_seconds": 0.12717235999298282,
+      "build_seconds": 4.2900501284748316e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 974348800,
+      "peak_reserved_bytes": 1107296256,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07021694000286516,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k256",
+      "seconds": 0.12208862000261433,
+      "query_seconds": 0.12208822400134522,
+      "build_seconds": 3.9600126910954714e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973868544,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.06935679299931508,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "original",
+      "seconds": 0.06200730199634563,
+      "query_seconds": 0.06200689100660384,
+      "build_seconds": 4.10989741794765e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 227820,
+          "capacity": 933150720
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63499,
+          "capacity": 65022976
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 26987,
+          "capacity": 27634688
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 753066496,
+      "peak_reserved_bytes": 796917760,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.022683046001475304,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "original",
+      "seconds": 0.07662773100310005,
+      "query_seconds": 0.07662742100364994,
+      "build_seconds": 3.0999945010989904e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4234015,
+          "capacity": 1083907840
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 734205440,
+      "peak_reserved_bytes": 775946240,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.020701710003777407,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "original",
+      "seconds": 0.06271140099852346,
+      "query_seconds": 0.06271092999668326,
+      "build_seconds": 4.710018401965499e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 318306,
+          "capacity": 1303781376
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697622016,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.01823104800132569,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "original",
+      "seconds": 0.06407011199917179,
+      "query_seconds": 0.06406968299415894,
+      "build_seconds": 4.2900501284748316e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387840,
+          "capacity": 1588592640
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 695907840,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.017761676004738547,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "original",
+      "seconds": 0.07230906499898992,
+      "query_seconds": 0.07230875200184528,
+      "build_seconds": 3.129971446469426e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697170432,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.020455599995329976,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "original",
+      "seconds": 0.07334967300994322,
+      "query_seconds": 0.07334938300482463,
+      "build_seconds": 2.90005118586123e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 696690176,
+      "peak_reserved_bytes": 746586112,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.017617349993088283,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k64",
+      "seconds": 0.0576385940075852,
+      "query_seconds": 0.05763841800217051,
+      "build_seconds": 1.7600541468709707e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 226728,
+          "capacity": 928677888
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63923,
+          "capacity": 65457152
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 27178,
+          "capacity": 27830272
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 750727680,
+      "peak_reserved_bytes": 792723456,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.017873094999231398,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k64",
+      "seconds": 0.05223593000846449,
+      "query_seconds": 0.052235616007237695,
+      "build_seconds": 3.1400122679769993e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4220753,
+          "capacity": 1080512768
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 731772928,
+      "peak_reserved_bytes": 771751936,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.002677242999197915,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k64",
+      "seconds": 0.04413172400381882,
+      "query_seconds": 0.04413151000335347,
+      "build_seconds": 2.1400046534836292e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 317829,
+          "capacity": 1301827584
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 695290368,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0027751890011131763,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k64",
+      "seconds": 0.04818911499751266,
+      "query_seconds": 0.04818886501016095,
+      "build_seconds": 2.4998735170811415e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387601,
+          "capacity": 1587613696
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 693577728,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0029124830034561455,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k64",
+      "seconds": 0.05254933700780384,
+      "query_seconds": 0.052548980005667545,
+      "build_seconds": 3.57002136297524e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694843904,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0029174859955674037,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k64",
+      "seconds": 0.05314810900017619,
+      "query_seconds": 0.05314786500821356,
+      "build_seconds": 2.43991962634027e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694363648,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0028828430076828226,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k16",
+      "seconds": 0.02987872999801766,
+      "query_seconds": 0.029878504006774165,
+      "build_seconds": 2.259912434965372e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 90153,
+          "capacity": 369266688
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 123405,
+          "capacity": 126366720
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 59228,
+          "capacity": 60649472
+        }
+      ],
+      "batches": 35,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 680314368,
+      "peak_reserved_bytes": 719323136,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011057640076614916,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k16",
+      "seconds": 0.039129733995650895,
+      "query_seconds": 0.0391293940047035,
+      "build_seconds": 3.399909473955631e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 2794192,
+          "capacity": 715313152
+        }
+      ],
+      "batches": 43,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 652114432,
+      "peak_reserved_bytes": 679477248,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011138849949929863,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k16",
+      "seconds": 0.03750824600865599,
+      "query_seconds": 0.037507947999984026,
+      "build_seconds": 2.9800867196172476e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 272786,
+          "capacity": 1117331456
+        }
+      ],
+      "batches": 67,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625788928,
+      "peak_reserved_bytes": 656408576,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.001140206994023174,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k16",
+      "seconds": 0.04316943199955858,
+      "query_seconds": 0.04316921898862347,
+      "build_seconds": 2.1301093511283398e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 371058,
+          "capacity": 1519853568
+        }
+      ],
+      "batches": 91,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 624218112,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0010711889917729422,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k16",
+      "seconds": 0.04855978599516675,
+      "query_seconds": 0.04855958800180815,
+      "build_seconds": 1.9799335859715939e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625883136,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011388730054022744,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k16",
+      "seconds": 0.04815856499772053,
+      "query_seconds": 0.04815839100047015,
+      "build_seconds": 1.7399725038558245e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625402880,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011275239958195016,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k4",
+      "seconds": 0.02313070600212086,
+      "query_seconds": 0.02313042600871995,
+      "build_seconds": 2.799934009090066e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 10654,
+          "capacity": 43638784
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 142222,
+          "capacity": 145635328
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 53673,
+          "capacity": 54961152
+        }
+      ],
+      "batches": 16,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 661790720,
+      "peak_reserved_bytes": 675282944,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0004555469931801781,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k4",
+      "seconds": 0.026842532999580726,
+      "query_seconds": 0.026842355000553653,
+      "build_seconds": 1.7799902707338333e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 1138030,
+          "capacity": 291335680
+        }
+      ],
+      "batches": 18,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 620755456,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0004287269985070452,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k4",
+      "seconds": 0.03367343099671416,
+      "query_seconds": 0.033673169993562624,
+      "build_seconds": 2.6100315153598785e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 206549,
+          "capacity": 846024704
+        }
+      ],
+      "batches": 51,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 607260160,
+      "peak_reserved_bytes": 616562688,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.000486479009850882,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k4",
+      "seconds": 0.039875907998066396,
+      "query_seconds": 0.039875697999377735,
+      "build_seconds": 2.0999868866056204e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 351840,
+          "capacity": 1441136640
+        }
+      ],
+      "batches": 86,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 606429696,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0005718790052924305,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k4",
+      "seconds": 0.045906965009635314,
+      "query_seconds": 0.04590670201287139,
+      "build_seconds": 2.629967639222741e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608488448,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0006069709925213829,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k4",
+      "seconds": 0.0462062739970861,
+      "query_seconds": 0.046206021987018175,
+      "build_seconds": 2.5201006792485714e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608008192,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0005935670051258057,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k1024",
+      "seconds": 0.33014488000480924,
+      "query_seconds": 0.33014459400146734,
+      "build_seconds": 2.860033418983221e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 347573,
+          "capacity": 1423659008
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 22352,
+          "capacity": 22888448
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 10948,
+          "capacity": 11210752
+        }
+      ],
+      "batches": 88,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2146255360,
+      "peak_reserved_bytes": 2654994432,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27782864701293875,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k1024",
+      "seconds": 0.35184066600049846,
+      "query_seconds": 0.3518403060006676,
+      "build_seconds": 3.5999983083456755e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5770725,
+          "capacity": 1477305600
+        }
+      ],
+      "batches": 89,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2138144768,
+      "peak_reserved_bytes": 2648702976,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27915638900594786,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k1024",
+      "seconds": 0.3304270859953249,
+      "query_seconds": 0.330426696993527,
+      "build_seconds": 3.890017978847027e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 380873,
+          "capacity": 1560055808
+        }
+      ],
+      "batches": 93,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2090067968,
+      "peak_reserved_bytes": 2596274176,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2780137340014335,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k1024",
+      "seconds": 0.3353385079972213,
+      "query_seconds": 0.3353381780034397,
+      "build_seconds": 3.299937816336751e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 414593,
+          "capacity": 1698172928
+        }
+      ],
+      "batches": 102,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088198144,
+      "peak_reserved_bytes": 2606759936,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2771046210109489,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k1024",
+      "seconds": 0.33299191400874406,
+      "query_seconds": 0.3329914820060367,
+      "build_seconds": 4.3200270738452673e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088816128,
+      "peak_reserved_bytes": 2594177024,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27727827400667593,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 1,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k16",
+      "seconds": 0.039325895995716564,
+      "query_seconds": 0.03932556000654586,
+      "build_seconds": 3.3598917070776224e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 2794192,
+          "capacity": 715313152
+        }
+      ],
+      "batches": 43,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 652114432,
+      "peak_reserved_bytes": 679477248,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011526009911904112,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k16",
+      "seconds": 0.02990503198816441,
+      "query_seconds": 0.029904671988333575,
+      "build_seconds": 3.5999983083456755e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 90153,
+          "capacity": 369266688
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 123405,
+          "capacity": 126366720
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 59228,
+          "capacity": 60649472
+        }
+      ],
+      "batches": 35,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 680314368,
+      "peak_reserved_bytes": 719323136,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0010889709956245497,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k64",
+      "seconds": 0.05220408400055021,
+      "query_seconds": 0.05220392800401896,
+      "build_seconds": 1.5599653124809265e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694363648,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.003134700993541628,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k64",
+      "seconds": 0.052188611996825784,
+      "query_seconds": 0.052188375004334375,
+      "build_seconds": 2.3699249140918255e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694843904,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0028961019997950643,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k64",
+      "seconds": 0.04807204600365367,
+      "query_seconds": 0.04807176400208846,
+      "build_seconds": 2.820015652105212e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387601,
+          "capacity": 1587613696
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 693577728,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0028873200062662363,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k64",
+      "seconds": 0.04450238599383738,
+      "query_seconds": 0.04450211700168438,
+      "build_seconds": 2.6899215299636126e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 317829,
+          "capacity": 1301827584
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 695290368,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.002950038993731141,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k64",
+      "seconds": 0.054183254003874026,
+      "query_seconds": 0.05418304599879775,
+      "build_seconds": 2.0800507627427578e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4220753,
+          "capacity": 1080512768
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 731772928,
+      "peak_reserved_bytes": 771751936,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0026829249982256442,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k64",
+      "seconds": 0.04010175999428611,
+      "query_seconds": 0.04010148499219213,
+      "build_seconds": 2.7500209398567677e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 226728,
+          "capacity": 928677888
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63923,
+          "capacity": 65457152
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 27178,
+          "capacity": 27830272
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 750727680,
+      "peak_reserved_bytes": 792723456,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.0027623409987427294,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "original",
+      "seconds": 0.05146792400046252,
+      "query_seconds": 0.05146762898948509,
+      "build_seconds": 2.950109774246812e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 696690176,
+      "peak_reserved_bytes": 746586112,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.0029149190086172894,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "original",
+      "seconds": 0.0667462470009923,
+      "query_seconds": 0.06674599200778175,
+      "build_seconds": 2.5499321054667234e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697170432,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.016917975997785106,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "original",
+      "seconds": 0.06314963700424414,
+      "query_seconds": 0.06314938100695144,
+      "build_seconds": 2.5599729269742966e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387840,
+          "capacity": 1588592640
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 695907840,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.017338261008262634,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "original",
+      "seconds": 0.06409474900283385,
+      "query_seconds": 0.06409443699521944,
+      "build_seconds": 3.1200761441141367e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 318306,
+          "capacity": 1303781376
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697622016,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.02266832698660437,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "original",
+      "seconds": 0.0679663959890604,
+      "query_seconds": 0.06796609600132797,
+      "build_seconds": 2.9998773243278265e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4234015,
+          "capacity": 1083907840
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 734205440,
+      "peak_reserved_bytes": 775946240,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.01822715399612207,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "original",
+      "seconds": 0.05858988699037582,
+      "query_seconds": 0.05858962799538858,
+      "build_seconds": 2.5899498723447323e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 227820,
+          "capacity": 933150720
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63499,
+          "capacity": 65022976
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 26987,
+          "capacity": 27634688
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 753066496,
+      "peak_reserved_bytes": 796917760,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.019072907001827843,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k256",
+      "seconds": 0.12397100400994532,
+      "query_seconds": 0.12397073699685279,
+      "build_seconds": 2.6701309252530336e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973868544,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07064744699164294,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k256",
+      "seconds": 0.12478105300397146,
+      "query_seconds": 0.12478070199722424,
+      "build_seconds": 3.5100674722343683e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 974348800,
+      "peak_reserved_bytes": 1107296256,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07020112998725381,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k256",
+      "seconds": 0.11962582200067118,
+      "query_seconds": 0.11962552399199922,
+      "build_seconds": 2.9800867196172476e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 402156,
+          "capacity": 1647230976
+        }
+      ],
+      "batches": 99,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973430272,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07034238599590026,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k256",
+      "seconds": 0.1243882790004136,
+      "query_seconds": 0.12438795100024436,
+      "build_seconds": 3.2800016924738884e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 352745,
+          "capacity": 1444843520
+        }
+      ],
+      "batches": 87,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 975213568,
+      "peak_reserved_bytes": 1119879168,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07030344200029504,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k256",
+      "seconds": 0.12888154700340237,
+      "query_seconds": 0.1288812379934825,
+      "build_seconds": 3.090099198743701e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5128378,
+          "capacity": 1312864768
+        }
+      ],
+      "batches": 79,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1019454464,
+      "peak_reserved_bytes": 1172307968,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07005318500159774,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k256",
+      "seconds": 0.11508299899287522,
+      "query_seconds": 0.11508267899625935,
+      "build_seconds": 3.1999661587178707e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 298790,
+          "capacity": 1223843840
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 37434,
+          "capacity": 38332416
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 16521,
+          "capacity": 16917504
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1031367680,
+      "peak_reserved_bytes": 1166016512,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.07016250099695753,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k1024",
+      "seconds": 0.3328279319975991,
+      "query_seconds": 0.33282756799599156,
+      "build_seconds": 3.6400160752236843e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088335872,
+      "peak_reserved_bytes": 2600468480,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2768028550053714,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k1024",
+      "seconds": 0.34242293701390736,
+      "query_seconds": 0.3424225270136958,
+      "build_seconds": 4.1000021155923605e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088816128,
+      "peak_reserved_bytes": 2594177024,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2780911410081899,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k1024",
+      "seconds": 0.3340114110033028,
+      "query_seconds": 0.3340109959972324,
+      "build_seconds": 4.1500607039779425e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 414593,
+          "capacity": 1698172928
+        }
+      ],
+      "batches": 102,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088198144,
+      "peak_reserved_bytes": 2606759936,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2798045809904579,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k1024",
+      "seconds": 0.3405812220007647,
+      "query_seconds": 0.34058077800727915,
+      "build_seconds": 4.43993485532701e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 380873,
+          "capacity": 1560055808
+        }
+      ],
+      "batches": 93,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2090067968,
+      "peak_reserved_bytes": 2596274176,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.28330685300170444,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k1024",
+      "seconds": 0.34909642599814106,
+      "query_seconds": 0.34909619599056896,
+      "build_seconds": 2.3000757209956646e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5770725,
+          "capacity": 1477305600
+        }
+      ],
+      "batches": 89,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2138144768,
+      "peak_reserved_bytes": 2648702976,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2804781980084954,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k1024",
+      "seconds": 0.3346208869916154,
+      "query_seconds": 0.3346204689878505,
+      "build_seconds": 4.180037649348378e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 347573,
+          "capacity": 1423659008
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 22352,
+          "capacity": 22888448
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 10948,
+          "capacity": 11210752
+        }
+      ],
+      "batches": 88,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2146255360,
+      "peak_reserved_bytes": 2654994432,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2811923090048367,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k4",
+      "seconds": 0.047320367011707276,
+      "query_seconds": 0.047319946010247804,
+      "build_seconds": 4.210014594718814e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608008192,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0009237210033461452,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k4",
+      "seconds": 0.046326491006766446,
+      "query_seconds": 0.0463261459954083,
+      "build_seconds": 3.450113581493497e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608488448,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0006288440054049715,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k4",
+      "seconds": 0.045941988995764405,
+      "query_seconds": 0.04594170399650466,
+      "build_seconds": 2.849992597475648e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 351840,
+          "capacity": 1441136640
+        }
+      ],
+      "batches": 86,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 606429696,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0005609460058622062,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k4",
+      "seconds": 0.03356261299632024,
+      "query_seconds": 0.033562323995283805,
+      "build_seconds": 2.890010364353657e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 206549,
+          "capacity": 846024704
+        }
+      ],
+      "batches": 51,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 607260160,
+      "peak_reserved_bytes": 616562688,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.00050056200416293,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "subtile16",
+      "cell": "k4",
+      "seconds": 0.0258746479958063,
+      "query_seconds": 0.025874440994812176,
+      "build_seconds": 2.0700099412351847e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 1138030,
+          "capacity": 291335680
+        }
+      ],
+      "batches": 18,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 620755456,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.00045152199163567275,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "packed16",
+      "cell": "k4",
+      "seconds": 0.024399529997026548,
+      "query_seconds": 0.02439928900275845,
+      "build_seconds": 2.4099426809698343e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 10654,
+          "capacity": 43638784
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 142222,
+          "capacity": 145635328
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 53673,
+          "capacity": 54961152
+        }
+      ],
+      "batches": 16,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 661790720,
+      "peak_reserved_bytes": 675282944,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0004529900033958256,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "original_full",
+      "cell": "k16",
+      "seconds": 0.050187768996693194,
+      "query_seconds": 0.05018752200703602,
+      "build_seconds": 2.469896571710706e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625402880,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.002997709991177544,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "layout_full",
+      "cell": "k16",
+      "seconds": 0.048575028995401226,
+      "query_seconds": 0.0485747919883579,
+      "build_seconds": 2.3700704332441092e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625883136,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011362719960743561,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "bbox64",
+      "cell": "k16",
+      "seconds": 0.04310198601160664,
+      "query_seconds": 0.04310176501167007,
+      "build_seconds": 2.2099993657320738e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 371058,
+          "capacity": 1519853568
+        }
+      ],
+      "batches": 91,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 624218112,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.001070576996426098,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    },
+    {
+      "method": "project64",
+      "cell": "k16",
+      "seconds": 0.03725743500399403,
+      "query_seconds": 0.03725731000304222,
+      "build_seconds": 1.2500095181167126e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 272786,
+          "capacity": 1117331456
+        }
+      ],
+      "batches": 67,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625788928,
+      "peak_reserved_bytes": 656408576,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0011366069957148284,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85",
+      "repetition": 2,
+      "process": 0
+    }
+  ],
+  "diagnostics": [],
+  "warmups": [
+    {
+      "method": "original_full",
+      "cell": "k4",
+      "seconds": 0.56521651300136,
+      "query_seconds": 0.5652158400043845,
+      "build_seconds": 6.729969754815102e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608008192,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.010583761992165819,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "layout_full",
+      "cell": "k4",
+      "seconds": 0.08918360799725633,
+      "query_seconds": 0.08918312900641467,
+      "build_seconds": 4.789908416569233e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 608488448,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0007680959970457479,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "bbox64",
+      "cell": "k4",
+      "seconds": 0.04658859300252516,
+      "query_seconds": 0.0465882410062477,
+      "build_seconds": 3.519962774589658e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 351840,
+          "capacity": 1441136640
+        }
+      ],
+      "batches": 86,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 606429696,
+      "peak_reserved_bytes": 614465536,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0006822980067227036,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "project64",
+      "cell": "k4",
+      "seconds": 0.04661504799150862,
+      "query_seconds": 0.04661467298865318,
+      "build_seconds": 3.7500285543501377e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 206549,
+          "capacity": 846024704
+        }
+      ],
+      "batches": 51,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 607260160,
+      "peak_reserved_bytes": 616562688,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0019630949973361567,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "subtile16",
+      "cell": "k4",
+      "seconds": 0.0345005020062672,
+      "query_seconds": 0.03450014800182544,
+      "build_seconds": 3.540044417604804e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 1138030,
+          "capacity": 291335680
+        }
+      ],
+      "batches": 18,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 620755456,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0005694279971066862,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "packed16",
+      "cell": "k4",
+      "seconds": 0.04991512700507883,
+      "query_seconds": 0.04991478500596713,
+      "build_seconds": 3.4199911169707775e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 10654,
+          "capacity": 43638784
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 142222,
+          "capacity": 145635328
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 53673,
+          "capacity": 54961152
+        }
+      ],
+      "batches": 16,
+      "stage_counts": [
+        176234,
+        4865,
+        90,
+        178659
+      ],
+      "peak_allocated_bytes": 661790720,
+      "peak_reserved_bytes": 675282944,
+      "output_mode": "gpu_radix",
+      "upper_count": 178659,
+      "self_count": 60000,
+      "output_count": 297318,
+      "output_finalize_seconds": 0.0018967689975397661,
+      "output_collect_seconds": null,
+      "output_download_bytes": 2378544,
+      "output_gpu_copy_bytes": 1429272,
+      "cub_scratch_bytes": 2931967,
+      "output_sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a"
+    },
+    {
+      "method": "original_full",
+      "cell": "k16",
+      "seconds": 0.08897841100406367,
+      "query_seconds": 0.08897805499145761,
+      "build_seconds": 3.5601260606199503e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625402880,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.004565772993373685,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "layout_full",
+      "cell": "k16",
+      "seconds": 0.05415461599477567,
+      "query_seconds": 0.054154223995283246,
+      "build_seconds": 3.9199949242174625e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625883136,
+      "peak_reserved_bytes": 637534208,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0013157549983588979,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "bbox64",
+      "cell": "k16",
+      "seconds": 0.05003893599496223,
+      "query_seconds": 0.05003853898961097,
+      "build_seconds": 3.9700535126030445e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 371058,
+          "capacity": 1519853568
+        }
+      ],
+      "batches": 91,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 624218112,
+      "peak_reserved_bytes": 635437056,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.001289613006520085,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "project64",
+      "cell": "k16",
+      "seconds": 0.043134428007761016,
+      "query_seconds": 0.04313412299961783,
+      "build_seconds": 3.050081431865692e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 272786,
+          "capacity": 1117331456
+        }
+      ],
+      "batches": 67,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 625788928,
+      "peak_reserved_bytes": 656408576,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0013398029987001792,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "subtile16",
+      "cell": "k16",
+      "seconds": 0.04576384999381844,
+      "query_seconds": 0.045763451998936944,
+      "build_seconds": 3.979948814958334e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 2794192,
+          "capacity": 715313152
+        }
+      ],
+      "batches": 43,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 652114432,
+      "peak_reserved_bytes": 679477248,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.001341139999567531,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "packed16",
+      "cell": "k16",
+      "seconds": 0.04395299300085753,
+      "query_seconds": 0.04395260600722395,
+      "build_seconds": 3.8699363358318806e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 90153,
+          "capacity": 369266688
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 123405,
+          "capacity": 126366720
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 59228,
+          "capacity": 60649472
+        }
+      ],
+      "batches": 35,
+      "stage_counts": [
+        527912,
+        21101,
+        404,
+        538429
+      ],
+      "peak_allocated_bytes": 680314368,
+      "peak_reserved_bytes": 719323136,
+      "output_mode": "gpu_radix",
+      "upper_count": 538429,
+      "self_count": 60000,
+      "output_count": 1016858,
+      "output_finalize_seconds": 0.0014624509931309149,
+      "output_collect_seconds": null,
+      "output_download_bytes": 8134864,
+      "output_gpu_copy_bytes": 4307432,
+      "cub_scratch_bytes": 8815103,
+      "output_sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85"
+    },
+    {
+      "method": "original_full",
+      "cell": "k64",
+      "seconds": 0.07847921599750407,
+      "query_seconds": 0.07847883200156502,
+      "build_seconds": 3.839959390461445e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694363648,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.02190950801013969,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "layout_full",
+      "cell": "k64",
+      "seconds": 0.07261148099496495,
+      "query_seconds": 0.07261096499860287,
+      "build_seconds": 5.159963620826602e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 694843904,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.01503372700244654,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "bbox64",
+      "cell": "k64",
+      "seconds": 0.07340960700821597,
+      "query_seconds": 0.07340913900407031,
+      "build_seconds": 4.680041456595063e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387601,
+          "capacity": 1587613696
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 693577728,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.020497225006693043,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "project64",
+      "cell": "k64",
+      "seconds": 0.07020525899133645,
+      "query_seconds": 0.0702049609972164,
+      "build_seconds": 2.979941200464964e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 317829,
+          "capacity": 1301827584
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 695290368,
+      "peak_reserved_bytes": 734003200,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.021406216998002492,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "subtile16",
+      "cell": "k64",
+      "seconds": 0.08158374100457877,
+      "query_seconds": 0.08158341700618621,
+      "build_seconds": 3.2399839255958796e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4220753,
+          "capacity": 1080512768
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 731772928,
+      "peak_reserved_bytes": 771751936,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.02146300299500581,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "packed16",
+      "cell": "k64",
+      "seconds": 0.07743684800516348,
+      "query_seconds": 0.07743629600736313,
+      "build_seconds": 5.519978003576398e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 226728,
+          "capacity": 928677888
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63923,
+          "capacity": 65457152
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 27178,
+          "capacity": 27830272
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1919302,
+        84596,
+        1685,
+        1961499
+      ],
+      "peak_allocated_bytes": 750727680,
+      "peak_reserved_bytes": 792723456,
+      "output_mode": "gpu_radix",
+      "upper_count": 1961499,
+      "self_count": 60000,
+      "output_count": 3862998,
+      "output_finalize_seconds": 0.025747531006345525,
+      "output_collect_seconds": null,
+      "output_download_bytes": 30903984,
+      "output_gpu_copy_bytes": 15691992,
+      "cub_scratch_bytes": 32091135,
+      "output_sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80"
+    },
+    {
+      "method": "original_full",
+      "cell": "original",
+      "seconds": 0.08208536999882199,
+      "query_seconds": 0.08208510500844568,
+      "build_seconds": 2.6499037630856037e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 696690176,
+      "peak_reserved_bytes": 746586112,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.021765830999356695,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "layout_full",
+      "cell": "original",
+      "seconds": 0.07692677500017453,
+      "query_seconds": 0.07692642199981492,
+      "build_seconds": 3.530003596097231e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697170432,
+      "peak_reserved_bytes": 742391808,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.020881973003270105,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "bbox64",
+      "cell": "original",
+      "seconds": 0.07435351698950399,
+      "query_seconds": 0.07435319999058265,
+      "build_seconds": 3.169989213347435e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 387840,
+          "capacity": 1588592640
+        }
+      ],
+      "batches": 95,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 695907840,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.020990585995605215,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "project64",
+      "cell": "original",
+      "seconds": 0.07184638199396431,
+      "query_seconds": 0.07184612299897708,
+      "build_seconds": 2.5899498723447323e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 318306,
+          "capacity": 1303781376
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 697622016,
+      "peak_reserved_bytes": 738197504,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.021668066998245195,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "subtile16",
+      "cell": "original",
+      "seconds": 0.08172905999526847,
+      "query_seconds": 0.08172858000034466,
+      "build_seconds": 4.799949238076806e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 4234015,
+          "capacity": 1083907840
+        }
+      ],
+      "batches": 65,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 734205440,
+      "peak_reserved_bytes": 775946240,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.022012562010786496,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "packed16",
+      "cell": "original",
+      "seconds": 0.069520246994216,
+      "query_seconds": 0.0695198360044742,
+      "build_seconds": 4.10989741794765e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 227820,
+          "capacity": 933150720
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 63499,
+          "capacity": 65022976
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 26987,
+          "capacity": 27634688
+        }
+      ],
+      "batches": 62,
+      "stage_counts": [
+        1950364,
+        86029,
+        1734,
+        1993039
+      ],
+      "peak_allocated_bytes": 753066496,
+      "peak_reserved_bytes": 796917760,
+      "output_mode": "gpu_radix",
+      "upper_count": 1993039,
+      "self_count": 60000,
+      "output_count": 3926078,
+      "output_finalize_seconds": 0.021682569000404328,
+      "output_collect_seconds": null,
+      "output_download_bytes": 31408624,
+      "output_gpu_copy_bytes": 15944312,
+      "cub_scratch_bytes": 32606975,
+      "output_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+    },
+    {
+      "method": "original_full",
+      "cell": "k256",
+      "seconds": 0.148519189999206,
+      "query_seconds": 0.14851883599476423,
+      "build_seconds": 3.540044417604804e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973868544,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.08648174900736194,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "layout_full",
+      "cell": "k256",
+      "seconds": 0.14275143999839202,
+      "query_seconds": 0.14275103498948738,
+      "build_seconds": 4.050089046359062e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 974348800,
+      "peak_reserved_bytes": 1107296256,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.08390411399886943,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "bbox64",
+      "cell": "k256",
+      "seconds": 0.1388915029965574,
+      "query_seconds": 0.13889106399437878,
+      "build_seconds": 4.390021786093712e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 402156,
+          "capacity": 1647230976
+        }
+      ],
+      "batches": 99,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 973430272,
+      "peak_reserved_bytes": 1124073472,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.08357231100671925,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "project64",
+      "cell": "k256",
+      "seconds": 0.13778421499591786,
+      "query_seconds": 0.13778378599090502,
+      "build_seconds": 4.2900501284748316e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 352745,
+          "capacity": 1444843520
+        }
+      ],
+      "batches": 87,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 975213568,
+      "peak_reserved_bytes": 1119879168,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.08368626199080609,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "subtile16",
+      "cell": "k256",
+      "seconds": 0.1511403269978473,
+      "query_seconds": 0.15113961099996231,
+      "build_seconds": 7.159978849813342e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5128378,
+          "capacity": 1312864768
+        }
+      ],
+      "batches": 79,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1019454464,
+      "peak_reserved_bytes": 1172307968,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.0834660789987538,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "packed16",
+      "cell": "k256",
+      "seconds": 0.14646480001101736,
+      "query_seconds": 0.14646438200725242,
+      "build_seconds": 4.180037649348378e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 298790,
+          "capacity": 1223843840
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 37434,
+          "capacity": 38332416
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 16521,
+          "capacity": 16917504
+        }
+      ],
+      "batches": 78,
+      "stage_counts": [
+        7573863,
+        343252,
+        7170,
+        7744714
+      ],
+      "peak_allocated_bytes": 1031367680,
+      "peak_reserved_bytes": 1166016512,
+      "output_mode": "gpu_radix",
+      "upper_count": 7744714,
+      "self_count": 60000,
+      "output_count": 15429428,
+      "output_finalize_seconds": 0.08905347099062055,
+      "output_collect_seconds": null,
+      "output_download_bytes": 123435424,
+      "output_gpu_copy_bytes": 61957712,
+      "cub_scratch_bytes": 126678783,
+      "output_sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611"
+    },
+    {
+      "method": "original_full",
+      "cell": "k1024",
+      "seconds": 0.3497411739954259,
+      "query_seconds": 0.34974067700386513,
+      "build_seconds": 4.969915607944131e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088335872,
+      "peak_reserved_bytes": 2600468480,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.28344763700442854,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    },
+    {
+      "method": "layout_full",
+      "cell": "k1024",
+      "seconds": 0.3372106829920085,
+      "query_seconds": 0.33721022799727507,
+      "build_seconds": 4.5499473344534636e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 440391,
+          "capacity": 1803841536
+        }
+      ],
+      "batches": 108,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088816128,
+      "peak_reserved_bytes": 2594177024,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27971016099036206,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    },
+    {
+      "method": "bbox64",
+      "cell": "k1024",
+      "seconds": 0.33263656399503816,
+      "query_seconds": 0.3326362619991414,
+      "build_seconds": 3.019958967342973e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 414593,
+          "capacity": 1698172928
+        }
+      ],
+      "batches": 102,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2088198144,
+      "peak_reserved_bytes": 2606759936,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2784179239970399,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    },
+    {
+      "method": "project64",
+      "cell": "k1024",
+      "seconds": 0.3329856140044285,
+      "query_seconds": 0.33298526200815104,
+      "build_seconds": 3.519962774589658e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 380873,
+          "capacity": 1560055808
+        }
+      ],
+      "batches": 93,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2090067968,
+      "peak_reserved_bytes": 2596274176,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2777199990086956,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    },
+    {
+      "method": "subtile16",
+      "cell": "k1024",
+      "seconds": 0.34982294400106184,
+      "query_seconds": 0.34982259600656107,
+      "build_seconds": 3.479945007711649e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            16,
+            16
+          ],
+          "tiles": 5770725,
+          "capacity": 1477305600
+        }
+      ],
+      "batches": 89,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2138144768,
+      "peak_reserved_bytes": 2648702976,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.27813376700214576,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    },
+    {
+      "method": "packed16",
+      "cell": "k1024",
+      "seconds": 0.34207796400005464,
+      "query_seconds": 0.3420775609993143,
+      "build_seconds": 4.030007403343916e-07,
+      "cold": false,
+      "diagnostic": false,
+      "work": [
+        {
+          "shape": [
+            64,
+            64
+          ],
+          "tiles": 347573,
+          "capacity": 1423659008
+        },
+        {
+          "shape": [
+            16,
+            64
+          ],
+          "tiles": 22352,
+          "capacity": 22888448
+        },
+        {
+          "shape": [
+            64,
+            16
+          ],
+          "tiles": 10948,
+          "capacity": 11210752
+        }
+      ],
+      "batches": 88,
+      "stage_counts": [
+        30117376,
+        1290141,
+        27860,
+        30759403
+      ],
+      "peak_allocated_bytes": 2146255360,
+      "peak_reserved_bytes": 2654994432,
+      "output_mode": "gpu_radix",
+      "upper_count": 30759403,
+      "self_count": 60000,
+      "output_count": 61458806,
+      "output_finalize_seconds": 0.2794423459999962,
+      "output_collect_seconds": null,
+      "output_download_bytes": 491670448,
+      "output_gpu_copy_bytes": 246075224,
+      "cub_scratch_bytes": 503096575,
+      "output_sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3"
+    }
+  ],
+  "pass_": true,
+  "compiled_inherited": {
+    "metadata": {
+      "cubin": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+      "ptx": "ca56b9e1104c8965d3ae3521540a47f0765f54186b245e9ed2d2a0d637e7fd13",
+      "llir": "120bbb4a027143b4742799ba1cf60c9ac672f168d582fe847b1ca42fe9961549",
+      "ttgir": "763f53531f0600e96ac6bf8d2d8d491778a0e638786e695cdde6ac7820aaf932",
+      "ttir": "dfa69894d14cf859f2f4f86795dfc845004d3d2e4274b4254ace04322f56cc1c"
+    },
+    "scan16_m2092": {
+      "cubin": "03ce4837868dc47c382de9f0beea3b245051b7f8b88c68704a5e69537b9d09e6",
+      "ptx": "8c82c5163c032d8eaf2cb81a592dd95c7fdc3051fd1cecd7c509e17d80bd1846",
+      "llir": "7ba31be39967ac6d40348628a38c67359ebbd869b3976baacfe77fc4305f2f2e",
+      "ttgir": "e9355b620481405b6f1c23518108cf0daf14831551deace5f7492deda940ff6f",
+      "ttir": "8f55db98a907249b0180c5acc8f13ec7237c5142a643e8a6c1e68d1d059d3551"
+    },
+    "scan16_m2330": {
+      "cubin": "0984d8260c94e3f92a02188273b2d36f7f00b3e7a30aaf7cb8c502782c010913",
+      "ptx": "86e4c888cd30882d1a2da647da8e0612bec43fa57156a63f3db1cb92d15723eb",
+      "llir": "98868cae21d80069da1887617f4c771b579cecfb113828c2f6b3f13b6f36960b",
+      "ttgir": "237e2f5a43db911f026f43706221c579ab17155144d62878b32bffb3543dba1a",
+      "ttir": "5bd2dd13d1fab7862389e9b9cdc5330e40ab137f78c50231f66750d746df9b11"
+    },
+    "scan16_m2573": {
+      "cubin": "280551db5d5ba67ffeb2ccbf8b7de8c9c66a8a19afa8e4560e5ec864b8d89292",
+      "ptx": "73695a5752e03ab5165aca7d4382132b7d273c4d8bd5d6a611583c5ef1563b64",
+      "llir": "39a1709426b3fc4eb670b840b362120a93eacdad542ed6cde7db90dca13fbf29",
+      "ttgir": "ef5e23fd2b31aeb52cc8c27ad12d373f205a4a2bd36fb465489e618b206542ef",
+      "ttir": "3b1ca7a2f4751d0ae7c072a563a559eda564115e9ea8632990012ec6755497cb"
+    },
+    "scan16_m2576": {
+      "cubin": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+      "ptx": "7161a32861d9d76c1a6e63b49ccdd1645f1e6be5ab0f3c0f9910318202fc133e",
+      "llir": "b48d254b8343963c98cc9b423007f24998e31cc52f5ed3f18f07272fec48d85c",
+      "ttgir": "9fd88a574804214c556643a5cc3f6501e8cb04dd307b210e3c0c52cd6807ab5d",
+      "ttir": "c6c532252a563287edbc4d9f24ec89e0bbb09c5d1c403b96a1ed761c3928dda6"
+    },
+    "scan16_m2834": {
+      "cubin": "351eed288b74ae782002c51773bc3173ddf58a2214e146ba7b4d21d2e86da5e5",
+      "ptx": "d3779d8486e94050b1e28a8a2fa806cd12f3c48d1eb5c3c07e5dcc654e00cc4d",
+      "llir": "2f0fa39a16a4958e2346aeb72647a75ecdafd5a2418d4354e0beec39f2bc1a77",
+      "ttgir": "b27c3761ddcf69b60df00f86fb3afdc6b138b72186216650e3b8294484b73169",
+      "ttir": "a87a4543ccf16a9781c25432b1da18ffd7156f4881b45b012057d1125b19f0ac"
+    },
+    "scan16_m3120": {
+      "cubin": "3b4f3c013e35b1f536feaf524cfcccf4a6673fedef711d3416286c52255697df",
+      "ptx": "33f38ab2ede767bebe8d6c98aae7d27a3e2f641aafa271bada29aba6414d1712",
+      "llir": "c39d46bd6786e1a13ccc1bb4a014ebcf5b2a7fc37b3c7e991a13be0acbff1e8a",
+      "ttgir": "6def063d3d873bd62374fe44791290465d1fd1e0c8e33771dea192fb46b43d1e",
+      "ttir": "f7ca03d9f135f859cfc9386db8e1d4fdfeaeafd2b25f9692ce3461a97de3c8e0"
+    }
+  },
+  "ended": 1788861265.692755,
+  "torch": "2.11.0+cu130",
+  "triton": "3.6.0"
+}

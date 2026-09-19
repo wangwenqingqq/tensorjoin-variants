@@ -1,0 +1,18 @@
+{
+  "host": "gpu-host-8",
+  "scope": "Host-local additive update; historical text retained",
+  "files": {
+    "CURRENT_STATUS.md": {
+      "before_sha256": "7d3021d0c311660c68b9ac7be8bfcd35b1aba6c382c4528d57d3ecf1335bde3f",
+      "after_sha256": "78eb7deb68b65e7749bdfa32d99d8583d10cd484e33b83c46e2d52a689920b0e"
+    },
+    "EXPERIMENTS.md": {
+      "before_sha256": "ad17e9c9f767e485fd3c1680b201eb7c5780eb537bbb7f6786d4812967883236",
+      "after_sha256": "636135c37c7d126388cc8be9a3fd3443cc294eee1a3f0ef2d6e9359924150f68"
+    },
+    "CLAIMS.md": {
+      "before_sha256": "f939e00130befd41efde35a968b909cd335104936588bb49c3e3fd7845911bc8",
+      "after_sha256": "82a79c1d762e7c3c393cda7947b9ebc0022415a3917877200ff778eff36b382b"
+    }
+  }
+}

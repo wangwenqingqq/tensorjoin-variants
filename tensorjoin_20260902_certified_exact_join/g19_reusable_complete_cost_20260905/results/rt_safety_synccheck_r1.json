@@ -1,0 +1,29 @@
+{
+  "command": [
+    "compute-sanitizer",
+    "--tool",
+    "synccheck",
+    "--error-exitcode",
+    "99",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/run_slot_r1.py",
+    "--method",
+    "rt",
+    "--kind",
+    "safety",
+    "--record-id",
+    "rt_safety_synccheck_r1"
+  ],
+  "returncode": 0,
+  "method": "rt",
+  "kind": "safety",
+  "tool": "synccheck",
+  "log_sha256": "e5857a55ffb36ce647fe5e543b71dd3bc542a0f4388d8c6e86f536765121c37d",
+  "child_identity_hold_seconds": 1,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_rt_safety_synccheck_r1.json",
+  "inner_sha256": "045f3c200db05ddd8e7846d793c97dbc1fd0a50f402c8c3f3dfbfdf713dabacf",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false
+}

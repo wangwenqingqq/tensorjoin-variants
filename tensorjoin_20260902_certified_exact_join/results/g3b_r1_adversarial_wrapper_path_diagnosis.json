@@ -1,0 +1,13 @@
+{
+  "actual_cache": "artifacts/g3b_triton_cache_adversarial_r1",
+  "candidate_or_numeric_failure": false,
+  "cause": "R1 wrapper imported the original run_guarded helper, whose cache prefix is g3b_triton_cache_",
+  "experiment_id": "tensorjoin_20260903_gpu_analytic_certificate_g3b_r1_adversarial",
+  "failed_manifest": "results/g3b_r1_adversarial_manifest.json",
+  "failed_manifest_sha256": "77bc2db5015abe55b661bcfe37ff6db97981e0740a283fd426fda8434852da7e",
+  "incorrect_lookup": "artifacts/g3b_r1_triton_cache_adversarial_r1",
+  "repair": "read-only finalizer locates the immutable actual cache; no GPU rerun or evidence overwrite",
+  "result": "results/g3b_r1_adversarial.json",
+  "result_sha256": "98bb88ef3c43112c5b8152a4b37d3948933c7a23ff467418870a1df92ca52c42",
+  "status": "outer_cache_path_lookup_failed_after_completed_workload"
+}

@@ -1,0 +1,145 @@
+{
+  "record_id": "repeat0_cifar4096_g3_a3",
+  "case": {
+    "name": "cifar4096",
+    "n": 4096,
+    "d": 512,
+    "path": "g17_rthiss_pair_contract_20260905/data/cifar4096.f32",
+    "source_sha256": "a5f7a96f26f63682319525046fdad1e4f7a03fced211557f4559a158bc72d24d",
+    "epsilon": 0.7541135250198396,
+    "reference_threshold": 0.5686872086178483,
+    "oracle_path": "data/g2a_cifar4096/oracle_pairs_u64.npy"
+  },
+  "command": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/build_r1/RT-HiSS",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/cifar4096.f32",
+    "0.75411352501983964",
+    "highest"
+  ],
+  "returncode": 0,
+  "sanitizer": "none",
+  "public_seconds": null,
+  "operational_seconds_not_performance": 1.833442353992723,
+  "binary_sha256": "b4436293ceefe1d3b434a55f8da0d1a14478f6938c77ec81b05752d4ecead9fb",
+  "libowl_sha256": "1ea82ca7c81b8d047f2420f765231bedcaccb7ec5885ba0fa5e6c055992c04f0",
+  "low": 0.568652331829071,
+  "high": 0.5687220692634583,
+  "threshold": 0.5686872086178483,
+  "audit": {
+    "adapter_structure_pass": true,
+    "all_original_ids_decoded": true,
+    "output_pairs": 262144,
+    "output_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+    "frozen_oracle_pairs": 262144,
+    "frozen_oracle_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+    "frozen_reference_pass": true,
+    "missing_pairs": 0,
+    "extra_pairs": 0,
+    "first_missing": [],
+    "first_extra": [],
+    "native_threshold_reference_pass": true,
+    "native_threshold_oracle_pairs": 262144,
+    "native_threshold_missing": 0,
+    "native_threshold_extra": 0,
+    "unique_rt_candidate_pairs": 16777216,
+    "all_pair_count": 16777216,
+    "rt_candidate_missing_frozen_pairs": 0,
+    "first_rt_candidate_missing": [],
+    "self_pairs": 4096,
+    "reference_threshold": 0.5686872086178483,
+    "native_threshold": 0.5686871409416199,
+    "scalar_fmaf_replays": [],
+    "replay_complete": true,
+    "batches": [
+      {
+        "batch": 0,
+        "accepted_bits": 262144,
+        "candidate_entries": 1048576,
+        "mask_words": 524288
+      }
+    ],
+    "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+  },
+  "map_diagnostic": {
+    "byte_identical_to_native_snapshot": true,
+    "per_position_value_bytes_identical": true,
+    "actual_map_bijection_and_reordered_input_and_full_ids_verified": true
+  },
+  "child_identity_hold_seconds": 1,
+  "work": {
+    "safe_reject": 16514984,
+    "safe_accept": 262048,
+    "terminal_accept": 96,
+    "terminal_reject": 88,
+    "fp32_dimensions": 2659208992,
+    "fp64_dimensions": 94208,
+    "terminal_fraction": 1.0967254638671875e-05,
+    "candidate_set_same_as_native": true
+  },
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "complete frozen FP64-reference output plus candidate/permutation/counter gates"
+  },
+  "raw_files": {
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_candidates.u32": {
+      "bytes": 4194304,
+      "sha256": "5e621c62cd1eb8f335e498fb6a3d07c195e41990fa6a1953eb7d02dee8f336a0"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_grouped.u32": {
+      "bytes": 16384,
+      "sha256": "6b0751ba5e64fc9c13ddfb44778fa7d6a1f7d7aa9d6a5e38a1f0a1502c3fb9e3"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_groups.u32": {
+      "bytes": 1028,
+      "sha256": "d80d06f1dd4e4c0f1acda8fa46fce6b2130f2d0edd6263330438038e15f442e2"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_compressed.u32": {
+      "bytes": 1048576,
+      "sha256": "94f5227f229fb3126f06e2f3af5d56c0691b1f0fc1def465a6c6216bbb9fce2a"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/results.txt": {
+      "bytes": 1308,
+      "sha256": "11e257185ab15b6d2977ab766af833f57ea41ac17cf1d591b542df8e3b40e879"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_counts.u32": {
+      "bytes": 1024,
+      "sha256": "9dda28f718a85dcc48cd45d39b28d6fac9bfa7b45b578d67c7aaa5c90a7cb17c"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/export.json": {
+      "bytes": 225,
+      "sha256": "791ba4400ae3b71304725fd8259047829d67248f26771774c4ad4289d1f17588"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/g18_stats.u64": {
+      "bytes": 48,
+      "sha256": "9727269321b50dae167be66e7e882410b8594bb7c12ca388392d35a578f3fe6b"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_starts.u32": {
+      "bytes": 1028,
+      "sha256": "e31439460459e6690c1d0d7a11fe9920642425e34efbe7b5ab03583007d41ee7"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/point_map.u32": {
+      "bytes": 16384,
+      "sha256": "62064e3ade6fe8223b9fa6456239f24c66c57f3b32d7328d9f9cb77f054cf36d"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/program.log": {
+      "bytes": 2498,
+      "sha256": "a72213f9ad1923aa063113f0540ed88ea0fbc452c5a3cd26f73a428f0f81f084"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_prefix.u32": {
+      "bytes": 1028,
+      "sha256": "e4bc715d4920af546fd9591b9dff92e2b38faaedcd11726dba5169f405459a44"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/b0_mask.u32": {
+      "bytes": 2097152,
+      "sha256": "7c8ce47ccd8491781a30e94539c67e388e1db711d62b5ca5b0a389dfca2ed337"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/dimension_map.u32": {
+      "bytes": 2048,
+      "sha256": "28095ae0d63df22dc1c9b60507854dc07992f7b844f9ab0debb00050bbf9a15c"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/repeat0_cifar4096_g3_a3/pairs.u64": {
+      "bytes": 2097152,
+      "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/run_slot_r3.py",
+    "--method",
+    "rt",
+    "--kind",
+    "screen",
+    "--record-id",
+    "screen_b0_p0_rt_a0"
+  ],
+  "returncode": 0,
+  "method": "rt",
+  "kind": "screen",
+  "tool": "none",
+  "log_sha256": "a39610393846346407c93f015ba3e51fa6b767337ab66968d33e757f2aef2922",
+  "child_identity_hold_seconds": 1,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_screen_b0_p0_rt_a0.json",
+  "inner_sha256": "f0c18d2ad6741899d43c354bb23648edf032ff15ad1df3fdd7919791e106233e",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false
+}

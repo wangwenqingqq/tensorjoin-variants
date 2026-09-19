@@ -1,0 +1,112 @@
+{
+  "actual_results_per_query": 64.0,
+  "base_row_range": [
+    51,
+    142
+  ],
+  "bound_pad": 0.0001,
+  "capacity": 65536,
+  "correctness": {
+    "ambiguous_fraction": 0.005514621734619141,
+    "ambiguous_id_sha256": "85452c6c2423e4273b1fe1ce4c0e1bc5931bfc80b07eea54c329136d85a273c6",
+    "ambiguous_pairs": 11565,
+    "direct_accept_pairs": 27371,
+    "direct_false_accepts": 0,
+    "duplicates": 0,
+    "final_id_sha256": "893981d43167a25d7a844498a8ff1974d55b93ea0e0882a346cc3c9699d774d5",
+    "final_mismatch": 0,
+    "final_pairs": 32768,
+    "keeper_mismatch": 0,
+    "oracle_pairs": 32768,
+    "overflow_before_refine": 0,
+    "overflow_final": 0
+  },
+  "correctness_pass": true,
+  "experiment_id": "tensorjoin_20260903_indian_pines_triton_d3b",
+  "feature_cache_sha256": "b95402cec4fd6037fea32934b8b8170ab51c9baa866d7c392737c06b6398adb2",
+  "fp32_distance_guard": 0.001,
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "metrics_us": {
+    "baseline": [
+      488.3520007133484,
+      476.9600033760071,
+      474.8480021953583,
+      464.86398577690125,
+      471.74400091171265,
+      459.8720073699951,
+      471.3599979877472,
+      460.2240025997162,
+      464.28799629211426,
+      454.71999049186707,
+      467.00799465179443,
+      470.5919921398163,
+      462.8159999847412,
+      466.97598695755005,
+      466.91200137138367,
+      472.54401445388794,
+      463.03999423980713,
+      459.8720073699951,
+      727.0079851150513,
+      675.0079989433289
+    ],
+    "candidate": [
+      404.5119881629944,
+      441.536009311676,
+      442.4000084400177,
+      396.06401324272156,
+      394.23999190330505,
+      391.07200503349304,
+      390.6559944152832,
+      395.7119882106781,
+      388.9920115470886,
+      391.55200123786926,
+      391.9360041618347,
+      384.70399379730225,
+      405.9840142726898,
+      389.9199962615967,
+      388.12801241874695,
+      391.07200503349304,
+      392.4480080604553,
+      393.15199851989746,
+      390.6880021095276,
+      401.2160003185272
+    ]
+  },
+  "observations": 20,
+  "order": "BA",
+  "process_id": 0,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "query_row_range": [
+    0,
+    47
+  ],
+  "script_sha256": "27e707dae89e9f2ca197605967c0c8ba00829ebda59ce3ffba7601cf8a0aeff4",
+  "shape": [
+    512,
+    4096,
+    1984
+  ],
+  "source_pixel_overlap": false,
+  "stress_hashes": [],
+  "stress_launches": 0,
+  "stress_pass": true,
+  "target_results_per_query": 64,
+  "threshold_calibration": {
+    "gap_d2": 6.106098217051326e-07,
+    "lower_distance_d2": 0.2629130211841887,
+    "threshold_d2": 0.26291332648909954,
+    "upper_distance_d2": 0.2629136317940104
+  },
+  "threshold_d2": 0.26291332648909954,
+  "timestamp_utc": "2026-09-02T16:55:39Z",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.6.0",
+  "validation_only": false,
+  "warmups": 5
+}

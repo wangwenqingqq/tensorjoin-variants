@@ -1,0 +1,49 @@
+{
+  "processes": [
+    {
+      "index": 0,
+      "label": "paired_00_a0",
+      "order": "AB"
+    },
+    {
+      "index": 1,
+      "label": "paired_01_a0",
+      "order": "BA"
+    },
+    {
+      "index": 2,
+      "label": "paired_02_a0",
+      "order": "AB"
+    },
+    {
+      "index": 3,
+      "label": "paired_03_a0",
+      "order": "BA"
+    },
+    {
+      "index": 4,
+      "label": "paired_04_a0",
+      "order": "AB"
+    },
+    {
+      "index": 5,
+      "label": "paired_05_a0",
+      "order": "BA"
+    },
+    {
+      "index": 6,
+      "label": "paired_06_a0",
+      "order": "AB"
+    },
+    {
+      "index": 7,
+      "label": "paired_07_a0",
+      "order": "BA"
+    }
+  ],
+  "protocol_sha256": "161f6dbd8e5e0657eb36947d35052536a7a04ea4d9a72207cc4daef298531f89",
+  "warm_calls_per_method": 2,
+  "retained_calls_per_method": 9,
+  "repeat_calls_per_method": 16,
+  "no_replacements": true
+}

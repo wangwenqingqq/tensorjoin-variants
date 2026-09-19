@@ -1,0 +1,120 @@
+{
+  "authoritative_result": "results/g6_gts_g2b_r1_a0.json",
+  "authoritative_result_sha256": "24a5c9a5ff87f698b71ea0701554b79a70da4a070380d40c39fdf911c80c2596",
+  "baseline": "GTS upstream FP32 plus G6 export adapter",
+  "classification": "superseded operational inference; authoritative runner result proves completion before the 1800-second cap",
+  "completed": false,
+  "context_only": true,
+  "correction": "The zero-byte outer driver log and delayed local PTY initially suggested a hard-cap termination. File timestamps and the runner-owned result/log prove the baseline completed at public elapsed 1111.52 s and returned a non-exact result before the cap. Use the authoritative result and mismatch diagnosis, not this file, for claims.",
+  "dataset": "g2b",
+  "epsilon": 0.62890625,
+  "experiment_id": "tensorjoin_20260904_g6_latest_baselines",
+  "hard_timeout_seconds": 1800,
+  "log_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "material_caveat": "The child produced a sorted, valid-ID pair file with a four-pair excess, but the wrapper was terminated by GNU timeout before the child returned metrics and before result serialization. Full-scale accuracy is recoverable postmortem; completion latency is not.",
+  "observed_samples": [
+    {
+      "gpu_memory_mib": 20862,
+      "gpu_utilization_percent": 100,
+      "process_elapsed": "00:02:04",
+      "utc": "2026-09-03T17:23:39Z"
+    },
+    {
+      "gpu_memory_mib": 20862,
+      "gpu_utilization_percent": 100,
+      "process_elapsed": "00:03:27",
+      "utc": "2026-09-03T17:25:02Z"
+    },
+    {
+      "gpu_memory_mib": 20862,
+      "gpu_utilization_percent": 100,
+      "process_elapsed": "00:08:27",
+      "utc": "2026-09-03T17:30:02Z"
+    },
+    {
+      "gpu_memory_mib": 20862,
+      "gpu_utilization_percent": 100,
+      "process_elapsed": "00:15:14",
+      "utc": "2026-09-03T17:36:49Z"
+    },
+    {
+      "gpu_memory_mib": 20862,
+      "gpu_utilization_percent": 100,
+      "process_elapsed": "00:15:37",
+      "utc": "2026-09-03T17:37:12Z"
+    },
+    {
+      "gpu_memory_mib": 14,
+      "gpu_utilization_percent": 0,
+      "process_present": false,
+      "utc": "2026-09-03T17:56:20Z"
+    }
+  ],
+  "output_bytes": 31408656,
+  "output_exists": true,
+  "output_structurally_complete": true,
+  "output_validation": {
+    "count_delta": 4,
+    "duplicate_count": 0,
+    "exact": false,
+    "expected_pair_count": 3926078,
+    "extra_count": 4,
+    "first_extra_pairs": [
+      {
+        "fp64_d2": 0.39552323316153337,
+        "fp64_d2_minus_threshold": 1.6187247087184886e-07,
+        "i": 7143,
+        "j": 17519,
+        "key": 428597519,
+        "sequential_fp32_d2": 0.39552295207977295,
+        "sequential_fp32_d2_minus_threshold": -1.1920928955078125e-07
+      },
+      {
+        "fp64_d2": 0.39552323316153337,
+        "fp64_d2_minus_threshold": 1.6187247087184886e-07,
+        "i": 17519,
+        "j": 7143,
+        "key": 1051147143,
+        "sequential_fp32_d2": 0.39552295207977295,
+        "sequential_fp32_d2_minus_threshold": -1.1920928955078125e-07
+      },
+      {
+        "fp64_d2": 0.395523104357705,
+        "fp64_d2_minus_threshold": 3.30686424909743e-08,
+        "i": 19370,
+        "j": 57101,
+        "key": 1162257101,
+        "sequential_fp32_d2": 0.3955227732658386,
+        "sequential_fp32_d2_minus_threshold": -2.980232238769531e-07
+      },
+      {
+        "fp64_d2": 0.395523104357705,
+        "fp64_d2_minus_threshold": 3.30686424909743e-08,
+        "i": 57101,
+        "j": 19370,
+        "key": 3426079370,
+        "sequential_fp32_d2": 0.3955227732658386,
+        "sequential_fp32_d2_minus_threshold": -2.980232238769531e-07
+      }
+    ],
+    "first_missing_keys": [],
+    "invalid_count": 0,
+    "missing_count": 0,
+    "oracle_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "pair_count": 3926082,
+    "pair_f1": 0.9999994905860299,
+    "pair_precision": 0.9999989811725787,
+    "pair_recall": 1.0,
+    "raw_u64_sha256": "8a994ae241e0d930f0756ef9e9056dcf1a85119bf415d7413344e523310fe686",
+    "true_positive_count": 3926078
+  },
+  "postflight": {
+    "compute_apps_on_gpu": [],
+    "gpu_csv": "1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14, 0"
+  },
+  "shape": [
+    60000,
+    512
+  ],
+  "superseded": true
+}

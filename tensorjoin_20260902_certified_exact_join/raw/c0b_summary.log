@@ -1,0 +1,62 @@
+{
+  "baseline_marginal": {
+    "median_us": 338.6879861354828,
+    "p10_us": 325.5999982357025,
+    "p90_us": 388.64638805389404
+  },
+  "bootstrap_95_high": 3.542449714130894,
+  "bootstrap_95_low": 3.4017600777740173,
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 20260902,
+  "candidate_marginal": {
+    "median_us": 98.57599809765816,
+    "p10_us": 93.9520001411438,
+    "p90_us": 108.45119878649712
+  },
+  "correctness_pass": true,
+  "experiment_id": "tensorjoin_20260902_triton_compact_refine_c0b",
+  "feature_cache_sha256_values": [
+    "66f6292129029f63ee7bd237e15f390e949531a275a3463e786fe5c03893dd41"
+  ],
+  "gate_pass": true,
+  "geomean_speedup": 3.476091450361422,
+  "input_files": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_1.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_2.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_3.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_4.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_5.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_6.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_7.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0b_process_8.json"
+  ],
+  "order_split_geomean": {
+    "AB": 3.488025733560085,
+    "BA": 3.464198000323507
+  },
+  "orders": [
+    "AB",
+    "BA",
+    "AB",
+    "BA",
+    "AB",
+    "BA",
+    "AB",
+    "BA"
+  ],
+  "per_process_ratios": [
+    3.540076725863434,
+    3.54820976501398,
+    3.5805869623876365,
+    3.27179170186773,
+    3.462947668210148,
+    3.582781469888111,
+    3.372142292826733,
+    3.462546177033561
+  ],
+  "process_count": 8,
+  "process_wins": 8,
+  "script_sha256_values": [
+    "9d41a8644c9d883ad751f2da8eac691ea6df5c21d811c33caf813d16fa9cb790"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "g19_reusable_complete_cost_20260905/ADDENDUM_TORCH_SHUTDOWN_R2.md": "ca454bb7fc071bcab5240e27d432014a1ce9def29ee6409907895a40866920ce",
+  "g19_reusable_complete_cost_20260905/artifacts/host_allocator.so": "3aab1b89f3d86b5b439c90effbae2dc9cbcbeec7e998f7d814806a9c1d21c7fc",
+  "g19_reusable_complete_cost_20260905/artifacts/host_allocator_build.json": "2dde01a6a52b1842f831ab12024c23199a9ab1b71327904247f0bee7513a4698",
+  "g19_reusable_complete_cost_20260905/src/host_allocator.cpp": "521080c49255fe8a7b94356ea588d3d6a135f61b99b344882dd5fed652f001c4",
+  "g19_reusable_complete_cost_20260905/src/build_host_allocator.py": "0d12d35a55dd5f6d5a903cf6bda8e01baf1b3f3a8f7b90742dc94a578a482299",
+  "g19_reusable_complete_cost_20260905/src/prepare_r2.py": "90d52748597af02e5589f95f57ab7c6e5f74564479d3155eef17e0ab1e3892ef",
+  "g19_reusable_complete_cost_20260905/src/operators_r2.py": "b777ac20e01613925818adbd270182d19e48d183eac2820babf50aeebb368b56",
+  "g19_reusable_complete_cost_20260905/src/run_slot_r2.py": "ea2ab5ecd89af8b12541a29a904e5f9f345fff68b7967ed28c51f0256cb4fede",
+  "g19_reusable_complete_cost_20260905/src/supervise_r2.py": "96bb46898f04aef9cc23ee4d69e498dfdaebf1b9a5382564bc1d7ac405073bea",
+  "g19_reusable_complete_cost_20260905/src/common_r2.py": "050ed328d76a1ad7d0938861d7b25ec2ad79282dd0ff82b17ccd12cc6a5269dc",
+  "g19_reusable_complete_cost_20260905/src/freeze_r2.py": "4aa4f5d3c9a81d935449ef8a87057921cb0681936038cbc3b418d787987ecbcd",
+  "g19_reusable_complete_cost_20260905/src/admit_r2.py": "078e35460c1c1dd9295d060208cb886c8b09d8b44cb1495381c2225aad50f563"
+}

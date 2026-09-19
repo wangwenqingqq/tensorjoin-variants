@@ -1,0 +1,16 @@
+{"analyzed": "original", "kind": "oracle", "seconds": 8.953963078005472}
+{"analyzed": "original", "kind": "r16", "seconds": 16.858193854001}
+{"analyzed": "original", "kind": "r32", "seconds": 24.708126158002415}
+{"analyzed": "original", "kind": "r64", "seconds": 32.47170584900596}
+{"analyzed": "random", "kind": "oracle", "seconds": 40.7996048660134}
+{"analyzed": "random", "kind": "r16", "seconds": 48.273453455010895}
+{"analyzed": "random", "kind": "r32", "seconds": 55.74042877700413}
+{"analyzed": "random", "kind": "r64", "seconds": 63.269651420006994}
+{"analyzed": "kd_variance", "kind": "oracle", "seconds": 70.46660097900894}
+{"analyzed": "kd_variance", "kind": "r16", "seconds": 78.10832954201032}
+{"analyzed": "kd_variance", "kind": "r32", "seconds": 85.6419855000131}
+{"analyzed": "kd_variance", "kind": "r64", "seconds": 93.16243006000877}
+{"analyzed": "pca_sort", "kind": "oracle", "seconds": 100.06396260600013}
+{"analyzed": "pca_sort", "kind": "r16", "seconds": 107.91936758501106}
+{"analyzed": "pca_sort", "kind": "r32", "seconds": 115.89422011600982}
+{"analyzed": "pca_sort", "kind": "r64", "seconds": 123.56261428800644}

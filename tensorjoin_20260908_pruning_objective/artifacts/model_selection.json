@@ -1,0 +1,232 @@
+{
+  "created": 1788847141.3339343,
+  "models": {
+    "proxy": {
+      "name": "proxy",
+      "family": "proxy",
+      "seed": 2026090815,
+      "step": 300,
+      "parameters": 6337,
+      "training_seconds": 0.6824355169956107,
+      "initialization_seconds": 0.0007693450024817139,
+      "validation": {
+        "mean_pair_pruning": 0.001331066893310669,
+        "cells": [
+          {
+            "cell": "k4",
+            "pruned_tiles": 60,
+            "tiles": 12403,
+            "tile_fraction": 0.004837539305006853,
+            "pair_fraction": 0.004054634536546345
+          },
+          {
+            "cell": "k16",
+            "pruned_tiles": 33,
+            "tiles": 12403,
+            "tile_fraction": 0.002660646617753769,
+            "pair_fraction": 0.002088751124887511
+          },
+          {
+            "cell": "k64",
+            "pruned_tiles": 14,
+            "tiles": 12403,
+            "tile_fraction": 0.0011287591711682658,
+            "pair_fraction": 0.0007167283271672833
+          },
+          {
+            "cell": "original",
+            "pruned_tiles": 13,
+            "tiles": 12403,
+            "tile_fraction": 0.0010481335160848182,
+            "pair_fraction": 0.0006962503749625038
+          },
+          {
+            "cell": "k256",
+            "pruned_tiles": 8,
+            "tiles": 12403,
+            "tile_fraction": 0.0006450052406675804,
+            "pair_fraction": 0.0003481251874812519
+          },
+          {
+            "cell": "k1024",
+            "pruned_tiles": 4,
+            "tiles": 12403,
+            "tile_fraction": 0.0003225026203337902,
+            "pair_fraction": 8.19118088191181e-05
+          }
+        ],
+        "bound_seconds": 0.014372330013429746,
+        "permutation_sha256": "dee9cb17ddff605f2b55605f4affc63dc78d55d7dd5372dfb6cc4928c2aba7d1"
+      },
+      "checkpoint_sha256": "5019e10e06c2904211dae28faac0c74ba665dd956fe791bce9a7c06e0b20c7eb",
+      "loss": 0.6398210525512695,
+      "historical_training": true,
+      "optimized_parameters": 6337
+    },
+    "direct": {
+      "name": "direct_s2026090821_e0",
+      "family": "direct",
+      "seed": 2026090821,
+      "step": 0,
+      "sweep": 0,
+      "parameters": 6337,
+      "optimized_parameters": 64,
+      "training_seconds": 0.08299625299696345,
+      "initialization_seconds": 0.08672131999628618,
+      "training_reward": 622727168,
+      "training": {
+        "mean_pair_pruning": 0.1297315833770822,
+        "cells": [
+          {
+            "cell": "k4",
+            "pruned_tiles": 41267,
+            "tiles": 195625,
+            "tile_fraction": 0.21094952076677317,
+            "pair_fraction": 0.21128175795605109
+          },
+          {
+            "cell": "k16",
+            "pruned_tiles": 32212,
+            "tiles": 195625,
+            "tile_fraction": 0.16466198083067093,
+            "pair_fraction": 0.16492131696707582
+          },
+          {
+            "cell": "k64",
+            "pruned_tiles": 24484,
+            "tiles": 195625,
+            "tile_fraction": 0.12515782747603835,
+            "pair_fraction": 0.12535494612634684
+          },
+          {
+            "cell": "original",
+            "pruned_tiles": 24406,
+            "tiles": 195625,
+            "tile_fraction": 0.1247591054313099,
+            "pair_fraction": 0.12495559611009725
+          },
+          {
+            "cell": "k256",
+            "pruned_tiles": 17722,
+            "tiles": 195625,
+            "tile_fraction": 0.09059169329073483,
+            "pair_fraction": 0.09073437164070898
+          },
+          {
+            "cell": "k1024",
+            "pruned_tiles": 11942,
+            "tiles": 195625,
+            "tile_fraction": 0.061045367412140575,
+            "pair_fraction": 0.061141511462213444
+          }
+        ],
+        "bound_seconds": 0.07075237399840262,
+        "permutation_sha256": "742208bb0ad073070942e0e4293c40f9a913c407468e211a1953a387ac1658ae"
+      },
+      "validation": {
+        "mean_pair_pruning": 0.12424314901843149,
+        "cells": [
+          {
+            "cell": "k4",
+            "pruned_tiles": 2573,
+            "tiles": 12403,
+            "tile_fraction": 0.20744981052971057,
+            "pair_fraction": 0.20436996300369964
+          },
+          {
+            "cell": "k16",
+            "pruned_tiles": 2006,
+            "tiles": 12403,
+            "tile_fraction": 0.1617350640973958,
+            "pair_fraction": 0.15872460753924608
+          },
+          {
+            "cell": "k64",
+            "pruned_tiles": 1523,
+            "tiles": 12403,
+            "tile_fraction": 0.12279287269209062,
+            "pair_fraction": 0.11995984401559844
+          },
+          {
+            "cell": "original",
+            "pruned_tiles": 1515,
+            "tiles": 12403,
+            "tile_fraction": 0.12214786745142305,
+            "pair_fraction": 0.11936598340165984
+          },
+          {
+            "cell": "k256",
+            "pruned_tiles": 1097,
+            "tiles": 12403,
+            "tile_fraction": 0.08844634362654197,
+            "pair_fraction": 0.08586405359464054
+          },
+          {
+            "cell": "k1024",
+            "pruned_tiles": 737,
+            "tiles": 12403,
+            "tile_fraction": 0.059421107796500845,
+            "pair_fraction": 0.05717444255574443
+          }
+        ],
+        "bound_seconds": 0.005223881991696544,
+        "permutation_sha256": "2914130291efda608abeb10732c5fba12810ade728ad29bc71891db47ac3158c"
+      },
+      "accepted": 0,
+      "output_weight_squared_norm": 0.0,
+      "checkpoint_sha256": "d4bf1460d473a83607eb997fd5d47a4e2d1c7a89cf6c27cab9fb98f2ddb3f85a",
+      "zero_initialization": true
+    }
+  },
+  "baseline_validation": {
+    "mean_pair_pruning": 0.12424314901843149,
+    "cells": [
+      {
+        "cell": "k4",
+        "pruned_tiles": 2573,
+        "tiles": 12403,
+        "tile_fraction": 0.20744981052971057,
+        "pair_fraction": 0.20436996300369964
+      },
+      {
+        "cell": "k16",
+        "pruned_tiles": 2006,
+        "tiles": 12403,
+        "tile_fraction": 0.1617350640973958,
+        "pair_fraction": 0.15872460753924608
+      },
+      {
+        "cell": "k64",
+        "pruned_tiles": 1523,
+        "tiles": 12403,
+        "tile_fraction": 0.12279287269209062,
+        "pair_fraction": 0.11995984401559844
+      },
+      {
+        "cell": "original",
+        "pruned_tiles": 1515,
+        "tiles": 12403,
+        "tile_fraction": 0.12214786745142305,
+        "pair_fraction": 0.11936598340165984
+      },
+      {
+        "cell": "k256",
+        "pruned_tiles": 1097,
+        "tiles": 12403,
+        "tile_fraction": 0.08844634362654197,
+        "pair_fraction": 0.08586405359464054
+      },
+      {
+        "cell": "k1024",
+        "pruned_tiles": 737,
+        "tiles": 12403,
+        "tile_fraction": 0.059421107796500845,
+        "pair_fraction": 0.05717444255574443
+      }
+    ],
+    "bound_seconds": 0.005607382001471706,
+    "permutation_sha256": "26214d89aa974a19f44d4e02b68066ac71780b1c6fe08bc2c4627eae5d336559"
+  },
+  "rule": "Validation certified six-threshold pair pruning; zero initialization eligible; no test/full geometry or query time used.",
+  "test_scope": "Reused prior test rows; adaptive within-dataset follow-up."
+}

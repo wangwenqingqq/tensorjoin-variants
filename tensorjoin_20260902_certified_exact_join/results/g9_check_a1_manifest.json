@@ -1,0 +1,30 @@
+{
+  "admitted": false,
+  "artifacts": {
+    "occupancy": {
+      "path": "raw/g9_check_a1_occupancy.jsonl",
+      "sha256": "83362d4959d403b160c6ee0cafc6a71d2b2ebb09b8ad05a72b328a62ee3958ce"
+    },
+    "preflight": {
+      "path": "raw/g9_check_a1_preflight.log",
+      "sha256": "97ac49c14e75d96548a846bc7b69d6b8d54392d590d00be0e2745cdbf421abc0"
+    }
+  },
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py",
+    "--label",
+    "g9_check_a1",
+    "--mode",
+    "check"
+  ],
+  "end_unix": 1788519185.5659847,
+  "error": "AssertionError('Target not quiescent')",
+  "foreign_rows": [],
+  "gpu_uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3",
+  "label": "g9_check_a1",
+  "launched": false,
+  "runner_sha256": "77effdc0c7d84858e4bf6f07fba1eb036487b7fb45b8fcec2bda36aac144344d",
+  "start_unix": 1788519184.7650335,
+  "status": "failed_or_incomplete"
+}

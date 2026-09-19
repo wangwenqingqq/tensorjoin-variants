@@ -1,0 +1,25 @@
+{
+  "coordinate_max": 255.0,
+  "coordinate_min": 0.0,
+  "dataset_id": "fashion784",
+  "exact_int32_to_fp32_precondition": true,
+  "finite": true,
+  "int32_accumulator_absolute_limit": 12645136,
+  "loader": "official IDX gzip; uint8 pixels widened exactly to float32",
+  "prepared_dtype": "float32",
+  "prepared_shape": [
+    4096,
+    784
+  ],
+  "source_bytes": 26421880,
+  "source_dimension": 784,
+  "source_md5": "8d4fb7e6c68d591d4c3dfef9ec88bf0d",
+  "source_path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/g4b_sources/fashion-train-images-idx3-ubyte.gz",
+  "source_row_ids_file_sha256": "b32024844cb503aebce28ddde3ce1309db51d6afeac773ea2debd3e8d2d2972c",
+  "source_row_ids_max": 59993,
+  "source_row_ids_min": 0,
+  "source_row_ids_unique": 4096,
+  "source_rows": 60000,
+  "source_sha256": "3aede38d61863908ad78613f6a32ed271626dd12800ba2636569512369268a84",
+  "vectors_file_sha256": "16149e1a1deaa2afeb205a0d22d49d21d1b784ca654851985603777e9c8b29d8"
+}

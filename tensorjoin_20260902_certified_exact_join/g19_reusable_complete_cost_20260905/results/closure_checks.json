@@ -1,0 +1,5220 @@
+{
+  "verified_utc": "2026-09-05T10:10:30.257086+00:00",
+  "composite_admission_slots": 14,
+  "observations": [
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 11,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 12,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 13,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 14,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 15,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 16,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 17,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 11,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 12,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 13,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 14,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 15,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 16,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 17,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_memcheck_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_memcheck_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_memcheck_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_memcheck_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_synccheck_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_synccheck_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_synccheck_r1",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_synccheck_r1",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "safety",
+      "record_id": "tc_safety_memcheck_r2",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "safety",
+      "record_id": "tc_safety_memcheck_r2",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "safety",
+      "record_id": "tc_safety_memcheck_r2",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "safety",
+      "record_id": "tc_safety_memcheck_r2",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "real31",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "signed31",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 31,
+        "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "shuffled_onehot31",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 97,
+        "sha256": "d96296ab875e459932a2a2afb3daef327efe478e41e8f59134a56cc4636e5a5f",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "zeros31",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "boundary31",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 43,
+        "sha256": "4b4acf23127b22b4b84f86df87beb352a38eda060cedaa0de974aa8e0676f7ce",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "cancellation31",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "subnormal31",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 961,
+        "sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "safety",
+      "record_id": "fp32_safety_memcheck_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "safety",
+      "record_id": "fp32_safety_memcheck_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "safety",
+      "record_id": "fp32_safety_memcheck_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "safety",
+      "record_id": "fp32_safety_memcheck_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 11,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 12,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 13,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 14,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 15,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 16,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 17,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 18,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 19,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 20,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 21,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 22,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 23,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 24,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 25,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 26,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 27,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 28,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 29,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 30,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 31,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 32,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 33,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 34,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 35,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 36,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 37,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 38,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 39,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 40,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 41,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 42,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 43,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 44,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 45,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 46,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 47,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 48,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 49,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 2,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 3,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 4,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 5,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 6,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 7,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 8,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 11,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 12,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 13,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 14,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 15,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 16,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 17,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 18,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 19,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 20,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 21,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 22,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 23,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 24,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 25,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 26,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 27,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 28,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 29,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 30,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 31,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 32,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 33,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 34,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 35,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 36,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 37,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 38,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 39,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 40,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 41,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 42,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 43,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 44,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 45,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 46,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 47,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 1,
+      "iteration": 48,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 1,
+      "iteration": 49,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 11,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 12,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 13,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 14,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 15,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 16,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 17,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 18,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 19,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 20,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 21,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 22,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 23,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 24,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 25,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 26,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 27,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 28,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 29,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 30,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 31,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 2,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 3,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 4,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 5,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 6,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 7,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 8,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 9,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 10,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 11,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 12,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 13,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 14,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 15,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 16,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 17,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 18,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 19,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 20,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 21,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 22,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 23,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 24,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 25,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 26,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 27,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 28,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 29,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 30,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "case": "boundary_zero32",
+      "cycle": 0,
+      "iteration": 31,
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "profile",
+      "record_id": "rt_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "profile",
+      "record_id": "rt_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "profile",
+      "record_id": "tc_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "profile",
+      "record_id": "tc_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "profile",
+      "record_id": "fp32_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 0,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "profile",
+      "record_id": "fp32_profile_nsys_r3",
+      "case": "cifar4096",
+      "cycle": 0,
+      "iteration": 1,
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      }
+    }
+  ],
+  "engine_records": [
+    {
+      "method": "tc",
+      "kind": "matrix",
+      "record_id": "tc_matrix_none_a0",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 3.0189985409379005e-06,
+      "after_prepare_memory": {
+        "cuda_used": 712769536,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 787804160
+      },
+      "destruction_seconds_diagnostic": 0.047993461950682104,
+      "after_destroy_memory": {
+        "cuda_used": 1251737600,
+        "torch_allocated": 0,
+        "torch_reserved": 538968064,
+        "rss_bytes": 811929600
+      }
+    },
+    {
+      "method": "rt_on",
+      "kind": "matrix",
+      "record_id": "rt_on_matrix_none_r1",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.29682389699155465,
+      "library_sha256": "492d5492e39ffad853db1419eab59b3dc7a61c633186309dc2a001c5642183c6",
+      "after_prepare_memory": {
+        "cuda_used": 689700864,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 903241728
+      },
+      "destruction_seconds_diagnostic": 0.046505471982527524,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 901840896
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "matrix",
+      "record_id": "rt_matrix_none_r1",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.22010925598442554,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 689700864,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 868081664
+      },
+      "destruction_seconds_diagnostic": 0.04094039503252134,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 862425088
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_memcheck_r1",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.22708745498675853,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 907804672,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 950145024
+      },
+      "destruction_seconds_diagnostic": 0.047140111040789634,
+      "after_destroy_memory": {
+        "cuda_used": 1809580032,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 951246848
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "safety",
+      "record_id": "rt_safety_synccheck_r1",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.215349413047079,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 740032512,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 922173440
+      },
+      "destruction_seconds_diagnostic": 0.04001571598928422,
+      "after_destroy_memory": {
+        "cuda_used": 1639710720,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 921710592
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "safety",
+      "record_id": "tc_safety_memcheck_r2",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 8.15198291093111e-06,
+      "after_prepare_memory": {
+        "cuda_used": 888930304,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 875532288
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 425721856,
+          "host": {
+            "active_bytes.allocated": 24,
+            "active_bytes.current": 24,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 24,
+            "active_requests.allocated": 6,
+            "active_requests.current": 6,
+            "active_requests.freed": 0,
+            "active_requests.peak": 6,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1215,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1215,
+            "host_alloc_time.min": 1215,
+            "host_alloc_time.total": 1215,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 425721856
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 24,
+            "active_bytes.current": 24,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 24,
+            "active_requests.allocated": 6,
+            "active_requests.current": 6,
+            "active_requests.freed": 0,
+            "active_requests.peak": 6,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1215,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1215,
+            "host_alloc_time.min": 1215,
+            "host_alloc_time.total": 1215,
+            "host_free_time.avg": 412,
+            "host_free_time.count": 1,
+            "host_free_time.max": 412,
+            "host_free_time.min": 412,
+            "host_free_time.total": 412,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.09214328101370484,
+      "after_destroy_memory": {
+        "cuda_used": 888930304,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 910266368
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "matrix",
+      "record_id": "fp32_matrix_none_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.1390254789730534,
+      "cublas": {
+        "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+        "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+        "version": 130100,
+        "handle": 1178606256,
+        "ownership": "engine-owned",
+        "workspace_bytes": 8519680,
+        "stream": 0,
+        "math_mode": 2,
+        "required_math_mode": 2,
+        "pointer_mode": 0,
+        "compute_type": 69,
+        "algorithm": -1,
+        "input_output_type": 0,
+        "nvidia_tf32_override": "0"
+      },
+      "after_prepare_memory": {
+        "cuda_used": 744226816,
+        "torch_allocated": 8519680,
+        "torch_reserved": 20971520,
+        "rss_bytes": 926318592
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 358612992,
+          "host": {
+            "active_bytes.allocated": 72,
+            "active_bytes.current": 72,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 72,
+            "active_requests.allocated": 18,
+            "active_requests.current": 18,
+            "active_requests.freed": 0,
+            "active_requests.peak": 18,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1179,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1179,
+            "host_alloc_time.min": 1179,
+            "host_alloc_time.total": 1179,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 358612992
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 72,
+            "active_bytes.current": 72,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 72,
+            "active_requests.allocated": 18,
+            "active_requests.current": 18,
+            "active_requests.freed": 0,
+            "active_requests.peak": 18,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1179,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1179,
+            "host_alloc_time.min": 1179,
+            "host_alloc_time.total": 1179,
+            "host_free_time.avg": 400,
+            "host_free_time.count": 1,
+            "host_free_time.max": 400,
+            "host_free_time.min": 400,
+            "host_free_time.total": 400,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.09227540000574663,
+      "after_destroy_memory": {
+        "cuda_used": 712769536,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 959655936
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "safety",
+      "record_id": "fp32_safety_memcheck_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.19083435396896675,
+      "cublas": {
+        "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+        "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+        "version": 130100,
+        "handle": 905478832,
+        "ownership": "engine-owned",
+        "workspace_bytes": 8519680,
+        "stream": 0,
+        "math_mode": 2,
+        "required_math_mode": 2,
+        "pointer_mode": 0,
+        "compute_type": 69,
+        "algorithm": -1,
+        "input_output_type": 0,
+        "nvidia_tf32_override": "0"
+      },
+      "after_prepare_memory": {
+        "cuda_used": 920387584,
+        "torch_allocated": 8519680,
+        "torch_reserved": 20971520,
+        "rss_bytes": 1028997120
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 358612992,
+          "host": {
+            "active_bytes.allocated": 24,
+            "active_bytes.current": 24,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 24,
+            "active_requests.allocated": 6,
+            "active_requests.current": 6,
+            "active_requests.freed": 0,
+            "active_requests.peak": 6,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1328,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1328,
+            "host_alloc_time.min": 1328,
+            "host_alloc_time.total": 1328,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 358612992
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 24,
+            "active_bytes.current": 24,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 24,
+            "active_requests.allocated": 6,
+            "active_requests.current": 6,
+            "active_requests.freed": 0,
+            "active_requests.peak": 6,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1328,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1328,
+            "host_alloc_time.min": 1328,
+            "host_alloc_time.total": 1328,
+            "host_free_time.avg": 408,
+            "host_free_time.count": 1,
+            "host_free_time.max": 408,
+            "host_free_time.min": 408,
+            "host_free_time.total": 408,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.09331876703072339,
+      "after_destroy_memory": {
+        "cuda_used": 888930304,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1062510592
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.20535705401562154,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 689700864,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 867987456
+      },
+      "device_used_range": 0,
+      "rss_range": 8437760,
+      "close_receipt": null,
+      "destruction_seconds_diagnostic": 0.05164372798753902,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 864485376
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "stress",
+      "record_id": "rt_stress_none_r3",
+      "cycle": 1,
+      "initialization_seconds_diagnostic": 0.08761192800011486,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926035968
+      },
+      "device_used_range": 0,
+      "rss_range": 53248,
+      "close_receipt": null,
+      "destruction_seconds_diagnostic": 0.041063055978156626,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 866226176
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "stress",
+      "record_id": "tc_stress_none_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 5.098991096019745e-06,
+      "after_prepare_memory": {
+        "cuda_used": 712769536,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 783822848
+      },
+      "device_used_range": 0,
+      "rss_range": 36495360,
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 425721856,
+          "host": {
+            "active_bytes.allocated": 136,
+            "active_bytes.current": 136,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 136,
+            "active_requests.allocated": 34,
+            "active_requests.current": 34,
+            "active_requests.freed": 0,
+            "active_requests.peak": 34,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1172,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1172,
+            "host_alloc_time.min": 1172,
+            "host_alloc_time.total": 1172,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 425721856
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 136,
+            "active_bytes.current": 136,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 136,
+            "active_requests.allocated": 34,
+            "active_requests.current": 34,
+            "active_requests.freed": 0,
+            "active_requests.peak": 34,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1172,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1172,
+            "host_alloc_time.min": 1172,
+            "host_alloc_time.total": 1172,
+            "host_free_time.avg": 400,
+            "host_free_time.count": 1,
+            "host_free_time.max": 400,
+            "host_free_time.min": 400,
+            "host_free_time.total": 400,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.07721436198335141,
+      "after_destroy_memory": {
+        "cuda_used": 712769536,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 817930240
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "stress",
+      "record_id": "fp32_stress_none_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.12357278604758903,
+      "cublas": {
+        "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+        "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+        "version": 130100,
+        "handle": 386837344,
+        "ownership": "engine-owned",
+        "workspace_bytes": 8519680,
+        "stream": 0,
+        "math_mode": 2,
+        "required_math_mode": 2,
+        "pointer_mode": 0,
+        "compute_type": 69,
+        "algorithm": -1,
+        "input_output_type": 0,
+        "nvidia_tf32_override": "0"
+      },
+      "after_prepare_memory": {
+        "cuda_used": 744226816,
+        "torch_allocated": 8519680,
+        "torch_reserved": 20971520,
+        "rss_bytes": 922099712
+      },
+      "device_used_range": 0,
+      "rss_range": 4255744,
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 358612992,
+          "host": {
+            "active_bytes.allocated": 136,
+            "active_bytes.current": 136,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 136,
+            "active_requests.allocated": 34,
+            "active_requests.current": 34,
+            "active_requests.freed": 0,
+            "active_requests.peak": 34,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1767,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1767,
+            "host_alloc_time.min": 1767,
+            "host_alloc_time.total": 1767,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 358612992
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 136,
+            "active_bytes.current": 136,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 136,
+            "active_requests.allocated": 34,
+            "active_requests.current": 34,
+            "active_requests.freed": 0,
+            "active_requests.peak": 34,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1767,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1767,
+            "host_alloc_time.min": 1767,
+            "host_alloc_time.total": 1767,
+            "host_free_time.avg": 1520,
+            "host_free_time.count": 1,
+            "host_free_time.max": 1520,
+            "host_free_time.min": 1520,
+            "host_free_time.total": 1520,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.09200546296779066,
+      "after_destroy_memory": {
+        "cuda_used": 712769536,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 959815680
+      }
+    },
+    {
+      "method": "rt",
+      "kind": "profile",
+      "record_id": "rt_profile_nsys_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.199691737012472,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 719060992,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1416568832
+      },
+      "close_receipt": null,
+      "destruction_seconds_diagnostic": 0.03979669895488769,
+      "after_destroy_memory": {
+        "cuda_used": 1618739200,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1409589248
+      }
+    },
+    {
+      "method": "tc",
+      "kind": "profile",
+      "record_id": "tc_profile_nsys_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 3.941007889807224e-06,
+      "after_prepare_memory": {
+        "cuda_used": 742129664,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1342607360
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 425721856,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 950,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 950,
+            "host_alloc_time.min": 950,
+            "host_alloc_time.total": 950,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 425721856
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 950,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 950,
+            "host_alloc_time.min": 950,
+            "host_alloc_time.total": 950,
+            "host_free_time.avg": 315,
+            "host_free_time.count": 1,
+            "host_free_time.max": 315,
+            "host_free_time.min": 315,
+            "host_free_time.total": 315,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.0775528650265187,
+      "after_destroy_memory": {
+        "cuda_used": 742129664,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1375969280
+      }
+    },
+    {
+      "method": "fp32",
+      "kind": "profile",
+      "record_id": "fp32_profile_nsys_r3",
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.15621222101617604,
+      "cublas": {
+        "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+        "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+        "version": 130100,
+        "handle": 718179760,
+        "ownership": "engine-owned",
+        "workspace_bytes": 8519680,
+        "stream": 0,
+        "math_mode": 2,
+        "required_math_mode": 2,
+        "pointer_mode": 0,
+        "compute_type": 69,
+        "algorithm": -1,
+        "input_output_type": 0,
+        "nvidia_tf32_override": "0"
+      },
+      "after_prepare_memory": {
+        "cuda_used": 773586944,
+        "torch_allocated": 8519680,
+        "torch_reserved": 20971520,
+        "rss_bytes": 1484484608
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 358612992,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1132,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1132,
+            "host_alloc_time.min": 1132,
+            "host_alloc_time.total": 1132,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 358612992
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 1132,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 1132,
+            "host_alloc_time.min": 1132,
+            "host_alloc_time.total": 1132,
+            "host_free_time.avg": 328,
+            "host_free_time.count": 1,
+            "host_free_time.max": 328,
+            "host_free_time.min": 328,
+            "host_free_time.total": 328,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.07719135197112337,
+      "after_destroy_memory": {
+        "cuda_used": 742129664,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1521364992
+      }
+    }
+  ],
+  "retained_failed_campaigns": [
+    {
+      "path": "admission.json",
+      "failed_record": "rt_safety_memcheck_a0",
+      "sha256": "426b957653a1fabf41477feeec5ec382a07de99d69061c818c85c2cccc5ea909"
+    },
+    {
+      "path": "admission_r1.json",
+      "failed_record": "tc_safety_memcheck_r1",
+      "sha256": "1e15d34a9da5db6ad7367d5e82db296f0a31e6cf748fbdfa66579754f5a85344"
+    },
+    {
+      "path": "admission_r2.json",
+      "failed_record": "fp32_safety_memcheck_r2",
+      "sha256": "0914e673bd256109a5e1409bbe40a8bf6684ecfde3bb2d1909289bb2bc8dc447"
+    }
+  ],
+  "guards": [
+    {
+      "label": "g19_allocator_probe_r1",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "d74bb950f7e90f5c67bf9fe860ca71c141ecee519324750fc12ad99c742301cd"
+    },
+    {
+      "label": "g19_fp32_matrix_none_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "15d47f904304e6571e142d25b3857e9a7593f82c210d4da1f3ea867803606b02"
+    },
+    {
+      "label": "g19_fp32_matrix_none_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "5dc961cbeb15dda53e89fc34b8de1f1bc7f674367089aef9f67c728082d9b00d"
+    },
+    {
+      "label": "g19_fp32_profile_nsys_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "b639d1e93fb80f8b38ea6149cef78de44db1f7a21d662a5201d3507a5d171692"
+    },
+    {
+      "label": "g19_fp32_runtime_bind_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "29ed3af7bee76e398a51b97037639dd63fd3c4d9aa234f738b3505b74020546a"
+    },
+    {
+      "label": "g19_fp32_safety_memcheck_r2",
+      "admitted": false,
+      "gpu": 3,
+      "result_sha256": null
+    },
+    {
+      "label": "g19_fp32_safety_memcheck_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "21005deb6f58804e7c8c70c68887a8158c6f3c9d1537bc76bf06c8d57d10cfb1"
+    },
+    {
+      "label": "g19_fp32_stress_none_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "023fc10edaa6739fad293de94a70c774b75456a5aeb833821bef6cc94d08c325"
+    },
+    {
+      "label": "g19_rt_matrix_none_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "fc5f0e1d9b313b899c161262f5ed429b77f145df3709d1339550f611dbb5f31f"
+    },
+    {
+      "label": "g19_rt_matrix_none_r1",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "69829687b3076f3f51d4dff6bddb95cb014446103742c68bdfcbb1b5e682529c"
+    },
+    {
+      "label": "g19_rt_on_matrix_none_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "700d61344de624b66c0f4c3b9e88c2e63a5498ea33b34ec742a62dd5d49e1c3b"
+    },
+    {
+      "label": "g19_rt_on_matrix_none_r1",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "26771a2f941310f7535ba5e157a284731b371c92dbd140a1757d9bd8592da08e"
+    },
+    {
+      "label": "g19_rt_profile_nsys_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "08d44422177843ab0f3b73a2b45c1fb736ddbbca506b11ca8aaa511694800364"
+    },
+    {
+      "label": "g19_rt_safety_memcheck_a0",
+      "admitted": false,
+      "gpu": 3,
+      "result_sha256": null
+    },
+    {
+      "label": "g19_rt_safety_memcheck_r1",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "f03268d72a97a23766c474e46ace15e960c3e71eb1473e481de76bf6af71f8e7"
+    },
+    {
+      "label": "g19_rt_safety_synccheck_r1",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "cd36ddf73d46959f4e551bcf5649522b727234721cd588eba5109c2a1c2220d9"
+    },
+    {
+      "label": "g19_rt_stress_none_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "beacd15c8cbf81ebfda16ae8541e7d9aec738b93df2a13f8f3778b31562f98f9"
+    },
+    {
+      "label": "g19_screen_b0_p0_rt_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "2ee717753e4e948930f041c845efeaacc3da0fad4c84cdea2b259f01c23a3481"
+    },
+    {
+      "label": "g19_screen_b0_p1_tc_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "d52e837f75518574fce3b1805e168181c731dc77fb37ff8a68ae9042bc1bd89d"
+    },
+    {
+      "label": "g19_screen_b0_p2_fp32_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "ac918d9a8e8bd319cc625a142798088c5edde26ab3f85cd63618b7fb2107371f"
+    },
+    {
+      "label": "g19_screen_b1_p0_fp32_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "7162e0680af2069065c1e399789daa8da412350cf283d3a533fa912c7c083838"
+    },
+    {
+      "label": "g19_screen_b1_p1_tc_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "5b9cbbed666c56ca854cda4b4cfd2a6d5562d7f42043aae2e28bd736cfd748da"
+    },
+    {
+      "label": "g19_screen_b1_p2_rt_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "84fd39b087cff6de9ce04b402dca07806a911fc97689e7eba1d4af8fedf1d567"
+    },
+    {
+      "label": "g19_tc_matrix_none_a0",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "0b45c0a21363a3a92acb3cc73f14d9a444242a3cca111bd736ff53a3187be323"
+    },
+    {
+      "label": "g19_tc_profile_nsys_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "7a9308aa527cc91003a6c9cd892e816ea50ef2d65c739e9da3559856ba1ca0a2"
+    },
+    {
+      "label": "g19_tc_runtime_bind_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "d6d76be28b9c83a9d3847f004fa568841e9b94ed08b4c8d4f0c8551f21e4486a"
+    },
+    {
+      "label": "g19_tc_safety_memcheck_r1",
+      "admitted": false,
+      "gpu": 3,
+      "result_sha256": null
+    },
+    {
+      "label": "g19_tc_safety_memcheck_r2",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "8af967242cf7bea3d111c3f4302eede1aeacaa083c210b76cafc1cacb0e60df9"
+    },
+    {
+      "label": "g19_tc_stress_none_r3",
+      "admitted": true,
+      "gpu": 3,
+      "result_sha256": "efdceb2de1798a31fd0425875a4023b63d814d4dc0d81402959ab0419ac979e6"
+    }
+  ],
+  "unchanged_archives": {
+    "g17_rthiss_pair_contract_20260905": 420,
+    "g18_rthiss_conservative_repair_20260905": 593
+  },
+  "old_core_and_manuscript_unchanged_files": 42,
+  "screen_pairs": [
+    {
+      "block": 0,
+      "medians": {
+        "rt": 0.074063632,
+        "tc": 0.00660248,
+        "fp32": 0.008498871
+      },
+      "rt_over_tc": 11.217547345845803,
+      "fp32_over_tc": 1.28722404308684,
+      "strongest_control_over_tc": 1.28722404308684
+    },
+    {
+      "block": 1,
+      "medians": {
+        "fp32": 0.008586318,
+        "tc": 0.0081067,
+        "rt": 0.083041719
+      },
+      "rt_over_tc": 10.243590980300246,
+      "fp32_over_tc": 1.0591631613356853,
+      "strongest_control_over_tc": 1.0591631613356853
+    }
+  ],
+  "narrow_screen_pass": false,
+  "bounded_full_shutdown_memcheck_pass": true,
+  "bounded_reusable_comparison_admitted": true,
+  "general_rt_candidate_certificate": false,
+  "exact_real_claim": false,
+  "formal_or_sustained_promotion": false,
+  "novelty_pass": false,
+  "paper_edited": false,
+  "postflight_gpu3_idle": true,
+  "postflight_sha256": "13cbd284d1864ef98aa33d8a5258281b84da748635bb2c2e3877986b1367c1cf"
+}

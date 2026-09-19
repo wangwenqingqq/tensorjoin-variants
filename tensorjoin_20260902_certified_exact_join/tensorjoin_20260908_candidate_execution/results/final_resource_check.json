@@ -1,0 +1,24 @@
+{
+  "pass_": true,
+  "checked_frozen_files": 183,
+  "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %",
+  "target_processes": [],
+  "locks_available": [
+    "/tmp/tensorjoin_gpu2_campaign.lock",
+    "/tmp/tensorjoin_g5_gpu2.lock"
+  ],
+  "openblas_pools": [
+    {
+      "library": "libscipy_openblas64_-56d6093b.so",
+      "symbol": "scipy_openblas_get_num_threads64_",
+      "threads": 4
+    }
+  ],
+  "environment": {
+    "OMP_NUM_THREADS": "4",
+    "MKL_NUM_THREADS": "4",
+    "OPENBLAS_NUM_THREADS": null
+  },
+  "host": "gpu-host-8",
+  "time": 1788861842.8595963
+}

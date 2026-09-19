@@ -1,0 +1,873 @@
+SLOT_WAIT_START slot=0 attempt=0 2026-09-03T04:24:31+00:00
+GPU0_EMPTY_NOW slot=0 attempt=0 2026-09-03T04:24:31+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "35.06", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "KC", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 0, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "0", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_0_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "da088cc7315741789dbcc23782bbc8583cd7a1753dbe6aaa544d4e25c75b8f27", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_0_kc_a0_preflight.log", "preflight_log_sha256": "175d55548f6d5d5f82963426badf45f662a7723f755525f30e78ccf79b6522b5", "process_id": 0, "raw_log": "raw/g3d_formal_process_0_kc_a0.log", "raw_log_sha256": "2288a5176610860ace4611307f95620d7daf54a1d5a421a592abdef37d9170e4", "result": "results/g3d_formal_process_0_kc_a0.json", "result_sha256": "b5b6f7ca88ef0e0644f8fa0144e53b63c7ff9da87aaced1ce70f5f047a4e121a", "returncode": 0, "target_gpu_pids": [3610357], "wall_seconds": 36.80097699165344}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 37.285046100616455}
+SLOT_ADMITTED slot=0 2026-09-03T04:25:08+00:00
+SLOT_WAIT_START slot=1 attempt=0 2026-09-03T04:25:08+00:00
+GPU0_EMPTY_NOW slot=1 attempt=0 2026-09-03T04:25:08+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "85.30", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "CK", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 1, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "1", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_1_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "6d23d3cfeaa80eb3479ea2df46141d98036ba9cecf7716c72ea4f7c80bf79830", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_1_ck_a0_preflight.log", "preflight_log_sha256": "c18e15ff9bba992fe14c6785131e9c74e459c8edc1c121efce4c72061b2c11ce", "process_id": 1, "raw_log": "raw/g3d_formal_process_1_ck_a0.log", "raw_log_sha256": "90a9ddf5e5d1e83f904154f004d5185c87ec4e5cbc4b824757362f4d60bd82e2", "result": "results/g3d_formal_process_1_ck_a0.json", "result_sha256": "9a6f7013b50d2e4cc5a62fdba807302d457ec5829ac9da0e4a9693237057cb8d", "returncode": 0, "target_gpu_pids": [3618630], "wall_seconds": 37.16367769241333}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 37.63633346557617}
+SLOT_ADMITTED slot=1 2026-09-03T04:25:46+00:00
+SLOT_WAIT_START slot=2 attempt=0 2026-09-03T04:25:46+00:00
+GPU0_EMPTY_NOW slot=2 attempt=0 2026-09-03T04:25:46+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "84.28", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "KC", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 2, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "2", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_2_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "0041ccfcd318faed6031ff59c68419e931da1267859202a68b75a36961f09d8a", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_2_kc_a0_preflight.log", "preflight_log_sha256": "dad7239231b1110e8f4d660851be0ee0700aada1568f090a1508f880586d762a", "process_id": 2, "raw_log": "raw/g3d_formal_process_2_kc_a0.log", "raw_log_sha256": "a23da3ead754f1a60dabdf99b67c7085a747ea911735b44bc9c7abc9e6bf48ec", "result": "results/g3d_formal_process_2_kc_a0.json", "result_sha256": "cda2706270b1448c7661da96e774f217df6167000998935cf32202de9bae7a0c", "returncode": 0, "target_gpu_pids": [3619259], "wall_seconds": 37.88136267662048}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 38.35519790649414}
+SLOT_ADMITTED slot=2 2026-09-03T04:26:25+00:00
+SLOT_WAIT_START slot=3 attempt=0 2026-09-03T04:26:25+00:00
+GPU0_EMPTY_NOW slot=3 attempt=0 2026-09-03T04:26:25+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "84.62", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "CK", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 3, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "3", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_3_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "00d0c4b10a6ad50aff4acc7f862c1c8367802bde0d24227c560b058adcd71311", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_3_ck_a0_preflight.log", "preflight_log_sha256": "da8deb5972f3f21fc97ab7e72281e97b6857b37db4050c397252615675ae2e6b", "process_id": 3, "raw_log": "raw/g3d_formal_process_3_ck_a0.log", "raw_log_sha256": "cde1df6cb20584f351713eda529c0e51a599ea73b833ce19bd98ca1aa64dcc99", "result": "results/g3d_formal_process_3_ck_a0.json", "result_sha256": "503c98e6071df6d49b35b8c02ae2950daad64ce847608874d128df570a47bd17", "returncode": 0, "target_gpu_pids": [3638018], "wall_seconds": 36.21657919883728}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 36.693363428115845}
+SLOT_ADMITTED slot=3 2026-09-03T04:27:02+00:00
+SLOT_WAIT_START slot=4 attempt=0 2026-09-03T04:27:02+00:00
+GPU0_EMPTY_NOW slot=4 attempt=0 2026-09-03T04:27:02+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "84.58", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "CK", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 4, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "4", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_4_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "3276588cfe1fe21ffb9a892b69ae0f85c625f87c7452bde705f662d6cf13a38a", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_4_ck_a0_preflight.log", "preflight_log_sha256": "efa5926e5a5ec55c48108787f93bc0882ba4e40fc1666a79d7ec03869bf2b6b3", "process_id": 4, "raw_log": "raw/g3d_formal_process_4_ck_a0.log", "raw_log_sha256": "fde3715af36a7f35dc137874c39dbbd6ca0659dddedc85fb1259c7a60b5bafb9", "result": "results/g3d_formal_process_4_ck_a0.json", "result_sha256": "b2776984534f9eb34456a5a7b0c1530422a0c0e25855bb318650bd02e1fe20d3", "returncode": 0, "target_gpu_pids": [3659880], "wall_seconds": 37.62767148017883}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 38.09712791442871}
+SLOT_ADMITTED slot=4 2026-09-03T04:27:40+00:00
+SLOT_WAIT_START slot=5 attempt=0 2026-09-03T04:27:40+00:00
+GPU0_EMPTY_NOW slot=5 attempt=0 2026-09-03T04:27:40+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "86.05", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "KC", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 5, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "5", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_5_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "db0b5827f036f70a98c0aca3a743871ca42efa432ad19768b160e4849a12c5a0", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_5_kc_a0_preflight.log", "preflight_log_sha256": "be54c7c8acae0049c87c74a2b2d676ae715aeeb4c09d6959e9b0a5487bc75f19", "process_id": 5, "raw_log": "raw/g3d_formal_process_5_kc_a0.log", "raw_log_sha256": "e00c54b6069cef32c0a08e95efa9deb909e64cc99d4db01fb7f188cd1993748f", "result": "results/g3d_formal_process_5_kc_a0.json", "result_sha256": "45bd4d30cc959768d89b771f3aa22dd973687b75b622563bcd794ef75a3b6e5c", "returncode": 0, "target_gpu_pids": [3660769], "wall_seconds": 37.89722442626953}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 38.36827731132507}
+SLOT_ADMITTED slot=5 2026-09-03T04:28:19+00:00
+SLOT_WAIT_START slot=6 attempt=0 2026-09-03T04:28:19+00:00
+GPU0_EMPTY_NOW slot=6 attempt=0 2026-09-03T04:28:19+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "17", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "85.11", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "CK", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 6, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "6", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_6_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "641ffceb6410a155f48a0a7c8a6086552854a8cde69940739716fe8abbe41cf2", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_6_ck_a0_preflight.log", "preflight_log_sha256": "61021b15513e4aefa02381cdde20403a0920d83121da2adfafa2a53cf35f71de", "process_id": 6, "raw_log": "raw/g3d_formal_process_6_ck_a0.log", "raw_log_sha256": "3b0333fc3e141938804b7a6c235da7fbb6317ad773fdc3021c6545c871fc8e73", "result": "results/g3d_formal_process_6_ck_a0.json", "result_sha256": "4fa0e1bf6957f335f93b509f1f95b6867694ea1145e8f6a65f26313004f5b532", "returncode": 0, "target_gpu_pids": [3680053], "wall_seconds": 36.51726293563843}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 36.98635816574097}
+SLOT_ADMITTED slot=6 2026-09-03T04:28:56+00:00
+SLOT_WAIT_START slot=7 attempt=0 2026-09-03T04:28:56+00:00
+GPU0_EMPTY_NOW slot=7 attempt=0 2026-09-03T04:28:56+00:00
+SLOT_COMPLETE {"attempt": 0, "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing", "gpu0": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "17", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "85.61", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "order": "KC", "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63", "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b", "phase": "formal", "process_id": 7, "record": {"admitted": true, "attempt": 0, "cache_path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py", "--phase", "formal", "--process-id", "7", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "100", "--sustained-launches", "1000"], "contaminated": false, "external_monitor_max_gpu_utilization_percent": 100, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "occupancy_log": "raw/g3d_formal_process_7_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "99408b6f1e165ed3fe9393f570272cd600daf37fa345f6a658891d7e5f1a624f", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g3d_formal_process_7_kc_a0_preflight.log", "preflight_log_sha256": "4dd64faca45bea248a525cd8a3a0bea097618d9610833f3ebef07ec8172865d1", "process_id": 7, "raw_log": "raw/g3d_formal_process_7_kc_a0.log", "raw_log_sha256": "3dde3b98d2b7d606abdca112487cb261b645dbadd4a5d1dded2268ed13e1ef4b", "result": "results/g3d_formal_process_7_kc_a0.json", "result_sha256": "4439c9804f179f0a2ca6dd7d385f527f2779eaccc32d4778f3dca861b016ff85", "returncode": 0, "target_gpu_pids": [3699321], "wall_seconds": 36.85033655166626}, "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398", "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae", "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a", "settings": {"observations": 100, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "wall_seconds": 37.32336688041687}
+SLOT_ADMITTED slot=7 2026-09-03T04:29:34+00:00
+{
+  "admitted_process_ids": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "driver_log": null,
+  "driver_log_sha256": null,
+  "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing",
+  "finalizer_sha256": "4d7ade07e600ab19c44399f39723ed8edbdf64b847aec111b98138fc27a22684",
+  "host": "gpu-host-8",
+  "max_attempts_per_slot": 3,
+  "monitor_interval_seconds": 0.25,
+  "orders": [
+    "KC",
+    "CK",
+    "KC",
+    "CK",
+    "CK",
+    "KC",
+    "CK",
+    "KC"
+  ],
+  "original_orchestrator_sha256": "8a856bff2ef31990826d32f9bfa1836f152e395a258dd8394a74a4c7438f5a63",
+  "original_protocol_sha256": "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b",
+  "phase": "formal",
+  "quiescence_seconds_before_each_launched_process": 30.0,
+  "records": [
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "0",
+        "--attempt",
+        "0",
+        "--order",
+        "KC",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_0_kc_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "da088cc7315741789dbcc23782bbc8583cd7a1753dbe6aaa544d4e25c75b8f27",
+      "order": "KC",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_0_kc_a0_preflight.log",
+      "preflight_log_sha256": "175d55548f6d5d5f82963426badf45f662a7723f755525f30e78ccf79b6522b5",
+      "process_id": 0,
+      "raw_log": "raw/g3d_formal_process_0_kc_a0.log",
+      "raw_log_sha256": "2288a5176610860ace4611307f95620d7daf54a1d5a421a592abdef37d9170e4",
+      "result": "results/g3d_formal_process_0_kc_a0.json",
+      "result_sha256": "b5b6f7ca88ef0e0644f8fa0144e53b63c7ff9da87aaced1ce70f5f047a4e121a",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3610357
+      ],
+      "wall_seconds": 36.80097699165344
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "1",
+        "--attempt",
+        "0",
+        "--order",
+        "CK",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_1_ck_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "6d23d3cfeaa80eb3479ea2df46141d98036ba9cecf7716c72ea4f7c80bf79830",
+      "order": "CK",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_1_ck_a0_preflight.log",
+      "preflight_log_sha256": "c18e15ff9bba992fe14c6785131e9c74e459c8edc1c121efce4c72061b2c11ce",
+      "process_id": 1,
+      "raw_log": "raw/g3d_formal_process_1_ck_a0.log",
+      "raw_log_sha256": "90a9ddf5e5d1e83f904154f004d5185c87ec4e5cbc4b824757362f4d60bd82e2",
+      "result": "results/g3d_formal_process_1_ck_a0.json",
+      "result_sha256": "9a6f7013b50d2e4cc5a62fdba807302d457ec5829ac9da0e4a9693237057cb8d",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3618630
+      ],
+      "wall_seconds": 37.16367769241333
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "2",
+        "--attempt",
+        "0",
+        "--order",
+        "KC",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_2_kc_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "0041ccfcd318faed6031ff59c68419e931da1267859202a68b75a36961f09d8a",
+      "order": "KC",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_2_kc_a0_preflight.log",
+      "preflight_log_sha256": "dad7239231b1110e8f4d660851be0ee0700aada1568f090a1508f880586d762a",
+      "process_id": 2,
+      "raw_log": "raw/g3d_formal_process_2_kc_a0.log",
+      "raw_log_sha256": "a23da3ead754f1a60dabdf99b67c7085a747ea911735b44bc9c7abc9e6bf48ec",
+      "result": "results/g3d_formal_process_2_kc_a0.json",
+      "result_sha256": "cda2706270b1448c7661da96e774f217df6167000998935cf32202de9bae7a0c",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3619259
+      ],
+      "wall_seconds": 37.88136267662048
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "3",
+        "--attempt",
+        "0",
+        "--order",
+        "CK",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_3_ck_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "00d0c4b10a6ad50aff4acc7f862c1c8367802bde0d24227c560b058adcd71311",
+      "order": "CK",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_3_ck_a0_preflight.log",
+      "preflight_log_sha256": "da8deb5972f3f21fc97ab7e72281e97b6857b37db4050c397252615675ae2e6b",
+      "process_id": 3,
+      "raw_log": "raw/g3d_formal_process_3_ck_a0.log",
+      "raw_log_sha256": "cde1df6cb20584f351713eda529c0e51a599ea73b833ce19bd98ca1aa64dcc99",
+      "result": "results/g3d_formal_process_3_ck_a0.json",
+      "result_sha256": "503c98e6071df6d49b35b8c02ae2950daad64ce847608874d128df570a47bd17",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3638018
+      ],
+      "wall_seconds": 36.21657919883728
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "4",
+        "--attempt",
+        "0",
+        "--order",
+        "CK",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_4_ck_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "3276588cfe1fe21ffb9a892b69ae0f85c625f87c7452bde705f662d6cf13a38a",
+      "order": "CK",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_4_ck_a0_preflight.log",
+      "preflight_log_sha256": "efa5926e5a5ec55c48108787f93bc0882ba4e40fc1666a79d7ec03869bf2b6b3",
+      "process_id": 4,
+      "raw_log": "raw/g3d_formal_process_4_ck_a0.log",
+      "raw_log_sha256": "fde3715af36a7f35dc137874c39dbbd6ca0659dddedc85fb1259c7a60b5bafb9",
+      "result": "results/g3d_formal_process_4_ck_a0.json",
+      "result_sha256": "b2776984534f9eb34456a5a7b0c1530422a0c0e25855bb318650bd02e1fe20d3",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3659880
+      ],
+      "wall_seconds": 37.62767148017883
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "5",
+        "--attempt",
+        "0",
+        "--order",
+        "KC",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_5_kc_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "db0b5827f036f70a98c0aca3a743871ca42efa432ad19768b160e4849a12c5a0",
+      "order": "KC",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_5_kc_a0_preflight.log",
+      "preflight_log_sha256": "be54c7c8acae0049c87c74a2b2d676ae715aeeb4c09d6959e9b0a5487bc75f19",
+      "process_id": 5,
+      "raw_log": "raw/g3d_formal_process_5_kc_a0.log",
+      "raw_log_sha256": "e00c54b6069cef32c0a08e95efa9deb909e64cc99d4db01fb7f188cd1993748f",
+      "result": "results/g3d_formal_process_5_kc_a0.json",
+      "result_sha256": "45bd4d30cc959768d89b771f3aa22dd973687b75b622563bcd794ef75a3b6e5c",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3660769
+      ],
+      "wall_seconds": 37.89722442626953
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "6",
+        "--attempt",
+        "0",
+        "--order",
+        "CK",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_6_ck_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "641ffceb6410a155f48a0a7c8a6086552854a8cde69940739716fe8abbe41cf2",
+      "order": "CK",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_6_ck_a0_preflight.log",
+      "preflight_log_sha256": "61021b15513e4aefa02381cdde20403a0920d83121da2adfafa2a53cf35f71de",
+      "process_id": 6,
+      "raw_log": "raw/g3d_formal_process_6_ck_a0.log",
+      "raw_log_sha256": "3b0333fc3e141938804b7a6c235da7fbb6317ad773fdc3021c6545c871fc8e73",
+      "result": "results/g3d_formal_process_6_ck_a0.json",
+      "result_sha256": "4fa0e1bf6957f335f93b509f1f95b6867694ea1145e8f6a65f26313004f5b532",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3680053
+      ],
+      "wall_seconds": 36.51726293563843
+    },
+    {
+      "admitted": true,
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3d_complete_pipeline_timing.py",
+        "--phase",
+        "formal",
+        "--process-id",
+        "7",
+        "--attempt",
+        "0",
+        "--order",
+        "KC",
+        "--warmups",
+        "20",
+        "--observations",
+        "100",
+        "--sustained-launches",
+        "1000"
+      ],
+      "contaminated": false,
+      "external_monitor_max_gpu_utilization_percent": 100,
+      "external_monitor_max_process_memory_mib": 1010,
+      "foreign_rows": [],
+      "occupancy_log": "raw/g3d_formal_process_7_kc_a0_occupancy.jsonl",
+      "occupancy_log_sha256": "99408b6f1e165ed3fe9393f570272cd600daf37fa345f6a658891d7e5f1a624f",
+      "order": "KC",
+      "phase": "formal",
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g3d_formal_process_7_kc_a0_preflight.log",
+      "preflight_log_sha256": "4dd64faca45bea248a525cd8a3a0bea097618d9610833f3ebef07ec8172865d1",
+      "process_id": 7,
+      "raw_log": "raw/g3d_formal_process_7_kc_a0.log",
+      "raw_log_sha256": "3dde3b98d2b7d606abdca112487cb261b645dbadd4a5d1dded2268ed13e1ef4b",
+      "result": "results/g3d_formal_process_7_kc_a0.json",
+      "result_sha256": "4439c9804f179f0a2ca6dd7d385f527f2779eaccc32d4778f3dca861b016ff85",
+      "returncode": 0,
+      "target_gpu_pids": [
+        3699321
+      ],
+      "wall_seconds": 36.85033655166626
+    }
+  ],
+  "resume_orchestrator_sha256": "3fabc11881c13501c5b61d9414014f9e4b56d872ce25e79a4931da367d797398",
+  "resume_protocol_sha256": "c0ecae17ee10293980cb43c6a905129f74074e1b94c0bcced01fce5165e468ae",
+  "runner_sha256": "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a",
+  "settings": {
+    "observations": 100,
+    "sustained_launches": 1000,
+    "warmups": 20
+  },
+  "slot_manifest_sha256": {
+    "results/g3d_formal_slot_0_kc_a0_manifest.json": "d44a7993373077413c8a80c53075c64d7305bf0300e4cbd4e33a9a60070bf817",
+    "results/g3d_formal_slot_1_ck_a0_manifest.json": "9b6f514319f8221c56de8833282b3bf4f6bd1927b83a1abe8d1944bb574402ab",
+    "results/g3d_formal_slot_2_kc_a0_manifest.json": "e8f527d3d46083197eba5fe94c7a1df1000adf6e1c264a32d5bc7d5522670615",
+    "results/g3d_formal_slot_3_ck_a0_manifest.json": "9a95b4d5143bedc8603d2b6dfb5e6556aa6e209604ad6fbf6daef57747afe788",
+    "results/g3d_formal_slot_4_ck_a0_manifest.json": "e8df96bea8323feb2dff0b1ca5d2fe236baee9d1db0dcc3f72b61985c075b55f",
+    "results/g3d_formal_slot_5_kc_a0_manifest.json": "a583eedf147b530e4165f33882ffd4e4499feb3dae47602052c6af98f6db8a7c",
+    "results/g3d_formal_slot_6_ck_a0_manifest.json": "c20b62823de30c69524ea14983f40fe4bbca1256f1755cfbd03960d2aa6df0f4",
+    "results/g3d_formal_slot_7_kc_a0_manifest.json": "42ba5f4dca09edd0cd5be516ef4f2731897c2a515b8262a743cbec1adb3b9f84"
+  },
+  "slot_manifests": [
+    "results/g3d_formal_slot_0_kc_a0_manifest.json",
+    "results/g3d_formal_slot_1_ck_a0_manifest.json",
+    "results/g3d_formal_slot_2_kc_a0_manifest.json",
+    "results/g3d_formal_slot_3_ck_a0_manifest.json",
+    "results/g3d_formal_slot_4_ck_a0_manifest.json",
+    "results/g3d_formal_slot_5_kc_a0_manifest.json",
+    "results/g3d_formal_slot_6_ck_a0_manifest.json",
+    "results/g3d_formal_slot_7_kc_a0_manifest.json"
+  ],
+  "status": "8_clean_paired_processes_complete_via_resume1"
+}
+{
+  "auditor_sha256": "7447a889aef5dad8b28f632262e340acfde9eb788aeff329bc31853244821816",
+  "expected_cubins": {
+    "analytic_certificate_compact_i64.cubin": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "certified_fp32_filter_i64.cubin": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670",
+    "refine_ambiguous_fp64_i64.cubin": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+  },
+  "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing",
+  "formal_runtime_binary_gate_pass": true,
+  "measurement_status": "runtime_binary_identity_not_performance",
+  "phase": "formal",
+  "processes": [
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_0_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 0
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_1_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 1
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_2_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 2
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_3_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 3
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_4_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 4
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_5_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 5
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_6_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 6
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g3d_formal_process_7_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "hashes_exact": true,
+      "names_exact": true,
+      "one_each": true,
+      "pass": true,
+      "process_id": 7
+    }
+  ],
+  "runtime_binary_gate_pass": true
+}
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "promote_shape_local_attribution",
+  "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing",
+  "formal_gate_pass": true,
+  "formal_thresholds": {
+    "bootstrap_ci95_lower_minimum": 1.15,
+    "process_median_wins_required": 8,
+    "sustained_geometric_mean_minimum": 1.1,
+    "sustained_wins_required": 8
+  },
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 285.40799021720886,
+      "p10_us": 282.943993806839,
+      "p90_us": 290.94720780849457
+    },
+    "keeper_two_stage": {
+      "median_us": 763.0880177021027,
+      "p10_us": 753.9168179035187,
+      "p90_us": 767.9423928260803
+    }
+  },
+  "measurement_scope": "complete resident-GPU pipeline attribution",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 286.5599989891052,
+        "p10_us": 283.5807979106903,
+        "p90_us": 292.64639914035797
+      },
+      "keeper_two_stage": {
+        "median_us": 762.5920176506042,
+        "p10_us": 752.8223931789398,
+        "p90_us": 766.5024042129517
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 284.7360074520111,
+        "p10_us": 282.3616027832031,
+        "p90_us": 287.0495945215225
+      },
+      "keeper_two_stage": {
+        "median_us": 763.727992773056,
+        "p10_us": 756.134420633316,
+        "p90_us": 770.0192153453827
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.6695849386613086,
+  "paired_process_bootstrap": {
+    "ci95_lower": 2.6581045547879345,
+    "ci95_upper": 2.677861185209252,
+    "samples": 20000,
+    "seed": 20260903
+  },
+  "phase": "formal",
+  "process_median_wins": 8,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.59200263023376,
+      "candidate_sustained_mean_us": 255.71597290039062,
+      "keeper_median_us": 762.607991695404,
+      "keeper_sustained_mean_us": 733.821044921875,
+      "median_speedup_keeper_over_candidate": 2.6796536257072883,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g3d_formal_process_0_kc_a0.json",
+      "result_sha256": "b5b6f7ca88ef0e0644f8fa0144e53b63c7ff9da87aaced1ce70f5f047a4e121a",
+      "sustained_speedup_keeper_over_candidate": 2.8696723032147906
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 286.1279994249344,
+      "candidate_sustained_mean_us": 255.5897674560547,
+      "keeper_median_us": 763.7920081615448,
+      "keeper_sustained_mean_us": 733.8423461914062,
+      "median_speedup_keeper_over_candidate": 2.669406732988833,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g3d_formal_process_1_ck_a0.json",
+      "result_sha256": "9a6f7013b50d2e4cc5a62fdba807302d457ec5829ac9da0e4a9693237057cb8d",
+      "sustained_speedup_keeper_over_candidate": 2.8711726353347884
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 285.7919931411743,
+      "candidate_sustained_mean_us": 255.6623992919922,
+      "keeper_median_us": 763.3920013904572,
+      "keeper_sustained_mean_us": 729.590087890625,
+      "median_speedup_keeper_over_candidate": 2.67114551740909,
+      "order": "KC",
+      "process_id": 2,
+      "result": "results/g3d_formal_process_2_kc_a0.json",
+      "result_sha256": "cda2706270b1448c7661da96e774f217df6167000998935cf32202de9bae7a0c",
+      "sustained_speedup_keeper_over_candidate": 2.8537246380816432
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.92799401283264,
+      "candidate_sustained_mean_us": 255.596923828125,
+      "keeper_median_us": 761.9040012359619,
+      "keeper_sustained_mean_us": 733.7189331054688,
+      "median_speedup_keeper_over_candidate": 2.67402297157803,
+      "order": "CK",
+      "process_id": 3,
+      "result": "results/g3d_formal_process_3_ck_a0.json",
+      "result_sha256": "503c98e6071df6d49b35b8c02ae2950daad64ce847608874d128df570a47bd17",
+      "sustained_speedup_keeper_over_candidate": 2.870609403729971
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 291.9040024280548,
+      "candidate_sustained_mean_us": 255.63644409179688,
+      "keeper_median_us": 768.671989440918,
+      "keeper_sustained_mean_us": 734.0220336914062,
+      "median_speedup_keeper_over_candidate": 2.6333040419011438,
+      "order": "CK",
+      "process_id": 4,
+      "result": "results/g3d_formal_process_4_ck_a0.json",
+      "result_sha256": "b2776984534f9eb34456a5a7b0c1530422a0c0e25855bb318650bd02e1fe20d3",
+      "sustained_speedup_keeper_over_candidate": 2.871351290694003
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.496009349823,
+      "candidate_sustained_mean_us": 255.6868133544922,
+      "keeper_median_us": 762.5280022621155,
+      "keeper_sustained_mean_us": 733.2283935546875,
+      "median_speedup_keeper_over_candidate": 2.6802766197134704,
+      "order": "KC",
+      "process_id": 5,
+      "result": "results/g3d_formal_process_5_kc_a0.json",
+      "result_sha256": "45bd4d30cc959768d89b771f3aa22dd973687b75b622563bcd794ef75a3b6e5c",
+      "sustained_speedup_keeper_over_candidate": 2.867681692047672
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 286.20800375938416,
+      "candidate_sustained_mean_us": 255.58921813964844,
+      "keeper_median_us": 763.1040215492249,
+      "keeper_sustained_mean_us": 733.6983032226562,
+      "median_speedup_keeper_over_candidate": 2.666256748678379,
+      "order": "CK",
+      "process_id": 6,
+      "result": "results/g3d_formal_process_6_ck_a0.json",
+      "result_sha256": "4fa0e1bf6957f335f93b509f1f95b6867694ea1145e8f6a65f26313004f5b532",
+      "sustained_speedup_keeper_over_candidate": 2.870615233940656
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.11200642585754,
+      "candidate_sustained_mean_us": 255.77127075195312,
+      "keeper_median_us": 762.255996465683,
+      "keeper_sustained_mean_us": 733.857421875,
+      "median_speedup_keeper_over_candidate": 2.6829418652696146,
+      "order": "KC",
+      "process_id": 7,
+      "result": "results/g3d_formal_process_7_kc_a0.json",
+      "result_sha256": "4439c9804f179f0a2ca6dd7d385f527f2779eaccc32d4778f3dca861b016ff85",
+      "sustained_speedup_keeper_over_candidate": 2.869194103456188
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "single_protocol_sha256": [
+    "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b"
+  ],
+  "single_runner_sha256": [
+    "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a"
+  ],
+  "sustained_geometric_mean_speedup": 2.8679973516370114,
+  "sustained_wins": 8
+}
+FORMAL_RESUME_COMPLETE 2026-09-03T04:29:34+00:00

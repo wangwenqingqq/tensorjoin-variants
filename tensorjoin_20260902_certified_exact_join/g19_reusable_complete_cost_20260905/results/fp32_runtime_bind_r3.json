@@ -1,0 +1,36 @@
+{
+  "command": [
+    "ncu",
+    "--nvtx",
+    "--nvtx-include",
+    "G19_BIND_fp32/",
+    "--kernel-name",
+    "regex:magma_sgemmEx_kernel",
+    "--launch-count",
+    "1",
+    "--section",
+    "LaunchStats",
+    "--section",
+    "SourceCounters",
+    "--export",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/artifacts/fp32_runtime_bind_r3",
+    "--page",
+    "raw",
+    "--csv",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/runtime_probe.py",
+    "--method",
+    "fp32",
+    "--record-id",
+    "fp32_runtime_bind_r3"
+  ],
+  "returncode": 0,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_fp32_runtime_bind_r3.json",
+  "inner_sha256": "8e660baa1e512707ca9e6f69b8d7981b37b0b9013a11d6de57f7189f90a9626a",
+  "log_sha256": "82df3ceb849107e8f272447ca8c8715c788634ab972c2b9eda28c75a30db7397",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "diagnostic_only": true,
+  "performance_admitted": false
+}

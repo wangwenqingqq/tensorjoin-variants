@@ -1,0 +1,52 @@
+{
+  "compiled_cache": {},
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "64-dot probe only"
+  },
+  "design_sha256": "f52f1c76d168f2985cca5fff13e0ba74c0f36f3f7c43dcdac57af9bbd61af736",
+  "experiment_id": "tensorjoin_20260905_g15_fp32_first",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "input_contract": {
+    "epsilon": 0.62890625,
+    "expected_count": 3926078,
+    "expected_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4",
+    "smoke_summary_sha256": "b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c",
+    "source_npy_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+    "source_raw_sha256": "f7b51da49d6555fff8e094584b27c8c5c4efbfdcde1db2b7f86e58d9142af326",
+    "threshold_d2": 0.3955230712890625
+  },
+  "kernel_sha256": "f61bc83e8bdfe788881902987f70c909c56f9d140d840d620b9f69ee719f6f32",
+  "library": {
+    "algorithm": -1,
+    "compute_type": 69,
+    "handle": 705583120,
+    "input_output_type": 0,
+    "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+    "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+    "math_mode": 2,
+    "nvidia_tf32_override": "0",
+    "pointer_mode": 0,
+    "required_math_mode": 2,
+    "version": 130100
+  },
+  "numpy": "2.3.1",
+  "nvtx_label": "G15_PEDANTIC_4096_2656_512",
+  "operator_sha256": "56bc9d87768428aa480b1832f413ebb5f606a7f10f398eb6dff0390b64c91010",
+  "phase": "trace",
+  "physical_gpu": 2,
+  "plan_sha256": "52ccce21b1539ba5af80e40ea95bd660e818e78d9748f7d7ca146f072487b171",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "record_id": "ncu_shape1_a0",
+  "runner_sha256": "77fb91b685c4f46bc48f7d8522bdc9bb005ab34257e674893a8440ee764c19de",
+  "scope": "selected-code trace with a 64-dot numerical probe; not a public exact-output run",
+  "shape": [
+    4096,
+    2656,
+    512
+  ],
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0"
+}

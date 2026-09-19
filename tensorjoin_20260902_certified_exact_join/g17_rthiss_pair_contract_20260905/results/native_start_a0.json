@@ -1,0 +1,45 @@
+{
+  "slots": [
+    [
+      "real31",
+      "none",
+      "native_real31_a0"
+    ],
+    [
+      "signed31",
+      "none",
+      "native_signed31_a0"
+    ],
+    [
+      "shuffled_onehot31",
+      "none",
+      "native_shuffled_onehot31_a0"
+    ],
+    [
+      "zeros31",
+      "none",
+      "native_zeros31_a0"
+    ],
+    [
+      "boundary31",
+      "none",
+      "native_boundary31_a0"
+    ],
+    [
+      "cancellation31",
+      "none",
+      "native_cancellation31_a0"
+    ],
+    [
+      "subnormal31",
+      "none",
+      "native_subnormal31_a0"
+    ],
+    [
+      "cifar4096",
+      "none",
+      "native_cifar4096_a0"
+    ]
+  ],
+  "scope": "compatibility/candidate characterization only"
+}

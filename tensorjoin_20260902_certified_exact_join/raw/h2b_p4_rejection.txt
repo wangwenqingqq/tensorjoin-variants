@@ -1,0 +1,12 @@
+decision=REJECT_H2B_PHASE_P
+stop_rule_applied=true
+retained_exact_calls=800
+esc50_panns.t1.median_speedup=1.168532460466321
+esc50_panns.t8.median_speedup=0.6661621042868706
+ucf101_r3d18.t1.median_speedup=1.015851598632616
+ucf101_r3d18.t8.median_speedup=0.7503233731425998
+fresh_process_slots_1_7=not_executed
+sustained=not_executed
+streaming=blocked
+tree_index=blocked
+result_sha256=a61fbf9873f25c6a100e13754330d4dc233f89c085ed7f168a5a2794bc352fe3

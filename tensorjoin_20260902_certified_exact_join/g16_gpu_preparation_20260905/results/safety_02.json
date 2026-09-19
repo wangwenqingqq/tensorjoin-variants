@@ -1,0 +1,24 @@
+{
+  "admitted": false,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g16_fp32_validation_a0",
+    "--expected-result",
+    "g16_gpu_preparation_20260905/results/fp32_gpu_validation_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+    "--phase",
+    "validation",
+    "--record-id",
+    "a0"
+  ],
+  "guard_path": "results/g5_guard_g16_fp32_validation_a0.json",
+  "label": "g16_fp32_validation_a0",
+  "result_path": "g16_gpu_preparation_20260905/results/fp32_gpu_validation_a0.json",
+  "returncode": 2
+}

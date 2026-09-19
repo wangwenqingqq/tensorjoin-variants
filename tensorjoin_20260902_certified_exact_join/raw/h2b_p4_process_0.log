@@ -1,0 +1,7 @@
+@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/cuda/__init__.py:1243: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:335.)
+  return torch._C._cuda_getCurrentBlasHandle()
+P4_PROCESS_CELL {"baseline_median_us": 672.2205, "candidate_median_us": 575.269, "dataset": "esc50_panns", "median_speedup": 1.168532460466321, "slot": 0, "target": 1}
+P4_PROCESS_CELL {"baseline_median_us": 674.4415, "candidate_median_us": 1012.4285, "dataset": "esc50_panns", "median_speedup": 0.6661621042868706, "slot": 0, "target": 8}
+P4_PROCESS_CELL {"baseline_median_us": 505.183, "candidate_median_us": 497.3, "dataset": "ucf101_r3d18", "median_speedup": 1.015851598632616, "slot": 0, "target": 1}
+P4_PROCESS_CELL {"baseline_median_us": 587.6165000000001, "candidate_median_us": 783.151, "dataset": "ucf101_r3d18", "median_speedup": 0.7503233731425998, "slot": 0, "target": 8}
+P4_PROCESS_DONE {"output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/h2b_p4_process_0.json", "slot": 0}

@@ -1,0 +1,16 @@
+        /*0fc0*/                   IMMA.16832.S8.S8.SAT R40, R24.ROW, R52.COL, R40 ;
+        /*0fe0*/                   IMMA.16832.S8.S8.SAT R36, R24.ROW, R50.COL, R36 ;
+        /*1000*/                   IMMA.16832.S8.S8.SAT R44, R24.ROW, R22.COL, R44 ;
+        /*1020*/                   IMMA.16832.S8.S8.SAT R12, R24.ROW, R20.COL, R12 ;
+        /*1040*/                   IMMA.16832.S8.S8.SAT R8, R24.ROW, R52.COL, R8 ;
+        /*1060*/                   IMMA.16832.S8.S8.SAT R32, R24.ROW, R50.COL, R32 ;
+        /*1080*/                   IMMA.16832.S8.S8.SAT R28, R24.ROW, R22.COL, R28 ;
+        /*10a0*/                   IMMA.16832.S8.S8.SAT R16, R24.ROW, R20.COL, R16 ;
+        /*10f0*/                   IMMA.16832.S8.S8.SAT R36, R20.ROW, R4.COL, R36 ;
+        /*1110*/                   IMMA.16832.S8.S8.SAT R32, R24.ROW, R4.COL, R32 ;
+        /*1140*/                   IMMA.16832.S8.S8.SAT R44, R20.ROW, R2.COL, R44 ;
+        /*1170*/                   IMMA.16832.S8.S8.SAT R28, R24.ROW, R2.COL, R28 ;
+        /*11a0*/                   IMMA.16832.S8.S8.SAT R40, R20.ROW, R6.COL, R40 ;
+        /*1200*/                   IMMA.16832.S8.S8.SAT R12, R20.ROW, R54.COL, R12 ;
+        /*1270*/                   IMMA.16832.S8.S8.SAT R8, R24.ROW, R6.COL, R8 ;
+        /*1300*/                   IMMA.16832.S8.S8.SAT R16, R24.ROW, R54.COL, R16 ;

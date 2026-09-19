@@ -1,0 +1,143 @@
+{
+  "record_id": "correct_real31_g3_a2",
+  "case": {
+    "name": "real31",
+    "n": 31,
+    "d": 512,
+    "path": "g17_rthiss_pair_contract_20260905/data/real31.f32",
+    "source_sha256": "31f9d2814044309d863b53822db50268a2d5be1e02d36fc4832f33df876ca29b",
+    "epsilon": 0.62890625,
+    "reference_threshold": 0.3955230712890625,
+    "oracle_path": null
+  },
+  "command": [
+    "timeout",
+    "-k",
+    "5s",
+    "180s",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/build_r1/RT-HiSS",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/real31.f32",
+    "0.62890625",
+    "highest"
+  ],
+  "returncode": 0,
+  "sanitizer": "none",
+  "public_seconds": null,
+  "operational_seconds_not_performance": 0.7407444549899083,
+  "binary_sha256": "b4436293ceefe1d3b434a55f8da0d1a14478f6938c77ec81b05752d4ecead9fb",
+  "libowl_sha256": "1ea82ca7c81b8d047f2420f765231bedcaccb7ec5885ba0fa5e6c055992c04f0",
+  "low": 0.3954988121986389,
+  "high": 0.3955473303794861,
+  "threshold": 0.3955230712890625,
+  "audit": {
+    "adapter_structure_pass": true,
+    "all_original_ids_decoded": true,
+    "output_pairs": 31,
+    "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+    "frozen_oracle_pairs": 31,
+    "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+    "frozen_reference_pass": true,
+    "missing_pairs": 0,
+    "extra_pairs": 0,
+    "first_missing": [],
+    "first_extra": [],
+    "native_threshold_reference_pass": true,
+    "native_threshold_oracle_pairs": 31,
+    "native_threshold_missing": 0,
+    "native_threshold_extra": 0,
+    "unique_rt_candidate_pairs": 961,
+    "all_pair_count": 961,
+    "rt_candidate_missing_frozen_pairs": 0,
+    "first_rt_candidate_missing": [],
+    "self_pairs": 31,
+    "reference_threshold": 0.3955230712890625,
+    "native_threshold": 0.3955230712890625,
+    "scalar_fmaf_replays": [],
+    "replay_complete": true,
+    "batches": [
+      {
+        "batch": 0,
+        "accepted_bits": 31,
+        "candidate_entries": 248,
+        "mask_words": 31
+      }
+    ],
+    "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+  },
+  "work": {
+    "safe_reject": 930,
+    "safe_accept": 31,
+    "terminal_accept": 0,
+    "terminal_reject": 0,
+    "fp32_dimensions": 105536,
+    "fp64_dimensions": 0,
+    "terminal_fraction": 0.0,
+    "candidate_set_same_as_native": true
+  },
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "complete frozen FP64-reference output plus candidate/permutation/counter gates"
+  },
+  "raw_files": {
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_candidates.u32": {
+      "bytes": 992,
+      "sha256": "adaf9f1ff6a74bb4a27e97dd15d9e28129c658b230ebf592b2cec353847f5464"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_grouped.u32": {
+      "bytes": 124,
+      "sha256": "1e767793061af18bb39b3d8d931b564ddcdbce13d47c4c542fe8cbbf32df9aff"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_groups.u32": {
+      "bytes": 36,
+      "sha256": "4e87a47a771a6dc436b0bba3802274533c9558d5a6a39b16206c9a711bf71cbe"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_compressed.u32": {
+      "bytes": 124,
+      "sha256": "81f4922ae2b52b8b94dcb51f7f9a2f45d4f51d400135e9e9f4f9515d5bb1bf4f"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/results.txt": {
+      "bytes": 1297,
+      "sha256": "d31e6d520319915baedcf16c55f21bd8302eb946ef17453818b3a8829eb21cb3"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_counts.u32": {
+      "bytes": 32,
+      "sha256": "ab40c4be176210d1307adaa2d1cdeeff909bb525d7be7bf2843d9b30c580e952"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/export.json": {
+      "bytes": 209,
+      "sha256": "4125481ddd717e87cdbb97520d31b9d3118f56203ca2f2929e84dbec07bbf119"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/g18_stats.u64": {
+      "bytes": 48,
+      "sha256": "85a7ec7291e3acd7175702ffba8a567845d07debf478e5f7e63c5bc0d6344a0c"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_starts.u32": {
+      "bytes": 36,
+      "sha256": "41b618075a66acbdf70e3ffeb8799149b80afbc92fbd96ce8e44c661af90274b"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/point_map.u32": {
+      "bytes": 124,
+      "sha256": "ffd288a68a9719329bf5910675d124d368a19b7d055d623da55fef7e94999e2a"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/program.log": {
+      "bytes": 2454,
+      "sha256": "ea5224f4aef18e262d27ab7b078072eb01281949e3f34c67fe8c8f4a1e4d452d"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_prefix.u32": {
+      "bytes": 36,
+      "sha256": "4e87a47a771a6dc436b0bba3802274533c9558d5a6a39b16206c9a711bf71cbe"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/b0_mask.u32": {
+      "bytes": 124,
+      "sha256": "94c657464aae0d3f39d940d2ef52651ae9998c6c6a361eba3714b10ec63d3602"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/dimension_map.u32": {
+      "bytes": 2048,
+      "sha256": "9304d5be78ecd8b06a99a2dc381f4314d03958aed144a55f69ee98d76c20654a"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_real31_g3_a2/pairs.u64": {
+      "bytes": 248,
+      "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2"
+    }
+  }
+}

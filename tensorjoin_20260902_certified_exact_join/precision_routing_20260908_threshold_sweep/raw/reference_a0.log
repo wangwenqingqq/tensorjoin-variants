@@ -1,0 +1,22 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/precision_routing_20260908_threshold_sweep/src/reference.py"]
+{"reference_rows": 4096, "pairs_covered": 237373440, "elapsed": 3.8602399826049805}
+{"reference_rows": 8192, "pairs_covered": 457969664, "elapsed": 6.850270748138428}
+{"reference_rows": 12288, "pairs_covered": 661788672, "elapsed": 9.646364450454712}
+{"reference_rows": 16384, "pairs_covered": 848830464, "elapsed": 12.077884912490845}
+{"reference_rows": 20480, "pairs_covered": 1019095040, "elapsed": 14.242348909378052}
+{"reference_rows": 24576, "pairs_covered": 1172582400, "elapsed": 16.257707834243774}
+{"reference_rows": 28672, "pairs_covered": 1309292544, "elapsed": 18.085617780685425}
+{"reference_rows": 32768, "pairs_covered": 1429225472, "elapsed": 19.792380809783936}
+{"reference_rows": 36864, "pairs_covered": 1532381184, "elapsed": 21.327906847000122}
+{"reference_rows": 40960, "pairs_covered": 1618759680, "elapsed": 22.699254512786865}
+{"reference_rows": 45056, "pairs_covered": 1688360960, "elapsed": 23.899951696395874}
+{"reference_rows": 49152, "pairs_covered": 1741185024, "elapsed": 24.937958240509033}
+{"reference_rows": 53248, "pairs_covered": 1777231872, "elapsed": 25.797383785247803}
+{"reference_rows": 57344, "pairs_covered": 1796501504, "elapsed": 26.492785215377808}
+{"reference_rows": 60000, "pairs_covered": 1800030000, "elapsed": 26.856151819229126}
+{"count": 61458806, "nonself_mean_degree": 1023.3134333333334, "sha256": "1aa5d88ffa1f87e75ad08af781637cb073d2c862378f6b4dcf84f2a56c3d6fe3", "file_sha256": "75d3518689ae8ef05d35ab79bfed02c86fb8655d4bd0aebd4f96c18c60432462", "upper_count": 30759403, "threshold": {"name": "k1024", "target_degree": 1024, "m": 3120, "eps": 0.76171875, "T": 0.5802154541015625, "sample_degree": 1023.4709866046906}}
+{"count": 15429428, "nonself_mean_degree": 256.1571333333333, "sha256": "49160b0fece513842a1194c0aaca5b2d06de6de417533c401ac0c383b2e70611", "file_sha256": "0a903b9092542ab368b919ca724125e2c8f7a32b89f65b29dd4f92da345ad7a5", "upper_count": 7744714, "threshold": {"name": "k256", "target_degree": 256, "m": 2834, "eps": 0.69189453125, "T": 0.4787180423736572, "sample_degree": 255.78549361228943}}
+{"count": 3926078, "nonself_mean_degree": 64.43463333333334, "sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "file_sha256": "b566e59c35bf431d128a9161f71142e476c4ff2b4278847029dbbd6a2ead8632", "upper_count": 1993039, "threshold": {"name": "original", "target_degree": null, "m": 2576, "eps": 0.62890625, "T": 0.3955230712890625, "sample_degree": 64.90122389793396}}
+{"count": 3862998, "nonself_mean_degree": 63.3833, "sha256": "4863a23e3edeb18d5e72d89fb0e25c0dbaea17762bbc98a7159803be72407a80", "file_sha256": "f77719ebe4229a3db8af16c6d3bff33d1efc06ef87ccaec2d8074c7d163a1803", "upper_count": 1961499, "threshold": {"name": "k64", "target_degree": 64, "m": 2573, "eps": 0.628173828125, "T": 0.39460235834121704, "sample_degree": 63.78544354438782}}
+{"count": 1016858, "nonself_mean_degree": 15.947633333333334, "sha256": "b65ded9f0b0892bf0c056a679273dea504eaa5f2bee6f1b960c8de2d1248aa85", "file_sha256": "08b853056b21b3876a4339a2e1334d5f64e12d743d9d68af82571ff4b587559b", "upper_count": 538429, "threshold": {"name": "k16", "target_degree": 16, "m": 2330, "eps": 0.56884765625, "T": 0.32358765602111816, "sample_degree": 15.949937105178833}}
+{"count": 297318, "nonself_mean_degree": 3.9553, "sha256": "0b1503dbe8814b114412ba0d04f6d10d958ae15ab7817d3a8dab4413f8f7579a", "file_sha256": "73f0473e01f96772b6c4d054f3c6a082dff86a190835b3de29e353d347fb1410", "upper_count": 178659, "threshold": {"name": "k4", "target_degree": 4, "m": 2092, "eps": 0.5107421875, "T": 0.26085758209228516, "sample_degree": 3.991060495376587}}

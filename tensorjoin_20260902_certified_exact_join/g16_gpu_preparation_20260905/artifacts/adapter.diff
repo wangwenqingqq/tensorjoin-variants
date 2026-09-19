@@ -1,0 +1,101 @@
+--- original_g5
++++ g16_gpu_prepared_g5
+@@ -51,6 +51,7 @@
+     certified_fp32_filter_i64,
+ )
+ from run_g4b_r1_public_opportunity import quantize_with_analytic_residual
++from gpu_preparation import prepare_device
+ 
+ 
+ EXPERIMENT_ID = "tensorjoin_20260903_g5_unified_public_cifar60k"
+@@ -257,6 +258,14 @@
+     torch.cuda.synchronize()
+ 
+ 
++def metadata_artifacts(cache):
++    result = {}
++    for suffix in ("cubin", "ptx"):
++        path = exactly_one(cache, "gpu_quantize_metadata." + suffix)
++        result[suffix] = {"path": str(path.relative_to(PROJECT)), "sha256": sha256_file(path)}
++    return result
++
++
+ def main() -> int:
+     args = parse_args()
+     physical_gpu = os.environ.get("G5_PHYSICAL_GPU", "1")
+@@ -279,12 +288,15 @@
+         raise FileExistsError(f"G5 cache is not empty: {cache}")
+     cache.mkdir(parents=True, exist_ok=True)
+ 
+-    result_path = PROJECT / f"results/g5_{args.phase}_tensorjoin_{args.record_id}.json"
++    result_path = PROJECT / f"g16_gpu_preparation_20260905/results/gpu_prepare_{args.phase}_{args.record_id}.json"
+     pair_path = PROJECT / f"artifacts/g5_{args.phase}/tensorjoin_{args.record_id}.u64.bin"
+     for path in ((result_path, pair_path) if args.write_pairs else (result_path,)):
+         if path.exists():
+             raise FileExistsError(path)
+ 
++    metadata_gate = json.loads((PROJECT / "g16_gpu_preparation_20260905/results/metadata_a0.json").read_text())
++    if not metadata_gate["correctness"]["exact_contract_pass"]:
++        raise RuntimeError("G16 metadata gate did not admit full join")
+     upstream_hashes = require_frozen_sources()
+     contract = load_contract()
+     vectors = load_pageable_source()
+@@ -303,6 +315,14 @@
+         float(threshold_upper),
+         float(contract["threshold_d2"]),
+     )
++    warm_source = torch.zeros((N, D), dtype=torch.float32, device="cuda")
++    warm_metadata = prepare_device(warm_source)
++    torch.cuda.synchronize()
++    del warm_source, warm_metadata
++    gc.collect()
++    torch.cuda.empty_cache()
++    torch.cuda.synchronize()
++    metadata_before = metadata_artifacts(cache)
+     cache_before = selected_cache_artifacts(cache)
+     gpu_before = gpu_state(physical_gpu)
+     run = {
+@@ -371,9 +391,6 @@
+     torch.cuda.reset_peak_memory_stats()
+     public_started = time.perf_counter()
+ 
+-    codes, scales, reconstructed_norm2, residual_error = (
+-        quantize_with_analytic_residual(vectors)
+-    )
+     tile_extent = (N + BLOCK_M - 1) // BLOCK_M
+     tile_rows, tile_columns = np.triu_indices(tile_extent)
+     tile_rows = np.asarray(tile_rows, dtype=np.int32)
+@@ -382,11 +399,7 @@
+ 
+     device = torch.device("cuda:0")
+     vectors_gpu = torch.from_numpy(vectors).to(device)
+-    codes_gpu = torch.from_numpy(codes).to(device)
+-    codes_t_gpu = torch.from_numpy(codes.T.copy()).to(device)
+-    scales_gpu = torch.from_numpy(scales).to(device)
+-    norms_gpu = torch.from_numpy(reconstructed_norm2).to(device)
+-    errors_gpu = torch.from_numpy(residual_error).to(device)
++    codes_gpu, scales_gpu, norms_gpu, errors_gpu, codes_t_gpu = prepare_device(vectors_gpu)
+     tile_rows_gpu = torch.from_numpy(tile_rows).to(device)
+     tile_columns_gpu = torch.from_numpy(tile_columns).to(device)
+     result_ids = torch.empty(CAPACITY, dtype=torch.int64, device=device)
+@@ -546,8 +559,9 @@
+     )
+     public_seconds = time.perf_counter() - public_started
+ 
++    metadata_after = metadata_artifacts(cache)
+     cache_after = selected_cache_artifacts(cache)
+-    cache_unchanged = cache_after == cache_before
++    cache_unchanged = cache_after == cache_before and metadata_after == metadata_before
+     correctness = validate_canonical(canonical, contract)
+     correctness.update(
+         {
+@@ -606,6 +620,9 @@
+         "selected_cache_artifacts_after_timer": cache_after,
+         "selected_cache_artifacts_unchanged_during_timer": cache_unchanged,
+         "cache_path": str(cache.relative_to(PROJECT)),
++        "metadata_artifacts_before": metadata_before,
++        "metadata_artifacts_after": metadata_after,
++        "metadata_source_sha256": sha256_file(PROJECT / "g16_gpu_preparation_20260905/src/gpu_preparation.py"),
+         "pair_receipt": pair_receipt,
+         "torch_peak_memory_allocated_bytes": int(torch.cuda.max_memory_allocated()),
+         "torch_peak_memory_reserved_bytes": int(torch.cuda.max_memory_reserved()),

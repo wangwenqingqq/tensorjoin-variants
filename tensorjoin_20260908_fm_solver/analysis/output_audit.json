@@ -1,0 +1,31 @@
+{
+  "pass_": true,
+  "full_output_records": 1835,
+  "groups": {
+    "admission_samples": 96,
+    "admission_diagnostics": 12,
+    "admission_build_admission": 5,
+    "confirm_00_samples": 480,
+    "confirm_00_single_queries": 30,
+    "confirm_01_samples": 480,
+    "confirm_01_single_queries": 30,
+    "confirm_02_samples": 480,
+    "confirm_02_single_queries": 30,
+    "resolution": 192
+  },
+  "full_arrays_compared": 161,
+  "main_masks_checked": 48,
+  "supplementary_fm_masks_reconstructed": 6,
+  "raw_full_prediction_missed_entries_recomputed": true,
+  "trained_checkpoint_hashes_verified": 18,
+  "candidate_evaluations_verified": 36,
+  "validation_selection_recomputed": true,
+  "resolution_selection_recomputed": true,
+  "whole_block_splits_disjoint": true,
+  "training_frozen_files": 59,
+  "timing_frozen_files": 171,
+  "resolution_frozen_files": 173,
+  "successful_guards": 7,
+  "preserved_development_failures": 2,
+  "note": "Saved-record audit; original workers performed each full-array or count/hash check. Supplementary masks independently reconstructed without rerunning GPU work."
+}

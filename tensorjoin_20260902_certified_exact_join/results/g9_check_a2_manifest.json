@@ -1,0 +1,39 @@
+{
+  "admitted": false,
+  "artifacts": {
+    "log": {
+      "path": "raw/g9_check_a2.log",
+      "sha256": "675f386c4acdde77fbc9e10b8fa01ec3b75891ad28963656ef074ab9ab529404"
+    },
+    "occupancy": {
+      "path": "raw/g9_check_a2_occupancy.jsonl",
+      "sha256": "71c58e150ed9283c8026a47a37d69fea15d56a71e9442f6410ebcdda4eb4c516"
+    },
+    "preflight": {
+      "path": "raw/g9_check_a2_preflight.log",
+      "sha256": "dc245d8936978be09ab72f42576e636f21ab5138780e2b784767f516aa0e8089"
+    }
+  },
+  "child_pid": 1088315,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py",
+    "--label",
+    "g9_check_a2",
+    "--mode",
+    "check"
+  ],
+  "end_unix": 1788519334.5309446,
+  "foreign_rows": [],
+  "gpu_uuid": "GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603",
+  "label": "g9_check_a2",
+  "launched": true,
+  "own_pids": [
+    1088315
+  ],
+  "postflight_compute_rows": [],
+  "returncode": 1,
+  "runner_sha256": "8fae350e3ca5b169bbdd1ea9f8741c6106cab77155bc2bb2532f93396497bf10",
+  "start_unix": 1788519323.4166877,
+  "status": "failed_or_incomplete"
+}

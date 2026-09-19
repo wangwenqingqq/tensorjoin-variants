@@ -1,0 +1,25 @@
+{
+  "coordinate_max": 0.45951196551322937,
+  "coordinate_min": 9.824846347328275e-05,
+  "dataset_id": "cifar_gist512",
+  "exact_int32_to_fp32_precondition": true,
+  "finite": true,
+  "int32_accumulator_absolute_limit": 8258048,
+  "loader": "little-endian fvecs; native float32 coordinates",
+  "prepared_dtype": "float32",
+  "prepared_shape": [
+    4096,
+    512
+  ],
+  "source_bytes": 123120000,
+  "source_dimension": 512,
+  "source_md5": null,
+  "source_path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/cifar60k/cifar60k_base.fvecs",
+  "source_row_ids_file_sha256": "b32024844cb503aebce28ddde3ce1309db51d6afeac773ea2debd3e8d2d2972c",
+  "source_row_ids_max": 59993,
+  "source_row_ids_min": 0,
+  "source_row_ids_unique": 4096,
+  "source_rows": 60000,
+  "source_sha256": "a7170faaa80a072cd603ed472104049ead87fbaff224e94a529021d161f8aea4",
+  "vectors_file_sha256": "cea1987b6a07df43a71d5361afa5f1630c8f1abbbc44493d60af0898e6394702"
+}

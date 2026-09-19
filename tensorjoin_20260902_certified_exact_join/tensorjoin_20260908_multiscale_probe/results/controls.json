@@ -1,0 +1,7 @@
+{
+  "pass_": true,
+  "six_pair_control": true,
+  "ragged": true,
+  "duplicates": true,
+  "equality": true
+}

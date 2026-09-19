@@ -1,0 +1,23 @@
+{
+  "pass_": true,
+  "full_calls": 689,
+  "result_records": 8,
+  "trace_checks": [
+    {
+      "method": "pipeline",
+      "overlap_ns": 0,
+      "pass_": true
+    },
+    {
+      "method": "draft_serial",
+      "overlap_ns": 0,
+      "pass_": true
+    },
+    {
+      "method": "speculative",
+      "overlap_ns": 20864,
+      "pass_": true
+    }
+  ],
+  "summary_sha256": "7b024309a8d5d0f50f3c827051cf6151fdee30d8772df531aee26931e46df575"
+}

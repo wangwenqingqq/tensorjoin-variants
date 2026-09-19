@@ -1,0 +1,69 @@
+{
+  "pass": true,
+  "checks": {
+    "dot_samples": 2560,
+    "metadata_rows": 161,
+    "interval_samples": 1920,
+    "panel_outputs": 5
+  },
+  "public_panel_count_comparison": [
+    {
+      "offset": [
+        0,
+        0
+      ],
+      "pairs": 8390656,
+      "output": 11723,
+      "A_ambiguity": 7423,
+      "C_ambiguity": 384,
+      "A_fp64": 6,
+      "C_fp64": 6
+    },
+    {
+      "offset": [
+        0,
+        57344
+      ],
+      "pairs": 10878976,
+      "output": 10809,
+      "A_ambiguity": 10598,
+      "C_ambiguity": 475,
+      "A_fp64": 13,
+      "C_fp64": 13
+    },
+    {
+      "offset": [
+        57344,
+        57344
+      ],
+      "pairs": 3528496,
+      "output": 6590,
+      "A_ambiguity": 3789,
+      "C_ambiguity": 183,
+      "A_fp64": 2,
+      "C_fp64": 2
+    }
+  ],
+  "sources": {
+    "results/ncu_half_0_a1_dot_samples.npz": "d5f27014b707ce8339fe37529e638e8d3f2e5557faf611ce995578af14bc63fc",
+    "results/ncu_half_1_a1_dot_samples.npz": "e9d8d468ab711f27280a0479e3cfb01993fedfbd55b91a380360829c0214e9ff",
+    "results/ncu_half_2_a1_dot_samples.npz": "6248719ab64d04c6716613bd3c40d8579a3be0355f4772f9d2b5411e6849a86d",
+    "results/ncu_half_3_a2_dot_samples.npz": "bb6b1817bc702f517041ce8eb8cf64e0ecc4146839c26a796e3e0dbac4c22ee6",
+    "results/gpu0_stress_a0_input0_dots.npz": "1fb5d9e42c8f45d6a6cc0984e25ce509675b26b4ae9eeff2847992ec8987686d",
+    "results/gpu0_stress_a0_input1_dots.npz": "9cf7e3e4909e55f8acec2d3d52d8eee0a3b7d51927c0ac9bd01992da5b19c9a8",
+    "results/gpu0_fixture_a2_churn0_metadata.npz": "09799a1eaf94734a7757c12fa30abb684604824de09500a9e891507bbb2654e8",
+    "results/gpu0_fixture_a2_churn1_metadata.npz": "09799a1eaf94734a7757c12fa30abb684604824de09500a9e891507bbb2654e8",
+    "results/gpu0_public_a2_metadata.npz": "a4a5d247e095d0d863345fbcd9eddaca7db07f0abf7321b5396cdea9cb9b9aba",
+    "results/gpu0_fixture_a2_churn0_panel0_interval.npz": "3261b210b0d0d066d9eb97415928843b092e4c6f23cdf858b55e3de33cb676f8",
+    "results/gpu0_fixture_a2_churn1_panel0_interval.npz": "3261b210b0d0d066d9eb97415928843b092e4c6f23cdf858b55e3de33cb676f8",
+    "results/gpu0_public_a2_panel0_interval.npz": "409b39a5b636ac559d502b766e1af6fab06eb4060bfca4e850326c2354bbd5d6",
+    "results/gpu0_public_a2_panel1_interval.npz": "8634be08a4e75bcd60988494a6f6e548659faef812bcd6a5472888f0f452de9f",
+    "results/gpu0_public_a2_panel2_interval.npz": "bd0910462f7dcea6e3c665a85115621ebae2e3ccda4c213586792add0a858d44",
+    "results/gpu0_fixture_a2_churn0_panel0_ids.npz": "b10840103dcdbd56bd2a0362d0cf12c5df8e8b61c98beef90124824a68aa67cd",
+    "results/gpu0_fixture_a2_churn1_panel0_ids.npz": "b10840103dcdbd56bd2a0362d0cf12c5df8e8b61c98beef90124824a68aa67cd",
+    "results/gpu0_public_a2_panel0_ids.npz": "0f4c87f3248278c5a2c81080a7dda435137ee01b51d1218bc4898fbb6781d434",
+    "results/gpu0_public_a2_panel1_ids.npz": "07f53309a79a062a6c8ad3fe335de21bccbbe28a11ba3062a5a1bd1a844a8eca",
+    "results/gpu0_public_a2_panel2_ids.npz": "9244ff3c2381abc1bcd03e80416911439aec0f2b9914f9c65f360eca2fc8191b"
+  },
+  "scope": "finite saved samples and selected-panel identities; not universal library theorem or performance"
+}

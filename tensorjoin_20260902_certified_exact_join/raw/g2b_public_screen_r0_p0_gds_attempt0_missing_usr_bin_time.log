@@ -1,0 +1,1 @@
+COMMAND ["/usr/bin/time", "-v", "-o", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/g2b_public_screen_r0_p0_gds_time.log", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g2b_gds_public.py", "--record-id", "r0_p0"]

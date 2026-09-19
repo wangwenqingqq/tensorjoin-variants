@@ -1,0 +1,31 @@
+{
+  "command": [
+    "compute-sanitizer",
+    "--tool",
+    "memcheck",
+    "--error-exitcode",
+    "99",
+    "--leak-check",
+    "full",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/run_slot_r2.py",
+    "--method",
+    "tc",
+    "--kind",
+    "safety",
+    "--record-id",
+    "tc_safety_memcheck_r2"
+  ],
+  "returncode": 0,
+  "method": "tc",
+  "kind": "safety",
+  "tool": "memcheck",
+  "log_sha256": "473c2f3bae28ed71211900aea439e609889a4f483271a7aa090ae3b4dfc96c92",
+  "child_identity_hold_seconds": 1,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_tc_safety_memcheck_r2.json",
+  "inner_sha256": "327cc582f89c009515f5f6f67482b16c1804a3ac74b058bf4cb99ca4999a3411",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false
+}

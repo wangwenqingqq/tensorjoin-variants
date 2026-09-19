@@ -1,0 +1,52 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g2b_mistic_public.py", "--record-id", "r4_p2_a0", "--phase", "formal"]
+RUN_START {"binary_sha256": "20739abefe2fc21cfb93ec70b0c9cddbde20b76dc896243c72336981c402326a", "cuda_visible_devices": "0", "epsilon": 0.62890625, "excluded_after_timer": ["disk_serialization", "pair_file_reload", "hashing", "correctness_checks", "json_write"], "excluded_before_timer": ["file_io", "process_startup", "cuda_context_initialization"], "experiment_id": "tensorjoin_20260903_g2b_public_screen", "host": "gpu-host-8", "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4", "method": "mistic_fp64", "method_dtype": "float64 exact widening", "numpy": "2.3.1", "phase": "formal", "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]", "record_id": "r4_p2_a0", "runner_sha256": "2d6681adaeaff82df7e4b29e4ddf2657292fddf01225625617335bb30d6f7e6d", "shape": [60000, 512], "smoke_summary_sha256": "b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c", "source_dtype": "float32", "source_raw_sha256": "f7b51da49d6555fff8e094584b27c8c5c4efbfdcde1db2b7f86e58d9142af326", "threshold_d2": 0.3955230712890625, "timing_scope": "f32 pageable host -> sorted canonical u64 host"}
+
+Time to read in file: 0.066599
+
+Number points: 60000 
+Number Dimensions: 512 
+Number Reference Points: 0 
+Number Concurent Streams: 2
+Block Size: 256, Kernel Blocks: 1024
+Using dynamic searching
+Distance Threshold: 0.628906 
+*********************************
+
+Predicted calcsPerSecond: 15452
+SubGraph 0 Layer 0 Selecting RP 37 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.000000, Actual Time: 0.016756
+Build Time: 0.016756, Calc Time: 232979.549573, reduction -232979.549573
+############################################
+Predicted calcsPerSecond: 47043
+SubGraph 0 Layer 1 Selecting RP 33 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016756, Actual Time: 0.018482
+Build Time: 0.018482, Calc Time: 76525.731777, reduction 156453.817796
+############################################
+Predicted calcsPerSecond: 94549
+SubGraph 0 Layer 2 Selecting RP 35 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.018482, Actual Time: 0.016893
+Build Time: 0.016893, Calc Time: 38075.495246, reduction 38450.236531
+############################################
+Predicted calcsPerSecond: 165547
+SubGraph 0 Layer 3 Selecting RP 37 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016893, Actual Time: 0.016927
+Build Time: 0.016927, Calc Time: 21746.090234, reduction 16329.405012
+############################################
+Predicted calcsPerSecond: 271981
+SubGraph 0 Layer 4 Selecting RP 36 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016927, Actual Time: 0.017021
+Build Time: 0.017021, Calc Time: 13236.218706, reduction 8509.871528
+############################################
+Predicted calcsPerSecond: 432031
+SubGraph 0 Layer 5 Selecting RP 32 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.017021, Actual Time: 0.016700
+Build Time: 0.016700, Calc Time: 8332.735382, reduction 4903.483324
+############################################
+Final graph has 1 nodes, 3600000000 calcs total
+Node Construct time: 0.417330
+Batchs: 1
+Batch 0 Results: 3926078
+Total results Set Size: 3926078 
+Kernel Time: 3.578224
+G2B_PUBLIC_SECONDS=4.770812315
+G2B_PUBLIC_OUTPUT_PAIRS=3926078
+G2B_ADAPTER raw_kernel_pairs=3926078 normalized_self_insertions=0 invalid_positions=0 output_pairs=3926078
+Node Laucnher time: 4.194654
+Total Time: 4.753933
+
+0.628906 60000 32 6 1 3600000000 0.417330 1 1.000000 3.57822 3926078 4.194654 4.753934 
+RUN_COMPLETE {"binary_sha256": "20739abefe2fc21cfb93ec70b0c9cddbde20b76dc896243c72336981c402326a", "command": ["@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/mistic_g2b_public/build/main_d512", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/g2b_cifar60000/vectors_f32.raw", "512", "0", "0.62890625"], "correctness": {"canonical_pair_count": 3926078, "canonical_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "duplicate_pairs": 0, "emitted_count": 3926078, "emitted_count_matches_file": true, "exact_contract_pass": true, "expected_pair_count": 3926078, "expected_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "invalid_pairs": 0, "self_pairs": 60000, "sorted_output": true, "symmetry_missing_pairs": 0}, "cuda_visible_devices": "0", "epsilon": 0.62890625, "excluded_after_timer": ["disk_serialization", "pair_file_reload", "hashing", "correctness_checks", "json_write"], "excluded_before_timer": ["file_io", "process_startup", "cuda_context_initialization"], "experiment_id": "tensorjoin_20260903_g2b_public_screen", "host": "gpu-host-8", "max_rss_kib_after_run_wrapper_only": 368440, "max_rss_kib_mistic_child": 1029388, "measurement_status": "formal_public_denominator_exact_keeper", "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4", "method": "mistic_fp64", "method_dtype": "float64 exact widening", "numpy": "2.3.1", "pair_file": "artifacts/g2b_public_formal/mistic_r4_p2_a0.u64.bin", "pair_file_bytes": 31408624, "pair_file_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495", "phase": "formal", "public_seconds": 4.770812315, "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]", "record_id": "r4_p2_a0", "runner_sha256": "2d6681adaeaff82df7e4b29e4ddf2657292fddf01225625617335bb30d6f7e6d", "shape": [60000, 512], "smoke_summary_sha256": "b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c", "source_dtype": "float32", "source_raw_sha256": "f7b51da49d6555fff8e094584b27c8c5c4efbfdcde1db2b7f86e58d9142af326", "threshold_d2": 0.3955230712890625, "timing_scope": "f32 pageable host -> sorted canonical u64 host"}

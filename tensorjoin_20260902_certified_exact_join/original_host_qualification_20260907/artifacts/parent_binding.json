@@ -1,0 +1,10 @@
+{
+  "prior_delivery_sha256": "14af671324e4276b26d2bd9c5cb341c5ad8c28a057cc940ffd8a44f469dfbee6",
+  "original_host_sources": {
+    "frozen_driver.py": "784f209f6abcf33fe7177d9eeb7bcf8b2a61c4a3254e39cb84afb2554b880572",
+    "validate.py": "875e52598d6c5e62b4b59cb288c5ccf7cf941632ed6f73b2aa8611d9a7aaa8eb",
+    "guard.py": "697df965f8d3fa8b687e6d7007330844c7ea9447b97a8b9f361dad5fbc0db0b7",
+    "margin_probe.py": "d191d21961daa890af55a2a12d7dd52a8b436e402b27fd231592290dd37ea607"
+  },
+  "host_changes": "guard selects explicit historical GPU2 target; margin label/host check; Driver, Engine, fixtures, thresholds and GPU code unchanged"
+}

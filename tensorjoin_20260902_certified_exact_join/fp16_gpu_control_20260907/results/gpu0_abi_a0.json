@@ -1,0 +1,616 @@
+{
+  "pass": true,
+  "physical_gpu": "0",
+  "records": [
+    {
+      "kernel": "class_2656_2656_0",
+      "cubin_sha256": "ec2d29cf954f2388936877f1fd7dc9a679c016c69bf8c6e7ad112eb61bb8001c",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 74
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_2656_2656_1",
+      "cubin_sha256": "489dd8a784bb988b832171938c1ba746f0992315f49f9767de1b67ec5175f4c6",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 75
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_4096_2656_0",
+      "cubin_sha256": "a6d472741c0ac626248212248b67bfa199b49668f174364f7ed7cbd910a71e14",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 74
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_4096_2656_1",
+      "cubin_sha256": "2a1c6386fd2b3c9c4d6a9962788f6f3b76204a03b2aedd71a7910cc455e8f40f",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 75
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_4096_4096_0",
+      "cubin_sha256": "0b10f3aae6b015ce68ae5cab7b6298619aa375a943b8e33220d3728c3326a3d1",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 74
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_4096_4096_1",
+      "cubin_sha256": "d62d17cbb1a4d520d3efe7955079c652d88cc14b6c3b2615e0f9143b4bb44d5b",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 76
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_512_512_0",
+      "cubin_sha256": "24403b9df18d2b3daa78be3d712b2bde3bbf2e60a55a15c751b97fb81316ee5c",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 76
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "class_512_512_1",
+      "cubin_sha256": "9aff3ee7415cfddcfd9463debbebabb10bb3b493567063e13993e5403a586517",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ],
+        [
+          72,
+          8
+        ],
+        [
+          80,
+          4
+        ],
+        [
+          84,
+          4
+        ],
+        [
+          88,
+          8
+        ],
+        [
+          96,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 768,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 80
+      },
+      "dynamic_shared_bytes": 1024,
+      "pass": true
+    },
+    {
+      "kernel": "metadata",
+      "cubin_sha256": "4aaa28e95e1c32f52d91588ca6ed56b9e2ca5af0edc413315a6c8f630b38abc9",
+      "parameters": [
+        [
+          0,
+          8
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          16,
+          8
+        ],
+        [
+          24,
+          8
+        ],
+        [
+          32,
+          8
+        ],
+        [
+          40,
+          8
+        ],
+        [
+          48,
+          8
+        ],
+        [
+          56,
+          8
+        ],
+        [
+          64,
+          8
+        ]
+      ],
+      "attributes": {
+        "max_threads": 1024,
+        "static_shared_bytes": 0,
+        "local_bytes": 0,
+        "registers": 40
+      },
+      "dynamic_shared_bytes": 32,
+      "pass": true
+    }
+  ]
+}

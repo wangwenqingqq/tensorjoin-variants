@@ -1,0 +1,808 @@
+{
+  "started": 1788805962.2249296,
+  "pid": 658295,
+  "pass": true,
+  "rows": [
+    {
+      "layout": "original",
+      "method": "F8",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "ed0780f1164f090468edcc04ef71b709ed0c323c4d3f3cc9cffd9f5dae5f07e1",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 1827007,
+        "occupied_tiles": 417871,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.24023991150553883,
+        "max_pairs_per_tile": 28,
+        "hist_quantiles": [
+          0.0,
+          4.0,
+          8.0,
+          13.0,
+          28.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        8672.0,
+        17067.0,
+        19663.6,
+        23995.0
+      ],
+      "batch_u2_quantiles": [
+        5.0,
+        16.0,
+        22.0,
+        29.0
+      ],
+      "compiled": {}
+    },
+    {
+      "layout": "original",
+      "method": "F16",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "387ece648f66ae5932488e741a81eba857f42c700714391cc4edf456b0c3c7cf",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 86029,
+        "occupied_tiles": 76749,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.6197910007090632,
+        "max_pairs_per_tile": 5,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          5.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        424.0,
+        795.5,
+        930.0999999999999,
+        1119.0
+      ],
+      "batch_u2_quantiles": [
+        5.0,
+        16.0,
+        22.0,
+        29.0
+      ],
+      "compiled": {
+        "metadata": {
+          "cubin": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+          "ptx": "ca56b9e1104c8965d3ae3521540a47f0765f54186b245e9ed2d2a0d637e7fd13",
+          "llir": "120bbb4a027143b4742799ba1cf60c9ac672f168d582fe847b1ca42fe9961549",
+          "ttgir": "763f53531f0600e96ac6bf8d2d8d491778a0e638786e695cdde6ac7820aaf932",
+          "ttir": "dfa69894d14cf859f2f4f86795dfc845004d3d2e4274b4254ace04322f56cc1c",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "f3a8f026654e482e8aa3d43eb762a8c3637c8165ee18b5253baec62dc9c4621e",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "half_metadata",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 40,
+            "n_spills": 0
+          }
+        },
+        "16_2_0": {
+          "cubin": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+          "ptx": "7161a32861d9d76c1a6e63b49ccdd1645f1e6be5ab0f3c0f9910318202fc133e",
+          "llir": "b48d254b8343963c98cc9b423007f24998e31cc52f5ed3f18f07272fec48d85c",
+          "ttgir": "9fd88a574804214c556643a5cc3f6501e8cb04dd307b210e3c0c52cd6807ab5d",
+          "ttir": "c6c532252a563287edbc4d9f24ec89e0bbb09c5d1c403b96a1ed761c3928dda6",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "0fe84ee4ab7eb2d4537c0b0ab149146fdf181ca32d03071013de09b1e6415806",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "scan16",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32768,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 140,
+            "n_spills": 0
+          }
+        }
+      }
+    },
+    {
+      "layout": "clustered",
+      "method": "F8",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "ed0780f1164f090468edcc04ef71b709ed0c323c4d3f3cc9cffd9f5dae5f07e1",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 1827007,
+        "occupied_tiles": 417871,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.24023991150553883,
+        "max_pairs_per_tile": 28,
+        "hist_quantiles": [
+          0.0,
+          4.0,
+          8.0,
+          13.0,
+          28.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        0.0,
+        16384.0,
+        32768.0,
+        60348.0
+      ],
+      "batch_u2_quantiles": [
+        0.0,
+        12.5,
+        33.3,
+        68.0
+      ],
+      "compiled": {}
+    },
+    {
+      "layout": "clustered",
+      "method": "F16",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "387ece648f66ae5932488e741a81eba857f42c700714391cc4edf456b0c3c7cf",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 86029,
+        "occupied_tiles": 76749,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.6197910007090632,
+        "max_pairs_per_tile": 5,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          5.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        0.0,
+        744.5,
+        1538.3999999999999,
+        2782.0
+      ],
+      "batch_u2_quantiles": [
+        0.0,
+        12.5,
+        33.3,
+        68.0
+      ],
+      "compiled": {
+        "metadata": {
+          "cubin": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+          "ptx": "ca56b9e1104c8965d3ae3521540a47f0765f54186b245e9ed2d2a0d637e7fd13",
+          "llir": "120bbb4a027143b4742799ba1cf60c9ac672f168d582fe847b1ca42fe9961549",
+          "ttgir": "763f53531f0600e96ac6bf8d2d8d491778a0e638786e695cdde6ac7820aaf932",
+          "ttir": "dfa69894d14cf859f2f4f86795dfc845004d3d2e4274b4254ace04322f56cc1c",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "f3a8f026654e482e8aa3d43eb762a8c3637c8165ee18b5253baec62dc9c4621e",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "half_metadata",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 40,
+            "n_spills": 0
+          }
+        },
+        "16_2_0": {
+          "cubin": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+          "ptx": "7161a32861d9d76c1a6e63b49ccdd1645f1e6be5ab0f3c0f9910318202fc133e",
+          "llir": "b48d254b8343963c98cc9b423007f24998e31cc52f5ed3f18f07272fec48d85c",
+          "ttgir": "9fd88a574804214c556643a5cc3f6501e8cb04dd307b210e3c0c52cd6807ab5d",
+          "ttir": "c6c532252a563287edbc4d9f24ec89e0bbb09c5d1c403b96a1ed761c3928dda6",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "0fe84ee4ab7eb2d4537c0b0ab149146fdf181ca32d03071013de09b1e6415806",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "scan16",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32768,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 140,
+            "n_spills": 0
+          }
+        }
+      }
+    },
+    {
+      "layout": "interleaved",
+      "method": "F8",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "ed0780f1164f090468edcc04ef71b709ed0c323c4d3f3cc9cffd9f5dae5f07e1",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 1827007,
+        "occupied_tiles": 417871,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.24023991150553883,
+        "max_pairs_per_tile": 28,
+        "hist_quantiles": [
+          0.0,
+          4.0,
+          8.0,
+          13.0,
+          28.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        13153.0,
+        16949.5,
+        16964.3,
+        16970.0
+      ],
+      "batch_u2_quantiles": [
+        7.0,
+        16.0,
+        21.0,
+        28.0
+      ],
+      "compiled": {}
+    },
+    {
+      "layout": "interleaved",
+      "method": "F16",
+      "output_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "uncertainty_hashes": [
+        "387ece648f66ae5932488e741a81eba857f42c700714391cc4edf456b0c3c7cf",
+        "7a7ecdba2b728ab657c660726fbd6bb0901d0e64e6b248fbc88136d49be1fbc1"
+      ],
+      "u1": {
+        "pairs": 86029,
+        "occupied_tiles": 76749,
+        "total_tiles": 440391,
+        "top10pct_mass": 0.6197910007090632,
+        "max_pairs_per_tile": 5,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          1.0,
+          2.0,
+          5.0
+        ]
+      },
+      "u2": {
+        "pairs": 1734,
+        "occupied_tiles": 1729,
+        "total_tiles": 440391,
+        "top10pct_mass": 1.0,
+        "max_pairs_per_tile": 2,
+        "hist_quantiles": [
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          2.0
+        ]
+      },
+      "batch_u1_quantiles": [
+        629.0,
+        802.0,
+        825.0,
+        857.0
+      ],
+      "batch_u2_quantiles": [
+        7.0,
+        16.0,
+        21.0,
+        28.0
+      ],
+      "compiled": {
+        "metadata": {
+          "cubin": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+          "ptx": "ca56b9e1104c8965d3ae3521540a47f0765f54186b245e9ed2d2a0d637e7fd13",
+          "llir": "120bbb4a027143b4742799ba1cf60c9ac672f168d582fe847b1ca42fe9961549",
+          "ttgir": "763f53531f0600e96ac6bf8d2d8d491778a0e638786e695cdde6ac7820aaf932",
+          "ttir": "dfa69894d14cf859f2f4f86795dfc845004d3d2e4274b4254ace04322f56cc1c",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "f3a8f026654e482e8aa3d43eb762a8c3637c8165ee18b5253baec62dc9c4621e",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "half_metadata",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 40,
+            "n_spills": 0
+          }
+        },
+        "16_2_0": {
+          "cubin": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+          "ptx": "7161a32861d9d76c1a6e63b49ccdd1645f1e6be5ab0f3c0f9910318202fc133e",
+          "llir": "b48d254b8343963c98cc9b423007f24998e31cc52f5ed3f18f07272fec48d85c",
+          "ttgir": "9fd88a574804214c556643a5cc3f6501e8cb04dd307b210e3c0c52cd6807ab5d",
+          "ttir": "c6c532252a563287edbc4d9f24ec89e0bbb09c5d1c403b96a1ed761c3928dda6",
+          "metadata": {
+            "allowed_dot_input_precisions": [
+              "tf32",
+              "tf32x3",
+              "ieee",
+              "bf16x3",
+              "bf16x6"
+            ],
+            "arch": "sm120",
+            "backend_name": "cuda",
+            "debug": false,
+            "default_dot_input_precision": "tf32",
+            "deprecated_fp8_dot_operand_dtypes": [
+              "fp8e4b15"
+            ],
+            "enable_fp_fusion": false,
+            "enable_reflect_ftz": true,
+            "extern_libs": [
+              [
+                "libdevice",
+                "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+              ]
+            ],
+            "global_scratch_align": 1,
+            "global_scratch_size": 0,
+            "hash": "0fe84ee4ab7eb2d4537c0b0ab149146fdf181ca32d03071013de09b1e6415806",
+            "instrumentation_mode": "",
+            "ir_override": null,
+            "launch_cooperative_grid": false,
+            "launch_pdl": false,
+            "max_num_imprecise_acc_default": 0,
+            "maxnreg": null,
+            "name": "scan16",
+            "num_ctas": 1,
+            "num_stages": 3,
+            "num_warps": 4,
+            "profile_scratch_align": 1,
+            "profile_scratch_size": 0,
+            "ptx_options": null,
+            "ptx_version": null,
+            "sanitize_overflow": true,
+            "shared": 32768,
+            "supported_fp8_dtypes": [
+              "fp8e4b15",
+              "fp8e4nv",
+              "fp8e5"
+            ],
+            "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+            "tensordesc_meta": [],
+            "tmem_size": 0,
+            "triton_version": "3.6.0",
+            "warp_size": 32,
+            "n_regs": 140,
+            "n_spills": 0
+          }
+        }
+      }
+    }
+  ],
+  "old_identities": {
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.cubin": "abe3e1403e839ef60f13af32d546593f451becf1488bb5b11b940e57b00e992d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ptx": "c1faa40dd01b0d187836de9bc7f30bbb750aefe6c720abe92cef7fe13c67e701",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.json": "1d2a25166235a3ca327bc5e08133efa71fb6c1846a06b9b0e792d9b6504cc29b",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.source": "d97af06d4f1ff5d66b4bf7f195273f2bcc093a540ae6b4d1b7dcb8612433e0c9",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ttir": "89c08163e220385bb843d23beeab63b8be60becb80ac9ef55d943244e1638c04",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ttgir": "7d0f620c647ce36ed3e8bdca39fdd71b5fb5fa6ac3c1a45ecfbaed0c223a3c1a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.llir": "c922db1c4e63c23a1f4a789e74fed2caabd98544c3347e0e3bd61ff78b813afe",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.cubin": "1278324244afd13961e75cbd0a554a9bb9502c8e61193d361c015b7856208e20",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ptx": "dd60c5856a950e63fe64ff8d790ec623d73915ba334c6271c42f58ff05995f41",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.json": "eb657a1f3257c8332093ff4fdf3df3a5596ec18d3d3b742eeaabeab41105132e",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.source": "6ec5c586d6f40efe56ace20c9726e933e984753753519eceb8733e9017468d9a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ttir": "a18b99da33f829777da22925af7ef9518cd07c7e5b62976051bd375ceaff39c7",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ttgir": "231ab7f96dec83c9ec7c22c025d9c90887999195bd6f32a07d01a19fe6700afa",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.llir": "27aa39a8d701e8858c635a109837830ba8859f6761d4ea49311a77c445473aff",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.cubin": "c2b3362119abfbeb3df85e96788705f6ff4c79414e3a74e2d5d5f3355eff00f8",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ptx": "8c90341103eb4aea692cd0b8e6501126c0e6b6b6591668b46e1492257aea162d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.json": "6a36710e3593bfbcf6ce73a3a050330dda311d9231c206598a39b97aa71e7ec3",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.source": "269bef33e896d5ba82eff8bdc6611f37f07ada2823058f221f12dae605eea483",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ttir": "252a018fbff7eb1b5d7b48866200571ee7ef1387381ee0559637c8b6071ce15c",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ttgir": "2b84415bffc9fb725d73e391f0858fad12ccb4bb7c0d9d072d0e53c41733d926",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.llir": "9c9983f9863dc857f3d6980b87035d630b52669e1aa413566786fa0ecf13a273",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.cubin": "028e1a231cb553df10b2754e7ff935d3d2fa534812608f4a9b7170f4502da21a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ptx": "dcc86ffa8fc8a6b81a581fdd8795d6ccfe00f08801c601ada863e49852e5b7ea",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.json": "5ba53bef967997d0083d7a6e76b5e37c903e7ddf35c939666a0eea81de4b270d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.source": "4443d6447fca5e125f2db27c8942fcd964eeda43a0962808bb465363fb7bb9f2",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ttir": "eb7983638f06c891bae420b335927af2b9c8d567207af81d2a4d173d29931949",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ttgir": "15e100e121f760ad422e756899a99a842db1c40edeb99f026c3cf3684e821e23",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.llir": "4705cb734657d050f71c3e299e2b3e023471bb29122dbaafcc01b7b0d75b0c01"
+  },
+  "manipulation": {
+    "F8": {
+      "batch_metrics": [
+        {
+          "schedule": "original",
+          "CV": 0.13072624977871686,
+          "top10_mass": 0.1276743876733915
+        },
+        {
+          "schedule": "clustered",
+          "CV": 0.6689671386928563,
+          "top10_mass": 0.2446887176677484
+        },
+        {
+          "schedule": "interleaved",
+          "CV": 0.0004651579616435446,
+          "top10_mass": 0.1021550546878036
+        }
+      ],
+      "CV_ratio": 1438.1504646920196,
+      "CV_range": 0.6685019807312127,
+      "top10_mass_range": 0.1425336629799448
+    },
+    "F16": {
+      "batch_metrics": [
+        {
+          "schedule": "original",
+          "CV": 0.1328394298821414,
+          "top10_mass": 0.12789873182298991
+        },
+        {
+          "schedule": "clustered",
+          "CV": 0.662592574277027,
+          "top10_mass": 0.24322030943054088
+        },
+        {
+          "schedule": "interleaved",
+          "CV": 0.032779532464258514,
+          "top10_mass": 0.10701042671657232
+        }
+      ],
+      "CV_ratio": 20.2136066156371,
+      "CV_range": 0.6298130418127685,
+      "top10_mass_range": 0.13620988271396856
+    }
+  },
+  "manipulation_pass": true,
+  "ended": 1788805974.2531586
+}

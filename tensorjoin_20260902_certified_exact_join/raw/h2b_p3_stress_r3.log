@@ -1,0 +1,7 @@
+@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/cuda/__init__.py:1243: UserWarning: Attempting to run cuBLAS, but there was no current CUDA context! Attempting to set the primary context... (Triggered internally at /pytorch/aten/src/ATen/cuda/CublasHandlePool.cpp:335.)
+  return torch._C._cuda_getCurrentBlasHandle()
+P3_STRESS_CELL {"dataset": "esc50_panns", "iterations": 1000, "pass": true, "target": 1, "unique_signatures": 1}
+P3_STRESS_CELL {"dataset": "esc50_panns", "iterations": 1000, "pass": true, "target": 8, "unique_signatures": 1}
+P3_STRESS_CELL {"dataset": "ucf101_r3d18", "iterations": 1000, "pass": true, "target": 1, "unique_signatures": 1}
+P3_STRESS_CELL {"dataset": "ucf101_r3d18", "iterations": 1000, "pass": true, "target": 8, "unique_signatures": 1}
+P3_STRESS_SUMMARY {"output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/h2b_p3_stress.json", "stress_pass": true, "total_retained_invocations": 4000}

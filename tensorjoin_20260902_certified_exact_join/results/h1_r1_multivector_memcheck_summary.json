@@ -1,0 +1,64 @@
+{
+  "cases": [
+    {
+      "dataset": "esc50_panns",
+      "error_summaries": [
+        0
+      ],
+      "kernel_hash_match": true,
+      "log": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/h1_r1_memcheck_esc50_panns_keeper.log",
+      "log_sha256": "53fc8c7b82e47284eaced51ee1bcbf5950f30591853bfe278ef5896fe7bdcf42",
+      "memcheck_smoke_present": true,
+      "pass": true,
+      "runner_hash_match": true,
+      "variant": "keeper"
+    },
+    {
+      "dataset": "esc50_panns",
+      "error_summaries": [
+        0
+      ],
+      "kernel_hash_match": true,
+      "log": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/h1_r1_memcheck_esc50_panns_candidate.log",
+      "log_sha256": "de469e6e253e3660912bceadb1a96004c46726480d8a57f3f519b4da912e6193",
+      "memcheck_smoke_present": true,
+      "pass": true,
+      "runner_hash_match": true,
+      "variant": "candidate"
+    },
+    {
+      "dataset": "ucf101_r3d18",
+      "error_summaries": [
+        0
+      ],
+      "kernel_hash_match": true,
+      "log": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/h1_r1_memcheck_ucf101_r3d18_keeper.log",
+      "log_sha256": "4ab7a5fde3a2114595a25cfec9ddd8b1556e0cad91e9031b2d1ebe7404a5993e",
+      "memcheck_smoke_present": true,
+      "pass": true,
+      "runner_hash_match": true,
+      "variant": "keeper"
+    },
+    {
+      "dataset": "ucf101_r3d18",
+      "error_summaries": [
+        0
+      ],
+      "kernel_hash_match": true,
+      "log": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/h1_r1_memcheck_ucf101_r3d18_candidate.log",
+      "log_sha256": "62e26bc500f81f5c3ed72d852aa6607dda0e424a16477ef816ee85c32e00fdd3",
+      "memcheck_smoke_present": true,
+      "pass": true,
+      "runner_hash_match": true,
+      "variant": "candidate"
+    }
+  ],
+  "experiment_id": "tensorjoin_20260903_h1_r1_memcheck_gate",
+  "kernel": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/h1_multivector_kernels.py",
+  "kernel_sha256": "c24d6e94b81dc94f8ad50699eadac82a8a593e175c519a8d704947ab8e5db0db",
+  "runner": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h1_multivector_gpu_screen.py",
+  "runner_sha256": "11aaa72447266fef26286d80cbbe0bd22bc1626af437c0c9a0b121352600713e",
+  "safety_pass": true,
+  "scope": "bounded actual-data 4x8 object smoke for both D512 ragged and D2048 fixed-cardinality paths",
+  "tool": "NVIDIA Compute Sanitizer memcheck"
+}

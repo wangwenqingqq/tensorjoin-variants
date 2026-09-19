@@ -1,0 +1,12 @@
+{
+  "verified_at_utc": "2026-09-04T14:30:56.657757+00:00",
+  "host": "gpu-host-8",
+  "root": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join",
+  "manifest_sha256": "06121303a1e43d23dbd77fe6c5a2a5ad32ddf98908a34dd97ceaccc16eed77fa",
+  "entries_verified": 19,
+  "current_status_before_sha256": "423df3ee6cd1dce15d9669434f7b5db7c6f215bd74c0c91284f0bbb459a61e12",
+  "current_status_after_sha256": "9851925b377682d545bdc51f81d5f4047d5e111c50868a532548ffd056518828",
+  "remote_rerun": false,
+  "gpu_operations": false,
+  "install": "Validated new files, no-overwrite hardlinks, checkpointed atomic route update; stage retained"
+}

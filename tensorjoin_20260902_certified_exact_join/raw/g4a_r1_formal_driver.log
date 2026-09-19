@@ -1,0 +1,444 @@
+G4A_R1_FORMAL_DRIVER_START 2026-09-03T05:05:39+00:00 host=gpu-host-8
+SLOT_START slot=0 order=kc attempt=0 time=2026-09-03T05:05:39+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "0", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 91, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "34.87", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_0_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "227ba81c82cb5bbbda7cdb68915b0b3e651e6fa397c7c253b49218fec088d825", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_0_kc_a0_preflight.log", "preflight_log_sha256": "7cfa6af8528054327827e922aa158ec86a9bf69409e91c20425eafd246ce54eb", "process_id": 0, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_0_kc_a0.log", "raw_log_sha256": "9a068281efe0f62002e404f9de704a2a114a8ecd48a870850105a2ec88e89c36", "result": "results/g4a_r1_formal_process_0_kc_a0.json", "result_sha256": "ab5da5e16d2206f16ad8c7a667b690132258f6b2047368a57ef1611687a289f1", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3817762], "wall_seconds": 37.55041480064392}
+SLOT_RETURN slot=0 order=kc attempt=0 rc=0 manifest=results/g4a_r1_formal_process_0_kc_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.55041480064392}
+SLOT_START slot=1 order=ck attempt=0 time=2026-09-03T05:06:18+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "1", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 92, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "86.69", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_1_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "3db91e99a9a70c9adfd7e88f4ca604bfdc6cf0cd64007b668cc2af7cc184402e", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_1_ck_a0_preflight.log", "preflight_log_sha256": "434fcefe2d8ee053dfac48c87acbce1e6be2de78d1a21e295c58c24357d0ff81", "process_id": 1, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_1_ck_a0.log", "raw_log_sha256": "450f3f9ff05957cdac14ce5b6876015e59f2aaece713ef88cc4504610216a4ce", "result": "results/g4a_r1_formal_process_1_ck_a0.json", "result_sha256": "d4ec52f5383c847388513b959b2f4ae1a38adedc422c32f9723035085b6a7203", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3818680], "wall_seconds": 37.858880281448364}
+SLOT_RETURN slot=1 order=ck attempt=0 rc=0 manifest=results/g4a_r1_formal_process_1_ck_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.858880281448364}
+SLOT_START slot=2 order=kc attempt=0 time=2026-09-03T05:06:56+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "2", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 92, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "87.69", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_2_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "e4a311be79db8dbc4357e772f0380ec0cf66f7a54f8a796d07ead88cfd2339ec", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_2_kc_a0_preflight.log", "preflight_log_sha256": "8c8314b9d02a9b62a4996a11912c2306fac07069f06cd62653b3b2446cd9bb27", "process_id": 2, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_2_kc_a0.log", "raw_log_sha256": "80dbe5fcb15a9d09bfbf95576c34fc2d47f615418f6aab0fe4fee18222472453", "result": "results/g4a_r1_formal_process_2_kc_a0.json", "result_sha256": "39c1b0f53166960503a11f6bee5689b2be25a73fca8624d78a6adc9935c7ab7d", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3838343], "wall_seconds": 37.698211669921875}
+SLOT_RETURN slot=2 order=kc attempt=0 rc=0 manifest=results/g4a_r1_formal_process_2_kc_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.698211669921875}
+SLOT_START slot=3 order=ck attempt=0 time=2026-09-03T05:07:35+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "3", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 92, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "87.98", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_3_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "de60fdd0a7697e8a8eb036690b7a3accca6355df3a295417312cd476f44340e7", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_3_ck_a0_preflight.log", "preflight_log_sha256": "9ef8df890705ad6318fcf9a81eaaab0433c2398750e693b7595907d10dfa83bb", "process_id": 3, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_3_ck_a0.log", "raw_log_sha256": "43124f2ffa0029bce6cff087045f45d1871341651fd17787edb207d29fc28d1a", "result": "results/g4a_r1_formal_process_3_ck_a0.json", "result_sha256": "cdcbecf6e84b79c59bcd06e036910583d0c6c79336785107295ee13a98e07378", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3884404], "wall_seconds": 38.1115882396698}
+SLOT_RETURN slot=3 order=ck attempt=0 rc=0 manifest=results/g4a_r1_formal_process_3_ck_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 38.1115882396698}
+SLOT_START slot=4 order=ck attempt=0 time=2026-09-03T05:08:14+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "4", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 92, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "86.28", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_4_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "eb149feb9f273ddb63b4d32d0c91e3fb49d669e34c08103b9fae3bec48bbbe42", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_4_ck_a0_preflight.log", "preflight_log_sha256": "e52e0037829b3a52a228563257bef9996debb86031ebbea5b51dd0a38045b635", "process_id": 4, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_4_ck_a0.log", "raw_log_sha256": "970a3ee72538197f22d86a75637cdff77a89af1fdef8289718f3ffdb4b113f3c", "result": "results/g4a_r1_formal_process_4_ck_a0.json", "result_sha256": "226952d515b1c5d313123dc9ccd9f280cf03f6d8403dfea4e9e0d99b42a263f5", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3890051], "wall_seconds": 37.12336254119873}
+SLOT_RETURN slot=4 order=ck attempt=0 rc=0 manifest=results/g4a_r1_formal_process_4_ck_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.12336254119873}
+SLOT_START slot=5 order=kc attempt=0 time=2026-09-03T05:08:51+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "5", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 92, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "88.86", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_5_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "abaf7a163308b08debc7cc25487987f6cd8d202d175c7a32aa56fff24c099e2b", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_5_kc_a0_preflight.log", "preflight_log_sha256": "d5c923abe8c6e760ca0c5377ab7368a057f7356aadd94e9cc4daa0ff7647e7ac", "process_id": 5, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_5_kc_a0.log", "raw_log_sha256": "a931f2b378c1b7c413af52e76239a81f1de4a82724b3cfe10e8b7efa163ce76a", "result": "results/g4a_r1_formal_process_5_kc_a0.json", "result_sha256": "d3aa9896f92119a6d204e73fd1f4ea218ab95a33cf10e347161674585d786730", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3890779], "wall_seconds": 38.299797773361206}
+SLOT_RETURN slot=5 order=kc attempt=0 rc=0 manifest=results/g4a_r1_formal_process_5_kc_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 38.299797773361206}
+SLOT_START slot=6 order=ck attempt=0 time=2026-09-03T05:09:31+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "6", "--attempt", "0", "--order", "CK", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 91, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "90.03", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_6_ck_a0_occupancy.jsonl", "occupancy_log_sha256": "c59276eaf6146fb029e294289412a2b3d555f636f8b5fde877e330f98b9b032b", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "CK", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_6_ck_a0_preflight.log", "preflight_log_sha256": "ab8b0e79a0d16b458476d7a939cef5f036ee688fae4cd72c1a03bfa4ff21d91d", "process_id": 6, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_6_ck_a0.log", "raw_log_sha256": "e864ac8bda72ad7f940ce20bae3599167aab2c7d408da480f4f46c35f846da14", "result": "results/g4a_r1_formal_process_6_ck_a0.json", "result_sha256": "8a651ad0e0dd00c28ebd561f5d484fc5f073d65ff9df85e833646ec4a269aae3", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3909940], "wall_seconds": 37.526774644851685}
+SLOT_RETURN slot=6 order=ck attempt=0 rc=0 manifest=results/g4a_r1_formal_process_6_ck_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.526774644851685}
+SLOT_START slot=7 order=kc attempt=0 time=2026-09-03T05:10:09+00:00
+SLOT_COMPLETE {"admitted": true, "attempt": 0, "cache_path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache", "command": ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_r1_dynamic_router_timing_gpu1.py", "--phase", "formal", "--process-id", "7", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"], "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1", "external_monitor_max_gpu_utilization_percent": 91, "external_monitor_max_process_memory_mib": 1010, "foreign_rows": [], "gpu1": {"clocks.mem": "12481", "clocks.sm": "2362", "driver_version": "590.48.01", "index": "1", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "88.99", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"}, "occupancy_log": "raw/g4a_r1_formal_process_7_kc_a0_occupancy.jsonl", "occupancy_log_sha256": "615369c3a87b134f097d37c8eb2bf4fb5591b01c951c3dc0abb281e65513d364", "orchestrator_sha256": "83928a70866a34d7657649bb106cd9f5b3a4eba8a15ec65a6ea6cdd870785540", "order": "KC", "phase": "formal", "postflight_compute_rows": [], "preflight_log": "raw/g4a_r1_formal_process_7_kc_a0_preflight.log", "preflight_log_sha256": "1aef2c080afc23eda55537a8003cb05c93a02aa76ae1323dbe933e8356a9e355", "process_id": 7, "protocol_sha256": "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac", "raw_log": "raw/g4a_r1_formal_process_7_kc_a0.log", "raw_log_sha256": "c3fc0429cb9d2c0d00a5c0a8b3f830ec8266934c8f1d2ff5592b78faecb8913e", "result": "results/g4a_r1_formal_process_7_kc_a0.json", "result_sha256": "d437d5d4eae92fb2343a4e2840027157907b50a5f7e908acde84057f1c409616", "returncode": 0, "runner_sha256": "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6", "runner_was_launched": true, "settings": {"observations": 200, "sustained_launches": 1000, "warmups": 20}, "status": "clean_slot_complete", "target_gpu_pids": [3910624], "wall_seconds": 37.60879397392273}
+SLOT_RETURN slot=7 order=kc attempt=0 rc=0 manifest=results/g4a_r1_formal_process_7_kc_a0_manifest.json
+MANIFEST_STATUS {'status': 'clean_slot_complete', 'admitted': True, 'runner_was_launched': True, 'foreign_rows': [], 'returncode': 0, 'wall_seconds': 37.60879397392273}
+AUDIT_START 2026-09-03T05:10:47+00:00
+{
+  "auditor_sha256": "9ba08eb65961ca6334119df24e3447f2b3e9913056714dbc7460a1e169fee0a5",
+  "expected_cubins": {
+    "analytic_certificate_compact_i64.cubin": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "certified_fp32_filter_i64.cubin": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670",
+    "refine_ambiguous_fp64_i64.cubin": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+  },
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "measurement_status": "runtime_binary_identity_not_performance",
+  "phase": "formal",
+  "processes": [
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_0_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 0
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_1_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 1
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_2_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 2
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_3_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 3
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_4_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 4
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_5_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 5
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_6_ck_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 6
+    },
+    {
+      "attempt": 0,
+      "cache_path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache",
+      "cubins": {
+        "analytic_certificate_compact_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+            "sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac"
+          }
+        ],
+        "certified_fp32_filter_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+            "sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670"
+          }
+        ],
+        "refine_ambiguous_fp64_i64.cubin": [
+          {
+            "path": "artifacts/g4a_r1_formal_process_7_kc_a0_triton_cache/VIBYMX23CKNQXHPXM6YZZP3MCMX3VEEDGPT4SUG5NIDS4NU47CPA/refine_ambiguous_fp64_i64.cubin",
+            "sha256": "ff0572a7eefcb6ccba91c7da0020d370e45d7f8f7c03d3a55e8f5ca53c477c50"
+          }
+        ]
+      },
+      "pass": true,
+      "process_id": 7
+    }
+  ],
+  "runtime_binary_gate_pass": true
+}
+SUMMARY_START 2026-09-03T05:10:47+00:00
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "promote_shape_local_attribution",
+  "dynamic_count_contract_pass": true,
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "formal_gate_pass": true,
+  "formal_thresholds": {
+    "bootstrap_ci95_lower_minimum": 1.25,
+    "process_median_wins_required": 8,
+    "sustained_geometric_mean_minimum": 1.2,
+    "sustained_wins_required": 8
+  },
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 356.21349999999995,
+      "p10_us": 352.6285,
+      "p90_us": 371.29380000000003
+    },
+    "keeper_two_stage": {
+      "median_us": 787.3335,
+      "p10_us": 784.8167,
+      "p90_us": 792.4842
+    }
+  },
+  "measurement_scope": "host-dispatched dynamic-count resident-GPU operator",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 356.868,
+        "p10_us": 352.3979,
+        "p90_us": 381.8848
+      },
+      "keeper_two_stage": {
+        "median_us": 787.588,
+        "p10_us": 784.8728000000001,
+        "p90_us": 791.5076
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 355.783,
+        "p10_us": 352.82620000000003,
+        "p90_us": 359.95660000000004
+      },
+      "keeper_two_stage": {
+        "median_us": 787.1179999999999,
+        "p10_us": 784.7011,
+        "p90_us": 794.2379
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.1946385789347977,
+  "paired_process_bootstrap": {
+    "ci95_lower": 2.1592753788952144,
+    "ci95_upper": 2.213375881016478,
+    "samples": 20000,
+    "seed": 20260903
+  },
+  "phase": "formal",
+  "process_median_wins": 8,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 355.80150000000003,
+      "candidate_sustained_mean_us": 356.236668,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.0775000000001,
+      "keeper_sustained_mean_us": 785.785074,
+      "median_speedup_keeper_over_candidate": 2.2121253002025005,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g4a_r1_formal_process_0_kc_a0.json",
+      "result_sha256": "ab5da5e16d2206f16ad8c7a667b690132258f6b2047368a57ef1611687a289f1",
+      "sustained_speedup_keeper_over_candidate": 2.205795036236977
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 380.2785,
+      "candidate_sustained_mean_us": 371.949419,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 788.8789999999999,
+      "keeper_sustained_mean_us": 784.23517,
+      "median_speedup_keeper_over_candidate": 2.0744769951496074,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g4a_r1_formal_process_1_ck_a0.json",
+      "result_sha256": "d4ec52f5383c847388513b959b2f4ae1a38adedc422c32f9723035085b6a7203",
+      "sustained_speedup_keeper_over_candidate": 2.1084457454146475
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 355.51149999999996,
+      "candidate_sustained_mean_us": 357.35276600000003,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.7795000000001,
+      "keeper_sustained_mean_us": 787.827596,
+      "median_speedup_keeper_over_candidate": 2.2159044081555734,
+      "order": "KC",
+      "process_id": 2,
+      "result": "results/g4a_r1_formal_process_2_kc_a0.json",
+      "result_sha256": "39c1b0f53166960503a11f6bee5689b2be25a73fca8624d78a6adc9935c7ab7d",
+      "sustained_speedup_keeper_over_candidate": 2.204621513969196
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 355.77,
+      "candidate_sustained_mean_us": 357.45120899999995,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 786.6690000000001,
+      "keeper_sustained_mean_us": 788.942886,
+      "median_speedup_keeper_over_candidate": 2.2111729488152463,
+      "order": "CK",
+      "process_id": 3,
+      "result": "results/g4a_r1_formal_process_3_ck_a0.json",
+      "result_sha256": "cdcbecf6e84b79c59bcd06e036910583d0c6c79336785107295ee13a98e07378",
+      "sustained_speedup_keeper_over_candidate": 2.207134473561118
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 356.084,
+      "candidate_sustained_mean_us": 355.088417,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.0445,
+      "keeper_sustained_mean_us": 789.144567,
+      "median_speedup_keeper_over_candidate": 2.210277631120747,
+      "order": "CK",
+      "process_id": 4,
+      "result": "results/g4a_r1_formal_process_4_ck_a0.json",
+      "result_sha256": "226952d515b1c5d313123dc9ccd9f280cf03f6d8403dfea4e9e0d99b42a263f5",
+      "sustained_speedup_keeper_over_candidate": 2.2223889296845187
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 355.66200000000003,
+      "candidate_sustained_mean_us": 340.291249,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.432,
+      "keeper_sustained_mean_us": 789.293909,
+      "median_speedup_keeper_over_candidate": 2.2139896868375026,
+      "order": "KC",
+      "process_id": 5,
+      "result": "results/g4a_r1_formal_process_5_kc_a0.json",
+      "result_sha256": "d3aa9896f92119a6d204e73fd1f4ea218ab95a33cf10e347161674585d786730",
+      "sustained_speedup_keeper_over_candidate": 2.3194657850281657
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 355.705,
+      "candidate_sustained_mean_us": 353.721507,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.0175,
+      "keeper_sustained_mean_us": 789.6858619999999,
+      "median_speedup_keeper_over_candidate": 2.212556753489549,
+      "order": "CK",
+      "process_id": 6,
+      "result": "results/g4a_r1_formal_process_6_ck_a0.json",
+      "result_sha256": "8a651ad0e0dd00c28ebd561f5d484fc5f073d65ff9df85e833646ec4a269aae3",
+      "sustained_speedup_keeper_over_candidate": 2.2325073436939755
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 356.4185,
+      "candidate_sustained_mean_us": 338.927258,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 787.8715,
+      "keeper_sustained_mean_us": 787.0130389999999,
+      "median_speedup_keeper_over_candidate": 2.210523583932933,
+      "order": "KC",
+      "process_id": 7,
+      "result": "results/g4a_r1_formal_process_7_kc_a0.json",
+      "result_sha256": "d437d5d4eae92fb2343a4e2840027157907b50a5f7e908acde84057f1c409616",
+      "sustained_speedup_keeper_over_candidate": 2.322070652104352
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "single_protocol_sha256": [
+    "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac"
+  ],
+  "single_runner_sha256": [
+    "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6"
+  ],
+  "sustained_geometric_mean_speedup": 2.226875041267564,
+  "sustained_wins": 8
+}
+G4A_R1_FORMAL_DRIVER_DONE 2026-09-03T05:10:47+00:00

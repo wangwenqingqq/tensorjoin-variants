@@ -1,0 +1,10 @@
+d7fcb10a79b8f292c63e9e00bcc2bbae392d75247d20d116018bc4f3b38d2034  ./README.md
+27e03e4af52642285a754c9f84fefdcc88a337d0243633eb495e9b608154bcc9  ./SHA256SUMS.new
+540fd02e51658b9159315ddd36d2fc800a2ad640aee964c370c6dbdff38728cb  ./raw/acquisition.log
+69f0cdb4fa0dcaba572a6790ee492886a0551fe22320866dbceea2e11d850603  ./raw/acquisition_attempt1.log
+a5386ac25748a3a55d833fa2e99ef75b17a37588e52b9d26f68a2105febe3f54  ./raw/acquisition_clean.log
+aec7630a360145f3b599494198965f7015fa6b53053d814f91b8e0bc27b4a233  ./raw/fashion-train-images-idx3-ubyte.gz.part
+71d3c56da81cf41545259aee017ad178cf1178b01d49331d32597d95bc3a16bd  ./raw/fashion-train-images-idx3-ubyte.gz.part.clean
+66e8de8b92a4dd1617f828c92863e11ce100407f2ab810428487ad5b800068d8  ./receipts/fashion-train-images-idx3-ubyte.gz.headers.attempt1.txt
+45c23274be67825a2ac02f822e0db9c78be56d8af57dd4d87f3df577a8136f34  ./receipts/fashion-train-images-idx3-ubyte.gz.headers.clean.txt
+1c776ec3efd6d1783cfa790a93a4fb1f99321cdc7cab0feae7501fc0964beade  ./receipts/fashion-train-images-idx3-ubyte.gz.headers.txt

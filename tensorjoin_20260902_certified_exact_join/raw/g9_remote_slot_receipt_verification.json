@@ -1,0 +1,83 @@
+{
+  "pass": true,
+  "slots": [
+    {
+      "label": "g9_check_a0",
+      "admitted": false,
+      "launched": true,
+      "artifact_receipts_verified": 3
+    },
+    {
+      "label": "g9_check_a1",
+      "admitted": false,
+      "launched": false,
+      "artifact_receipts_verified": 2
+    },
+    {
+      "label": "g9_check_a2",
+      "admitted": false,
+      "launched": true,
+      "artifact_receipts_verified": 3
+    },
+    {
+      "label": "g9_check_a3",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_graph_check_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_graph_memcheck_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_graph_p0_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_graph_p1_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_graph_synccheck_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_memcheck_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_synccheck_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_timing_p0_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    },
+    {
+      "label": "g9_timing_p1_a0",
+      "admitted": true,
+      "launched": true,
+      "artifact_receipts_verified": 4
+    }
+  ]
+}

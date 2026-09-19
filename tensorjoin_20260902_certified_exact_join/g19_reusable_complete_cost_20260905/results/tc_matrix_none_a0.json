@@ -1,0 +1,24 @@
+{
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/run_slot.py",
+    "--method",
+    "tc",
+    "--kind",
+    "matrix",
+    "--record-id",
+    "tc_matrix_none_a0"
+  ],
+  "returncode": 0,
+  "method": "tc",
+  "kind": "matrix",
+  "tool": "none",
+  "log_sha256": "d0c9eed6b250ba3c77c8d6b2e309a1a5b416466038654e52e29f1f8e891b9aa4",
+  "child_identity_hold_seconds": 1,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_tc_matrix_none_a0.json",
+  "inner_sha256": "e99699c84b601c5246d068b51e8b4c2c7be1d44799117c854a7f1d7c59994f56",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false
+}

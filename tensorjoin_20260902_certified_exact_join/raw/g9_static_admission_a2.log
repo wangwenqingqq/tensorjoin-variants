@@ -1,0 +1,2 @@
+PASS 18 runtime JIT kernels; native INT8 MMA; no spills/stack/local; exact FP64 constants
+limb_dot 51fd6e585ce7c7d26eaccac8f6fe1a2b3e5a1b188a449cd8e2095f90600ec573 registers 74 IMMA sites 128

@@ -1,0 +1,23 @@
+\begin{table*}[t]
+  \centering
+  \caption{Latest-baseline audit under the frozen FP64-oracle contract.  GTS
+  and cuVS failed the small G2A exactness gate, so the G2B measurements are one
+  diagnostic run each and are never used as exact-speedup results.  RT-HiSS
+  was not measured because no public artifact was found.}
+  \label{tab:latest-baselines}
+  \small
+  \begin{tabular}{llrrrr}
+    \toprule
+    Method & Frozen artifact & G2A $\Delta$ & G2B FP/FN & G2B F1 & G2B time (s) \\
+    \midrule
+    RT-HiSS & artifact unavailable & -- & -- & -- & -- \\
+    cuVS brute force & 26.8.1 & $-4$ & 24/26 & 0.999993632 & 3.552 \\
+    GTS & commit \texttt{3bac1b7} & $+2$ & 4/0 & 0.999999491 & 1,111.520 \\
+    \bottomrule
+  \end{tabular}
+  \vspace{2pt}
+
+  \footnotesize G2B is CIFAR-GIST-512, $N=60{,}000$, $D=512$, with
+  3,926,078 oracle pairs.  Time spans pageable-host input through sorted
+  canonical host IDs; GTS and cuVS accuracy diagnostics accompany every time.
+\end{table*}

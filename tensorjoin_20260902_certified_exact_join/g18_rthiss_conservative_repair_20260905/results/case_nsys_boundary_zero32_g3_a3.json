@@ -1,0 +1,145 @@
+{
+  "record_id": "nsys_boundary_zero32_g3_a3",
+  "case": {
+    "name": "boundary_zero32",
+    "n": 32,
+    "d": 512,
+    "path": "g17_rthiss_pair_contract_20260905/data/boundary_zero32.f32",
+    "source_sha256": "88d045cf7a6162d2c8659fffa34e61ee5f0916334a72eb3b751e98079ac7b6f5",
+    "epsilon": 1.0,
+    "reference_threshold": 1.0,
+    "oracle_path": null
+  },
+  "command": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/build_r1/RT-HiSS",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/boundary_zero32.f32",
+    "1",
+    "highest"
+  ],
+  "returncode": 0,
+  "sanitizer": "none",
+  "public_seconds": null,
+  "operational_seconds_not_performance": 1.9470969499961939,
+  "binary_sha256": "b4436293ceefe1d3b434a55f8da0d1a14478f6938c77ec81b05752d4ecead9fb",
+  "libowl_sha256": "1ea82ca7c81b8d047f2420f765231bedcaccb7ec5885ba0fa5e6c055992c04f0",
+  "low": 0.9999386668205261,
+  "high": 1.0000613927841187,
+  "threshold": 1.0,
+  "audit": {
+    "adapter_structure_pass": true,
+    "all_original_ids_decoded": true,
+    "output_pairs": 104,
+    "output_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+    "frozen_oracle_pairs": 104,
+    "frozen_oracle_sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+    "frozen_reference_pass": true,
+    "missing_pairs": 0,
+    "extra_pairs": 0,
+    "first_missing": [],
+    "first_extra": [],
+    "native_threshold_reference_pass": true,
+    "native_threshold_oracle_pairs": 104,
+    "native_threshold_missing": 0,
+    "native_threshold_extra": 0,
+    "unique_rt_candidate_pairs": 1024,
+    "all_pair_count": 1024,
+    "rt_candidate_missing_frozen_pairs": 0,
+    "first_rt_candidate_missing": [],
+    "self_pairs": 32,
+    "reference_threshold": 1.0,
+    "native_threshold": 1,
+    "scalar_fmaf_replays": [],
+    "replay_complete": true,
+    "batches": [
+      {
+        "batch": 0,
+        "accepted_bits": 104,
+        "candidate_entries": 256,
+        "mask_words": 32
+      }
+    ],
+    "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+  },
+  "map_diagnostic": {
+    "byte_identical_to_native_snapshot": true,
+    "per_position_value_bytes_identical": true,
+    "actual_map_bijection_and_reordered_input_and_full_ids_verified": true
+  },
+  "child_identity_hold_seconds": 1,
+  "work": {
+    "safe_reject": 918,
+    "safe_accept": 44,
+    "terminal_accept": 60,
+    "terminal_reject": 2,
+    "fp32_dimensions": 71800,
+    "fp64_dimensions": 31744,
+    "terminal_fraction": 0.060546875,
+    "candidate_set_same_as_native": true
+  },
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "complete frozen FP64-reference output plus candidate/permutation/counter gates"
+  },
+  "raw_files": {
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_candidates.u32": {
+      "bytes": 1024,
+      "sha256": "1a00e250f9d0042a74034401b5e9eb9299a19b74f9efb1732ff2cef0a44f3d88"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_grouped.u32": {
+      "bytes": 128,
+      "sha256": "afbc67011b6f94a508935ad8edcbdd3c9b56c4db336f8d3847a8a1815183828f"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_groups.u32": {
+      "bytes": 36,
+      "sha256": "771dc473caef84f35b42327c267e74e0e256df36d16d6de49f6b6c538ee380f9"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_compressed.u32": {
+      "bytes": 416,
+      "sha256": "a1a20bbd633f6db7f1196c01a835ae700a7f09c4aac92c55daa6565b150da311"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/results.txt": {
+      "bytes": 1307,
+      "sha256": "5ba2bec0188a7d9b905d9a67bf6f0d0d7c55a5b88afdc968dfcad34116556979"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_counts.u32": {
+      "bytes": 32,
+      "sha256": "ab4f9ec6a106ce6db42a8ee8edf72714144bcbf908942c8c3e833a5209699bc6"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/export.json": {
+      "bytes": 184,
+      "sha256": "aa7b343425dc5e19f12ab2c0c9cd4af35518b0ccfc24207c9838cd82a1853ae2"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/g18_stats.u64": {
+      "bytes": 48,
+      "sha256": "c794b7548613055eabfd8703ff35184d81de980ea2e465fdf2788890e293a5ff"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_starts.u32": {
+      "bytes": 36,
+      "sha256": "b04e1fee9d924c7dca76e04d5913173f6d5c8cbc43cba790cb614b7acb9c127f"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/point_map.u32": {
+      "bytes": 128,
+      "sha256": "e46923546dfca14b1a4f2d346bd25b056e257b3c42b95ac9c3d1cdfd1be23e0d"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/program.log": {
+      "bytes": 2466,
+      "sha256": "0c7f547d23950505cf72759289cd95bd36a33e25528876ddc5fafe77bf798578"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_prefix.u32": {
+      "bytes": 36,
+      "sha256": "771dc473caef84f35b42327c267e74e0e256df36d16d6de49f6b6c538ee380f9"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/b0_mask.u32": {
+      "bytes": 128,
+      "sha256": "42001fa6aecde380f03be55ee30baf2c408db7888c0b2683e690d4b5a777a864"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/dimension_map.u32": {
+      "bytes": 2048,
+      "sha256": "f9af24d67be74d7813d75356eabe1cb30a3015454c3c82ce10c160a71605d018"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/nsys_boundary_zero32_g3_a3/pairs.u64": {
+      "bytes": 832,
+      "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e"
+    }
+  }
+}

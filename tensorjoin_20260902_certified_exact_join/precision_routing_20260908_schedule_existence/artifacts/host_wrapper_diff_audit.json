@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "old_source_sha256": "97ff82d27a72db83cbb6d9b6df3b35b458f9c03cea9d7d29d497bc5488e6847b",
+  "new_common_sha256": "fa8895de3d0445856a2f95c5d390fb691d8e8eaf84960fd770f179b4b3457748",
+  "only_run_changes": [
+    "Unpack x,schedule from prearranged input tuple",
+    "Index original triangular tile arrays by schedule before int32 conversion"
+  ],
+  "cuda_program_changes": false,
+  "new_numerical_parameters": false,
+  "new_tile_shapes": false
+}

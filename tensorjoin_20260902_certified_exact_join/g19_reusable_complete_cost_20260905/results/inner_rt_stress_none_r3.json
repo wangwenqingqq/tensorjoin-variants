@@ -1,0 +1,2562 @@
+{
+  "method": "rt",
+  "kind": "stress",
+  "record_id": "rt_stress_none_r3",
+  "pid": 1884894,
+  "torch_version": "2.11.0+cu130",
+  "gpu": "_CudaDeviceProperties(name='NVIDIA RTX PRO 6000 Blackwell Server Edition', major=12, minor=0, total_memory=97252MB, multi_processor_count=188, uuid=a149f5af-55ab-ce33-8d3d-371a7ae61dd2, pci_bus_id=90, pci_device_id=0, pci_domain_id=0, L2_cache_size=128MB)",
+  "source_manifest_sha256": "01ea40cae6370ec3f17181d5ba4c8218184237f39e14033993e2c85c7925bd84",
+  "public_timing": false,
+  "rows": [
+    {
+      "cycle": 0,
+      "iteration": 0,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 531703520,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1601961984,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 910327808
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 1,
+      "case": "boundary_zero32",
+      "host_pointer": 531703520,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 910524416
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 2,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 915881984
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 3,
+      "case": "boundary_zero32",
+      "host_pointer": 531703520,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 915894272
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 4,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 921833472
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 5,
+      "case": "boundary_zero32",
+      "host_pointer": 545539120,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 921837568
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 6,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 542692656,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 921853952
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 7,
+      "case": "boundary_zero32",
+      "host_pointer": 542692448,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 921858048
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 8,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 923156480
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 9,
+      "case": "boundary_zero32",
+      "host_pointer": 543738304,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 923156480
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 10,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 923172864
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 11,
+      "case": "boundary_zero32",
+      "host_pointer": 544656720,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 923185152
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 12,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924102656
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 13,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924106752
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 14,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924119040
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 15,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924119040
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 16,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924143616
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 17,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924147712
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 18,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924164096
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 19,
+      "case": "boundary_zero32",
+      "host_pointer": 544700256,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924164096
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 20,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924180480
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 21,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924188672
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 22,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924209152
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 23,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924209152
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 24,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924225536
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 25,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924225536
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 26,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924241920
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 27,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924241920
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 28,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924266496
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 29,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924278784
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 30,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924291072
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 31,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924291072
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 32,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924299264
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 33,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924299264
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 34,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924303360
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 35,
+      "case": "boundary_zero32",
+      "host_pointer": 544689840,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924295168
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 36,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 536401168,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924303360
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 37,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924299264
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 38,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924307456
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 39,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924299264
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 40,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924307456
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 41,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924303360
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 42,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924311552
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 43,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924303360
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 44,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924311552
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 45,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924307456
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 46,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924315648
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 47,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924311552
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 48,
+      "case": "cifar4096",
+      "host_pointer": 523314896,
+      "output_pointer": 547530992,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924319744
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 49,
+      "case": "boundary_zero32",
+      "host_pointer": 544673280,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 924311552
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 0,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926085120
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 1,
+      "case": "boundary_zero32",
+      "host_pointer": 510685552,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926076928
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 2,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 3,
+      "case": "boundary_zero32",
+      "host_pointer": 510685552,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926081024
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 4,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 5,
+      "case": "boundary_zero32",
+      "host_pointer": 541533568,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926081024
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 6,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 547530816,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 7,
+      "case": "boundary_zero32",
+      "host_pointer": 542551184,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926085120
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 8,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 537320112,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 9,
+      "case": "boundary_zero32",
+      "host_pointer": 548433200,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 10,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926097408
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 11,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 12,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926097408
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 13,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 14,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926097408
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 15,
+      "case": "boundary_zero32",
+      "host_pointer": 549384736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 16,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926097408
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 17,
+      "case": "boundary_zero32",
+      "host_pointer": 549384736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 18,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926097408
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 19,
+      "case": "boundary_zero32",
+      "host_pointer": 549384736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926089216
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 20,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926101504
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 21,
+      "case": "boundary_zero32",
+      "host_pointer": 549384736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 22,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926101504
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 23,
+      "case": "boundary_zero32",
+      "host_pointer": 549384736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 24,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926101504
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 25,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926093312
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 26,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926105600
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 27,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926101504
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 28,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 29,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926105600
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 30,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926113792
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 31,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 32,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926113792
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 33,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926105600
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 34,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926113792
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 35,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 36,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926113792
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 37,
+      "case": "boundary_zero32",
+      "host_pointer": 549368176,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926105600
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 38,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 39,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 40,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 41,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 42,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 43,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926113792
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 44,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 45,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 46,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 47,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926134272
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 48,
+      "case": "cifar4096",
+      "host_pointer": 523314432,
+      "output_pointer": 500373904,
+      "work": {
+        "pairs": 262144
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926117888
+      }
+    },
+    {
+      "cycle": 1,
+      "iteration": 49,
+      "case": "boundary_zero32",
+      "host_pointer": 502914736,
+      "output_pointer": 532201504,
+      "work": {
+        "pairs": 104
+      },
+      "audit": {
+        "pairs": 104,
+        "sha256": "f0ec798fe9d3dd980128d8e3b57e19f67b58b1d8b6e4cd3a7b5beaf341f6d56e",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926109696
+      }
+    }
+  ],
+  "engine_records": [
+    {
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 0.20535705401562154,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 689700864,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 867987456
+      },
+      "device_used_range": 0,
+      "rss_range": 8437760,
+      "close_receipt": null,
+      "destruction_seconds_diagnostic": 0.05164372798753902,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 864485376
+      }
+    },
+    {
+      "cycle": 1,
+      "initialization_seconds_diagnostic": 0.08761192800011486,
+      "library_sha256": "a304177e1be53426df9ffb7792b20bf89261398b579c236c215b9bde0d2eae98",
+      "after_prepare_memory": {
+        "cuda_used": 1606156288,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 926035968
+      },
+      "device_used_range": 0,
+      "rss_range": 53248,
+      "close_receipt": null,
+      "destruction_seconds_diagnostic": 0.041063055978156626,
+      "after_destroy_memory": {
+        "cuda_used": 1589379072,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 866226176
+      }
+    }
+  ],
+  "cache": {},
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false,
+  "novelty_pass": false
+}

@@ -1,0 +1,59 @@
+{
+  "binary_sha256": "71c0e8d8892d7f6e6e44d217fec095ecf1cc3c180b3ecb25590d573d321ef979",
+  "canonical_pair_count": 3926078,
+  "canonical_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+  "command": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/mistic_g2a/build_g2a/main_d512",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/g2b_cifar60000/vectors_f64_exact_widening.raw",
+    "512",
+    "0",
+    "0.62890625"
+  ],
+  "cuda_visible_devices": "0",
+  "diagnostic_historical_count": 3926074,
+  "diagnostic_historical_count_match": false,
+  "diagnostic_wall_s": 6.137144123000326,
+  "duplicate_pairs": 0,
+  "effective_epsilon_d2": 0.3955230712890625,
+  "epsilon": 0.62890625,
+  "exact_method_dtype": "float64 exact widening",
+  "experiment_id": "tensorjoin_20260903_mistic_cifar60000_g2b_smoke",
+  "gds_comparison": {
+    "exact_match": true,
+    "extra_pairs": 0,
+    "first_extra_pairs": [],
+    "first_missing_pairs": [],
+    "missing_pairs": 0,
+    "reference_count": 3926078,
+    "reference_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+  },
+  "host": "gpu-host-8",
+  "input_sha256": "4681c049fc75cdd2c49d8bb850541a584f1aa6d22b68530d01c954fcf6259315",
+  "invalid_pairs": 0,
+  "measurement_status": "full_correctness_resource_smoke_no_performance_claim",
+  "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4",
+  "numpy": "2.3.1",
+  "pair_file": "artifacts/g2b/mistic_pairs_u64_le.bin",
+  "pair_file_bytes": 31408624,
+  "pair_file_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "runner_sha256": "6c38fa06383a2f5e08181b8135a55c9e10b58a6e6f4e172f27555aeb34fd9e9c",
+  "self_pairs": 60000,
+  "shape": [
+    60000,
+    512
+  ],
+  "source_dtype": "float32",
+  "structural_smoke_pass": true,
+  "symmetry_missing_pairs": 0,
+  "tensorjoin_comparison": {
+    "exact_match": true,
+    "extra_pairs": 0,
+    "first_extra_pairs": [],
+    "first_missing_pairs": [],
+    "missing_pairs": 0,
+    "reference_count": 3926078,
+    "reference_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495"
+  },
+  "three_way_full_hash_exact_match": true
+}

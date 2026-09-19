@@ -1,0 +1,94 @@
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "admit_formal",
+  "dynamic_count_contract_pass": true,
+  "experiment_id": "tensorjoin_20260903_g4a_r1_dynamic_count_router_gpu1",
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 362.898,
+      "p10_us": 339.7945,
+      "p90_us": 426.5924
+    },
+    "keeper_two_stage": {
+      "median_us": 792.5625,
+      "p10_us": 773.8652,
+      "p90_us": 809.9621
+    }
+  },
+  "measurement_scope": "host-dispatched dynamic-count resident-GPU operator",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 406.128,
+        "p10_us": 394.40139999999997,
+        "p90_us": 434.1833
+      },
+      "keeper_two_stage": {
+        "median_us": 775.466,
+        "p10_us": 772.4952000000001,
+        "p90_us": 780.0575
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 341.59749999999997,
+        "p10_us": 339.01640000000003,
+        "p90_us": 345.63280000000003
+      },
+      "keeper_two_stage": {
+        "median_us": 800.4845,
+        "p10_us": 796.9457,
+        "p90_us": 825.4993
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.1152857125355236,
+  "phase": "screen",
+  "process_median_wins": 2,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 341.59749999999997,
+      "candidate_sustained_mean_us": 337.966455,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 775.466,
+      "keeper_sustained_mean_us": 774.86442,
+      "median_speedup_keeper_over_candidate": 2.2701161454635943,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g4a_r1_screen_process_0_kc_a0.json",
+      "result_sha256": "a4beb2f9bc3be3568040b9a004bf5c19b7ee26a1bbd5570092794d5c12a3afe0",
+      "sustained_speedup_keeper_over_candidate": 2.2927258268871684
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 406.128,
+      "candidate_sustained_mean_us": 345.44913,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 800.4845,
+      "keeper_sustained_mean_us": 778.104755,
+      "median_speedup_keeper_over_candidate": 1.9710152956703306,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g4a_r1_screen_process_1_ck_a0.json",
+      "result_sha256": "66d1444f8e07dfcdb47a280819a3f913d4883f601d7d8c34a7d4a318e1873f32",
+      "sustained_speedup_keeper_over_candidate": 2.2524438113362737
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "screen_gate_pass": true,
+  "screen_thresholds": {
+    "each_process_median_speedup_minimum": 1.2,
+    "each_process_sustained_speedup_minimum": 1.2
+  },
+  "single_protocol_sha256": [
+    "87e25bbadbb79c804013431af9fd1f30242bc192e4b5d4df93643aca01782fac"
+  ],
+  "single_runner_sha256": [
+    "f06064fb891d310e4119aa125fa808319cf50159c6364cbc6d4fe51013b26db6"
+  ],
+  "sustained_geometric_mean_speedup": 2.2724955665221533,
+  "sustained_wins": 2
+}

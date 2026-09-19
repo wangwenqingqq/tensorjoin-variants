@@ -1,0 +1,12 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/validate_metadata.py", "--record-id", "stress_a0", "--stress"]
+ENV {"CUDA_VISIBLE_DEVICES": "2", "G5_PHYSICAL_GPU": "2", "TRITON_CACHE_DIR": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g5_g16_metadata_stress_a0_triton_cache"}
+METADATA_STRESS 100
+METADATA_STRESS 200
+METADATA_STRESS 300
+METADATA_STRESS 400
+METADATA_STRESS 500
+METADATA_STRESS 600
+METADATA_STRESS 700
+METADATA_STRESS 800
+METADATA_STRESS 900
+METADATA_STRESS 1000

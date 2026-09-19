@@ -1,0 +1,13 @@
+{
+  "created": 1788854546.0298853,
+  "scale2": 1.0000009536743237,
+  "timing": {
+    "seconds": 0.4596958159963833,
+    "pca_seconds": 0.3155902610014891,
+    "feature_seconds": 0.1441055549948942
+  },
+  "projector_sha256": "298caa8741b0f474136aad8eadc55ff9c676bc6721cdca2f342ab1ed1b3b6fb8",
+  "features_sha256": "fbc6ed50036e8bc8e8de57a9779cc2c8d098a49a8660d20be10f22c4a9fc9cd4",
+  "pca_scores_sha256": "518ad7daa08504bb3aca7ac8c5eae60ead59aff15877845a973ce37a7e076f53",
+  "input_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c"
+}

@@ -1,0 +1,230 @@
+{
+  "started": 1788803615.1115167,
+  "reference_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+  "reference_count": 3926078,
+  "reference_pid": 642675,
+  "rows": [
+    {
+      "name": "original__raw__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__raw__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__raw__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__hadamard__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__hadamard__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__hadamard__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__combined__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__combined__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "original__combined__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__raw__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__raw__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__raw__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__hadamard__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__hadamard__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__hadamard__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__combined__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__combined__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "raw_tree__combined__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__raw__16",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__raw__64",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__raw__512",
+      "pruned_tiles": 0,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__hadamard__16",
+      "pruned_tiles": 10653,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__hadamard__64",
+      "pruned_tiles": 10655,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__hadamard__512",
+      "pruned_tiles": 10655,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__combined__16",
+      "pruned_tiles": 10653,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__combined__64",
+      "pruned_tiles": 10655,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    },
+    {
+      "name": "hadamard_tree__combined__512",
+      "pruned_tiles": 10655,
+      "false_negative_directed_ids": 0,
+      "false_pruned_answer_tiles": 0,
+      "pass": true
+    }
+  ],
+  "orders": [
+    {
+      "order": "original",
+      "answer_occupied_tiles": 411215,
+      "ideal_empty_tiles": 29176,
+      "ideal_empty_tile_fraction": 0.06625021855578338,
+      "ceiling_scope": "ground truth; zero-cost perfect tile-rejection oracle, not achievable runtime"
+    },
+    {
+      "order": "raw_tree",
+      "answer_occupied_tiles": 132695,
+      "ideal_empty_tiles": 307696,
+      "ideal_empty_tile_fraction": 0.698688211157812,
+      "ceiling_scope": "ground truth; zero-cost perfect tile-rejection oracle, not achievable runtime"
+    },
+    {
+      "order": "hadamard_tree",
+      "answer_occupied_tiles": 46985,
+      "ideal_empty_tiles": 393406,
+      "ideal_empty_tile_fraction": 0.8933107170673333,
+      "ceiling_scope": "ground truth; zero-cost perfect tile-rejection oracle, not achievable runtime"
+    }
+  ],
+  "fraction_transform_checks": {
+    "count": 32,
+    "maximum_error": 0.0,
+    "pass": true
+  },
+  "pass": true,
+  "ended": 1788803616.361548,
+  "structural_gate_pass": false,
+  "gpu_candidate_admitted": false,
+  "decision": "STOP_FIXED_DIRECTIONAL_ENVELOPE_FRONTEND"
+}

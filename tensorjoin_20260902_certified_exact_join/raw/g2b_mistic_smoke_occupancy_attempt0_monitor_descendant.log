@@ -1,0 +1,7 @@
+2026-09-02T23:10:37,558921440+00:00 launch
+2026-09-02T23:10:37,560476885+00:00 target_pid=3118882
+2026-09-02T23:10:37,671611933+00:00 rss_kib=29876 apps=''
+2026-09-02T23:10:38,780786857+00:00 rss_kib=34824 apps=GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1\,\ 3118956\,\ @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/mistic_g2a/build_g2a/main_d512\,\ 550
+2026-09-02T23:10:38,786746746+00:00 contamination_pid=3118956 line=GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1\,\ 3118956\,\ @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/mistic_g2a/build_g2a/main_d512\,\ 550
+2026-09-02T23:10:38,795340114+00:00 exit_code=143 contamination=1 max_rss_kib=34824
+2026-09-02T23:10:38,796498991+00:00 post_apps=GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1\,\ 3118956\,\ @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/mistic_g2a/build_g2a/main_d512\,\ 550

@@ -1,0 +1,143 @@
+{
+  "record_id": "correct_signed31_g3_a2",
+  "case": {
+    "name": "signed31",
+    "n": 31,
+    "d": 512,
+    "path": "g17_rthiss_pair_contract_20260905/data/signed31.f32",
+    "source_sha256": "54122a84428999c9bbb6637570dd437232c2b64d9300b5f3776ec9dfb86aafb4",
+    "epsilon": 0.62890625,
+    "reference_threshold": 0.3955230712890625,
+    "oracle_path": null
+  },
+  "command": [
+    "timeout",
+    "-k",
+    "5s",
+    "180s",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g18_rthiss_conservative_repair_20260905/build_r1/RT-HiSS",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/signed31.f32",
+    "0.62890625",
+    "highest"
+  ],
+  "returncode": 0,
+  "sanitizer": "none",
+  "public_seconds": null,
+  "operational_seconds_not_performance": 0.6926434029883239,
+  "binary_sha256": "b4436293ceefe1d3b434a55f8da0d1a14478f6938c77ec81b05752d4ecead9fb",
+  "libowl_sha256": "1ea82ca7c81b8d047f2420f765231bedcaccb7ec5885ba0fa5e6c055992c04f0",
+  "low": 0.3954988121986389,
+  "high": 0.3955473303794861,
+  "threshold": 0.3955230712890625,
+  "audit": {
+    "adapter_structure_pass": true,
+    "all_original_ids_decoded": true,
+    "output_pairs": 31,
+    "output_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+    "frozen_oracle_pairs": 31,
+    "frozen_oracle_sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2",
+    "frozen_reference_pass": true,
+    "missing_pairs": 0,
+    "extra_pairs": 0,
+    "first_missing": [],
+    "first_extra": [],
+    "native_threshold_reference_pass": true,
+    "native_threshold_oracle_pairs": 31,
+    "native_threshold_missing": 0,
+    "native_threshold_extra": 0,
+    "unique_rt_candidate_pairs": 961,
+    "all_pair_count": 961,
+    "rt_candidate_missing_frozen_pairs": 0,
+    "first_rt_candidate_missing": [],
+    "self_pairs": 31,
+    "reference_threshold": 0.3955230712890625,
+    "native_threshold": 0.3955230712890625,
+    "scalar_fmaf_replays": [],
+    "replay_complete": true,
+    "batches": [
+      {
+        "batch": 0,
+        "accepted_bits": 31,
+        "candidate_entries": 248,
+        "mask_words": 31
+      }
+    ],
+    "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+  },
+  "work": {
+    "safe_reject": 930,
+    "safe_accept": 31,
+    "terminal_accept": 0,
+    "terminal_reject": 0,
+    "fp32_dimensions": 60496,
+    "fp64_dimensions": 0,
+    "terminal_fraction": 0.0,
+    "candidate_set_same_as_native": true
+  },
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "complete frozen FP64-reference output plus candidate/permutation/counter gates"
+  },
+  "raw_files": {
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_candidates.u32": {
+      "bytes": 992,
+      "sha256": "adaf9f1ff6a74bb4a27e97dd15d9e28129c658b230ebf592b2cec353847f5464"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_grouped.u32": {
+      "bytes": 124,
+      "sha256": "1e767793061af18bb39b3d8d931b564ddcdbce13d47c4c542fe8cbbf32df9aff"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_groups.u32": {
+      "bytes": 36,
+      "sha256": "265bd47c3be0fff78227ae3368466ed1a3fcadea2ad269734a0d1988cfe2a940"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_compressed.u32": {
+      "bytes": 124,
+      "sha256": "d48e3df5f29fa5e84217db9b499b68a5c0040396a0d4cb2c7f3d5d68e8423ee4"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/results.txt": {
+      "bytes": 1299,
+      "sha256": "6b03fda2147db0797c3297f036b9e3d8a8e7fcbf009037c8e7fe30c6d77376c2"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_counts.u32": {
+      "bytes": 32,
+      "sha256": "ab40c4be176210d1307adaa2d1cdeeff909bb525d7be7bf2843d9b30c580e952"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/export.json": {
+      "bytes": 209,
+      "sha256": "4125481ddd717e87cdbb97520d31b9d3118f56203ca2f2929e84dbec07bbf119"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/g18_stats.u64": {
+      "bytes": 48,
+      "sha256": "a05dbb1b8f25182c4c142b55ccaf5fd7a289a46db53385920aa4c7e406f88797"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_starts.u32": {
+      "bytes": 36,
+      "sha256": "41b618075a66acbdf70e3ffeb8799149b80afbc92fbd96ce8e44c661af90274b"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/point_map.u32": {
+      "bytes": 124,
+      "sha256": "0c5426585773f4a9c4dba496ade6500cac693053fca1f350235e9908c3dda849"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/program.log": {
+      "bytes": 2455,
+      "sha256": "a97bf80ce245071198ee759c11b24eb9b15b9366b164c7b8fa0b842c24c23503"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_prefix.u32": {
+      "bytes": 36,
+      "sha256": "265bd47c3be0fff78227ae3368466ed1a3fcadea2ad269734a0d1988cfe2a940"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/b0_mask.u32": {
+      "bytes": 124,
+      "sha256": "71770522859df8a8e1973d38e6f05fefa1a0143e868879899c5418499a2a3e56"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/dimension_map.u32": {
+      "bytes": 2048,
+      "sha256": "662a6d22513e633cc71e8806f916110a68d8204d433e264a33f921b578e1c306"
+    },
+    "g18_rthiss_conservative_repair_20260905/raw/correct_signed31_g3_a2/pairs.u64": {
+      "bytes": 248,
+      "sha256": "fb2dbe3be4dc2f36689921a6f89c17747d533d169e67672f9a24fe8f8d923ed2"
+    }
+  }
+}

@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_dynamic_router_timing.py", "--phase", "formal", "--process-id", "2", "--attempt", "0", "--order", "KC", "--warmups", "20", "--observations", "200", "--sustained-launches", "1000"]
+TIMING variant=keeper_two_stage median_us=792.052000 p10_us=787.106000 p90_us=800.498200

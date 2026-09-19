@@ -1,0 +1,3 @@
+cifar60k/
+cifar60k/cifar60k_query.fvecs
+cifar60k/cifar60k_base.fvecs

@@ -1,0 +1,42 @@
+[
+  {
+    "label": "explore_00_a0",
+    "exit_code": 0,
+    "ended": 1788836319.12057
+  },
+  {
+    "label": "explore_01_a0",
+    "exit_code": 0,
+    "ended": 1788836446.4852014
+  },
+  {
+    "label": "confirm_00_a0",
+    "exit_code": 0,
+    "ended": 1788836578.9652362
+  },
+  {
+    "label": "confirm_01_a0",
+    "exit_code": 0,
+    "ended": 1788836708.8395724
+  },
+  {
+    "label": "confirm_02_a0",
+    "exit_code": 0,
+    "ended": 1788836838.8340986
+  },
+  {
+    "label": "confirm_03_a0",
+    "exit_code": 0,
+    "ended": 1788836969.0721164
+  },
+  {
+    "label": "confirm_04_a0",
+    "exit_code": 0,
+    "ended": 1788837099.151343
+  },
+  {
+    "label": "confirm_05_a0",
+    "exit_code": 0,
+    "ended": 1788837229.7505982
+  }
+]

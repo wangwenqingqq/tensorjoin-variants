@@ -1,0 +1,77 @@
+[
+  {
+    "file": "revanthmunugala_repos_p1.json",
+    "url": "https://api.github.com/users/revanthmunugala/repos?per_page=100&page=1",
+    "retrieved_utc": "2026-09-04T06:33:36.194177+00:00",
+    "status": 200,
+    "final_url": "https://api.github.com/users/revanthmunugala/repos?per_page=100&page=1",
+    "link_header": null,
+    "sha256": "b119e9e78be3ccb5d4addae46ede6e7c4aa28e4fb9fc35d48a21df16df63313a",
+    "bytes": 16244,
+    "repositories": [
+      {
+        "name": "GDBOD",
+        "description": "Cuda Implementation of HySortOD algorithm",
+        "url": "https://github.com/revanthmunugala/GDBOD",
+        "default_branch": "main",
+        "updated_at": "2025-05-25T20:19:40Z"
+      },
+      {
+        "name": "GPU_KD_SELFJOIN",
+        "description": "Self join using GPU KD TREE",
+        "url": "https://github.com/revanthmunugala/GPU_KD_SELFJOIN",
+        "default_branch": "main",
+        "updated_at": "2026-01-23T23:23:55Z"
+      },
+      {
+        "name": "rt-hiss",
+        "description": "Ray tracing accelerated high dimensional similarity searches",
+        "url": "https://github.com/revanthmunugala/rt-hiss",
+        "default_branch": "main",
+        "updated_at": "2026-07-20T06:25:10Z"
+      }
+    ]
+  },
+  {
+    "file": "bwd29_repos_p1.json",
+    "url": "https://api.github.com/users/bwd29/repos?per_page=100&page=1",
+    "retrieved_utc": "2026-09-04T06:33:36.194797+00:00",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "file": "benoitgallet_repos_p1.json",
+    "url": "https://api.github.com/users/benoitgallet/repos?per_page=100&page=1",
+    "retrieved_utc": "2026-09-04T06:33:36.197062+00:00",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "file": "Gowanlock_ICCS2023.pdf",
+    "url": "https://jan.ucc.nau.edu/mg2745/publications/Gowanlock_ICCS2023.pdf",
+    "retrieved_utc": "2026-09-04T06:33:36.201064+00:00",
+    "status": 200,
+    "final_url": "https://jan.ucc.nau.edu/mg2745/publications/Gowanlock_ICCS2023.pdf",
+    "link_header": null,
+    "sha256": "af58444eb36cd0e34ef8919999cd38e543b6ed246425ae44449c5711578a33fd",
+    "bytes": 506935
+  },
+  {
+    "file": "author_people.html",
+    "url": "https://jan.ucc.nau.edu/mg2745/people/",
+    "retrieved_utc": "2026-09-04T06:33:51.706363+00:00",
+    "status": 200,
+    "final_url": "https://jan.ucc.nau.edu/mg2745/people/",
+    "link_header": null,
+    "sha256": "9971fa8dbb1525936b4dd543c96383dee2c85e5d19f7149d829f9e46a9dfbf07",
+    "bytes": 8720
+  },
+  {
+    "file": "author_publications.html",
+    "url": "https://jan.ucc.nau.edu/mg2745/publications/",
+    "retrieved_utc": "2026-09-04T06:34:04.073741+00:00",
+    "status": 200,
+    "final_url": "https://jan.ucc.nau.edu/mg2745/publications/",
+    "link_header": null,
+    "sha256": "c3da7dbcbc60bf5cfdd8b0add6c1544e21ce0a5e97ed6a487342e989521659c3",
+    "bytes": 34975
+  }
+]

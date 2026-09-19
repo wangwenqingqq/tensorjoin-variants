@@ -1,0 +1,54 @@
+--- G15 immutable
++++ G16 GPU norms
+@@ -14,8 +14,9 @@
+ import torch
+ 
+ from g2b_public_common import atomic_json, load_contract, load_pageable_source, sha256_file, validate_canonical
+-from fp32_first import (BoundCuBLAS, norm_metadata, check_input, warmup, run_operator,
++from fp32_gpu_norm_operator import (BoundCuBLAS, norm_metadata, check_input, warmup, run_operator,
+                         classify, cache_identity, CAPACITY, GAMMA, ABS_DOT, DIMENSION)
++from gpu_norms import prepare_norm_device
+ 
+ HERE = Path(__file__).resolve().parents[1]
+ PROJECT = HERE.parent
+@@ -64,7 +65,7 @@
+     n = len(vectors)
+     vg = torch.from_numpy(vectors).to('cuda')
+     host = norm_metadata(vectors)
+-    metadata = tuple(torch.from_numpy(x).to('cuda') for x in host)
++    metadata = prepare_norm_device(vg)
+     dots = torch.empty((n, n), device='cuda', dtype=torch.float32)
+     lower, upper = (torch.empty((n, n), device='cuda', dtype=torch.float64) for _ in range(2))
+     result = torch.empty(CAPACITY, device='cuda', dtype=torch.int64)
+@@ -178,7 +179,7 @@
+     args = parser.parse_args()
+     if not args.record_id.replace('_', '').isalnum():
+         raise ValueError('Unsafe record ID')
+-    result_path = HERE/f'results/fp32_{args.phase}_{args.record_id}.json'
++    result_path = HERE/f'results/fp32_gpu_{args.phase}_{args.record_id}.json'
+     if result_path.exists():
+         raise FileExistsError(result_path)
+     if os.environ.get('CUDA_VISIBLE_DEVICES') != '2' or os.environ.get('NVIDIA_TF32_OVERRIDE') != '0':
+@@ -200,16 +201,17 @@
+     check_input(source, threshold)
+     torch.cuda.init()
+     blas = BoundCuBLAS()
+-    common = {'experiment_id': 'tensorjoin_20260905_g15_fp32_first', 'phase': args.phase,
++    common = {'experiment_id': 'tensorjoin_20260905_g16_fp32_gpu_norms', 'phase': args.phase,
+               'record_id': args.record_id, 'host': platform.node(), 'gpu': torch.cuda.get_device_name(),
+               'physical_gpu': 2, 'python': sys.version, 'torch': torch.__version__,
+               'torch_cuda': torch.version.cuda, 'numpy': np.__version__,
+               'library': blas.record(), 'input_contract': contract,
+               'runner_sha256': sha256_file(Path(__file__)),
+-              'operator_sha256': sha256_file(HERE/'src/fp32_first.py'),
+-              'kernel_sha256': sha256_file(HERE/'src/fp32_first_kernels.py'),
+-              'plan_sha256': sha256_file(HERE/'PLAN_AND_GATE0.md'),
+-              'design_sha256': sha256_file(HERE/'BASELINE_DESIGN.md')}
++              'operator_sha256': sha256_file(HERE/'src/fp32_gpu_norm_operator.py'),
++              'kernel_sha256': sha256_file(PROJECT/'g15_strong_control_20260905/src/fp32_first_kernels.py'),
++              'metadata_kernel_sha256': sha256_file(HERE/'src/gpu_norms.py'),
++              'plan_sha256': sha256_file(HERE/'PROTOCOL.md'),
++              'design_sha256': sha256_file(HERE/'ADDENDUM_FAIR_GPU_NORMS.md')}
+     if args.phase == 'validation':
+         result = validation(source, threshold, blas)
+     elif args.phase == 'stress':

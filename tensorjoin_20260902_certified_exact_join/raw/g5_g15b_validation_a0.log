@@ -1,0 +1,3 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "-u", "g15_strong_control_20260905/src/run_fp32_first.py", "--phase", "validation", "--record-id", "a0"]
+ENV {"CUDA_VISIBLE_DEVICES": "2", "G5_PHYSICAL_GPU": "2", "TRITON_CACHE_DIR": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g5_g15b_validation_a0_triton_cache"}
+@TENSORJOIN_ROOT@/isaacsim6/env/bin/python: can't open file '@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g15_strong_control_20260905/src/run_fp32_first.py': [Errno 2] No such file or directory

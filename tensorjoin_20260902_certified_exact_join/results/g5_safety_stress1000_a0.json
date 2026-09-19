@@ -1,0 +1,184 @@
+{
+  "all_three_precision_stages_exercised": true,
+  "completed_iterations": 1000,
+  "compute_capability": [
+    12,
+    0
+  ],
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "duplicate_or_invalid_outputs": 0,
+  "elapsed_seconds_diagnostic": 0.1664021980104735,
+  "experiment_id": "tensorjoin_20260903_g5_unified_public_cifar60k",
+  "full_shape": [
+    60000,
+    512
+  ],
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "iterations": 1000,
+  "max_rss_kib_after_run": 1799732,
+  "measurement_status": "correctness_safety_only_no_performance_claim",
+  "numpy": "2.3.1",
+  "observed_output_hash": "cc68a36a72a074bd26a9b644f9d81e4a14786c15b6567a6a1682e9862d98ff6b",
+  "oracle_upper_count": 93,
+  "oracle_upper_raw_u64_sha256": "cc68a36a72a074bd26a9b644f9d81e4a14786c15b6567a6a1682e9862d98ff6b",
+  "output_mismatches": 0,
+  "overflow_events": 0,
+  "p1_binary_identity_pass": true,
+  "p1_result_sha256": "7fcdd2786db413ee9f56347c27eceb9542e41e8fc644e9dd3a55d9ec59bff2a5",
+  "p2_result_sha256": "ffcfdf9c4949756ad1de8974f7e4453378dc26690abba3c292a551553c48482b",
+  "physical_gpu": "2",
+  "pointer_buffer_sets": 2,
+  "protocol_sha256": "c19df58f09be4525b957eb4725a21031e3712837c4a36e21121643d7013d32c9",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "record_id": "stress1000_a0",
+  "runner_sha256": "054959853334157e5fa83cb1e8781b3b2de73eba8e503eb1ac15138d3b790ba4",
+  "safety_pass": true,
+  "selected_cache_artifacts_after": {
+    "analytic_certificate_ragged_safe_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.cubin",
+      "cubin_bytes": 222816,
+      "cubin_sha256": "abe3e1403e839ef60f13af32d546593f451becf1488bb5b11b940e57b00e992d",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.json",
+      "json_bytes": 1148,
+      "json_sha256": "1d2a25166235a3ca327bc5e08133efa71fb6c1846a06b9b0e792d9b6504cc29b",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ptx",
+      "ptx_bytes": 131717,
+      "ptx_sha256": "c1faa40dd01b0d187836de9bc7f30bbb750aefe6c720abe92cef7fe13c67e701"
+    },
+    "certified_fp32_filter_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.cubin",
+      "cubin_bytes": 24520,
+      "cubin_sha256": "1278324244afd13961e75cbd0a554a9bb9502c8e61193d361c015b7856208e20",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.json",
+      "json_bytes": 1134,
+      "json_sha256": "eb657a1f3257c8332093ff4fdf3df3a5596ec18d3d3b742eeaabeab41105132e",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ptx",
+      "ptx_bytes": 28257,
+      "ptx_sha256": "dd60c5856a950e63fe64ff8d790ec623d73915ba334c6271c42f58ff05995f41"
+    },
+    "refine_ambiguous_fp64_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.cubin",
+      "cubin_bytes": 25360,
+      "cubin_sha256": "c2b3362119abfbeb3df85e96788705f6ff4c79414e3a74e2d5d5f3355eff00f8",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.json",
+      "json_bytes": 1134,
+      "json_sha256": "6a36710e3593bfbcf6ce73a3a050330dda311d9231c206598a39b97aa71e7ec3",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ptx",
+      "ptx_bytes": 24004,
+      "ptx_sha256": "8c90341103eb4aea692cd0b8e6501126c0e6b6b6591668b46e1492257aea162d"
+    }
+  },
+  "selected_cache_artifacts_before": {
+    "analytic_certificate_ragged_safe_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.cubin",
+      "cubin_bytes": 222816,
+      "cubin_sha256": "abe3e1403e839ef60f13af32d546593f451becf1488bb5b11b940e57b00e992d",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.json",
+      "json_bytes": 1148,
+      "json_sha256": "1d2a25166235a3ca327bc5e08133efa71fb6c1846a06b9b0e792d9b6504cc29b",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ptx",
+      "ptx_bytes": 131717,
+      "ptx_sha256": "c1faa40dd01b0d187836de9bc7f30bbb750aefe6c720abe92cef7fe13c67e701"
+    },
+    "certified_fp32_filter_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.cubin",
+      "cubin_bytes": 24520,
+      "cubin_sha256": "1278324244afd13961e75cbd0a554a9bb9502c8e61193d361c015b7856208e20",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.json",
+      "json_bytes": 1134,
+      "json_sha256": "eb657a1f3257c8332093ff4fdf3df3a5596ec18d3d3b742eeaabeab41105132e",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ptx",
+      "ptx_bytes": 28257,
+      "ptx_sha256": "dd60c5856a950e63fe64ff8d790ec623d73915ba334c6271c42f58ff05995f41"
+    },
+    "refine_ambiguous_fp64_i64": {
+      "cubin": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.cubin",
+      "cubin_bytes": 25360,
+      "cubin_sha256": "c2b3362119abfbeb3df85e96788705f6ff4c79414e3a74e2d5d5f3355eff00f8",
+      "json": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.json",
+      "json_bytes": 1134,
+      "json_sha256": "6a36710e3593bfbcf6ce73a3a050330dda311d9231c206598a39b97aa71e7ec3",
+      "ptx": "artifacts/g5_p3_stress1000_gpu2_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ptx",
+      "ptx_bytes": 24004,
+      "ptx_sha256": "8c90341103eb4aea692cd0b8e6501126c0e6b6b6591668b46e1492257aea162d"
+    }
+  },
+  "selected_tiles": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      790
+    ],
+    [
+      1,
+      13
+    ],
+    [
+      1,
+      561
+    ],
+    [
+      1,
+      576
+    ],
+    [
+      1,
+      716
+    ],
+    [
+      1,
+      864
+    ],
+    [
+      2,
+      251
+    ],
+    [
+      2,
+      560
+    ]
+  ],
+  "selected_valid_upper_pairs": 34848,
+  "source_npy_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+  "specialization_contract": {
+    "BLOCK_K": 64,
+    "BLOCK_M": 64,
+    "BLOCK_N": 64,
+    "CAPACITY": 16777216,
+    "FP32_BLOCK_K": 256,
+    "FP64_BLOCK_K": 256,
+    "K": 512,
+    "N_": 60000,
+    "num_warps": 4,
+    "stage1_num_stages": 3
+  },
+  "stage_count_mismatches": 0,
+  "stage_counts_direct_ambiguous_fp32_accept_fp32_reject_fp64_equality": [
+    74,
+    41,
+    16,
+    17,
+    8,
+    0
+  ],
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "torch_memory_allocated_after_cleanup_bytes": 0,
+  "torch_memory_reserved_after_cleanup_bytes": 0,
+  "torch_peak_memory_allocated_bytes": 992675328,
+  "torch_peak_memory_reserved_bytes": 994050048,
+  "triton": "3.6.0",
+  "upstream_source_hashes": {
+    "src/g4b_r1_ragged_safe_kernel.py": "439058576f156e75074995a29b048448ae480c5dfc72f2c2b537b23f8e79e9f6",
+    "src/run_g2a_tensorjoin.py": "84f611fa029e0ce798c3945fad54600598bc7a708f630ebd5fc07fe7dac1e6d8",
+    "src/run_g3b_r1_gpu_analytic_certificate.py": "057245c5288763702e7b916c6739980d07b622d595bb9d946fa14011437a67ec",
+    "src/run_g3c_b_r1_gpu_cascade.py": "637e9455fdcdffcc8cddbed625ef74ef371f117876bc3f25977a79b4a95f706d",
+    "src/run_g4b_r1_public_opportunity.py": "c1d539458233fb3268149e74847d8e6a5c8f4e3a3400954e7a5ee44a74f36234"
+  }
+}

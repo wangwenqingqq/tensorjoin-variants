@@ -1,0 +1,37 @@
+gpu-host-8
+root
+2026-09-04T09:10:33+00:00
+@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join
+index, uuid, name, driver_version, memory.used [MiB], utilization.gpu [%], power.limit [W], clocks.current.sm [MHz], clocks.current.memory [MHz]
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 81396 MiB, 62 %, 600.00 W, 2377 MHz, 12481 MHz
+1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+3, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+4, GPU-863c06a5-9f33-0265-b098-013fa840d5db, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+5, GPU-a1e0baba-3982-4538-6540-2b013a1adf49, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+6, GPU-865ae1f0-780e-d04c-5ec3-4deccea65f82, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+7, GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
+pid, gpu_uuid, used_gpu_memory [MiB], process_name
+919690, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 81374 MiB, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python
+/usr/local/bin/nvcc
+/usr/bin/cmake
+/usr/local/bin/compute-sanitizer
+/usr/local/bin/ncu
+/usr/local/cuda-13.1/bin/nvcc
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Tue_Dec_16_07:23:41_PM_PST_2025
+Cuda compilation tools, release 13.1, V13.1.115
+Build cuda_13.1.r13.1/compiler.37061995_0
+envs/cuvs_py312
+envs/panns_py312
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/nvme0n1    7.0T  6.5T  149G  98% @TENSORJOIN_ROOT@
+               total        used        free      shared  buff/cache   available
+Mem:           251Gi       111Gi       9.0Gi        65Gi       199Gi       140Gi
+Swap:          8.0Gi       8.0Gi       2.1Mi
+-rw-rw----+ 1 root root 0 Sep  3 16:58 @TENSORJOIN_ROOT@/.tensorjoin_g6_gpu1.lock
+-rw-rw----+ 1 root root 0 Sep  2 23:11 @TENSORJOIN_ROOT@/.tensorjoin_gpu0_campaign.lock
+-rw-rw----+ 1 root root 0 Sep  3 10:29 @TENSORJOIN_ROOT@/.tensorjoin_gpu1_campaign.lock
+-rw-rw----+ 1 root root 0 Sep  3 09:10 @TENSORJOIN_ROOT@/.tensorjoin_gpu3_campaign.lock
+-rw-rw----+ 1 root root 0 Sep  3 10:42 @TENSORJOIN_ROOT@/.tensorjoin_gpu4_campaign.lock
+-rw-rw----+ 1 root root 0 Sep  4 07:16 @TENSORJOIN_ROOT@/.tensorjoin_gpu7_campaign.lock

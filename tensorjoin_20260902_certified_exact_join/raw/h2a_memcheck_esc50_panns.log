@@ -1,0 +1,4 @@
+========= COMPUTE-SANITIZER
+RUN_START {"dataset": "esc50_panns", "experiment_id": "tensorjoin_20260903_h2a_certified_fp32_strong_baseline", "host": "gpu-host-8", "phase": "memcheck", "sources": {"h1_kernel_sha256": "c24d6e94b81dc94f8ad50699eadac82a8a593e175c519a8d704947ab8e5db0db", "h1_runner_sha256": "11aaa72447266fef26286d80cbbe0bd22bc1626af437c0c9a0b121352600713e", "h2a_kernel_sha256": "b65092657a54785386abfd56db83e32061016d01927d8fc4629342baed89d17b", "runner_sha256": "1013c1a783ffc3610d7e5af80176fa8468302030ba308a6e84e9ae3503301fd4"}}
+MEMCHECK_SMOKE {"base_counts": [5, 5, 5, 5, 5, 5, 5, 5], "dataset": "esc50_panns", "dimension": 2048, "final_count": 2, "ids_sha256": "76d36a031c7dce139f708e259b7c2f073c6080e39fd47a76bff0237142318a10", "query_counts": [5, 5, 5, 5]}
+========= ERROR SUMMARY: 0 errors

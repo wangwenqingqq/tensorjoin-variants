@@ -1,0 +1,15 @@
+{
+  "hostCode.cpp": {
+    "original_sha256": "cba18097f1b8374e72f655d46292b05447bc85fb63535cfd589f77f1af573bb2",
+    "adapter_sha256": "afcce8041dfa955ac18916a6317ae836c35e810adb45b8aa7441f793144cb066"
+  },
+  "utility_seq.cpp": {
+    "original_sha256": "a9d3efc44cffa5be7bbef9948f93340a965b7b980615bbfdf52fe91a771004a4",
+    "adapter_sha256": "11673d37510c5aa9d5c6f6111c8e96c7792f6c4d55fa5e7e981d85d1d1f35482"
+  },
+  "device_region_sha256": "e5fce08c32ea93e2b359d7d4669cd849a6b4c6c79731c25de235cd180d84355d",
+  "utility.cu": {
+    "original_sha256": "49811272ffe00f40e7778c8bbf320226b462e1ea3f4df051469affc7c6b3bc73",
+    "adapter_sha256": "e8f578d7992d9dbbf8c22fd657e89bfadf86737e60ceb95e1fe67350795d75e7"
+  }
+}

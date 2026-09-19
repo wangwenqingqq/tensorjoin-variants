@@ -1,0 +1,36 @@
+{
+  "label": "preflight_a0",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "src/run.py",
+    "--phase",
+    "preflight",
+    "--label",
+    "preflight_a0"
+  ],
+  "pid": 1114848,
+  "pass": true,
+  "started": 1788867299.2277968,
+  "target": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  },
+  "target_config_sha256": "463fb551956c08e424c8174a02c0676f37429c1b93eea8895cf77b0fd2894c87",
+  "source_sha256": {
+    "spec_engine.py": "5886a0d2368b5938573db40fbd7d6fca0d54aeeef7168822fb56d70b1a56e6eb",
+    "guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+    "spec_kernels.py": "c80489e47795230004668c137b93211d9ec2e62d7ded5795758aa80b32871430",
+    "run.py": "26e7191d80422981bf1e994f33887b2ed7213958e4e58b884f67b6047aa7ea01"
+  },
+  "gpu_uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+  "exit_code": 0,
+  "pass_": true,
+  "max_device_used_mib": 1342,
+  "ended": 1788867337.7876894,
+  "verified_descendants": {
+    "1114848": 12250388
+  },
+  "nvml_tombstones": []
+}

@@ -1,0 +1,38 @@
+{
+  "layout": "original",
+  "reference_seconds": 2.7541669139900478,
+  "reference_save_seconds": 3.9169091149960877,
+  "scan_seconds": 139.39949090400478,
+  "matmul_seconds": 37.729066742787836,
+  "mask_and_reduction_seconds": 99.4377233372361,
+  "save_seconds": 25.10882421900169,
+  "positive_pair_checks": [
+    [
+      178659,
+      538429,
+      1961499,
+      1993039,
+      7744714,
+      30759403
+    ],
+    [
+      178659,
+      538429,
+      1961499,
+      1993039,
+      7744714,
+      30759403
+    ],
+    [
+      178659,
+      538429,
+      1961499,
+      1993039,
+      7744714,
+      30759403
+    ]
+  ],
+  "false_reject_pairs": 0,
+  "monotonicity_pass": true,
+  "peak_rss_kib": 2021964
+}

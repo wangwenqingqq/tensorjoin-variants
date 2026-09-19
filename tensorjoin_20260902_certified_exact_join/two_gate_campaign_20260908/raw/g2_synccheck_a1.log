@@ -1,0 +1,4 @@
+COMMAND ["compute-sanitizer", "--tool", "synccheck", "--error-exitcode", "99", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_qualify_r1.py", "--label", "g2_synccheck_a1", "--mode", "probe"]
+========= COMPUTE-SANITIZER
+{"pass_": true, "label": "g2_synccheck_a1"}
+========= ERROR SUMMARY: 0 errors

@@ -1,0 +1,117 @@
+{
+  "slots": [
+    {
+      "kind": "case",
+      "name": "signed31",
+      "rid": "correct_signed31_a1",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "shuffled_onehot31",
+      "rid": "correct_shuffled_onehot31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "zeros31",
+      "rid": "correct_zeros31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary31",
+      "rid": "correct_boundary31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cancellation31",
+      "rid": "correct_cancellation31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "subnormal31",
+      "rid": "correct_subnormal31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "correct_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "correct_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "memcheck_boundary_zero32_a0",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "memcheck_cifar4096_a0",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "synccheck_boundary_zero32_a0",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "synccheck_cifar4096_a0",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat0_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat0_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat1_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat1_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "probe",
+      "rid": "predicate_stress_a0",
+      "iterations": 1000
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "nsys_boundary_zero32_a0",
+      "tool": "nsys"
+    }
+  ],
+  "hashes": {
+    "g18_rthiss_conservative_repair_20260905/src/resume_a1.py": "4250a5c3ea90f37d448d84127be4213d399c53088e9ea5c51584034558876249",
+    "g18_rthiss_conservative_repair_20260905/ADDENDUM_OCCUPANCY_A1.md": "098b70b230fb348f8590520140dabc5aae1d425d18ebbe72e769831ac6670fa2",
+    "g18_rthiss_conservative_repair_20260905/results/campaign.json": "511cd02e8d8aa5d0a405c83191f6ec73a57ab20d250d0f4d4f454b75a580f629",
+    "g18_rthiss_conservative_repair_20260905/raw/campaign.log": "e1006518fca302c8a1a040c03dfa304f55514129437e5078b7c15552ec5bb9f8"
+  }
+}

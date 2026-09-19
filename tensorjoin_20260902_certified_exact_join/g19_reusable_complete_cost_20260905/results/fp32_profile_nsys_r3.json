@@ -1,0 +1,32 @@
+{
+  "command": [
+    "nsys",
+    "profile",
+    "--trace=cuda,nvtx",
+    "--sample=none",
+    "--cpuctxsw=none",
+    "--force-overwrite=false",
+    "-o",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/artifacts/fp32_profile_nsys_r3",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/run_slot_r3.py",
+    "--method",
+    "fp32",
+    "--kind",
+    "profile",
+    "--record-id",
+    "fp32_profile_nsys_r3"
+  ],
+  "returncode": 0,
+  "method": "fp32",
+  "kind": "profile",
+  "tool": "nsys",
+  "log_sha256": "f11cdc80b61271d4cdb466058ede93c82ca3c95cc4f1b73910b5764dbfee732c",
+  "child_identity_hold_seconds": 1,
+  "inner_path": "g19_reusable_complete_cost_20260905/results/inner_fp32_profile_nsys_r3.json",
+  "inner_sha256": "8656ba3ee9b8d941b4599f11d56120d6752ff690d09469fdbd9b38f2ad994587",
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false
+}

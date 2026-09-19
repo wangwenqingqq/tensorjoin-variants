@@ -1,0 +1,35 @@
+{"compute_rows": [], "elapsed_s": 0.08605652899859706, "phase": "quiescence", "wall_time": 1788394281.7412422}
+{"compute_rows": [], "elapsed_s": 1.173899261004408, "phase": "quiescence", "wall_time": 1788394282.829085}
+{"compute_rows": [], "elapsed_s": 2.264532594999764, "phase": "quiescence", "wall_time": 1788394283.9197178}
+{"compute_rows": [], "elapsed_s": 3.3529207809988293, "phase": "quiescence", "wall_time": 1788394285.008106}
+{"compute_rows": [], "elapsed_s": 4.443935016999603, "phase": "quiescence", "wall_time": 1788394286.0991201}
+{"compute_rows": [], "elapsed_s": 5.534080816003552, "phase": "quiescence", "wall_time": 1788394287.1892662}
+{"compute_rows": [], "elapsed_s": 6.623335711999971, "phase": "quiescence", "wall_time": 1788394288.2785208}
+{"compute_rows": [], "elapsed_s": 7.712506219002535, "phase": "quiescence", "wall_time": 1788394289.3676913}
+{"compute_rows": [], "elapsed_s": 8.802770791000512, "phase": "quiescence", "wall_time": 1788394290.4579556}
+{"compute_rows": [], "elapsed_s": 9.892859388004581, "phase": "quiescence", "wall_time": 1788394291.5480442}
+{"compute_rows": [], "elapsed_s": 10.984696826002619, "phase": "quiescence", "wall_time": 1788394292.6398823}
+{"compute_rows": [], "elapsed_s": 12.073903420001443, "phase": "quiescence", "wall_time": 1788394293.7290885}
+{"compute_rows": [], "elapsed_s": 13.165356818004511, "phase": "quiescence", "wall_time": 1788394294.8205416}
+{"compute_rows": [], "elapsed_s": 14.255368415004341, "phase": "quiescence", "wall_time": 1788394295.9105537}
+{"compute_rows": [], "elapsed_s": 15.344348229002208, "phase": "quiescence", "wall_time": 1788394296.9995337}
+{"compute_rows": [], "elapsed_s": 16.434932800999377, "phase": "quiescence", "wall_time": 1788394298.090118}
+{"compute_rows": [], "elapsed_s": 17.524405206000665, "phase": "quiescence", "wall_time": 1788394299.1795902}
+{"compute_rows": [], "elapsed_s": 18.612951941002393, "phase": "quiescence", "wall_time": 1788394300.268137}
+{"compute_rows": [], "elapsed_s": 19.700761029002024, "phase": "quiescence", "wall_time": 1788394301.355946}
+{"compute_rows": [], "elapsed_s": 20.79119998000533, "phase": "quiescence", "wall_time": 1788394302.446385}
+{"compute_rows": [], "elapsed_s": 21.88089100200159, "phase": "quiescence", "wall_time": 1788394303.5360763}
+{"compute_rows": [], "elapsed_s": 22.970960218000982, "phase": "quiescence", "wall_time": 1788394304.6261451}
+{"compute_rows": [], "elapsed_s": 24.06125533299928, "phase": "quiescence", "wall_time": 1788394305.7164407}
+{"compute_rows": [], "elapsed_s": 25.15103882200492, "phase": "quiescence", "wall_time": 1788394306.8062239}
+{"compute_rows": [], "elapsed_s": 26.24021237999841, "phase": "quiescence", "wall_time": 1788394307.8953977}
+{"compute_rows": [], "elapsed_s": 27.330991155999072, "phase": "quiescence", "wall_time": 1788394308.9861763}
+{"compute_rows": [], "elapsed_s": 28.42015583900502, "phase": "quiescence", "wall_time": 1788394310.075341}
+{"compute_rows": [], "elapsed_s": 29.51007980600116, "phase": "quiescence", "wall_time": 1788394311.1652648}
+{"compute_rows": [], "elapsed_s": 30.604328194000118, "phase": "quiescence", "wall_time": 1788394312.2595134}
+{"compute_rows": [], "elapsed_s": 0.20511388778686523, "foreign_rows": [], "gpu": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "35.57", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3165128, "wall_time": 1788394312.464839}
+{"compute_rows": [], "elapsed_s": 0.6576054096221924, "foreign_rows": [], "gpu": {"clocks.mem": "405", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "35.57", "power.limit": "600.00", "pstate": "P8", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3165128, "wall_time": 1788394312.9173295}
+{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3165202, "process_name": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/adapters/fasted_g2b_public/build/main", "used_memory_mib": "14"}], "elapsed_s": 1.1719601154327393, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "180", "driver_version": "590.48.01", "index": "0", "memory.used": "572", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "40.65", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3165128, "wall_time": 1788394313.4316843}
+{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3165202, "process_name": "[No data]", "used_memory_mib": "552"}], "elapsed_s": 1.6737661361694336, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "56.09", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3165128, "wall_time": 1788394313.9334908}
+{"compute_rows": [], "elapsed_s": 2.114825963973999, "foreign_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "87.49", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "run", "target_root_pid": 3165128, "wall_time": 1788394314.3745503}
+{"compute_rows": [], "gpu": {"clocks.mem": "12481", "clocks.sm": "2332", "driver_version": "590.48.01", "index": "0", "memory.used": "14", "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition", "power.draw": "86.11", "power.limit": "600.00", "pstate": "P0", "utilization.gpu": "0", "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"}, "phase": "postflight", "wall_time": 1788394314.819131}

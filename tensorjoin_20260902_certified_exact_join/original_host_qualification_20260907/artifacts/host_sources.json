@@ -1,0 +1,8 @@
+{
+  "src/margin_probe.py": "a02c02e03c1358e525b42dd9b098a1b6f6048c26de316d5f8d280f611b035f49",
+  "src/validate.py": "875e52598d6c5e62b4b59cb288c5ccf7cf941632ed6f73b2aa8611d9a7aaa8eb",
+  "src/guard.py": "738588a1cbe1cffe73d19b2ce2c76cf00f41967d9cf76a3cab8a58afe63bca80",
+  "src/frozen_driver.py": "784f209f6abcf33fe7177d9eeb7bcf8b2a61c4a3254e39cb84afb2554b880572",
+  "targets.json": "061f06185c5eca43dc007cba4dddf70fcc6157bf0a43426c4d3f0f9a12eaec59",
+  "frozen_manifest.json": "dc27f2e0bad82c2a1232f77f6aa451f7f6af24c03a957e03d5a4c18b06286356"
+}

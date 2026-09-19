@@ -1,0 +1,42 @@
+{
+  "commit": "a42fc69cc4b602dc83071b029d185a41e69a04bd",
+  "files": {
+    "hostCode.cpp": {
+      "g7_sha256": "cba18097f1b8374e72f655d46292b05447bc85fb63535cfd589f77f1af573bb2",
+      "upstream_sha256": "cba18097f1b8374e72f655d46292b05447bc85fb63535cfd589f77f1af573bb2"
+    },
+    "utility.cu": {
+      "g7_sha256": "49811272ffe00f40e7778c8bbf320226b462e1ea3f4df051469affc7c6b3bc73",
+      "upstream_sha256": "49811272ffe00f40e7778c8bbf320226b462e1ea3f4df051469affc7c6b3bc73"
+    },
+    "utility_seq.cpp": {
+      "g7_sha256": "a9d3efc44cffa5be7bbef9948f93340a965b7b980615bbfdf52fe91a771004a4",
+      "upstream_sha256": "a9d3efc44cffa5be7bbef9948f93340a965b7b980615bbfdf52fe91a771004a4"
+    },
+    "utility.h": {
+      "g7_sha256": "41d6718837f2f8e0aee320b09d0f7c0446f07986b51e64e51b08243f40fd5f8d",
+      "upstream_sha256": "41d6718837f2f8e0aee320b09d0f7c0446f07986b51e64e51b08243f40fd5f8d"
+    },
+    "deviceCode.cu": {
+      "g7_sha256": "e5fcfa27c617934a6136b1c56c6e1e51d1a82201ef58523eb829a518230cde2e",
+      "upstream_sha256": "e5fcfa27c617934a6136b1c56c6e1e51d1a82201ef58523eb829a518230cde2e"
+    },
+    "deviceCode.h": {
+      "g7_sha256": "cd0b6692e1cdf8198e04761a4ba67ee6cc040044757d9c2b1e00890ad3a3e6b4",
+      "upstream_sha256": "cd0b6692e1cdf8198e04761a4ba67ee6cc040044757d9c2b1e00890ad3a3e6b4"
+    },
+    "hilbert.hpp": {
+      "g7_sha256": "0351281b5a599a59c74b68f171f4cc31980d97a303b008d5ca15878276554244",
+      "upstream_sha256": "0351281b5a599a59c74b68f171f4cc31980d97a303b008d5ca15878276554244"
+    },
+    "LICENSE": {
+      "g7_sha256": "f7140d851b94db9c3885908a44e947e18339818f80fee69db5a65cf01981b911",
+      "upstream_sha256": "f7140d851b94db9c3885908a44e947e18339818f80fee69db5a65cf01981b911"
+    },
+    "CMakeLists.txt": {
+      "g7_sha256": "7807814fda1883343644d66e10acfd72f88c3bb03dd1e3e7a2f9f8a0e13cce0a",
+      "upstream_sha256": "1f0ff5ea8a47aa54583e723991fad6369b20ad7e06fc90464797101e83177cdd"
+    }
+  },
+  "git_status": ""
+}

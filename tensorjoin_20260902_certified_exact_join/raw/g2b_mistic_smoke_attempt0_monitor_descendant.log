@@ -1,0 +1,47 @@
+RUN_START {"binary_sha256": "71c0e8d8892d7f6e6e44d217fec095ecf1cc3c180b3ecb25590d573d321ef979", "cuda_visible_devices": "0", "diagnostic_historical_count": 3926074, "effective_epsilon_d2": 0.3955230712890625, "epsilon": 0.62890625, "exact_method_dtype": "float64 exact widening", "experiment_id": "tensorjoin_20260903_mistic_cifar60000_g2b_smoke", "host": "gpu-host-8", "input_sha256": "4681c049fc75cdd2c49d8bb850541a584f1aa6d22b68530d01c954fcf6259315", "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4", "numpy": "2.3.1", "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]", "runner_sha256": "6c38fa06383a2f5e08181b8135a55c9e10b58a6e6f4e172f27555aeb34fd9e9c", "shape": [60000, 512], "source_dtype": "float32"}
+
+0.628906 60000 
+Time to read in file: 0.219448
+
+Number points: 60000 
+Number Dimensions: 512 
+Number Reference Points: 0 
+Number Concurent Streams: 2
+Block Size: 256, Kernel Blocks: 1024
+Using dynamic searching
+Distance Threshold: 0.628906 
+*********************************
+
+32 6 1 3600000000 0.400693 1 1.000000 Predicted calcsPerSecond: 15561
+SubGraph 0 Layer 0 Selecting RP 35 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.000000, Actual Time: 0.016642
+Build Time: 0.016642, Calc Time: 231347.599769, reduction -231347.599769
+############################################
+Predicted calcsPerSecond: 47064
+SubGraph 0 Layer 1 Selecting RP 32 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016642, Actual Time: 0.016979
+Build Time: 0.016979, Calc Time: 76491.585926, reduction 154856.013843
+############################################
+Predicted calcsPerSecond: 94462
+SubGraph 0 Layer 2 Selecting RP 32 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016979, Actual Time: 0.016274
+Build Time: 0.016274, Calc Time: 38110.562978, reduction 38381.022948
+############################################
+Predicted calcsPerSecond: 165690
+SubGraph 0 Layer 3 Selecting RP 36 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016274, Actual Time: 0.016180
+Build Time: 0.016180, Calc Time: 21727.322108, reduction 16383.240870
+############################################
+Predicted calcsPerSecond: 272298
+SubGraph 0 Layer 4 Selecting RP 36 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016180, Actual Time: 0.016388
+Build Time: 0.016388, Calc Time: 13220.809554, reduction 8506.512553
+############################################
+Predicted calcsPerSecond: 432475
+SubGraph 0 Layer 5 Selecting RP 36 with Nodes: 1 and calcs: 3600000000 and stdev 0.000000:: Predicted time: 0.016388, Actual Time: 0.016594
+Build Time: 0.016594, Calc Time: 8324.180588, reduction 4896.628966
+############################################
+Final graph has 1 nodes, 3600000000 calcs total
+Node Construct time: 0.400693
+Batchs: 1
+Batch 0 Results: 3926078
+Total results Set Size: 3926078 
+Kernel Time: 3.597481
+3.59748 3926078 G2A_ADAPTER raw_kernel_pairs=3926078 normalized_self_insertions=0 invalid_positions=0 output_pairs=3926078
+4.277689 5.273862 Node Laucnher time: 4.277689
+Total Time: 5.273862

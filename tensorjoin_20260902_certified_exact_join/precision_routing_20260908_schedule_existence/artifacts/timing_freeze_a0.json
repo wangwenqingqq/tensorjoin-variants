@@ -1,0 +1,13 @@
+{
+  "PROTOCOL.md": "4c5db161b3511acea07c734f36d7e35895adb7912182a4d01a142b7efd003387",
+  "targets_r2.json": "463fb551956c08e424c8174a02c0676f37429c1b93eea8895cf77b0fd2894c87",
+  "src/admit.py": "7103c07a1beaeb2014f97060693ef185831db75e20cbd5154435b1255bf88d3f",
+  "src/analyze.py": "4c1e5e71f3bd9006ea6a64aa2d84b49b298bb02bcdd3ec6a5e5c911099bec6b9",
+  "src/census.py": "0b361c0f89671ac011ae78ea316222fb01d693d98a8c3bfd47a43d2d4f9ff0ae",
+  "src/common.py": "fa8895de3d0445856a2f95c5d390fb691d8e8eaf84960fd770f179b4b3457748",
+  "src/guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+  "src/prepare.py": "4482fa87575916a63cf7c585063295eb4231747fd998d40edcba3609bba9f7e9",
+  "src/runner.py": "fb7ffdda5f95232440845b0d58e674ac0a8f2a7f30f8ec22bea447dd8f4e77ce",
+  "src/safety.py": "2fd7eca24b0ef1f3319278a4caaa78b8dd2b5b0bd2218fdf8339a209dfbfeff9",
+  "src/safety_r1.py": "957ff9defbed5741c34c6eea26e568dea0bb2cc765294f2614a354817c84b3e7"
+}

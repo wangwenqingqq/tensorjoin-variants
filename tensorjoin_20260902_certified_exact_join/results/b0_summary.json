@@ -1,0 +1,228 @@
+{
+  "bootstrap_samples": 20000,
+  "bootstrap_seed": 20260902,
+  "component_marginal_distributions": {
+    "baseline_e2e_s1": {
+      "median_us": 3028.064012527466,
+      "p10_us": 3009.558320045471,
+      "p90_us": 3066.2047386169434
+    },
+    "baseline_e2e_s64": {
+      "median_us": 3029.2959213256836,
+      "p10_us": 3011.9551181793213,
+      "p90_us": 3063.6799812316895
+    },
+    "baseline_e2e_s8": {
+      "median_us": 3029.2160511016846,
+      "p10_us": 3009.9488496780396,
+      "p90_us": 3062.0352029800415
+    },
+    "candidate_e2e_s1": {
+      "median_us": 435.4400038719177,
+      "p10_us": 423.932808637619,
+      "p90_us": 465.10400772094727
+    },
+    "candidate_e2e_s64": {
+      "median_us": 1585.3760242462158,
+      "p10_us": 1575.1967668533325,
+      "p90_us": 1643.8112020492554
+    },
+    "candidate_e2e_s8": {
+      "median_us": 595.5840051174164,
+      "p10_us": 586.0480070114136,
+      "p90_us": 615.6799793243408
+    },
+    "candidate_scan_bounds_s1": {
+      "median_us": 220.23999691009521,
+      "p10_us": 218.01599860191345,
+      "p90_us": 224.19519424438477
+    },
+    "candidate_scan_bounds_s64": {
+      "median_us": 220.60799598693848,
+      "p10_us": 218.23999285697937,
+      "p90_us": 228.889599442482
+    },
+    "candidate_scan_bounds_s8": {
+      "median_us": 220.41599452495575,
+      "p10_us": 218.1439995765686,
+      "p90_us": 224.2559939622879
+    },
+    "dense_fp32": {
+      "median_us": 93.04000064730644,
+      "p10_us": 91.839998960495,
+      "p90_us": 94.46719661355019
+    },
+    "dense_fp64": {
+      "median_us": 2940.2559995651245,
+      "p10_us": 2926.7744302749634,
+      "p90_us": 2950.9151935577393
+    },
+    "dense_int8": {
+      "median_us": 43.68000105023384,
+      "p10_us": 42.65600070357323,
+      "p90_us": 44.863998889923096
+    }
+  },
+  "correctness_pass": true,
+  "dense_gate_pass": true,
+  "dense_int8_vs_fp32": {
+    "bootstrap_95_high": 2.1438567362520957,
+    "bootstrap_95_low": 2.1326740267245023,
+    "denominator": "dense_int8",
+    "denominator_marginal": {
+      "median_us": 43.68000105023384,
+      "p10_us": 42.65600070357323,
+      "p90_us": 44.863998889923096
+    },
+    "geomean_speedup": 2.138145147040093,
+    "numerator": "dense_fp32",
+    "numerator_marginal": {
+      "median_us": 93.04000064730644,
+      "p10_us": 91.839998960495,
+      "p90_us": 94.46719661355019
+    },
+    "order_split_geomean": {
+      "AB": 2.1388846976785496,
+      "BA": 2.137405852112077
+    },
+    "per_process_ratios": [
+      2.1301319291119465,
+      2.1283461186696875,
+      2.1489833800665896,
+      2.1390217310885684,
+      2.1336705340275524,
+      2.131327926412535,
+      2.1428046246662005,
+      2.1509991984490826
+    ],
+    "process_wins": 8
+  },
+  "end_to_end_fp64_vs_candidate": {
+    "1": {
+      "bootstrap_95_high": 7.028244276777842,
+      "bootstrap_95_low": 6.783300023246209,
+      "denominator": "candidate_e2e_s1",
+      "denominator_marginal": {
+        "median_us": 435.4400038719177,
+        "p10_us": 423.932808637619,
+        "p90_us": 465.10400772094727
+      },
+      "geomean_speedup": 6.919673975051451,
+      "numerator": "baseline_e2e_s1",
+      "numerator_marginal": {
+        "median_us": 3028.064012527466,
+        "p10_us": 3009.558320045471,
+        "p90_us": 3066.2047386169434
+      },
+      "order_split_geomean": {
+        "AB": 6.8681673854110565,
+        "BA": 6.971566829124187
+      },
+      "per_process_ratios": [
+        6.898039931069049,
+        7.033800348855527,
+        6.926655352811918,
+        7.005800879404272,
+        6.503755279380473,
+        6.93191783212379,
+        7.160609806200164,
+        6.915448426539559
+      ],
+      "process_wins": 8
+    },
+    "64": {
+      "bootstrap_95_high": 1.9124380206853968,
+      "bootstrap_95_low": 1.8754870912751218,
+      "denominator": "candidate_e2e_s64",
+      "denominator_marginal": {
+        "median_us": 1585.3760242462158,
+        "p10_us": 1575.1967668533325,
+        "p90_us": 1643.8112020492554
+      },
+      "geomean_speedup": 1.8973502142095773,
+      "numerator": "baseline_e2e_s64",
+      "numerator_marginal": {
+        "median_us": 3029.2959213256836,
+        "p10_us": 3011.9551181793213,
+        "p90_us": 3063.6799812316895
+      },
+      "order_split_geomean": {
+        "AB": 1.882869405084361,
+        "BA": 1.9119423926269783
+      },
+      "per_process_ratios": [
+        1.902623619302552,
+        1.9110391658047317,
+        1.9075952962070728,
+        1.921702530271953,
+        1.893849490635702,
+        1.9177016580552617,
+        1.8285052274613185,
+        1.8974153835941865
+      ],
+      "process_wins": 8
+    },
+    "8": {
+      "bootstrap_95_high": 5.111257605677336,
+      "bootstrap_95_low": 5.015194096154368,
+      "denominator": "candidate_e2e_s8",
+      "denominator_marginal": {
+        "median_us": 595.5840051174164,
+        "p10_us": 586.0480070114136,
+        "p90_us": 615.6799793243408
+      },
+      "geomean_speedup": 5.065456712182999,
+      "numerator": "baseline_e2e_s8",
+      "numerator_marginal": {
+        "median_us": 3029.2160511016846,
+        "p10_us": 3009.9488496780396,
+        "p90_us": 3062.0352029800415
+      },
+      "order_split_geomean": {
+        "AB": 5.050769161817164,
+        "BA": 5.080186973694172
+      },
+      "per_process_ratios": [
+        5.040767664555566,
+        5.098029205579142,
+        5.070173635218343,
+        5.1309226656929665,
+        4.938496453380283,
+        5.108408389749233,
+        5.156034576665477,
+        4.984658255061721
+      ],
+      "process_wins": 8
+    }
+  },
+  "end_to_end_gate_pass": true,
+  "experiment_id": "tensorjoin_20260902_pytorch_gpu_exact_join_b0",
+  "feature_cache_sha256_values": [
+    "66f6292129029f63ee7bd237e15f390e949531a275a3463e786fe5c03893dd41"
+  ],
+  "gate_pass": true,
+  "input_files": [
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_1.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_2.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_3.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_4.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_5.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_6.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_7.json",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_8.json"
+  ],
+  "orders": [
+    "AB",
+    "BA",
+    "AB",
+    "BA",
+    "AB",
+    "BA",
+    "AB",
+    "BA"
+  ],
+  "process_count": 8,
+  "script_sha256_values": [
+    "b0321ec6e01aaede79bbd077a0ba3635ef44b116488088ca055e857b653e8376"
+  ]
+}

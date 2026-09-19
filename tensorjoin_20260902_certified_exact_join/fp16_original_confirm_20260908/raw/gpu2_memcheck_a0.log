@@ -1,0 +1,3 @@
+========= COMPUTE-SANITIZER
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_original_confirm_20260908/results/gpu2_memcheck_a0.json"}
+========= ERROR SUMMARY: 0 errors

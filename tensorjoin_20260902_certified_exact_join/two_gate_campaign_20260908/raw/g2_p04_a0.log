@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_runner_r1.py", "--index", "4"]
+{"label": "g2_p04_a0", "pass_": true, "calls": 108}

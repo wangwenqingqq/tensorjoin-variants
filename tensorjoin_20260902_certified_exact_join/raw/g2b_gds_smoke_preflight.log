@@ -1,0 +1,62 @@
+timestamp=2026-09-02T23:01:02,929498278+00:00
+hostname=gpu-host-8
+user=uid=0(root) gid=0(root) groups=0(root)
+cwd=@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join
+gpu_uuid=GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1
+python=@TENSORJOIN_ROOT@/isaacsim6/env/bin/python
+Python 3.12.3
+runner_sha256=b3e2b3e315954ba6967b31bfaa4deaaad9b854d3de6139bf7ce8ec1af5bf24ea
+library_sha256=e0d31f51a8a2ed844b988b2c2b1c08ed9757a55dfceda338c787d999b34b54bb
+--- who ---
+--- gpu ---
+Wed Sep  2 23:01:02 2026       
++-----------------------------------------------------------------------------------------+
+| NVIDIA-SMI 590.48.01              Driver Version: 590.48.01      CUDA Version: 13.1     |
++-----------------------------------------+------------------------+----------------------+
+| GPU  Name                 Persistence-M | Bus-Id          Disp.A | Volatile Uncorr. ECC |
+| Fan  Temp   Perf          Pwr:Usage/Cap |           Memory-Usage | GPU-Util  Compute M. |
+|                                         |                        |               MIG M. |
+|=========================================+========================+======================|
+|   0  NVIDIA RTX PRO 6000 Blac...    Off |   00000000:16:00.0 Off |                    0 |
+| N/A   28C    P8             34W /  600W |      14MiB /  97887MiB |      0%      Default |
+|                                         |                        |             Disabled |
++-----------------------------------------+------------------------+----------------------+
+
++-----------------------------------------------------------------------------------------+
+| Processes:                                                                              |
+|  GPU   GI   CI              PID   Type   Process name                        GPU Memory |
+|        ID   ID                                                               Usage      |
+|=========================================================================================|
+|  No running processes found                                                             |
++-----------------------------------------------------------------------------------------+
+--- processes before quiescence ---
+2026-09-02T23:01:03,275612796+00:00 preflight_second=1 apps=''
+2026-09-02T23:01:04,378575916+00:00 preflight_second=2 apps=''
+2026-09-02T23:01:05,480876798+00:00 preflight_second=3 apps=''
+2026-09-02T23:01:06,582591804+00:00 preflight_second=4 apps=''
+2026-09-02T23:01:07,685290886+00:00 preflight_second=5 apps=''
+2026-09-02T23:01:08,787761331+00:00 preflight_second=6 apps=''
+2026-09-02T23:01:09,888874490+00:00 preflight_second=7 apps=''
+2026-09-02T23:01:10,992734502+00:00 preflight_second=8 apps=''
+2026-09-02T23:01:12,096175128+00:00 preflight_second=9 apps=''
+2026-09-02T23:01:13,199238176+00:00 preflight_second=10 apps=''
+2026-09-02T23:01:14,298907583+00:00 preflight_second=11 apps=''
+2026-09-02T23:01:15,400490514+00:00 preflight_second=12 apps=''
+2026-09-02T23:01:16,504603145+00:00 preflight_second=13 apps=''
+2026-09-02T23:01:17,607038013+00:00 preflight_second=14 apps=''
+2026-09-02T23:01:18,708608955+00:00 preflight_second=15 apps=''
+2026-09-02T23:01:19,807937427+00:00 preflight_second=16 apps=''
+2026-09-02T23:01:20,910105094+00:00 preflight_second=17 apps=''
+2026-09-02T23:01:22,010758902+00:00 preflight_second=18 apps=''
+2026-09-02T23:01:23,114121908+00:00 preflight_second=19 apps=''
+2026-09-02T23:01:24,215982164+00:00 preflight_second=20 apps=''
+2026-09-02T23:01:25,318494535+00:00 preflight_second=21 apps=''
+2026-09-02T23:01:26,423180019+00:00 preflight_second=22 apps=''
+2026-09-02T23:01:27,524836348+00:00 preflight_second=23 apps=''
+2026-09-02T23:01:28,630159936+00:00 preflight_second=24 apps=''
+2026-09-02T23:01:29,735560298+00:00 preflight_second=25 apps=''
+2026-09-02T23:01:30,836753520+00:00 preflight_second=26 apps=''
+2026-09-02T23:01:31,938779418+00:00 preflight_second=27 apps=''
+2026-09-02T23:01:33,039516391+00:00 preflight_second=28 apps=''
+2026-09-02T23:01:34,141329666+00:00 preflight_second=29 apps=''
+2026-09-02T23:01:35,243826377+00:00 preflight_second=30 apps=''

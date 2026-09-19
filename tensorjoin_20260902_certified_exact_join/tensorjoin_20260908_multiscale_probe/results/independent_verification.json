@@ -1,0 +1,19 @@
+{
+  "pass_": true,
+  "seed": 2026090837,
+  "blocks_per_layout": 33,
+  "layouts": [
+    "original",
+    "random",
+    "kd_variance",
+    "pca_sort"
+  ],
+  "independent_tile_count_checks": 124800,
+  "active_row_col_checks": 12528,
+  "exact_reference_pair_lookups": 8159232,
+  "direct_full_dimension_bound_checks": 1359872,
+  "max_projection_difference": 1.5543122344752192e-15,
+  "max_direct_vs_gram_difference": 1.0658141036401503e-14,
+  "seconds": 32.12843126298685,
+  "scope": "Independent fixed-block check complements exhaustive reference-positive survival checks; not a new universal numerical proof."
+}

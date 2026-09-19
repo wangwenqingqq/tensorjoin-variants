@@ -1,0 +1,55 @@
+{
+  "label": "ncu_half_3_a2",
+  "command": [
+    "ncu",
+    "--nvtx",
+    "--nvtx-include",
+    "FP16_OWNED/",
+    "--section",
+    "LaunchStats",
+    "--section",
+    "SourceCounters",
+    "--export",
+    "artifacts/ncu_half_3_a2",
+    "--page",
+    "raw",
+    "--csv",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "src/trace_half.py",
+    "--label",
+    "ncu_half_3_a2",
+    "--shape",
+    "3"
+  ],
+  "pid": 557901,
+  "pass": true,
+  "started": 1788796885.4863958,
+  "target": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  },
+  "target_config_sha256": "061f06185c5eca43dc007cba4dddf70fcc6157bf0a43426c4d3f0f9a12eaec59",
+  "source_sha256": {
+    "guard_r1.py": "6d1d620788eaf315b4beb352ecd8993f0fa88337aa97ab271706ec9872c6bd76",
+    "pedantic_binding.py": "dfc343d2bca2e7d46a0aa7b6257071c34c73faddb3cc3b861d73189aaeb3e02c",
+    "frozen_driver.py": "784f209f6abcf33fe7177d9eeb7bcf8b2a61c4a3254e39cb84afb2554b880572",
+    "gpu_kernels.py": "d9cfdb46ee67ca88daa48222f747cd02d89d38ba46eb3bda0453296a67d2b4da",
+    "control.py": "48662f3059a2428d4540b5e5f85b5a146708eeaea4617975e15625ea814e6953",
+    "owned_half.py": "7b705b9458d4d660cd64aa44d31afef463cbfaee098e0a4f4e58ff120f667b25",
+    "guard.py": "738588a1cbe1cffe73d19b2ce2c76cf00f41967d9cf76a3cab8a58afe63bca80",
+    "validate_control.py": "1a2de42d9f9e02d805cf5abdb024c2809d8aff762950bee10ba41f12c65713a8",
+    "retained_ops.py": "eb8faffcf7bbafb1f5ebd8a6c2ed34598739c26c199ef3ffbab68b7ccaf266f9",
+    "trace_half.py": "1fd2d7a3e77396081fe48ae480478bfc761405960ea05db9b3ba6255ee1850b3"
+  },
+  "gpu_uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+  "exit_code": 0,
+  "pass_": true,
+  "max_device_used_mib": 1026,
+  "ended": 1788796924.2274969,
+  "verified_descendants": {
+    "557929": 5209057
+  },
+  "nvml_tombstones": []
+}

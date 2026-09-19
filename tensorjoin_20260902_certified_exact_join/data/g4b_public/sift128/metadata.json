@@ -1,0 +1,25 @@
+{
+  "coordinate_max": 194.0,
+  "coordinate_min": 0.0,
+  "dataset_id": "sift128",
+  "exact_int32_to_fp32_precondition": true,
+  "finite": true,
+  "int32_accumulator_absolute_limit": 2064512,
+  "loader": "little-endian fvecs; native float32 coordinates",
+  "prepared_dtype": "float32",
+  "prepared_shape": [
+    4096,
+    128
+  ],
+  "source_bytes": 516000000,
+  "source_dimension": 128,
+  "source_md5": null,
+  "source_path": "@TENSORJOIN_ROOT@/project/GTS/Datasets/sift1m/sift_base.fvecs",
+  "source_row_ids_file_sha256": "fcd014f989df767832e5028eda18607d5e726dcdfd5d9f17abbad3c1ac739fa5",
+  "source_row_ids_max": 999741,
+  "source_row_ids_min": 931,
+  "source_row_ids_unique": 4096,
+  "source_rows": 1000000,
+  "source_sha256": "21f66e2975057b5728ba56de1c825bac4f4d89d596609ae985741c6242631816",
+  "vectors_file_sha256": "91648432b84009381b22aedc3fba487e787ee4e659ed0aaf5392f8e1042d9126"
+}

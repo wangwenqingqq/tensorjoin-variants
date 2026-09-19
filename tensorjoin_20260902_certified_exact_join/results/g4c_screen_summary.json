@@ -1,0 +1,122 @@
+{
+  "all_six_slots_clean_and_exact": true,
+  "dataset_summaries": {
+    "cifar_gist512": {
+      "clean_correctness": true,
+      "paired_geometric_mean_median_speedup": 2.315008817754907,
+      "paired_geometric_mean_sustained_speedup": 2.320610862484832,
+      "process_median_speedups": [
+        2.2894453231449723,
+        2.340857749300184
+      ],
+      "process_sustained_speedups": [
+        2.294647498728159,
+        2.346867995222551
+      ],
+      "screen_performance_pass": true
+    },
+    "fashion784": {
+      "clean_correctness": true,
+      "paired_geometric_mean_median_speedup": 1.7020241701078926,
+      "paired_geometric_mean_sustained_speedup": 1.7171506933564027,
+      "process_median_speedups": [
+        1.7364838196901173,
+        1.6682483549708067
+      ],
+      "process_sustained_speedups": [
+        1.748528101649076,
+        1.6863363539387657
+      ],
+      "screen_performance_pass": true
+    },
+    "sift128": {
+      "clean_correctness": true,
+      "paired_geometric_mean_median_speedup": 1.259536459436899,
+      "paired_geometric_mean_sustained_speedup": 1.2699276489121556,
+      "process_median_speedups": [
+        1.2568971602609504,
+        1.262181300752937
+      ],
+      "process_sustained_speedups": [
+        1.2671159864480215,
+        1.2727455503046097
+      ],
+      "screen_performance_pass": true
+    }
+  },
+  "datasets_above_both_1_10_thresholds": 3,
+  "evidence": [
+    {
+      "path": "results/g4c_screen_sift128_n4096_k64_process_0_kc_a0.json",
+      "sha256": "93281d7f7088140e4401b8050bc74a7de6b66ae733a1939c5bf353b15f4d5773"
+    },
+    {
+      "path": "results/g4c_screen_sift128_n4096_k64_process_0_kc_a0_manifest.json",
+      "sha256": "04ae25624ba0092f85b0ff479faee728b5f4a01253f2b6490158525dd09ac3e0"
+    },
+    {
+      "path": "results/g4c_screen_sift128_n4096_k64_process_1_ck_a0.json",
+      "sha256": "db6eb22857447721a0314f11f7674615d7a19d8a995d28594975791574110e53"
+    },
+    {
+      "path": "results/g4c_screen_sift128_n4096_k64_process_1_ck_a0_manifest.json",
+      "sha256": "1ce9caea11313f684234494b206f43df8ef2003f992165848ddc6896862bcc0d"
+    },
+    {
+      "path": "results/g4c_screen_cifar_gist512_n4096_k64_process_0_kc_a0.json",
+      "sha256": "846d138fe49c765cd0142c194c31cbfed39cfd56d486282f126001fb73edfd57"
+    },
+    {
+      "path": "results/g4c_screen_cifar_gist512_n4096_k64_process_0_kc_a0_manifest.json",
+      "sha256": "2bdb72c11414dffed2be4b83b14bf85f74645886e3b4ec70c2b0c35b804e3ea5"
+    },
+    {
+      "path": "results/g4c_screen_cifar_gist512_n4096_k64_process_1_ck_a0.json",
+      "sha256": "6ca6bcb8daa5a1bff02d970d91a7a6fb466d677ed20867e623b40caf309ab74e"
+    },
+    {
+      "path": "results/g4c_screen_cifar_gist512_n4096_k64_process_1_ck_a0_manifest.json",
+      "sha256": "a70eb08e5f7842c05d9c863b2fc080c91f763e0d02d6ef2624c06a2fc5a85f68"
+    },
+    {
+      "path": "results/g4c_screen_fashion784_n4096_k64_process_0_kc_a0.json",
+      "sha256": "7c29789ea3525aad279ad9810850873edc02419b8d729f0634bd7f38c4ff0da7"
+    },
+    {
+      "path": "results/g4c_screen_fashion784_n4096_k64_process_0_kc_a0_manifest.json",
+      "sha256": "ff450148c4ee73787bdadbc7b263449e31a7391a9e1d0272248892be98be3801"
+    },
+    {
+      "path": "results/g4c_screen_fashion784_n4096_k64_process_1_ck_a0.json",
+      "sha256": "e96a767f310f5dcfe0e5f1da8e2a7378ca678c4ff36663ed291be958797c920e"
+    },
+    {
+      "path": "results/g4c_screen_fashion784_n4096_k64_process_1_ck_a0_manifest.json",
+      "sha256": "354ea3a1ce4476525e2f86af1734067686c0d5dd5103d2a148f661e530c06a08"
+    }
+  ],
+  "experiment_id": "tensorjoin_20260903_g4c_public_anchor_screen",
+  "formal_all_three_anchors_allowed": true,
+  "measurement_status": "screen_not_paper_claim",
+  "performance_claim_allowed": false,
+  "protocol_sha256": "07e48e01e942159af5551c198b01df0d61f9d70339bfdbade4725c376457f4e8",
+  "screen_gate_pass": true,
+  "selected_cells": [
+    {
+      "dataset_id": "sift128",
+      "n": 4096,
+      "target_degree": 64
+    },
+    {
+      "dataset_id": "cifar_gist512",
+      "n": 4096,
+      "target_degree": 64
+    },
+    {
+      "dataset_id": "fashion784",
+      "n": 4096,
+      "target_degree": 64
+    }
+  ],
+  "summarizer_sha256": "d487ff858ee4af76b67331b8ad4e2e392da5fbf079dd7c0b659dd9474b6ad251"
+}

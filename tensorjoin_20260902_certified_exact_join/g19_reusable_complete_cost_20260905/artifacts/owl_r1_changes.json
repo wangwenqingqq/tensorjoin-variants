@@ -1,0 +1,10 @@
+{
+  "changes": [
+    {
+      "path": "owl/DeviceMemory.h",
+      "before": "9c754069fd318270db49441109c0da384924f083b4983d617da57b11567942f4",
+      "after": "b8cdda736f18db653e44d8f283d1f334d3a4cc35d88b818420b5e3f02241c86f"
+    }
+  ],
+  "scope": "Only two cudaFree -> cudaFreeHost substitutions in PinnedHostMem"
+}

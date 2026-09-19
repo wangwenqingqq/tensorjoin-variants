@@ -1,0 +1,48 @@
+{
+  "case": "cancellation31",
+  "record_id": "native_cancellation31_a0",
+  "tool": "none",
+  "guard_returncode": 0,
+  "guard_admitted_exact": true,
+  "result_path": "g17_rthiss_pair_contract_20260905/results/case_native_cancellation31_a0.json",
+  "guard_path": "results/g5_guard_g17_native_cancellation31_a0.json",
+  "structure_pass": true,
+  "occupancy_clean": true,
+  "reference_pass": true,
+  "audit": {
+    "adapter_structure_pass": true,
+    "all_original_ids_decoded": true,
+    "output_pairs": 961,
+    "output_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+    "frozen_oracle_pairs": 961,
+    "frozen_oracle_sha256": "7c3bc10145b5633034dedaaa16d1438ec41837718c97d3d724fa6d8bdad8efb2",
+    "frozen_reference_pass": true,
+    "missing_pairs": 0,
+    "extra_pairs": 0,
+    "first_missing": [],
+    "first_extra": [],
+    "native_threshold_reference_pass": true,
+    "native_threshold_oracle_pairs": 961,
+    "native_threshold_missing": 0,
+    "native_threshold_extra": 0,
+    "unique_rt_candidate_pairs": 961,
+    "all_pair_count": 961,
+    "rt_candidate_missing_frozen_pairs": 0,
+    "first_rt_candidate_missing": [],
+    "self_pairs": 31,
+    "reference_threshold": 0.0009765625,
+    "native_threshold": 0.0009765625,
+    "scalar_fmaf_replays": [],
+    "replay_complete": true,
+    "batches": [
+      {
+        "batch": 0,
+        "accepted_bits": 961,
+        "candidate_entries": 248,
+        "mask_words": 31
+      }
+    ],
+    "precision_scope": "scipy FP64 direct-distance reference; native scalar C fmaf diagnostic; not exact-real proof"
+  },
+  "error": null
+}

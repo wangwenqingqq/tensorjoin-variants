@@ -1,0 +1,170 @@
+# H2A generated-code audit
+utc=2026-09-03T09:50:26Z
+host=gpu-host-8
+physical_gpu=3
+3, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, 590.48.01
+Build cuda_13.1.r13.1/compiler.37061995_0
+scope=runtime-generated Triton direct-FP32 token interval kernels used by full H2A correctness/timing workloads
+interpretation=static mechanism evidence only; not a latency denominator
+
+## dataset=esc50_panns
+shape=dimension=2048,base_tokens=2560,query_tokens=640
+cache_key=BVAKHSLQ3TTXRQ4IUOS2S6TGDI2F6SJJNEKTVFO2ZXE2UONJXADQ
+metadata_sha256=fdccfcf6cb08da928d115d19af3d87037cce1f3003f04dc5dbf8511f0a93239f
+cubin_sha256=4a07fe27b34a1acb20e02d7d69e7464342e0814d16fa3b0d9a5465177d798658
+normalized_sass_sha256=d977c7b1dc28d072e5d958b2df2eabe8534384f17becc56010864c57cc58ee3d
+static_instruction_count=552
+metadata={"hash": "0d40a3c970dce778c388a3a5a97a661a345f492969153a95dacdc9aa39a9b807", "target": {"backend": "cuda", "arch": 120, "warp_size": 32}, "num_warps": 4, "num_ctas": 1, "num_stages": 3, "warp_size": 32, "maxnreg": null, "ptx_version": null, "ptx_options": null, "ir_override": null, "enable_fp_fusion": true, "enable_reflect_ftz": true, "launch_cooperative_grid": false, "launch_pdl": false, "supported_fp8_dtypes": ["fp8e4b15", "fp8e4nv", "fp8e5"], "deprecated_fp8_dot_operand_dtypes": ["fp8e4b15"], "default_dot_input_precision": "tf32", "allowed_dot_input_precisions": ["tf32", "tf32x3", "ieee", "bf16x3", "bf16x6"], "max_num_imprecise_acc_default": 0, "extern_libs": [["libdevice", "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"]], "debug": false, "backend_name": "cuda", "sanitize_overflow": true, "arch": "sm120", "instrumentation_mode": "", "triton_version": "3.6.0", "tensordesc_meta": [], "shared": 1024, "tmem_size": 0, "global_scratch_size": 0, "global_scratch_align": 1, "profile_scratch_size": 0, "profile_scratch_align": 1, "name": "token_d2_interval_fp32_rect"}
+-- resources --
+
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function token_d2_interval_fp32_rect:
+  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:960 TEXTURE:0 SURFACE:0 SAMPLER:0
+-- key opcode counts --
+FADD=167
+FFMA=34
+FMUL=33
+HFMA2=1
+IMMA.16832.S8.S8.SAT=0
+HMMA=0
+MMA=0
+QGMMA=0
+QMMA=0
+LDG.E=0
+STG.E=2
+LDS=12
+STS=4
+STS.128=8
+BAR.SYNC.DEFER_BLOCKING=8
+SHFL.BFLY=160
+-- full opcode histogram --
+      8 BAR.SYNC.DEFER_BLOCKING
+      1 BRA
+      1 BRA.U
+      2 CS2R
+      2 EXIT
+    167 FADD
+     34 FFMA
+      1 FMNMX
+     33 FMUL
+      1 HFMA2
+      4 IADD.64
+      3 IADD3
+      1 IMAD
+      3 IMAD.WIDE
+      2 IMAD.WIDE.U32
+      1 ISETP.GE.AND
+      1 ISETP.GE.U32.AND
+      1 ISETP.LT.AND
+      1 ISETP.LT.U32.AND
+      1 LDC
+      4 LDC.64
+      1 LDCU.128
+      1 LDCU.64
+      2 LDG.E.64
+     12 LDS
+      3 LEA
+     22 LOP3.LUT
+     26 MOV
+     12 NOP
+      1 R2UR
+      3 S2R
+      2 S2UR
+      2 SGXT
+      2 SGXT.U32
+      5 SHF.L.U32
+      2 SHF.R.S32.HI
+      3 SHF.R.U32.HI
+    160 SHFL.BFLY
+      2 STG.E
+      4 STS
+      8 STS.128
+      1 UIADD3.64
+      1 UISETP.GE.U64.AND
+      1 ULEA
+      1 UMOV
+      1 UMOV.64
+      2 USHF.L.U32
+
+## dataset=ucf101_r3d18
+shape=dimension=512,base_tokens=2684,query_tokens=662
+cache_key=FGYYYTO2EWZEPTPI6IXOUARHYKFKMNRUI3TGVDZHCZOQCVS55F5A
+metadata_sha256=abacf68b17b272c6dc5c7a7537fbed0754db2c19ae9e198955bf28031f5e4fdc
+cubin_sha256=0e7a9fb8c03c50eb16c52faf4d5b02700f78b68aaab809aae387996ed9c8c0d6
+normalized_sass_sha256=96ea1a62157f96751e1cb513876e171f7035f00a1bb3db5d72aa5df0b0cce5be
+static_instruction_count=552
+metadata={"hash": "29b18c4dda25b247cde8f22eea0227c28aa6363446e66a8f27165d01565de97a", "target": {"backend": "cuda", "arch": 120, "warp_size": 32}, "num_warps": 4, "num_ctas": 1, "num_stages": 3, "warp_size": 32, "maxnreg": null, "ptx_version": null, "ptx_options": null, "ir_override": null, "enable_fp_fusion": true, "enable_reflect_ftz": true, "launch_cooperative_grid": false, "launch_pdl": false, "supported_fp8_dtypes": ["fp8e4b15", "fp8e4nv", "fp8e5"], "deprecated_fp8_dot_operand_dtypes": ["fp8e4b15"], "default_dot_input_precision": "tf32", "allowed_dot_input_precisions": ["tf32", "tf32x3", "ieee", "bf16x3", "bf16x6"], "max_num_imprecise_acc_default": 0, "extern_libs": [["libdevice", "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"]], "debug": false, "backend_name": "cuda", "sanitize_overflow": true, "arch": "sm120", "instrumentation_mode": "", "triton_version": "3.6.0", "tensordesc_meta": [], "shared": 1024, "tmem_size": 0, "global_scratch_size": 0, "global_scratch_align": 1, "profile_scratch_size": 0, "profile_scratch_align": 1, "name": "token_d2_interval_fp32_rect"}
+-- resources --
+
+Resource usage:
+ Common:
+  GLOBAL:0
+ Function token_d2_interval_fp32_rect:
+  REG:40 STACK:0 SHARED:1024 LOCAL:0 CONSTANT[0]:960 TEXTURE:0 SURFACE:0 SAMPLER:0
+-- key opcode counts --
+FADD=167
+FFMA=34
+FMUL=33
+HFMA2=1
+IMMA.16832.S8.S8.SAT=0
+HMMA=0
+MMA=0
+QGMMA=0
+QMMA=0
+LDG.E=0
+STG.E=2
+LDS=12
+STS=4
+STS.128=8
+BAR.SYNC.DEFER_BLOCKING=8
+SHFL.BFLY=160
+-- full opcode histogram --
+      8 BAR.SYNC.DEFER_BLOCKING
+      1 BRA
+      1 BRA.U
+      2 CS2R
+      2 EXIT
+    167 FADD
+     34 FFMA
+      1 FMNMX
+     33 FMUL
+      1 HFMA2
+      4 IADD.64
+      3 IADD3
+      1 IMAD
+      3 IMAD.WIDE
+      2 IMAD.WIDE.U32
+      2 ISETP.GE.AND
+      1 ISETP.GE.U32.AND
+      1 ISETP.LT.U32.AND
+      1 LDC
+      4 LDC.64
+      1 LDCU.128
+      1 LDCU.64
+      2 LDG.E.64
+     12 LDS
+      2 LEA
+     23 LOP3.LUT
+     26 MOV
+     10 NOP
+      1 PLOP3.LUT
+      1 R2UR
+      3 S2R
+      2 S2UR
+      2 SGXT
+      2 SGXT.U32
+      6 SHF.L.U32
+      2 SHF.R.S32.HI
+      3 SHF.R.U32.HI
+    160 SHFL.BFLY
+      2 STG.E
+      4 STS
+      8 STS.128
+      1 UIADD3.64
+      1 UISETP.GE.U64.AND
+      1 ULEA
+      1 UMOV
+      1 UMOV.64
+      2 USHF.L.U32

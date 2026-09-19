@@ -1,0 +1,4 @@
+[submodule "OWL"]
+	path = OWL
+	url = https://github.com/owl-project/owl.git
+	branch = master

@@ -1,0 +1,8 @@
+Sat Sep  5 08:39:42 UTC 2026
+gpu_uuid, pid, process_name, used_gpu_memory [MiB]
+GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 1754058, @TENSORJOIN_ROOT@/physion_p1_20260905/.venv/bin/python, 2990 MiB
+GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 1460887, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python, 53446 MiB
+GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, 1780362, sglang::scheduler, 64958 MiB
+
+index, uuid, name, memory.used [MiB], utilization.gpu [%], pstate, clocks.current.sm [MHz], clocks.current.memory [MHz], power.draw [W]
+3, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %, P8, 180 MHz, 405 MHz, 35.57 W

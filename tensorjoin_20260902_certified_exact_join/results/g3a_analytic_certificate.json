@@ -1,0 +1,81 @@
+{
+  "analytic_ambiguity_ratio_vs_g2a2": 0.9965094791595374,
+  "analytic_constants": {
+    "expression_absolute_radius": 9.4039548065783e-38,
+    "expression_relative_radius": 7.62939453125e-06,
+    "float32_unit_roundoff": 5.960464477539063e-08,
+    "residual_gamma_float64": 1.1390888232655404e-13,
+    "residual_operation_count": 1026
+  },
+  "epsilon_from_threshold": 0.7541135250198396,
+  "experiment_id": "tensorjoin_20260903_analytic_certificate_g3a",
+  "expression_audit": {
+    "first_violations": [],
+    "maximum_absolute_error": 1.1287651788972203e-06,
+    "maximum_bound_fraction": 0.014025010566444387,
+    "minimum_bound_slack": 3.8019484021536255e-06,
+    "violations": 0
+  },
+  "first_unsafe_decisions": [],
+  "g3a_gate_pass": true,
+  "gpu_proof_candidate_admitted": true,
+  "host": "gpu-host-8",
+  "integer_preconditions": {
+    "code_range": [
+      -127,
+      127
+    ],
+    "dimension": 512,
+    "float32_exact_integer_conversion": true,
+    "int32_safe": true,
+    "maximum_absolute_accumulator": 8258048,
+    "observed_maximum_absolute_dot": 1492856
+  },
+  "interval_audit": {
+    "first_violations": [],
+    "maximum_width": 0.09193136076455821,
+    "violations": 0
+  },
+  "maximum_allowed_ambiguous_upper_pairs": 127846,
+  "measurement_status": "host_analytic_opportunity_gate_not_gpu_proof_or_performance",
+  "metadata_sha256": "72bbb22e997a79778df802352949a695ac29a403802bb5cf4ee87b3868713b9d",
+  "numpy": "2.3.1",
+  "oracle_contract_pass": true,
+  "oracle_directed_pair_count": 262144,
+  "oracle_file_sha256": "ac93d96ac39ea5a2bc2d1e81baa179a533a6344aae97f058b3b33a8155e6c0c9",
+  "oracle_raw_u64_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+  "oracle_upper_pair_count": 133120,
+  "performance_claim_allowed": false,
+  "protocol_sha256": "b2868c907fb9aeb8682c26391d468b7be47c548904c69625d26fb813c7cd53c5",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "reference_ambiguous_upper_pairs": 102277,
+  "residual_error_upper": {
+    "maximum": 0.023068630189174925,
+    "median": 0.012096688148205251,
+    "minimum": 0.005987429599182981
+  },
+  "runner_sha256": "3bcff75294babd150387a2a3b7aa9e21c83101033e38c11a6563a3537e8f7455",
+  "shape": [
+    4096,
+    512
+  ],
+  "source_sha256": "e6a720399067e9753bc6f45ff6f67b73a3861964255e85e1ed9a1ce7906df462",
+  "stage_counts": {
+    "ambiguous_upper_pairs": 101920,
+    "analytical_upper_comparisons": 8390656,
+    "direct_accept_upper_pairs": 90991,
+    "direct_reject_upper_pairs": 8197745,
+    "expression_bound_violations": 0,
+    "source_distance_interval_violations": 0,
+    "unsafe_direct_accepts": 0,
+    "unsafe_direct_rejects": 0
+  },
+  "thread_environment": {
+    "MKL_NUM_THREADS": "8",
+    "OMP_NUM_THREADS": "8",
+    "OPENBLAS_NUM_THREADS": "8",
+    "VECLIB_MAXIMUM_THREADS": null
+  },
+  "threshold_d2": 0.5686872086178483,
+  "wall_seconds": 22.833682523996686
+}

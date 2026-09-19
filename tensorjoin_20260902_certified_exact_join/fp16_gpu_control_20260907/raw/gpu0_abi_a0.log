@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/audit_runtime_abi.py", "--label", "gpu0_abi_a0"]
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_gpu_control_20260907/results/gpu0_abi_a0.json"}

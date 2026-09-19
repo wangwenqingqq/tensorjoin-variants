@@ -1,0 +1,43 @@
+{
+  "admitted": true,
+  "artifacts": {
+    "log": {
+      "path": "raw/g8_check_a2.log",
+      "sha256": "6fb59ba6b8046344983e1ad26919acadc72500f8c5d3386ad62c389ff2a2a9bb"
+    },
+    "occupancy": {
+      "path": "raw/g8_check_a2_occupancy.jsonl",
+      "sha256": "710ed7aea1f11bd7b9d4ef76b5522642c933055aa205863d305a718c2e313cfc"
+    },
+    "preflight": {
+      "path": "raw/g8_check_a2_preflight.log",
+      "sha256": "947d5d88a330a2d9a8db8e393aeb588a99cae523dd1b8fc03f8ea70aaa6959fb"
+    },
+    "result": {
+      "path": "results/g8_check_a2.json",
+      "sha256": "c528e6ad6142bfb78cd8a9953907268bbf209d8c65c6a3ad9bcc5b1fd328bc5f"
+    }
+  },
+  "child_pid": 1015100,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g8_layout_probe.py",
+    "--label",
+    "g8_check_a2",
+    "--mode",
+    "check"
+  ],
+  "end_unix": 1788513895.8040583,
+  "foreign_rows": [],
+  "gpu_uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3",
+  "label": "g8_check_a2",
+  "launched": true,
+  "own_pids": [
+    1015100
+  ],
+  "postflight_compute_rows": [],
+  "returncode": 0,
+  "runner_sha256": "94158730a1facef6a774dd12baeced1bea4e381ea1b6c9f9c094f0188aa108c9",
+  "start_unix": 1788513883.0293555,
+  "status": "clean_component_slot"
+}

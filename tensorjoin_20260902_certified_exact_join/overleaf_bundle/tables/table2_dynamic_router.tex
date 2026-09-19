@@ -1,0 +1,18 @@
+\begin{table*}[t]
+  \centering
+  \caption{Dynamic-router mechanism attribution at $N=4096$ and target degree
+  64.  Times use the resident-input/output operator denominator.  The keeper
+  refines every first-stage ambiguity in FP64; the router inserts the certified
+  FP32 stage and uses actual dynamic launch extents.}
+  \label{tab:router}
+  \small
+  \begin{tabular}{lrrrrrr}
+    \toprule
+    Dataset & $D$ & Keeper ($\mu$s) & Router ($\mu$s) & Speedup & 95\% CI & Wins \\
+    \midrule
+    SIFT & 128 & 264.449 & 207.959 & $1.271\times$ & $[1.267,1.274]$ & 8/8 \\
+    CIFAR-GIST & 512 & 826.680 & 355.435 & $2.329\times$ & $[2.299,2.358]$ & 8/8 \\
+    Fashion-MNIST & 784 & 487.019 & 287.777 & $1.710\times$ & $[1.687,1.736]$ & 8/8 \\
+    \bottomrule
+  \end{tabular}
+\end{table*}

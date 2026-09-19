@@ -1,0 +1,58 @@
+{
+  "complete_direction_balanced_rounds": true,
+  "exact_all_six_processes": true,
+  "experiment_id": "tensorjoin_20260903_g2b_public_screen",
+  "faster_exact_keeper_by_predeclared_median": "mistic",
+  "faster_than_both_each_round": true,
+  "manifest_sha256": "6654ca4bb47a7f0039170169f47d6e15d44f188d7cebe701145d6821d0697f2a",
+  "marginal_medians_seconds": {
+    "gds": 10.90036425499784,
+    "mistic": 4.652792409,
+    "tensorjoin": 0.9309174014997552
+  },
+  "measurement_status": "diagnostic_public_denominator_cheap_screen",
+  "minimum_round_speedup_vs_faster_keeper_gate_1_50": true,
+  "next_action": "run_candidate_sanitizer_and_stress_then_formal_eight_round_campaign",
+  "orders": [
+    [
+      "gds",
+      "mistic",
+      "tensorjoin"
+    ],
+    [
+      "tensorjoin",
+      "mistic",
+      "gds"
+    ]
+  ],
+  "paired_geomean_gate_1_60": true,
+  "paired_geomean_speedup_vs_faster_keeper": 4.998046705733152,
+  "paired_speedups_tensorjoin_by_keeper": {
+    "gds": [
+      11.874767033604586,
+      11.545740594331214
+    ],
+    "mistic": [
+      4.994044412755009,
+      5.002052206201609
+    ]
+  },
+  "performance_claim_allowed": false,
+  "runner_sha256": "f04f9a7a18d0b583a43d32fbb8a01294dd9f5e61c60f30f3d890d4c597bf5a3d",
+  "samples_seconds": {
+    "gds": [
+      10.98839613799646,
+      10.812332371999219
+    ],
+    "mistic": [
+      4.621272837,
+      4.684311981
+    ],
+    "tensorjoin": [
+      0.9253567760024453,
+      0.9364780269970652
+    ]
+  },
+  "screen_pass": true,
+  "screen_rule_source": "DESIGN_G2_TIMING.md"
+}

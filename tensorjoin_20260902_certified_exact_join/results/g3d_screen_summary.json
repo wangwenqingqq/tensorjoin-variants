@@ -1,0 +1,91 @@
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "admit_formal",
+  "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing",
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 291.6319966316223,
+      "p10_us": 284.31680500507355,
+      "p90_us": 296.59519493579865
+    },
+    "keeper_two_stage": {
+      "median_us": 768.559992313385,
+      "p10_us": 756.6943824291229,
+      "p90_us": 776.2432217597961
+    }
+  },
+  "measurement_scope": "complete resident-GPU pipeline attribution",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 286.1440032720566,
+        "p10_us": 283.74080657958984,
+        "p90_us": 290.42240381240845
+      },
+      "keeper_two_stage": {
+        "median_us": 772.7839946746826,
+        "p10_us": 766.3839936256409,
+        "p90_us": 781.660795211792
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 293.8559949398041,
+        "p10_us": 291.8048083782196,
+        "p90_us": 299.5327979326248
+      },
+      "keeper_two_stage": {
+        "median_us": 765.7440006732941,
+        "p10_us": 754.041600227356,
+        "p90_us": 770.5215811729431
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.6528412311856724,
+  "phase": "screen",
+  "process_median_wins": 2,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 293.8559949398041,
+      "candidate_sustained_mean_us": 256.1939239501953,
+      "keeper_median_us": 772.7839946746826,
+      "keeper_sustained_mean_us": 732.6486206054688,
+      "median_speedup_keeper_over_candidate": 2.629805101757363,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g3d_screen_process_0_kc_a0.json",
+      "result_sha256": "0a53c20ad93b67f0d8072df96c203f7047d18b5612bbaf018c6f9eef6eb8b91d",
+      "sustained_speedup_keeper_over_candidate": 2.859742375263737
+    },
+    {
+      "attempt": 1,
+      "candidate_median_us": 286.1440032720566,
+      "candidate_sustained_mean_us": 256.1680030822754,
+      "keeper_median_us": 765.7440006732941,
+      "keeper_sustained_mean_us": 732.3824310302734,
+      "median_speedup_keeper_over_candidate": 2.6760791486699413,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g3d_screen_process_1_ck_a1.json",
+      "result_sha256": "268e9f8c759d4941b3037506539e9467f6674ef05697c00f3d8836f50e7f6c23",
+      "sustained_speedup_keeper_over_candidate": 2.858992622880574
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "screen_gate_pass": true,
+  "screen_thresholds": {
+    "each_process_median_speedup_minimum": 1.1,
+    "each_process_sustained_speedup_minimum": 1.05
+  },
+  "single_protocol_sha256": [
+    "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b"
+  ],
+  "single_runner_sha256": [
+    "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a"
+  ],
+  "sustained_geometric_mean_speedup": 2.8593674744981614,
+  "sustained_wins": 2
+}

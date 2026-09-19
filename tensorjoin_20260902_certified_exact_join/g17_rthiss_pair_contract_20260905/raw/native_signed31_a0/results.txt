@@ -1,0 +1,38 @@
+
+**********************START OF RESULT**********************
+
+=============================================================
+Dataset file: @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/signed31.f32
+Dataset points: 31
+Dataset dimensions: 512
+Epsilon: 0.628906
+Reorder mode: highest
+USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING: 1
+USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING: 0
+USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING: 0
+USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING: 0
+USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING: 0
+MAX_KD_LEVELS: 3
+THREADS_TO_COPY: 8
+USE_UNCOMPRESSED_MASK: 0
+USE_PAGEABLE_MEMORY: 0
+USE_FIXED_WORK_PER_BLOCK: 1
+SORT_BY_WORKLOAD: 1
+USE_CANDIDATE_POINT_COPY: 0
+PINNED_MEMORY_OPT: 16777216
+-------------------------------------------------------------
+Total number of queries: 31
+Time to perform only intersection test: 0.006 seconds
+Total identified neighbors: 31
+Time for KD tree construction: 0.001 seconds
+CUDA kernel only time: 0.000
+Time to copy results only: 0.001
+Time to compress results: 0.000
+Work Generation time: 0.000
+Refine time: 0.001 seconds
+RT time: 0.000 seconds
+TOTAL TIME (REFINE + QUERY): 0.001 seconds
+TOTAL TIME INCLUDING EVERYTHING: 0.201 seconds
+
+
+**********************END OF RESULT**********************

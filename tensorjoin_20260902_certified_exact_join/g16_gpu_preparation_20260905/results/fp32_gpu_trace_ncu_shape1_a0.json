@@ -1,0 +1,53 @@
+{
+  "compiled_cache": {},
+  "correctness": {
+    "exact_contract_pass": true,
+    "meaning": "64-dot probe only"
+  },
+  "design_sha256": "fdf3a6a9f54f8591965c46ef644f156ae71a91eea46f01617d34e77dab250b2d",
+  "experiment_id": "tensorjoin_20260905_g16_fp32_gpu_norms",
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "input_contract": {
+    "epsilon": 0.62890625,
+    "expected_count": 3926078,
+    "expected_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4",
+    "smoke_summary_sha256": "b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c",
+    "source_npy_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+    "source_raw_sha256": "f7b51da49d6555fff8e094584b27c8c5c4efbfdcde1db2b7f86e58d9142af326",
+    "threshold_d2": 0.3955230712890625
+  },
+  "kernel_sha256": "f61bc83e8bdfe788881902987f70c909c56f9d140d840d620b9f69ee719f6f32",
+  "library": {
+    "algorithm": -1,
+    "compute_type": 69,
+    "handle": 223044784,
+    "input_output_type": 0,
+    "library": "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13",
+    "library_sha256": "e70f38efabe986acd5eb683497c62f0f1730a6176ee291d9d24c6e339d1fbf86",
+    "math_mode": 2,
+    "nvidia_tf32_override": "0",
+    "pointer_mode": 0,
+    "required_math_mode": 2,
+    "version": 130100
+  },
+  "metadata_kernel_sha256": "4c552661f0dad52b65ac57ab34cb172d3c13e28c5560a0ac5562cf93602e9485",
+  "numpy": "2.3.1",
+  "nvtx_label": "G15_PEDANTIC_4096_2656_512",
+  "operator_sha256": "978f1bc77b45e3e2805cddda25ddb5a5849ce6c76b0ffb3bc23fc602a9e16374",
+  "phase": "trace",
+  "physical_gpu": 2,
+  "plan_sha256": "6dc0503e7fcf50032de7fee1c54f7add72648230fbc2cdb848d01ec6791e17d6",
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "record_id": "ncu_shape1_a0",
+  "runner_sha256": "278183c8013f4d635b6ddeecdeac2250d8320fb125b5bf5f7ead31191f1ab233",
+  "scope": "selected-code trace with a 64-dot numerical probe; not a public exact-output run",
+  "shape": [
+    4096,
+    2656,
+    512
+  ],
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0"
+}

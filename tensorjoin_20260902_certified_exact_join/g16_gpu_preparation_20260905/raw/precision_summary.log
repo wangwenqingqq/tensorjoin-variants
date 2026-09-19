@@ -1,0 +1,1 @@
+{"precision_gate_pass": true, "gemm_instructions": 2424, "gemm_ffma": 768, "gemm_hash": "fbc00ffde2c9eda01bdbbc0b3800a71f5a636128e3e00cb641efc7f8a33df7e3", "classifier_variants": 3, "all_full_dot_launches": 123}

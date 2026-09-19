@@ -1,0 +1,23 @@
+2026-09-02T15:45:47Z
+gpu-host-8
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %
+541141fa2ee191a88f24a3219fff024e  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth
+f385f2a1c6dfd35c71f112bcb8b0921aab1244eb07f166dacdd8825ed6960f16  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_panns_esc50.py
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torchaudio/_torchcodec.py", line 82, in load_with_torchcodec
+    from torchcodec.decoders import AudioDecoder
+ModuleNotFoundError: No module named 'torchcodec'
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<stdin>", line 14, in <module>
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_panns_esc50.py", line 99, in load_segments
+    waveform, sample_rate = torchaudio.load(path)
+                            ^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torchaudio/__init__.py", line 86, in load
+    return load_with_torchcodec(
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torchaudio/_torchcodec.py", line 84, in load_with_torchcodec
+    raise ImportError(
+ImportError: TorchCodec is required for load_with_torchcodec. Please install torchcodec to use this function.

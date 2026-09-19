@@ -1,0 +1,1631 @@
+	.target	sm_120a
+
+	.elftype	@"ET_EXEC"
+
+
+//--------------------- .text.fused_int8_certificate_status --------------------------
+	.section	.text.fused_int8_certificate_status,"ax",@progbits
+	.align	128
+        .global         fused_int8_certificate_status
+        .type           fused_int8_certificate_status,@function
+        .size           fused_int8_certificate_status,(.L_x_2 - fused_int8_certificate_status)
+        .other          fused_int8_certificate_status,@"STO_CUDA_ENTRY STV_DEFAULT"
+fused_int8_certificate_status:
+.text.fused_int8_certificate_status:
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 43
+        /*0000*/                   LDC R1, c[0x0][0x37c] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0010*/                   S2R R11, SR_TID.X ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0020*/                   S2UR UR6, SR_CgaCtaId ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*0030*/                   LDCU.128 UR12, c[0x0][0x380] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0040*/                   MOV R56, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 63
+        /*0050*/                   S2R R0, SR_CTAID.Y ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0060*/                   CS2R R40, SRZ ;
+        /*0070*/                   LDCU.64 UR10, c[0x0][0x358] ;
+        /*0080*/                   CS2R R42, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 62
+        /*0090*/                   S2R R67, SR_CTAID.X ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*00a0*/                   CS2R R36, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*00b0*/                   UMOV UR4, 0x400 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*00c0*/                   CS2R R38, SRZ ;
+        /*00d0*/                   CS2R R44, SRZ ;
+        /*00e0*/                   CS2R R46, SRZ ;
+        /*00f0*/                   CS2R R32, SRZ ;
+        /*0100*/                   CS2R R34, SRZ ;
+        /*0110*/                   CS2R R28, SRZ ;
+        /*0120*/                   CS2R R30, SRZ ;
+        /*0130*/                   UMOV UR7, 0x1 ;
+        /*0140*/                   UMOV UR8, 0xffffffff ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0150*/                   ULEA UR6, UR6, UR4, 0x18 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0160*/                   UMOV.64 UR4, URZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0170*/                   LOP3.LUT R3, R11.reuse, 0x18, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0180*/                   IMAD.SHL.U32 R8, R11.reuse, 0x8, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0190*/                   LOP3.LUT R2, R11.reuse, 0x7f, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*01a0*/                   IMAD.SHL.U32 R62, R11, 0x10, RZ ;
+        /*01b0*/                   SHF.R.U32.HI R6, RZ, 0x1, R11.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*01c0*/                   IMAD.SHL.U32 R3, R3, 0x2, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*01d0*/                   LOP3.LUT R4, R11.reuse, 0x7, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*01e0*/                   IMAD.SHL.U32 R64, R2.reuse, 0x10, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*01f0*/                   SHF.R.U32.HI R66, RZ, 0x2, R11 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0200*/                   IMAD.SHL.U32 R63, R2, 0x8, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0210*/                   LOP3.LUT R2, R11.reuse, 0x78, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 65
+        /*0220*/                   IMAD.SHL.U32 R5, R0, 0x40, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0230*/                   LOP3.LUT R64, R64, R3, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0240*/                   IMAD.SHL.U32 R3, R11, 0x40, RZ ;
+        /*0250*/                   LOP3.LUT R63, R63, 0x38, R6, 0x78, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0260*/                   IMAD.U32 R6, R67, 0x10000, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0270*/                   SGXT.U32 R66, R66, 0x5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 65
+        /*0280*/                   IMAD R4, R4, 0x8, R5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0290*/                   LOP3.LUT R3, R3, 0x3c0, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*02a0*/                   IMAD.SHL.U32 R67, R67, 0x40, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 68
+        /*02b0*/                   MOV R5, RZ ;
+        /*02c0*/                   IMAD.SHL.U32 R2, R2, 0x200, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*02d0*/                   LOP3.LUT R8, R3, 0x30, R8, 0xf8, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*02e0*/                   IMAD.SHL.U32 R9, R66.reuse, 0x400, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 68
+        /*02f0*/                   MOV R3, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0300*/                   LOP3.LUT R65, R66, 0x20, R67, 0xfe, !PT ;
+        /*0310*/                   LOP3.LUT R66, R66, R67, RZ, 0xfc, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0320*/                   IADD.64 R72, R2, R4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 78
+        /*0330*/                   ISETP.GE.U32.AND P1, PT, R0, 0x40, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0340*/                   SHF.R.U32.HI R3, RZ, 0x2, R11.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*0350*/                   IMAD.SHL.U32 R2, R66, 0x400, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0360*/                   LOP3.LUT R7, R8, 0x10, R11, 0x78, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0370*/                   IADD.64 R72, R72, UR14 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 73
+        /*0380*/                   ISETP.GE.AND P0, PT, R66, 0x200, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0390*/                   LOP3.LUT R23, R6, R9, RZ, 0xfc, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*03a0*/                   IMAD.SHL.U32 R6, R65, 0x400, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*03b0*/                   LOP3.LUT R8, R11, 0x3, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*03c0*/                   IADD.64 R10, R72, 0x10000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*03d0*/                   MOV R9, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*03e0*/                   SGXT.U32 R3, R3, 0x4 ;
+        /*03f0*/                   IADD.64 R12, R72, 0x20000 ;
+        /*0400*/                   IADD3 R19, PT, PT, R63, UR6, RZ ;
+        /*0410*/                   LOP3.LUT R62, R7, 0x400, R62, 0xf8, !PT ;
+        /*0420*/                   IADD.64 R14, R72.reuse, 0x30000 ;
+        /*0430*/                   IADD.64 R16, R72, 0x40000 ;
+        /*0440*/                   PRMT R21, R3, 0x6540, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*0450*/                   IMAD.SHL.U32 R8, R8, 0x10, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*0460*/                   SHF.R.S32.HI R7, RZ, 0x1f, R6 ;
+        /*0470*/                   SHF.R.S32.HI R3, RZ, 0x1f, R2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0480*/                   LOP3.LUT R18, R2, 0x8000, RZ, 0xfc, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 67
+        /*0490*/                   IADD.64 R6, R6, UR12 ;
+        /*04a0*/                   IADD.64 R4, R2, UR12 ;
+        /*04b0*/                   IADD.64 R6, R6, R8 ;
+        /*04c0*/                   IADD.64 R4, R4, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*04d0*/                   IADD3 R9, PT, PT, R64, UR6, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*04e0*/                   LOP3.LUT R70, R8, 0x8000, R2, 0xfe, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*04f0*/                   IADD.64 R2, R72, 0x50000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0500*/              @!PT LDS RZ, [RZ] ;
+        /*0510*/              @!PT LDS RZ, [RZ] ;
+        /*0520*/              @!PT LDS RZ, [RZ] ;
+        /*0530*/                   LDGSTS.E.BYPASS.128 [R9], desc[UR10][R4.64], !P0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0540*/                   LOP3.LUT R68, R8, R23, RZ, 0xfc, !PT ;
+        /*0550*/                   SHF.R.S32.HI R69, RZ, 0x1f, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0560*/                   LDGSTS.E.BYPASS.128 [R9+0x800], desc[UR10][R6.64], !P0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0570*/                   SHF.R.S32.HI R71, RZ, 0x1f, R18 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0580*/                   LOP3.LUT R60, R21, R8, RZ, 0xfc, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0590*/                   LDGDEPBAR ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*05a0*/                   IADD.64 R68, R68, UR12 ;
+        /*05b0*/                   IADD.64 R70, R70, UR12 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*05c0*/                   LDGSTS.E.64 [R19+0x2000], desc[UR10][R72.64], !P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*05d0*/                   IADD.64 R68, R68, 0x80 ;
+        /*05e0*/                   IADD.64 R70, R70, 0x80 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*05f0*/                   LDGSTS.E.64 [R19+0x2400], desc[UR10][R10.64], !P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0600*/                   MOV R8, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0610*/                   LOP3.LUT R59, R60, 0x10, RZ, 0x3c, !PT ;
+        /*0620*/                   LDGSTS.E.64 [R19+0x2800], desc[UR10][R12.64], !P1 ;
+        /*0630*/                   LOP3.LUT R58, R60.reuse, 0x20, RZ, 0x3c, !PT ;
+        /*0640*/                   LOP3.LUT R57, R60, 0x30, RZ, 0x3c, !PT ;
+        /*0650*/                   LDGSTS.E.64 [R19+0x2c00], desc[UR10][R14.64], !P1 ;
+        /*0660*/                   LOP3.LUT R61, R62, 0x20, RZ, 0x3c, !PT ;
+        /*0670*/                   LDGDEPBAR ;
+        /*0680*/                   IADD.64 R10, R72.reuse, 0x60000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0690*/                   BAR.SYNC.DEFER_BLOCKING 0x0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*06a0*/                   IADD.64 R12, R72, 0x70000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*06b0*/                   CS2R R14, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*06c0*/              @!PT LDS RZ, [RZ] ;
+        /*06d0*/              @!PT LDS RZ, [RZ] ;
+        /*06e0*/              @!PT LDS RZ, [RZ] ;
+        /*06f0*/                   LDGSTS.E.BYPASS.128 [R9+0x1000], desc[UR10][R4.64+0x40], !P0 ;
+        /*0700*/                   LDGSTS.E.BYPASS.128 [R9+0x1800], desc[UR10][R6.64+0x40], !P0 ;
+        /*0710*/                   LDGDEPBAR ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0720*/                   LDGSTS.E.64 [R19+0x3000], desc[UR10][R16.64], !P1 ;
+        /*0730*/                   LDGSTS.E.64 [R19+0x3400], desc[UR10][R2.64], !P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0740*/                   MOV R9, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0750*/                   LDGSTS.E.64 [R19+0x3800], desc[UR10][R10.64], !P1 ;
+        /*0760*/                   LDGSTS.E.64 [R19+0x3c00], desc[UR10][R12.64], !P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0770*/                   CS2R R16, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0780*/                   LDGDEPBAR ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0790*/                   CS2R R10, SRZ ;
+        /*07a0*/                   CS2R R12, SRZ ;
+        /*07b0*/                   CS2R R18, SRZ ;
+.L_x_0:
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*07c0*/                   DEPBAR.LE SB0, 0x2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*07d0*/                   UIADD3 UR8, UPT, UPT, UR8, 0x1, URZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*07e0*/                   LOP3.LUT R2, R60.reuse, 0x8, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*07f0*/                   UIADD3 UR7, UPT, UPT, UR7, 0x1, URZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0800*/                   LOP3.LUT R48, R60, 0x18, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0810*/                   UISETP.GT.AND UP0, UPT, UR8, 0x1, UPT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0820*/                   BAR.SYNC.DEFER_BLOCKING 0x0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0830*/                   ISETP.GE.U32.AND P2, PT, R56.reuse, 0xe, PT ;
+        /*0840*/                   IADD3 R56, PT, PT, R56, 0x1, RZ ;
+        /*0850*/                   USEL UR8, UR8, URZ, !UP0 ;
+        /*0860*/                   UISETP.GT.AND UP0, UPT, UR7, 0x1, UPT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0870*/                   ULEA UR9, UR8, UR6, 0xc ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*0880*/                   USEL UR7, UR7, URZ, !UP0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*0890*/                   LDS.U8 R52, [R2+UR9+0x20c0] ;
+        /*08a0*/                   LDS.U8 R3, [R2+UR9+0x2080] ;
+        /*08b0*/                   LDS.U8 R6, [R2+UR9+0x28c0] ;
+        /*08c0*/                   LDS.U8 R5, [R2+UR9+0x2880] ;
+        /*08d0*/                   LDS.U8 R53, [R2+UR9+0x24c0] ;
+        /*08e0*/                   LDS.U8 R4, [R2+UR9+0x2480] ;
+        /*08f0*/                   LDS.U8 R7, [R2+UR9+0x2cc0] ;
+        /*0900*/                   LDS.U8 R20, [R2+UR9+0x2c80] ;
+        /*0910*/                   LDS.U8 R25, [R60+UR9+0x2040] ;
+        /*0920*/                   LDS.U8 R26, [R60+UR9+0x2000] ;
+        /*0930*/                   LDS.U8 R54, [R60+UR9+0x2400] ;
+        /*0940*/                   PRMT R52, R3, 0x3340, R52 ;
+        /*0950*/                   LDS.U8 R24, [R48+UR9+0x2080] ;
+        /*0960*/                   LDS.U8 R3, [R60+UR9+0x2440] ;
+        /*0970*/                   PRMT R6, R5, 0x3340, R6 ;
+        /*0980*/                   LDS.U8 R21, [R48+UR9+0x2880] ;
+        /*0990*/                   LDS.U8 R5, [R48+UR9+0x20c0] ;
+        /*09a0*/                   PRMT R53, R4, 0x3340, R53 ;
+        /*09b0*/                   LDS.U8 R51, [R48+UR9+0x24c0] ;
+        /*09c0*/                   LDS.U8 R4, [R48+UR9+0x28c0] ;
+        /*09d0*/                   PRMT R7, R20, 0x3340, R7 ;
+        /*09e0*/                   LDS.U8 R22, [R48+UR9+0x2480] ;
+        /*09f0*/                   LDS.U8 R49, [R60+UR9+0x2840] ;
+        /*0a00*/                   PRMT R25, R26, 0x3340, R25 ;
+        /*0a10*/                   LDS.U8 R2, [R60+UR9+0x2800] ;
+        /*0a20*/                   PRMT R52, R25, 0x5410, R52 ;
+        /*0a30*/                   LDS.U8 R20, [R48+UR9+0x2cc0] ;
+        /*0a40*/                   LDS.U8 R23, [R48+UR9+0x2c80] ;
+        /*0a50*/                   LDS.U8 R55, [R60+UR9+0x2c40] ;
+        /*0a60*/                   PRMT R26, R54, 0x3340, R3 ;
+        /*0a70*/                   LDS.U8 R74, [R60+UR9+0x2c00] ;
+        /*0a80*/                   PRMT R53, R26, 0x5410, R53 ;
+        /*0a90*/                   LDS.U8 R50, [R59+UR9+0x2040] ;
+        /*0aa0*/                   PRMT R5, R24, 0x3340, R5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0ab0*/                   LOP3.LUT R24, R60, 0x28, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*0ac0*/                   LDS.U8 R27, [R59+UR9+0x2000] ;
+        /*0ad0*/                   PRMT R4, R21, 0x3340, R4 ;
+        /*0ae0*/                   LDS.U8 R26, [R59+UR9+0x2440] ;
+        /*0af0*/                   PRMT R51, R22, 0x3340, R51 ;
+        /*0b00*/                   LDS.U8 R21, [R59+UR9+0x2400] ;
+        /*0b10*/                   LDS.U8 R25, [R59+UR9+0x2840] ;
+        /*0b20*/                   PRMT R3, R2, 0x3340, R49 ;
+        /*0b30*/                   LDS.U8 R22, [R59+UR9+0x2800] ;
+        /*0b40*/                   PRMT R6, R3, 0x5410, R6 ;
+        /*0b50*/                   LDS.U8 R48, [R24+UR9+0x2080] ;
+        /*0b60*/                   PRMT R20, R23, 0x3340, R20 ;
+        /*0b70*/                   LDS.U8 R54, [R24+UR9+0x2480] ;
+        /*0b80*/                   LDS.U8 R23, [R24+UR9+0x20c0] ;
+        /*0b90*/                   PRMT R2, R74, 0x3340, R55 ;
+        /*0ba0*/                   LDS.U8 R49, [R24+UR9+0x28c0] ;
+        /*0bb0*/                   PRMT R7, R2, 0x5410, R7 ;
+        /*0bc0*/                   LDS.U8 R74, [R24+UR9+0x2880] ;
+        /*0bd0*/                   PRMT R50, R27, 0x3340, R50 ;
+        /*0be0*/                   LDS.U8 R2, [R59+UR9+0x2c40] ;
+        /*0bf0*/                   PRMT R50, R50, 0x5410, R5 ;
+        /*0c00*/                   LDS.U8 R27, [R24+UR9+0x24c0] ;
+        /*0c10*/                   PRMT R26, R21, 0x3340, R26 ;
+        /*0c20*/                   LDS.U8 R5, [R59+UR9+0x2c00] ;
+        /*0c30*/                   PRMT R51, R26, 0x5410, R51 ;
+        /*0c40*/                   LDS.U8 R55, [R58+UR9+0x2800] ;
+        /*0c50*/                   PRMT R25, R22, 0x3340, R25 ;
+        /*0c60*/                   LDS.U8 R26, [R58+UR9+0x2040] ;
+        /*0c70*/                   PRMT R4, R25, 0x5410, R4 ;
+        /*0c80*/                   LDS.U8 R3, [R24+UR9+0x2cc0] ;
+        /*0c90*/                   LDS.U8 R25, [R58+UR9+0x2c00] ;
+        /*0ca0*/                   PRMT R22, R48, 0x3340, R23 ;
+        /*0cb0*/                   LDS.U8 R75, [R57+UR9+0x2400] ;
+        /*0cc0*/                   LDS.U8 R48, [R58+UR9+0x2440] ;
+        /*0cd0*/                   PRMT R21, R74, 0x3340, R49 ;
+        /*0ce0*/                   LDS.U8 R49, [R58+UR9+0x2400] ;
+        /*0cf0*/                   LDS.U8 R74, [R24+UR9+0x2c80] ;
+        /*0d00*/                   PRMT R23, R54, 0x3340, R27 ;
+        /*0d10*/                   LDS.U8 R27, [R58+UR9+0x2000] ;
+        /*0d20*/                   PRMT R5, R5, 0x3340, R2 ;
+        /*0d30*/                   LDS.U8 R54, [R58+UR9+0x2840] ;
+        /*0d40*/                   PRMT R5, R5, 0x5410, R20 ;
+        /*0d50*/                   LDS.U8 R24, [R58+UR9+0x2c40] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*0d60*/                   LOP3.LUT R20, R60, 0x38, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*0d70*/                   PRMT R48, R49, 0x3340, R48 ;
+        /*0d80*/                   LDS.U8 R49, [R20+UR9+0x2480] ;
+        /*0d90*/                   PRMT R23, R48, 0x5410, R23 ;
+        /*0da0*/                   LDS.U8 R48, [R20+UR9+0x24c0] ;
+        /*0db0*/                   PRMT R3, R74, 0x3340, R3 ;
+        /*0dc0*/                   PRMT R27, R27, 0x3340, R26 ;
+        /*0dd0*/                   LDS.U8 R26, [R20+UR9+0x20c0] ;
+        /*0de0*/                   PRMT R2, R55, 0x3340, R54 ;
+        /*0df0*/                   PRMT R22, R27, 0x5410, R22 ;
+        /*0e00*/                   LDS.U8 R55, [R20+UR9+0x28c0] ;
+        /*0e10*/                   PRMT R2, R2, 0x5410, R21 ;
+        /*0e20*/                   PRMT R24, R25, 0x3340, R24 ;
+        /*0e30*/                   LDS.U8 R27, [R20+UR9+0x2080] ;
+        /*0e40*/                   PRMT R3, R24, 0x5410, R3 ;
+        /*0e50*/                   LDS.U8 R54, [R20+UR9+0x2880] ;
+        /*0e60*/                   LDS.U8 R24, [R57+UR9+0x2c40] ;
+        /*0e70*/                   PRMT R25, R49, 0x3340, R48 ;
+        /*0e80*/                   LDS.U8 R49, [R20+UR9+0x2cc0] ;
+        /*0e90*/                   LDS.U8 R48, [R57+UR9+0x2440] ;
+        /*0ea0*/                   PRMT R21, R27, 0x3340, R26 ;
+        /*0eb0*/                   LDS.U8 R26, [R57+UR9+0x2040] ;
+        /*0ec0*/                   PRMT R55, R54, 0x3340, R55 ;
+        /*0ed0*/                   LDS.U8 R54, [R20+UR9+0x2c80] ;
+        /*0ee0*/                   LDS.U8 R27, [R57+UR9+0x2000] ;
+        /*0ef0*/                   PRMT R48, R75, 0x3340, R48 ;
+        /*0f00*/                   LDS.U8 R75, [R57+UR9+0x2c00] ;
+        /*0f10*/                   PRMT R49, R54, 0x3340, R49 ;
+        /*0f20*/                   LDS.U8 R54, [R57+UR9+0x2840] ;
+        /*0f30*/                   PRMT R26, R27, 0x3340, R26 ;
+        /*0f40*/                   LDS.U8 R27, [R57+UR9+0x2800] ;
+        /*0f50*/                   PRMT R20, R26, 0x5410, R21 ;
+        /*0f60*/                   PRMT R21, R48, 0x5410, R25 ;
+        /*0f70*/                   PRMT R48, R75, 0x3340, R24 ;
+        /*0f80*/                   PRMT R54, R27, 0x3340, R54 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*0f90*/                   LDSM.16.M88.4 R24, [R62+UR9] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*0fa0*/                   PRMT R54, R54, 0x5410, R55 ;
+        /*0fb0*/                   PRMT R55, R48, 0x5410, R49 ;
+        /*0fc0*/                   IMMA.16832.S8.S8.SAT R40, R24.ROW, R52.COL, R40 ;
+        /*0fd0*/                   NOP ;
+        /*0fe0*/                   IMMA.16832.S8.S8.SAT R36, R24.ROW, R50.COL, R36 ;
+        /*0ff0*/                   NOP ;
+        /*1000*/                   IMMA.16832.S8.S8.SAT R44, R24.ROW, R22.COL, R44 ;
+        /*1010*/                   NOP ;
+        /*1020*/                   IMMA.16832.S8.S8.SAT R12, R24.ROW, R20.COL, R12 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1030*/                   LDSM.16.M88.4 R24, [R62+UR9+0x800] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1040*/                   IMMA.16832.S8.S8.SAT R8, R24.ROW, R52.COL, R8 ;
+        /*1050*/                   NOP ;
+        /*1060*/                   IMMA.16832.S8.S8.SAT R32, R24.ROW, R50.COL, R32 ;
+        /*1070*/                   NOP ;
+        /*1080*/                   IMMA.16832.S8.S8.SAT R28, R24.ROW, R22.COL, R28 ;
+        /*1090*/                   NOP ;
+        /*10a0*/                   IMMA.16832.S8.S8.SAT R16, R24.ROW, R20.COL, R16 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*10b0*/                   LDSM.16.M88.4 R20, [R61+UR9] ;
+        /*10c0*/                   LDSM.16.M88.4 R24, [R61+UR9+0x800] ;
+        /*10d0*/                   ULEA UR9, UR7, UR6, 0xc ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*10e0*/                   IADD3 R49, PT, PT, R63, UR9, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*10f0*/                   IMMA.16832.S8.S8.SAT R36, R20.ROW, R4.COL, R36 ;
+        /*1100*/                   NOP ;
+        /*1110*/                   IMMA.16832.S8.S8.SAT R32, R24.ROW, R4.COL, R32 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1120*/                   SEL R4, RZ, 0x10, P2 ;
+        /*1130*/                   SEL R4, R4, RZ, !P0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1140*/                   IMMA.16832.S8.S8.SAT R44, R20.ROW, R2.COL, R44 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1150*/                   BAR.SYNC.DEFER_BLOCKING 0x0 ;
+        /*1160*/                   ISETP.NE.U32.AND P3, PT, R4, RZ, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1170*/                   IMMA.16832.S8.S8.SAT R28, R24.ROW, R2.COL, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*1180*/                   SEL R2, RZ, 0x8, P2 ;
+        /*1190*/                   SEL R2, R2, RZ, !P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*11a0*/                   IMMA.16832.S8.S8.SAT R40, R20.ROW, R6.COL, R40 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*11b0*/                   ISETP.NE.U32.AND P2, PT, R2, RZ, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 83
+        /*11c0*/                   IADD.64 R2, R72, UR4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*11d0*/                   UIADD3.64 UR4, UPT, UPT, UR4, 0x40000, URZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*11e0*/                   IADD.64 R4, R2, 0xa0000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*11f0*/                   UISETP.NE.U32.AND UP0, UPT, UR4, 0x400000, UPT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1200*/                   IMMA.16832.S8.S8.SAT R12, R20.ROW, R54.COL, R12 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1210*/                   IADD3 R23, PT, PT, R64, UR9, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*1220*/                   IADD.64 R20, R2, 0x80000 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1230*/              @!PT LDS RZ, [RZ] ;
+        /*1240*/              @!PT LDS RZ, [RZ] ;
+        /*1250*/              @!PT LDS RZ, [RZ] ;
+        /*1260*/                   LDGSTS.E.BYPASS.128 [R23], desc[UR10][R68.64], P3 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1270*/                   IMMA.16832.S8.S8.SAT R8, R24.ROW, R6.COL, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1280*/                   LDGSTS.E.BYPASS.128 [R23+0x800], desc[UR10][R70.64], P3 ;
+        /*1290*/                   LDGDEPBAR ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*12a0*/                   IADD.64 R6, R2, 0x90000 ;
+        /*12b0*/                   IADD.64 R2, R2, 0xb0000 ;
+        /*12c0*/                   LDGSTS.E.64 [R49+0x2000], desc[UR10][R20.64], P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*12d0*/                   IADD.64 R68, R68, 0x40 ;
+        /*12e0*/                   IADD.64 R70, R70, 0x40 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*12f0*/                   LDGSTS.E.64 [R49+0x2400], desc[UR10][R6.64], P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 81
+        /*1300*/                   IMMA.16832.S8.S8.SAT R16, R24.ROW, R54.COL, R16 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 77
+        /*1310*/                   LDGSTS.E.64 [R49+0x2800], desc[UR10][R4.64], P2 ;
+        /*1320*/                   LDGSTS.E.64 [R49+0x2c00], desc[UR10][R2.64], P2 ;
+        /*1330*/                   LDGDEPBAR ;
+        /*1340*/                   BRA.U UP0, `(.L_x_0) ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1350*/                   S2R R3, SR_TID.X ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*1360*/                   LDC.64 R24, c[0x0][0x390] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*1370*/                   DEPBAR.LE SB0, 0x0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*1380*/                   CS2R R72, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*1390*/                   LDC.64 R50, c[0x0][0x398] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*13a0*/                   LDC.64 R58, c[0x0][0x3a0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*13b0*/                   LDC.64 R60, c[0x0][0x3a8] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*13c0*/                   CS2R R6, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*13d0*/                   CS2R R20, SRZ ;
+        /*13e0*/                   CS2R R22, SRZ ;
+        /*13f0*/                   CS2R R48, SRZ ;
+        /*1400*/                   CS2R R26, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*1410*/                   MOV R64, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1420*/                   LOP3.LUT R2, R3.reuse, 0x5c, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*1430*/                   CS2R R52, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1440*/                   LOP3.LUT R4, R3, 0x20, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*1450*/                   CS2R R70, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1460*/                   LEA.HI R75, R2, R67, RZ, 0x1e ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*1470*/                   LDC.64 R68, c[0x0][0x3b0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1480*/                   R2UR UR4, R4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 94
+        /*1490*/                   LDC.64 R56, c[0x0][0x3b8] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*14a0*/                   ISETP.GE.AND P2, PT, R75.reuse, 0x200, PT ;
+        /*14b0*/                   IMAD.WIDE R24, R75, 0x4, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 70
+        /*14c0*/                   BAR.SYNC.DEFER_BLOCKING 0x0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*14d0*/                   LOP3.LUT R5, R3, 0x3, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*14e0*/                   MOV R67, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*14f0*/                   MOV R63, UR4 ;
+        /*1500*/                   IMAD.SHL.U32 R4, R5, 0x2, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*1510*/                   CS2R R54, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*1520*/                   CS2R R76, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1530*/                   I2FP.F32.S32 R36, R36 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*1540*/                   LDCU.64 UR8, c[0x0][0x3c8] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1550*/                   LEA.HI R63, R63, R4, RZ, 0x1e ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 65
+        /*1560*/                   IMAD.SHL.U32 R4, R0, 0x40, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*1570*/              @!P2 LDG.E R73, desc[UR10][R24.64] ;
+        /*1580*/              @!P2 LDG.E R67, desc[UR10][R24.64+0x20] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 65
+        /*1590*/                   IADD3 R63, PT, PT, R4, R63, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*15a0*/              @!P2 LDG.E R72, desc[UR10][R24.64+0x80] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*15b0*/                   IMAD.WIDE R58, R75, 0x4, R58 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 85
+        /*15c0*/              @!P2 LDG.E R6, desc[UR10][R24.64+0xa0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*15d0*/                   IMAD.WIDE.U32 R50, R63, 0x4, R50 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*15e0*/              @!P2 LDG.E R7, desc[UR10][R58.64] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*15f0*/                   IMAD.WIDE.U32 R60, R63, 0x4, R60 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*1600*/              @!P1 LDG.E.64 R20, desc[UR10][R50.64+0x40] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*1610*/                   CS2R R24, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*1620*/              @!P1 LDG.E.64 R22, desc[UR10][R50.64] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*1630*/              @!P1 LDG.E.64 R24, desc[UR10][R60.64] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 86
+        /*1640*/              @!P1 LDG.E.64 R48, desc[UR10][R50.64+0x80] ;
+        /*1650*/              @!P1 LDG.E.64 R26, desc[UR10][R50.64+0xc0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*1660*/              @!P2 LDG.E R64, desc[UR10][R58.64+0x20] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*1670*/              @!P1 LDG.E.64 R52, desc[UR10][R60.64+0x80] ;
+        /*1680*/                   CS2R R50, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*1690*/              @!P2 LDG.E R70, desc[UR10][R58.64+0x80] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*16a0*/              @!P1 LDG.E.64 R50, desc[UR10][R60.64+0x40] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 88
+        /*16b0*/              @!P2 LDG.E R71, desc[UR10][R58.64+0xa0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*16c0*/                   IMAD.WIDE R68, R75, 0x4, R68 ;
+        /*16d0*/                   CS2R R74, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 91
+        /*16e0*/              @!P1 LDG.E.64 R54, desc[UR10][R60.64+0xc0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 94
+        /*16f0*/                   IMAD.WIDE.U32 R56, R63, 0x4, R56 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*1700*/              @!P2 LDG.E R74, desc[UR10][R68.64] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 94
+        /*1710*/                   CS2R R58, SRZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*1720*/              @!P2 LDG.E R75, desc[UR10][R68.64+0x80] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 94
+        /*1730*/              @!P1 LDG.E.64 R58, desc[UR10][R56.64] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 93
+        /*1740*/              @!P2 LDG.E R76, desc[UR10][R68.64+0x20] ;
+        /*1750*/              @!P2 LDG.E R77, desc[UR10][R68.64+0xa0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 94
+        /*1760*/                   CS2R R60, SRZ ;
+        /*1770*/              @!P1 LDG.E.64 R60, desc[UR10][R56.64+0x40] ;
+        /*1780*/                   CS2R R62, SRZ ;
+        /*1790*/              @!P1 LDG.E.64 R62, desc[UR10][R56.64+0x80] ;
+        /*17a0*/                   CS2R R68, SRZ ;
+        /*17b0*/              @!P1 LDG.E.64 R68, desc[UR10][R56.64+0xc0] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*17c0*/                   I2FP.F32.S32 R37, R37 ;
+        /*17d0*/                   I2FP.F32.S32 R44, R44 ;
+        /*17e0*/                   I2FP.F32.S32 R45, R45 ;
+        /*17f0*/                   I2FP.F32.S32 R12, R12 ;
+        /*1800*/                   I2FP.F32.S32 R13, R13 ;
+        /*1810*/                   I2FP.F32.S32 R42, R42 ;
+        /*1820*/                   I2FP.F32.S32 R38, R38 ;
+        /*1830*/                   I2FP.F32.S32 R47, R47 ;
+        /*1840*/                   I2FP.F32.S32 R39, R39 ;
+        /*1850*/                   I2FP.F32.S32 R14, R14 ;
+        /*1860*/                   I2FP.F32.S32 R56, R43 ;
+        /*1870*/                   I2FP.F32.S32 R46, R46 ;
+        /*1880*/                   I2FP.F32.S32 R15, R15 ;
+        /*1890*/                   I2FP.F32.S32 R29, R29 ;
+        /*18a0*/                   I2FP.F32.S32 R40, R40 ;
+        /*18b0*/                   I2FP.F32.S32 R41, R41 ;
+        /*18c0*/                   I2FP.F32.S32 R9, R9 ;
+        /*18d0*/                   I2FP.F32.S32 R16, R16 ;
+        /*18e0*/                   I2FP.F32.S32 R33, R33 ;
+        /*18f0*/                   I2FP.F32.S32 R17, R17 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1900*/                   IMAD.SHL.U32 R2, R2, 0x4, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1910*/                   I2FP.F32.S32 R11, R11 ;
+        /*1920*/                   I2FP.F32.S32 R18, R18 ;
+        /*1930*/                   I2FP.F32.S32 R35, R35 ;
+        /*1940*/                   I2FP.F32.S32 R31, R31 ;
+        /*1950*/                   I2FP.F32.S32 R19, R19 ;
+        /*1960*/                   FMUL R57, R36, R73.reuse ;
+        /*1970*/                   FMUL R36, R37, R73.reuse ;
+        /*1980*/                   FMUL R37, R44, R73.reuse ;
+        /*1990*/                   FMUL R44, R45, R73.reuse ;
+        /*19a0*/                   FMUL R45, R12, R73.reuse ;
+        /*19b0*/                   FMUL R12, R13, R73 ;
+        /*19c0*/                   FMUL R13, R42, R67.reuse ;
+        /*19d0*/                   FMUL R43, R38, R67.reuse ;
+        /*19e0*/                   FMUL R42, R47, R67.reuse ;
+        /*19f0*/                   FMUL R38, R39, R67.reuse ;
+        /*1a00*/                   FMUL R47, R14, R67.reuse ;
+        /*1a10*/                   FMUL R56, R56, R67.reuse ;
+        /*1a20*/                   FMUL R39, R46, R67.reuse ;
+        /*1a30*/                   FMUL R14, R15, R67 ;
+        /*1a40*/                   I2FP.F32.S32 R67, R32 ;
+        /*1a50*/                   FMUL R32, R29, R72 ;
+        /*1a60*/                   FMUL R40, R40, R73.reuse ;
+        /*1a70*/                   FMUL R41, R41, R73 ;
+        /*1a80*/                   I2FP.F32.S32 R15, R8 ;
+        /*1a90*/                   FMUL R8, R9, R72 ;
+        /*1aa0*/                   I2FP.F32.S32 R29, R34 ;
+        /*1ab0*/                   FMUL R9, R16, R72 ;
+        /*1ac0*/                   I2FP.F32.S32 R73, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 72
+        /*1ad0*/                   LOP3.LUT R16, R3, 0x18, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1ae0*/                   FMUL R67, R67, R72 ;
+        /*1af0*/                   FMUL R29, R29, R6 ;
+        /*1b00*/                   FMUL R15, R15, R72.reuse ;
+        /*1b10*/                   FMUL R28, R33, R72.reuse ;
+        /*1b20*/                   FMUL R73, R73, R72.reuse ;
+        /*1b30*/                   FMUL R72, R17, R72 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1b40*/                   IMAD R17, R16, 0x4, R5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1b50*/                   FMUL R57, R57, R20.reuse ;
+        /*1b60*/                   FMUL R43, R43, R20.reuse ;
+        /*1b70*/                   FMUL R67, R67, R20.reuse ;
+        /*1b80*/                   FMUL R29, R29, R20 ;
+        /*1b90*/                   FMUL R41, R41, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1ba0*/                   FADD R20, R25, R7 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1bb0*/                   IMAD.SHL.U32 R17, R17, 0x20, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1bc0*/                   FMUL R13, R13, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1bd0*/                   FFMA R41, R41, -2, R20 ;
+        /*1be0*/                   FADD R20, R24, R64 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1bf0*/                   LOP3.LUT R2, R17, R2, RZ, 0x3c, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1c00*/                   I2FP.F32.S32 R17, R10 ;
+        /*1c10*/                   FMUL R10, R11, R6 ;
+        /*1c20*/                   I2FP.F32.S32 R33, R30 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1c30*/                   FFMA R13, R13, -2, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1c40*/                   FMUL R11, R18, R6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1c50*/                   IMAD.SHL.U32 R18, R3, 0x200, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1c60*/                   FADD R20, R50.reuse, R7.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1c70*/                   FMUL R17, R17, R6.reuse ;
+        /*1c80*/                   FMUL R16, R35, R6.reuse ;
+        /*1c90*/                   FMUL R33, R33, R6.reuse ;
+        /*1ca0*/                   FMUL R30, R31, R6.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1cb0*/                   FFMA R57, R57, -2, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1cc0*/                   FMUL R6, R19, R6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1cd0*/                   FADD R20, R50, R64 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1ce0*/                   LOP3.LUT R18, R18, 0xc00, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*1cf0*/                   LOP3.LUT R19, R3, 0x7, RZ, 0xc0, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1d00*/                   FFMA R43, R43, -2, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1d10*/                   FMUL R36, R36, R21.reuse ;
+        /*1d20*/                   FMUL R38, R38, R21.reuse ;
+        /*1d30*/                   FMUL R28, R28, R21.reuse ;
+        /*1d40*/                   FMUL R16, R16, R21 ;
+        /*1d50*/                   FMUL R37, R37, R48 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1d60*/                   FADD R20, R52, R7 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1d70*/                   FMUL R8, R8, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*1d80*/                   IMAD R18, R19, 0x10, R18 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1d90*/                   FADD R21, R25, R70 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1da0*/                   FMUL R40, R40, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1db0*/                   FADD R19, R24, R7 ;
+        /*1dc0*/                   FFMA R37, R37, -2, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1dd0*/                   FMUL R39, R39, R48 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1de0*/                   FFMA R8, R8, -2, R21 ;
+        /*1df0*/                   FADD R20, R52, R64 ;
+        /*1e00*/                   FFMA R40, R40, -2, R19 ;
+        /*1e10*/                   FADD R21, R51, R70 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1e20*/                   FMUL R56, R56, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1e30*/                   FADD R19, R25, R64 ;
+        /*1e40*/                   FFMA R39, R39, -2, R20 ;
+        /*1e50*/                   FFMA R28, R28, -2, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*1e60*/                   FMNMX R20, RZ, R41, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1e70*/                   FMUL R15, R15, R22.reuse ;
+        /*1e80*/                   FMUL R17, R17, R22 ;
+        /*1e90*/                   FMUL R42, R42, R49 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1ea0*/                   FFMA R56, R56, -2, R19 ;
+        /*1eb0*/                   FADD R21, R53, R64 ;
+        /*1ec0*/                   FADD R22, R24, R70 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*1ed0*/                   FMNMX R8, RZ, R8, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1ee0*/                   FMUL R10, R10, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1ef0*/                   FADD R25, R25, R71 ;
+        /*1f00*/                   FFMA R42, R42, -2, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1f10*/                   FMUL R32, R32, R49 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1f20*/                   FFMA R15, R15, -2, R22 ;
+        /*1f30*/                   FADD R21, R53, R70.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*1f40*/                   MUFU.SQRT R20, R20 ;
+        /*1f50*/                   FMNMX R56, RZ, R56, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1f60*/                   FADD R22, R50, R70 ;
+        /*1f70*/                   FADD R19, R51, R7 ;
+        /*1f80*/                   FFMA R10, R10, -2, R25 ;
+        /*1f90*/                   FFMA R32, R32, -2, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*1fa0*/                   FMNMX R25, RZ, R13, !PT ;
+        /*1fb0*/                   MUFU.SQRT R8, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*1fc0*/                   FMUL R12, R12, R27.reuse ;
+        /*1fd0*/                   FMUL R14, R14, R27.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*1fe0*/                   FFMA R67, R67, -2, R22 ;
+        /*1ff0*/                   FADD R13, R55.reuse, R7 ;
+        /*2000*/                   FADD R21, R55, R64 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*2010*/                   FMUL R73, R73, R48 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2020*/                   FADD R22, R52, R70 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2030*/                   MUFU.SQRT R56, R56 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2040*/                   FFMA R36, R36, -2, R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*2050*/                   FMUL R45, R45, R26.reuse ;
+        /*2060*/                   FMUL R47, R47, R26.reuse ;
+        /*2070*/                   FMUL R9, R9, R26.reuse ;
+        /*2080*/                   FMUL R11, R11, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2090*/                   FADD R19, R51, R64 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*20a0*/                   FMUL R72, R72, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*20b0*/                   FADD R26, R54, R70.reuse ;
+        /*20c0*/                   FADD R23, R55, R70 ;
+        /*20d0*/                   FFMA R12, R12, -2, R13 ;
+        /*20e0*/                   FFMA R14, R14, -2, R21 ;
+        /*20f0*/                   FFMA R73, R73, -2, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2100*/                   FADD R13, R59.reuse, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2110*/                   FMNMX R21, RZ, R10, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2120*/                   FADD R22, R54, R7 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2130*/                   FADD R10, R59, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2140*/                   FFMA R38, R38, -2, R19 ;
+        /*2150*/                   FADD R19, R53, R7 ;
+        /*2160*/                   FFMA R72, R72, -2, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2170*/                   MUFU.SQRT R7, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2180*/                   FFMA R9, R9, -2, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2190*/                   FADD R23, R13, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*21a0*/                   FFMA R45, R45, -2, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*21b0*/                   FADD R22, R59, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*21c0*/                   FMNMX R15, RZ, R15, !PT ;
+        /*21d0*/                   MUFU.SQRT R26, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*21e0*/                   FADD R25, R10, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*21f0*/                   FADD R13, R20, -R23.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*2200*/                   FMUL R44, R44, R49 ;
+        /*2210*/                   FMUL R6, R6, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2220*/                   FADD R20, R20, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2230*/                   FADD R24, R24, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2240*/                   FADD R27, R22, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2250*/                   FADD R10, R8.reuse, -R25.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2260*/                   FADD R23, R8, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2270*/                   MUFU.SQRT R25, R15 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2280*/                   FFMA R44, R44, -2, R19 ;
+        /*2290*/                   FFMA R17, R17, -2, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*22a0*/                   FMNMX R19, RZ, R40, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*22b0*/                   FADD R8, R56.reuse, -R27.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*22c0*/                   FADD R22, R56, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*22d0*/                   FADD R24, R54, R64 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*22e0*/                   FADD R59, R59, R77 ;
+        /*22f0*/                   FADD R27, R58.reuse, R76 ;
+        /*2300*/                   FADD R21, R58.reuse, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2310*/                   FFMA R47, R47, -2, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2320*/                   FADD R59, R59, UR9 ;
+        /*2330*/                   FADD R40, R27, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2340*/                   MUFU.SQRT R19, R19 ;
+        /*2350*/                   FMNMX R24, RZ, R17, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2360*/                   FMUL R27, R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2370*/                   FADD R17, R58, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2380*/                   FMNMX R23, RZ, R13, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2390*/                   FADD R34, R21, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*23a0*/                   FADD R21, R26.reuse, -R59.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*23b0*/                   FADD R59, R26, R59 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*23c0*/                   FADD R26, R17, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*23d0*/                   FMUL R23, R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*23e0*/                   FMNMX R10, RZ, R10, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*23f0*/                   MUFU.SQRT R24, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2400*/                   FADD R17, R25.reuse, -R26.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2410*/                   FADD R25, R25, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2420*/                   FMUL R22, R22, R22 ;
+        /*2430*/                   FMUL R26, R20, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2440*/                   FSETP.GT.AND P6, PT, R23, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2450*/                   FMUL R10, R10, R10 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2460*/                   FSETP.GTU.AND P1, PT, R22, UR8, PT ;
+        /*2470*/                   FSETP.GTU.AND P2, PT, R26, UR8, PT ;
+        /*2480*/                   SEL R22, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2490*/                   FMNMX R8, RZ, R8, !PT ;
+        /*24a0*/                   FADD R15, R19.reuse, -R34.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*24b0*/                   FSETP.GT.AND P6, PT, R10, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*24c0*/                   FADD R58, R58, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*24d0*/                   FMNMX R23, RZ, R21, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*24e0*/                   SEL R10, R22, 0x1, P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*24f0*/                   FMUL R22, R8, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2500*/                   FADD R34, R19, R34 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2510*/                   FADD R31, R58, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2520*/                   FSETP.GTU.AND P5, PT, R27, UR8, PT ;
+        /*2530*/                   SEL R21, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2540*/                   FMNMX R8, RZ, R15, !PT ;
+        /*2550*/                   FADD R19, R7, -R40.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2560*/                   FMUL R23, R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2570*/                   FMNMX R17, RZ, R17, !PT ;
+        /*2580*/                   FADD R20, R24, -R31.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2590*/                   FSETP.GT.AND P6, PT, R22, UR8, PT ;
+        /*25a0*/                   SEL R22, R21, 0x1, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*25b0*/                   FMUL R8, R8, R8 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*25c0*/                   FSETP.GT.AND P5, PT, R23, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*25d0*/                   FMNMX R21, RZ, R19, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*25e0*/                   FMUL R17, R17, R17 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*25f0*/                   SEL R26, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2600*/                   FMNMX R20, RZ, R20, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2610*/                   FADD R13, R24, R31 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2620*/                   FSETP.GT.AND P6, PT, R8, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2630*/                   FMUL R8, R21, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2640*/                   SEL R24, RZ, 0x2, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2650*/                   FMUL R25, R25, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2660*/                   FSETP.GT.AND P5, PT, R17, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2670*/                   FADD R7, R7, R40 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2680*/                   FMUL R20, R20, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2690*/                   SEL R21, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*26a0*/                   FMNMX R36, RZ, R36, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*26b0*/                   FSETP.GT.AND P6, PT, R8, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*26c0*/                   FMNMX R28, RZ, R28, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*26d0*/                   FSETP.GTU.AND P2, PT, R25, UR8, PT ;
+        /*26e0*/                   SEL R8, RZ, 0x2, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*26f0*/                   FMUL R23, R7, R7 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2700*/                   FSETP.GT.AND P5, PT, R20, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2710*/                   FMUL R13, R13, R13 ;
+        /*2720*/                   FMUL R34, R34, R34 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2730*/                   MUFU.SQRT R19, R36 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2740*/                   FADD R51, R51, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2750*/                   FMUL R59, R59, R59 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2760*/                   SEL R7, R8, 0x1, P2 ;
+        /*2770*/                   FSETP.GTU.AND P2, PT, R23, UR8, PT ;
+        /*2780*/                   SEL R25, RZ, 0x2, P6 ;
+        /*2790*/                   FSETP.GTU.AND P6, PT, R13, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*27a0*/                   MUFU.SQRT R28, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*27b0*/                   SEL R23, RZ, 0x2, P5 ;
+        /*27c0*/                   FSETP.GTU.AND P3, PT, R34, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*27d0*/                   FFMA R16, R16, -2, R51 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*27e0*/                   FMNMX R20, RZ, R38, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*27f0*/                   FSETP.GTU.AND P4, PT, R59, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2800*/                   FMNMX R57, RZ, R57, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2810*/                   PRMT R8, R7, 0x3340, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2820*/                   SEL R22, R23, 0x1, P6 ;
+        /*2830*/                   SEL R13, R21, 0x1, P3 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2840*/                   FADD R23, R61.reuse, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2850*/                   FMNMX R21, RZ, R16, !PT ;
+        /*2860*/                   MUFU.SQRT R15, R57 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2870*/                   SEL R7, R24, 0x1, P4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2880*/                   FADD R16, R61, R75 ;
+        /*2890*/                   FADD R24, R23, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*28a0*/                   SEL R26, R26, 0x1, P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*28b0*/                   MUFU.SQRT R20, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*28c0*/                   SEL R25, R25, 0x1, P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*28d0*/                   FADD R23, R16, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*28e0*/                   PRMT R7, R22, 0x3340, R7 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*28f0*/                   FADD R16, R19.reuse, -R24.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2900*/                   FMNMX R67, RZ, R67, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2910*/                   FADD R27, R19, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2920*/                   MUFU.SQRT R22, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2930*/                   FADD R50, R50, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2940*/                   PRMT R13, R13, 0x3340, R10 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2950*/                   FADD R19, R28.reuse, -R23.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2960*/                   PRMT R10, R25, 0x3340, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2970*/                   FADD R28, R28, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2980*/                   FADD R25, R61, R76 ;
+        /*2990*/                   FADD R23, R60, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*29a0*/                   FMNMX R16, RZ, R16, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*29b0*/                   FFMA R29, R29, -2, R50 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*29c0*/                   MUFU.SQRT R67, R67 ;
+        /*29d0*/                   FMNMX R17, RZ, R43, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*29e0*/                   FADD R25, R25, UR9 ;
+        /*29f0*/                   FADD R24, R23, UR9 ;
+        /*2a00*/                   FADD R61, R61, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2a10*/                   FMUL R16, R16, R16 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2a20*/                   FMNMX R29, RZ, R29, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2a30*/                   FMNMX R19, RZ, R19, !PT ;
+        /*2a40*/                   FADD R21, R20.reuse, -R25.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2a50*/                   FADD R26, R15, R24.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2a60*/                   MUFU.SQRT R17, R17 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2a70*/                   FADD R61, R61, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2a80*/                   FADD R31, R20, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2a90*/                   FSETP.GT.AND P6, PT, R16, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2aa0*/                   FADD R20, R60, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2ab0*/                   FMUL R26, R26, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2ac0*/                   FMUL R19, R19, R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2ad0*/                   FMNMX R21, RZ, R21, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2ae0*/                   MUFU.SQRT R29, R29 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2af0*/                   FADD R23, R22, -R61.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2b00*/                   FADD R20, R20, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2b10*/                   SEL R16, RZ, 0x2, P6 ;
+        /*2b20*/                   FSETP.GTU.AND P4, PT, R26, UR8, PT ;
+        /*2b30*/                   FSETP.GT.AND P6, PT, R19, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2b40*/                   FADD R61, R22, R61 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2b50*/                   FADD R25, R15, -R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2b60*/                   FMUL R28, R28, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2b70*/                   FMUL R26, R21, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2b80*/                   FADD R22, R60.reuse, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2b90*/                   FMNMX R23, RZ, R23, !PT ;
+        /*2ba0*/                   FADD R24, R67, -R20.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2bb0*/                   SEL R21, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2bc0*/                   FADD R60, R60, R77 ;
+        /*2bd0*/                   FADD R22, R22, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2be0*/                   FSETP.GTU.AND P5, PT, R28, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2bf0*/                   FMNMX R25, RZ, R25, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2c00*/                   FSETP.GT.AND P6, PT, R26, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2c10*/                   FMUL R26, R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2c20*/                   FMNMX R24, RZ, R24, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2c30*/                   FADD R67, R67, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2c40*/                   FMUL R27, R27, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2c50*/                   FADD R60, R60, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2c60*/                   FADD R20, R17, -R22.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2c70*/                   FMUL R25, R25, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2c80*/                   SEL R23, R21, 0x1, P5 ;
+        /*2c90*/                   FSETP.GT.AND P5, PT, R26, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2ca0*/                   FADD R17, R17, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2cb0*/                   FMUL R24, R24, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2cc0*/                   FADD R22, R29, -R60.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2cd0*/                   FSETP.GTU.AND P2, PT, R27, UR8, PT ;
+        /*2ce0*/                   SEL R27, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2cf0*/                   FMNMX R20, RZ, R20, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2d00*/                   FSETP.GT.AND P6, PT, R25, UR8, PT ;
+        /*2d10*/                   SEL R26, RZ, 0x2, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2d20*/                   FMUL R17, R17, R17 ;
+        /*2d30*/                   FMUL R67, R67, R67 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2d40*/                   FSETP.GT.AND P5, PT, R24, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*2d50*/                   FMNMX R22, RZ, R22, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2d60*/                   FMUL R25, R20, R20 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2d70*/                   FMNMX R44, RZ, R44, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2d80*/                   SEL R20, RZ, 0x2, P6 ;
+        /*2d90*/                   SEL R19, R16, 0x1, P2 ;
+        /*2da0*/                   FSETP.GTU.AND P6, PT, R17, UR8, PT ;
+        /*2db0*/                   FSETP.GTU.AND P2, PT, R67, UR8, PT ;
+        /*2dc0*/                   SEL R17, RZ, 0x2, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*2dd0*/                   FMUL R30, R30, R49 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2de0*/                   FADD R53, R53, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*2df0*/                   FADD R15, R29, R60 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*2e00*/                   FMUL R24, R22, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2e10*/                   FMUL R31, R31, R31 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2e20*/                   FSETP.GT.AND P5, PT, R25, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2e30*/                   FMNMX R32, RZ, R32, !PT ;
+        /*2e40*/                   MUFU.SQRT R44, R44 ;
+        /*2e50*/                   FMNMX R42, RZ, R42, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*2e60*/                   FFMA R30, R30, -2, R53 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2e70*/                   FMUL R15, R15, R15 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2e80*/                   SEL R22, R17, 0x1, P2 ;
+        /*2e90*/                   FSETP.GT.AND P2, PT, R24, UR8, PT ;
+        /*2ea0*/                   FSETP.GTU.AND P1, PT, R31, UR8, PT ;
+        /*2eb0*/                   SEL R24, RZ, 0x2, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2ec0*/                   MUFU.SQRT R32, R32 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*2ed0*/                   FMUL R61, R61, R61 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2ee0*/                   FSETP.GTU.AND P5, PT, R15, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2ef0*/                   FMNMX R30, RZ, R30, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2f00*/                   PRMT R15, R22, 0x3340, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2f10*/                   SEL R20, R20, 0x1, P4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2f20*/                   MUFU.SQRT R42, R42 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2f30*/                   SEL R22, R27, 0x1, P1 ;
+        /*2f40*/                   SEL R23, R24, 0x1, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2f50*/                   FMNMX R16, RZ, R37, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2f60*/                   FADD R24, R63, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2f70*/                   FMNMX R73, RZ, R73, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*2f80*/                   FSETP.GTU.AND P3, PT, R61, UR8, PT ;
+        /*2f90*/                   SEL R17, RZ, 0x2, P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*2fa0*/                   FMNMX R21, RZ, R39, !PT ;
+        /*2fb0*/                   MUFU.SQRT R30, R30 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2fc0*/                   PRMT R20, R20, 0x3340, R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2fd0*/                   FADD R19, R63, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*2fe0*/                   PRMT R22, R23, 0x3340, R22 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*2ff0*/                   FADD R23, R24, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3000*/                   SEL R26, R26, 0x1, P3 ;
+        /*3010*/                   SEL R17, R17, 0x1, P5 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3020*/                   FADD R24, R63, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3030*/                   MUFU.SQRT R16, R16 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3040*/                   FADD R19, R19, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3050*/                   FADD R28, R44.reuse, -R23.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3060*/                   FADD R44, R44, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3070*/                   FADD R23, R24, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3080*/                   MUFU.SQRT R73, R73 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3090*/                   PRMT R17, R17, 0x3340, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 96
+        /*30a0*/                   FMUL R33, R33, R48 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*30b0*/                   FADD R52, R52, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*30c0*/                   FADD R26, R32.reuse, -R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*30d0*/                   MUFU.SQRT R21, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*30e0*/                   FADD R63, R63, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*30f0*/                   FADD R32, R32, R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3100*/                   FMNMX R28, RZ, R28, !PT ;
+        /*3110*/                   FADD R19, R42.reuse, -R23.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3120*/                   FADD R42, R42, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3130*/                   FADD R24, R62.reuse, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*3140*/                   FFMA R33, R33, -2, R52 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3150*/                   FADD R63, R63, UR9 ;
+        /*3160*/                   FADD R23, R62.reuse, R75 ;
+        /*3170*/                   FADD R29, R62, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3180*/                   FMUL R28, R28, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3190*/                   FADD R25, R24, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*31a0*/                   FADD R31, R30.reuse, -R63.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*31b0*/                   FADD R24, R23, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*31c0*/                   FMNMX R26, RZ, R26, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*31d0*/                   FMNMX R33, RZ, R33, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*31e0*/                   FADD R63, R30, R63 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*31f0*/                   FADD R30, R29, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3200*/                   FMUL R44, R44, R44 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3210*/                   FSETP.GT.AND P1, PT, R28, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3220*/                   FADD R27, R16.reuse, -R25.reuse ;
+        /*3230*/                   FADD R23, R73.reuse, -R24.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3240*/                   FADD R25, R16, R25 ;
+        /*3250*/                   FADD R24, R73, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3260*/                   FMUL R26, R26, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3270*/                   FADD R16, R21.reuse, -R30.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3280*/                   MUFU.SQRT R33, R33 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3290*/                   FADD R30, R21, R30 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*32a0*/                   FSETP.GTU.AND P4, PT, R44, UR8, PT ;
+        /*32b0*/                   SEL R21, RZ, 0x2, P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*32c0*/                   FMUL R24, R24, R24 ;
+        /*32d0*/                   FMUL R32, R32, R32 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*32e0*/                   FSETP.GT.AND P1, PT, R26, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*32f0*/                   FMNMX R31, RZ, R31, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3300*/                   SEL R26, R21, 0x1, P4 ;
+        /*3310*/                   FSETP.GTU.AND P4, PT, R24, UR8, PT ;
+        /*3320*/                   FSETP.GTU.AND P6, PT, R32, UR8, PT ;
+        /*3330*/                   SEL R24, RZ, 0x2, P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3340*/                   FMUL R31, R31, R31 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3350*/                   FADD R62, R62, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3360*/                   FMUL R30, R30, R30 ;
+        /*3370*/                   FMUL R63, R63, R63 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3380*/                   SEL R28, R24, 0x1, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3390*/                   FADD R62, R62, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*33a0*/                   FMUL R25, R25, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*33b0*/                   FSETP.GT.AND P6, PT, R31, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*33c0*/                   FMNMX R23, RZ, R23, !PT ;
+        /*33d0*/                   FMNMX R27, RZ, R27, !PT ;
+        /*33e0*/                   FADD R29, R33, -R62 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*33f0*/                   FSETP.GTU.AND P1, PT, R30, UR8, PT ;
+        /*3400*/                   FSETP.GTU.AND P3, PT, R63, UR8, PT ;
+        /*3410*/                   FSETP.GTU.AND P2, PT, R25, UR8, PT ;
+        /*3420*/                   SEL R30, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3430*/                   FMUL R25, R23, R23 ;
+        /*3440*/                   FMUL R27, R27, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3450*/                   FMNMX R29, RZ, R29, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3460*/                   FMNMX R12, RZ, R12, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3470*/                   SEL R31, R30, 0x1, P3 ;
+        /*3480*/                   FSETP.GT.AND P3, PT, R25, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3490*/                   FMNMX R19, RZ, R19, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*34a0*/                   FSETP.GT.AND P6, PT, R27, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*34b0*/                   FMUL R29, R29, R29 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*34c0*/                   MUFU.SQRT R24, R12 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*34d0*/                   FMNMX R27, RZ, R16, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*34e0*/                   FADD R54, R54, R71.reuse ;
+        /*34f0*/                   FADD R55, R55, R71 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3500*/                   FMUL R19, R19, R19 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3510*/                   SEL R25, RZ, 0x2, P6 ;
+        /*3520*/                   FSETP.GT.AND P6, PT, R29, UR8, PT ;
+        /*3530*/                   SEL R12, RZ, 0x2, P3 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*3540*/                   FFMA R11, R11, -2, R54 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3550*/                   FMNMX R21, RZ, R45, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3560*/                   FMUL R29, R27, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 97
+        /*3570*/                   FFMA R6, R6, -2, R55 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3580*/                   FADD R33, R33, R62 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3590*/                   SEL R27, R12, 0x1, P4 ;
+        /*35a0*/                   FSETP.GT.AND P4, PT, R19, UR8, PT ;
+        /*35b0*/                   SEL R19, R25, 0x1, P2 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*35c0*/                   FMUL R33, R33, R33 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*35d0*/                   FMNMX R11, RZ, R11, !PT ;
+        /*35e0*/                   MUFU.SQRT R21, R21 ;
+        /*35f0*/                   FMNMX R72, RZ, R72, !PT ;
+        /*3600*/                   FMNMX R6, RZ, R6, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3610*/                   PRMT R19, R19, 0x3340, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3620*/                   FADD R26, R68, R74.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3630*/                   FMNMX R14, RZ, R14, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3640*/                   FSETP.GTU.AND P3, PT, R33, UR8, PT ;
+        /*3650*/                   SEL R30, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3660*/                   FADD R74, R69, R74 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3670*/                   MUFU.SQRT R11, R11 ;
+        /*3680*/                   FMNMX R9, RZ, R9, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3690*/                   PRMT R12, R27, 0x3340, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*36a0*/                   FADD R27, R74, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*36b0*/                   FMNMX R23, RZ, R47, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*36c0*/                   SEL R30, R30, 0x1, P3 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*36d0*/                   MUFU.SQRT R72, R72 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*36e0*/                   FADD R28, R24, -R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*36f0*/                   MUFU.SQRT R6, R6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3700*/                   FADD R26, R26, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3710*/                   MUFU.SQRT R16, R14 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3720*/                   FADD R25, R68, R75.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3730*/                   FSETP.GT.AND P6, PT, R29, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3740*/                   FADD R75, R69.reuse, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*3750*/                   MUFU.SQRT R9, R9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3760*/                   PRMT R14, R30, 0x3340, R31 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3770*/                   FADD R30, R68, R77.reuse ;
+        /*3780*/                   FADD R77, R69.reuse, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3790*/                   FADD R29, R24, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*37a0*/                   FMNMX R28, RZ, R28, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 98
+        /*37b0*/                   MUFU.SQRT R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*37c0*/                   FADD R69, R69, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*37d0*/                   FADD R27, R21, -R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*37e0*/                   FADD R30, R30, UR9 ;
+        /*37f0*/                   FADD R75, R75, UR9 ;
+        /*3800*/                   FADD R77, R77, UR9 ;
+        /*3810*/                   FADD R69, R69, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3820*/                   FMUL R28, R28, R28 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3830*/                   FADD R24, R25, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3840*/                   FADD R31, R11.reuse, -R30.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3850*/                   FADD R34, R11, R30 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3860*/                   FMNMX R27, RZ, R27, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3870*/                   FADD R68, R68, R76 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3880*/                   FADD R25, R72, -R75 ;
+        /*3890*/                   FADD R30, R6.reuse, -R77.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*38a0*/                   FADD R77, R6, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*38b0*/                   FADD R33, R16.reuse, -R69.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*38c0*/                   SEL R6, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*38d0*/                   FADD R16, R16, R69 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*38e0*/                   FMUL R29, R29, R29 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*38f0*/                   FSETP.GT.AND P6, PT, R28, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 99
+        /*3900*/                   FADD R68, R68, UR9 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3910*/                   FMUL R27, R27, R27 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3920*/                   FADD R26, R21, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3930*/                   FMNMX R25, RZ, R25, !PT ;
+        /*3940*/                   FADD R21, R9, -R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3950*/                   FMUL R16, R16, R16 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3960*/                   FADD R32, R23, -R68.reuse ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3970*/                   FSETP.GTU.AND P2, PT, R29, UR8, PT ;
+        /*3980*/                   SEL R11, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3990*/                   FADD R23, R23, R68 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*39a0*/                   FMUL R26, R26, R26 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*39b0*/                   FSETP.GT.AND P6, PT, R27, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*39c0*/                   FMUL R25, R25, R25 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*39d0*/                   FADD R72, R72, R75 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*39e0*/                   SEL R6, R6, 0x1, P1 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*39f0*/                   FMNMX R21, RZ, R21, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3a00*/                   FSETP.GTU.AND P1, PT, R16, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3a10*/                   FMNMX R33, RZ, R33, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3a20*/                   FMUL R23, R23, R23 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3a30*/                   SEL R16, R11, 0x1, P2 ;
+        /*3a40*/                   FSETP.GTU.AND P3, PT, R26, UR8, PT ;
+        /*3a50*/                   SEL R11, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3a60*/                   FMUL R72, R72, R72 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3a70*/                   FSETP.GT.AND P6, PT, R25, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3a80*/                   FMUL R21, R21, R21 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3a90*/                   FMNMX R32, RZ, R32, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3aa0*/                   FMUL R33, R33, R33 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3ab0*/                   FMNMX R30, RZ, R30, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 102
+        /*3ac0*/                   FADD R24, R9, R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3ad0*/                   FSETP.GTU.AND P2, PT, R23, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 100
+        /*3ae0*/                   FMNMX R31, RZ, R31, !PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3af0*/                   SEL R9, RZ, 0x2, P4 ;
+        /*3b00*/                   SEL R23, R11, 0x1, P3 ;
+        /*3b10*/                   FSETP.GTU.AND P4, PT, R72, UR8, PT ;
+        /*3b20*/                   SEL R11, RZ, 0x2, P6 ;
+        /*3b30*/                   FSETP.GT.AND P3, PT, R21, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3b40*/                   FMUL R42, R42, R42 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3b50*/                   FMUL R32, R32, R32 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3b60*/                   FSETP.GT.AND P6, PT, R33, UR8, PT ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 101
+        /*3b70*/                   FMUL R30, R30, R30 ;
+        /*3b80*/                   FMUL R31, R31, R31 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3b90*/                   SEL R21, R11, 0x1, P4 ;
+        /*3ba0*/                   SEL R11, RZ, 0x2, P3 ;
+        /*3bb0*/                   FSETP.GTU.AND P5, PT, R42, UR8, PT ;
+        /*3bc0*/                   FSETP.GT.AND P4, PT, R32, UR8, PT ;
+        /*3bd0*/                   FSETP.GT.AND P3, PT, R30, UR8, PT ;
+        /*3be0*/                   SEL R28, RZ, 0x2, P6 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 103
+        /*3bf0*/                   FMUL R24, R24, R24 ;
+        /*3c00*/                   FMUL R34, R34, R34 ;
+        /*3c10*/                   FMUL R77, R77, R77 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 104
+        /*3c20*/                   FSETP.GT.AND P6, PT, R31, UR8, PT ;
+        /*3c30*/                   SEL R9, R9, 0x1, P5 ;
+        /*3c40*/                   SEL R27, RZ, 0x2, P4 ;
+        /*3c50*/                   SEL R26, RZ, 0x2, P3 ;
+        /*3c60*/                   FSETP.GTU.AND P5, PT, R24, UR8, PT ;
+        /*3c70*/                   FSETP.GTU.AND P4, PT, R34, UR8, PT ;
+        /*3c80*/                   FSETP.GTU.AND P3, PT, R77, UR8, PT ;
+        /*3c90*/                   SEL R25, RZ, 0x2, P6 ;
+        /*3ca0*/                   SEL R28, R28, 0x1, P1 ;
+        /*3cb0*/                   SEL R27, R27, 0x1, P2 ;
+        /*3cc0*/                   SEL R24, R11, 0x1, P5 ;
+        /*3cd0*/                   SEL R26, R26, 0x1, P3 ;
+        /*3ce0*/                   SEL R25, R25, 0x1, P4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3cf0*/                   PRMT R29, R6, 0x3340, R9 ;
+        /*3d00*/                   ULEA UR4, UR4, UR6, 0x4 ;
+        /*3d10*/                   PRMT R28, R27, 0x3340, R28 ;
+        /*3d20*/                   PRMT R11, R24, 0x3340, R21 ;
+        /*3d30*/                   PRMT R16, R23, 0x3340, R16 ;
+        /*3d40*/                   PRMT R27, R25, 0x3340, R26 ;
+        /*3d50*/                   PRMT R24, R10, 0x5410, R7 ;
+        /*3d60*/                   PRMT R8, R13, 0x5410, R8 ;
+        /*3d70*/                   PRMT R9, R20, 0x5410, R15 ;
+        /*3d80*/                   PRMT R25, R22, 0x5410, R17 ;
+        /*3d90*/                   PRMT R10, R19, 0x5410, R12 ;
+        /*3da0*/                   PRMT R26, R29, 0x5410, R14 ;
+        /*3db0*/                   PRMT R11, R16, 0x5410, R11 ;
+        /*3dc0*/                   PRMT R27, R28, 0x5410, R27 ;
+        /*3dd0*/                   STS.128 [R2+UR4], R8 ;
+        /*3de0*/                   STS.128 [R2+UR4+0x80], R24 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 64
+        /*3df0*/                   LOP3.LUT R3, R3, 0x78, RZ, 0xc0, !PT ;
+        /*3e00*/                   IMAD.SHL.U32 R5, R5, 0x10, RZ ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3e10*/                   LDCU.64 UR4, c[0x0][0x3c0] ;
+        /*3e20*/                   IMAD.SHL.U32 R3, R3, 0x4, RZ ;
+        /*3e30*/                   LOP3.LUT R3, R18, R3, RZ, 0x3c, !PT ;
+        /*3e40*/                   BAR.SYNC.DEFER_BLOCKING 0x0 ;
+        /*3e50*/                   LDSM.16.M88.4 R12, [R3+UR6] ;
+        /*3e60*/                   LDSM.16.M88.4 R16, [R3+UR6+0x200] ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 65
+        /*3e70*/                   IADD3 R4, PT, PT, R5, R4, RZ ;
+        /*3e80*/                   ISETP.LT.U32.AND P0, PT, R0, 0x40, !P0 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 105
+        /*3e90*/                   IMAD R66, R66, 0x1000, R4.reuse ;
+        /*3ea0*/                   IMAD R4, R65, 0x1000, R4 ;
+	//## File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py", line 107
+        /*3eb0*/                   SHF.R.S32.HI R67, RZ, 0x1f, R66 ;
+        /*3ec0*/                   SHF.R.S32.HI R5, RZ, 0x1f, R4 ;
+        /*3ed0*/                   IADD.64 R66, R66, UR4 ;
+        /*3ee0*/                   IADD.64 R4, R4, UR4 ;
+        /*3ef0*/                   PRMT R8, R12, 0x5410, R13 ;
+        /*3f00*/                   PRMT R9, R14, 0x5410, R15 ;
+        /*3f10*/                   PRMT R10, R16, 0x5410, R17 ;
+        /*3f20*/                   PRMT R11, R18, 0x5410, R19 ;
+        /*3f30*/                   PRMT R12, R12, 0x7632, R13 ;
+        /*3f40*/               @P0 STG.E.128 desc[UR10][R66.64], R8 ;
+        /*3f50*/                   PRMT R13, R14, 0x7632, R15 ;
+        /*3f60*/                   PRMT R14, R16, 0x7632, R17 ;
+        /*3f70*/                   PRMT R15, R18, 0x7632, R19 ;
+        /*3f80*/              @!P0 EXIT ;
+        /*3f90*/                   STG.E.128 desc[UR10][R4.64], R12 ;
+        /*3fa0*/                   EXIT ;
+.L_x_1:
+        /*3fb0*/                   BRA `(.L_x_1);
+        /*3fc0*/                   NOP;
+        /*3fd0*/                   NOP;
+        /*3fe0*/                   NOP;
+        /*3ff0*/                   NOP;
+        /*4000*/                   NOP;
+        /*4010*/                   NOP;
+        /*4020*/                   NOP;
+        /*4030*/                   NOP;
+        /*4040*/                   NOP;
+        /*4050*/                   NOP;
+        /*4060*/                   NOP;
+        /*4070*/                   NOP;
+.L_x_2:
+
+
+//--------------------- SYMBOLS --------------------------
+
+	.type		.nv.reservedSmem.offset0,@object
+	.size		.nv.reservedSmem.offset0,0x4
+	.type		.nv.reservedSmem.cap,@object
+	.size		.nv.reservedSmem.cap,0x4

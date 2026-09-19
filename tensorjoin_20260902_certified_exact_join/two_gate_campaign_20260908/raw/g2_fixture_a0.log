@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_qualify.py", "--label", "g2_fixture_a0", "--mode", "fixture"]
+{"pass_": true, "label": "g2_fixture_a0"}

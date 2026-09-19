@@ -1,0 +1,2215 @@
+{
+  "index": 5,
+  "layout_order": [
+    "clustered",
+    "original",
+    "interleaved"
+  ],
+  "method_order": [
+    "F16",
+    "F8"
+  ],
+  "started": 1788806565.9693048,
+  "pid": 664807,
+  "pass": true,
+  "samples": [
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.6143099719993188,
+      "seconds": 0.701864532995387,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16485533800005214,
+      "seconds": 0.251930888996867,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1638459459936712,
+      "seconds": 0.25239872300153365,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16453206600272097,
+      "seconds": 0.25163897599850316,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16397345699806465,
+      "seconds": 0.2496013049967587,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16199677899567178,
+      "seconds": 0.2473252939962549,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16510912800004007,
+      "seconds": 0.25335859500046354,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16551267499744426,
+      "seconds": 0.25122526199993445,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16129917399666738,
+      "seconds": 0.2471635050023906,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.17199436800001422,
+      "seconds": 0.2588989629948628,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16130864499427844,
+      "seconds": 0.245970194999245,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16124296799534932,
+      "seconds": 0.24528285899577895,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1589325929962797,
+      "seconds": 0.24331125000026077,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1585914640018018,
+      "seconds": 0.2429423270004918,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15829630000371253,
+      "seconds": 0.24254304700298235,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15826504399592523,
+      "seconds": 0.24234765699657146,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15943208899989258,
+      "seconds": 0.24354410999512766,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16098334699927364,
+      "seconds": 0.24599523899814812,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1632421210015309,
+      "seconds": 0.24788854500366142,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15911955100455089,
+      "seconds": 0.24365203000343172,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1595284970026114,
+      "seconds": 0.24474705300235655,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15682692000700627,
+      "seconds": 0.24186443800135748,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15867721399990842,
+      "seconds": 0.24426759900234174,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15891886700410396,
+      "seconds": 0.24444115100050112,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15971997899760026,
+      "seconds": 0.2447344800020801,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15856312399409944,
+      "seconds": 0.24360708799940767,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15820144699682714,
+      "seconds": 0.24296645700087538,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15615791799791623,
+      "seconds": 0.24109499900077935,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15612171300017508,
+      "seconds": 0.24102745699929073,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15610998600459425,
+      "seconds": 0.24087996099842712,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15672168500168482,
+      "seconds": 0.24138455300271744,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15581932199711446,
+      "seconds": 0.2411061829989194,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15574384100182215,
+      "seconds": 0.24057006800285308,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15586966399860103,
+      "seconds": 0.24073229799978435,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15600234999874374,
+      "seconds": 0.24072382300073514,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1563283709983807,
+      "seconds": 0.24114418499812018,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1629177839931799,
+      "seconds": 0.247064715003944,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16261060900433222,
+      "seconds": 0.24715819799894234,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16812718399887672,
+      "seconds": 0.2523519820024376,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16367486799572362,
+      "seconds": 0.24794105399632826,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1624136480022571,
+      "seconds": 0.24688959200284444,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1622170560003724,
+      "seconds": 0.24639499899785733,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16310426100244513,
+      "seconds": 0.24777198099764064,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16213421800057404,
+      "seconds": 0.2463197820034111,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16245955700287595,
+      "seconds": 0.24667343200417235,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15994137300003786,
+      "seconds": 0.2438927310067811,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16033100400090916,
+      "seconds": 0.24459360399487196,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "warmup",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16435930199804716,
+      "seconds": 0.24899273800110677,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15952794299664674,
+      "seconds": 0.24359858900425024,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15943610899557825,
+      "seconds": 0.24414353299653158,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15972554800100625,
+      "seconds": 0.24380636400019284,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15978619599627564,
+      "seconds": 0.24450433899619384,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15999083100177813,
+      "seconds": 0.24391670800105203,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15955045000009704,
+      "seconds": 0.24376782499894034,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "retained",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15937325199774932,
+      "seconds": 0.2436552250001114,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15987461699842243,
+      "seconds": 0.24394980000215583,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15958298800251214,
+      "seconds": 0.24356907900073566,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1908862050040625,
+      "seconds": 0.29490989599435125,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1895778899997822,
+      "seconds": 0.2846511370007647,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.159810616998584,
+      "seconds": 0.2436885520000942,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1594998750006198,
+      "seconds": 0.24352385199745186,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15947076799784554,
+      "seconds": 0.24373092399764573,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 7
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1622465629989165,
+      "seconds": 0.2463369050019537,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16254251899954397,
+      "seconds": 0.2469711220037425,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16316542300046422,
+      "seconds": 0.2475409109974862,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.162099171000591,
+      "seconds": 0.24630432400590507,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16195577700273134,
+      "seconds": 0.2462904050044017,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16204749499593163,
+      "seconds": 0.24604770299629308,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16225156799919205,
+      "seconds": 0.246439720998751,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16277756100316765,
+      "seconds": 0.24679448900133139,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "interleaved",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 7
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15642068300076062,
+      "seconds": 0.24136748800083296,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15633971599891083,
+      "seconds": 0.24101748900284292,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1551366700005019,
+      "seconds": 0.23997990000498248,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15650690499751363,
+      "seconds": 0.24157606499647954,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1557041459964239,
+      "seconds": 0.24046437999641057,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.156250487001671,
+      "seconds": 0.24145133000274654,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15574734099936904,
+      "seconds": 0.24054292899381835,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15557944600004703,
+      "seconds": 0.24032239300140645,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 7
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15968483900360297,
+      "seconds": 0.2448675940031535,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15858841400040546,
+      "seconds": 0.24323214600008214,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15842361500108382,
+      "seconds": 0.243581216003804,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15891187099623494,
+      "seconds": 0.24375194699678104,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15892331299983198,
+      "seconds": 0.24381144200015115,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15828112400049577,
+      "seconds": 0.2430244409988518,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16287514699797612,
+      "seconds": 0.24760559399874182,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1594047730031889,
+      "seconds": 0.24408374799531884,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "original",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 7
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15954246100591263,
+      "seconds": 0.2437448589989799,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15877525100222556,
+      "seconds": 0.24301142399781384,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15867216400511097,
+      "seconds": 0.24296358800347662,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15837860600004205,
+      "seconds": 0.24243351299810456,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15818890200171154,
+      "seconds": 0.24265963000652846,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15855637200002093,
+      "seconds": 0.24252491299557732,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.1580904080037726,
+      "seconds": 0.24293774800025858,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.15888923699822044,
+      "seconds": 0.2429856699964148,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F8",
+      "phase": "repeat8",
+      "iteration": 7
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16136938399722567,
+      "seconds": 0.24571579099574592,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 0
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16135764100181405,
+      "seconds": 0.24548252699605655,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 1
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16367015399737284,
+      "seconds": 0.24770620799972676,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 2
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16242136900109472,
+      "seconds": 0.2471543789943098,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 3
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16118101499887416,
+      "seconds": 0.2455107250061701,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 4
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16167786600271938,
+      "seconds": 0.24639489500259515,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 5
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16174919499462703,
+      "seconds": 0.24606290500378236,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 6
+    },
+    {
+      "stage_counts": [
+        1950364,
+        86029,
+        41804,
+        42491,
+        1734,
+        1993039
+      ],
+      "batches": 108,
+      "input_pointer": 124860068003840,
+      "inner_seconds": 0.16174467400560388,
+      "seconds": 0.24582874099723995,
+      "hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+      "count": 3926078,
+      "layout": "clustered",
+      "method": "F16",
+      "phase": "repeat8",
+      "iteration": 7
+    }
+  ],
+  "identities": {
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.cubin": "abe3e1403e839ef60f13af32d546593f451becf1488bb5b11b940e57b00e992d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ptx": "c1faa40dd01b0d187836de9bc7f30bbb750aefe6c720abe92cef7fe13c67e701",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.json": "1d2a25166235a3ca327bc5e08133efa71fb6c1846a06b9b0e792d9b6504cc29b",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.source": "d97af06d4f1ff5d66b4bf7f195273f2bcc093a540ae6b4d1b7dcb8612433e0c9",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ttir": "89c08163e220385bb843d23beeab63b8be60becb80ac9ef55d943244e1638c04",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.ttgir": "7d0f620c647ce36ed3e8bdca39fdd71b5fb5fa6ac3c1a45ecfbaed0c223a3c1a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/SMLPNO4TTHJM6A24A337ISKL54IEIEKQ7CZAJATGXY3THNNJU7OA/analytic_certificate_ragged_safe_i64.llir": "c922db1c4e63c23a1f4a789e74fed2caabd98544c3347e0e3bd61ff78b813afe",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.cubin": "1278324244afd13961e75cbd0a554a9bb9502c8e61193d361c015b7856208e20",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ptx": "dd60c5856a950e63fe64ff8d790ec623d73915ba334c6271c42f58ff05995f41",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.json": "eb657a1f3257c8332093ff4fdf3df3a5596ec18d3d3b742eeaabeab41105132e",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.source": "6ec5c586d6f40efe56ace20c9726e933e984753753519eceb8733e9017468d9a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ttir": "a18b99da33f829777da22925af7ef9518cd07c7e5b62976051bd375ceaff39c7",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.ttgir": "231ab7f96dec83c9ec7c22c025d9c90887999195bd6f32a07d01a19fe6700afa",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/JSHIPU7QA6YT5HNWE44RK4DLVTXVZRN76SLBEZMI54T4K3VN6VNA/certified_fp32_filter_i64.llir": "27aa39a8d701e8858c635a109837830ba8859f6761d4ea49311a77c445473aff",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.cubin": "c2b3362119abfbeb3df85e96788705f6ff4c79414e3a74e2d5d5f3355eff00f8",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ptx": "8c90341103eb4aea692cd0b8e6501126c0e6b6b6591668b46e1492257aea162d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.json": "6a36710e3593bfbcf6ce73a3a050330dda311d9231c206598a39b97aa71e7ec3",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.source": "269bef33e896d5ba82eff8bdc6611f37f07ada2823058f221f12dae605eea483",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ttir": "252a018fbff7eb1b5d7b48866200571ee7ef1387381ee0559637c8b6071ce15c",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.ttgir": "2b84415bffc9fb725d73e391f0858fad12ccb4bb7c0d9d072d0e53c41733d926",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/G5NVGC23G5T4YSI6LW4K3UVYWZJCDNRAG75AZZYNEYUDXMGE7MNQ/refine_ambiguous_fp64_i64.llir": "9c9983f9863dc857f3d6980b87035d630b52669e1aa413566786fa0ecf13a273",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.cubin": "028e1a231cb553df10b2754e7ff935d3d2fa534812608f4a9b7170f4502da21a",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ptx": "dcc86ffa8fc8a6b81a581fdd8795d6ccfe00f08801c601ada863e49852e5b7ea",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.json": "5ba53bef967997d0083d7a6e76b5e37c903e7ddf35c939666a0eea81de4b270d",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.source": "4443d6447fca5e125f2db27c8942fcd964eeda43a0962808bb465363fb7bb9f2",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ttir": "eb7983638f06c891bae420b335927af2b9c8d567207af81d2a4d173d29931949",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ttgir": "15e100e121f760ad422e756899a99a842db1c40edeb99f026c3cf3684e821e23",
+    "artifacts/g5_g16_tc_full_a0_triton_cache/3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.llir": "4705cb734657d050f71c3e299e2b3e023471bb29122dbaafcc01b7b0d75b0c01"
+  },
+  "compiled": {
+    "metadata": {
+      "cubin": "8637cccb5f2b16f7bc2882e2a2f4a04d374fe430bfc8cc02b624e1f0de9ac858",
+      "ptx": "ca56b9e1104c8965d3ae3521540a47f0765f54186b245e9ed2d2a0d637e7fd13",
+      "llir": "120bbb4a027143b4742799ba1cf60c9ac672f168d582fe847b1ca42fe9961549",
+      "ttgir": "763f53531f0600e96ac6bf8d2d8d491778a0e638786e695cdde6ac7820aaf932",
+      "ttir": "dfa69894d14cf859f2f4f86795dfc845004d3d2e4274b4254ace04322f56cc1c",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "f3a8f026654e482e8aa3d43eb762a8c3637c8165ee18b5253baec62dc9c4621e",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "half_metadata",
+        "num_ctas": 1,
+        "num_stages": 3,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32,
+        "n_regs": 40,
+        "n_spills": 0
+      }
+    },
+    "16_2_0": {
+      "cubin": "a7ac5985bde84d5a036db9e6faba2922b812bba1e736b6b9bc57e3012e1aa21f",
+      "ptx": "7161a32861d9d76c1a6e63b49ccdd1645f1e6be5ab0f3c0f9910318202fc133e",
+      "llir": "b48d254b8343963c98cc9b423007f24998e31cc52f5ed3f18f07272fec48d85c",
+      "ttgir": "9fd88a574804214c556643a5cc3f6501e8cb04dd307b210e3c0c52cd6807ab5d",
+      "ttir": "c6c532252a563287edbc4d9f24ec89e0bbb09c5d1c403b96a1ed761c3928dda6",
+      "metadata": {
+        "allowed_dot_input_precisions": [
+          "tf32",
+          "tf32x3",
+          "ieee",
+          "bf16x3",
+          "bf16x6"
+        ],
+        "arch": "sm120",
+        "backend_name": "cuda",
+        "debug": false,
+        "default_dot_input_precision": "tf32",
+        "deprecated_fp8_dot_operand_dtypes": [
+          "fp8e4b15"
+        ],
+        "enable_fp_fusion": false,
+        "enable_reflect_ftz": true,
+        "extern_libs": [
+          [
+            "libdevice",
+            "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/backends/nvidia/lib/libdevice.10.bc"
+          ]
+        ],
+        "global_scratch_align": 1,
+        "global_scratch_size": 0,
+        "hash": "0fe84ee4ab7eb2d4537c0b0ab149146fdf181ca32d03071013de09b1e6415806",
+        "instrumentation_mode": "",
+        "ir_override": null,
+        "launch_cooperative_grid": false,
+        "launch_pdl": false,
+        "max_num_imprecise_acc_default": 0,
+        "maxnreg": null,
+        "name": "scan16",
+        "num_ctas": 1,
+        "num_stages": 3,
+        "num_warps": 4,
+        "profile_scratch_align": 1,
+        "profile_scratch_size": 0,
+        "ptx_options": null,
+        "ptx_version": null,
+        "sanitize_overflow": true,
+        "shared": 32768,
+        "supported_fp8_dtypes": [
+          "fp8e4b15",
+          "fp8e4nv",
+          "fp8e5"
+        ],
+        "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+        "tensordesc_meta": [],
+        "tmem_size": 0,
+        "triton_version": "3.6.0",
+        "warp_size": 32,
+        "n_regs": 140,
+        "n_spills": 0
+      }
+    }
+  },
+  "peak_allocated_bytes": 592310784,
+  "ended": 1788806595.3010068
+}

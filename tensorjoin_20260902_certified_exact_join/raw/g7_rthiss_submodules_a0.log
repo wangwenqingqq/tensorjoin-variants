@@ -1,0 +1,17 @@
+Submodule 'OWL' (https://github.com/owl-project/owl.git) registered for path 'OWL'
+Cloning into '@LOCAL_WORKSPACE@/paper/tensorjoin_20260902_certified_exact_join/external/rt-hiss/OWL'...
+error: RPC failed; curl 18 Transferred a partial file
+error: 7159 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+fatal: clone of 'https://github.com/owl-project/owl.git' into submodule path '@LOCAL_WORKSPACE@/paper/tensorjoin_20260902_certified_exact_join/external/rt-hiss/OWL' failed
+Failed to clone 'OWL'. Retry scheduled
+Cloning into '@LOCAL_WORKSPACE@/paper/tensorjoin_20260902_certified_exact_join/external/rt-hiss/OWL'...
+error: RPC failed; curl 18 Transferred a partial file
+error: 1695 bytes of body are still expected
+fetch-pack: unexpected disconnect while reading sideband packet
+fatal: early EOF
+fatal: fetch-pack: invalid index-pack output
+fatal: clone of 'https://github.com/owl-project/owl.git' into submodule path '@LOCAL_WORKSPACE@/paper/tensorjoin_20260902_certified_exact_join/external/rt-hiss/OWL' failed
+Failed to clone 'OWL' a second time, aborting

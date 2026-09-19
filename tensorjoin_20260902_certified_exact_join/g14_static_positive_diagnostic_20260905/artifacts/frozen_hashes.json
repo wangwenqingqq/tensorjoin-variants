@@ -1,0 +1,22 @@
+{
+  "g14_static_positive_diagnostic_20260905/PROTOCOL.md": "ae858f820c67824147b58edb745b095906b42c39b1fd627ef056ac83d67d0707",
+  "g14_static_positive_diagnostic_20260905/src/build_adapters.py": "f680f63339fb7b559c0b987391c9e7519c7eb425bd5478c4b0c99fd6fbe108e8",
+  "g14_static_positive_diagnostic_20260905/src/g14_diagnostics.py": "80845752d9cb3f571af55ed7f71f9c2298b2cae2b5f49a2794048809e46fdede",
+  "g14_static_positive_diagnostic_20260905/src/run_campaign.py": "675b14a1e56f984a8c2dd4c86d1de64d4c4f7bea7c317cd9b2ff38c554290b73",
+  "g14_static_positive_diagnostic_20260905/src/run_g2b_diagnostic.py": "9e7c90e0bd75d72d6f469a93cf57451c4f3c04e15e5750e22842c25d7ab21d53",
+  "g14_static_positive_diagnostic_20260905/src/run_g5_diagnostic.py": "a536b7f16b239c06271d62e135d92906b7168dbb1b503fda3de27bf5a9ce93aa",
+  "results/g5_screen_mistic_r0_p1_a0.json": "705432dc6e930b3526c243af7fcce822dd9037b5b8b84d3028d19e6befbee2ed",
+  "results/g5_screen_tensorjoin_r0_p2_a0.json": "adcd096456589a97c6d18b761d5e963f23fa787cd340c83d4872da598925181e",
+  "src/g2b_public_common.py": "f9aa29e81146e2fc2220ecdf1832e480527693b35120bdf011606a13d26c736c",
+  "src/g4b_r1_ragged_safe_kernel.py": "439058576f156e75074995a29b048448ae480c5dfc72f2c2b537b23f8e79e9f6",
+  "src/run_d1_triton.py": "a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f",
+  "src/run_g2a2_tensorjoin_triangular.py": "9eeaa7e21fa7137812e2fcccf09dde654e0a07ab4d95181f2e87bd6326f3f892",
+  "src/run_g2a_tensorjoin.py": "84f611fa029e0ce798c3945fad54600598bc7a708f630ebd5fc07fe7dac1e6d8",
+  "src/run_g2b_tensorjoin_public.py": "0283769705f91ec089dfebf8094ee7894e68f539523acbba48bef261409cf93c",
+  "src/run_g3b_r1_gpu_analytic_certificate.py": "057245c5288763702e7b916c6739980d07b622d595bb9d946fa14011437a67ec",
+  "src/run_g3c_b_r1_gpu_cascade.py": "637e9455fdcdffcc8cddbed625ef74ef371f117876bc3f25977a79b4a95f706d",
+  "src/run_g4b_r1_public_opportunity.py": "c1d539458233fb3268149e74847d8e6a5c8f4e3a3400954e7a5ee44a74f36234",
+  "src/run_g5_guarded_process.py": "8d7de27698313a31777d08b315d7fbafde9fd8a0cca5f50c8fd54eced3009126",
+  "src/run_g5_mistic_public.py": "83f4141ec87c74a1f288ce82e706bd40327367a849118278e046bdc8fe75339e",
+  "src/run_g5_tensorjoin_public.py": "a8653469a0e5bae82b64cd3d9a82c476df741783735c1b9d699e2f27b2db13a5"
+}

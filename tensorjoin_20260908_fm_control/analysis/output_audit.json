@@ -1,0 +1,27 @@
+{
+  "pass_": true,
+  "full_output_records": 1029,
+  "groups": {
+    "admission_samples": 60,
+    "admission_diagnostics": 12,
+    "admission_build_admission": 3,
+    "confirm_00_samples": 300,
+    "confirm_00_single_queries": 18,
+    "confirm_01_samples": 300,
+    "confirm_01_single_queries": 18,
+    "confirm_02_samples": 300,
+    "confirm_02_single_queries": 18
+  },
+  "full_arrays_compared_at_admission": 75,
+  "recorded_count_and_sha256_match_reference": true,
+  "occupancy_checks": 36,
+  "guard_passes": 5,
+  "frozen_files_verified": 139,
+  "training_frozen_files_verified": 37,
+  "trained_checkpoint_hashes_verified": 18,
+  "candidate_evaluations_verified": 72,
+  "selection_recomputed_on_validation": true,
+  "real_time_dependent_velocity_and_ode": true,
+  "reference_manifest_sha256": "7751b0f92de9c0c716302f43bdd7b6f9abd0a046620bfe1ca4d27a841f610a78",
+  "note": "Post-run audit checks saved records; full output checks were executed within each original call."
+}

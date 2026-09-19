@@ -1,0 +1,202 @@
+{
+  "method": "tc",
+  "kind": "profile",
+  "record_id": "tc_profile_nsys_r3",
+  "pid": 1889341,
+  "torch_version": "2.11.0+cu130",
+  "gpu": "_CudaDeviceProperties(name='NVIDIA RTX PRO 6000 Blackwell Server Edition', major=12, minor=0, total_memory=97252MB, multi_processor_count=188, uuid=a149f5af-55ab-ce33-8d3d-371a7ae61dd2, pci_bus_id=90, pci_device_id=0, pci_domain_id=0, L2_cache_size=128MB)",
+  "source_manifest_sha256": "01ea40cae6370ec3f17181d5ba4c8218184237f39e14033993e2c85c7925bd84",
+  "public_timing": false,
+  "rows": [
+    {
+      "cycle": 0,
+      "iteration": 0,
+      "case": "cifar4096",
+      "host_pointer": 616441056,
+      "output_pointer": 630121776,
+      "work": {
+        "batches": [
+          {
+            "direct": 90946,
+            "ambiguous": 102079,
+            "fp64": 97,
+            "accepted_upper": 133120,
+            "fp32_reject": 59859,
+            "fp32_equal": 0,
+            "overflow": 0
+          }
+        ],
+        "scheduled_tiles": 2080,
+        "pairs": 262144,
+        "input_device_pointer": 136172514836480
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1167851520,
+        "torch_allocated": 0,
+        "torch_reserved": 425721856,
+        "rss_bytes": 1377312768
+      }
+    },
+    {
+      "cycle": 0,
+      "iteration": 1,
+      "case": "cifar4096",
+      "host_pointer": 627317040,
+      "output_pointer": 620668176,
+      "work": {
+        "batches": [
+          {
+            "direct": 90946,
+            "ambiguous": 102079,
+            "fp64": 97,
+            "accepted_upper": 133120,
+            "fp32_reject": 59859,
+            "fp32_equal": 0,
+            "overflow": 0
+          }
+        ],
+        "scheduled_tiles": 2080,
+        "pairs": 262144,
+        "input_device_pointer": 136172514836480
+      },
+      "audit": {
+        "pairs": 262144,
+        "sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+        "missing": 0,
+        "extra": 0,
+        "ordered_unique": true,
+        "in_range": true,
+        "exact": true
+      },
+      "after_call_memory": {
+        "cuda_used": 1167851520,
+        "torch_allocated": 0,
+        "torch_reserved": 425721856,
+        "rss_bytes": 1378000896
+      }
+    }
+  ],
+  "engine_records": [
+    {
+      "cycle": 0,
+      "initialization_seconds_diagnostic": 3.941007889807224e-06,
+      "after_prepare_memory": {
+        "cuda_used": 742129664,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1342607360
+      },
+      "close_receipt": {
+        "before": {
+          "allocated": 0,
+          "reserved": 425721856,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 4,
+            "allocated_bytes.freed": 0,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 1,
+            "allocations.freed": 0,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 950,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 950,
+            "host_alloc_time.min": 950,
+            "host_alloc_time.total": 950,
+            "host_free_time.avg": 0,
+            "host_free_time.count": 0,
+            "host_free_time.max": 0,
+            "host_free_time.min": 0,
+            "host_free_time.total": 0,
+            "num_host_alloc": 1,
+            "num_host_free": 0
+          }
+        },
+        "after_workspace_clear": {
+          "allocated": 0,
+          "reserved": 425721856
+        },
+        "after": {
+          "allocated": 0,
+          "reserved": 0,
+          "host": {
+            "active_bytes.allocated": 16,
+            "active_bytes.current": 16,
+            "active_bytes.freed": 0,
+            "active_bytes.peak": 16,
+            "active_requests.allocated": 4,
+            "active_requests.current": 4,
+            "active_requests.freed": 0,
+            "active_requests.peak": 4,
+            "allocated_bytes.allocated": 4,
+            "allocated_bytes.current": 0,
+            "allocated_bytes.freed": 4,
+            "allocated_bytes.peak": 4,
+            "allocations.allocated": 1,
+            "allocations.current": 0,
+            "allocations.freed": 1,
+            "allocations.peak": 1,
+            "host_alloc_time.avg": 950,
+            "host_alloc_time.count": 1,
+            "host_alloc_time.max": 950,
+            "host_alloc_time.min": 950,
+            "host_alloc_time.total": 950,
+            "host_free_time.avg": 315,
+            "host_free_time.count": 1,
+            "host_free_time.max": 315,
+            "host_free_time.min": 315,
+            "host_free_time.total": 315,
+            "num_host_alloc": 1,
+            "num_host_free": 1
+          }
+        }
+      },
+      "destruction_seconds_diagnostic": 0.0775528650265187,
+      "after_destroy_memory": {
+        "cuda_used": 742129664,
+        "torch_allocated": 0,
+        "torch_reserved": 0,
+        "rss_bytes": 1375969280
+      }
+    }
+  ],
+  "cache": {
+    "3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.cubin": "028e1a231cb553df10b2754e7ff935d3d2fa534812608f4a9b7170f4502da21a",
+    "3R7AH4TNSUX5FVSJCKJVNH2UOO53VYPM6KPVA74IHJ7NE3RGY4JA/gpu_quantize_metadata.ptx": "dcc86ffa8fc8a6b81a581fdd8795d6ccfe00f08801c601ada863e49852e5b7ea",
+    "AJ44F3L2LQP7G5YMSFW6BFQGFIVCHKRGR5ZXYQFWKWKIF6WJEWFA/refine_ambiguous_fp64_i64.cubin": "28f2504eb007ca318cb7ec0af7de5797965aac6555effbe24ff302798f0fd0dd",
+    "AJ44F3L2LQP7G5YMSFW6BFQGFIVCHKRGR5ZXYQFWKWKIF6WJEWFA/refine_ambiguous_fp64_i64.ptx": "517ebafab36e1bfe34b5def780cb5d59f426fd043114ce9b59844cf3087aa32e",
+    "3MY4YFNQ6E6S5234GU6C356FR62ZKS6AGOISZAVRPSU4W3RBZC3A/certified_fp32_filter_i64.cubin": "a19208992f566bd8ba47793f3eb007a61e324138ad78ebfef07184b97b5950cd",
+    "3MY4YFNQ6E6S5234GU6C356FR62ZKS6AGOISZAVRPSU4W3RBZC3A/certified_fp32_filter_i64.ptx": "72f4abca345f29b1fb9f43811732f7197b62fde96870a5df4818d2485b223e3d",
+    "3275EGONKBH6K42ZFEQEJY3BD5KLD42KBSJ3NOX7TNF4KS7XLYCA/certified_fp32_filter_i64.cubin": "67f75d627e85de25cf27692017f244397ab7f6d45d32955ae7d26764238fa1fa",
+    "3275EGONKBH6K42ZFEQEJY3BD5KLD42KBSJ3NOX7TNF4KS7XLYCA/certified_fp32_filter_i64.ptx": "a98544160b75295a2fbadfc25a78d140ffbf583e021224ee59dea3e7f399e63c",
+    "7IGL6WAFXKNSKDDCLXLIARBFGN6JGB2B2DLKO6WQQVHJOQDAG5UQ/refine_ambiguous_fp64_i64.cubin": "53b4852e2823e4ebab04ef9e9eed4c337d0d9565f07b996b5b86a00f7d73d5a8",
+    "7IGL6WAFXKNSKDDCLXLIARBFGN6JGB2B2DLKO6WQQVHJOQDAG5UQ/refine_ambiguous_fp64_i64.ptx": "3017b981c061f8f2a224b0a141570818e0df3334e42d43f0ae7f70d01e0dab7c",
+    "YXQX7GDJ2F6C2V3CAJUIG7FXBCZDGVIKRJ5FPHDXB2REXKDE6JYA/analytic_certificate_ragged_safe_i64.ptx": "2edce77a93dc86751bdf29677cf4f69403fff21ac1117a5e1227a94a4d816492",
+    "YXQX7GDJ2F6C2V3CAJUIG7FXBCZDGVIKRJ5FPHDXB2REXKDE6JYA/analytic_certificate_ragged_safe_i64.cubin": "4bc1a433618cf63c0f845b2c3af092748b268db87919f678cad0b8aa89e7cbef",
+    "YNSA7QYRMWRRKGGZUGYLNKKVEALLFFOQUKFQOUCGGOJSZ4CNBUMQ/analytic_certificate_ragged_safe_i64.ptx": "0cd8d17c7143f279a930d4e49891934ff17b38b84ec239eecbe2963aa61ac158",
+    "YNSA7QYRMWRRKGGZUGYLNKKVEALLFFOQUKFQOUCGGOJSZ4CNBUMQ/analytic_certificate_ragged_safe_i64.cubin": "1c7e325084a9c4ba7a8c862ee11c6f0282322ae3dae0005b0360c1d6120a3e3a"
+  },
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "performance_admitted": false,
+  "novelty_pass": false
+}

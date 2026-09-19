@@ -1,0 +1,8 @@
+PROCESS_PREFLIGHT utc=2026-09-02T15:02:23Z
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, P8, 34.62 W, 600.00 W, 180 MHz, 405 MHz, 14 MiB, 0 %
+503bb66942e355306570ae3e18dac92fdf83971d0cf171af381702e45fd478ea  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_c0a_triton.py
+b0321ec6e01aaede79bbd077a0ba3635ef44b116488088ca055e857b653e8376  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_b0_gpu.py
+0b2337398ad6c14ec820039291709ee7c8dd50dd815cff799b3a9b068d2bbe08  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/PROTOCOL_C0A.md
+6bebe98090f2c53d62cc777f63872aef2903b259b5837db3abb289cfdf6f1dcd  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/c0a_triton_cache/KW42T6HB4PIPUYUIYHZECOHKODDCGJUAELP756M25252QOO4OMRA/fused_int8_certificate_status.cubin
+CORRECTNESS {"ambiguous_fraction": 0.000766754150390625, "ambiguous_pairs": 1608, "direct_accept_pairs": 81, "direct_reject_pairs": 2095463, "exact_pairs": 512, "false_accept_pairs": 0, "false_reject_pairs": 0, "final_classification_mismatch": 0, "invalid_status": 0, "threshold_d2": 0.04491402423105895}
+RUN_SUMMARY {"correctness_pass": true, "median_us": 39.61599990725517, "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/c0a_formal.json", "p90_us": 40.76800122857094, "timing_pass": true, "validation_only": false}

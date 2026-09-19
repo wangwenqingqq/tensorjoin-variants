@@ -1,0 +1,18 @@
+utc=2026-09-02T14:26:48Z
+hostname=gpu-host-8
+user=root
+Linux gpu-host-8 6.17.0-20-generic #20~24.04.1-Ubuntu SMP PREEMPT_DYNAMIC Thu Mar 19 01:28:37 UTC 2 x86_64 x86_64 x86_64 GNU/Linux
+CPU(s):                                  128
+Model name:                              INTEL(R) XEON(R) GOLD 6530
+Thread(s) per core:                      2
+Core(s) per socket:                      32
+Socket(s):                               2
+CPU(s) scaling MHz:                      21%
+python=3.12.3
+numpy=2.4.4
+scipy=1.17.1
+ 14:26:48 up  6:11,  0 user,  load average: 3.23, 2.53, 2.14
+gpu_processes_before:
+f3dabe6adb09c39a566f1498cb959accf8370f3e32b9c40d4f8f07f2484ff2ba  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6.tar.gz
+6a39d353d5a8adb7d44df2980f6c22e58e8dc91f05304c9d008991a062eef9e1  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_a0_esc50.py
+f9fdedab95e97eddab4576dd73b2851167f880b3b0825c98755e62b688087a8c  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/PROTOCOL_A0.md

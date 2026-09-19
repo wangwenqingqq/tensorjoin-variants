@@ -1,0 +1,12 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py", "--label", "g9_check_a0", "--mode", "check"]
+CASE fixture_below N 64 Q 2079
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py", line 263, in <module>
+    main()
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py", line 217, in main
+    md["correctness_before"]=validate()
+                             ^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_tc_refinement.py", line 205, in validate
+    assert np.all(state[state!=2]==truth[state!=2]), (name,method,"false final")
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: ('fixture_below', 'P16', 'false final')

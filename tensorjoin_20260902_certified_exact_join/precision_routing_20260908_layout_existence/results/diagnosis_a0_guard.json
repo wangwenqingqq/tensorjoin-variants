@@ -1,0 +1,37 @@
+{
+  "label": "diagnosis_a0",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "-u",
+    "src/diagnose.py"
+  ],
+  "pid": 656873,
+  "pass": true,
+  "started": 1788805746.3834467,
+  "target": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  },
+  "target_config_sha256": "463fb551956c08e424c8174a02c0676f37429c1b93eea8895cf77b0fd2894c87",
+  "source_sha256": {
+    "safety.py": "b221809ab431c938041cb77cb8ac13aa283525ab586c9c02367fb7d02b8af49b",
+    "guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+    "admit.py": "7103c07a1beaeb2014f97060693ef185831db75e20cbd5154435b1255bf88d3f",
+    "runner.py": "ddfbdd6481eec007d580c74944a4b83cc99f7187e76348a45d8dd3a453ce521d",
+    "analyze.py": "4c1e5e71f3bd9006ea6a64aa2d84b49b298bb02bcdd3ec6a5e5c911099bec6b9",
+    "common.py": "d90b09b720a881c6d2eaaaeca71187159e844a1b334c41611bccbb698a6d73b1",
+    "census.py": "84d19deeaa2082de31b0c4ba1e696e83959c956c16dc3d29f8dd4f8c387e19e3",
+    "diagnose.py": "b1673cd7b373d612384676646561f42ded21b267b16cda715935d103dd98c9f9"
+  },
+  "gpu_uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+  "exit_code": 0,
+  "pass_": true,
+  "max_device_used_mib": 1264,
+  "ended": 1788805786.994685,
+  "verified_descendants": {
+    "656873": 6095160
+  },
+  "nvml_tombstones": []
+}

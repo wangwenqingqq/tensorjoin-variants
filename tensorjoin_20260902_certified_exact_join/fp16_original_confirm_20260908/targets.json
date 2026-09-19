@@ -1,0 +1,8 @@
+{
+  "8p_gpu2": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  }
+}

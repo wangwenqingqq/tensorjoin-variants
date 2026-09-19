@@ -1,0 +1,47 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g9_graph_diagnostic.py", "--label", "g9_graph_check_a0", "--mode", "check"]
+CASE fixture_below N 64 Q 2079
+P16 TCpending None FP64 6 padding 1.0
+TC16physical TCpending 4 FP64 4 padding 1.2313612313612314
+TC16diagonal TCpending 4 FP64 4 padding 16.00769600769601
+PASS fixture_below
+CASE fixture_equal N 64 Q 2079
+P16 TCpending None FP64 6 padding 1.0
+TC16physical TCpending 4 FP64 4 padding 1.2313612313612314
+TC16diagonal TCpending 4 FP64 4 padding 16.00769600769601
+PASS fixture_equal
+CASE fixture_above N 64 Q 2079
+P16 TCpending None FP64 6 padding 1.0
+TC16physical TCpending 4 FP64 4 padding 1.2313612313612314
+TC16diagonal TCpending 4 FP64 4 padding 16.00769600769601
+PASS fixture_above
+CASE real_identity N 4096 Q 102079
+P16 TCpending None FP64 97 padding 1.0
+TC16physical TCpending 3556 FP64 97 padding 74.82455745060199
+TC16diagonal TCpending 3556 FP64 97 padding 16.00015674134739
+PASS real_identity
+CASE real_random N 4096 Q 102079
+P16 TCpending None FP64 97 padding 1.0
+TC16physical TCpending 3556 FP64 97 padding 74.51609047894279
+TC16diagonal TCpending 3556 FP64 97 padding 16.00015674134739
+PASS real_random
+CASE real_degree_oracle N 4096 Q 102079
+P16 TCpending None FP64 97 padding 1.0
+TC16physical TCpending 3556 FP64 97 padding 30.089322975342625
+TC16diagonal TCpending 3556 FP64 97 padding 16.00015674134739
+PASS real_degree_oracle
+CASE real_pca1 N 4096 Q 102079
+P16 TCpending None FP64 97 padding 1.0
+TC16physical TCpending 3556 FP64 97 padding 42.12705845472624
+TC16diagonal TCpending 3556 FP64 97 padding 16.00015674134739
+PASS real_pca1
+CASE synthetic_clustered N 4096 Q 102079
+P16 TCpending None FP64 0 padding 1.0
+TC16physical TCpending 43 FP64 0 padding 1.0758726084699106
+TC16diagonal TCpending 43 FP64 0 padding 16.00015674134739
+PASS synthetic_clustered
+CASE synthetic_scattered N 4096 Q 102079
+P16 TCpending None FP64 0 padding 1.0
+TC16physical TCpending 43 FP64 0 padding 60.73789907816495
+TC16diagonal TCpending 43 FP64 0 padding 16.00015674134739
+PASS synthetic_scattered
+COMPLETE g9_graph_check_a0

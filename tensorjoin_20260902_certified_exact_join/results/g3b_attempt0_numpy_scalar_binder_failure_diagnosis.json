@@ -1,0 +1,15 @@
+{
+  "diagnosis": "Triton binder rejected numpy.float32 threshold scalars before specialization: TypeError failed to specialize argument of type numpy.float32.",
+  "files_sha256": {
+    "raw/g3b_gpu_analytic_process_0_attempt0_numpy_scalar_binder_failure.log": "a9e23645bcaa87e80a6a6a7aa70cd9128769e2605daec7048a7b22ca05df4398",
+    "raw/g3b_gpu_analytic_process_0_driver_attempt0_numpy_scalar_binder_failure.log": "752cce24a85d5a701d333dd2b6fe3966690d9218649e8d162535a9578b0b4438",
+    "raw/g3b_gpu_analytic_process_0_occupancy_attempt0_numpy_scalar_binder_failure.jsonl": "c97a48dc802784ee646aae4b05375b4515ff36a620ec1fc909b46f4e499829fb",
+    "raw/g3b_gpu_analytic_process_0_preflight_attempt0_numpy_scalar_binder_failure.log": "f0aa2ad9cb14a8db98fcb8f01354c7ec4bf145ad5de0ea5b49f5a9d5c2cf8567",
+    "results/g3b_gpu_analytic_process_0_manifest_attempt0_numpy_scalar_binder_failure.json": "752cce24a85d5a701d333dd2b6fe3966690d9218649e8d162535a9578b0b4438"
+  },
+  "fix": "Convert the already outward-rounded binary32 values to numerically identical Python float scalars at the call boundary; certificate constants and acceptance are unchanged.",
+  "gpu_kernel_executed": false,
+  "postflight_gpu_empty": true,
+  "result_created": false,
+  "status": "implementation_failure_before_candidate_kernel_launch"
+}

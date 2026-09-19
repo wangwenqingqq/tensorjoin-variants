@@ -1,0 +1,53 @@
+{
+  "slots": [
+    [
+      "tc",
+      "safety",
+      "memcheck"
+    ],
+    [
+      "fp32",
+      "safety",
+      "memcheck"
+    ],
+    [
+      "rt",
+      "stress",
+      "none"
+    ],
+    [
+      "tc",
+      "stress",
+      "none"
+    ],
+    [
+      "fp32",
+      "stress",
+      "none"
+    ],
+    [
+      "rt",
+      "profile",
+      "nsys"
+    ],
+    [
+      "tc",
+      "profile",
+      "nsys"
+    ],
+    [
+      "fp32",
+      "profile",
+      "nsys"
+    ]
+  ],
+  "retained": [
+    "tc_matrix_none_a0",
+    "fp32_matrix_none_a0",
+    "rt_on_matrix_none_r1",
+    "rt_matrix_none_r1",
+    "rt_safety_memcheck_r1",
+    "rt_safety_synccheck_r1"
+  ],
+  "source_sha256": "078e35460c1c1dd9295d060208cb886c8b09d8b44cb1495381c2225aad50f563"
+}

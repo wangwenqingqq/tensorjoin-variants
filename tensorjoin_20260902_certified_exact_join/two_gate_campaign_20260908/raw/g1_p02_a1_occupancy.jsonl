@@ -1,0 +1,50 @@
+{"time": 1788800121.4112992, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 90.98, 2362, 12481, 14, 0", "processes": []}
+{"time": 1788800122.5711646, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 88.85, 2362, 12481, 14, 0", "processes": []}
+{"time": 1788800123.7282135, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 32, 70.19, 637, 12481, 14, 0", "processes": []}
+{"time": 1788800124.890829, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 32, 49.16, 390, 12481, 14, 0", "processes": []}
+{"time": 1788800126.0551033, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 32, 48.18, 247, 12481, 14, 0", "processes": []}
+{"time": 1788800127.223652, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 32, 48.18, 180, 12481, 14, 0", "processes": []}
+{"time": 1788800128.3938997, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 32, 36.55, 180, 405, 14, 0", "processes": []}
+{"time": 1788800129.5851932, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 32, 36.48, 187, 405, 14, 0", "processes": []}
+{"time": 1788800130.748281, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 32, 36.54, 180, 405, 14, 0", "processes": []}
+{"time": 1788800131.9088948, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 32, 35.97, 180, 405, 14, 0", "processes": []}
+{"time": 1788800133.0693154, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 32, 35.96, 180, 405, 14, 0", "processes": []}
+{"time": 1788800134.2309833, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.96, 180, 405, 14, 0", "processes": []}
+{"time": 1788800135.399739, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.06, 180, 405, 14, 0", "processes": []}
+{"time": 1788800136.572279, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.81, 180, 405, 14, 0", "processes": []}
+{"time": 1788800137.7325308, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.17, 180, 405, 14, 0", "processes": []}
+{"time": 1788800138.8944325, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.96, 180, 405, 14, 0", "processes": []}
+{"time": 1788800140.0586743, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.01, 180, 405, 14, 0", "processes": []}
+{"time": 1788800141.2225451, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.96, 180, 405, 14, 0", "processes": []}
+{"time": 1788800142.3874984, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.72, 180, 405, 14, 0", "processes": []}
+{"time": 1788800143.5604794, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.01, 180, 405, 14, 0", "processes": []}
+{"time": 1788800144.746512, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.19, 180, 405, 14, 0", "processes": []}
+{"time": 1788800145.9100823, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.52, 180, 405, 14, 0", "processes": []}
+{"time": 1788800147.079766, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.52, 180, 405, 14, 0", "processes": []}
+{"time": 1788800148.2434168, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.47, 180, 405, 14, 0", "processes": []}
+{"time": 1788800149.3987656, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.57, 180, 405, 14, 0", "processes": []}
+{"time": 1788800150.556723, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.52, 180, 405, 14, 0", "processes": []}
+{"time": 1788800151.7167106, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.43, 180, 405, 14, 0", "processes": []}
+{"time": 1788800151.893656, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.39, 180, 405, 14, 0", "processes": []}
+{"time": 1788800152.5560098, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 36.39, 180, 405, 14, 0", "processes": []}
+{"time": 1788800153.3623857, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 31, 35.90, 180, 405, 17, 0", "processes": []}
+{"time": 1788800154.0148916, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 32, 64.08, 2362, 12481, 606, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "584"]]}
+{"time": 1788800154.6808555, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 89.98, 2355, 12481, 1274, 15", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1252"]]}
+{"time": 1788800155.3446145, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 119.58, 2347, 12481, 1274, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1252"]]}
+{"time": 1788800156.018348, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 106.38, 2347, 12481, 1274, 7", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1252"]]}
+{"time": 1788800156.6797714, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 107.33, 2355, 12481, 1274, 6", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1252"]]}
+{"time": 1788800157.355946, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 33, 126.22, 2347, 12481, 1402, 11", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800158.0134544, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 35, 157.79, 2355, 12481, 1402, 16", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800158.6804097, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 35, 145.85, 2347, 12481, 1402, 17", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800159.3375916, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 132.53, 2347, 12481, 1402, 17", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800160.0162268, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 125.55, 2355, 12481, 1402, 25", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800160.6792698, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 121.57, 2355, 12481, 1402, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800161.3496814, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 124.98, 2355, 12481, 1402, 32", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800162.014521, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 135.07, 2347, 12481, 1402, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800162.6997106, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 35, 149.90, 2347, 12481, 1402, 8", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800163.3927836, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 36, 153.57, 2347, 12481, 1402, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800164.0558813, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 110.22, 2347, 12481, 1402, 4", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800164.7262866, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 36, 117.35, 2347, 12481, 1402, 5", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800165.4045851, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 103.88, 2355, 12481, 1402, 15", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800166.0797777, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 36, 108.20, 2355, 12481, 1402, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "1380"]]}
+{"time": 1788800166.7968738, "phase": "running", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 34, 97.46, 2355, 12481, 680, 0", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "604166", "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "658"]]}

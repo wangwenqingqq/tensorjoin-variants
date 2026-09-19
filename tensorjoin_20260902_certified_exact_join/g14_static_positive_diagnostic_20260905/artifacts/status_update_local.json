@@ -1,0 +1,17 @@
+{
+  "CLAIMS.md": {
+    "after_sha256": "9852e20c5286b73eae982929895682fca812557449d7388a65cc161c4364828d",
+    "backup": "g14_static_positive_diagnostic_20260905/artifacts/CLAIMS.md.local_before_G14",
+    "before_sha256": "6027a49d50f0797f3df264ec820cbaf257febc6173c19a930423c82228b7b668"
+  },
+  "CURRENT_STATUS.md": {
+    "after_sha256": "27d5ed1c822f6e3a7564a5594c35f49abb133fe4259d8848e2396165f17e5ab4",
+    "backup": "g14_static_positive_diagnostic_20260905/artifacts/CURRENT_STATUS.md.local_before_G14",
+    "before_sha256": "4d9e2c4518c2f784da18bc85fad5c3d50c2e7c397e9782833a66eab23ab38b90"
+  },
+  "EXPERIMENTS.md": {
+    "after_sha256": "4c0c1db7d71b6f683319a4f35f0406138edfc7f25daccd6b12451e109b190b7c",
+    "backup": "g14_static_positive_diagnostic_20260905/artifacts/EXPERIMENTS.md.local_before_G14",
+    "before_sha256": "217fac2d85ffadf773affd023612017778dff73cc0987bae1a4537ca210076e6"
+  }
+}

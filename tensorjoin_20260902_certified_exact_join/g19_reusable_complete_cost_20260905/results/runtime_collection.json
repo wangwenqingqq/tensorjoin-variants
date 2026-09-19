@@ -1,0 +1,53 @@
+{
+  "records": [
+    {
+      "method": "tc",
+      "record_id": "tc_runtime_bind_r3",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_tc_runtime_bind_r3",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/tc_runtime_bind_r3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/runtime_supervise.py",
+        "--method",
+        "tc",
+        "--record-id",
+        "tc_runtime_bind_r3"
+      ],
+      "guard_path": "results/g5_guard_g19_tc_runtime_bind_r3.json",
+      "passed": true
+    },
+    {
+      "method": "fp32",
+      "record_id": "fp32_runtime_bind_r3",
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+        "--label",
+        "g19_fp32_runtime_bind_r3",
+        "--expected-result",
+        "g19_reusable_complete_cost_20260905/results/fp32_runtime_bind_r3.json",
+        "--physical-gpu",
+        "3",
+        "--",
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/runtime_supervise.py",
+        "--method",
+        "fp32",
+        "--record-id",
+        "fp32_runtime_bind_r3",
+        "--ncu"
+      ],
+      "guard_path": "results/g5_guard_g19_fp32_runtime_bind_r3.json",
+      "passed": true
+    }
+  ],
+  "passed": true,
+  "performance_admitted": false
+}

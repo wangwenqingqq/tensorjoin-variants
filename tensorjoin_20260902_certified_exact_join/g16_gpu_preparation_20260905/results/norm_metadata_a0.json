@@ -1,0 +1,66 @@
+{
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "kernel_sha256": "4c552661f0dad52b65ac57ab34cb172d3c13e28c5560a0ac5562cf93602e9485",
+  "longdouble_precision": 63,
+  "records": [
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 3.060594459448485e-16,
+      "n": 60000,
+      "name": "cifar60000",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 2.082967728885276e-16,
+      "n": 257,
+      "name": "signed257",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 0.0,
+      "n": 31,
+      "name": "zeros31",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 0.0,
+      "n": 129,
+      "name": "onehot129",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 0.0,
+      "n": 31,
+      "name": "cancellation31",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 0.0,
+      "n": 31,
+      "name": "subnormal31",
+      "norm_enclosure_violations": 0
+    },
+    {
+      "all_pass": true,
+      "l2_upper_violations": 0,
+      "max_center_relative_error": 2.918798558745864e-16,
+      "n": 257,
+      "name": "mixed_exponents257",
+      "norm_enclosure_violations": 0
+    }
+  ],
+  "scope": "metadata enclosure, not complete join"
+}

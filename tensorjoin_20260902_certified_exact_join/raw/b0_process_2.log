@@ -1,0 +1,21 @@
+PROCESS_PREFLIGHT id=2 order=BA utc=2026-09-02T14:40:04Z
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, P0, 143.37 W, 600.00 W, 2332 MHz, 12481 MHz, 17 MiB, 0 %
+b0321ec6e01aaede79bbd077a0ba3635ef44b116488088ca055e857b653e8376  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_b0_gpu.py
+04292f728f5815adf5c506d26c0f65b7f85a935c1cde0a2d580f8d7fc96ac1af  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/PROTOCOL_B0.md
+66f6292129029f63ee7bd237e15f390e949531a275a3463e786fe5c03893dd41  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/data/esc50_windows_logstft_32x32.npz
+CORRECTNESS {"ambiguous_fraction": 0.0007653236389160156, "ambiguous_pairs": 1605, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 0, "oracle_pairs": 512, "target": 1, "threshold_d2": 0.04491402423105895}
+CORRECTNESS {"ambiguous_fraction": 0.0034809112548828125, "ambiguous_pairs": 7300, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 0, "oracle_pairs": 4096, "target": 8, "threshold_d2": 0.07363405343530216}
+CORRECTNESS {"ambiguous_fraction": 0.012485980987548828, "ambiguous_pairs": 26185, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 0, "oracle_pairs": 32768, "target": 64, "threshold_d2": 0.14719462156999386}
+TIMING metric=dense_int8 median_us=43.632001 p10_us=42.463999 p90_us=44.736002
+TIMING metric=dense_fp32 median_us=92.863999 p10_us=91.711998 p90_us=93.475197
+TIMING metric=dense_fp64 median_us=2930.431962 p10_us=2925.177622 p90_us=2934.047937
+TIMING metric=candidate_e2e_s1 median_us=428.399995 p10_us=422.707188 p90_us=438.691196
+TIMING metric=baseline_e2e_s1 median_us=3013.280034 p10_us=3004.640102 p90_us=3049.420905
+TIMING metric=candidate_scan_bounds_s1 median_us=219.679996
+TIMING metric=candidate_e2e_s8 median_us=591.007978 p10_us=583.798403 p90_us=597.151995
+TIMING metric=baseline_e2e_s8 median_us=3012.975931 p10_us=3004.025507 p90_us=3050.556898
+TIMING metric=candidate_scan_bounds_s8 median_us=219.664000
+TIMING metric=candidate_e2e_s64 median_us=1576.784015 p10_us=1571.308839 p90_us=1583.663964
+TIMING metric=baseline_e2e_s64 median_us=3013.296008 p10_us=3003.465652 p90_us=3050.025582
+TIMING metric=candidate_scan_bounds_s64 median_us=219.632000
+PROCESS_SUMMARY {"correctness_pass": true, "order": "BA", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0_process_2.json", "process_id": 2}

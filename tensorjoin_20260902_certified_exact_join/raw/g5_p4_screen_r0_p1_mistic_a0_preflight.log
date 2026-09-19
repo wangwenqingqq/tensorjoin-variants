@@ -1,0 +1,22 @@
+timestamp=1788439902.0543575
+GPU 0: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1)
+GPU 1: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3)
+GPU 2: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245)
+GPU 3: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2)
+GPU 4: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-863c06a5-9f33-0265-b098-013fa840d5db)
+GPU 5: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-a1e0baba-3982-4538-6540-2b013a1adf49)
+GPU 6: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-865ae1f0-780e-d04c-5ec3-4deccea65f82)
+GPU 7: NVIDIA RTX PRO 6000 Blackwell Server Edition (UUID: GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603)
+
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, P0, 54818 MiB, 97887 MiB, 0 %
+1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, P0, 14 MiB, 97887 MiB, 0 %
+3, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+4, GPU-863c06a5-9f33-0265-b098-013fa840d5db, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+5, GPU-a1e0baba-3982-4538-6540-2b013a1adf49, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+6, GPU-865ae1f0-780e-d04c-5ec3-4deccea65f82, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+7, GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, NVIDIA RTX PRO 6000 Blackwell Server Edition, P8, 14 MiB, 97887 MiB, 0 %
+
+GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 20277, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python, 54796 MiB
+
+target_gpu_uuid=GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245

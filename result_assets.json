@@ -1,0 +1,27 @@
+{
+  "files": 1518,
+  "uncompressed_bytes": 3855250378,
+  "parts": [
+    {
+      "name": "tensorjoin-results-2026-09-19.tar.gz.part-001",
+      "bytes": 536870912,
+      "sha256": "a55239fba1da9a44c61616680d238502dd1248ec0dcdf49f260a44bd293b5f71"
+    },
+    {
+      "name": "tensorjoin-results-2026-09-19.tar.gz.part-002",
+      "bytes": 536870912,
+      "sha256": "e50fdb6c4b924fe9bb876ccef50e381795951fadfd061a7840fbf387c5eb9a44"
+    },
+    {
+      "name": "tensorjoin-results-2026-09-19.tar.gz.part-003",
+      "bytes": 536870912,
+      "sha256": "af572c1ce952bb13ba608387ab7ea39ec8468291af6e67510540f3a7d18ddad5"
+    },
+    {
+      "name": "tensorjoin-results-2026-09-19.tar.gz.part-004",
+      "bytes": 345852287,
+      "sha256": "ebc105ac89d99f40665a793a307e57a094fd78e6fea2e1a0f9e86056bed8f5ee"
+    }
+  ],
+  "compressed_bytes": 1956465023
+}

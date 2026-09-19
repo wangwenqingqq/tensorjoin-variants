@@ -1,0 +1,6 @@
+{
+  "captured_at": 1788844150.6233308,
+  "gpu": "0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14, 97887, 0",
+  "compute_processes": "",
+  "gpu0_has_no_compute_processes": true
+}

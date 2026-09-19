@@ -1,0 +1,5 @@
+{"compute_rows": [], "elapsed_s": 0.08638384498772211, "phase": "quiescence", "wall_time": 1788408821.0737944}
+{"compute_rows": [], "elapsed_s": 1.1784799929882865, "phase": "quiescence", "wall_time": 1788408822.1658914}
+{"compute_rows": [], "elapsed_s": 2.271827772987308, "phase": "quiescence", "wall_time": 1788408823.2592392}
+{"compute_rows": [], "elapsed_s": 3.3648025909933494, "phase": "quiescence", "wall_time": 1788408824.3522122}
+{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3435308, "process_name": "sglang::scheduler", "used_memory_mib": "730"}], "elapsed_s": 4.452521399987745, "phase": "quiescence", "wall_time": 1788408825.4399312}

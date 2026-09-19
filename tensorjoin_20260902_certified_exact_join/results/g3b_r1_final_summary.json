@@ -1,0 +1,196 @@
+{
+  "adversarial": {
+    "case_count": 7,
+    "cases": [
+      {
+        "ambiguous_count": 102079,
+        "case": "negate",
+        "case_pass": true,
+        "direct_count": 90946,
+        "final_upper_count": 133120,
+        "max_code_norm": 1492856,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 102079,
+        "case": "row_permutation",
+        "case_pass": true,
+        "direct_count": 90946,
+        "final_upper_count": 133120,
+        "max_code_norm": 1492856,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 102079,
+        "case": "dimension_permutation_sign_flip",
+        "case_pass": true,
+        "direct_count": 90946,
+        "final_upper_count": 133120,
+        "max_code_norm": 1492856,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 103266,
+        "case": "scale_2^-8",
+        "case_pass": true,
+        "direct_count": 90532,
+        "final_upper_count": 133120,
+        "max_code_norm": 1492856,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 102078,
+        "case": "scale_2^8",
+        "case_pass": true,
+        "direct_count": 90946,
+        "final_upper_count": 133120,
+        "max_code_norm": 1492856,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 0,
+        "case": "all_zero_ftz_boundary",
+        "case_pass": true,
+        "direct_count": 8390656,
+        "final_upper_count": 8390656,
+        "max_code_norm": 0,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      },
+      {
+        "ambiguous_count": 4196352,
+        "case": "signed_max_accumulator",
+        "case_pass": true,
+        "direct_count": 0,
+        "final_upper_count": 4196352,
+        "max_code_norm": 8258048,
+        "overflow_events": 0,
+        "unsafe_direct_accepts": 0,
+        "unsafe_direct_rejects": 0
+      }
+    ],
+    "pass": true,
+    "read_only_final_manifest": "results/g3b_r1_adversarial_final_manifest.json",
+    "unsafe_direct_accepts_total": 0,
+    "unsafe_direct_rejects_total": 0,
+    "wrapper_path_failure_preserved": "results/g3b_r1_adversarial_manifest.json"
+  },
+  "all_parent_and_child_gates_pass": true,
+  "claim_boundary": {
+    "allowed": "G3B-R1 meets the frozen G2A and seven-case adversarial proof contract on the audited SM120 compiler artifact.",
+    "not_allowed": [
+      "accepted G2B timing kernel is retroactively proved",
+      "FP32 refinement stage is proved",
+      "all finite float32 inputs are proved",
+      "other shapes architectures or toolchains are proved",
+      "G3B-R1 performance claim"
+    ]
+  },
+  "experiment_id": "tensorjoin_20260903_gpu_analytic_certificate_g3b_r1",
+  "generated_code": {
+    "all_five_process_cubins_identical": true,
+    "cubin_paths": [
+      "artifacts/g3b_r1_triton_cache_run0/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+      "artifacts/g3b_r1_triton_cache_run1/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+      "artifacts/g3b_triton_cache_adversarial_r1/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+      "artifacts/g3b_r1_triton_cache_memcheck/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+      "artifacts/g3b_r1_triton_cache_stress1000/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin"
+    ],
+    "cubin_sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "identical_to_original_g3b_instruction_stream": true,
+    "local_bytes": 0,
+    "normalized_instruction_stream_sha256": "8a59d826b6497c787523ba9b81529fbda8bdd93b848bf64fd9770bfa0ff3e040",
+    "pass": true,
+    "ptx_mma_count": 16,
+    "ptx_sqrt_approx_count": 64,
+    "registers_per_thread": 140,
+    "sass_imma_count": 16,
+    "sass_mufu_sqrt_count": 64,
+    "stack_bytes": 0
+  },
+  "gpu": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "measurement_status": "correctness_generated_code_adversarial_safety_only_no_performance_claim",
+  "memcheck": {
+    "allocator_allocated_after_cleanup_bytes": 0,
+    "allocator_reserved_after_cleanup_bytes": 0,
+    "error_summary_errors": 0,
+    "exact_output_mismatches": 0,
+    "leaked_bytes": 0,
+    "pass": true
+  },
+  "performance_claim_allowed": false,
+  "preserved_failures": [
+    {
+      "kind": "original_preprocessor_domain_failure_after_five_passed_cases",
+      "path": "results/g3b_adversarial_manifest.json"
+    },
+    {
+      "kind": "original_failure_diagnosis",
+      "path": "results/g3b_adversarial_attempt0_subnormal_zero_residual_diagnosis.json"
+    },
+    {
+      "kind": "outer_wrapper_wrong_cache_prefix_after_seven_passed_cases",
+      "path": "results/g3b_r1_adversarial_manifest.json"
+    },
+    {
+      "kind": "wrapper_failure_diagnosis",
+      "path": "results/g3b_r1_adversarial_wrapper_path_diagnosis.json"
+    }
+  ],
+  "repair": {
+    "change": "store exact zero as zero; round every positive subnormal residual upper bound upward to float32 smallest normal",
+    "gpu_kernel_changed": false,
+    "original_failure_diagnosis": "results/g3b_adversarial_attempt0_subnormal_zero_residual_diagnosis.json",
+    "repair_inactive_on_frozen_g2a": true,
+    "trigger": "exact zero residual was outward-rounded to a positive float32 subnormal by the original host preprocessor"
+  },
+  "shape": [
+    4096,
+    512
+  ],
+  "source_sha256": {
+    "adversarial_runner": "5e1ccdb3b8fe8cf9d6e5c7e56ea3dcb76029324cdd0c8ea383a36d216d54891c",
+    "candidate": "057245c5288763702e7b916c6739980d07b622d595bb9d946fa14011437a67ec",
+    "protocol": "4f8d1280c44ddae43763dccc67cdeb48f749f30ad5088561ee192734db745941",
+    "safety_runner": "612c3813616d3ce4f107a47f8a040ca878e8d33cf79785fdf79d90b5a2f663fd"
+  },
+  "status": "accepted_with_adversarial_parent_gate",
+  "sustained": {
+    "allocator_allocated_after_cleanup_bytes": 0,
+    "allocator_reserved_after_cleanup_bytes": 0,
+    "alternating_buffer_sets": 2,
+    "certificate_launches": 1000,
+    "completed_iterations": 1000,
+    "count_mismatches": 0,
+    "hash_mismatches": 0,
+    "overflow_events": 0,
+    "pass": true
+  },
+  "validation": {
+    "accepted_upper_sha256": "036a4d84c1f1a10076287b9e4ad1cd950f979dac456093878c3cfd09d27ca959",
+    "ambiguous_sha256": "6f89c3126a11ce0c152a0596fdd26138a3e1e17359f6d67e58633eccbb5ada42",
+    "ambiguous_upper_pairs": 102079,
+    "canonical_pair_count": 262144,
+    "canonical_sha256": "da2c81605542e2079fbce2817cad3b42f651f33abd8e1b5b6000629068fb2f5d",
+    "direct_accept_upper_pairs": 90946,
+    "direct_sha256": "25c50dbd760b3f25766153e9188686ce73c504e2f65169aea831cef6f11655d5",
+    "final_accepted_upper_pairs": 133120,
+    "independent_processes": 2,
+    "overflow_events": 0,
+    "pass": true,
+    "unsafe_direct_accepts": 0,
+    "unsafe_direct_rejects": 0
+  }
+}

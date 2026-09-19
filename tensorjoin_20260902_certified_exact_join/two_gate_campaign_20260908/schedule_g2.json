@@ -1,0 +1,92 @@
+{
+  "processes": [
+    {
+      "index": 0,
+      "label": "g2_p00_a0",
+      "order_id": 0,
+      "order": [
+        "F8",
+        "S8",
+        "S16",
+        "F16"
+      ]
+    },
+    {
+      "index": 1,
+      "label": "g2_p01_a0",
+      "order_id": 1,
+      "order": [
+        "S8",
+        "F16",
+        "F8",
+        "S16"
+      ]
+    },
+    {
+      "index": 2,
+      "label": "g2_p02_a0",
+      "order_id": 2,
+      "order": [
+        "F16",
+        "S16",
+        "S8",
+        "F8"
+      ]
+    },
+    {
+      "index": 3,
+      "label": "g2_p03_a0",
+      "order_id": 3,
+      "order": [
+        "S16",
+        "F8",
+        "F16",
+        "S8"
+      ]
+    },
+    {
+      "index": 4,
+      "label": "g2_p04_a0",
+      "order_id": 0,
+      "order": [
+        "F8",
+        "S8",
+        "S16",
+        "F16"
+      ]
+    },
+    {
+      "index": 5,
+      "label": "g2_p05_a0",
+      "order_id": 1,
+      "order": [
+        "S8",
+        "F16",
+        "F8",
+        "S16"
+      ]
+    },
+    {
+      "index": 6,
+      "label": "g2_p06_a0",
+      "order_id": 2,
+      "order": [
+        "F16",
+        "S16",
+        "S8",
+        "F8"
+      ]
+    },
+    {
+      "index": 7,
+      "label": "g2_p07_a0",
+      "order_id": 3,
+      "order": [
+        "S16",
+        "F8",
+        "F16",
+        "S8"
+      ]
+    }
+  ]
+}

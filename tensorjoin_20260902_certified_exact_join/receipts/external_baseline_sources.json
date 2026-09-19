@@ -1,0 +1,38 @@
+{
+  "checked_date": "2026-09-03",
+  "sources": [
+    {
+      "archive": "artifacts/upstream/fasted_9af85ed8_source.tar.gz",
+      "archive_bytes": 72809,
+      "archive_sha256": "c91e7e7b83f700823a821ba999fd3abcf42a8095be4f1bafcfb6e81b43665250",
+      "license": "No license file found at the pinned revision; private build audit only",
+      "name": "FaSTED",
+      "revision": "9af85ed8edc818d5aa7cc0473187631adab3e6ba",
+      "revision_basis": "README-declared ICPP 2025 tag 128x128x64_Baseline",
+      "tree": "cb1b71b2b56ff59865c18211957d7fcc9781e3da",
+      "url": "https://github.com/bwcurless/fasted"
+    },
+    {
+      "archive": "artifacts/upstream/gpu_self_join_8093a4fd_source.tar.gz",
+      "archive_bytes": 928556,
+      "archive_sha256": "726a593cf22c8fd4c799548fc90ced1844a689b8ecafe029ca4d101155036a28",
+      "license": "MIT",
+      "name": "GDS-Join",
+      "revision": "8093a4fdea93a24cf50a63ac9b074c31b7f66dfb",
+      "revision_basis": "upstream HEAD observed 2026-09-03",
+      "tree": "42bd3106002e2169be69cf02d14262a0e56f57af",
+      "url": "https://github.com/mgowanlock/gpu_self_join"
+    },
+    {
+      "archive": "artifacts/upstream/mistic_656dd47b_source.tar.gz",
+      "archive_bytes": 48901,
+      "archive_sha256": "6999ef88782dec5783dc8f283fdad3d1d8f26598b64bec86171c4dd0cbdc0a9d",
+      "license": "MIT",
+      "name": "MiSTIC",
+      "revision": "656dd47b5594f1d9d7f961f008cfc6aedb0aed9d",
+      "revision_basis": "upstream HEAD observed 2026-09-03",
+      "tree": "0297078cb57283f91fe59bcf453cdb6b7726a627",
+      "url": "https://github.com/bwd29/self-join-MiSTIC"
+    }
+  ]
+}

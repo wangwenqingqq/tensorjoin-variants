@@ -1,0 +1,20 @@
+{
+  "actual_average_directed_nonself_degree": 1.0,
+  "actual_upper_nonself_pairs": 1024,
+  "dataset_id": "cifar_gist512",
+  "dimension": 512,
+  "epsilon": 0.6016045864658259,
+  "lower_order_statistic_d2": 0.36189838921351525,
+  "n": 2048,
+  "oracle_seconds_for_shared_scale_distance_array": 0.4577413679944584,
+  "oracle_upper_count_including_self": 3072,
+  "oracle_upper_file_sha256": "c2ee12effd24d4ac0e2c43de193acbc8cae1d5f3556b1b35195ab736a2cbc823",
+  "oracle_upper_raw_sha256": "bef36a7d001a86605b3193cf85901c02731e0eaa2fb3a80f06288c34370d32f7",
+  "source_row_prefix_raw_sha256": "04e9d1b1cacdaec6f08207f5b72ab36912dd191320392ada44291c619536a93b",
+  "target_average_directed_nonself_degree": 1,
+  "target_upper_nonself_pairs": 1024,
+  "threshold_d2": 0.3619280784567174,
+  "tie_expansion_upper_pairs": 0,
+  "upper_order_statistic_d2": 0.3619577676999195,
+  "vector_prefix_raw_sha256": "0a7274873bdea046799e97a6328ab88d0846f38e869afce12f2df36b5c862f7d"
+}

@@ -1,0 +1,70 @@
+SOURCEDIR = .
+EXE = main
+
+SOURCES = $(wildcard $(SOURCEDIR)/*.cu)
+OBJECTS = $(SOURCES:.cu=.o)
+
+CC = nvcc
+
+# Builds SASS for all architectures into one executable
+ARCHS = -arch=compute_80 -code=sm_80
+
+#
+## Debug build settings
+#
+DBGDIR = debug
+DBGEXE = $(DBGDIR)/$(EXE)
+DBGOBJS = $(addprefix $(DBGDIR)/, $(OBJECTS))
+# rdynamic and lineinfo for running memcheck
+# -keep to keep all intermediate files (like ptx)
+# --device-debug disables all device code optimisations in order to debug effectively
+#  --debug disables host code optimizations for debugging.
+# -lineinfo is useful for profiling to find hot spots
+DBGFLAGS = -std=c++17 -keep --debug --device-debug -Xptxas=-v -Xcompiler -fopenmp -lcuda -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES -Xcompiler -rdynamic -DDEBUG
+
+#
+## Release build settings
+#
+RELDIR = release
+RELEXE = $(RELDIR)/$(EXE)
+RELOBJS = $(addprefix $(RELDIR)/, $(OBJECTS))
+RELFLAGS = -std=c++17 -keep -O3 -Xptxas=-v -Xcompiler -fopenmp -lcuda -lineinfo -D_MWAITXINTRIN_H_INCLUDED -D_FORCE_INLINES
+
+.PHONY: all clean debug prep release remake
+
+# General rules
+
+all: prep release
+
+remake: clean all
+
+prep:
+	@mkdir -p $(DBGDIR) $(RELDIR)
+
+clean:
+	rm -f $(RELEXE) $(RELOBJS) $(DBGEXE) $(DBGOBJS)
+
+# Debug rules
+
+debug: $(DBGEXE)
+
+$(DBGEXE): $(DBGOBJS)
+	$(CC) $(DBGFLAGS) $(ARCHS) $^ -o $@
+
+$(DBGDIR)/%.o: %.cu
+	$(CC) $(DBGFLAGS) $(ARCHS) $< -c -o $@
+
+# Release rules
+
+release: $(RELEXE)
+
+$(RELEXE): $(RELOBJS)
+	$(CC) $(RELFLAGS) $(ARCHS) $^ -o $@
+
+$(RELDIR)/%.o: %.cu
+	$(CC) $(RELFLAGS) $(ARCHS) $< -c -o $@
+
+# Shared library rules
+
+shared:
+	$(CC) $(RELFLAGS) --shared --compiler-options '-fPIC' $(ARCHS) main.cu -o main.so

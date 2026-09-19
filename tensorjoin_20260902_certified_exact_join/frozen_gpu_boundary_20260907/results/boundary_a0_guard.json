@@ -1,0 +1,25 @@
+{
+  "label": "boundary_a0",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "src/validate.py",
+    "--label",
+    "boundary_a0",
+    "--mode",
+    "boundary",
+    "--repeats",
+    "4",
+    "--graph"
+  ],
+  "pid": null,
+  "pass": false,
+  "started": 1788777680.7868726,
+  "source_sha256": {
+    "frozen_driver.py": "784f209f6abcf33fe7177d9eeb7bcf8b2a61c4a3254e39cb84afb2554b880572",
+    "guard.py": "0a1fabf76bf019d97cb5e5e57183e8d828ae4dcdd7489157f8a856053d8f988e",
+    "validate.py": "4a6935383c051af829894c262bcd5168b39bb1919188f686a43ff3ea0cfa9a83"
+  },
+  "gpu_uuid": "GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2",
+  "exception": "Traceback (most recent call last):\n  File \"@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/frozen_gpu_boundary_20260907/src/guard.py\", line 43, in main\n    active,_=sample('quiescence');assert not active,active\n                                         ^^^^^^^^^^\nAssertionError: [['GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2', '372831', '@EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python', '36420']]\n",
+  "ended": 1788777681.1015084
+}

@@ -1,0 +1,135 @@
+{
+  "slots": [
+    {
+      "kind": "probe",
+      "rid": "predicate_ab_g3_a2",
+      "iterations": 2
+    },
+    {
+      "kind": "case",
+      "name": "real31",
+      "rid": "correct_real31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "signed31",
+      "rid": "correct_signed31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "shuffled_onehot31",
+      "rid": "correct_shuffled_onehot31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "zeros31",
+      "rid": "correct_zeros31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary31",
+      "rid": "correct_boundary31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cancellation31",
+      "rid": "correct_cancellation31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "subnormal31",
+      "rid": "correct_subnormal31_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "correct_cifar4096_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "correct_boundary_zero32_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "memcheck_boundary_zero32_g3_a2",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "memcheck_cifar4096_g3_a2",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "synccheck_boundary_zero32_g3_a2",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "synccheck_cifar4096_g3_a2",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat0_cifar4096_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat0_boundary_zero32_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat1_boundary_zero32_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat1_cifar4096_g3_a2",
+      "tool": "none"
+    },
+    {
+      "kind": "probe",
+      "rid": "predicate_stress_g3_a2",
+      "iterations": 1000
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "nsys_boundary_zero32_g3_a2",
+      "tool": "nsys"
+    }
+  ],
+  "gpu": 3,
+  "uuid": "GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2",
+  "hashes": {
+    "g18_rthiss_conservative_repair_20260905/ADDENDUM_GPU3_A2.md": "128236bbd3f80432ce9e4321d7dac8a4445366f8cced895f1cc731d1f28883f3",
+    "g18_rthiss_conservative_repair_20260905/src/run_case_gpu3.py": "cb77d01532d794ffe83fa891746b899ed146b6a1d41fad8ced93ac58b9e0b919",
+    "g18_rthiss_conservative_repair_20260905/src/run_probe_gpu3.py": "2afecbc27427a87c9d90bf00c3f38d7a1c79f30fbeaaf9fdc276b41ed350ad70",
+    "g18_rthiss_conservative_repair_20260905/src/campaign_gpu3_a2.py": "eab79813136bde6ef0210c26a890ac83bd56158176b7da2c0325791cddbb8fcc",
+    "g18_rthiss_conservative_repair_20260905/results/campaign.json": "511cd02e8d8aa5d0a405c83191f6ec73a57ab20d250d0f4d4f454b75a580f629",
+    "g18_rthiss_conservative_repair_20260905/results/campaign_resume_a1.json": "8704d62d639fa57a029c7c319a910ea4a6fcf697f9e25985694fcd7f40ddbe78",
+    "g18_rthiss_conservative_repair_20260905/raw/campaign.log": "e1006518fca302c8a1a040c03dfa304f55514129437e5078b7c15552ec5bb9f8",
+    "g18_rthiss_conservative_repair_20260905/raw/campaign_resume_a1.log": "5b807962cf6a98e26ef5675b6773199276851acdb3e18f3deb414e1289f2359d",
+    "g18_rthiss_conservative_repair_20260905/artifacts/frozen_execution.json": "59736d8a0be1c5f19fa1fef217391b1fa4c56217a2373104eeb84910e1b213f3"
+  }
+}

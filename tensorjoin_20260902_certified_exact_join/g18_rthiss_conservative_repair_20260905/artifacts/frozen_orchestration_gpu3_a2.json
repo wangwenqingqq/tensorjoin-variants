@@ -1,0 +1,123 @@
+{
+  "slots": [
+    {
+      "kind": "probe",
+      "rid": "predicate_ab_a0",
+      "iterations": 2
+    },
+    {
+      "kind": "case",
+      "name": "real31",
+      "rid": "correct_real31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "signed31",
+      "rid": "correct_signed31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "shuffled_onehot31",
+      "rid": "correct_shuffled_onehot31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "zeros31",
+      "rid": "correct_zeros31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary31",
+      "rid": "correct_boundary31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cancellation31",
+      "rid": "correct_cancellation31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "subnormal31",
+      "rid": "correct_subnormal31_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "correct_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "correct_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "memcheck_boundary_zero32_a0",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "memcheck_cifar4096_a0",
+      "tool": "memcheck"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "synccheck_boundary_zero32_a0",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "synccheck_cifar4096_a0",
+      "tool": "synccheck"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat0_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat0_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "repeat1_boundary_zero32_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "case",
+      "name": "cifar4096",
+      "rid": "repeat1_cifar4096_a0",
+      "tool": "none"
+    },
+    {
+      "kind": "probe",
+      "rid": "predicate_stress_a0",
+      "iterations": 1000
+    },
+    {
+      "kind": "case",
+      "name": "boundary_zero32",
+      "rid": "nsys_boundary_zero32_a0",
+      "tool": "nsys"
+    }
+  ],
+  "sha256": "eab79813136bde6ef0210c26a890ac83bd56158176b7da2c0325791cddbb8fcc"
+}

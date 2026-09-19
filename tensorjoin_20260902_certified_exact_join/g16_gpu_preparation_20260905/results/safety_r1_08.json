@@ -1,0 +1,32 @@
+{
+  "admitted": true,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g16_metadata_synccheck_a0",
+    "--expected-result",
+    "g16_gpu_preparation_20260905/results/metadata_synccheck_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "compute-sanitizer",
+    "--tool",
+    "synccheck",
+    "--error-exitcode",
+    "99",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/validate_metadata.py",
+    "--record-id",
+    "synccheck_a0"
+  ],
+  "correctness": {
+    "exact_contract_pass": true
+  },
+  "diagnostic_seconds": null,
+  "guard_path": "results/g5_guard_g16_metadata_synccheck_a0.json",
+  "label": "g16_metadata_synccheck_a0",
+  "result_path": "g16_gpu_preparation_20260905/results/metadata_synccheck_a0.json",
+  "result_sha256": "aa2c8a236c19e30d1b29eb539c4024992bfffe088cb801320337c39fba358f57",
+  "returncode": 0
+}

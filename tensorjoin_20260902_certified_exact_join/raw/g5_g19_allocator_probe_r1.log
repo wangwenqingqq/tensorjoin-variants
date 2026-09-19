@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/probe_allocator.py"]
+ENV {"CUDA_VISIBLE_DEVICES": "3", "G5_PHYSICAL_GPU": "3", "TRITON_CACHE_DIR": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g5_g19_allocator_probe_r1_triton_cache"}

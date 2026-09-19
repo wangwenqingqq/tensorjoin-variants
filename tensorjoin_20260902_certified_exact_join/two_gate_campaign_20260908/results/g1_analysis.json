@@ -1,0 +1,295 @@
+{
+  "complete": true,
+  "valid_processes": 8,
+  "failures": [],
+  "no_replacements": true,
+  "novelty_promotion": false,
+  "old_headline_promoted": false,
+  "material_geomean_10pct": false,
+  "primary": {
+    "phase": "retained",
+    "process_denominator": "per-method sample median",
+    "processes": [
+      {
+        "label": "g1_p00_a1",
+        "order": "AC",
+        "A": 0.18066580100276042,
+        "C": 0.16320681799697923,
+        "ratio_C_over_A": 0.9033630996631485
+      },
+      {
+        "label": "g1_p01_a1",
+        "order": "CA",
+        "A": 0.15153709999867715,
+        "C": 0.19482835899543716,
+        "ratio_C_over_A": 1.2856809256422217
+      },
+      {
+        "label": "g1_p02_a1",
+        "order": "AC",
+        "A": 0.1564965029974701,
+        "C": 0.17161818600288825,
+        "ratio_C_over_A": 1.0966263316801566
+      },
+      {
+        "label": "g1_p03_a1",
+        "order": "CA",
+        "A": 0.15489425100531662,
+        "C": 0.16932403499959037,
+        "ratio_C_over_A": 1.09315893844103
+      },
+      {
+        "label": "g1_p04_a1",
+        "order": "AC",
+        "A": 0.15516411700082244,
+        "C": 0.16965842199715553,
+        "ratio_C_over_A": 1.0934127379222367
+      },
+      {
+        "label": "g1_p05_a1",
+        "order": "CA",
+        "A": 0.15924641199671896,
+        "C": 0.1760703879990615,
+        "ratio_C_over_A": 1.1056474415429163
+      },
+      {
+        "label": "g1_p06_a1",
+        "order": "AC",
+        "A": 0.1627492240004358,
+        "C": 0.17646480700204847,
+        "ratio_C_over_A": 1.084274337317737
+      },
+      {
+        "label": "g1_p07_a1",
+        "order": "CA",
+        "A": 0.1610816510001314,
+        "C": 0.17557592799857957,
+        "ratio_C_over_A": 1.0899809314621214
+      }
+    ],
+    "process_wins": 7,
+    "paired_geometric_ratio": 1.0897755253843389,
+    "paired_arithmetic_ratio": 1.094018092958946,
+    "paired_stratified_bootstrap_95ci": [
+      1.0389620821257262,
+      1.1402110328517339
+    ],
+    "marginal_sample_median_ratio": 1.0981111211694554,
+    "order_geometric_ratios": {
+      "AC": 1.0410248129366357,
+      "CA": 1.1408092112392314
+    },
+    "sample_p10_median_p90_seconds": {
+      "A": [
+        0.15180979810247663,
+        0.15806677999717067,
+        0.17445035649725468
+      ],
+      "C": [
+        0.1639168355955917,
+        0.17357488900233875,
+        0.1800210207977216
+      ]
+    }
+  },
+  "repeat16": {
+    "phase": "repeat16",
+    "process_denominator": "sum of16 complete-call latencies",
+    "processes": [
+      {
+        "label": "g1_p00_a1",
+        "order": "AC",
+        "A": 2.407744651005487,
+        "C": 2.6066085810089135,
+        "ratio_C_over_A": 1.0825934469090732
+      },
+      {
+        "label": "g1_p01_a1",
+        "order": "CA",
+        "A": 2.417516624998825,
+        "C": 2.6435230959687033,
+        "ratio_C_over_A": 1.0934870389857145
+      },
+      {
+        "label": "g1_p02_a1",
+        "order": "AC",
+        "A": 2.965512442002364,
+        "C": 3.033331687998725,
+        "ratio_C_over_A": 1.022869317638259
+      },
+      {
+        "label": "g1_p03_a1",
+        "order": "CA",
+        "A": 2.6497249270105385,
+        "C": 2.7601513850167976,
+        "ratio_C_over_A": 1.0416746873913603
+      },
+      {
+        "label": "g1_p04_a1",
+        "order": "AC",
+        "A": 2.494961405005597,
+        "C": 2.7133720919882762,
+        "ratio_C_over_A": 1.087540707661644
+      },
+      {
+        "label": "g1_p05_a1",
+        "order": "CA",
+        "A": 2.5650421940008528,
+        "C": 2.7871197410058812,
+        "ratio_C_over_A": 1.0865785161446566
+      },
+      {
+        "label": "g1_p06_a1",
+        "order": "AC",
+        "A": 2.602251386990247,
+        "C": 2.830271892991732,
+        "ratio_C_over_A": 1.087624319134368
+      },
+      {
+        "label": "g1_p07_a1",
+        "order": "CA",
+        "A": 2.5326121729885926,
+        "C": 2.70581709399994,
+        "ratio_C_over_A": 1.0683898319919065
+      }
+    ],
+    "process_wins": 8,
+    "paired_geometric_ratio": 1.0710711550181982,
+    "paired_arithmetic_ratio": 1.0713447332321229,
+    "paired_stratified_bootstrap_95ci": [
+      1.0531156900211502,
+      1.0861210620741664
+    ],
+    "marginal_sample_median_ratio": 1.0815239069818965,
+    "order_geometric_ratios": {
+      "AC": 1.0697997555155299,
+      "CA": 1.0723440655108318
+    },
+    "sample_p10_median_p90_seconds": {
+      "A": [
+        0.15044711360023938,
+        0.15656944049624144,
+        0.16858294059857143
+      ],
+      "C": [
+        0.163363915199443,
+        0.1693335929994646,
+        0.17885178049982642
+      ]
+    }
+  },
+  "repeat_tail": [
+    {
+      "label": "g1_p00_a1",
+      "method": "A",
+      "last4_over_first4": 1.0074599998374296
+    },
+    {
+      "label": "g1_p00_a1",
+      "method": "C",
+      "last4_over_first4": 0.9995589969337462
+    },
+    {
+      "label": "g1_p01_a1",
+      "method": "A",
+      "last4_over_first4": 0.9997612812450768
+    },
+    {
+      "label": "g1_p01_a1",
+      "method": "C",
+      "last4_over_first4": 1.0042022884808104
+    },
+    {
+      "label": "g1_p02_a1",
+      "method": "A",
+      "last4_over_first4": 1.449527067340844
+    },
+    {
+      "label": "g1_p02_a1",
+      "method": "C",
+      "last4_over_first4": 0.9519634034205718
+    },
+    {
+      "label": "g1_p03_a1",
+      "method": "A",
+      "last4_over_first4": 1.0632100114605276
+    },
+    {
+      "label": "g1_p03_a1",
+      "method": "C",
+      "last4_over_first4": 0.9018654849525041
+    },
+    {
+      "label": "g1_p04_a1",
+      "method": "A",
+      "last4_over_first4": 1.0011660346759645
+    },
+    {
+      "label": "g1_p04_a1",
+      "method": "C",
+      "last4_over_first4": 0.9997774458849471
+    },
+    {
+      "label": "g1_p05_a1",
+      "method": "A",
+      "last4_over_first4": 0.9931859968702507
+    },
+    {
+      "label": "g1_p05_a1",
+      "method": "C",
+      "last4_over_first4": 1.0016315115323553
+    },
+    {
+      "label": "g1_p06_a1",
+      "method": "A",
+      "last4_over_first4": 1.0014330608927997
+    },
+    {
+      "label": "g1_p06_a1",
+      "method": "C",
+      "last4_over_first4": 0.9973017010595152
+    },
+    {
+      "label": "g1_p07_a1",
+      "method": "A",
+      "last4_over_first4": 0.9640652204276955
+    },
+    {
+      "label": "g1_p07_a1",
+      "method": "C",
+      "last4_over_first4": 1.0028120389113744
+    }
+  ],
+  "stage_count_signatures": {
+    "A": [
+      [
+        1278504,
+        1827007,
+        713664,
+        1111609,
+        1734,
+        1993039
+      ]
+    ],
+    "C": [
+      [
+        1950364,
+        86029,
+        1797993607,
+        41804,
+        42491,
+        1734,
+        1993039
+      ]
+    ]
+  },
+  "narrow_screen_win": true,
+  "decision": "narrow_screen_pass",
+  "limits": [
+    "warmed repeated complete calls, not old one-shot absolute times",
+    "one public input and one threshold",
+    "new diagnostic host adapter with original GPU code objects",
+    "owned cuBLAS FP16 + directed FP32 interval + original stage2/terminal; not strongest possible fused FP16",
+    "same compiled identities as admitted control; no novelty claim"
+  ]
+}

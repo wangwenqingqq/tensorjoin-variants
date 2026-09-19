@@ -1,0 +1,32 @@
+{
+  "baseline": "GTS upstream FP32 plus G6 export adapter",
+  "dataset": "g2a",
+  "decision": "Reject GTS as an exact keeper under the float32-source to float64-oracle contract; stop its G2B timing.",
+  "diagnosis": "The sole unordered boundary pair is rejected by the frozen FP64 oracle but accepted by upstream-style sequential FP32 accumulation; pair export has zero duplicates and invalid IDs.",
+  "experiment_id": "tensorjoin_20260904_g6_latest_baselines",
+  "extra_count": 2,
+  "extra_pairs": [
+    {
+      "distance_fp32_sequential": 0.7541133761405945,
+      "distance_fp64": 0.754113678111901,
+      "fp32_minus_epsilon": -1.4887924515427642e-07,
+      "fp64_minus_epsilon": 1.5309206136127074e-07,
+      "i": 1188,
+      "j": 2087,
+      "key": 4868135
+    },
+    {
+      "distance_fp32_sequential": 0.7541133761405945,
+      "distance_fp64": 0.754113678111901,
+      "fp32_minus_epsilon": -1.4887924515427642e-07,
+      "fp64_minus_epsilon": 1.5309206136127074e-07,
+      "i": 2087,
+      "j": 1188,
+      "key": 8549540
+    }
+  ],
+  "missing_count": 0,
+  "missing_keys": [],
+  "observed_count": 262146,
+  "reference_count": 262144
+}

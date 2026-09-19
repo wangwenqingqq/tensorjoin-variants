@@ -1,0 +1,203 @@
+{
+  "claim_scope": "device-memory access and synchronization checks plus two-buffer output/count stability",
+  "decision": "PASS",
+  "environment_evidence": {
+    "postflight_gpu_line": "4, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-863c06a5-9f33-0265-b098-013fa840d5db, 14 MiB, 0 %",
+    "postflight_sha256": "f1b3043a47f4405302fbd29c345b76e837a5406646b518f62a370e4223398181",
+    "preflight_sha256": "0c61d2d9ec06ed2bbb7667561dbf988b3bcd0ad7a79ee1da10d5edc8eb92d304"
+  },
+  "experiment": "tensorjoin_20260903_h2b_p3_r3_access_safety_stress",
+  "gpu_uuid": "GPU-863c06a5-9f33-0265-b098-013fa840d5db",
+  "host": "gpu-host-8",
+  "known_resource_lifetime_limitation": {
+    "classification": "process-owned cuBLAS handle allocations rooted at cublasCreate_v2",
+    "outstanding_allocations": 3,
+    "outstanding_bytes": 8520704,
+    "rejected_full_leak_log": "raw/h2b_p3_memcheck_esc50_panns_r2.log",
+    "rejected_full_leak_log_sha256": "6ae8d7e7d28961e0b68f13c0952f5a60c408fdae8abe95ec566240fa04a1f11c"
+  },
+  "not_claimed": "leak-free process shutdown; R2 retained three PyTorch-owned cuBLAS-handle allocations",
+  "physical_gpu": 4,
+  "prior_rejected_attempt": {
+    "log": "raw/h2b_p3_memcheck_esc50_panns.log",
+    "log_sha256": "60eb6d140957e85bd0c070220e5b3c8b3b3f78d7ea63086f1d32e6965a9a8610",
+    "outstanding_allocations": 12,
+    "outstanding_bytes": 153224192
+  },
+  "sanitizer": [
+    {
+      "dataset": "esc50_panns",
+      "error_summary": 0,
+      "log": "raw/h2b_p3_memcheck_esc50_panns_r3.log",
+      "log_sha256": "4dfd64712600f41a825e97ff5b6ae14488f2836b65c31e4299fe4bc1ee0d050c",
+      "output": {
+        "ambiguous_count": 9,
+        "direct_accept_count": 1021,
+        "duplicate_ids": 0,
+        "expected_ambiguous_count": 9,
+        "expected_count": 1024,
+        "expected_ids_sha256": "60f74a68af4b2eb4cd723db53c8ea3c2f2fa3ef22134dc87137145d88dec3a74",
+        "final_count": 1024,
+        "ids_sha256": "60f74a68af4b2eb4cd723db53c8ea3c2f2fa3ef22134dc87137145d88dec3a74",
+        "overflow": 0,
+        "pass": true
+      },
+      "pass": true,
+      "target_results_per_query": 8,
+      "tool": "memcheck"
+    },
+    {
+      "dataset": "ucf101_r3d18",
+      "error_summary": 0,
+      "log": "raw/h2b_p3_memcheck_ucf101_r3d18_r3.log",
+      "log_sha256": "5379e72dadfce0231a4c7f38601867345939e997475e626a2f908a3d09567631",
+      "output": {
+        "ambiguous_count": 4,
+        "direct_accept_count": 1023,
+        "duplicate_ids": 0,
+        "expected_ambiguous_count": 4,
+        "expected_count": 1024,
+        "expected_ids_sha256": "57f58123992959d95510cb7bdf2c13ea5132a158346b525e0af031a775602d79",
+        "final_count": 1024,
+        "ids_sha256": "57f58123992959d95510cb7bdf2c13ea5132a158346b525e0af031a775602d79",
+        "overflow": 0,
+        "pass": true
+      },
+      "pass": true,
+      "target_results_per_query": 8,
+      "tool": "memcheck"
+    },
+    {
+      "dataset": "esc50_panns",
+      "error_summary": 0,
+      "log": "raw/h2b_p3_synccheck_esc50_panns_r3.log",
+      "log_sha256": "58927da00f5ea065dbd5c89025a3b18216615cf28025c4c9bdd0786b4410875d",
+      "output": {
+        "ambiguous_count": 9,
+        "direct_accept_count": 1021,
+        "duplicate_ids": 0,
+        "expected_ambiguous_count": 9,
+        "expected_count": 1024,
+        "expected_ids_sha256": "60f74a68af4b2eb4cd723db53c8ea3c2f2fa3ef22134dc87137145d88dec3a74",
+        "final_count": 1024,
+        "ids_sha256": "60f74a68af4b2eb4cd723db53c8ea3c2f2fa3ef22134dc87137145d88dec3a74",
+        "overflow": 0,
+        "pass": true
+      },
+      "pass": true,
+      "target_results_per_query": 8,
+      "tool": "synccheck"
+    },
+    {
+      "dataset": "ucf101_r3d18",
+      "error_summary": 0,
+      "log": "raw/h2b_p3_synccheck_ucf101_r3d18_r3.log",
+      "log_sha256": "0a0a3a4c6342f83988cdf22e24d1eeb8c9e2f471282275891967b06b2d73b219",
+      "output": {
+        "ambiguous_count": 4,
+        "direct_accept_count": 1023,
+        "duplicate_ids": 0,
+        "expected_ambiguous_count": 4,
+        "expected_count": 1024,
+        "expected_ids_sha256": "57f58123992959d95510cb7bdf2c13ea5132a158346b525e0af031a775602d79",
+        "final_count": 1024,
+        "ids_sha256": "57f58123992959d95510cb7bdf2c13ea5132a158346b525e0af031a775602d79",
+        "overflow": 0,
+        "pass": true
+      },
+      "pass": true,
+      "target_results_per_query": 8,
+      "tool": "synccheck"
+    }
+  ],
+  "sources": {
+    "p1_correctness_sha256": "68f7e58713e4552ab43743b4a1b089a0b3df046d298f20b01f1ca6e889387e99",
+    "p2_audit_sha256": "c4145a0ea0c2f2f3e86bbe6e0d49d106c0ea8a6ac50401fce4c098d2eab94d77",
+    "runner_sha256": "63b19aab011f8a4e51f34c739011897ea5fc2a3afed99040622dd3c444d945ba",
+    "summarizer_sha256": "cd51af3e0e34ec458652280c4e3da5c5008e18febc657c0ada8437fd158e2554"
+  },
+  "stress": {
+    "artifact": "results/h2b_p3_stress.json",
+    "artifact_sha256": "bd3c4b1c3c960da10962a1f31452a0018b4299046d75bfe02ba82a4ae18a1225",
+    "cells": [
+      {
+        "dataset": "esc50_panns",
+        "iterations": 1000,
+        "pass": true,
+        "signature": {
+          "ambiguous_count": 2,
+          "direct_accept_count": 127,
+          "duplicate_ids": 0,
+          "final_count": 128,
+          "ids_sha256": "9fcc06e33bd9766ea6c0d89d03bcd826a401fda2a3e3a131926651b15c26dc28",
+          "overflow": 0
+        },
+        "state_slots": [
+          0,
+          1
+        ],
+        "target_results_per_query": 1,
+        "unique_signatures": 1
+      },
+      {
+        "dataset": "esc50_panns",
+        "iterations": 1000,
+        "pass": true,
+        "signature": {
+          "ambiguous_count": 9,
+          "direct_accept_count": 1021,
+          "duplicate_ids": 0,
+          "final_count": 1024,
+          "ids_sha256": "60f74a68af4b2eb4cd723db53c8ea3c2f2fa3ef22134dc87137145d88dec3a74",
+          "overflow": 0
+        },
+        "state_slots": [
+          0,
+          1
+        ],
+        "target_results_per_query": 8,
+        "unique_signatures": 1
+      },
+      {
+        "dataset": "ucf101_r3d18",
+        "iterations": 1000,
+        "pass": true,
+        "signature": {
+          "ambiguous_count": 0,
+          "direct_accept_count": 128,
+          "duplicate_ids": 0,
+          "final_count": 128,
+          "ids_sha256": "255b61572c53be4acb2db267f672c6cd4e922bf6b3ee8c6049e395ca09b41c62",
+          "overflow": 0
+        },
+        "state_slots": [
+          0,
+          1
+        ],
+        "target_results_per_query": 1,
+        "unique_signatures": 1
+      },
+      {
+        "dataset": "ucf101_r3d18",
+        "iterations": 1000,
+        "pass": true,
+        "signature": {
+          "ambiguous_count": 4,
+          "direct_accept_count": 1023,
+          "duplicate_ids": 0,
+          "final_count": 1024,
+          "ids_sha256": "57f58123992959d95510cb7bdf2c13ea5132a158346b525e0af031a775602d79",
+          "overflow": 0
+        },
+        "state_slots": [
+          0,
+          1
+        ],
+        "target_results_per_query": 8,
+        "unique_signatures": 1
+      }
+    ],
+    "pass": true,
+    "total_retained_invocations": 4000
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "promote_shape_local_attribution",
+  "experiment_id": "tensorjoin_20260903_g3d_complete_pipeline_timing",
+  "formal_gate_pass": true,
+  "formal_thresholds": {
+    "bootstrap_ci95_lower_minimum": 1.15,
+    "process_median_wins_required": 8,
+    "sustained_geometric_mean_minimum": 1.1,
+    "sustained_wins_required": 8
+  },
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 285.40799021720886,
+      "p10_us": 282.943993806839,
+      "p90_us": 290.94720780849457
+    },
+    "keeper_two_stage": {
+      "median_us": 763.0880177021027,
+      "p10_us": 753.9168179035187,
+      "p90_us": 767.9423928260803
+    }
+  },
+  "measurement_scope": "complete resident-GPU pipeline attribution",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 286.5599989891052,
+        "p10_us": 283.5807979106903,
+        "p90_us": 292.64639914035797
+      },
+      "keeper_two_stage": {
+        "median_us": 762.5920176506042,
+        "p10_us": 752.8223931789398,
+        "p90_us": 766.5024042129517
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 284.7360074520111,
+        "p10_us": 282.3616027832031,
+        "p90_us": 287.0495945215225
+      },
+      "keeper_two_stage": {
+        "median_us": 763.727992773056,
+        "p10_us": 756.134420633316,
+        "p90_us": 770.0192153453827
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.6695849386613086,
+  "paired_process_bootstrap": {
+    "ci95_lower": 2.6581045547879345,
+    "ci95_upper": 2.677861185209252,
+    "samples": 20000,
+    "seed": 20260903
+  },
+  "phase": "formal",
+  "process_median_wins": 8,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.59200263023376,
+      "candidate_sustained_mean_us": 255.71597290039062,
+      "keeper_median_us": 762.607991695404,
+      "keeper_sustained_mean_us": 733.821044921875,
+      "median_speedup_keeper_over_candidate": 2.6796536257072883,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g3d_formal_process_0_kc_a0.json",
+      "result_sha256": "b5b6f7ca88ef0e0644f8fa0144e53b63c7ff9da87aaced1ce70f5f047a4e121a",
+      "sustained_speedup_keeper_over_candidate": 2.8696723032147906
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 286.1279994249344,
+      "candidate_sustained_mean_us": 255.5897674560547,
+      "keeper_median_us": 763.7920081615448,
+      "keeper_sustained_mean_us": 733.8423461914062,
+      "median_speedup_keeper_over_candidate": 2.669406732988833,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g3d_formal_process_1_ck_a0.json",
+      "result_sha256": "9a6f7013b50d2e4cc5a62fdba807302d457ec5829ac9da0e4a9693237057cb8d",
+      "sustained_speedup_keeper_over_candidate": 2.8711726353347884
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 285.7919931411743,
+      "candidate_sustained_mean_us": 255.6623992919922,
+      "keeper_median_us": 763.3920013904572,
+      "keeper_sustained_mean_us": 729.590087890625,
+      "median_speedup_keeper_over_candidate": 2.67114551740909,
+      "order": "KC",
+      "process_id": 2,
+      "result": "results/g3d_formal_process_2_kc_a0.json",
+      "result_sha256": "cda2706270b1448c7661da96e774f217df6167000998935cf32202de9bae7a0c",
+      "sustained_speedup_keeper_over_candidate": 2.8537246380816432
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.92799401283264,
+      "candidate_sustained_mean_us": 255.596923828125,
+      "keeper_median_us": 761.9040012359619,
+      "keeper_sustained_mean_us": 733.7189331054688,
+      "median_speedup_keeper_over_candidate": 2.67402297157803,
+      "order": "CK",
+      "process_id": 3,
+      "result": "results/g3d_formal_process_3_ck_a0.json",
+      "result_sha256": "503c98e6071df6d49b35b8c02ae2950daad64ce847608874d128df570a47bd17",
+      "sustained_speedup_keeper_over_candidate": 2.870609403729971
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 291.9040024280548,
+      "candidate_sustained_mean_us": 255.63644409179688,
+      "keeper_median_us": 768.671989440918,
+      "keeper_sustained_mean_us": 734.0220336914062,
+      "median_speedup_keeper_over_candidate": 2.6333040419011438,
+      "order": "CK",
+      "process_id": 4,
+      "result": "results/g3d_formal_process_4_ck_a0.json",
+      "result_sha256": "b2776984534f9eb34456a5a7b0c1530422a0c0e25855bb318650bd02e1fe20d3",
+      "sustained_speedup_keeper_over_candidate": 2.871351290694003
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.496009349823,
+      "candidate_sustained_mean_us": 255.6868133544922,
+      "keeper_median_us": 762.5280022621155,
+      "keeper_sustained_mean_us": 733.2283935546875,
+      "median_speedup_keeper_over_candidate": 2.6802766197134704,
+      "order": "KC",
+      "process_id": 5,
+      "result": "results/g3d_formal_process_5_kc_a0.json",
+      "result_sha256": "45bd4d30cc959768d89b771f3aa22dd973687b75b622563bcd794ef75a3b6e5c",
+      "sustained_speedup_keeper_over_candidate": 2.867681692047672
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 286.20800375938416,
+      "candidate_sustained_mean_us": 255.58921813964844,
+      "keeper_median_us": 763.1040215492249,
+      "keeper_sustained_mean_us": 733.6983032226562,
+      "median_speedup_keeper_over_candidate": 2.666256748678379,
+      "order": "CK",
+      "process_id": 6,
+      "result": "results/g3d_formal_process_6_ck_a0.json",
+      "result_sha256": "4fa0e1bf6957f335f93b509f1f95b6867694ea1145e8f6a65f26313004f5b532",
+      "sustained_speedup_keeper_over_candidate": 2.870615233940656
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 284.11200642585754,
+      "candidate_sustained_mean_us": 255.77127075195312,
+      "keeper_median_us": 762.255996465683,
+      "keeper_sustained_mean_us": 733.857421875,
+      "median_speedup_keeper_over_candidate": 2.6829418652696146,
+      "order": "KC",
+      "process_id": 7,
+      "result": "results/g3d_formal_process_7_kc_a0.json",
+      "result_sha256": "4439c9804f179f0a2ca6dd7d385f527f2779eaccc32d4778f3dca861b016ff85",
+      "sustained_speedup_keeper_over_candidate": 2.869194103456188
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "single_protocol_sha256": [
+    "6839b2fb656815c623cd46db0d3a435791c90c128a1b88b5c4ef926bc014cd1b"
+  ],
+  "single_runner_sha256": [
+    "e6518efc901d6c5ab316fe8f8f4d95e37ce4de535e08ac9f353acd8e46e1fd3a"
+  ],
+  "sustained_geometric_mean_speedup": 2.8679973516370114,
+  "sustained_wins": 8
+}

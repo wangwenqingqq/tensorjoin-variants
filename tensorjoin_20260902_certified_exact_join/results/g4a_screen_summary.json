@@ -1,0 +1,94 @@
+{
+  "all_expected_processes_admitted": true,
+  "all_source_contracts_equal": true,
+  "decision": "admit_formal",
+  "dynamic_count_contract_pass": true,
+  "experiment_id": "tensorjoin_20260903_g4a_dynamic_count_router",
+  "marginal_raw_sample_percentiles_us": {
+    "candidate_three_stage": {
+      "median_us": 354.488,
+      "p10_us": 345.60920000000004,
+      "p90_us": 364.7539
+    },
+    "keeper_two_stage": {
+      "median_us": 802.5295,
+      "p10_us": 789.3974999999999,
+      "p90_us": 807.6188999999999
+    }
+  },
+  "measurement_scope": "host-dispatched dynamic-count resident-GPU operator",
+  "order_position_raw_sample_percentiles_us": {
+    "first": {
+      "candidate_three_stage": {
+        "median_us": 347.962,
+        "p10_us": 340.4268,
+        "p90_us": 351.9341
+      },
+      "keeper_two_stage": {
+        "median_us": 805.488,
+        "p10_us": 803.2312000000001,
+        "p90_us": 809.7637
+      }
+    },
+    "second": {
+      "candidate_three_stage": {
+        "median_us": 361.66700000000003,
+        "p10_us": 354.9548,
+        "p90_us": 366.4773
+      },
+      "keeper_two_stage": {
+        "median_us": 793.815,
+        "p10_us": 788.2018,
+        "p90_us": 801.1826
+      }
+    }
+  },
+  "paired_geometric_mean_median_speedup": 2.25407746334848,
+  "phase": "screen",
+  "process_median_wins": 2,
+  "processes": [
+    {
+      "attempt": 0,
+      "candidate_median_us": 361.66700000000003,
+      "candidate_sustained_mean_us": 357.66288999999995,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 805.488,
+      "keeper_sustained_mean_us": 804.1202499999999,
+      "median_speedup_keeper_over_candidate": 2.2271537076924353,
+      "order": "KC",
+      "process_id": 0,
+      "result": "results/g4a_screen_process_0_kc_a0.json",
+      "result_sha256": "84bc3a0def867c95aef9c235d997f08be7f50cf24df6fe17794b9a22dee0cf0c",
+      "sustained_speedup_keeper_over_candidate": 2.2482630221994797
+    },
+    {
+      "attempt": 0,
+      "candidate_median_us": 347.962,
+      "candidate_sustained_mean_us": 342.072685,
+      "dynamic_count_contract_pass": true,
+      "keeper_median_us": 793.815,
+      "keeper_sustained_mean_us": 791.01698,
+      "median_speedup_keeper_over_candidate": 2.2813266965933066,
+      "order": "CK",
+      "process_id": 1,
+      "result": "results/g4a_screen_process_1_ck_a0.json",
+      "result_sha256": "ff4f8670c75e787245a2e188161d4281419c4b9b00d761249de6368c20b392bb",
+      "sustained_speedup_keeper_over_candidate": 2.312423688550286
+    }
+  ],
+  "runtime_binary_gate_pass": true,
+  "scope_is_not": "ingest-inclusive or host-output-materializing end-to-end latency",
+  "screen_gate_pass": true,
+  "screen_thresholds": {
+    "each_process_median_speedup_minimum": 1.2,
+    "each_process_sustained_speedup_minimum": 1.2
+  },
+  "single_protocol_sha256": [
+    "29b0d3aa584f2337c04f947c7a50ffa0b57e943699385568344c0e332a07f0c1"
+  ],
+  "single_runner_sha256": [
+    "fe7aaa92c7556e11b2a08e62815ce5189ff0ab677a16706f272ec097b20ba843"
+  ],
+  "sustained_geometric_mean_speedup": 2.280117687889319,
+  "sustained_wins": 2
+}

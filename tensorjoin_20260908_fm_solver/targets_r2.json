@@ -1,0 +1,20 @@
+{
+  "8p_gpu2": {
+    "host": "gpu-host-8",
+    "gpu": 2,
+    "uuid": "GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245",
+    "scope": "original 8p GPU2 server SKU and driver 590.48.01"
+  },
+  "8p_gpu0": {
+    "host": "gpu-host-8",
+    "gpu": 0,
+    "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1",
+    "scope": "Direct certified block-pruning objective: internal same-GPU comparisons, no ratios against prior timings."
+  },
+  "8p_gpu4": {
+    "host": "gpu-host-8",
+    "gpu": 4,
+    "uuid": "GPU-863c06a5-9f33-0265-b098-013fa840d5db",
+    "scope": "Conditional solution-state FM, supervised exact tile occupancy, certified projected pair checks and complete inherited join; all timing ratios within current GPU4 campaign."
+  }
+}

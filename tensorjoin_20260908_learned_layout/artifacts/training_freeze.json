@@ -1,0 +1,18 @@
+{
+  "created": 1788842743.4486985,
+  "files": {
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/PROTOCOL.md": "3710b03a44483c8d6bbc5eb5d60b83a672668b901b17e430561b03aab594e2b6",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/targets_r2.json": "0058095980d860add279e84f30eaea5c85f2a2bceff1274db69b3e0de9699254",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/src/guard_r2.py": "3ac986d3886bc7eae228c1d96d03282683ede52b30ea2d0eac0fd42696131515",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/src/layout_common.py": "e0998b7275a179ac94f9d5e324279cc646a74faa9908d325271df9173237a54e",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/src/models.py": "9214248c5c567d3c8576e288356943115213c9451f3686c3e5d5b933c3b90600",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/src/prepare.py": "60100653efa3962f16d0a32a76e0cf88b3c3bbd22dac00506648132bd0a4e4a7",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/src/train.py": "b46139e1030d684b18e2d026a5c54785d0c558e69974e85c60a6937b795c9f8e",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/common_bound_admission.json": "a464c6d884c1e4b02b88b8e8cae5dbaa5e23d4385f16fd289342735c6b3866a1",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/features.json": "d7426d030f98a205ac1bcb1f4df44745bf0f4d155fa33edc9211263789603ba7",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/features_f64.npy": "55e0522bc44d5a503d39c7f2302ab0770db32d1642ef4b92238a187063716dd0",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/pca_scores_f64.npy": "e317c164472a2ec732659951c119e07b7f9fdfea3ac49287fbc09d2dace80dbe",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/projector.npy": "f15920a9e78f52d6f6337a3dd2ca7b05b4acb5837404138dcb9d277ceba99ca3",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260908_learned_layout/artifacts/splits.npz": "ccb551ecc986f97c3433f48990c71b395b3309a705381d5c327e1d0fd02638bc"
+  }
+}

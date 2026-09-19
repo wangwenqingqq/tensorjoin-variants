@@ -1,0 +1,11 @@
+{
+  "parent": "g19_reusable_complete_cost_20260905/src/owned_cublas_r3.py",
+  "parent_sha256": "08a9369d1b496e70d3fe847f64a64d9fdb2d950ddbdc9a74d7f3610686310e23",
+  "changes": [
+    "standalone constants/import",
+    "math16 compute68 FP16 operands FP32 output",
+    "names/records updated"
+  ],
+  "owned_lifecycle_unchanged": true,
+  "workspace_bytes": 8519680
+}

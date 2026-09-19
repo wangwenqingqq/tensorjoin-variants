@@ -1,0 +1,3 @@
+{"offset": [0, 0], "shape": [512, 512], "pairs": 131328, "count": 796, "hash": "84ecb31e8aa86ea6b33fc79033523c7b0b4daf7a7c7aaeb2053219a057c08fba", "direct": 754, "ambiguous": 43, "reject": 130531, "fp64_inputs": 40, "exact_output": true, "pass": true}
+{"offset": [0, 0], "shape": [512, 512], "pairs": 131328, "count": 796, "hash": "84ecb31e8aa86ea6b33fc79033523c7b0b4daf7a7c7aaeb2053219a057c08fba", "direct": 754, "ambiguous": 43, "reject": 130531, "fp64_inputs": 40, "exact_output": true, "pass": true}
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_original_confirm_20260908/results/gpu2_fixture_a0.json"}

@@ -1,0 +1,4 @@
+{"verified": "original", "seconds": 8.11329811399628}
+{"verified": "random", "seconds": 16.062135352985933}
+{"verified": "kd_variance", "seconds": 24.170770864991937}
+{"verified": "pca_sort", "seconds": 32.12833129899809}

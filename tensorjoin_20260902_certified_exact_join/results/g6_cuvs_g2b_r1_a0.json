@@ -1,0 +1,126 @@
+{
+  "baseline": "NVIDIA cuVS brute_force sqeuclidean",
+  "cuda_visible_devices": "1",
+  "dataset": "g2b",
+  "epsilon": 0.62890625,
+  "experiment_id": "tensorjoin_20260904_g6_latest_baselines",
+  "k": 4096,
+  "package_versions": {
+    "cupy-cuda13x": "14.1.0",
+    "cuvs-cu13": "26.8.1",
+    "libcuvs-cu13": "26.8.1",
+    "libraft-cu13": "26.8.0",
+    "librmm-cu13": "26.8.0",
+    "numpy": "2.5.2",
+    "nvidia-cublas": "13.6.0.2",
+    "nvidia-cuda-nvrtc": "13.3.33",
+    "pylibraft-cu13": "26.8.0",
+    "rmm-cu13": "26.8.0"
+  },
+  "physical_gpu": 1,
+  "postflight": {
+    "compute_apps": [
+      {
+        "gpu_uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3",
+        "memory_mib": 676,
+        "name": "envs/cuvs_py312/bin/python",
+        "pid": 487984
+      }
+    ],
+    "index": 1,
+    "memory_used_mib": 698,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "utilization_percent": 14,
+    "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"
+  },
+  "preflight": {
+    "compute_apps": [],
+    "index": 1,
+    "memory_used_mib": 14,
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "utilization_percent": 0,
+    "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"
+  },
+  "public_metrics": {
+    "build_seconds": 0.03771776099165436,
+    "concatenate_sort_seconds": 0.05930182299925946,
+    "elapsed_seconds": 3.5517498159897514,
+    "h2d_seconds": 0.0644069319969276,
+    "search_filter_d2h_seconds": 3.39032330000191
+  },
+  "query_batch_rows": 256,
+  "query_batches": 235,
+  "receipts": {
+    "input_npy_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+    "oracle_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "runner_sha256": "dc07e6d6421c151fa037711867885ddb8c92bdbba1e0f41cba0bfb1ff638671c",
+    "wheel_manifest_sha256": "793d22f5133d98a2db10c8712d078e3c672a944d2fa3985c3e7e0e8c32312af8"
+  },
+  "shape": [
+    60000,
+    512
+  ],
+  "threshold_d2": 0.3955230712890625,
+  "validation": {
+    "count_delta": -2,
+    "duplicate_count": 0,
+    "exact": false,
+    "expected_pair_count": 3926078,
+    "expected_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "extra_count": 24,
+    "first_extra_keys": [
+      115700496,
+      170802429,
+      428597519,
+      679665073,
+      766366224,
+      880537531,
+      1017288197,
+      1051147143,
+      1117054417,
+      1229761928,
+      1651497813,
+      1900965750,
+      2065038617,
+      2251874675,
+      2545742846,
+      2628404565,
+      2654458727,
+      2673943806,
+      2704391327,
+      2745031682
+    ],
+    "first_missing_keys": [
+      20839494,
+      42479816,
+      42641459,
+      366812058,
+      449784414,
+      723713034,
+      852634488,
+      1108169827,
+      1121669160,
+      1169640347,
+      1464847496,
+      1511452458,
+      1749618694,
+      1789638469,
+      1923486113,
+      2069294210,
+      2487540710,
+      2521078393,
+      2981037813,
+      3147505190
+    ],
+    "invalid_neighbor_ids": 0,
+    "max_accepted_neighbors_per_row": 2855,
+    "missing_count": 26,
+    "pair_count": 3926076,
+    "pair_f1": 0.9999936323205073,
+    "pair_precision": 0.9999938870261299,
+    "pair_recall": 0.9999933776150143,
+    "raw_u64_sha256": "edebd43cc484f952bed44219ca102a6c055e18e9505b984fe1c51e20311ed1e1",
+    "saturated_rows": 0,
+    "true_positive_count": 3926052
+  }
+}

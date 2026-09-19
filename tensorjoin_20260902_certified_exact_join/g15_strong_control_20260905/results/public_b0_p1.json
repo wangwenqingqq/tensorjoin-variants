@@ -1,0 +1,29 @@
+{
+  "admitted": true,
+  "block": 0,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g15_b0_p1_fp32_a0",
+    "--expected-result",
+    "g15_strong_control_20260905/results/fp32_screen_g15_b0_p1_fp32_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g15_strong_control_20260905/src/run_fp32_first.py",
+    "--phase",
+    "screen",
+    "--record-id",
+    "g15_b0_p1_fp32_a0"
+  ],
+  "exact_contract_pass": true,
+  "guard_path": "results/g5_guard_g15_b0_p1_fp32_a0.json",
+  "method": "fp32",
+  "position": 1,
+  "public_seconds": 0.3087405529804528,
+  "result_path": "g15_strong_control_20260905/results/fp32_screen_g15_b0_p1_fp32_a0.json",
+  "result_sha256": "4db34f9dc69d5b9ba5fe71883b0a19d8ba00dd138f697e2acd9c8c4b19286c9d",
+  "returncode": 0
+}

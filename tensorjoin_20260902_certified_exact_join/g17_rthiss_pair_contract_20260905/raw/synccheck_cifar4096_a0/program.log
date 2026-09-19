@@ -1,0 +1,73 @@
+========= COMPUTE-SANITIZER
+
+ Warming up gpu ...
+ D[0] = 0 D[1] = 1 D[2] = 2 D[3] = 3 D[4] = 4 D[5] = 9 D[6] = 9 D[7] = 1 D[8] = 1 D[9] = 1
+ Number of points in the dataset are: 4096
+ Number of dataset dimensions are 512
+ Dataset file : @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g17_rthiss_pair_contract_20260905/data/cifar4096.f32
+=========================================================
+ Param USE_PRIMITIVE_SHARED_QUERY_SHARED_BATCHING: 1
+ Param USE_PRIMITIVE_SHARED_QUERY_GLOBAL_BATCHING: 0
+ Param USE_PRIMITIVE_GLOBAL_QUERY_SHARED_BATCHING: 0
+ Param USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_BATCHING: 0
+ Param USE_PRIMITIVE_GLOBAL_QUERY_GLOBAL_NON_BATCHING: 0
+=========================================================
+ Param MAX_KD_LEVELS: 8
+ Param THREADS_TO_COPY: 8
+ Param USE_UNCOMPRESSED_MASK: 0
+ Param USE_PAGEABLE_MEMORY: 0
+ Param USE_FIXED_WORK_PER_BLOCK: 1
+ Param SORT_BY_WORKLOAD: 1
+ Param USE_CANDIDATE_POINT_COPY: 0
+ Param PINNED_MEMORY_OPT: 16777216
+=========================================================
+Time for initial setup of context and module is 228.371 (ms)
+
+Nodes in BVH tree is 256
+ Max points per node in BVH tree is approximately 16
+Node intersections are 1048576
+Require 0.01 GB memory for candidatePoints. Available 93.42 GB global memory
+
+Memory allocated for candidate points is 0.004 GiB
+
+
+Processing batch number - 0
+
+ Copying compressed maskMean = 0.031 SD = 0.013 CV = 41.284503
+Dimensions are reordered by highest variance
+
+Time to reorder is 0.011 seconds
+ Time for KD tree construction is 0.113 seconds
+ Data buffer setup time is 0.127 seconds
+ Performing intersection count test
+Time for intersection test is 0.008
+Intersection test done.
+ Time to allocate pinned memory 0.008124f
+
+ max intersections are 1048576 whereas current count is 1048576
+Cum Work Gen time is 0.001 seconds
+ TOTAL BLOCKS are : 256
+Total result words: 524288, Total queries: 1048576 N: 1048576
+
+Memory required: 0.002 GiB
+
+Cum CUDA TIME IS 0.081
+
+ Cum time to compress is 0.001
+Time to copy back the results is 0.072G17_CANONICAL_OUTPUT 262144
+
+All batches time is 0.162 seconds
+=============================================================
+
+ Total number of queries are 4096
+ Time to perform only intersection test = 0.008 seconds
+=============================================================
+
+ TOTAL NUMBER OF IDENTIFIED NEIGHBORS ARE 262144
+ Refine time is 0.155 seconds
+ RT time is 0.001 seconds
+TOTAL TIME (REFINE + QUERY) is 0.155 seconds
+
+TOTAL TIME INCLUDINF EVERYTHING - 0.582 seconds
+
+========= ERROR SUMMARY: 0 errors

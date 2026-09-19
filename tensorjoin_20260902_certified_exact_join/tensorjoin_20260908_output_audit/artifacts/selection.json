@@ -1,0 +1,16 @@
+{
+  "created": 1788836447.8571827,
+  "scores": {
+    "legacy": 0.583255798152297,
+    "cpu_single": 0.4740745908744025,
+    "gpu_radix": 0.14892517314021664
+  },
+  "chosen": "gpu_radix",
+  "challenger": "gpu_radix",
+  "rule": "Lowest arithmetic mean of process medians over 18 equally weighted method/cell combinations.",
+  "exploration_sha256": {
+    "explore_00.json": "fc2562ca5346932d0454040e8e44cff92a83950cdf12411f8c966758769107ba",
+    "explore_01.json": "065c5256f1f9dedf9a6eded630525855dc4fcd713106439d2bcf1351e36577a6"
+  },
+  "timing_freeze_sha256": "bff1c0d625075893986e4b29a88a97b670751f2abd1c46efc6890c9eb9a8dda8"
+}

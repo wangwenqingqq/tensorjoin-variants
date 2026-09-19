@@ -1,0 +1,44 @@
+{
+  "processes": [
+    {
+      "index": 0,
+      "label": "g1_p00_a1",
+      "order": "AC"
+    },
+    {
+      "index": 1,
+      "label": "g1_p01_a1",
+      "order": "CA"
+    },
+    {
+      "index": 2,
+      "label": "g1_p02_a1",
+      "order": "AC"
+    },
+    {
+      "index": 3,
+      "label": "g1_p03_a1",
+      "order": "CA"
+    },
+    {
+      "index": 4,
+      "label": "g1_p04_a1",
+      "order": "AC"
+    },
+    {
+      "index": 5,
+      "label": "g1_p05_a1",
+      "order": "CA"
+    },
+    {
+      "index": 6,
+      "label": "g1_p06_a1",
+      "order": "AC"
+    },
+    {
+      "index": 7,
+      "label": "g1_p07_a1",
+      "order": "CA"
+    }
+  ]
+}

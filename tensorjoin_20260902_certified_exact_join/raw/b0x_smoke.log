@@ -1,0 +1,16 @@
+CORRECTNESS {"ambiguous_fraction": 0.0007653236389160156, "ambiguous_pairs": 1605, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 0, "oracle_pairs": 512, "target": 1, "threshold_d2": 0.04491402423105895}
+CORRECTNESS {"ambiguous_fraction": 0.0034809112548828125, "ambiguous_pairs": 7300, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 1, "oracle_pairs": 4096, "target": 8, "threshold_d2": 0.07363405343530216}
+CORRECTNESS {"ambiguous_fraction": 0.012485980987548828, "ambiguous_pairs": 26185, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_mismatch": 1, "oracle_pairs": 32768, "target": 64, "threshold_d2": 0.14719462156999386}
+TIMING metric=dense_fp32 median_us=102.623999 p10_us=97.376001 p90_us=107.871997
+TIMING metric=dense_int8 median_us=48.880000 p10_us=47.049601 p90_us=50.710399
+TIMING metric=dense_fp64 median_us=2930.768013 p10_us=2925.507164 p90_us=2936.028862
+TIMING metric=baseline_fp32_e2e_s1 median_us=174.687997 p10_us=171.027198 p90_us=178.348795
+TIMING metric=candidate_e2e_s1 median_us=478.432000 p10_us=461.817610 p90_us=495.046389
+TIMING metric=candidate_scan_bounds_s1 median_us=229.952000
+TIMING metric=baseline_fp32_e2e_s8 median_us=165.232003 p10_us=163.452804 p90_us=167.011201
+TIMING metric=candidate_e2e_s8 median_us=617.455989 p10_us=608.943993 p90_us=625.967985
+TIMING metric=candidate_scan_bounds_s8 median_us=229.648001
+TIMING metric=baseline_fp32_e2e_s64 median_us=169.615999 p10_us=165.865603 p90_us=173.366395
+TIMING metric=candidate_e2e_s64 median_us=1611.552000 p10_us=1609.939241 p90_us=1613.164759
+TIMING metric=candidate_scan_bounds_s64 median_us=234.288000
+PROCESS_SUMMARY {"correctness_pass": false, "order": "AB", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0x_smoke.json", "process_id": 0}

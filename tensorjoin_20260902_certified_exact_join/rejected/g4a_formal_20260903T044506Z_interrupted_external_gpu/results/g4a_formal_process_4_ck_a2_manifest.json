@@ -1,0 +1,72 @@
+{
+  "admitted": false,
+  "attempt": 2,
+  "cache_path": null,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4a_dynamic_router_timing.py",
+    "--phase",
+    "formal",
+    "--process-id",
+    "4",
+    "--attempt",
+    "2",
+    "--order",
+    "CK",
+    "--warmups",
+    "20",
+    "--observations",
+    "200",
+    "--sustained-launches",
+    "1000"
+  ],
+  "experiment_id": "tensorjoin_20260903_g4a_dynamic_count_router",
+  "external_monitor_max_gpu_utilization_percent": 0,
+  "external_monitor_max_process_memory_mib": 0,
+  "foreign_rows": [
+    {
+      "gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1",
+      "pid": 3655544,
+      "process_name": "./sparse_n8",
+      "used_memory_mib": "656"
+    }
+  ],
+  "gpu0": {
+    "clocks.mem": "12481",
+    "clocks.sm": "2332",
+    "driver_version": "590.48.01",
+    "index": "0",
+    "memory.used": "828",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "111.53",
+    "power.limit": "600.00",
+    "pstate": "P0",
+    "utilization.gpu": "0",
+    "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"
+  },
+  "occupancy_log": "raw/g4a_formal_process_4_ck_a2_occupancy.jsonl",
+  "occupancy_log_sha256": "d1ad849fef1d58ae0c0e0572a36c6cee5c6e1afad9b1e605ce5a74f83ff4cb37",
+  "orchestrator_sha256": "170392c1bf03d94927b6354553991636fa8c67a12a572cba27c7d75c2de579ad",
+  "order": "CK",
+  "phase": "formal",
+  "postflight_compute_rows": [],
+  "preflight_log": "raw/g4a_formal_process_4_ck_a2_preflight.log",
+  "preflight_log_sha256": "9b11068599b0ea17d9b184335747d25033c0e2687fbeb8540c1af9f6159e82b1",
+  "process_id": 4,
+  "protocol_sha256": "29b0d3aa584f2337c04f947c7a50ffa0b57e943699385568344c0e332a07f0c1",
+  "raw_log": null,
+  "raw_log_sha256": null,
+  "result": null,
+  "result_sha256": null,
+  "returncode": null,
+  "runner_sha256": "fe7aaa92c7556e11b2a08e62815ce5189ff0ab677a16706f272ec097b20ba843",
+  "runner_was_launched": false,
+  "settings": {
+    "observations": 200,
+    "sustained_launches": 1000,
+    "warmups": 20
+  },
+  "status": "prelaunch_blocked",
+  "target_gpu_pids": [],
+  "wall_seconds": 1.3591797351837158
+}

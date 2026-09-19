@@ -1,0 +1,160 @@
+{
+  "bound_pad": 0.0001,
+  "cache_sha256": {
+    "audio_panns_2048d": "e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1",
+    "hsi_indian_pines_1984d": "b95402cec4fd6037fea32934b8b8170ab51c9baa866d7c392737c06b6398adb2",
+    "video_r3d18_512d": "132eb8b816cee384fbcf0c070a106a0a6a0162167ab8d4e71e03feb16c6c80ae"
+  },
+  "elapsed_s": 48.54715275764465,
+  "experiment_id": "tensorjoin_20260903_precision_cascade_f0",
+  "fp32_guard": 0.001,
+  "gate_pass": false,
+  "host": "gpu-host-8",
+  "modalities": {
+    "audio_panns_2048d": {
+      "gate_pass": false,
+      "shape": [
+        512,
+        4096,
+        2048
+      ],
+      "targets": {
+        "1": {
+          "actual_results_per_query": 7.025390625,
+          "bitwise_equal_pairs": 3597,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 3597,
+          "fp32_direct_reject_pairs": 0,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.679554565701559,
+          "fp64_refine_pairs": 7628,
+          "fp64_work_reduction": 1.4715521761929733,
+          "gap_d2": 2.1163398520896846e-13,
+          "gate_pass": false,
+          "int8_ambiguous_pairs": 11225,
+          "lower_distance_d2": 0.0,
+          "target_results_per_query": 1,
+          "threshold_d2": 1.0581699260448423e-13,
+          "upper_distance_d2": 2.1163398520896846e-13
+        },
+        "64": {
+          "actual_results_per_query": 64.01953125,
+          "bitwise_equal_pairs": 0,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 3182,
+          "fp32_direct_reject_pairs": 3459,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.052233480804909374,
+          "fp64_refine_pairs": 366,
+          "fp64_work_reduction": 19.1448087431694,
+          "gap_d2": 1.9014480365231456e-07,
+          "gate_pass": true,
+          "int8_ambiguous_pairs": 7007,
+          "lower_distance_d2": 0.15197266946330235,
+          "target_results_per_query": 64,
+          "threshold_d2": 0.15197276453570419,
+          "upper_distance_d2": 0.151972859608106
+        }
+      }
+    },
+    "hsi_indian_pines_1984d": {
+      "gate_pass": true,
+      "shape": [
+        512,
+        4096,
+        1984
+      ],
+      "targets": {
+        "1": {
+          "actual_results_per_query": 1.0,
+          "bitwise_equal_pairs": 0,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 149,
+          "fp32_direct_reject_pairs": 243,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.15879828326180256,
+          "fp64_refine_pairs": 74,
+          "fp64_work_reduction": 6.297297297297297,
+          "gap_d2": 3.356343541355278e-05,
+          "gate_pass": true,
+          "int8_ambiguous_pairs": 466,
+          "lower_distance_d2": 0.1294342525972209,
+          "target_results_per_query": 1,
+          "threshold_d2": 0.1294510343149277,
+          "upper_distance_d2": 0.12946781603263446
+        },
+        "64": {
+          "actual_results_per_query": 64.0,
+          "bitwise_equal_pairs": 0,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 4930,
+          "fp32_direct_reject_pairs": 5707,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.08024210981409426,
+          "fp64_refine_pairs": 928,
+          "fp64_work_reduction": 12.462284482758621,
+          "gap_d2": 6.106098216496214e-07,
+          "gate_pass": true,
+          "int8_ambiguous_pairs": 11565,
+          "lower_distance_d2": 0.26291302118419035,
+          "target_results_per_query": 64,
+          "threshold_d2": 0.26291332648910115,
+          "upper_distance_d2": 0.262913631794012
+        }
+      }
+    },
+    "video_r3d18_512d": {
+      "gate_pass": true,
+      "shape": [
+        512,
+        4096,
+        512
+      ],
+      "targets": {
+        "1": {
+          "actual_results_per_query": 1.0,
+          "bitwise_equal_pairs": 0,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 130,
+          "fp32_direct_reject_pairs": 191,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.021341463414634148,
+          "fp64_refine_pairs": 7,
+          "fp64_work_reduction": 46.857142857142854,
+          "gap_d2": 0.0002813056936183944,
+          "gate_pass": true,
+          "int8_ambiguous_pairs": 328,
+          "lower_distance_d2": 0.26514786825841963,
+          "target_results_per_query": 1,
+          "threshold_d2": 0.2652885211052288,
+          "upper_distance_d2": 0.265429173952038
+        },
+        "64": {
+          "actual_results_per_query": 64.0,
+          "bitwise_equal_pairs": 0,
+          "final_mismatch": 0,
+          "fp32_direct_accept_pairs": 10359,
+          "fp32_direct_reject_pairs": 15863,
+          "fp32_false_accepts": 0,
+          "fp32_false_rejects": 0,
+          "fp64_fraction_of_int8_ambiguous": 0.03888868526188469,
+          "fp64_refine_pairs": 1061,
+          "fp64_work_reduction": 25.714420358152687,
+          "gap_d2": 5.763430490746124e-06,
+          "gate_pass": true,
+          "int8_ambiguous_pairs": 27283,
+          "lower_distance_d2": 0.5667730657714593,
+          "target_results_per_query": 64,
+          "threshold_d2": 0.5667759474867047,
+          "upper_distance_d2": 0.56677882920195
+        }
+      }
+    }
+  },
+  "script_sha256": "6599d66775b20c152952542be2e2910e0fe050e2358657dcaea15d26d55c9436"
+}

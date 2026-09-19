@@ -1,0 +1,16 @@
+CORRECTNESS {"ambiguous_fraction": 0.0007653236389160156, "ambiguous_pairs": 1605, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 107, "keeper_mismatch": 0, "oracle_pairs": 512, "target": 1, "threshold_d2": 0.04491402423105895}
+CORRECTNESS {"ambiguous_fraction": 0.0034809112548828125, "ambiguous_pairs": 7300, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 418, "keeper_mismatch": 0, "oracle_pairs": 4096, "target": 8, "threshold_d2": 0.07363405343530216}
+CORRECTNESS {"ambiguous_fraction": 0.012485980987548828, "ambiguous_pairs": 26185, "candidate_duplicate_ids": 0, "candidate_mismatch": 0, "keeper_ambiguous_pairs": 993, "keeper_mismatch": 0, "oracle_pairs": 32768, "target": 64, "threshold_d2": 0.14719462156999386}
+TIMING metric=dense_fp32 median_us=105.344001 p10_us=100.940800 p90_us=109.747202
+TIMING metric=dense_int8 median_us=50.720001 p10_us=48.492800 p90_us=52.947201
+TIMING metric=dense_fp64 median_us=2935.520053 p10_us=2932.857680 p90_us=2938.182425
+TIMING metric=baseline_fp32_certified_e2e_s1 median_us=375.871986 p10_us=368.934387 p90_us=382.809585
+TIMING metric=candidate_e2e_s1 median_us=478.047997 p10_us=465.913588 p90_us=490.182406
+TIMING metric=candidate_scan_bounds_s1 median_us=226.719998
+TIMING metric=baseline_fp32_certified_e2e_s8 median_us=365.792006 p10_us=362.208003 p90_us=369.376010
+TIMING metric=candidate_e2e_s8 median_us=622.031987 p10_us=618.511975 p90_us=625.551999
+TIMING metric=candidate_scan_bounds_s8 median_us=225.375995
+TIMING metric=baseline_fp32_certified_e2e_s64 median_us=367.568001 p10_us=358.851191 p90_us=376.284811
+TIMING metric=candidate_e2e_s64 median_us=1603.311956 p10_us=1594.467151 p90_us=1612.156761
+TIMING metric=candidate_scan_bounds_s64 median_us=225.455999
+PROCESS_SUMMARY {"correctness_pass": true, "order": "AB", "output": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/results/b0y_smoke.json", "process_id": 0}

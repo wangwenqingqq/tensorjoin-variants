@@ -1,0 +1,11 @@
+--- upstream/params.h
++++ adapter/params.h
+@@ -17,7 +17,7 @@
+ #define BLOCKSIZE 256
+  
+ //Number of dimensions of the data (n)
+-#define GPUNUMDIM 100
++#define GPUNUMDIM 512
+ 
+ //Number of indexed dimensions (k)
+ #define NUMINDEXEDDIM 6

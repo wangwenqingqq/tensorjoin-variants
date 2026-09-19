@@ -1,0 +1,13 @@
+{"verified_layout": "original", "size": 32, "blocks": 20}
+{"verified_layout": "original", "size": 64, "blocks": 20}
+{"verified_layout": "original", "size": 128, "blocks": 20}
+{"verified_layout": "random", "size": 32, "blocks": 20}
+{"verified_layout": "random", "size": 64, "blocks": 19}
+{"verified_layout": "random", "size": 128, "blocks": 19}
+{"verified_layout": "pivot_sort", "size": 32, "blocks": 19}
+{"verified_layout": "pivot_sort", "size": 64, "blocks": 19}
+{"verified_layout": "pivot_sort", "size": 128, "blocks": 18}
+{"verified_layout": "kd_variance", "size": 32, "blocks": 16}
+{"verified_layout": "kd_variance", "size": 64, "blocks": 15}
+{"verified_layout": "kd_variance", "size": 128, "blocks": 16}
+{"pass_": true, "seconds": 89.80093336105347, "blocks": 221, "membership_checks": 1326, "bound_checks": 884, "selected_pair_evaluations": 1289568, "scope": "Independent sampled direct membership and FP64 interval QA; main census validates all block decisions."}

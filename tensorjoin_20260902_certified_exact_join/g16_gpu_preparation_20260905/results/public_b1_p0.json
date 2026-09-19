@@ -1,0 +1,41 @@
+{
+  "admitted": true,
+  "block": 1,
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g5_guarded_process.py",
+    "--label",
+    "g16_b1_p0_fp32_gpu_a0",
+    "--expected-result",
+    "g16_gpu_preparation_20260905/results/fp32_gpu_screen_g16_b1_p0_fp32_gpu_a0.json",
+    "--physical-gpu",
+    "2",
+    "--",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/run_fp32_gpu_norms.py",
+    "--phase",
+    "screen",
+    "--record-id",
+    "g16_b1_p0_fp32_gpu_a0"
+  ],
+  "correctness": {
+    "canonical_pair_count": 3926078,
+    "canonical_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "duplicate_pairs": 0,
+    "exact_contract_pass": true,
+    "expected_pair_count": 3926078,
+    "expected_raw_u64_sha256": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "invalid_pairs": 0,
+    "overflow_events": 0,
+    "self_pairs": 60000,
+    "sorted_output": true,
+    "symmetry_missing_pairs": 0
+  },
+  "guard_path": "results/g5_guard_g16_b1_p0_fp32_gpu_a0.json",
+  "method": "fp32_gpu",
+  "position": 0,
+  "public_seconds": 0.24321810199762695,
+  "result_path": "g16_gpu_preparation_20260905/results/fp32_gpu_screen_g16_b1_p0_fp32_gpu_a0.json",
+  "result_sha256": "287f741866099c072757b908801b890ecd74bbfcc02f57c6895bf2c7a7c5dfe1",
+  "returncode": 0
+}

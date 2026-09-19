@@ -1,0 +1,3 @@
+method,solver_steps,pca_ms,heuristic25_ms,direct25_ms,fm25_ms,fm_saving_vs_pca,scope
+F8,64,82.73520066237931,88.72538900080447,105.2490031652269,312.07971716260846,-2.7720307035468985,"One supplementary process; descriptive only, no primary confidence claim."
+F16,64,76.52916166504535,82.01402084038516,98.44273833247523,305.4510191650479,-2.9913023025386476,"One supplementary process; descriptive only, no primary confidence claim."

@@ -1,0 +1,17 @@
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h2b_p1_pedantic_correctness.py", line 872, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h2b_p1_pedantic_correctness.py", line 865, in main
+    cublas = CuBLAS()
+             ^^^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h2b_p1_pedantic_correctness.py", line 193, in __init__
+    self.library.cublasSetPointerMode.argtypes = [handle_type, ctypes.c_int]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 392, in __getattr__
+    func = self.__getitem__(name)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/ctypes/__init__.py", line 397, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: @TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/nvidia/cu13/lib/libcublas.so.13: undefined symbol: cublasSetPointerMode. Did you mean: 'cublasSetMathMode'?

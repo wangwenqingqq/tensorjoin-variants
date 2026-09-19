@@ -1,0 +1,9 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g16_gpu_preparation_20260905/src/validate_norms.py"]
+ENV {"CUDA_VISIBLE_DEVICES": "2", "G5_PHYSICAL_GPU": "2", "TRITON_CACHE_DIR": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/artifacts/g5_g16_norm_metadata_a0_triton_cache"}
+NORM_CASE {"name": "cifar60000", "n": 60000, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 3.060594459448485e-16}
+NORM_CASE {"name": "signed257", "n": 257, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 2.082967728885276e-16}
+NORM_CASE {"name": "zeros31", "n": 31, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 0.0}
+NORM_CASE {"name": "onehot129", "n": 129, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 0.0}
+NORM_CASE {"name": "cancellation31", "n": 31, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 0.0}
+NORM_CASE {"name": "subnormal31", "n": 31, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 0.0}
+NORM_CASE {"name": "mixed_exponents257", "n": 257, "norm_enclosure_violations": 0, "l2_upper_violations": 0, "all_pass": true, "max_center_relative_error": 2.918798558745864e-16}

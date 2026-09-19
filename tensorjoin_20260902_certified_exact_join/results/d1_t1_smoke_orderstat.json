@@ -1,0 +1,67 @@
+{
+  "actual_results_per_query": 7.025390625,
+  "bound_pad": 0.0001,
+  "capacity": 65536,
+  "correctness": {
+    "ambiguous_fraction": 0.005352497100830078,
+    "ambiguous_id_sha256": "897237c7b7131a482ddf0741c30e0121d6714f6e38eec2840958d960687c4e98",
+    "ambiguous_pairs": 11225,
+    "direct_accept_pairs": 0,
+    "direct_false_accepts": 0,
+    "duplicates": 0,
+    "final_id_sha256": "4216edc5ff95afd1dd0fca135bf1f22c9423ed932cffe6e65951b63b3a52911b",
+    "final_mismatch": 0,
+    "final_pairs": 3597,
+    "keeper_mismatch": 0,
+    "oracle_pairs": 3597,
+    "overflow_before_refine": 0,
+    "overflow_final": 0
+  },
+  "correctness_pass": true,
+  "experiment_id": "tensorjoin_20260902_panns_triton_d1",
+  "feature_cache_sha256": "e56eeec8a995e56f0bd858dac95bbf6532fb94a5ed06e0f1829ee3402a282bb1",
+  "fp32_distance_guard": 0.001,
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "metrics_us": {
+    "baseline": [
+      1482.208013534546,
+      1449.7920274734497,
+      1442.3999786376953,
+      1443.0400133132935,
+      1441.9840574264526
+    ],
+    "candidate": [
+      372.8640079498291,
+      361.7280125617981,
+      357.34400153160095,
+      354.97599840164185,
+      353.8239896297455
+    ]
+  },
+  "observations": 5,
+  "order": "AB",
+  "process_id": 0,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "script_sha256": "75af6c11e27f09cda55316a600727634ada94452a1a9ab7779b5f641504f79aa",
+  "shape": [
+    512,
+    4096,
+    2048
+  ],
+  "stress_hashes": [],
+  "stress_launches": 0,
+  "stress_pass": true,
+  "target_results_per_query": 1,
+  "threshold_d2": 0.0,
+  "timestamp_utc": "2026-09-02T15:59:22Z",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.6.0",
+  "validation_only": false,
+  "warmups": 2
+}

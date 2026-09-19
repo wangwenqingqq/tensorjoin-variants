@@ -1,0 +1,40 @@
+--- prior functions
++++ G19 explicit FP64 constants
+@@ -9,7 +9,7 @@
+     dots, norm_centers, norm_radii, norm_l2_upper,
+     result_ids, ambiguous_ids, counters,
+     lower_out, upper_out,
+-    row_start, column_start, threshold,
++    row_start, column_start, threshold: tl.constexpr,
+     N_: tl.constexpr, ROWS: tl.constexpr, COLS: tl.constexpr,
+     CAPACITY: tl.constexpr, GAMMA: tl.constexpr, ABS_DOT: tl.constexpr,
+     BLOCK: tl.constexpr, DUMP: tl.constexpr,
+@@ -41,8 +41,8 @@
+     if DUMP:
+         tl.store(lower_out + offset, lower, mask=inside_panel)
+         tl.store(upper_out + offset, upper, mask=inside_panel)
+-    accept = valid & (upper <= threshold)
+-    reject = valid & (lower > threshold)
++    accept = valid & (upper <= tl.full((), threshold, tl.float64))
++    reject = valid & (lower > tl.full((), threshold, tl.float64))
+     ambiguous = valid & ~(accept | reject)
+     accept_i = accept.to(tl.int32)
+     ambiguous_i = ambiguous.to(tl.int32)
+@@ -69,7 +69,7 @@
+     fp64_ids,
+     result_ids,
+     counters,
+-    threshold_d2,
++    threshold_d2: tl.constexpr,
+     N_: tl.constexpr,
+     K: tl.constexpr,
+     CAPACITY: tl.constexpr,
+@@ -91,7 +91,7 @@
+         )
+         delta = query_values - base_values
+         distance_d2 += tl.sum(delta * delta, axis=0)
+-    inside = distance_d2 <= threshold_d2
++    inside = distance_d2 <= tl.full((), threshold_d2, tl.float64)
+     counter_lane = tl.zeros((1,), dtype=tl.int32)
+     position = tl.atomic_add(counters + counter_lane, 1, mask=inside, sem="relaxed")
+     can_store = inside & (position < CAPACITY)

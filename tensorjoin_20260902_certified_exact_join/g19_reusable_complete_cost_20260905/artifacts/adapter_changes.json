@@ -1,0 +1,22 @@
+{
+  "hostCode.cpp": {
+    "before_sha256": "ed184b00ebffade172841830f7f15b02ad34695e04e512f8bc8730a29823dc7a",
+    "after_sha256": "4d577bff6642b57555249bb302db97a4fc36ca90d08ed15ba4c7a050ba8733db"
+  },
+  "utility_seq.cpp": {
+    "before_sha256": "11673d37510c5aa9d5c6f6111c8e96c7792f6c4d55fa5e7e981d85d1d1f35482",
+    "after_sha256": "455328cf75ff8faf8405f94b7533bc851cfd2078f35bfdd8829860c4329cb0f9"
+  },
+  "utility.cu": {
+    "before_sha256": "314ad953478be150a68c8dd54cca66b663a5526714d573b2c4178d6ede3c498f",
+    "after_sha256": "623a870ce1c07febb1633b66eb95d20648c0b5fe3c49ff6d9012b5d93b7725d5"
+  },
+  "g17_export.h": {
+    "before_sha256": "6a738481fa472c19ffd08000b3e137043cb7b3dc0abb5c6daa4a69a8c990c07e",
+    "after_sha256": "2ec63838fbc17dfd60dd493873c3a3d66df1d24336dd147912c80f5493312ff8"
+  },
+  "CMakeLists.txt": {
+    "before_sha256": "e21923945fefc908b244c4f23c5170120f232e451d575a088d416ce107bee76a",
+    "after_sha256": "27d5d321fc41fc93ae64e377cde613d65eec485a92f2724229aeea41f52522e7"
+  }
+}

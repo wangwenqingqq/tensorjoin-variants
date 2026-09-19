@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+x-amz-id-2: 2JPdtJinjcnholLbXFWq87LWcQwBtVPXfsVbMeGgxiTS2HokWZwg1UDDVu0507GZV5RL5dInLhbTKGXTCgs26EH8VAgGtoM5
+x-amz-request-id: G8WC82884YMB4CR4
+Date: Thu, 03 Sep 2026 05:23:18 GMT
+Last-Modified: Thu, 31 Aug 2017 12:17:27 GMT
+ETag: "2fc3c69ba0b7e6d31d25d031c1f04e6f-4"
+Accept-Ranges: bytes
+Content-Type: binary/octet-stream
+Content-Length: 26421880
+Server: AmazonS3
+

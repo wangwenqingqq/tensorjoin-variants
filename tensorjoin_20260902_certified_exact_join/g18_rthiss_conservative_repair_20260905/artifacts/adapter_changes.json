@@ -1,0 +1,19 @@
+{
+  "utility.cu": {
+    "before_sha256": "e8f578d7992d9dbbf8c22fd657e89bfadf86737e60ceb95e1fe67350795d75e7",
+    "after_sha256": "314ad953478be150a68c8dd54cca66b663a5526714d573b2c4178d6ede3c498f"
+  },
+  "hostCode.cpp": {
+    "before_sha256": "afcce8041dfa955ac18916a6317ae836c35e810adb45b8aa7441f793144cb066",
+    "after_sha256": "ed184b00ebffade172841830f7f15b02ad34695e04e512f8bc8730a29823dc7a"
+  },
+  "g17_export.h": {
+    "before_sha256": "7aae2e72cb2cbc1ca82fd37a24b4f050cfa04303005ad50c5b9c02e5682d6734",
+    "after_sha256": "6a738481fa472c19ffd08000b3e137043cb7b3dc0abb5c6daa4a69a8c990c07e"
+  },
+  "CMakeLists.txt": {
+    "before_sha256": "7807814fda1883343644d66e10acfd72f88c3bb03dd1e3e7a2f9f8a0e13cce0a",
+    "after_sha256": "e21923945fefc908b244c4f23c5170120f232e451d575a088d416ce107bee76a"
+  },
+  "cuda_kernel_bodies_after_predicate_unchanged": true
+}

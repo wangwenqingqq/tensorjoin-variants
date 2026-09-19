@@ -1,0 +1,51 @@
+{
+  "experiment_id": "tensorjoin_20260903_gpu_analytic_certificate_g3b_r1_adversarial",
+  "gate_pass": false,
+  "gpu0": {
+    "clocks.mem": "405",
+    "clocks.sm": "180",
+    "driver_version": "590.48.01",
+    "index": "0",
+    "memory.used": "14",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "34.57",
+    "power.limit": "600.00",
+    "pstate": "P8",
+    "utilization.gpu": "0",
+    "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"
+  },
+  "measurement_status": "adversarial_correctness_only_no_performance_claim",
+  "orchestrator_sha256": "b667dc70892b1b5d197fa872691429d8c953fd4f9d01cf836477d647b72a235d",
+  "performance_claim_allowed": false,
+  "record": {
+    "admitted": false,
+    "cache_path": "artifacts/g3b_triton_cache_adversarial_r1",
+    "candidate_cubin": null,
+    "candidate_cubin_self_consistent": false,
+    "candidate_cubin_sha256": null,
+    "command": [
+      "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+      "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3b_r1_adversarial.py"
+    ],
+    "external_monitor_max_gpu_utilization_percent": 1,
+    "external_monitor_max_process_memory_mib": 812,
+    "foreign_rows": [],
+    "label": "adversarial_r1",
+    "occupancy_log": "raw/g3b_safety_adversarial_r1_occupancy.jsonl",
+    "occupancy_log_sha256": "48aa276e38c415cb32dcd108b5e904954174a77f8e7c3237f172829ddaa2a9cb",
+    "postflight_compute_rows": [],
+    "preflight_log": "raw/g3b_safety_adversarial_r1_preflight.log",
+    "preflight_log_sha256": "d7ea7adc1b15c2025d990b985b3ca05bbcc188468a983f0fb53bc6ceaf518746",
+    "raw_log": "raw/g3b_safety_adversarial_r1.log",
+    "raw_log_sha256": "0b1f22d888234e93bf5c31cff1de580d9a73f20626f594cf64c741b6affb4c6a",
+    "result": "results/g3b_r1_adversarial.json",
+    "result_sha256": "98bb88ef3c43112c5b8152a4b37d3948933c7a23ff467418870a1df92ca52c42",
+    "returncode": 0,
+    "safety_pass": true,
+    "target_gpu_pids": [
+      3332677
+    ]
+  },
+  "runner_sha256": "5e1ccdb3b8fe8cf9d6e5c7e56ea3dcb76029324cdd0c8ea383a36d216d54891c",
+  "wall_seconds": 43.24222540855408
+}

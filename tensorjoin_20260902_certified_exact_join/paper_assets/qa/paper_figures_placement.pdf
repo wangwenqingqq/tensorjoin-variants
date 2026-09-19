@@ -1,0 +1,1419 @@
+%PDF-1.4
+%‚„œ”
+1 0 obj
+<<
+/Producer (pypdf)
+>>
+endobj
+2 0 obj
+<<
+/Type /Pages
+/Count 1
+/Kids [ 4 0 R ]
+>>
+endobj
+3 0 obj
+<<
+/Type /Catalog
+/Pages 2 0 R
+>>
+endobj
+4 0 obj
+<<
+/Contents 5 0 R
+/MediaBox [ 0 0 612 792 ]
+/Resources <<
+/Font <<
+/F1 6 0 R
+/F1-0 7 0 R
+/F1-1 8 0 R
+/F2 9 0 R
+/F2-0 10 0 R
+/F2-1 11 0 R
+>>
+/ProcSet [ /ImageB /ImageC /ImageI /PDF /Text ]
+>>
+/Rotate 0
+/Trans <<
+>>
+/Type /Page
+/Annots [ ]
+/Parent 2 0 R
+>>
+endobj
+5 0 obj
+<<
+/Length 16426
+>>
+stream
+q
+q
+1 0 0 1 0 0 cm  BT /F1 12 Tf 14.4 TL ET
+.12549 .129412 .141176 rg
+BT /F2 10 Tf 12 TL ET
+BT 1 0 0 1 51 770 Tm (Paper-assets placement QA - full 510 pt width) Tj T* ET
+.372549 .388235 .407843 rg
+BT /F1 7 Tf 8.4 TL ET
+BT 1 0 0 1 495.641 770 Tm (not manuscript prose) Tj T* ET
+.12549 .129412 .141176 rg
+BT /F1 7.2 Tf 8.64 TL ET
+BT 1 0 0 1 51 501 Tm (Figure 1. Certified routing concentrates high precision on the decision boundary, while a separately scoped scalable implementation establishes) Tj T* ET
+BT /F1 7.2 Tf 8.64 TL ET
+BT 1 0 0 1 51 492.2 Tm (external-system impact. Panels use different implementation scopes and do not constitute a shared-binary claim.) Tj T* ET
+BT /F1 7.2 Tf 8.64 TL ET
+BT 1 0 0 1 51 173 Tm (Figure 2. TensorJoin executes precision escalation as a dynamic exact query plan. Host-visible counts set the FP32 and FP64 launch extents; direct accepts) Tj T* ET
+BT /F1 7.2 Tf 8.64 TL ET
+BT 1 0 0 1 51 164.2 Tm (bypass later precision stages and join canonical reconstruction. Counts are from G5 P1.) Tj T* ET
+ 
+
+Q
+q
+1 0.0 0.0 1 51 520 cm
+0.0 0.0 510 220 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-0 12 Tf
+14.4 TL
+ET
+BT
+/F2-0 8.2 Tf
+9.84 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 14 203 Tm
+(\050a\051) Tj
+T*
+ET
+BT
+/F2-0 8.2 Tf
+9.84 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 29 203 Tm
+(Exact precision funnel \055 audited G5 mechanism) Tj
+T*
+ET
+BT
+/F2-0 8.2 Tf
+9.84 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 301 203 Tm
+(\050b\051) Tj
+T*
+ET
+BT
+/F2-0 8.2 Tf
+9.84 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 316 203 Tm
+(Full public latency \055 separate G2B system path) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.55 w
+n
+289 30 m
+289 207 l
+S
+0.862745 0.933333 0.972549 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+29 150 m
+267 150 l
+269.2112 150 271 151.7888 271 154 c
+271 176 l
+271 178.2112 269.2112 180 267 180 c
+29 180 l
+26.7888 180 25 178.2112 25 176 c
+25 154 l
+25 151.7888 26.7888 150 29 150 c
+h
+B*
+BT
+/F2-0 7.8 Tf
+9.36 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 97.2844 167.5 Tm
+(Stage 1  INT8 Tensor Cores) Tj
+T*
+ET
+BT
+/F1-0 6.9 Tf
+8.28 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 118.8509 157 Tm
+(1\056800B upper pairs) Tj
+T*
+ET
+1 0.941176 0.796078 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+65 107 m
+231 107 l
+233.2112 107 235 108.7888 235 111 c
+235 133 l
+235 135.2112 233.2112 137 231 137 c
+65 137 l
+62.7888 137 61 135.2112 61 133 c
+61 111 l
+61 108.7888 62.7888 107 65 107 c
+h
+B*
+BT
+/F2-0 7.8 Tf
+9.36 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 106.3831 124.5 Tm
+(Stage 2  certified FP32) Tj
+T*
+ET
+BT
+/F1-0 6.9 Tf
+8.28 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 99.0997 114 Tm
+(1\054827\054007 pairs \0500\0561015\045 of all\051) Tj
+T*
+ET
+0.898039 0.960784 0.984314 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+99 64 m
+197 64 l
+199.2112 64 201 65.7888 201 68 c
+201 90 l
+201 92.2112 199.2112 94 197 94 c
+99 94 l
+96.7888 94 95 92.2112 95 90 c
+95 68 l
+95 65.7888 96.7888 64 99 64 c
+h
+B*
+BT
+/F2-0 7.8 Tf
+9.36 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 111.5818 81.5 Tm
+(Stage 3  exact FP64) Tj
+T*
+ET
+BT
+/F1-0 6.9 Tf
+8.28 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 101.977 71 Tm
+(1\054734 pairs \0500\056000096\045 of all\051) Tj
+T*
+ET
+0.901961 0.623529 0 RG
+0.901961 0.623529 0 rg
+1.15 w
+n
+148 149 m
+148 138 l
+S
+n
+148 138 m
+150.398 141.5692 l
+145.602 141.5692 l
+h
+f*
+BT
+/F1-0 6.2 Tf
+7.44 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 153 141.5 Tm
+(0\0561015\045 escalate) Tj
+T*
+ET
+0.901961 0.623529 0 RG
+0.901961 0.623529 0 rg
+1.15 w
+n
+148 106 m
+148 95 l
+S
+n
+148 95 m
+150.398 98.56923 l
+145.602 98.56923 l
+h
+f*
+BT
+/F1-0 6.2 Tf
+7.44 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 153 98.5 Tm
+(0\0560949\045 of Stage 2) Tj
+T*
+ET
+0.866667 0.952941 0.917647 rg
+0 0.619608 0.45098 RG
+0.7 w
+n
+75 31 m
+221 31 l
+222.6584 31 224 32.3416 224 34 c
+224 51 l
+224 52.6584 222.6584 54 221 54 c
+75 54 l
+73.3416 54 72 52.6584 72 51 c
+72 34 l
+72 32.3416 73.3416 31 75 31 c
+h
+B*
+BT
+/F2-0 7.5 Tf
+9 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 98.18125 39.3 Tm
+(3\054926\054078 exact directed IDs) Tj
+T*
+ET
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+1.15 w
+n
+148 63 m
+148 55 l
+S
+n
+148 55 m
+150.2307 58.32021 l
+145.7693 58.32021 l
+h
+f*
+BT
+/F1-0 5.9 Tf
+7.08 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 95.53425 21.5 Tm
+(Exact counts\073 box widths are schematic\056) Tj
+T*
+ET
+BT
+/F1-0 6.8 Tf
+8.16 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 299 161 Tm
+(FaSTED) Tj
+T*
+ET
+0.898039 0.898039 0.898039 rg
+0.12549 0.129412 0.141176 RG
+0.55 w
+n
+347 158 4.89216 11 re
+B*
+q
+n
+347 158 4.89216 11 re
+W*
+n
+0.333333 0.333333 0.333333 RG
+0.45 w
+n
+336 158 m
+347 169 l
+S
+n
+341 158 m
+352 169 l
+S
+n
+346 158 m
+357 169 l
+S
+n
+351 158 m
+362 169 l
+S
+n
+356 158 m
+367 169 l
+S
+n
+361 158 m
+372 169 l
+S
+Q
+BT
+/F1-0 6.5 Tf
+7.8 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 355.8922 160.5 Tm
+(0\056229 s) Tj
+T*
+ET
+BT
+/F1-0 5.9 Tf
+7.08 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 361 149 Tm
+(approx\056\072 598 FN \053 1\054130 FP) Tj
+T*
+ET
+BT
+/F2-0 6.8 Tf
+8.16 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 299 129 Tm
+(TensorJoin) Tj
+T*
+ET
+0 0.447059 0.698039 rg
+0.12549 0.129412 0.141176 RG
+0.55 w
+n
+347 126 54.65526 11 re
+B*
+BT
+/F2-0 6.5 Tf
+7.8 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 405.6553 128.5 Tm
+(0\056926 s) Tj
+T*
+ET
+BT
+/F1-0 6.8 Tf
+8.16 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 299 97 Tm
+(MiSTIC) Tj
+T*
+ET
+0.337255 0.705882 0.913725 rg
+0.12549 0.129412 0.141176 RG
+0.55 w
+n
+347 94 112.8186 11 re
+B*
+BT
+/F1-0 6.5 Tf
+7.8 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 463.8186 96.5 Tm
+(4\056732 s) Tj
+T*
+ET
+BT
+/F1-0 5.9 Tf
+7.08 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 402 85 Tm
+(5\056083x slower \1335\056030\054 5\056133\135) Tj
+T*
+ET
+BT
+/F1-0 6.8 Tf
+8.16 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 299 65 Tm
+(GDS\055Join) Tj
+T*
+ET
+0.466667 0.466667 0.466667 rg
+0.12549 0.129412 0.141176 RG
+0.55 w
+n
+347 62 142.6624 11 re
+B*
+BT
+/F1-0 6.5 Tf
+7.8 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 469 64.5 Tm
+(10\056928 s) Tj
+T*
+ET
+BT
+/F1-0 5.9 Tf
+7.08 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 402 53 Tm
+(11\056783x slower \13311\056716\054 11\056846\135) Tj
+T*
+ET
+0.12549 0.129412 0.141176 RG
+0.55 w
+n
+347 39 m
+493 39 l
+S
+n
+347 39 m
+347 36 l
+S
+BT
+/F1-0 5.8 Tf
+6.96 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 342.969 27.5 Tm
+(0\0562) Tj
+T*
+ET
+n
+404.3909 39 m
+404.3909 36 l
+S
+BT
+/F1-0 5.8 Tf
+6.96 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 402.7785 27.5 Tm
+(1) Tj
+T*
+ET
+n
+461.7817 39 m
+461.7817 36 l
+S
+BT
+/F1-0 5.8 Tf
+6.96 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 460.1693 27.5 Tm
+(5) Tj
+T*
+ET
+n
+486.4986 39 m
+486.4986 36 l
+S
+BT
+/F1-0 5.8 Tf
+6.96 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 483.2738 27.5 Tm
+(10) Tj
+T*
+ET
+BT
+/F1-0 6.2 Tf
+7.44 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 359.7019 17 Tm
+(median latency \050s\054 log scale\073 lower is better\051) Tj
+T*
+ET
+0.956863 0.964706 0.968627 rg
+n
+0 0 510 12 re
+f*
+BT
+/F2-0 5.8 Tf
+6.96 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 115.6057 3.3 Tm
+(Evidence boundary\072 \050a\051 audited G5 router\073 \050b\051 separate G2B implementation \055 no shared\055binary claim\056) Tj
+T*
+ET
+Q
+
+Q
+q
+1 0.0 0.0 1 51 210 cm
+0.0 0.0 510 234 re
+W
+n
+1 0 0 1 0 0 cm
+BT
+/F1-1 12 Tf
+14.4 TL
+ET
+BT
+/F2-1 9 Tf
+10.8 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 14 219 Tm
+(Executable exact query plan\072 actual populations shrink before precision escalates) Tj
+T*
+ET
+0.956863 0.964706 0.968627 rg
+0.721569 0.741176 0.764706 RG
+0.55 w
+n
+15.5 186 m
+494.5 186 l
+495.882 186 497 187.118 497 188.5 c
+497 207.5 l
+497 208.882 495.882 210 494.5 210 c
+15.5 210 l
+14.118 210 13 208.882 13 207.5 c
+13 188.5 l
+13 187.118 14.118 186 15.5 186 c
+h
+B*
+BT
+/F2-1 6.4 Tf
+7.68 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 20 199 Tm
+(GPU HBM) Tj
+T*
+ET
+BT
+/F1-1 6.4 Tf
+7.68 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 73 199 Tm
+(X\072 60\054000 x 512 FP32) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+n
+181 190 m
+181 206 l
+S
+BT
+/F1-1 6.4 Tf
+7.68 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 191 199 Tm
+(Q\072 INT8 \053 per\055vector scale\057error) Tj
+T*
+ET
+n
+352 190 m
+352 206 l
+S
+BT
+/F1-1 6.4 Tf
+7.68 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 362 199 Tm
+(ID buffers \053 six counters) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 194.464 188.7 Tm
+(fixed\055capacity buffers persist across 108 batches) Tj
+T*
+ET
+0.956863 0.964706 0.968627 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+16.5 87 m
+84.5 87 l
+86.4348 87 88 88.5652 88 90.5 c
+88 170.5 l
+88 172.4348 86.4348 174 84.5 174 c
+16.5 174 l
+14.5652 174 13 172.4348 13 170.5 c
+13 90.5 l
+13 88.5652 14.5652 87 16.5 87 c
+h
+B*
+BT
+/F2-1 7.5 Tf
+9 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 23.095 160 Tm
+(Plan \053 quantize) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.4 w
+n
+18 154 m
+83 154 l
+S
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 23.92187 142 Tm
+(440\054391 upper tiles) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 34.51875 131.8 Tm
+(tile\072 64 x 64) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 36.42813 121.6 Tm
+(K step\072 64) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 27.74375 111.4 Tm
+(4\054096 tiles\057batch) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 33.475 101.2 Tm
+(108 batches) Tj
+T*
+ET
+0.862745 0.933333 0.972549 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+99.5 87 m
+217.5 87 l
+219.4348 87 221 88.5652 221 90.5 c
+221 170.5 l
+221 172.4348 219.4348 174 217.5 174 c
+99.5 174 l
+97.5652 174 96 172.4348 96 170.5 c
+96 90.5 l
+96 88.5652 97.5652 87 99.5 87 c
+h
+B*
+BT
+/F2-1 7.5 Tf
+9 TL
+ET
+0 0.447059 0.698039 rg
+BT
+1 0 0 1 114.9437 160 Tm
+(Stage 1 \055 INT8 certificate) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.4 w
+n
+101 154 m
+216 154 l
+S
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 118.125 142 Tm
+(Q\137i\13364x512\135 x Q\137j\136T\133512x64\135) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 121.5062 131.8 Tm
+(INT32 TC score S8\13364x64\135) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 126.0219 121.6 Tm
+(analytic interval \133L8\054U8\135) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 134.525 111.4 Tm
+(accept 1\054278\054504) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 130.0094 101.2 Tm
+(reject 1\054796\054924\054489) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 128.4469 91 Tm
+(ambiguous 1\054827\054007) Tj
+T*
+ET
+1 0.941176 0.796078 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+232.5 87 m
+318.5 87 l
+320.4348 87 322 88.5652 322 90.5 c
+322 170.5 l
+322 172.4348 320.4348 174 318.5 174 c
+232.5 174 l
+230.5652 174 229 172.4348 229 170.5 c
+229 90.5 l
+229 88.5652 230.5652 87 232.5 87 c
+h
+B*
+BT
+/F2-1 7.5 Tf
+9 TL
+ET
+0.603922 0.403922 0 rg
+BT
+1 0 0 1 240.6962 160 Tm
+(Stage 2 \055 FP32 filter) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.4 w
+n
+234 154 m
+317 154 l
+S
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 253.9563 142 Tm
+(input 1\054827\054007) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 237.1125 131.8 Tm
+(squared\055distance \133L32\054U32\135) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 254.1312 121.6 Tm
+(accept 713\054664) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 253.0906 111.4 Tm
+(reject 1\054111\054609) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 255.8719 101.2 Tm
+(residual 1\054734) Tj
+T*
+ET
+0.898039 0.960784 0.984314 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+333.5 87 m
+393.5 87 l
+395.4348 87 397 88.5652 397 90.5 c
+397 170.5 l
+397 172.4348 395.4348 174 393.5 174 c
+333.5 174 l
+331.5652 174 330 172.4348 330 170.5 c
+330 90.5 l
+330 88.5652 331.5652 87 333.5 87 c
+h
+B*
+BT
+/F2-1 7.5 Tf
+9 TL
+ET
+0 0.447059 0.698039 rg
+BT
+1 0 0 1 337.865 160 Tm
+(Stage 3 \055 FP64) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.4 w
+n
+335 154 m
+392 154 l
+S
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 348.0375 142 Tm
+(input 1\054734) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 350.2219 131.8 Tm
+(exact d\1362) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 348.2125 121.6 Tm
+(accept 871) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 349.7781 111.4 Tm
+(reject 863) Tj
+T*
+ET
+0.866667 0.952941 0.917647 rg
+0.12549 0.129412 0.141176 RG
+0.7 w
+n
+408.5 87 m
+493.5 87 l
+495.4348 87 497 88.5652 497 90.5 c
+497 170.5 l
+497 172.4348 495.4348 174 493.5 174 c
+408.5 174 l
+406.5652 174 405 172.4348 405 170.5 c
+405 90.5 l
+405 88.5652 406.5652 87 408.5 87 c
+h
+B*
+BT
+/F2-1 7.5 Tf
+9 TL
+ET
+0 0.619608 0.45098 rg
+BT
+1 0 0 1 420.3737 160 Tm
+(Canonical output) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.4 w
+n
+410 154 m
+492 154 l
+S
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 422.6844 142 Tm
+(1\054993\054039 upper IDs) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 425.6469 131.8 Tm
+(mirror off\055diagonal) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 427.4625 121.6 Tm
+(\053 60\054000 self IDs) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 418.0844 111.4 Tm
+(D2H concatenate \053 sort) Tj
+T*
+ET
+BT
+/F1-1 6.25 Tf
+7.5 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 423.2063 101.2 Tm
+(3\054926\054078 exact IDs) Tj
+T*
+ET
+0.12549 0.129412 0.141176 RG
+0.12549 0.129412 0.141176 rg
+0.9 w
+n
+88 136 m
+92 136 l
+S
+n
+92 136 m
+89.01181 138.0077 l
+89.01181 133.9923 l
+h
+f*
+0.901961 0.623529 0 RG
+0.901961 0.623529 0 rg
+1.15 w
+n
+221 136 m
+225 136 l
+S
+n
+225 136 m
+221.8458 138.1192 l
+221.8458 133.8808 l
+h
+f*
+0.901961 0.623529 0 RG
+0.901961 0.623529 0 rg
+1.15 w
+n
+322 136 m
+326 136 l
+S
+n
+326 136 m
+322.8458 138.1192 l
+322.8458 133.8808 l
+h
+f*
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+1 w
+n
+397 136 m
+401 136 l
+S
+n
+401 136 m
+397.8458 138.1192 l
+397.8458 133.8808 l
+h
+f*
+BT
+/F2-1 5.7 Tf
+6.84 TL
+ET
+0.603922 0.403922 0 rg
+BT
+1 0 0 1 202.2569 178.2 Tm
+(host count reads set the two dynamic launch extents) Tj
+T*
+ET
+0 0.619608 0.45098 RG
+1.05 w
+n
+158.5 78 m
+398 78 l
+S
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+1.05 w
+n
+398 78 m
+403 102 l
+S
+n
+403 102 m
+400.4251 99.48409 l
+404.356 98.66515 l
+h
+f*
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+0.9 w
+n
+158.5 87 m
+158.5 78 l
+S
+n
+158.5 78 m
+160.2846 80.65617 l
+156.7154 80.65617 l
+h
+f*
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+0.9 w
+n
+275.5 87 m
+275.5 78 l
+S
+n
+275.5 78 m
+277.2846 80.65617 l
+273.7154 80.65617 l
+h
+f*
+0 0.619608 0.45098 RG
+0 0.619608 0.45098 rg
+0.9 w
+n
+363.5 87 m
+363.5 78 l
+S
+n
+363.5 78 m
+365.2846 80.65617 l
+361.7154 80.65617 l
+h
+f*
+BT
+/F1-1 5.8 Tf
+6.96 TL
+ET
+0 0.619608 0.45098 rg
+BT
+1 0 0 1 258.5322 70 Tm
+(accepted ID chunks) Tj
+T*
+ET
+0.721569 0.741176 0.764706 RG
+0.55 w
+n
+13 64 m
+497 64 l
+S
+BT
+/F2-1 6.7 Tf
+8.04 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 41.3813 52.5 Tm
+(PLAN) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 23.4212 42 Tm
+(host\057GPU preparation) Tj
+T*
+ET
+BT
+/F2-1 6.7 Tf
+8.04 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 144.1687 52.5 Tm
+(CERTIFY) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 127.7644 42 Tm
+(Tensor Cores \053 epilogue) Tj
+T*
+ET
+BT
+/F2-1 6.7 Tf
+8.04 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 263.775 52.5 Tm
+(FILTER) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 251.6944 42 Tm
+(CUDA cores\054 FP32) Tj
+T*
+ET
+BT
+/F2-1 6.7 Tf
+8.04 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 351.2156 52.5 Tm
+(REFINE) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 339.6944 42 Tm
+(CUDA cores\054 FP64) Tj
+T*
+ET
+BT
+/F2-1 6.7 Tf
+8.04 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 425.3189 52.5 Tm
+(RECONSTRUCT) Tj
+T*
+ET
+BT
+/F1-1 5.6 Tf
+6.72 TL
+ET
+0.372549 0.388235 0.407843 rg
+BT
+1 0 0 1 431.47 42 Tm
+(D2H \053 host sort) Tj
+T*
+ET
+0.956863 0.964706 0.968627 rg
+n
+0 0 510 28 re
+f*
+BT
+/F1-1 5.9 Tf
+7.08 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 122.6866 16 Tm
+(All populations are measured in the exact G5 P1 full\055scale run\073 compilation is outside the public timer\056) Tj
+T*
+ET
+BT
+/F2-1 5.9 Tf
+7.08 TL
+ET
+0.12549 0.129412 0.141176 rg
+BT
+1 0 0 1 99.24885 6.2 Tm
+(Only unresolved IDs advance\073 direct accepts bypass later precision stages and enter canonical reconstruction\056) Tj
+T*
+ET
+Q
+
+endstream
+endobj
+6 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+7 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+8 0 obj
+<<
+/BaseFont /Helvetica
+/Encoding /WinAnsiEncoding
+/Name /F1
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+9 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+10 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+11 0 obj
+<<
+/BaseFont /Helvetica-Bold
+/Encoding /WinAnsiEncoding
+/Name /F2
+/Subtype /Type1
+/Type /Font
+>>
+endobj
+xref
+0 12
+0000000000 65535 f 
+0000000015 00000 n 
+0000000054 00000 n 
+0000000113 00000 n 
+0000000162 00000 n 
+0000000433 00000 n 
+0000016912 00000 n 
+0000017019 00000 n 
+0000017126 00000 n 
+0000017233 00000 n 
+0000017345 00000 n 
+0000017458 00000 n 
+trailer
+<<
+/Size 12
+/Root 3 0 R
+/Info 1 0 R
+>>
+startxref
+17571
+%%EOF

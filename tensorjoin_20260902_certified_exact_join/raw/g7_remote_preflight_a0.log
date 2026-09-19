@@ -1,0 +1,105 @@
+HOST
+gpu-host-8
+root
+2026-09-04T06:51:50+00:00
+WORKSPACE
+drwxrws---+ 20 root root 12288 Sep  3 18:40 @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join
+USERS
+GPU
+index, uuid, name, driver_version, memory.used [MiB], utilization.gpu [%]
+0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 52768 MiB, 0 %
+1, GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %
+2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %
+3, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %
+4, GPU-863c06a5-9f33-0265-b098-013fa840d5db, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 25782 MiB, 0 %
+5, GPU-a1e0baba-3982-4538-6540-2b013a1adf49, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 25782 MiB, 0 %
+6, GPU-865ae1f0-780e-d04c-5ec3-4deccea65f82, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 25782 MiB, 0 %
+7, GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 25782 MiB, 0 %
+pid, gpu_uuid, used_gpu_memory [MiB], process_name
+905167, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 52746 MiB, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python
+905489, GPU-863c06a5-9f33-0265-b098-013fa840d5db, 25760 MiB, @EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python
+905490, GPU-a1e0baba-3982-4538-6540-2b013a1adf49, 25760 MiB, @EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python
+905491, GPU-865ae1f0-780e-d04c-5ec3-4deccea65f82, 25760 MiB, @EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python
+905492, GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, 25760 MiB, @EXTERNAL_DATA_ROOT@/lzh/eec_moe_icassp2027/envs/lingbot/bin/python
+TOOLS
+/usr/local/bin/nvcc
+/usr/bin/cmake
+/usr/bin/git
+/usr/bin/ninja
+Copyright (c) 2005-2025 NVIDIA Corporation
+Built on Tue_Dec_16_07:23:41_PM_PST_2025
+Cuda compilation tools, release 13.1, V13.1.115
+Build cuda_13.1.r13.1/compiler.37061995_0
+OPTIX
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/optix_sm120_attempt.txt
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/rtspatial_sm120_optix75_cuda13.patch
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/rtspatial_blackwell_optix91.patch
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/optix_headers.txt
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/optix_dev_9_1_commit.txt
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/rtspatial_optix91_sm120_optixir.patch
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/rtspatial_cuda13_optix75_compat.patch
+@TENSORJOIN_ROOT@/RT-TIDE/provenance/rtspatial_optix91_sm120.patch
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q1_k10/pca2_rt_case/fused_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q1_k10/pca2_rt_case/rt_probe_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_alpha0.5/fused_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_alpha0.5/fused_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_alpha0.5/rt_probe_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_alpha0.5/rt_probe_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_rt_case/fused_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_rt_case/rt_probe_batch1000000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_rt_case/rt_probe_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q32_k10/pca2_rt_case/fused_batch1000000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_alpha0.5/fused_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_alpha0.5/rt_probe_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_rt_case/fused_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_rt_case/rt_probe_batch100000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_rt_case/fused_batch10000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_base900k_delta100k_q32_k10/pca2_rt_case/rt_probe_batch10000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q1_k10/pca2_rt_case/rt_probe_batch1000000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/results/sift1m_pool1m_q1_k10/pca2_rt_case/fused_batch1000000_optix91_sm120.json
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_7_types.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_stack_size.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_host.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_types.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_function_table.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_stubs.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_device.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_7_device.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_7_host.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_denoiser_tiling.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix/include/optix_function_table_definition.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_micromap.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_stack_size.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_host.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_types.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_function_table.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_stubs.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_device.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_denoiser_tiling.h
+@TENSORJOIN_ROOT@/RT-TIDE/deps/optix-9.1/include/optix_function_table_definition.h
+@TENSORJOIN_ROOT@/RT-TIDE/build/rt-delta-probe-optix91-sm120
+@TENSORJOIN_ROOT@/RT-TIDE/build/rtspatial-optix91-sm120
+@TENSORJOIN_ROOT@/RT-TIDE/build/manual-optix91
+@TENSORJOIN_ROOT@/RT-TIDE/build/manual-optix91/test.optixir
+@TENSORJOIN_ROOT@/RT-TIDE/build/rt-tide-fused-probe-optix91-sm120
+@TENSORJOIN_ROOT@/RT-TIDE/build/rtspatial-optix91-sm120-v2
+@TENSORJOIN_ROOT@/RT-TIDE/src/RTSpatial/cmake/FindOptiX.cmake
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_v2_build.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_v2_rebuild_fastmath.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_v2_rebuild3.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_one_debug2.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_one_fastmath.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rt_delta_probe_optix91_sm120_cmake.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_v2_cmake.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rt_tide_fused_probe_optix91_sm120_cmake.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_v2_rebuild_sm.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_build.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rtspatial_optix91_sm120_one_debug3.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rt_tide_fused_probe_optix91_sm120_build.log
+@TENSORJOIN_ROOT@/RT-TIDE/logs/rt_tide_fused_probe_optix91_sm120_rebuild.log
+	libnvoptix.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnvoptix.so.1
+ENV

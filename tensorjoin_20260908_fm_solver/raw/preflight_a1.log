@@ -1,0 +1,9 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/preflight.py"]
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/preflight.py", line 112, in <module>
+    try:main()
+        ^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/preflight.py", line 63, in main
+    assert set(used.tolist())<={8,16,32}
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

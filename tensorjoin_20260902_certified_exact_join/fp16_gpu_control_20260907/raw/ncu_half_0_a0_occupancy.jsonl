@@ -1,0 +1,2 @@
+{"time": 1788796187.6741033, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P8, 29, 35.63, 180, 405, 14, 0", "processes": []}
+{"time": 1788796188.8304777, "phase": "quiescence", "gpu": "2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, P0, 30, 43.00, 705, 12481, 646, 2", "processes": [["GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245", "548489", "@EXTERNAL_DATA_ROOT@/xxxa-venv/bin/python", "620"]]}

@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/validate_control_r2.py", "--label", "gpu0_full_a2", "--mode", "full"]
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_gpu_control_20260907/results/gpu0_full_a2.json"}

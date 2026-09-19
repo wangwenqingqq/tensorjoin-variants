@@ -1,0 +1,69 @@
+{
+  "experiment_id": "tensorjoin_20260903_g2b_public_formal",
+  "gpu0": {
+    "clocks.mem": "405",
+    "clocks.sm": "180",
+    "driver_version": "590.48.01",
+    "index": "0",
+    "memory.used": "14",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "35.08",
+    "power.limit": "600.00",
+    "pstate": "P8",
+    "utilization.gpu": "0",
+    "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"
+  },
+  "host": "gpu-host-8",
+  "lock_path": "@TENSORJOIN_ROOT@/.tensorjoin_gpu0_campaign.lock",
+  "max_contamination_attempts_per_slot": 3,
+  "mode": "fasted-validation",
+  "monitor_interval_seconds": 0.25,
+  "orders": null,
+  "protocol_sha256": "1f470cb29aa589975b8bde367e5afa086d60eff7e4495bbf5402e0d11c874896",
+  "quiescence_seconds_before_each_process": 30.0,
+  "records": [
+    {
+      "admitted": false,
+      "attempt": 0,
+      "command": [
+        "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+        "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g2b_fasted_public.py",
+        "--record-id",
+        "adaptercheck",
+        "--phase",
+        "validation"
+      ],
+      "contaminated": true,
+      "external_monitor_max_gpu_utilization_percent": 1,
+      "external_monitor_max_process_memory_mib": 552,
+      "failure": "process failure, contamination, or missing result",
+      "foreign_rows": [
+        {
+          "gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1",
+          "pid": 3147714,
+          "process_name": "[No data]",
+          "used_memory_mib": "552"
+        }
+      ],
+      "method": "fasted",
+      "occupancy_log": "raw/g2b_public_fasted_validation_occupancy.jsonl",
+      "occupancy_log_sha256": "ca1027a1794677fda4f5636e51878f6e94f519e56d13beddfc716d1d2aeb3764",
+      "phase": "validation",
+      "position": null,
+      "postflight_compute_rows": [],
+      "preflight_log": "raw/g2b_public_fasted_validation_preflight.log",
+      "preflight_log_sha256": "b2a8b681ae27494e08ef419711183b196249d9323e2ddd59e503d19d5b348309",
+      "raw_log": "raw/g2b_public_fasted_validation.log",
+      "raw_log_sha256": "a9173e85a2e2afbb251b5a32297e1ce9d6b00bd5231076a74d96a49fa63cd392",
+      "record_id": "adaptercheck",
+      "returncode": -15,
+      "round": null,
+      "target_gpu_pids": [
+        3147714
+      ]
+    }
+  ],
+  "runner_sha256": "de03b6efcbeca9b8534c3bd8a5485918eae6defeb764ed481d424d69de8fa4f3",
+  "status": "validation_failed",
+  "wall_seconds": 33.085694789886475
+}

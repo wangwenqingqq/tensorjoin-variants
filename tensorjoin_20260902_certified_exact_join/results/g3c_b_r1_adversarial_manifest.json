@@ -1,0 +1,54 @@
+{
+  "experiment_id": "tensorjoin_20260903_g3c_b_r1_gpu_cascade_adversarial",
+  "gate_pass": true,
+  "gpu0": {
+    "clocks.mem": "405",
+    "clocks.sm": "180",
+    "driver_version": "590.48.01",
+    "index": "0",
+    "memory.used": "14",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "34.60",
+    "power.limit": "600.00",
+    "pstate": "P8",
+    "utilization.gpu": "0",
+    "uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1"
+  },
+  "measurement_status": "adversarial_correctness_only_no_performance_claim",
+  "orchestrator_sha256": "a9153c66415e663031a284e8ef344920f88f4a06aa84310c671ecdf7fb89d25d",
+  "performance_claim_allowed": false,
+  "record": {
+    "admitted": true,
+    "cache_path": "artifacts/g3b_triton_cache_g3c_b_r1_adversarial",
+    "command": [
+      "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+      "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3c_b_r1_adversarial.py"
+    ],
+    "external_monitor_max_gpu_utilization_percent": 3,
+    "external_monitor_max_process_memory_mib": 878,
+    "foreign_rows": [],
+    "g3b_cubin": "artifacts/g3b_triton_cache_g3c_b_r1_adversarial/2L2IIN3WH762RL77INI7ERIWPV65JNRNE5Q7DJUSQWGWAK6B6IKQ/analytic_certificate_compact_i64.cubin",
+    "g3b_cubin_match": true,
+    "g3b_cubin_sha256": "dd32e97936d8e0c6abd3924d8fdeeb17088e7a6e1e4d8ac2f1fc492bbc2114ac",
+    "g3c_cubin": "artifacts/g3b_triton_cache_g3c_b_r1_adversarial/DV4SAB7GTZGPY2VN5VLIVBUHC3BZTM7IF7FJ2XX6LO6HHQ6YI7YQ/certified_fp32_filter_i64.cubin",
+    "g3c_cubin_match": true,
+    "g3c_cubin_sha256": "db750295875f8363679cfe9f9762cef884e1ecd371e3e419fd500d91c3a20670",
+    "label": "g3c_b_r1_adversarial",
+    "occupancy_log": "raw/g3b_safety_g3c_b_r1_adversarial_occupancy.jsonl",
+    "occupancy_log_sha256": "beaa092387812aab36ed071f7be8ee48df6242f34ea9358637532278fc150432",
+    "postflight_compute_rows": [],
+    "preflight_log": "raw/g3b_safety_g3c_b_r1_adversarial_preflight.log",
+    "preflight_log_sha256": "93271d066a34dfddbbd61e0b18fc19ed217bdd963d44e73471e16098d85a91c0",
+    "raw_log": "raw/g3b_safety_g3c_b_r1_adversarial.log",
+    "raw_log_sha256": "34f739fc61195815ada724715ab68ab17338382d1bf00190c967bc76d022bc96",
+    "result": "results/g3c_b_r1_adversarial.json",
+    "result_sha256": "e86b917148346560dce043093c5794dafead3076362792251487ab793d0d8408",
+    "returncode": 0,
+    "safety_pass": true,
+    "target_gpu_pids": [
+      3366405
+    ]
+  },
+  "runner_sha256": "6c17451be836d5b7f808cdda13e9be41952d52dbd59fc3db2a6e97cc21f0ad5b",
+  "wall_seconds": 46.224517583847046
+}

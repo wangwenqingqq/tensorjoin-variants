@@ -1,0 +1,24 @@
+{
+  "command": [
+    "c++",
+    "-O2",
+    "-std=c++17",
+    "-shared",
+    "-fPIC",
+    "-D_GLIBCXX_USE_CXX11_ABI=1",
+    "-I@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/include",
+    "-I@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/include/torch/csrc/api/include",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/src/host_allocator.cpp",
+    "-L@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/lib",
+    "-ltorch_cpu",
+    "-lc10",
+    "-Wl,-rpath,@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/lib",
+    "-o",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/g19_reusable_complete_cost_20260905/artifacts/host_allocator.so"
+  ],
+  "torch_version": "2.11.0+cu130",
+  "headers": {
+    "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/include/ATen/core/CachingHostAllocator.h": "881f68053a2158f3a00260969b453cf234b0b806595500d8f8c464df7acaeba1",
+    "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/torch/include/ATen/cuda/CachingHostAllocator.h": "0ae6f1d6d9fbdf6d0756ed38c74b88eee24ff949315666ba37d43cfbec67a923"
+  }
+}

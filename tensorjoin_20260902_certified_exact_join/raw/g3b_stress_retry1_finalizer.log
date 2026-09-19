@@ -1,0 +1,44 @@
+{
+  "candidate_source_sha256": "48ca8b1076db31dddf0a60f05564db0a2e1f037a6f007cc988226bce92eff2f6",
+  "experiment_id": "tensorjoin_20260903_gpu_analytic_certificate_g3b",
+  "finalized_wall_time": 1788401036.4755857,
+  "finalizer_sha256": "cfa307517888a2fa9bbc2d8fdabf8f01de267b49aa1cc6c9f428bca17309532a",
+  "manifest_write_failure_diagnosis": "results/g3b_stress_retry1_manifest_write_failure_diagnosis.json",
+  "manifest_write_failure_diagnosis_sha256": "234da79e9b9d25e60b3c99e4ab5f7ae63958d5ed855d788c6665fbac91ed7830",
+  "measurement_status": "correctness_safety_only_no_performance_claim",
+  "original_manifest": "results/g3b_safety_manifest.json",
+  "original_manifest_sha256": "7e39a8c2af59e7945a64f65269df9479f94c00ebada367fed2e28e432703082c",
+  "performance_claim_allowed": false,
+  "record": {
+    "admitted": true,
+    "cache_path": "artifacts/g3b_triton_cache_stress1000_retry1",
+    "command": [
+      "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+      "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3b_safety.py",
+      "--mode",
+      "stress1000"
+    ],
+    "external_monitor_max_gpu_utilization_percent": 5,
+    "external_monitor_max_process_memory_mib": 944,
+    "foreign_rows": [],
+    "label": "stress1000_retry1",
+    "manifest_reconstructed_after_outer_bookkeeping_failure": true,
+    "occupancy_log": "raw/g3b_safety_stress1000_retry1_occupancy.jsonl",
+    "occupancy_log_sha256": "df798d83d35563fdff4ddd61f9ae33086d08652b283f0e8cb1cb4432b4030f53",
+    "postflight_compute_rows": [],
+    "preflight_log": "raw/g3b_safety_stress1000_retry1_preflight.log",
+    "preflight_log_sha256": "65a836be8004097f3a282d97f44fcac03ff7ec719c6f547b407fc94f213dd6fd",
+    "raw_log": "raw/g3b_safety_stress1000_retry1.log",
+    "raw_log_sha256": "b9578b22b4e0eac8d12f5ac0553d24f16e1100b2f4853690968754ea59717341",
+    "result": "results/g3b_safety_stress1000.json",
+    "result_sha256": "1921981501995a00ebaf6daee5311917481d98731fa5f6f8d51089f6923533aa",
+    "returncode": 0,
+    "safety_pass": true,
+    "target_gpu_pids": [
+      3257595
+    ]
+  },
+  "retry_pass": true,
+  "retry_reason": "attempt0 stopped on foreign GPU0 process after 600 clean iterations",
+  "safety_runner_sha256": "a838fe709d331c9859f7ebce07106e9e16b5ac67c95712aa3c40d4b0c1e07063"
+}

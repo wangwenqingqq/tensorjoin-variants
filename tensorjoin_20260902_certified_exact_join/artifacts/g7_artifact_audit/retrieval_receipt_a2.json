@@ -1,0 +1,20 @@
+[
+  {
+    "url": "https://api.github.com/users/bwd29/repos?per_page=100&page=1",
+    "file": "bwd29_repos_p1_retry.json",
+    "retrieved_utc": "2026-09-04T06:44:22.949117+00:00",
+    "error": "Remote end closed connection without response"
+  },
+  {
+    "url": "https://api.github.com/users/benoitgallet/repos?per_page=100&page=1",
+    "file": "benoitgallet_repos_p1_retry.json",
+    "retrieved_utc": "2026-09-04T06:44:22.949731+00:00",
+    "error": "<urlopen error EOF occurred in violation of protocol (_ssl.c:1129)>"
+  },
+  {
+    "url": "https://api.github.com/users/mgowanlock/repos?per_page=100&page=1",
+    "file": "mgowanlock_repos_p1_retry.json",
+    "retrieved_utc": "2026-09-04T06:44:22.953887+00:00",
+    "error": "Remote end closed connection without response"
+  }
+]

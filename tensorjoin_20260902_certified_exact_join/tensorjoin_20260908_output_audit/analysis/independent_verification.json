@@ -1,0 +1,17 @@
+{
+  "source": "Raw CSV, independently recomputed with Python statistics; no NumPy reducer reused.",
+  "calls": 1404,
+  "retained": 1080,
+  "blocks": {
+    "primary": {
+      "all_36_cell_output_means_match": true,
+      "aggregate_speedup": 3.943522776627056,
+      "aggregate_saving": 0.7464196210741016
+    },
+    "repeat": {
+      "all_36_cell_output_means_match": true,
+      "aggregate_speedup": 3.9549085582183072,
+      "aggregate_saving": 0.7471496533283941
+    }
+  }
+}

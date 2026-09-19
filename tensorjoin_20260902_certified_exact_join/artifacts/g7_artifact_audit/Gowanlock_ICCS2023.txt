@@ -1,0 +1,365 @@
+Optimization and Comparison of Coordinate- and
+Metric-Based Indexes on GPUs for Distance
+Similarity Searches ⋆
+Michael Gowanlock1[0000−0002−0826−6204], Benoit Gallet1[0000−0001−9716−1502],
+and Brian Donnelly1[0000−0002−7484−3778]
+Northern Arizona University, Flagstaﬀ, AZ, USA
+{michael.gowanlock,benoit.gallet,brian.donnelly}@nau.edu
+Abstract. The distance similarity search (DSS) is a fundamental oper-
+ation for large-scale data analytics, as it is used to ﬁnd all points that
+are within a search distance of a query point. Given that new scientiﬁc
+instruments are generating a tremendous amount of data, it is critical
+that these searches are highly eﬃcient. Recently, GPU algorithms have
+been proposed to parallelize the DSS. While most work shows that GPU
+algorithms largely outperform parallel CPU algorithms, there is no single
+GPU algorithm that outperforms all other state-of-the-art approaches;
+therefore, it is not clear which algorithm should be selected based on a
+dataset/workload. We compare two GPU DSS algorithms: one that in-
+dexes directly on the data coordinates, and one that indexes using the
+distances between data points to a set of reference points. A counterin-
+tuitive ﬁnding is that the data dimensionality is not a good indicator of
+which algorithm should be used on a given dataset. We also ﬁnd that
+the intrinsic dimensionality (ID) which quantiﬁes structure in the data
+can be used to parameter tune the algorithms to improve performance
+over the baselines reported in prior work. Lastly, we ﬁnd that combining
+the data dimensionality and ID can be used to select between the best
+performing GPU algorithm on a dataset.
+Keywords: Distance Similarity Search· GPGPU · Metric-based Index
+1 Introduction
+The distance similarity search (DSS) ﬁnds objects within a search distance of
+points in a dataset. The distance similarity self-join (DSSJ) refers to ﬁnding all
+objects in a dataset within a distance,ϵ, of each other. DSS is a building block
+of several algorithms, including those used for scientiﬁc data analysis [12].
+The search-and-reﬁne strategy reduces the computational cost of the DSS,
+where an index prunes the search and generates a set of candidate points, which
+are then reﬁned using distance calculations to compute the ﬁnal result set for
+⋆ This material is based upon work supported by the National Science Foundation
+under Grant No. 2042155.
+2 Michael Gowanlock et al.
+each query point. Graphics Processing Units (GPUs) have high computational
+throughput due to their massive parallelism and are very eﬀective at performing
+distance calculations. Numerous research on the DSS has demonstrated that the
+GPU is superior to multi-core CPUs [11,9,3,6,7].
+The performance of GPU DSS algorithms is largely a function of data-
+dependent properties, such as the data distribution, dimensionality, sparsity,
+and variance. Thus, there is not a single GPU algorithm that is better than all
+other algorithms, which makes it challenging to select an algorithm to employ
+on a given workload. The two major classes of indexes are those that employ
+coordinate- and metric-based indexes [10]. The former constructs an index di-
+rectly on the coordinates of the data points, whereas the latter uses distances to
+a set of reference points instead of indexing on the data coordinates.
+Thispapercomparestwostate-of-the-artGPUalgorithmshavingacoordinate-
+based index (GDS-Join) and a metric-based index (COSS). Because neither
+algorithm performs best on all datasets, this paper aims to address the following
+questions: (i) What data properties can be used to determine the number of
+indexed dimensions (GDS-Join) or number of reference points (COSS) to use
+when processing a given dataset?(ii) Which dataset properties can be used to
+select whether GDS-Join or COSS should be employed on a dataset?
+2 Background: Comparison of GDS-Join and COSS
+In this section, we compareGDS-Join [9] to COSS [3]. For more information,
+we refer the reader to those papers.GDS-Join uses a coordinate-based index;
+in contrast,COSS is a metric-based index which stores points in a grid based on
+their distance to a set of reference points.GDS-Join and COSS are similar as
+their grid-based indexes are GPU-friendly as they address the drawbacks of the
+GPU’s Single Instruction Multiple Thread execution model. BothGDS-Join
+and COSS use batching schemes to compute batches of query points such that
+GPU global memory is not exceeded and to hide PCIe data transfer latency.
+GDS-Join and COSS have a parameter that controls the amount of pruning
+theyperform,suchthatatrade-oﬀcanbereachedbetweenindexsearchoverhead
+and the number of distance calculations that are computed. In this paper, this
+is referred to ask, which is the number of indexed dimensions forGDS-Join or
+the number of reference points forCOSS. Thus, the two algorithms have similar
+GPU kernel designs except that they use coordinate- and metric-based indexing.
+As we will show in the evaluation, this distinction yields respective strengths and
+weaknesses which are a function of data-dependent properties.
+GDS-Join uses two additional optimizations than the preliminary work [9].
+We utilize the method by Gowanlock [8] that orders the data points from most
+work to least work which reduces load imbalance by assigning query points
+with similar amounts of work to a given warp. This is referred to asreorder-
+queries. Instruction-level parallelism (ILP) is also used to hide memory access
+latency [13]. The DSSJ in high dimensionality performs many distance calcu-
+lations in the ﬁltering phase of the algorithm. Since the pairwise components
+Title Suppressed Due to Excessive Length 3
+of the distance calculation can be computed independently, we exploit ILP by
+partially computing parts of the distance calculation and storing these partial
+results in registers. We use ILP, where we deﬁner cached elements that are used
+to independently compute pair-wise distance calculations. Using these optimiza-
+tions, GDS-Join achieves speedups over the preliminary work [9] in the range
+1.82–5.51× across all datasets in Section 3.
+3 Experimental Evaluation
+3.1 Experimental Methodology
+All GPU code is written in CUDA. The C/C++ host code is compiled with the
+GNU compiler and the O3 optimization ﬂag. Our platform has2×AMD EPYC
+7542 2.9 GHz CPUs (64 total cores), 512 GiB of main memory, equipped with
+an Nvidia A100 GPU with 40 GiB of global memory, using CUDA 11 software.
+In all experiments we exclude the time to load the dataset from disk. For all
+GPU algorithms, we include all other time components, including constructing
+the index, executing the DSSJ, storing the result set on the host and other host-
+side operations, and perform all pre-processing optimizations. Thus, we make a
+fair comparison between approaches. Reported time measurements are averaged
+over 3 time trials, and data is stored/processed using 64-bit ﬂoating point values.
+Throughout the evaluation, we report the speedup ofGDS-Join over COSS (or
+vice versa), deﬁned as the ratio of two response times,s =TCOSS/TGDS-Join.
+Selectivity of the experiments:We perform experiments across datasets and
+ϵ values such that we do not have too few or too many total results. Thus, the
+values ofϵ should represent values that are pragmatically useful. We deﬁne the
+selectivity of the self-join asSD = (|R|−| D|)/|D|, where|R| is the total result
+set size. This yields the average number of points withinϵ, excluding a point,
+pa, ﬁnding itself. We select values ofSD∼ 0− 1000 across all datasets, which is
+a typical range used in this literature.
+Datasets: We use seven real-world datasets that spann = 18− 384 dimensions
+(Table 1), allowing us to observe how performance varies as a function of di-
+mensionality. We normalize all datasets in the range [0, 1]. All datasets except
+BigCross [1] andTiny5M 1 were obtained from the UCI ML repository2.
+Implementation Conﬁgurations:All implementations are exact (not approx-
+imate) algorithms and are parallelized using the GPU using 64-bit ﬂoating point
+values. GDS-Join: GPU algorithm that uses a coordinate-based index. It is
+conﬁgured using 32 threads per block, as we found it to achieve the best per-
+formance on our platform. The default conﬁguration forGDS-Join is to use all
+optimizations (shortc, reorderdims, reorderqueries, and ILP), index in
+k = 6 dimensions, and setr = 8 as the parameter for theILP optimization.
+The source code is publicly available.3 COSS: GPU algorithm that employs a
+1 https://www.cse.cuhk.edu.hk/systems/hash/gqr/dataset/tiny5m.tar.gz
+2 https://archive.ics.uci.edu/ml/index.php
+3 https://github.com/mgowanlock/gpu_self_join/
+4 Michael Gowanlock et al.
+Dataset |D| n [ϵmin,ϵ max] [Smin
+D ,S max
+D ] Speedup GDS-Join
+over COSS
+SuSy 5,000,000 18 [0.01, 0.021] [5.17, 1090.45] 3.28
+Higgs 11,000,000 28 [0.01, 0.0555] [0.05, 1009.02] 2.15
+WEC 287,999 49 [0.002, 0.007][39.46, 1006.39] 0.69
+BigCross 11,620,300 57 [0.001, 0.02] [2.54, 1044.7] 1.69
+Census 2,458,285 68 [0.001, 0.01] [21.64, 1077.6] 1.39
+Songs 515,345 90 [0.007, 0.0091][126.91, 998.19] 0.70
+Tiny5M 5,000,000 384 [0.2, 0.44] [9.72, 1019.01] 0.34
+T able 1. Datasets used in the evaluation, where|D| is the dataset size, andn is the
+dimensionality.ϵmin and ϵmax refers to the range of search distances used, andSmin
+D
+andSmax
+D refer to their corresponding selectivity values. The algorithms are conﬁgured
+as described in Section 3.1. The mean speedup (or slowdown) ofGDS-Join compared
+to COSS is shown.
+metric-based index [3]. In the evaluation,COSS is conﬁgured to use 8 threads
+per point, andk = 6 reference points.
+3.2 Results
+Comparison of algorithms:Table 1 compares the performance ofGDS-Join
+and COSS, where the speedup is computed using the average response times
+across ﬁve diﬀerent values ofϵ as shown in the table. We observe thatGDS-Join
+achieves the greatest speedup on 4 datasets (SuSy,Higgs,BigCross, andCensus)
+whereas COSS achieves the greatest speedup on 3 datasets (WEC, Songs, and
+Tiny5M). The two GPU algorithms have their respective niches, as performance
+largely depends on data properties. Furthermore, one optimization that must be
+selected forGDS-Join and COSS is the number of indexed dimensions and the
+number of reference points, respectively. This leads to the following questions:
+When should GDS-Join or COSS be employed, how many dimensions (GDS-
+Join) or reference points (COSS) should be used, and what properties can we
+use to infer the best algorithm to employ?
+Index dimensionality reduction:We examine index dimensionality reduc-
+tion for GDS-Join and COSS. Figure 1 plots the normalized response time of
+all real-world datasets as a function ofk for GDS-Join, where a lower time indi-
+cates better performance. We normalize to the largest response time (yielding a
+value of 1 in each plot), such that we can compare the datasets across the same
+scale. Key observations are as follows:(i) Panels (b) and (e) have a parabolic
+shape and clearly show the trade-oﬀ between index search overhead and the
+number of distance calculations performed.(ii) Panels (a), (c), (d), and (f) are
+similar to the above, except that the potential overhead of computing a large
+number of distance calculations at low values ofk is absent. This is because the
+data is distributed into a suﬃcient number of grid cells such that a large number
+of distance calculations can be pruned even at low values ofk. This illustrates
+Title Suppressed Due to Excessive Length 5
+2 4 6 8 10
+k
+(a) SuSy
+0.00
+0.25
+0.50
+0.75
+1.00
+Normalized Time
+2 4 6 8 10 12
+k
+(b) Higgs
+2 4 6 8 10
+k
+(c) WEC
+2 4 6 8 10
+k
+(d) BigCross
+2 4 6 8 10 12
+k
+(e) Census
+2 4 6 8 10
+k
+(f) Songs
+2 4 6 8 10 12 14 16
+k
+(g) Tiny5M
+Fig. 1. The normalized response time as a function ofk for all real-world datasets,
+where a lower normalized time is better. GDS-Join is executed using the median
+values of ϵ in Table 1; across (a)–(g) they are as follows: {0.0155, 0.03275, 0.0045,
+0.0105, 0.0055, 0.00805, 0.32}. Shaded regions — the range of values ofk that have a
+response time within 50% of the value ofk that yielded the lowest response time.
+how the reorderdims optimization combined with indexingk <n dimensions
+can exploit theintrinsic dimensionality of the data; e.g., (f)Songs has n = 90
+dimensions, but yields good performance when indexed in onlyk = 3 dimen-
+sions. (iii) The shaded regions show values ofk that yield a good response time,
+where k can be selected in a large range and obtain good performance on most
+datasets. With the exception ofWEC, k = 6 yields respectable performance on
+all datasets. We carried out the same experiment forCOSS where k refers to
+the number of reference points. The performance behavior betweenGDS-Join
+and COSS is similar so we omit discussing this.
+In summary, indexing ink < ndimensions (GDS-Join), or using k < n
+reference points (COSS) provides a trade-oﬀ between distance comparisons and
+index search overhead.Finding 1: There is not a direct correlation between data
+dimensionality and the number indexed dimensions (GDS-Join) or reference
+points (COSS) that should be used. Another metric for understanding data-
+dependent performance is needed.
+Using intrinsic dimensionality (ID) to selectk: The ID is the number of
+dimensions required to approximately represent a dataset. Intuitively, some data
+dimensions are correlated, so it is possible to represent the data in fewer thann
+dimensions. We propose a heuristic for selectingk as described in Equation 1,
+where i≥ 1 and n≥k.
+k = 2 +⌈c· log2i⌋. (1)
+In the equation, the base of the log is 2 — conceptually, increasingk to
+k + 1 reduces the number of distance calculations by a factor of two, which
+yields diminishing returns when increasingk. We take the log of the intrinsic
+dimensionality (i) because the eﬃciency of pruning is directly related to the
+structure of the data, with a low ID being easy to prune with a smallk, while
+a high ID requires a larger value ofk to achieve a similar degree of pruning.
+The notation⌈x⌋ is the rounding function, and c is a coeﬃcient where c =√
+|D|
+5×106. The coeﬃcient is used to scale the number of indexed dimensions as
+a function of the dataset size|D|. This is needed because while the worst case
+time complexity for a suﬃciently largeϵ value isO(|D|2), in practice, an average
+query only requires reﬁning a fraction of the total dataset,|D|. Therefore, this
+6 Michael Gowanlock et al.
+Dataset n i keqn (Eqn. 1)Ratio GDS-Join Ratio COSS
+SuSy 18 9 5 0.952 1.130
+Higgs 28 19 8 1.301 0.882
+WEC 49 15 3 1.865 1.932
+BigCross 57 3 4 0.926 2.217
+Census 68 13 5 1.074 1.481
+Songs 90 29 4 1.290 1.426
+Tiny5M 384 63 8 0.994 1.011
+T able 2. The rounded intrinsic dimensionality (i) of each dataset, andkeqn which is
+the selected value ofk using Equation 1. The data dimensionality (n) is shown for
+comparison. The time ratio isTk=6/Teqn.
+factor scales with dataset size to limit the number of indexed dimensions when
+a small dataset is employed and use more dimensions when processing larger
+datasets. Lastly, because indexing in few dimensions is inexpensive, we index in
+at least 2 dimensions.
+We employ an ID estimator to compute i in Equation 1 that uses local
+Principle Component Analysis (PCA) [5,4], where it uses thek-nearest neighbor
+graph to estimate ID, and we employed the PCA algorithm from the scikit-
+dimension library4. To computei, we used 100 nearest neighbors on all datasets5.
+Table 2 shows the estimated ID from the PCA method, and the value of
+k using Equation 1. We ﬁnd that this heuristic yields a very good value ofk
+(see Figure 1). All of the values ofk yield an execution time for each dataset in
+the blue shaded region. Thus, ID is a good tool for determining the number of
+dimensions that should be indexed.
+AsdescribedinSection3.1, GDS-Joinand COSSareconﬁguredbyindexing
+ink = 6 dimensions and usingk = 6 reference points, respectively, because those
+values were found to yield good performance across all datasets in the paper.
+However,k = 6 does not yield the best response time across all datasets. Table 2
+shows the ratio ofTk=6 to Teqn, which refers to the response time ratio when
+k = 6 compared to that given when usingk from Equation 1. ForGDS-Join,
+we ﬁnd that there are three cases whereTeqn is slower (Tk=6
+Teqn
+< 1), but the
+performance loss is minor. In contrast, there are four cases whereTeqn yields a
+fasterresponsetime( Tk=6
+Teqn
+> 1)wheresubstantialperformancegainsareachieved
+on Higgs, WEC, andSongs, yielding a ratio between 1.07–1.87×.
+Examining the abovementioned ratio forCOSS, we ﬁnd that there is only
+one dataset (Higgs) where usingkeqn yields a slowdown; all other datasets yield
+a ratio between 1.01–2.22×. Using ID to estimatek reaches a good trade-oﬀ
+between index search overhead and the number of distance comparisons. It is
+for this reason that other work ﬁnds that usingk≈ 6 reference points yields
+4 https://scikit-dimension.readthedocs.io/en/latest/
+5 Due to excessive execution times, we sampledHiggs and Tiny5M and ensured that
+100 neighbors are suﬃcient across all datasets, and that samplingHiggs and Tiny5M
+did not adversely impact ID estimation.
+Title Suppressed Due to Excessive Length 7
+Dataset Best GPU Alg. (Table 1) n keqn (Eqn. 1)n/keqn
+SuSy GDS-Join 18 5 3.60
+Higgs GDS-Join 28 8 3.50
+WEC COSS 49 3 16.33
+Census GDS-Join 68 5 13.60
+Songs COSS 90 4 22.50
+Tiny5M COSS 384 8 48.00
+T able 3.The best GPU algorithm (GDS-Join or COSS) from Table 1 is shown, with
+the values ofn andkeqn from Table 2. The ratio of then/keqn indicates whetherGDS-
+Join or COSS should be employed. We excludedBigCross as neither GPU algorithm
+outperformed the CPU algorithms on that dataset.
+good performance [2]. We also ﬁnd that our heuristic yields similar values ofk.
+Finding 2: The ID is a much better indicator of the number of dimensions that
+should be indexed than the data dimensionality.
+When should GDS-Join or COSS be employed?Both algorithms have
+distinct niches, but it is not clear from the results thus far under what circum-
+stances GDS-Join or COSS should be employed. By deﬁnition, metric-based
+indexes (COSS) are more eﬀective than coordinate-based indexes (GDS-Join)
+when there is less structure in the data indicating lower ID, and so by indexing
+in the metric space, they are able to better prune the search in instances where
+coordinate-based indexes cannot.
+Table 3 shows the algorithm that achieved the best performance in Table 1.
+Also reported isn/keqn, wherekeqn is a function of the ID. Intuitively, this indi-
+cates how much pruning the index can accomplish relative to alln dimensions.
+Because COSS outperforms GDS-Join when there is less structure in the data
+(lower ID), we ﬁnd that whenn/keqn ≥ 16 COSS should be employed, and
+likewise whenn/keqn < 16 GDS-Join should be employed, which indicates that
+there is more structure in the data, or a higher ID relative to the total number
+of data dimensions,n. Consequently, one of the GPU algorithms can be selected
+based onn and keqn, which is a function of data-dependent properties.Finding
+3: Datasets with greater ID and/or fewer data dimensions are best processed by
+coordinate-based indexes (GDS-Join), whereas datasets with lower ID and/or
+higher dimensions should be processed by metric-based indexes (COSS).
+4 Discussion & Conclusions
+This paper examined fundamental data properties that can be used to:(i) im-
+prove the performance of GDS-Join and COSS; and, (ii) determine under
+which conditionsGDS-Join or COSS should be employed. Algorithm selection
+allows for computing DSS more robustly, as we are now able to select an algo-
+rithm that performs well depending on the characteristics of a dataset. Using the
+8 Michael Gowanlock et al.
+proposed heuristics, we ﬁnd thatGDS-Join or COSS can be selected largely
+based on theintrinsic dimensionality and the number of data dimensions.
+Acknowledgements We thank Ben Karsin for his contributions to the prelim-
+inary version of this paper.
+References
+1. Ackermann,M.R.,Märtens,M.,Raupach,C.,Swierkot,K.,Lammersen,C.,Sohler,
+C.: Streamkm++ a clustering algorithm for data streams. Journal of Experimental
+Algorithmics (JEA) 17, 2–1 (2012)
+2. Chen, L., Gao, Y., Li, X., Jensen, C.S., Chen, G.: Eﬃcient metric indexing for
+similarity search. In: 2015 IEEE 31st Intl. Conf. on Data Engineering. pp. 591–
+602. IEEE (2015)
+3. Donnelly, B., Gowanlock, M.: A Coordinate-Oblivious Index for High-Dimensional
+Distance Similarity Searches on the GPU. In: Proc. of the 34th ACM Intl. Conf.
+on Supercomputing. pp. 1–12 (2020)
+4. Fan, M., Gu, N., Qiao, H., Zhang, B.: Intrinsic dimension estimation of data by
+principal component analysis. arXiv preprint arXiv:1002.2050 (2010)
+5. Fukunaga, K., Olsen, D.R.: An algorithm for ﬁnding intrinsic dimensionality of
+data. IEEE Transactions on Computers100(2), 176–183 (1971)
+6. Gallet, B., Gowanlock, M.: Heterogeneous CPU-GPU epsilon grid joins: static and
+dynamic work partitioning strategies. Data Science and Engineering6(1), 39–62
+(2021)
+7. Gallet, B., Gowanlock, M.: Leveraging GPU Tensor Cores for Double Precision
+Euclidean Distance Calculations. In: 2022 IEEE 29th International Conference on
+High Performance Computing, Data, and Analytics (HiPC). pp. 135–144 (2022)
+8. Gowanlock, M.: Hybrid knn-join: Parallel nearest neighbor searches exploiting cpu
+and gpu architectural features. Journal of Parallel and Distributed Computing
+149, 119–137 (2021)
+9. Gowanlock, M., Karsin, B.: GPU-Accelerated Similarity Self-Join for Multi-
+Dimensional Data. In: Proc. of the 15th Intl. Workshop on Data Management
+on New Hardware. pp. 6:1–6:9. ACM (2019)
+10. Hjaltason, G.R., Samet, H.: Index-driven similarity search in metric spaces (survey
+article). ACM Transactions on Database Systems28(4), 517–580 (2003)
+11. Lieberman,M.D.,Sankaranarayanan,J.,Samet,H.:Afastsimilarityjoinalgorithm
+using graphics processing units. In: IEEE 24th Intl. Conf. on Data Engineering.
+pp. 1111–1120 (2008)
+12. Trilling, D.E., et al.: The solar system notiﬁcation alert processing system (snaps):
+Design, architecture, and ﬁrst data release (snapshot1). The Astronomical Journal
+165(3), 111 (2023)
+13. Volkov, V.: Better performance at lower occupancy. https://www.nvidia.com/
+content/GTC-2010/pdfs/2238_GTC2010.pdf (2010), accessed Jan. 1, 2023

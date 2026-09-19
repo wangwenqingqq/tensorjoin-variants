@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g1_runner.py", "--label", "g1_p07_a1", "--order", "CA"]
+{"label": "g1_p07_a1", "pass": true, "calls": 54}

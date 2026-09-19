@@ -1,0 +1,23 @@
+--- G18/CMakeLists.txt
++++ G19/CMakeLists.txt
+@@ -1,5 +1,7 @@
+ cmake_minimum_required(VERSION 3.16)
+ project(RT-HiSS)
++set(CMAKE_POSITION_INDEPENDENT_CODE ON)
++option(G19_DIAGNOSTICS "Keep G18 diagnostic counters and exports" OFF)
+ 
+ set(CMAKE_CXX_STANDARD 17)
+ set(CMAKE_CXX_STANDARD_REQUIRED YES)
+@@ -73,10 +75,11 @@
+         deviceCode.cu
+ )
+ 
+-add_executable(RT-HiSS hostCode.cpp utility.cu utility_seq.cpp utility.h)
++add_library(RT-HiSS SHARED hostCode.cpp utility.cu utility_seq.cpp utility.h)
+ 
+ set(RT-HiSS_COMPILE_DEFINITIONS
+         DATASET_DIM=${DIM}
++        G19_DIAGNOSTICS=$<BOOL:${G19_DIAGNOSTICS}>
+         MAX_KD_LEVELS_OPT=${MAX_KD_LEVELS_OPT}
+         THREADS_TO_COPY_OPT=${THREADS_TO_COPY_OPT}
+         PINNED_MEMORY_SIZE_OPT=${PINNED_MEMORY_SIZE_OPT}

@@ -1,0 +1,40 @@
+{
+  "admitted": true,
+  "cache_path": "artifacts/g4b_ragged_tail_diagnostic_triton_cache",
+  "command": [
+    "@TENSORJOIN_ROOT@/isaacsim6/env/bin/python",
+    "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g4b_ragged_tail_diagnostic.py"
+  ],
+  "experiment_id": "tensorjoin_20260903_g4b_ragged_tail_diagnostic",
+  "foreign_rows": [],
+  "gpu1": {
+    "clocks.mem": "405",
+    "clocks.sm": "180",
+    "driver_version": "590.48.01",
+    "index": "1",
+    "memory.used": "14",
+    "name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "power.draw": "34.45",
+    "power.limit": "600.00",
+    "pstate": "P8",
+    "utilization.gpu": "0",
+    "uuid": "GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3"
+  },
+  "occupancy_log": "raw/g4b_ragged_tail_diagnostic_occupancy.jsonl",
+  "occupancy_log_sha256": "66ac4fb3670c0f4125622c2419b584e18c8b89e21d991bf5b5ba587b7e0ae583",
+  "orchestrator_sha256": "7a10a980b8294f92ed5f9c62572a7688715610236280609a5b63c4832f705662",
+  "postflight_compute_rows": [],
+  "protocol_sha256": "66e00e58d7022358cb1298e785bf80d8702d466070a1e0118d1be3f27dd78090",
+  "raw_log": "raw/g4b_ragged_tail_diagnostic.log",
+  "raw_log_sha256": "a1a35de3c756edc1332736af6fccdef363c10a9532c6535f29ffb621fba10da9",
+  "result": "results/g4b_ragged_tail_diagnostic.json",
+  "result_sha256": "dce93811383fd81fe4144a07ee373650eec1c733c2331d4d7ffd9b13eb3fc5a8",
+  "returncode": 0,
+  "runner_sha256": "cc35e65c45892bcb0f432f23bb449cb48c31a59f67ea7ebc4ceba4cf7e190c7f",
+  "runner_was_launched": true,
+  "status": "clean_complete",
+  "target_gpu_pids": [
+    3942324
+  ],
+  "wall_seconds": 35.84766936302185
+}

@@ -1,0 +1,5 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/validate_control_r2.py", "--label", "gpu0_public_a2", "--mode", "public"]
+{"offset": [0, 0], "shape": [4096, 4096], "pairs": 8390656, "count": 11723, "hash": "cedd2caff1673d59b9153dc89a121873bb482dad2c407ad523c393620784c008", "direct": 11550, "ambiguous": 384, "reject": 8378722, "fp64_inputs": 6, "exact_output": true, "pass": true}
+{"offset": [0, 57344], "shape": [4096, 2656], "pairs": 10878976, "count": 10809, "hash": "e11ec226248143084fcf483d227bf684941515a206969e50c60bd9b16539135a", "direct": 10576, "ambiguous": 475, "reject": 10867925, "fp64_inputs": 13, "exact_output": true, "pass": true}
+{"offset": [57344, 57344], "shape": [2656, 2656], "pairs": 3528496, "count": 6590, "hash": "c2c8a5b05e8e5573b469a4ca9f2870f15b617adb9e6d6082e35c94d7fa46f903", "direct": 6507, "ambiguous": 183, "reject": 3521806, "fp64_inputs": 2, "exact_output": true, "pass": true}
+{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_gpu_control_20260907/results/gpu0_public_a2.json"}

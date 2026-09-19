@@ -1,0 +1,15 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3b_gpu_analytic_certificate.py", "--run-id", "0"]
+Traceback (most recent call last):
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3b_gpu_analytic_certificate.py", line 515, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_g3b_gpu_analytic_certificate.py", line 315, in main
+    analytic_certificate_compact_i64[(scheduled_tiles,)](
+  File "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/runtime/jit.py", line 370, in <lambda>
+    return lambda *args, **kwargs: self.run(grid=grid, warmup=False, *args, **kwargs)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "@TENSORJOIN_ROOT@/isaacsim6/env/lib/python3.12/site-packages/triton/runtime/jit.py", line 710, in run
+    bound_args, specialization, options = binder(*args, **kwargs)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<string>", line 4, in dynamic_func
+TypeError: failed to specialize argument of type: numpy.float32

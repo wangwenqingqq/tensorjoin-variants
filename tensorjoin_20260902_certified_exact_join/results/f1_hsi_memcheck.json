@@ -1,0 +1,84 @@
+{
+  "bound_pad": 0.0001,
+  "capacity": 65536,
+  "correctness": {
+    "actual_results_per_query": 64.0,
+    "ambiguous_id_sha256": "85452c6c2423e4273b1fe1ce4c0e1bc5931bfc80b07eea54c329136d85a273c6",
+    "bitwise_equal_pairs": 0,
+    "cascade_duplicates": 0,
+    "cascade_id_sha256": "893981d43167a25d7a844498a8ff1974d55b93ea0e0882a346cc3c9699d774d5",
+    "cascade_mismatch": 0,
+    "cascade_overflow": 0,
+    "expected_fp64_refine_pairs": 928,
+    "fp32_direct_accept_pairs": 4930,
+    "fp32_direct_reject_pairs": 5707,
+    "fp32_false_accepts": 0,
+    "fp32_false_rejects": 0,
+    "fp64_id_sha256": "aa464b6bf174c71e5c274f67262d944c99d62d59bd81651591e04f39dbc199f2",
+    "fp64_refine_pairs": 928,
+    "guarded_fp32_mismatch": 0,
+    "int8_ambiguous_pairs": 11565,
+    "int8_direct_accept_pairs": 27371,
+    "int8_false_accepts": 0,
+    "oracle_pairs": 32768,
+    "overflow_after_fp32": 0,
+    "overflow_after_scan": 0,
+    "two_stage_duplicates": 0,
+    "two_stage_mismatch": 0,
+    "two_stage_overflow": 0
+  },
+  "correctness_pass": true,
+  "experiment_id": "tensorjoin_20260903_gpu_cascade_f1",
+  "feature_cache_sha256": "b95402cec4fd6037fea32934b8b8170ab51c9baa866d7c392737c06b6398adb2",
+  "fp32_distance_guard": 0.001,
+  "gpu_capability": [
+    12,
+    0
+  ],
+  "gpu_name": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+  "host": "gpu-host-8",
+  "medians_us": {},
+  "metrics_us": {},
+  "modality": "hsi",
+  "observations": 20,
+  "order": "GTC",
+  "process_id": 0,
+  "python": "3.12.3 (main, Jun 19 2026, 12:46:00) [GCC 13.3.0]",
+  "ratios": {},
+  "required_guarded_ratio": 1.35,
+  "script_sha256": "19fd8341a61a72ede6c7f3f036f3ac7889a3c598b9c94dd78ec1457c4f32a8e6",
+  "shape": [
+    512,
+    4096,
+    1984
+  ],
+  "smoke_gate_pass": null,
+  "split_metadata": {
+    "base_row_range": [
+      51,
+      142
+    ],
+    "query_row_range": [
+      0,
+      47
+    ],
+    "source_pixel_overlap": false
+  },
+  "stage1_source_sha256": "a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f",
+  "stress_hashes": [],
+  "stress_launches": 0,
+  "stress_pass": true,
+  "target_results_per_query": 64,
+  "threshold_calibration": {
+    "gap_d2": 6.106098217051326e-07,
+    "lower_distance_d2": 0.2629130211841887,
+    "threshold_d2": 0.26291332648909954,
+    "upper_distance_d2": 0.2629136317940104
+  },
+  "timestamp_utc": "2026-09-02T17:19:32Z",
+  "torch": "2.11.0+cu130",
+  "torch_cuda": "13.0",
+  "triton": "3.6.0",
+  "validation_only": true,
+  "warmups": 5
+}

@@ -1,0 +1,2 @@
+COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/g2_qualify_r1.py", "--label", "g2_full_a1", "--mode", "full"]
+{"pass_": true, "label": "g2_full_a1"}
