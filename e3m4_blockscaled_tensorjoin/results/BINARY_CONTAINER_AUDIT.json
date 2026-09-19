@@ -1,0 +1,159 @@
+{
+  "scope": "Independent full-container replay before publication. Original cubins remain private because debug sections contain build paths. Published extracted text sections can be checked offline.",
+  "pairs": [
+    {
+      "baseline_sha256": "1221030074052e9b83dbbece9b19292c18d6a1568b1a9ee21e625a0f969e7551",
+      "candidate_sha256": "67fb30413bc35311e56347bfe87060dba67d0c0049c23a7331cfdb36ed459963",
+      "bytes": 22040,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "1c57fa53467d158d29f2b1cec691a25273a0073f387ca7468e0d84bc4695b56c",
+      "candidate_sha256": "f545f6ebd6a9c0f0d6c8911aca8c07d0474499fa543ec4586fb1d27b2dad055c",
+      "bytes": 25136,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "29bf455d3d4af8c2400119b347f00de321d4844beab5e9b98f6ab4421b74fac1",
+      "candidate_sha256": "2bb2788a8f92dfc7a9df01fd3b9322addbd4cc93045978aa477f5655033fd8ea",
+      "bytes": 25136,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "5350a593ec0ca8d300f2380f79d4dc17924b73cd8bb7acfc9592e60f8e0f9bcd",
+      "candidate_sha256": "5853c03adf4e439a7dcdb00f6e731d31faa81649e01bae7904ed4a48e059f7f6",
+      "bytes": 25136,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "5de3e3f3fcfdae8a26edb068b674e737b1e8e5a9bb9af0d24cb613b9e775b5f4",
+      "candidate_sha256": "dacdbdaa4d221951c3fbe2bb39add92e3f901aeab74d528c24960518d3084a90",
+      "bytes": 18648,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "67bf4b73e87ed6436a3e11075c153e822c467f2500d548f8e4f9d322831ea4f0",
+      "candidate_sha256": "b878a0d971063fe7a4e855d539a0311c91f0ae4562ff4203e23c30f877fdaff6",
+      "bytes": 25136,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "706bdef924c30dc0d899e356a34bc05c5f3e6578aa2a32dacbecb6c840ebde70",
+      "candidate_sha256": "6b28597c27a69ac5817f3f99d2d56107a75e0e9bb8251f7a4e6e3ca64f4cf951",
+      "bytes": 21224,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "8631982586b6af5a76d70d026bde1b3ee73d7b6fd610d790e2b39b38df2775cf",
+      "candidate_sha256": "45c8a52865e3b404671ccdae6425db08a1d7017ea95c6869a9801cd426a5998b",
+      "bytes": 22040,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "b2402873c9c194fc07f4f8140621e1a9fcc7e3ede078416ad948ce24a4e4cc69",
+      "candidate_sha256": "5bfde77629c71df6a03799fcd9d40a12d314cae8eee3d277710551b2bf302228",
+      "bytes": 21224,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "c8f4df3d5753a4dcd382ccffd8d9671270102b39ebbb5c446089f19a58c1a147",
+      "candidate_sha256": "50c61c241e5ea17732896dd15498a97a5a147b8834dc08c5bff0945e740a6415",
+      "bytes": 22040,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "ce09c26349455b8b060062a54c23aa3465d7d1b506c46857a8e57b9f8660d07d",
+      "candidate_sha256": "9430272b1c1a941ee245eff2fd196d5f911d162aeaa9357604fb26a6922737b0",
+      "bytes": 18616,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "d2e462ce12ecda1003eeda1ecf404c3a8c57a9026fbb1bef2fc477ab1b571bb5",
+      "candidate_sha256": "93ce6ce0efaa2ab7b25b6c2937bf684749080c39b132a6aecd5b9b5f853d504f",
+      "bytes": 22040,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "d5e87eafe5c18c7a76508bc96a7b0ce5a1acf576648158d75408dd3df6ba3bb6",
+      "candidate_sha256": "70425f80c9be57f88edee83c5968b307cbdc3dd4ad2b1cb7a53dc0fafd944efb",
+      "bytes": 21224,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    },
+    {
+      "baseline_sha256": "f837d824f18df145995c0eb41ffa8ee58bf49a213aa68c0add21ea5c9a96a03b",
+      "candidate_sha256": "ce78c03c66b6c4f5352f8a43c8d1ad4d6ab5339a5d24afb061642ae975be1cd0",
+      "bytes": 21224,
+      "instruction_count": 4,
+      "allowed_xor_bits": [
+        82,
+        84
+      ],
+      "exact_full_container_diff_pass": true
+    }
+  ]
+}

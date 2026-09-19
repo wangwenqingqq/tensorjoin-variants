@@ -1,0 +1,49 @@
+{
+  "baseline_sha256": "8631982586b6af5a76d70d026bde1b3ee73d7b6fd610d790e2b39b38df2775cf",
+  "candidate_sha256": "45c8a52865e3b404671ccdae6425db08a1d7017ea95c6869a9801cd426a5998b",
+  "instruction_count": 4,
+  "instructions": [
+    {
+      "address": 1600,
+      "file_offset": 13248,
+      "word": "0x1ff00000003eff71001d0c1410747a",
+      "fields": [
+        0,
+        0
+      ]
+    },
+    {
+      "address": 1648,
+      "file_offset": 13296,
+      "word": "0x2ff00000003eff70c01d081414747a",
+      "fields": [
+        0,
+        0
+      ]
+    },
+    {
+      "address": 1744,
+      "file_offset": 13392,
+      "word": "0xff00000003e107090080e0410747a",
+      "fields": [
+        0,
+        0
+      ]
+    },
+    {
+      "address": 1776,
+      "file_offset": 13424,
+      "word": "0xff00000003e147090080a0414747a",
+      "fields": [
+        0,
+        0
+      ]
+    }
+  ],
+  "allowed_xor_bits": [
+    82,
+    84
+  ],
+  "changed_bytes": 4,
+  "family": "QMMA.SF.16832.F32.E8"
+}

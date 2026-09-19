@@ -1,0 +1,14 @@
+{
+  ".baseline.cubin": {
+    "container_sha256": "c8f4df3d5753a4dcd382ccffd8d9671270102b39ebbb5c446089f19a58c1a147",
+    "text_file_offset": 11648,
+    "text_size": 3584,
+    "text_sha256": "6d3ab743067b46d898b75920602a3429d5484cf36fd66c65bc4003fb456c6d2d"
+  },
+  ".e3m4.cubin": {
+    "container_sha256": "50c61c241e5ea17732896dd15498a97a5a147b8834dc08c5bff0945e740a6415",
+    "text_file_offset": 11648,
+    "text_size": 3584,
+    "text_sha256": "12384c9a86d43368bbd5bb6f194441ec24f602498284583016c8c8fcda2593c1"
+  }
+}

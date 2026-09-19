@@ -1,0 +1,2827 @@
+{
+  "state_columns": [
+    "index",
+    "pstate",
+    "temperature_c",
+    "power_w",
+    "sm_clock_mhz",
+    "memory_clock_mhz",
+    "used_memory_mib",
+    "utilization_percent"
+  ],
+  "scope": "Numeric selected-GPU samples. PIDs, UUIDs and process names are omitted; the unchanged guard checks process ancestry during execution. Host CPU activity is not isolated.",
+  "runs": {
+    "mx_bench_v1_0": {
+      "gpu": 7,
+      "start": 1789806947.4671633,
+      "end": 1789806965.2725315,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.805368185043335,
+      "original_guard_sha256": "0caaee1ce85b1586a1ec7879f1cdf98db26fa513759dd58360a778c967916ba8",
+      "admission_evidence": true
+    },
+    "mx_bench_v1_1": {
+      "gpu": 7,
+      "start": 1789806965.4017138,
+      "end": 1789806983.3034925,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.90177869796753,
+      "original_guard_sha256": "b8bed8907e5f52f6a4fb3ff8d0e4e060f8e3d3ffecca73a21f1cba13a495f22c",
+      "admission_evidence": true
+    },
+    "mx_bench_v1_2": {
+      "gpu": 7,
+      "start": 1789806983.4381847,
+      "end": 1789807001.3183627,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.880177974700928,
+      "original_guard_sha256": "129b4a6333ffb8b2c6f83953484330cc6a1ad173d96e56008e27a36eee110151",
+      "admission_evidence": true
+    },
+    "mx_bench_v1_3": {
+      "gpu": 7,
+      "start": 1789807001.455439,
+      "end": 1789807019.2843337,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.82889461517334,
+      "original_guard_sha256": "f2f0ca3d06e24062f5edb48f58f023b13d0dda3b2917a1943ec7920bc2695ee7",
+      "admission_evidence": true
+    },
+    "mx_probe_v1": {
+      "gpu": 0,
+      "start": 1789806140.118002,
+      "end": 1789806172.743511,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 32.62550902366638,
+      "original_guard_sha256": "70ffa6a18aa7865feec25e5c861a331848bd5f73f89895823920e726e5405949",
+      "admission_evidence": false
+    },
+    "mx_probe_v2": {
+      "gpu": 1,
+      "start": 1789806467.2881498,
+      "end": 1789806496.7925856,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 29.504435777664185,
+      "original_guard_sha256": "9a5c1173c9199115544529dde482ee3035325709a8f7ed2c67a3859cca8aeb05",
+      "admission_evidence": false
+    },
+    "mx_probe_v3": {
+      "gpu": 7,
+      "start": 1789806773.0168283,
+      "end": 1789806803.7013562,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 30.68452787399292,
+      "original_guard_sha256": "4cc79cd98bddeeedf3198331f1a4fc313cdce8db2a44583d7ba7ed96f3857f2c",
+      "admission_evidence": true
+    },
+    "mx_san_initcheck_boundary_zero32_v2": {
+      "gpu": 1,
+      "start": 1789806586.2235055,
+      "end": 1789806598.8729448,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.649439334869385,
+      "original_guard_sha256": "4d8465e8c70c4a8cdd241410a68cc4c009dd491c452c3135849e64ee22d4f585",
+      "admission_evidence": false
+    },
+    "mx_san_initcheck_boundary_zero32_v3": {
+      "gpu": 7,
+      "start": 1789806892.2250578,
+      "end": 1789806904.6788838,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.453825950622559,
+      "original_guard_sha256": "c431bbcbc6bcfc61d215c5138d954df5b18f57a11e4f675e32938737de0e16e6",
+      "admission_evidence": true
+    },
+    "mx_san_initcheck_cifar4096_v2": {
+      "gpu": 1,
+      "start": 1789806573.418645,
+      "end": 1789806586.074484,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.655839204788208,
+      "original_guard_sha256": "90453f348cff13cc01fd1fe3adc256721103a191b91160b3e18bca4c54e49cf6",
+      "admission_evidence": false
+    },
+    "mx_san_initcheck_cifar4096_v3": {
+      "gpu": 7,
+      "start": 1789806880.1260097,
+      "end": 1789806892.0905447,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 11.964534997940063,
+      "original_guard_sha256": "14dcfe9136fac98689d74186f7e5960320c80c9bdfcdbfd4873af353cf3c2be2",
+      "admission_evidence": true
+    },
+    "mx_san_memcheck_boundary_zero32_v2": {
+      "gpu": 1,
+      "start": 1789806528.120784,
+      "end": 1789806539.996443,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 11.875658988952637,
+      "original_guard_sha256": "f39406701a535b753a7c7a5d5c4e368b9e3f984ee5b612b16c6db387d4b61e7d",
+      "admission_evidence": false
+    },
+    "mx_san_memcheck_boundary_zero32_v3": {
+      "gpu": 7,
+      "start": 1789806835.235996,
+      "end": 1789806847.6099327,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.373936653137207,
+      "original_guard_sha256": "6d9a29e4e018c8e386e13947c8f5f989779737714574088025239a987e4e02f7",
+      "admission_evidence": true
+    },
+    "mx_san_memcheck_cifar4096_v1": {
+      "gpu": 0,
+      "start": 1789806387.8136992,
+      "end": 1789806387.9903045,
+      "pass": false,
+      "seconds": 0.176605224609375,
+      "original_guard_sha256": "f14e1073e3c6189f77942e0db19bef689c52678426ff8ad8049b269f37402626",
+      "admission_evidence": false,
+      "reason": "Preflight refused to launch: a foreign GPU 0 process was present. No foreign process was stopped."
+    },
+    "mx_san_memcheck_cifar4096_v2": {
+      "gpu": 1,
+      "start": 1789806514.3924835,
+      "end": 1789806527.9707768,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 13.578293323516846,
+      "original_guard_sha256": "d3bfe957bba68f3d4a20df68c77c961492d5f906407dd82032cb447e2fd5a02d",
+      "admission_evidence": false
+    },
+    "mx_san_memcheck_cifar4096_v3": {
+      "gpu": 7,
+      "start": 1789806822.763101,
+      "end": 1789806835.0982587,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.335157632827759,
+      "original_guard_sha256": "f87ec042d67567b6b19117f48aed634f70f8957a663159e941036c4426be5d6b",
+      "admission_evidence": true
+    },
+    "mx_san_racecheck_boundary_zero32_v2": {
+      "gpu": 1,
+      "start": 1789806559.6841533,
+      "end": 1789806573.2757227,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 13.591569423675537,
+      "original_guard_sha256": "60810cd47dda5cac3c3f6de17d07846e9214103da4a296d4fd539e7b699604e8",
+      "admission_evidence": false
+    },
+    "mx_san_racecheck_boundary_zero32_v3": {
+      "gpu": 7,
+      "start": 1789806866.704849,
+      "end": 1789806879.9917698,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 13.28692078590393,
+      "original_guard_sha256": "fbc30f5f1c2a50ff34c996049f899b757f2dffbff00f4488e7af9256df7f7c8c",
+      "admission_evidence": true
+    },
+    "mx_san_racecheck_cifar4096_v2": {
+      "gpu": 1,
+      "start": 1789806540.1518183,
+      "end": 1789806559.5310242,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 19.37920594215393,
+      "original_guard_sha256": "c5d43ba3725907b97b211681af70e05f7efee995b47e7bc883deddab1a0a941e",
+      "admission_evidence": false
+    },
+    "mx_san_racecheck_cifar4096_v3": {
+      "gpu": 7,
+      "start": 1789806847.749045,
+      "end": 1789806866.5691924,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 18.82014751434326,
+      "original_guard_sha256": "d5d59258b62699c720a8ab36621bafae53648789224144a62c9e9ff956043003",
+      "admission_evidence": true
+    },
+    "mx_san_synccheck_boundary_zero32_v2": {
+      "gpu": 1,
+      "start": 1789806610.8215349,
+      "end": 1789806623.386426,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.56489109992981,
+      "original_guard_sha256": "3ebbb08007bd92eae67dea5570bbaf066a631c18fcbb6d5d7f8be9bbe54fc5c6",
+      "admission_evidence": false
+    },
+    "mx_san_synccheck_boundary_zero32_v3": {
+      "gpu": 7,
+      "start": 1789806916.9113786,
+      "end": 1789806929.2461457,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 12.33476710319519,
+      "original_guard_sha256": "d0b473babd84ef9d1ec241c64926156210210fde5810f723147cf0b442c3244c",
+      "admission_evidence": true
+    },
+    "mx_san_synccheck_cifar4096_v2": {
+      "gpu": 1,
+      "start": 1789806599.0221012,
+      "end": 1789806610.673728,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 11.651626825332642,
+      "original_guard_sha256": "a0c3fa67457272cbaeed96359af6787db60156f59d23cdc24d0f39b6178292c7",
+      "admission_evidence": false
+    },
+    "mx_san_synccheck_cifar4096_v3": {
+      "gpu": 7,
+      "start": 1789806904.811545,
+      "end": 1789806916.7776065,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 11.96606159210205,
+      "original_guard_sha256": "9dbb24a6a6c3d933ecbb279d6be13f45f37a5c68b57d2fe6cfba1c50c85a0505",
+      "admission_evidence": true
+    },
+    "mx_stress_v2": {
+      "gpu": 1,
+      "start": 1789806623.5242383,
+      "end": 1789806641.716157,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 18.19191861152649,
+      "original_guard_sha256": "d7cc0ecee36a50f36b87cc14a159ab4201fd7db24cf34ba6431a33fea6a9d185",
+      "admission_evidence": false
+    },
+    "mx_stress_v3": {
+      "gpu": 7,
+      "start": 1789806929.3828378,
+      "end": 1789806947.3319387,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.949100971221924,
+      "original_guard_sha256": "4d15271add70eab9efd308c1fc3f0cf0f4cf2dd7f8d4472dbe2a7ca653aa4bb4",
+      "admission_evidence": true
+    },
+    "mx_validate_v1": {
+      "gpu": 0,
+      "start": 1789806325.4776833,
+      "end": 1789806353.4227,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 27.945016622543335,
+      "original_guard_sha256": "a9e0a5483502874fb715643e8d5154ccb78d300970eb161e21f92d5802365ac8",
+      "admission_evidence": false
+    },
+    "mx_validate_v2": {
+      "gpu": 1,
+      "start": 1789806496.924379,
+      "end": 1789806514.2497509,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 17.325371742248535,
+      "original_guard_sha256": "50b14664a4a75cfd40684407d2d4e46d47bf12d17d558b4e565b7feca3f867b0",
+      "admission_evidence": false
+    },
+    "mx_validate_v3": {
+      "gpu": 7,
+      "start": 1789806803.842167,
+      "end": 1789806822.628887,
+      "pass": true,
+      "exit_code": 0,
+      "seconds": 18.786720037460327,
+      "original_guard_sha256": "7a79249527f5730fe634d97f523c1d5833636487d4e7f9a21b4d4a129dc7e997",
+      "admission_evidence": true
+    }
+  },
+  "telemetry": {
+    "mx_bench_v1_0": {
+      "original_sha256": "9be25e41b29aa4451b266b27515d4c0cfc5daf482effab8f749cb702f2e31e97",
+      "samples": [
+        {
+          "time": 1789806947.641946,
+          "state": "7, P0, 35, 91.79, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806948.82796,
+          "state": "7, P8, 35, 90.83, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806950.0217395,
+          "state": "7, P8, 34, 42.72, 450, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806951.1922746,
+          "state": "7, P8, 33, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806952.3629637,
+          "state": "7, P8, 33, 37.78, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806953.5326982,
+          "state": "7, P8, 33, 37.41, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806954.4567597,
+          "state": "7, P8, 33, 37.16, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806955.3785217,
+          "state": "7, P0, 34, 44.69, 180, 12481, 1348, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806956.2928145,
+          "state": "7, P0, 35, 95.71, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806957.2090592,
+          "state": "7, P0, 35, 91.19, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806958.132499,
+          "state": "7, P0, 35, 90.54, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806959.0430686,
+          "state": "7, P0, 36, 102.97, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789806959.9554222,
+          "state": "7, P0, 35, 101.70, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789806960.8643687,
+          "state": "7, P0, 36, 113.52, 2302, 12481, 1348, 14",
+          "process_count": 1
+        },
+        {
+          "time": 1789806961.7789392,
+          "state": "7, P0, 36, 117.55, 2302, 12481, 1348, 14",
+          "process_count": 1
+        },
+        {
+          "time": 1789806962.690569,
+          "state": "7, P0, 35, 112.69, 2302, 12481, 1348, 4",
+          "process_count": 1
+        },
+        {
+          "time": 1789806963.6096926,
+          "state": "7, P0, 35, 90.69, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806964.5221858,
+          "state": "7, P0, 35, 90.86, 2302, 12481, 1348, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_bench_v1_1": {
+      "original_sha256": "10110ff2e2c70df7dc142b8faf59c5acfdd017c1e0febedf50359e4fb25d8001",
+      "samples": [
+        {
+          "time": 1789806965.5695717,
+          "state": "7, P0, 35, 94.44, 2310, 12481, 14, 3",
+          "process_count": 0
+        },
+        {
+          "time": 1789806966.7402835,
+          "state": "7, P0, 35, 90.73, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806967.9118252,
+          "state": "7, P0, 34, 55.09, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806969.082614,
+          "state": "7, P8, 34, 37.43, 375, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806970.2574306,
+          "state": "7, P8, 34, 37.43, 217, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806971.4418006,
+          "state": "7, P8, 34, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806972.369641,
+          "state": "7, P8, 34, 37.42, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806973.2888725,
+          "state": "7, P0, 34, 41.09, 307, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806974.21131,
+          "state": "7, P0, 35, 87.25, 2310, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806975.128656,
+          "state": "7, P0, 35, 91.56, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806976.0467637,
+          "state": "7, P0, 35, 96.02, 2302, 12481, 1348, 5",
+          "process_count": 1
+        },
+        {
+          "time": 1789806976.9639196,
+          "state": "7, P0, 36, 108.59, 2302, 12481, 1348, 7",
+          "process_count": 1
+        },
+        {
+          "time": 1789806977.8879848,
+          "state": "7, P0, 36, 116.99, 2302, 12481, 1348, 12",
+          "process_count": 1
+        },
+        {
+          "time": 1789806978.806023,
+          "state": "7, P0, 37, 119.94, 2302, 12481, 1348, 12",
+          "process_count": 1
+        },
+        {
+          "time": 1789806979.7249548,
+          "state": "7, P0, 36, 108.85, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789806980.644265,
+          "state": "7, P0, 35, 95.96, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806981.559307,
+          "state": "7, P0, 35, 91.14, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806982.5531912,
+          "state": "7, P0, 35, 93.42, 2302, 12481, 1348, 2",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_bench_v1_2": {
+      "original_sha256": "b5aba204b892677f49af7fab694e46a2346eb57727dd778a7b7d436953070e3d",
+      "samples": [
+        {
+          "time": 1789806983.6047056,
+          "state": "7, P0, 35, 93.20, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806984.7789307,
+          "state": "7, P0, 35, 51.57, 675, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806985.9519458,
+          "state": "7, P8, 34, 38.50, 337, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806987.130543,
+          "state": "7, P8, 34, 37.97, 202, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806988.3009865,
+          "state": "7, P8, 34, 38.26, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806989.4797566,
+          "state": "7, P8, 34, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806990.4051614,
+          "state": "7, P8, 34, 37.42, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806991.3285751,
+          "state": "7, P0, 35, 52.17, 832, 12481, 1348, 3",
+          "process_count": 1
+        },
+        {
+          "time": 1789806992.247396,
+          "state": "7, P0, 35, 99.53, 2310, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806993.1651187,
+          "state": "7, P0, 35, 91.24, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806994.0821133,
+          "state": "7, P0, 35, 91.79, 2302, 12481, 1348, 5",
+          "process_count": 1
+        },
+        {
+          "time": 1789806994.9946752,
+          "state": "7, P0, 36, 108.58, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789806995.9135218,
+          "state": "7, P0, 36, 115.71, 2302, 12481, 1348, 12",
+          "process_count": 1
+        },
+        {
+          "time": 1789806996.8290508,
+          "state": "7, P0, 36, 118.89, 2302, 12481, 1348, 12",
+          "process_count": 1
+        },
+        {
+          "time": 1789806997.7475822,
+          "state": "7, P0, 36, 114.94, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789806998.6658244,
+          "state": "7, P0, 35, 91.69, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806999.584524,
+          "state": "7, P0, 36, 90.94, 2310, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807000.5681818,
+          "state": "7, P0, 35, 92.80, 2302, 12481, 1348, 0",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_bench_v1_3": {
+      "original_sha256": "feb60fdf31351fcadf0fbf479ea3787048db22cef791acafb650af5af5cffe65",
+      "samples": [
+        {
+          "time": 1789807001.6258583,
+          "state": "7, P0, 36, 91.68, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807002.7984767,
+          "state": "7, P0, 36, 90.97, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807003.9739006,
+          "state": "7, P8, 34, 54.17, 375, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807005.1464972,
+          "state": "7, P8, 34, 37.43, 225, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807006.3206923,
+          "state": "7, P8, 34, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807007.4931824,
+          "state": "7, P8, 34, 37.41, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807008.414364,
+          "state": "7, P8, 34, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789807009.3336904,
+          "state": "7, P0, 35, 43.85, 180, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807010.2530818,
+          "state": "7, P0, 35, 97.65, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807011.1748593,
+          "state": "7, P0, 35, 91.19, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807012.0959094,
+          "state": "7, P0, 35, 92.47, 2310, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807013.0177264,
+          "state": "7, P0, 35, 104.91, 2302, 12481, 1348, 5",
+          "process_count": 1
+        },
+        {
+          "time": 1789807013.9420776,
+          "state": "7, P0, 37, 109.64, 2302, 12481, 1348, 14",
+          "process_count": 1
+        },
+        {
+          "time": 1789807014.8602471,
+          "state": "7, P0, 36, 116.25, 2302, 12481, 1348, 14",
+          "process_count": 1
+        },
+        {
+          "time": 1789807015.7764525,
+          "state": "7, P0, 36, 110.77, 2302, 12481, 1348, 6",
+          "process_count": 1
+        },
+        {
+          "time": 1789807016.6926446,
+          "state": "7, P0, 36, 98.04, 2310, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807017.6134672,
+          "state": "7, P0, 35, 90.96, 2302, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789807018.5339577,
+          "state": "7, P0, 36, 92.69, 2302, 12481, 1348, 7",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_probe_v1": {
+      "original_sha256": "aeb0c703a14f0c7faf0f576c65b460ff13adec67a9fa1a6a3fa0dfd7caa0b679",
+      "samples": [
+        {
+          "time": 1789806140.2987702,
+          "state": "0, P8, 30, 35.80, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806141.486429,
+          "state": "0, P8, 30, 35.86, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806142.6737645,
+          "state": "0, P8, 30, 35.57, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806143.8614833,
+          "state": "0, P8, 30, 35.09, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806145.0494356,
+          "state": "0, P8, 30, 35.33, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806146.2327712,
+          "state": "0, P8, 30, 35.08, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806147.155786,
+          "state": "0, P8, 30, 35.90, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806148.0741029,
+          "state": "0, P0, 31, 44.94, 1110, 12481, 682, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806148.9918478,
+          "state": "0, P0, 32, 85.36, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806149.9109287,
+          "state": "0, P0, 32, 86.82, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806150.8305247,
+          "state": "0, P0, 32, 86.18, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806151.7472167,
+          "state": "0, P0, 32, 85.54, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806152.6692917,
+          "state": "0, P0, 32, 85.49, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806153.5873199,
+          "state": "0, P0, 32, 85.51, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806154.5051117,
+          "state": "0, P0, 33, 85.77, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806155.42902,
+          "state": "0, P0, 33, 85.53, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806156.3502738,
+          "state": "0, P0, 33, 85.63, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806157.2741547,
+          "state": "0, P0, 33, 85.81, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806158.1929579,
+          "state": "0, P0, 33, 85.71, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806159.1130276,
+          "state": "0, P0, 33, 85.81, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806160.0374227,
+          "state": "0, P0, 33, 85.85, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806160.9553707,
+          "state": "0, P0, 33, 85.74, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806161.8743942,
+          "state": "0, P0, 33, 85.96, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806162.7963903,
+          "state": "0, P0, 33, 85.88, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806163.7136,
+          "state": "0, P0, 33, 85.99, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806164.6362,
+          "state": "0, P0, 33, 85.99, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806165.5596805,
+          "state": "0, P0, 34, 85.72, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806166.4789815,
+          "state": "0, P0, 34, 86.00, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806167.3969069,
+          "state": "0, P0, 34, 86.03, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806168.3148055,
+          "state": "0, P0, 34, 86.04, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806169.232786,
+          "state": "0, P0, 34, 86.10, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806170.1498847,
+          "state": "0, P0, 34, 86.07, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806171.0673697,
+          "state": "0, P0, 34, 86.14, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806171.9931204,
+          "state": "0, P0, 34, 86.11, 2332, 12481, 764, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_probe_v2": {
+      "original_sha256": "bed9dae6b0a39875115d1a4a34020eb68c802d7539ab5a3c277b2a97041713af",
+      "samples": [
+        {
+          "time": 1789806467.4638207,
+          "state": "1, P8, 30, 34.96, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806468.6411138,
+          "state": "1, P8, 30, 34.96, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806469.8212452,
+          "state": "1, P8, 30, 35.26, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806471.0674853,
+          "state": "1, P8, 30, 35.37, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806472.251148,
+          "state": "1, P8, 30, 34.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806473.428691,
+          "state": "1, P8, 30, 34.96, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806474.3526697,
+          "state": "1, P8, 30, 34.95, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806475.3098752,
+          "state": "1, P0, 31, 38.59, 600, 12481, 576, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806476.2271624,
+          "state": "1, P0, 32, 85.84, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806477.2967196,
+          "state": "1, P0, 32, 87.93, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806478.215893,
+          "state": "1, P0, 32, 87.86, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806479.1421998,
+          "state": "1, P0, 32, 87.54, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806480.0553288,
+          "state": "1, P0, 32, 87.85, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806480.968609,
+          "state": "1, P0, 32, 87.64, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806481.9232054,
+          "state": "1, P0, 32, 87.89, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806482.8369846,
+          "state": "1, P0, 33, 88.06, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806483.7652972,
+          "state": "1, P0, 33, 87.68, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806484.6829286,
+          "state": "1, P0, 33, 88.30, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806485.5979395,
+          "state": "1, P0, 33, 88.03, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806486.6045387,
+          "state": "1, P0, 33, 87.89, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806487.518363,
+          "state": "1, P0, 33, 87.99, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806488.4593084,
+          "state": "1, P0, 33, 88.26, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806489.3726504,
+          "state": "1, P0, 33, 88.32, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806490.2867415,
+          "state": "1, P0, 33, 88.05, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806491.265528,
+          "state": "1, P0, 33, 88.35, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806492.1823645,
+          "state": "1, P0, 33, 87.98, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806493.134823,
+          "state": "1, P0, 33, 88.13, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806494.1242826,
+          "state": "1, P0, 33, 88.87, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806495.0408442,
+          "state": "1, P0, 33, 88.32, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806496.0424192,
+          "state": "1, P0, 34, 89.34, 2362, 12481, 14, 0",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_probe_v3": {
+      "original_sha256": "e310e6894d043ef98ae1fe44d738a2e643dc18cc4d51b17034135ae2de975097",
+      "samples": [
+        {
+          "time": 1789806773.1922996,
+          "state": "7, P8, 30, 36.71, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806774.3637202,
+          "state": "7, P8, 30, 36.45, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806775.5317595,
+          "state": "7, P8, 30, 36.45, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806776.703685,
+          "state": "7, P8, 30, 36.45, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806777.8743467,
+          "state": "7, P8, 30, 36.45, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806779.048593,
+          "state": "7, P8, 30, 36.45, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806779.9699264,
+          "state": "7, P8, 30, 36.82, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806780.8895009,
+          "state": "7, P0, 31, 40.59, 180, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806781.8048103,
+          "state": "7, P0, 32, 87.58, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806782.724614,
+          "state": "7, P0, 32, 89.14, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806783.6475472,
+          "state": "7, P0, 32, 88.30, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806784.5663772,
+          "state": "7, P0, 32, 89.00, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806785.4939435,
+          "state": "7, P0, 32, 88.86, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806786.4113514,
+          "state": "7, P0, 32, 89.00, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806787.3351033,
+          "state": "7, P0, 32, 88.93, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806788.255424,
+          "state": "7, P0, 33, 89.47, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806789.1716254,
+          "state": "7, P0, 33, 89.12, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806790.0882933,
+          "state": "7, P0, 33, 89.48, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806791.0059638,
+          "state": "7, P0, 33, 89.14, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806791.9252977,
+          "state": "7, P0, 33, 89.16, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806792.8438637,
+          "state": "7, P0, 33, 89.48, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806793.762524,
+          "state": "7, P0, 33, 89.66, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806794.678354,
+          "state": "7, P0, 33, 89.68, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806795.5982802,
+          "state": "7, P0, 33, 89.92, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806796.516675,
+          "state": "7, P0, 33, 89.93, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806797.4364457,
+          "state": "7, P0, 33, 90.19, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806798.356807,
+          "state": "7, P0, 33, 89.62, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806799.2755048,
+          "state": "7, P0, 33, 89.93, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806800.1938214,
+          "state": "7, P0, 33, 89.71, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806801.112652,
+          "state": "7, P0, 34, 89.81, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806802.0307834,
+          "state": "7, P0, 34, 89.75, 2325, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806802.9508607,
+          "state": "7, P0, 34, 89.66, 2317, 12481, 764, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_initcheck_boundary_zero32_v2": {
+      "original_sha256": "0eb7c9b0a6e5081ffe4a35bfacbd8974090da33d013538f32cc462322a4bb40e",
+      "samples": [
+        {
+          "time": 1789806586.4059558,
+          "state": "1, P0, 35, 90.85, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806587.6153805,
+          "state": "1, P0, 34, 49.58, 1462, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806588.81967,
+          "state": "1, P0, 34, 48.60, 330, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806590.0371594,
+          "state": "1, P8, 34, 35.94, 202, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806591.233519,
+          "state": "1, P8, 34, 35.93, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806592.4356601,
+          "state": "1, P8, 33, 38.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806593.3849983,
+          "state": "1, P8, 33, 35.48, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806594.367897,
+          "state": "1, P8, 33, 35.94, 180, 405, 17, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806595.2976918,
+          "state": "1, P0, 35, 78.42, 2362, 12481, 896, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806596.2279322,
+          "state": "1, P0, 35, 88.96, 2362, 12481, 898, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806597.1596699,
+          "state": "1, P0, 35, 88.79, 2362, 12481, 898, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806598.1224132,
+          "state": "1, P0, 35, 88.88, 2362, 12481, 898, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_initcheck_boundary_zero32_v3": {
+      "original_sha256": "97af13805633709199e8af9851d3803178f693df5b6d09d18508a693ed751700",
+      "samples": [
+        {
+          "time": 1789806892.3958223,
+          "state": "7, P0, 35, 92.29, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806893.568546,
+          "state": "7, P0, 35, 92.14, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806894.7381384,
+          "state": "7, P0, 34, 51.07, 307, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806895.9112384,
+          "state": "7, P8, 34, 51.06, 270, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806897.092253,
+          "state": "7, P8, 33, 37.41, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806898.266207,
+          "state": "7, P8, 33, 37.42, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806899.189415,
+          "state": "7, P8, 33, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806900.1616445,
+          "state": "7, P8, 33, 37.41, 180, 405, 27, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806901.0869503,
+          "state": "7, P0, 34, 82.28, 2317, 12481, 896, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806902.0140488,
+          "state": "7, P0, 35, 90.68, 2325, 12481, 898, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806902.9331386,
+          "state": "7, P0, 35, 90.79, 2317, 12481, 898, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806903.928614,
+          "state": "7, P0, 35, 89.86, 2317, 12481, 898, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_initcheck_cifar4096_v2": {
+      "original_sha256": "f15d71a4688b90339f7b2397e3ebdbe9f7ee78a88169265b82a2f4eabe896c68",
+      "samples": [
+        {
+          "time": 1789806573.6024082,
+          "state": "1, P0, 35, 89.94, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806574.7906842,
+          "state": "1, P0, 35, 89.90, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806575.9608862,
+          "state": "1, P8, 34, 43.24, 435, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806577.157346,
+          "state": "1, P8, 34, 36.15, 217, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806578.3385017,
+          "state": "1, P8, 33, 36.17, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806579.5194,
+          "state": "1, P8, 33, 35.50, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806580.461714,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806581.4294198,
+          "state": "1, P8, 33, 35.88, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806582.4399536,
+          "state": "1, P0, 35, 83.87, 2362, 12481, 918, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806583.4020472,
+          "state": "1, P0, 35, 89.23, 2355, 12481, 920, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806584.3327756,
+          "state": "1, P0, 35, 91.25, 2355, 12481, 920, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806585.3242984,
+          "state": "1, P0, 35, 89.40, 2355, 12481, 920, 0",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_san_initcheck_cifar4096_v3": {
+      "original_sha256": "842832117deb36ec5552e92feaddc9c8c61ceda3b89d2d0248a3883f1dca8b37",
+      "samples": [
+        {
+          "time": 1789806880.2942598,
+          "state": "7, P0, 35, 92.15, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806881.464958,
+          "state": "7, P0, 35, 91.08, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806882.636252,
+          "state": "7, P8, 34, 37.41, 855, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806883.8142626,
+          "state": "7, P8, 34, 37.41, 270, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806884.987748,
+          "state": "7, P8, 34, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806886.1642163,
+          "state": "7, P8, 33, 37.17, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806887.0880203,
+          "state": "7, P8, 33, 37.56, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806888.044804,
+          "state": "7, P8, 33, 37.47, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806888.965773,
+          "state": "7, P0, 35, 83.57, 2317, 12481, 918, 8",
+          "process_count": 1
+        },
+        {
+          "time": 1789806889.8867865,
+          "state": "7, P0, 35, 91.74, 2302, 12481, 920, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806891.340064,
+          "state": "7, P0, 35, 90.75, 2310, 12481, 920, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_memcheck_boundary_zero32_v2": {
+      "original_sha256": "84b7fc1cc165e781ff9a489f4387e43149bd8f2099d90d8f1bb424d7e28868ad",
+      "samples": [
+        {
+          "time": 1789806528.3753908,
+          "state": "1, P0, 34, 89.10, 2362, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806529.6562984,
+          "state": "1, P0, 33, 49.09, 1230, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806530.8382955,
+          "state": "1, P0, 33, 48.85, 330, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806532.0324996,
+          "state": "1, P8, 33, 35.43, 202, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806533.2218614,
+          "state": "1, P8, 33, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806534.4194436,
+          "state": "1, P8, 33, 36.48, 172, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806535.339569,
+          "state": "1, P8, 33, 36.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806536.4253378,
+          "state": "1, P0, 33, 35.54, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806537.3583992,
+          "state": "1, P0, 34, 89.35, 2362, 12481, 850, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806538.3082898,
+          "state": "1, P0, 34, 88.62, 2362, 12481, 850, 1",
+          "process_count": 1
+        },
+        {
+          "time": 1789806539.2459311,
+          "state": "1, P0, 34, 88.88, 2362, 12481, 850, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_memcheck_boundary_zero32_v3": {
+      "original_sha256": "d9b7dbb1c9c61dceaa58188ab9eada8a045b3be210be5b93f1fa10f6c5e4fb33",
+      "samples": [
+        {
+          "time": 1789806835.403265,
+          "state": "7, P0, 34, 90.75, 2317, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806836.5744107,
+          "state": "7, P0, 34, 90.45, 2317, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806837.7491899,
+          "state": "7, P0, 33, 52.34, 367, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806838.9205678,
+          "state": "7, P0, 33, 49.60, 225, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806840.095399,
+          "state": "7, P8, 33, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806841.2691755,
+          "state": "7, P8, 33, 36.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806842.193963,
+          "state": "7, P8, 33, 36.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806843.1498098,
+          "state": "7, P8, 33, 37.10, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806844.0707517,
+          "state": "7, P0, 34, 87.12, 2317, 12481, 850, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806844.9908564,
+          "state": "7, P0, 34, 90.24, 2325, 12481, 850, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806845.9097576,
+          "state": "7, P0, 34, 90.26, 2317, 12481, 850, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806846.8597672,
+          "state": "7, P0, 34, 90.10, 2317, 12481, 14, 0",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_san_memcheck_cifar4096_v1": {
+      "original_sha256": "d79397be01f7cc737196a788264e341bd7b9393ef13e09a85942b917fb42504a",
+      "samples": [
+        {
+          "time": 1789806387.990172,
+          "state": "0, P0, 40, 66.86, 2317, 12481, 26716, 66",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_memcheck_cifar4096_v2": {
+      "original_sha256": "87b523834cfeab5eca33474c44dafc4a5f0bf038ec6ecda55e7147ab1ba053a6",
+      "samples": [
+        {
+          "time": 1789806514.565402,
+          "state": "1, P0, 34, 89.89, 2362, 12481, 14, 3",
+          "process_count": 0
+        },
+        {
+          "time": 1789806515.7549357,
+          "state": "1, P0, 34, 89.46, 2362, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806516.9426866,
+          "state": "1, P0, 33, 49.58, 1230, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806518.1500392,
+          "state": "1, P8, 33, 35.92, 337, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806519.3398094,
+          "state": "1, P8, 33, 35.43, 195, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806520.5289133,
+          "state": "1, P8, 32, 36.17, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806521.4754505,
+          "state": "1, P8, 32, 36.17, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806522.4550097,
+          "state": "1, P0, 32, 37.84, 180, 12481, 38, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806523.3957107,
+          "state": "1, P0, 35, 83.18, 2362, 12481, 870, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806524.3246021,
+          "state": "1, P0, 34, 89.72, 2362, 12481, 872, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806525.2514298,
+          "state": "1, P0, 34, 90.37, 2362, 12481, 872, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806526.2017064,
+          "state": "1, P0, 34, 89.73, 2362, 12481, 872, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806527.2206013,
+          "state": "1, P0, 34, 88.81, 2362, 12481, 872, 0",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_san_memcheck_cifar4096_v3": {
+      "original_sha256": "2adf9cb7d8ae92e3595fb61ad7e26cd612c4c33ef92b149b3ed1b59fbd9c7a18",
+      "samples": [
+        {
+          "time": 1789806822.9267004,
+          "state": "7, P0, 34, 92.02, 2317, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806824.0951166,
+          "state": "7, P0, 34, 91.74, 2317, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806825.272158,
+          "state": "7, P8, 34, 88.71, 2325, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806826.441306,
+          "state": "7, P8, 33, 37.43, 232, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806827.613501,
+          "state": "7, P8, 33, 37.18, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806828.7968252,
+          "state": "7, P8, 33, 36.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806829.7254598,
+          "state": "7, P8, 33, 37.38, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806830.6727154,
+          "state": "7, P8, 33, 37.32, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806831.5929646,
+          "state": "7, P0, 35, 94.12, 2317, 12481, 872, 25",
+          "process_count": 1
+        },
+        {
+          "time": 1789806832.5092983,
+          "state": "7, P0, 34, 103.72, 2317, 12481, 872, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806833.429993,
+          "state": "7, P0, 34, 91.68, 2317, 12481, 872, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806834.347658,
+          "state": "7, P0, 34, 102.49, 2317, 12481, 872, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_racecheck_boundary_zero32_v2": {
+      "original_sha256": "01fecb7d61c96e02c4f80390f542b65d04e637017316d587b5aa8a622b7eac3d",
+      "samples": [
+        {
+          "time": 1789806559.8611338,
+          "state": "1, P0, 35, 89.50, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806561.044868,
+          "state": "1, P0, 35, 89.10, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806562.2405155,
+          "state": "1, P8, 34, 36.40, 360, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806563.5076382,
+          "state": "1, P8, 34, 37.48, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806564.7142859,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806565.9204292,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806566.8705323,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806567.834029,
+          "state": "1, P0, 33, 41.17, 180, 12481, 42, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806568.7867658,
+          "state": "1, P0, 35, 85.93, 2362, 12481, 714, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806569.7229438,
+          "state": "1, P0, 35, 92.42, 2355, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806570.6665597,
+          "state": "1, P0, 35, 90.34, 2355, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806571.599154,
+          "state": "1, P0, 35, 89.45, 2355, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806572.5251372,
+          "state": "1, P0, 35, 88.12, 2355, 12481, 716, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_racecheck_boundary_zero32_v3": {
+      "original_sha256": "1c85859bed1c51747c3f56d5839e1531f304d0e28164c0b15a2cc7ff52ea2acc",
+      "samples": [
+        {
+          "time": 1789806866.8738844,
+          "state": "7, P0, 35, 91.72, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806868.051285,
+          "state": "7, P0, 35, 90.87, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806869.2187076,
+          "state": "7, P8, 35, 55.45, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806870.390044,
+          "state": "7, P8, 34, 37.89, 412, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806871.5634832,
+          "state": "7, P8, 34, 37.42, 247, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806872.7443402,
+          "state": "7, P8, 33, 39.70, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806873.669443,
+          "state": "7, P8, 33, 38.87, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806874.6255949,
+          "state": "7, P0, 33, 37.83, 180, 12481, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806875.5478764,
+          "state": "7, P0, 35, 81.71, 2325, 12481, 714, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806876.4743848,
+          "state": "7, P0, 35, 93.58, 2302, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806877.3986018,
+          "state": "7, P0, 35, 92.03, 2310, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806878.3181655,
+          "state": "7, P0, 35, 92.14, 2310, 12481, 716, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806879.2411048,
+          "state": "7, P0, 35, 91.99, 2310, 12481, 716, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_racecheck_cifar4096_v2": {
+      "original_sha256": "800b1d4ec1becbe527538b929453ef840e84b995574bcfe4565d43e01430a7e4",
+      "samples": [
+        {
+          "time": 1789806540.3322437,
+          "state": "1, P0, 34, 89.21, 2362, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806541.520045,
+          "state": "1, P8, 33, 64.08, 465, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806542.7281528,
+          "state": "1, P8, 33, 41.28, 352, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806543.9217825,
+          "state": "1, P8, 33, 35.43, 210, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806545.1081283,
+          "state": "1, P8, 33, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806546.359366,
+          "state": "1, P8, 33, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806547.2855124,
+          "state": "1, P8, 33, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806548.2320783,
+          "state": "1, P0, 33, 41.38, 450, 12481, 50, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806549.161432,
+          "state": "1, P0, 34, 85.54, 2362, 12481, 734, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806550.103792,
+          "state": "1, P0, 35, 99.99, 2362, 12481, 734, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806551.0487604,
+          "state": "1, P0, 35, 110.25, 2355, 12481, 734, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806552.030729,
+          "state": "1, P0, 35, 108.80, 2355, 12481, 736, 76",
+          "process_count": 1
+        },
+        {
+          "time": 1789806552.9673116,
+          "state": "1, P0, 35, 103.48, 2355, 12481, 738, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806553.8987591,
+          "state": "1, P0, 35, 102.66, 2355, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806554.8312914,
+          "state": "1, P0, 35, 97.84, 2355, 12481, 738, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806555.787417,
+          "state": "1, P0, 35, 91.20, 2355, 12481, 738, 93",
+          "process_count": 1
+        },
+        {
+          "time": 1789806556.7255142,
+          "state": "1, P0, 35, 103.57, 2355, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806557.7217062,
+          "state": "1, P0, 35, 90.30, 2355, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806558.7802913,
+          "state": "1, P0, 35, 96.07, 2355, 12481, 738, 98",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_racecheck_cifar4096_v3": {
+      "original_sha256": "caf414ff764953ff775eb74b7b97f3d0c450f257194550b855d529ebc57b04c8",
+      "samples": [
+        {
+          "time": 1789806847.919443,
+          "state": "7, P0, 34, 91.38, 2325, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806849.0933099,
+          "state": "7, P8, 33, 42.26, 585, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806850.2669024,
+          "state": "7, P8, 33, 36.92, 292, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806851.4376805,
+          "state": "7, P8, 33, 37.33, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806852.6080015,
+          "state": "7, P8, 33, 37.68, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806853.7835608,
+          "state": "7, P8, 33, 36.96, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806854.7168689,
+          "state": "7, P8, 33, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806855.6669424,
+          "state": "7, P8, 33, 37.42, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806856.5880015,
+          "state": "7, P0, 34, 87.97, 2317, 12481, 734, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806857.507884,
+          "state": "7, P0, 35, 107.70, 2325, 12481, 734, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806858.428964,
+          "state": "7, P0, 36, 119.66, 2310, 12481, 734, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806859.354215,
+          "state": "7, P0, 35, 118.38, 2302, 12481, 736, 100",
+          "process_count": 1
+        },
+        {
+          "time": 1789806860.2712915,
+          "state": "7, P0, 36, 113.44, 2302, 12481, 738, 96",
+          "process_count": 1
+        },
+        {
+          "time": 1789806861.1908925,
+          "state": "7, P0, 35, 109.70, 2302, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806862.1323626,
+          "state": "7, P0, 36, 99.25, 2302, 12481, 738, 95",
+          "process_count": 1
+        },
+        {
+          "time": 1789806863.059938,
+          "state": "7, P0, 35, 96.78, 2310, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806863.979515,
+          "state": "7, P0, 35, 112.10, 2302, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806864.9012012,
+          "state": "7, P0, 35, 93.51, 2310, 12481, 738, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806865.8184779,
+          "state": "7, P0, 36, 98.73, 2302, 12481, 738, 100",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_synccheck_boundary_zero32_v2": {
+      "original_sha256": "afd6dcf833363c5891813400e9be2a8f821f9a8a255713da57cf57870c16e2d8",
+      "samples": [
+        {
+          "time": 1789806611.002259,
+          "state": "1, P0, 35, 89.30, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806612.2076285,
+          "state": "1, P0, 35, 89.46, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806613.4043236,
+          "state": "1, P0, 34, 49.64, 352, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806614.609647,
+          "state": "1, P0, 34, 49.49, 277, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806615.8074296,
+          "state": "1, P8, 34, 36.89, 180, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806616.9873927,
+          "state": "1, P8, 34, 36.41, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806617.9151864,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806618.908773,
+          "state": "1, P8, 33, 36.35, 180, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806619.8358917,
+          "state": "1, P0, 35, 85.01, 2362, 12481, 732, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806620.7631576,
+          "state": "1, P0, 35, 88.76, 2362, 12481, 732, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806621.6963387,
+          "state": "1, P0, 35, 89.20, 2362, 12481, 732, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806622.6362472,
+          "state": "1, P0, 35, 89.51, 2362, 12481, 14, 1",
+          "process_count": 0
+        }
+      ]
+    },
+    "mx_san_synccheck_boundary_zero32_v3": {
+      "original_sha256": "2769c4ae8c1f2ef34c9da615ff4ac7c4ebbd6657cd0494ba4c0c593f56477c1b",
+      "samples": [
+        {
+          "time": 1789806917.0809095,
+          "state": "7, P0, 35, 91.52, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806918.2477405,
+          "state": "7, P0, 35, 91.38, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806919.409493,
+          "state": "7, P0, 34, 54.64, 2310, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806920.5740652,
+          "state": "7, P0, 34, 50.03, 225, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806921.743417,
+          "state": "7, P0, 34, 49.54, 172, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806922.9679325,
+          "state": "7, P8, 33, 37.84, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806923.8899171,
+          "state": "7, P8, 33, 37.97, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806924.8248034,
+          "state": "7, P0, 33, 40.61, 180, 12481, 44, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806925.7354605,
+          "state": "7, P0, 34, 84.98, 2317, 12481, 732, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806926.6436248,
+          "state": "7, P0, 35, 90.44, 2325, 12481, 732, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806927.5625618,
+          "state": "7, P0, 35, 90.76, 2317, 12481, 732, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806928.4955094,
+          "state": "7, P0, 35, 90.61, 2325, 12481, 732, 1",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_synccheck_cifar4096_v2": {
+      "original_sha256": "2ee243d5c766452c9e8a475db6b0f83db910695ad36002b32bb43fbe5d434426",
+      "samples": [
+        {
+          "time": 1789806599.2044396,
+          "state": "1, P0, 35, 89.74, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806600.4277637,
+          "state": "1, P0, 34, 89.06, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806601.6306462,
+          "state": "1, P8, 34, 35.92, 277, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806602.8323917,
+          "state": "1, P8, 34, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806604.0291061,
+          "state": "1, P8, 33, 35.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806605.2041435,
+          "state": "1, P8, 33, 35.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806606.1656115,
+          "state": "1, P8, 33, 35.77, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806607.1067493,
+          "state": "1, P0, 34, 40.47, 180, 12481, 750, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806608.0371656,
+          "state": "1, P0, 35, 100.48, 2355, 12481, 754, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806608.977483,
+          "state": "1, P0, 35, 89.06, 2355, 12481, 754, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806609.9231322,
+          "state": "1, P0, 35, 92.83, 2355, 12481, 754, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_san_synccheck_cifar4096_v3": {
+      "original_sha256": "1d6765ee810c22c1bb4cd7b28c81c2529d4f8d04a90206a8a6a494cc031df246",
+      "samples": [
+        {
+          "time": 1789806904.9784763,
+          "state": "7, P0, 35, 92.22, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806906.155727,
+          "state": "7, P0, 34, 54.71, 427, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806907.3293417,
+          "state": "7, P8, 34, 37.43, 262, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806908.505889,
+          "state": "7, P8, 33, 37.93, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806909.6815908,
+          "state": "7, P8, 33, 38.01, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806910.859759,
+          "state": "7, P8, 33, 36.99, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806911.78578,
+          "state": "7, P8, 33, 37.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806912.7412572,
+          "state": "7, P8, 33, 37.08, 172, 405, 36, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806914.175494,
+          "state": "7, P0, 35, 99.82, 2317, 12481, 754, 10",
+          "process_count": 1
+        },
+        {
+          "time": 1789806915.1084332,
+          "state": "7, P0, 35, 91.77, 2302, 12481, 754, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806916.0270712,
+          "state": "7, P0, 35, 90.80, 2310, 12481, 754, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_stress_v2": {
+      "original_sha256": "12b89c19caff5181fc4562cac21ba10b72835b67a9b5a8c6f79eed3fe42be495",
+      "samples": [
+        {
+          "time": 1789806623.6869652,
+          "state": "1, P0, 35, 89.01, 2355, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806624.869666,
+          "state": "1, P8, 34, 36.41, 450, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806626.0413928,
+          "state": "1, P8, 34, 35.94, 270, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806627.2166405,
+          "state": "1, P8, 34, 36.82, 187, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806628.3859785,
+          "state": "1, P8, 34, 36.88, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806629.7064524,
+          "state": "1, P8, 34, 35.94, 172, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806630.6812444,
+          "state": "1, P8, 33, 35.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806631.5988808,
+          "state": "1, P0, 34, 47.07, 1537, 12481, 682, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806632.5439425,
+          "state": "1, P0, 35, 89.11, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806633.482565,
+          "state": "1, P0, 35, 88.92, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806634.3908265,
+          "state": "1, P0, 35, 89.31, 2362, 12481, 682, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806635.3089907,
+          "state": "1, P0, 35, 90.78, 2355, 12481, 702, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806636.2202477,
+          "state": "1, P0, 35, 89.64, 2355, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806637.2353961,
+          "state": "1, P0, 35, 88.96, 2355, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806638.1677737,
+          "state": "1, P0, 35, 89.68, 2355, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806639.1128047,
+          "state": "1, P0, 35, 89.32, 2355, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806640.0380442,
+          "state": "1, P0, 35, 90.18, 2355, 12481, 702, 1",
+          "process_count": 1
+        },
+        {
+          "time": 1789806640.9657955,
+          "state": "1, P0, 36, 90.23, 2355, 12481, 704, 3",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_stress_v3": {
+      "original_sha256": "da6f01d00eea1811cabc93f1870213b4df2e7bcedf7734f373e1dde97569a590",
+      "samples": [
+        {
+          "time": 1789806929.5600667,
+          "state": "7, P0, 35, 91.28, 2302, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806930.7347848,
+          "state": "7, P8, 34, 74.99, 630, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806931.9222414,
+          "state": "7, P8, 33, 37.03, 285, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806933.0932312,
+          "state": "7, P8, 33, 36.93, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806934.2721343,
+          "state": "7, P8, 33, 37.41, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806935.4480345,
+          "state": "7, P8, 33, 36.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806936.3759696,
+          "state": "7, P8, 33, 36.94, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806937.2972429,
+          "state": "7, P0, 34, 42.29, 390, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806938.2137835,
+          "state": "7, P0, 34, 91.08, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806939.1286602,
+          "state": "7, P0, 34, 90.82, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806940.0442424,
+          "state": "7, P0, 35, 90.13, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806940.9598796,
+          "state": "7, P0, 35, 91.91, 2317, 12481, 702, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806941.8757348,
+          "state": "7, P0, 35, 91.91, 2317, 12481, 702, 1",
+          "process_count": 1
+        },
+        {
+          "time": 1789806942.805253,
+          "state": "7, P0, 35, 90.90, 2317, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806943.7360563,
+          "state": "7, P0, 35, 91.37, 2325, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806944.65192,
+          "state": "7, P0, 35, 90.80, 2317, 12481, 702, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806945.648927,
+          "state": "7, P0, 35, 91.25, 2317, 12481, 702, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806946.5814998,
+          "state": "7, P0, 35, 94.32, 2317, 12481, 704, 3",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_validate_v1": {
+      "original_sha256": "550eb0d5bfdb90d34b1292c652c55ca1ad18fe60125857c1c2166f5b4a39d193",
+      "samples": [
+        {
+          "time": 1789806325.6512125,
+          "state": "0, P8, 32, 35.58, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806326.8268976,
+          "state": "0, P8, 32, 35.89, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806328.00047,
+          "state": "0, P8, 32, 36.07, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806329.1744337,
+          "state": "0, P8, 32, 35.58, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806330.348764,
+          "state": "0, P8, 32, 35.58, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806331.530507,
+          "state": "0, P8, 32, 35.58, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806332.456599,
+          "state": "0, P8, 32, 35.58, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806333.3770506,
+          "state": "0, P0, 32, 40.80, 315, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806334.29414,
+          "state": "0, P0, 33, 82.44, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806335.2123032,
+          "state": "0, P0, 33, 85.96, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806336.1308007,
+          "state": "0, P0, 33, 85.85, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806337.0520554,
+          "state": "0, P0, 33, 85.95, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806337.9735003,
+          "state": "0, P0, 33, 86.03, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806338.891026,
+          "state": "0, P0, 33, 86.05, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806339.8090823,
+          "state": "0, P0, 33, 85.98, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806340.7271972,
+          "state": "0, P0, 34, 86.08, 2332, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806341.6446528,
+          "state": "0, P0, 34, 91.25, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806342.5623271,
+          "state": "0, P0, 34, 88.21, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806343.4796536,
+          "state": "0, P0, 34, 86.21, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806344.3991346,
+          "state": "0, P0, 34, 87.55, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806345.3203661,
+          "state": "0, P0, 34, 89.15, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806346.2412395,
+          "state": "0, P0, 34, 86.12, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806347.1627917,
+          "state": "0, P0, 34, 86.39, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806348.0804071,
+          "state": "0, P0, 34, 86.29, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806348.9976573,
+          "state": "0, P0, 34, 86.24, 2332, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806349.9147553,
+          "state": "0, P0, 34, 86.24, 2332, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806350.8327672,
+          "state": "0, P0, 34, 86.39, 2332, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806351.7516012,
+          "state": "0, P0, 34, 86.49, 2332, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806352.6723118,
+          "state": "0, P0, 34, 86.47, 2332, 12481, 1350, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_validate_v2": {
+      "original_sha256": "8b2dd263874c8527a0deca3cb094fbbda2ce750f03c9354293b063baafa81687",
+      "samples": [
+        {
+          "time": 1789806497.0927165,
+          "state": "1, P0, 34, 89.14, 2362, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806498.3614979,
+          "state": "1, P8, 32, 36.62, 337, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806499.535253,
+          "state": "1, P8, 32, 36.62, 210, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806500.7072744,
+          "state": "1, P8, 32, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806501.883442,
+          "state": "1, P8, 32, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806503.0585961,
+          "state": "1, P8, 32, 35.43, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806503.9867432,
+          "state": "1, P8, 32, 35.44, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806504.9563837,
+          "state": "1, P0, 33, 41.09, 180, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806505.902491,
+          "state": "1, P0, 33, 88.52, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806506.8516889,
+          "state": "1, P0, 33, 88.21, 2362, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806507.7901688,
+          "state": "1, P0, 35, 90.05, 2362, 12481, 1348, 54",
+          "process_count": 1
+        },
+        {
+          "time": 1789806508.7907233,
+          "state": "1, P0, 34, 89.50, 2362, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806509.7513657,
+          "state": "1, P0, 34, 88.71, 2362, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806510.6836011,
+          "state": "1, P0, 34, 88.66, 2362, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806511.6104445,
+          "state": "1, P0, 34, 88.70, 2362, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806512.5545568,
+          "state": "1, P0, 34, 88.71, 2362, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806513.4993823,
+          "state": "1, P0, 34, 88.32, 2362, 12481, 1350, 0",
+          "process_count": 1
+        }
+      ]
+    },
+    "mx_validate_v3": {
+      "original_sha256": "7ae9d83dd6fce57c98a107f5da8160b8d57ea9b35c4aa3bc95fd09a3785934cb",
+      "samples": [
+        {
+          "time": 1789806804.0094616,
+          "state": "7, P0, 34, 90.63, 2325, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806805.1811466,
+          "state": "7, P0, 34, 90.49, 2325, 12481, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806806.356437,
+          "state": "7, P8, 33, 53.85, 2310, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806807.5299332,
+          "state": "7, P8, 32, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806808.701804,
+          "state": "7, P8, 32, 37.88, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806809.8759134,
+          "state": "7, P8, 32, 37.69, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806810.801759,
+          "state": "7, P8, 32, 36.92, 180, 405, 14, 0",
+          "process_count": 0
+        },
+        {
+          "time": 1789806811.7637625,
+          "state": "7, P8, 32, 37.14, 180, 405, 17, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806812.6851838,
+          "state": "7, P0, 33, 64.97, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806813.6108184,
+          "state": "7, P0, 34, 89.90, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806814.533824,
+          "state": "7, P0, 34, 90.14, 2317, 12481, 682, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806815.4533308,
+          "state": "7, P0, 34, 98.90, 2317, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806816.3685896,
+          "state": "7, P0, 34, 90.44, 2317, 12481, 1348, 2",
+          "process_count": 1
+        },
+        {
+          "time": 1789806817.285051,
+          "state": "7, P0, 34, 90.01, 2325, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806818.2025151,
+          "state": "7, P0, 34, 90.54, 2317, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806819.1191466,
+          "state": "7, P0, 34, 90.11, 2317, 12481, 1348, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806820.0391967,
+          "state": "7, P0, 34, 90.49, 2317, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806820.958183,
+          "state": "7, P0, 34, 90.31, 2317, 12481, 1350, 0",
+          "process_count": 1
+        },
+        {
+          "time": 1789806821.8785305,
+          "state": "7, P0, 34, 90.29, 2325, 12481, 1350, 0",
+          "process_count": 1
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,311 @@
+{
+  "fp64:e6dd19c18e6813508c6a97208dbb294843142bbc97d4dd4357d24bb8d00435d7": {
+    "name": "fp64",
+    "cubin_sha256": "e6dd19c18e6813508c6a97208dbb294843142bbc97d4dd4357d24bb8d00435d7",
+    "registers": 30,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(5,)": "0.5686872086178483",
+      "(6,)": "512",
+      "(7,)": "512",
+      "(8,)": "262144",
+      "(9,)": "256"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_int8:c0f7a4f00163d9c111b44f8bad3e55d013f1f1adedabd5abc4a71479565d233d": {
+    "name": "metadata_int8",
+    "cubin_sha256": "c0f7a4f00163d9c111b44f8bad3e55d013f1f1adedabd5abc4a71479565d233d",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "512",
+      "(9,)": "int8"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_int8_int8_512_512:93f5e4b1f3ed06c893c8b88a03842a717cd4b53b2a1e329c0688ff807edb1a8c": {
+    "name": "dot_int8_int8_512_512",
+    "cubin_sha256": "93f5e4b1f3ed06c893c8b88a03842a717cd4b53b2a1e329c0688ff807edb1a8c",
+    "registers": 42,
+    "spills": 0,
+    "shared_bytes": 4096,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "int8",
+      "(6,)": "int8",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_int8:4b02b5aced905126e2c6487be8cb7d9f7298cf7df7d0bd2ebf7f33e2eb890103": {
+    "name": "classify_int8",
+    "cubin_sha256": "4b02b5aced905126e2c6487be8cb7d9f7298cf7df7d0bd2ebf7f33e2eb890103",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "4.76837158203125e-07",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "fp32_refine:2395beeba2b6af86495d9dac28d4040758684329a8a3a3ee442e5982feef2563": {
+    "name": "fp32_refine",
+    "cubin_sha256": "2395beeba2b6af86495d9dac28d4040758684329a8a3a3ee442e5982feef2563",
+    "registers": 32,
+    "spills": 0,
+    "shared_bytes": 16,
+    "constants": {
+      "(11,)": "512",
+      "(12,)": "512",
+      "(13,)": "262144",
+      "(14,)": "256"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_fp16:212c40b6e39c1834c5c9c961711cd57ee0ab8aadb0a44a6fc4fb4d8aa08c9aa6": {
+    "name": "metadata_fp16",
+    "cubin_sha256": "212c40b6e39c1834c5c9c961711cd57ee0ab8aadb0a44a6fc4fb4d8aa08c9aa6",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "512",
+      "(9,)": "fp16"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_fp16_fp16_512_512:9ce104e9b0c489733c47a4685701b8c403428d18c87899a15eb702f967ac8cfe": {
+    "name": "dot_fp16_fp16_512_512",
+    "cubin_sha256": "9ce104e9b0c489733c47a4685701b8c403428d18c87899a15eb702f967ac8cfe",
+    "registers": 48,
+    "spills": 0,
+    "shared_bytes": 8192,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "fp16",
+      "(6,)": "fp16",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_fp16:f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd": {
+    "name": "classify_fp16",
+    "cubin_sha256": "f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e4m3:4d74f5ee2bc5ec171b6b3565fd4e8910287d0cdfdf7fd31359663133dfa90b4d": {
+    "name": "metadata_e4m3",
+    "cubin_sha256": "4d74f5ee2bc5ec171b6b3565fd4e8910287d0cdfdf7fd31359663133dfa90b4d",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "512",
+      "(9,)": "e4m3"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e4m3_e4m3_512_512:25e63128ebf9f616689e41393bc05b84fc2ff3d98423e1d1c6f8510373876ec7": {
+    "name": "dot_e4m3_e4m3_512_512",
+    "cubin_sha256": "25e63128ebf9f616689e41393bc05b84fc2ff3d98423e1d1c6f8510373876ec7",
+    "registers": 42,
+    "spills": 0,
+    "shared_bytes": 4096,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "e4m3",
+      "(6,)": "e4m3",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_e4m3:f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd": {
+    "name": "classify_e4m3",
+    "cubin_sha256": "f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "metadata_e3m4:885cfe3acb6ac76645bed0d617fb30d2300807429ea449c5381272cc747a77fe": {
+    "name": "metadata_e3m4",
+    "cubin_sha256": "885cfe3acb6ac76645bed0d617fb30d2300807429ea449c5381272cc747a77fe",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "512",
+      "(9,)": "e3m4"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_e3m4_e3m4_512_512:a400818afa19da478e6678eecddc83f2c6189d4abeff18caf46d75db17dad49f": {
+    "name": "dot_e3m4_e3m4_512_512",
+    "cubin_sha256": "a400818afa19da478e6678eecddc83f2c6189d4abeff18caf46d75db17dad49f",
+    "registers": 42,
+    "spills": 0,
+    "shared_bytes": 4096,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "e3m4",
+      "(6,)": "e3m4",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_e3m4:f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd": {
+    "name": "classify_e3m4",
+    "cubin_sha256": "f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "prepare_mx_e4m3:20872ae68baba7a821c5c56a3f16d9d12035b5fbe9562b8ea11c76c43cdb7ffc": {
+    "name": "prepare_mx_e4m3",
+    "cubin_sha256": "20872ae68baba7a821c5c56a3f16d9d12035b5fbe9562b8ea11c76c43cdb7ffc",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "e4m3"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_mx_e4m3_mx_e4m3_512_512:b2402873c9c194fc07f4f8140621e1a9fcc7e3ede078416ad948ce24a4e4cc69": {
+    "name": "dot_mx_e4m3_mx_e4m3_512_512",
+    "cubin_sha256": "b2402873c9c194fc07f4f8140621e1a9fcc7e3ede078416ad948ce24a4e4cc69",
+    "registers": 46,
+    "spills": 0,
+    "shared_bytes": 4096,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "e4m3",
+      "(6,)": "e4m3",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_mx_e4m3:f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd": {
+    "name": "classify_mx_e4m3",
+    "cubin_sha256": "f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "prepare_mx_e3m4:917d643e2fda180d412e6cf7c5efc0620f71467754fe886ae5465a4f6fb04eb3": {
+    "name": "prepare_mx_e3m4",
+    "cubin_sha256": "917d643e2fda180d412e6cf7c5efc0620f71467754fe886ae5465a4f6fb04eb3",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "constants": {
+      "(8,)": "e3m4"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "dot_mx_e3m4_mx_e3m4_512_512:5bfde77629c71df6a03799fcd9d40a12d314cae8eee3d277710551b2bf302228": {
+    "name": "dot_mx_e3m4_mx_e3m4_512_512",
+    "cubin_sha256": "5bfde77629c71df6a03799fcd9d40a12d314cae8eee3d277710551b2bf302228",
+    "registers": 46,
+    "spills": 0,
+    "shared_bytes": 4096,
+    "constants": {
+      "(3,)": "512",
+      "(4,)": "512",
+      "(5,)": "e4m3",
+      "(6,)": "e4m3",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  },
+  "classify_mx_e3m4:f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd": {
+    "name": "classify_mx_e3m4",
+    "cubin_sha256": "f8617e859c48458da003e9f02585ad02c118e829b6f57da17ed7dcedd572cdbd",
+    "registers": 76,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "constants": {
+      "(12,)": "512",
+      "(13,)": "512",
+      "(14,)": "512",
+      "(15,)": "262144",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.5686872005462646",
+      "(18,)": "1024",
+      "(19,)": "False"
+    },
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)"
+  }
+}

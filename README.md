@@ -8,6 +8,12 @@ FP8 / FP16 / FP32 / FP64 experiment under
 new measured scope and negative results. The inherited certified-exact-join
 archive below is unchanged; none of its old production paths is replaced.
 
+Follow-ups on the same branch:
+- [Callable native E3M4 instruction survey](e3m4_interface_probe/README.md).
+- [Block32 E3M4 TensorJoin screen](e3m4_blockscaled_tensorjoin/README.md):
+  nonuniform native scaled GEMM and full-cascade verification pass; the
+  same-campaign INT8/FP16 end-to-end admission gate fails.
+
 
 This branch contains the `tensorjoin_20260902_certified_exact_join/` snapshot only, plus archive metadata and the
 shared path-materialization helper. Original directory names, source bytes,
