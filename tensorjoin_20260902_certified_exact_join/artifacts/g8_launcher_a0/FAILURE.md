@@ -1,1 +1,0 @@
-Launcher attempt A0 failed before locks or GPU initialization: sha256_file(__file__) passed str to a helper requiring pathlib.Path; AttributeError: str object has no attribute open. No measurement was produced. See archived launcher source.

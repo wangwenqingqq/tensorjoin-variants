@@ -1,7 +1,0 @@
-{
-  "pass_": true,
-  "scalar_checks": 154,
-  "gate": false,
-  "strongest_fixed_control": "packed16",
-  "summary_sha256": "7b024309a8d5d0f50f3c827051cf6151fdee30d8772df531aee26931e46df575"
-}

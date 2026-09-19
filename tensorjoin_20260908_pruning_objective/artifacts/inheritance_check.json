@@ -1,6 +1,0 @@
-{
-  "pass_": true,
-  "numeric_features_and_splits_identical": true,
-  "prior_proxy_sha256": "5019e10e06c2904211dae28faac0c74ba665dd956fe791bce9a7c06e0b20c7eb",
-  "scope": "Adaptive follow-up; previous test rows are not a fresh holdout."
-}

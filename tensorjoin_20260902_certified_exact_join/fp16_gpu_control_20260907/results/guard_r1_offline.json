@@ -1,5 +1,0 @@
-{
-  "pass": true,
-  "checks": 8,
-  "scope": "mocked identity state, not live GPU safety proof"
-}

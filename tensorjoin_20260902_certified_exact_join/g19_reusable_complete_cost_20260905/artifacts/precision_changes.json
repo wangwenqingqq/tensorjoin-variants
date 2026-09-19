@@ -1,4 +1,0 @@
-{
-  "source_sha256": "03e242bab5d9e00d97b868b9f70450a9d404e02f18d8fe3a1e341d8419a3285f",
-  "change": "Only threshold scalar annotation and explicit FP64 constant construction. No arithmetic reduction, tile, ownership or barrier change."
-}

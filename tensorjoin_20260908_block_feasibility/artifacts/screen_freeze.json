@@ -1,9 +1,0 @@
-{
-  "created": 1788836963.6865735,
-  "files": {
-    "PROTOCOL.md": "d61276959fc8997579742a57a5882a16bf895a81c430bdae7eaf3dbb65580e1a",
-    "NUMERICAL_SCOPE.md": "699fb1c71c9a4f2a5f67b9bf7c2a0444de5531367129172baf0a62d13dedb0a7",
-    "src/geometry.py": "4fac739a17d6945b0971fe0cb6aeecf4674fbd3c0a358340f8d10b59d00e1cfb",
-    "src/screen.py": "88ded2714932c5c2c19022103db5a2ea61169eee54fc60d12bf38231025d8213"
-  }
-}

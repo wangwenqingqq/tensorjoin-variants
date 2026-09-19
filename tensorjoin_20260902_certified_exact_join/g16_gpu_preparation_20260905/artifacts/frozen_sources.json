@@ -1,6 +1,0 @@
-{
-  "g16_gpu_preparation_20260905/PROTOCOL.md": "6dc0503e7fcf50032de7fee1c54f7add72648230fbc2cdb848d01ec6791e17d6",
-  "g16_gpu_preparation_20260905/src/run_gpu_prepared_g5.py": "878a772b09a0df2eb9239b1a59c5e83dd37c718783c1209632363f78dfd6c01b",
-  "g16_gpu_preparation_20260905/src/validate_metadata.py": "bad840a0888f849c2546a96df411ccc190d21d174f37d4c7de02c1c312cd63d2",
-  "g16_gpu_preparation_20260905/src/gpu_preparation.py": "08cdf46b3a1478fa0c6a70c811dd2c315eb4735836f87a3f7705e407874279cc"
-}

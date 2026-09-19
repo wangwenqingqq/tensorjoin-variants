@@ -1,1 +1,0 @@
-b95b2729d99fee396d074ea24ec15a1d063161f1d04f12a77a9d7107b53b8cfd  artifacts/f1_formal.sass

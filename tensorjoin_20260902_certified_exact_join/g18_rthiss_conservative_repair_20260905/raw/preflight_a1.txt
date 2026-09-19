@@ -1,6 +1,0 @@
-Sat Sep  5 08:06:44 UTC 2026
-gpu_uuid, pid, process_name, used_gpu_memory [MiB]
-GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, 1754058, @TENSORJOIN_ROOT@/physion_p1_20260905/.venv/bin/python, 2990 MiB
-GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 1460887, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python, 53446 MiB
-GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, 1791960, ../physion_p1_20260905/.venv/bin/python, 2444 MiB
-GPU-e5a0e7f5-9917-c2a1-ee8e-7282cbba2603, 1780362, sglang::scheduler, 64478 MiB

@@ -1,1 +1,0 @@
-COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/validate_control.py", "--label", "gpu_fixture_a0", "--mode", "fixture"]
