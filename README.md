@@ -7,14 +7,20 @@ This is an archival upload, **not a newly validated benchmark or a complete mach
 
 ## Projects
 
-| Directory | Contents |
-| --- | --- |
-| [tensorjoin_20260902_certified_exact_join](tensorjoin_20260902_certified_exact_join/) | Main exploration, CUDA/Triton implementations, baseline adapters, protocols, decisions, experiment records, paper sources, and nested follow-up experiments |
-| [tensorjoin_20260908_block_feasibility](tensorjoin_20260908_block_feasibility/) | Block-feasibility experiment and numerical-scope documentation |
-| [tensorjoin_20260908_learned_layout](tensorjoin_20260908_learned_layout/) | Learned-layout experiment, reports, and analysis |
-| [tensorjoin_20260908_pruning_objective](tensorjoin_20260908_pruning_objective/) | Pruning-objective experiment, reports, and analysis |
-| [tensorjoin_20260908_fm_control](tensorjoin_20260908_fm_control/) | Flow-matching controls and experiment records |
-| [tensorjoin_20260908_fm_solver](tensorjoin_20260908_fm_solver/) | Conditional flow-matching solver, certificates, controls, and resolution checks |
+| Directory | Branch | Contents |
+| --- | --- | --- |
+| [tensorjoin_20260902_certified_exact_join](tensorjoin_20260902_certified_exact_join/) | [certified-exact-join](https://github.com/wangwenqingqq/tensorjoin-variants/tree/certified-exact-join) | Main exploration, CUDA/Triton implementations, baseline adapters, protocols, decisions, experiment records, paper sources, and nested follow-up experiments |
+| [tensorjoin_20260908_block_feasibility](tensorjoin_20260908_block_feasibility/) | [block-feasibility](https://github.com/wangwenqingqq/tensorjoin-variants/tree/block-feasibility) | Block-feasibility experiment and numerical-scope documentation |
+| [tensorjoin_20260908_learned_layout](tensorjoin_20260908_learned_layout/) | [learned-layout](https://github.com/wangwenqingqq/tensorjoin-variants/tree/learned-layout) | Learned-layout experiment, reports, and analysis |
+| [tensorjoin_20260908_pruning_objective](tensorjoin_20260908_pruning_objective/) | [pruning-objective](https://github.com/wangwenqingqq/tensorjoin-variants/tree/pruning-objective) | Pruning-objective experiment, reports, and analysis |
+| [tensorjoin_20260908_fm_control](tensorjoin_20260908_fm_control/) | [fm-control](https://github.com/wangwenqingqq/tensorjoin-variants/tree/fm-control) | Flow-matching controls and experiment records |
+| [tensorjoin_20260908_fm_solver](tensorjoin_20260908_fm_solver/) | [fm-solver](https://github.com/wangwenqingqq/tensorjoin-variants/tree/fm-solver) | Conditional flow-matching solver, certificates, controls, and resolution checks |
+
+Each variant branch contains only its corresponding project directory and archive
+support files. `main` retains the combined archive, and the existing snapshot
+release is unchanged. See [BRANCHES.md](BRANCHES.md) for branch commits and scope.
+Historical cross-project imports are unchanged; use the combined checkout when
+preparing a runnable workspace and perform a fresh dependency/GPU preflight.
 
 Read each project's `REPORT.md`, `CURRENT_STATUS.md`, protocols, and decision
 records for its historical scope. Their dates and claims describe the original
