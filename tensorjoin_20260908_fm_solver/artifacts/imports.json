@@ -1,9 +1,0 @@
-{
-  "pass_": true,
-  "time": 1788858796.2823484,
-  "output_module": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/tensorjoin_20260908_output_audit/src/common.py",
-  "engine": "@TENSORJOIN_ROOT@/tensorjoin_20260908_fm_solver/src/engine.py",
-  "admit": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/tensorjoin_20260908_output_audit/src/admit.py",
-  "runner": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/tensorjoin_20260908_output_audit/src/runner.py",
-  "cuda_initialized": false
-}

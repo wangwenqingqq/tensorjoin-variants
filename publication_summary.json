@@ -1,99 +1,25 @@
 {
   "snapshot_date": "2026-09-19",
-  "private": true,
-  "source_entries": 54974,
-  "source_bytes": 27375097685,
-  "redacted_git_files": 4307,
+  "branch": "block-feasibility",
+  "project": "tensorjoin_20260908_block_feasibility",
+  "source_commit": "bf01120b51f4c7d88117fe0fb5b0ba67a1eb4c9b",
+  "project_tree_sha": "eb01b2575966ce90a503cc03c70c40c22750985d",
+  "source_entries": 128,
+  "curated_source_entries": 76,
+  "release_entries": 48,
   "dispositions": {
-    "filesystem_metadata": {
-      "files": 122,
-      "source_bytes": 19886
-    },
-    "repository": {
-      "files": 7916,
-      "source_bytes": 343325210
-    },
-    "withheld_opaque_profiler": {
-      "files": 44,
-      "source_bytes": 97628661
-    },
-    "installed_environment_or_packages": {
-      "files": 18655,
-      "source_bytes": 4333039929
-    },
-    "build_or_runtime_cache": {
-      "files": 10789,
-      "source_bytes": 510492204
-    },
-    "datasets_or_model_weights": {
-      "files": 13428,
-      "source_bytes": 9139799408
-    },
-    "compiled_or_transient_files": {
-      "files": 377,
-      "source_bytes": 33938095
-    },
-    "release": {
-      "files": 1518,
-      "source_bytes": 3855250378
-    },
-    "datasets_or_packages": {
-      "files": 2025,
-      "source_bytes": 9059959793
-    },
-    "nested_git_metadata": {
-      "files": 99,
-      "source_bytes": 1624690
-    },
-    "packaged_document_duplicate": {
-      "files": 1,
-      "source_bytes": 19431
-    }
+    "repository": 76,
+    "release": 48,
+    "compiled_or_transient_files": 3,
+    "installed_environment_or_packages": 1
   },
-  "projects": {
-    "tensorjoin_20260902_certified_exact_join": {
-      "git_files": 7500,
-      "git_bytes": 320732316,
-      "release_files": 1320,
-      "release_bytes": 3609163700
-    },
-    "tensorjoin_20260908_block_feasibility": {
-      "git_files": 76,
-      "git_bytes": 2342821,
-      "release_files": 48,
-      "release_bytes": 22013949
-    },
-    "tensorjoin_20260908_fm_control": {
-      "git_files": 74,
-      "git_bytes": 3768636,
-      "release_files": 35,
-      "release_bytes": 62926487
-    },
-    "tensorjoin_20260908_fm_solver": {
-      "git_files": 130,
-      "git_bytes": 8743365,
-      "release_files": 51,
-      "release_bytes": 110906613
-    },
-    "tensorjoin_20260908_learned_layout": {
-      "git_files": 65,
-      "git_bytes": 3113037,
-      "release_files": 32,
-      "release_bytes": 23607311
-    },
-    "tensorjoin_20260908_pruning_objective": {
-      "git_files": 71,
-      "git_bytes": 4438520,
-      "release_files": 32,
-      "release_bytes": 26632318
-    }
-  },
+  "direct_sibling_source_references": [
+    "tensorjoin_20260902_certified_exact_join"
+  ],
+  "combined_release_tag": "snapshot-2026-09-19",
   "validation": {
-    "source_copy_sha256": "7917 entries verified before curation and redaction",
-    "binary_copy_sha256": "1562 files verified",
-    "python_syntax_files": 820,
-    "json_syntax_files": 1817,
-    "gpu_or_benchmark_runs_performed": false,
-    "third_party_licenses_retained": true
+    "project_subtree_identical_to_source": true,
+    "manifest_scope_checked": true,
+    "gpu_runs_performed": false
   }
 }

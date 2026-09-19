@@ -1,1 +1,0 @@
-The corrected FP64 boundary fixture passed. The first TC compile then rejected the default FP32 tl.dot output dtype against INT32 accumulator inputs. Specify out_dtype=tl.int32 for all four limb products to implement the frozen integer contract. No TC timing or output existed in this attempt.

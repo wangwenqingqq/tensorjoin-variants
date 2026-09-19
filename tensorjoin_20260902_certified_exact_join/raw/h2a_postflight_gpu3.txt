@@ -1,6 +1,0 @@
-utc=2026-09-03T09:53:53Z
-host=gpu-host-8
-physical_gpu=3
-3, NVIDIA RTX PRO 6000 Blackwell Server Edition, GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2, 590.48.01, P8, 35.08 W, 600.00 W, 14 MiB, 0 %
-compute_apps_for_uuid=GPU-a149f5af-55ab-ce33-8d3d-371a7ae61dd2
-none

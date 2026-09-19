@@ -1,1 +1,0 @@
-8627f3a76e35d5c6035a5eac9472c8343ee9f81865b4ebe2a5f67018ccf06bb6  data/cifar60k.tar.gz

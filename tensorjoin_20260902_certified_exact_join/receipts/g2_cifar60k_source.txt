@@ -1,5 +1,0 @@
-Source page: https://www.cse.cuhk.edu.hk/systems/hash/gqr/datasets.html
-Artifact URL: https://www.cse.cuhk.edu.hk/systems/hash/gqr/dataset/cifar60k.tar.gz
-Role: Public Cifar60K 60,000 x 512 FVECS benchmark used by the FaSTED ICPP 2025 evaluation.
-Acquired: 2026-09-03 Asia/Shanghai
-Redistribution: not assumed; retain for internal research only because the source page does not state a dataset license.

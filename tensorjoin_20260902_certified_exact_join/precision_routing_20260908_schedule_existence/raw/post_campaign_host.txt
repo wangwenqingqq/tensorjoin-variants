@@ -1,6 +1,0 @@
-gpu-host-8
-2026-09-07T18:44:15Z
-index, uuid, name, driver_version, memory.used [MiB], utilization.gpu [%], power.limit [W], clocks.current.sm [MHz], clocks.current.memory [MHz]
-2, GPU-16f27f5a-dfcd-48e0-bb39-bebbe4009245, NVIDIA RTX PRO 6000 Blackwell Server Edition, 590.48.01, 14 MiB, 0 %, 600.00 W, 180 MHz, 405 MHz
-gpu_uuid, pid, process_name, used_gpu_memory [MiB]
-USER         PID    PPID STAT COMMAND
