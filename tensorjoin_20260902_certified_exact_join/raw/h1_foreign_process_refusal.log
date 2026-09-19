@@ -1,9 +1,0 @@
-Traceback (most recent call last):
-  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h1_multivector_gpu_screen.py", line 989, in <module>
-    raise SystemExit(main())
-                     ^^^^^^
-  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h1_multivector_gpu_screen.py", line 958, in main
-    require_environment()
-  File "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/run_h1_multivector_gpu_screen.py", line 212, in require_environment
-    raise RuntimeError(
-RuntimeError: Refusing to share physical GPU1 with foreign compute processes: GPU-daa88abc-ce4a-aa1c-c896-ae528bf9bce3, 4046278, @EXTERNAL_USER_HOME@/WorkSpace/ICLR2027/.venv/bin/python, 52752

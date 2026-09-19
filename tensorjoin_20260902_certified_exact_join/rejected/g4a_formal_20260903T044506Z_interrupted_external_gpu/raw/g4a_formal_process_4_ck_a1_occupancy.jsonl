@@ -1,2 +1,0 @@
-{"compute_rows": [{"gpu_uuid": "GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1", "pid": 3655302, "process_name": "[No data]", "used_memory_mib": "552"}], "elapsed_s": 0.1875125419901451, "phase": "quiescence", "wall_time": 1788410879.0265045}
-{"compute_rows": [], "phase": "prelaunch_blocked", "wall_time": 1788410879.1809797}

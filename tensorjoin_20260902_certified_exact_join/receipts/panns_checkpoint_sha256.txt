@@ -1,1 +1,0 @@
-0dc499e40e9761ef5ea061ffc77697697f277f6a960894903df3ada000e34b31  @LOCAL_WORKSPACE@/paper/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth

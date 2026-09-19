@@ -1,9 +1,0 @@
---- g17/CMakeLists.txt
-+++ g18/CMakeLists.txt
-@@ -120,3 +120,6 @@
-         stb_image
-         OpenMP::OpenMP_CXX
- )
-+
-+# G18 predicate contract: gradual underflow; explicit rounding intrinsics.
-+target_compile_options(RT-HiSS PRIVATE $<$<COMPILE_LANGUAGE:CUDA>:--ftz=false>)

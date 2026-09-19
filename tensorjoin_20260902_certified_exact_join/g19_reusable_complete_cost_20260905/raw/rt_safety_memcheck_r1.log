@@ -1,4 +1,0 @@
-========= COMPUTE-SANITIZER
-{"record_id": "rt_safety_memcheck_r1", "passed": true, "calls": 4, "error": null}
-========= LEAK SUMMARY: 0 bytes leaked in 0 allocations
-========= ERROR SUMMARY: 0 errors

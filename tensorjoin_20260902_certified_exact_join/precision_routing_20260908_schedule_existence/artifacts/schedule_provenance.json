@@ -1,8 +1,0 @@
-{
-  "time": 1788805929.6310718,
-  "source": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/precision_routing_20260908_layout_existence/artifacts/original_F8_census.npz",
-  "source_sha256": "7514aaefcf30ea20268c8e38398683e852d87ef34e366340ce00d4a84173b616",
-  "schedules_sha256": "153946ed86efefe2af9b2ea2023e6947f7d7536610cbf311bccde2181035f9e5",
-  "uses_oracle_information": true,
-  "included_in_operator_cost": false
-}

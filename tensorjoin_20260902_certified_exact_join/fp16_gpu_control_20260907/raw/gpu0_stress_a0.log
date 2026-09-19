@@ -1,2 +1,0 @@
-COMMAND ["@TENSORJOIN_ROOT@/isaacsim6/env/bin/python", "src/safety_probe.py", "--label", "gpu0_stress_a0", "--mode", "stress"]
-{"pass": true, "path": "@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/fp16_gpu_control_20260907/results/gpu0_stress_a0.json"}

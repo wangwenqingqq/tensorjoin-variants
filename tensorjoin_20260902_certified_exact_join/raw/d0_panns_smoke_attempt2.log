@@ -1,6 +1,0 @@
-2026-09-02T15:47:27Z
-gpu-host-8
-0, GPU-9bd364a9-9d88-0b78-ef55-caac6f73d6b1, NVIDIA RTX PRO 6000 Blackwell Server Edition, 14 MiB, 0 %
-541141fa2ee191a88f24a3219fff024e  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/models/Cnn14_mAP=0.431.pth
-b66dcc7dca54633460eb12a206ad22e8dd28a5255c71c6f9b8fc8ba730612508  @TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/src/extract_panns_esc50.py
-SMOKE {'audio': '@TENSORJOIN_ROOT@/tensorjoin_20260902_certified_exact_join/raw/ESC-50-33c8ce9eb2cf0b1c2f8bcf322eb349b6be34dbb6/audio/1-100032-A-0.wav', 'input_shape': [5, 32000], 'embedding_shape': [5, 2048], 'finite': True, 'norm_min': 10.340714454650879, 'norm_max': 10.903624534606934}
