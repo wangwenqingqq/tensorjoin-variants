@@ -1,0 +1,12 @@
+{
+  "status": "not_trained",
+  "reason": "G1 failed both INT8 parent-dominance and validation free-O2 headroom gates. G2 and G3 were not run.",
+  "models": [
+    "DT1",
+    "DT3",
+    "RF32"
+  ],
+  "held_out_gpu_calls": 0,
+  "selection_overhead": "NOT_MEASURED",
+  "selection_loss": "NOT_MEASURED"
+}

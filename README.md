@@ -16,6 +16,10 @@ Follow-ups on the same branch:
 - [Lightweight selector G0 checkpoint](lite_selector_20260920/REPORT.md):
   stopped at an independent CPU-reference reduction-order mismatch; no selector
   timing, training or held-out performance was run.
+- [Lightweight selector v2 result](lite_selector_20260920_v2/REPORT.md):
+  corrected CPU-reference order; fixed-path G0 passes, but the free binary
+  oracle fails G1 against fixed FP16. All four processes and negative evidence
+  are retained; no model training or held-out GPU execution.
 
 
 This branch contains the `tensorjoin_20260902_certified_exact_join/` snapshot only, plus archive metadata and the
@@ -70,4 +74,4 @@ original archived commit, including modes and symlink targets. The branch-specif
 file manifest was checked against the committed tree. No CUDA compilation,
 GPU correctness check, or performance experiment was performed for this split.
 Existing third-party licenses remain applicable; this branch does not relicense
-any material and remains private.
+any material. Repository visibility is not changed by this experiment.

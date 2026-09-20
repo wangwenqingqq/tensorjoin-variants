@@ -1,0 +1,97 @@
+{
+  "label": "g0_probe_v2",
+  "mode": "probe",
+  "process": 0,
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.1",
+    "torch": "2.11.0+cu130",
+    "triton": "3.6.0",
+    "sklearn": null,
+    "ptxas": "13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "capability": [
+      12,
+      0
+    ],
+    "gpu_identity_sha256": "e8e2fe16b63163ae19b5def7e043aa3f273aa60f1ce1dc420df96b7a1600c08b",
+    "threads": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4"
+    }
+  },
+  "context_init_ms": 332.9620179720223,
+  "source_sha256": {
+    "lite_selector_20260920_v2/src/cpu_reference.py": "29a20a21121f7bb0fd23a7617387aec01a4cf97371f74ae1f271970f0e13e779",
+    "lite_selector_20260920_v2/src/execution.py": "b3bf91c359610405d0f44002b45b32c330d2aa09f36a16f9200d6cfbd2862c4c",
+    "lite_selector_20260920_v2/src/run.py": "8ada5c9f7ebf22c27001093cd01452f36f9dc3c736f8cb64fd26ddadb0a77c1e",
+    "lite_selector_20260920_v2/src/workloads.py": "8fedb05b63702d060e73e469923ca250397ca1375e5bbd902e04a5db1da6a16f",
+    "precision_format_routing/src/experiment.py": "9817b45db89907d2b7b11a6b99dcb75ebe641c03c399697b1fcaaaaef0420b8b",
+    "precision_format_routing/src/guard.py": "9920e285d545bb104c0afb4f6140cb7001adee800008f7017ad349428307b690",
+    "precision_format_routing/src/kernels.py": "40db567cfbccb3cf7705a2a9d1721a401c21defa2439b8128f0ac03833257b20",
+    "precision_format_routing/src/native.py": "34b1be624cfa4c5769e71729b6ef246ccecf677cb494f6a2e0d2ae68419c9df1",
+    "precision_format_routing/src/retained.py": "f56039be19d0953e96e26fa7fa04e64ae2f7861b4b2a8b4695f9d7e05ab4547e",
+    "precision_format_routing/src/routing.py": "8d1f6ce75dc315f9e25b10cac72f86b7c52e35db0e01664c94a8b6ac5e6c9b31",
+    "precision_format_routing/src/summarize.py": "a79e288a917dd2ee3d69669062d54fed1f6f9ed0516aa8ec9fe56abf909f3d79"
+  },
+  "contract_sha256": "6eb294536ecd5ef23f3e0fa97dab6284cf42f1538f0952e5641134738d6cda6b",
+  "records": [],
+  "pass": true,
+  "invalid_input_cases_rejected": 9,
+  "native": {
+    "e4m3": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 0.0625
+    },
+    "e5m2": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 1.52587890625e-05
+    },
+    "e3m4": {
+      "codebook_both_operands": 256,
+      "max_abs_error": 0.0,
+      "raw_0x10_self_dot_k64": 4.0
+    },
+    "documented_selector_control": "A bit 78 / B bit 79 verified; E3M4 relative bits 82/84 validated by exhaustive native codebook"
+  },
+  "producer": {
+    "midpoints_neighbor_values": 505,
+    "tie_rule": "nearest even",
+    "max_error": 0.015625
+  },
+  "numerical": {
+    "int8": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 5.824717845825944e-06,
+      "metadata_and_intervals": true
+    },
+    "e3m4": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 2.384185791015625e-07,
+      "metadata_and_intervals": true
+    },
+    "e4m3": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 2.644956111907959e-07,
+      "metadata_and_intervals": true
+    },
+    "e5m2": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 1.7229467630386353e-07,
+      "metadata_and_intervals": true
+    },
+    "fp16": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 0.0003381803981028497,
+      "metadata_and_intervals": true
+    },
+    "fp32": {
+      "pairs_checked": 9409,
+      "max_abs_dot_error": 4.0890419171546455e-05,
+      "metadata_and_intervals": true
+    }
+  }
+}
