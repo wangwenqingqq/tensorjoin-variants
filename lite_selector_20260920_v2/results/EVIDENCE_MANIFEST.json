@@ -2,7 +2,7 @@
   "files_sha256": {
     ".gitignore": "851894501b5c19e70de0273dbd40dfd5754311ab6c579fd352aab0df39876544",
     "CONTRACT.yaml": "6eb294536ecd5ef23f3e0fa97dab6284cf42f1538f0952e5641134738d6cda6b",
-    "REPORT.md": "268198e806dca49b7b6970946be6af670ecd89d643f3fd36b73c73876bb99857",
+    "REPORT.md": "85c867d7d9114c8cd6b8b9e92d1061f9225e73a37bbc44c687eb66811b9e89c3",
     "REPRODUCE.md": "51854136ee99bd5ee7f6167c7ea98e7a5dcff47ba50ad8ee73c9bcb47431e701",
     "figures/format_crossover.png": "65598b13d045b01571bc10d95a8817208081b7232fec6ef43273df34b457e5db",
     "figures/format_crossover.svg": "11b49301959d227de8440214a0baef2c56f24fa66fd4673d74f4368ef9b5ffe8",
@@ -75,8 +75,8 @@
     "src/run.py": "8ada5c9f7ebf22c27001093cd01452f36f9dc3c736f8cb64fd26ddadb0a77c1e",
     "src/workloads.py": "8fedb05b63702d060e73e469923ca250397ca1375e5bbd902e04a5db1da6a16f",
     "summarize.py": "630c60e09e0b8cdd3df8cb6d03b709ce91da316f87bf7041b7467dc38a4fcb84",
-    "test_cpu.py": "d00eaa84198ac20fd9dd5fd983988fe04215165a0f72dc778ebab5bba2e06e6a",
-    "verify_evidence.py": "f90c7ef303c7d3b9bd6af395a4f0a3771f473c941fbd474eb00a3d458e34d7d6",
+    "test_cpu.py": "c4b0d47ca57f3e8e27ea605eff90ae41277f1fb9d41d4351dafe2b8bf2c522bd",
+    "verify_evidence.py": "24240993170ddf62be8a366cae37b7531b19901278f983c110b2ef3802cc8c35",
     "workloads.jsonl": "f0333a6408a017641b7db86e27648f991b3dc72677ae05717cce6e5691ec9451"
   },
   "private_original_sha256": {

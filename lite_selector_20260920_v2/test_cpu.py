@@ -39,6 +39,15 @@ class WorkloadTests(unittest.TestCase):
 
 
 class EstimatorTests(unittest.TestCase):
+    def test_cross_platform_statistics_bound(self):
+        from verify_evidence import compare_summary
+        saved = {'G1_pass': False, 'count': 3, 'value': [0.13852197794203427]}
+        compare_summary(saved, {'G1_pass': False, 'count': 3, 'value': [0.1385219779420344]})
+        for changed in ({'G1_pass': True, 'count': 3, 'value': saved['value']},
+                        {'G1_pass': False, 'count': 4, 'value': saved['value']},
+                        {'G1_pass': False, 'count': 3, 'value': [0.138521978]}):
+            with self.assertRaises(AssertionError): compare_summary(saved, changed)
+
     def test_ratio_direction_and_interval(self):
         spec=importlib.util.spec_from_file_location('gate_summary',Path(__file__).parent/'summarize.py')
         s=importlib.util.module_from_spec(spec);spec.loader.exec_module(s)

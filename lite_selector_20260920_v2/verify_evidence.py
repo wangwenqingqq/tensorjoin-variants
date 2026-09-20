@@ -1,6 +1,7 @@
 """CPU-only replay of the v2 evidence, not a replacement for the GPU gates."""
 import hashlib
 import json
+import math
 from pathlib import Path
 import re
 
@@ -14,6 +15,28 @@ ROOT = Path(__file__).resolve().parent
 
 def sha(path):
     return hashlib.sha256(path.read_bytes()).hexdigest()
+
+
+def compare_summary(saved, computed, path=''):
+    """Allow at most eight ULPs in derived statistics across Python/libm builds.
+
+    Raw evidence, source hashes, predicates, integer counts and gate decisions
+    are still exact. This bound is not used by any GPU correctness comparison.
+    """
+    assert type(saved) is type(computed), path
+    if isinstance(saved, dict):
+        assert saved.keys() == computed.keys(), path
+        for key in saved:
+            compare_summary(saved[key], computed[key], path+'/'+key)
+    elif isinstance(saved, list):
+        assert len(saved) == len(computed), path
+        for i, (a, b) in enumerate(zip(saved, computed)):
+            compare_summary(a, b, path+'/'+str(i))
+    elif isinstance(saved, float):
+        assert math.isfinite(saved) and math.isfinite(computed), path
+        assert abs(saved-computed) <= 8*max(math.ulp(saved), math.ulp(computed)), path
+    else:
+        assert saved == computed, path
 
 
 def main():
@@ -128,7 +151,7 @@ def main():
                     assert row['role'] == 'sample' and row['warmup'] == (rep < 2)
                     assert row['order_seed'] == 20260920+p
     summary = json.loads((out/'SUMMARY.json').read_text())
-    assert summary == compute(ROOT), 'Summary must be exactly reproducible'
+    compare_summary(summary, compute(ROOT))
     assert summary['test_timing_records'] == 0
     supervision = json.loads((out/'GPU_SUPERVISION.json').read_text())
     assert supervision['guard']['pass'] and supervision['guard']['exit_code'] == 0

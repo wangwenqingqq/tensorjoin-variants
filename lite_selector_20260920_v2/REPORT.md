@@ -173,6 +173,14 @@ on a busy GPU or overwrite the retained attempt's files. Offline replay verifies
 artifact consistency and the saved CPU cases; it does not pretend to rerun GPU
 correctness, isolation or timing.
 
+Cross-platform replay note: macOS Python 3.9 and Linux Python 3.12.3 differ in
+three derived values for `outlier_201_n1024_k128`: the E3M4 label and free-O2
+label by one ULP, and the resulting sample weight by five ULPs. The saved raw
+data and all gate decisions are identical. The offline verifier permits at most
+eight ULPs when comparing derived summary floats across Python/libm builds;
+source/evidence hashes, integer counts and decisions remain exact. This does
+**not** change any threshold, certificate or complete GPU output comparison.
+
 ## Claim-evidence / negative-result ledger
 
 | Claim | State | Scope / evidence | Allowed conclusion |
