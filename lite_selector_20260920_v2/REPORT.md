@@ -122,8 +122,9 @@ re-derived after those change.
   samples, cooperative locks and continuous selected-GPU process ancestry
   supervision all passed. Other GPUs/processes were not stopped. No GPU reset,
   clock lock or power-limit change was performed. Peak recorded allocated
-  benchmark memory was 482,427,904 bytes; the selected-GPU 12,000 MiB guard
-  ceiling was never exceeded. Numeric GPU state and all CPU activity samples
+  memory was 482,427,904 bytes for the three fixed candidate paths and
+  679,543,296 bytes for the separate direct-FP64 references; the selected-GPU
+  12,000 MiB guard ceiling was never exceeded. Numeric GPU state and all CPU activity samples
   are retained; CPU activity was observed, **not isolated**.
 - Each parent's four log ratios are averaged, then parents are equally weighted.
   Four process aggregates produce log Student-t(df=3) 95% intervals. These describe
