@@ -1,0 +1,572 @@
+{
+  "config": {
+    "config_id": "clustered_102_n4096_k8",
+    "parent_id": "clustered_102",
+    "family": "clustered",
+    "seed": 102,
+    "split": "train",
+    "n": 4096,
+    "d": 512,
+    "target_k": 8,
+    "input_sha256": "8c521f67c444a4f8d58d83d20c769032290962b1b7333135d9463b0d44801736",
+    "parent_sha256": "8c521f67c444a4f8d58d83d20c769032290962b1b7333135d9463b0d44801736",
+    "threshold_d2": 0.09083749390179904,
+    "threshold_hex": "0x1.74120418f0f3ep-4",
+    "sample_pair_sha256": "dbd13b39916fe4e548420e81c4cb226b8c74df199e16a363604f5c3ca095746b",
+    "sample_distance_sha256": "82810fb78a023217bb98150705561ebe86d3fb3fb5e26316e9baa7c82a83e119",
+    "generator_sha256": "8fedb05b63702d060e73e469923ca250397ca1375e5bbd902e04a5db1da6a16f",
+    "numpy_version": "2.3.1"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.1",
+    "torch": "2.11.0+cu130",
+    "triton": "3.6.0",
+    "sklearn": null,
+    "ptxas": "13.1",
+    "device": "NVIDIA RTX PRO 6000 Blackwell Server Edition",
+    "capability": [
+      12,
+      0
+    ],
+    "gpu_identity_sha256": "e8e2fe16b63163ae19b5def7e043aa3f273aa60f1ce1dc420df96b7a1600c08b",
+    "threads": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4"
+    }
+  },
+  "source_sha256": {
+    "lite_selector_20260920/src/execution.py": "b3bf91c359610405d0f44002b45b32c330d2aa09f36a16f9200d6cfbd2862c4c",
+    "lite_selector_20260920/src/run.py": "b8a4f7a44b25d7e8051a51e6436cc543b4ded2f4c4b703ed0e21e88bc11ac719",
+    "lite_selector_20260920/src/workloads.py": "8fedb05b63702d060e73e469923ca250397ca1375e5bbd902e04a5db1da6a16f",
+    "precision_format_routing/src/experiment.py": "9817b45db89907d2b7b11a6b99dcb75ebe641c03c399697b1fcaaaaef0420b8b",
+    "precision_format_routing/src/guard.py": "9920e285d545bb104c0afb4f6140cb7001adee800008f7017ad349428307b690",
+    "precision_format_routing/src/kernels.py": "40db567cfbccb3cf7705a2a9d1721a401c21defa2439b8128f0ac03833257b20",
+    "precision_format_routing/src/native.py": "34b1be624cfa4c5769e71729b6ef246ccecf677cb494f6a2e0d2ae68419c9df1",
+    "precision_format_routing/src/retained.py": "f56039be19d0953e96e26fa7fa04e64ae2f7861b4b2a8b4695f9d7e05ab4547e",
+    "precision_format_routing/src/routing.py": "8d1f6ce75dc315f9e25b10cac72f86b7c52e35db0e01664c94a8b6ac5e6c9b31",
+    "precision_format_routing/src/summarize.py": "a79e288a917dd2ee3d69669062d54fed1f6f9ed0516aa8ec9fe56abf909f3d79"
+  },
+  "subset_indices": [
+    103,
+    144,
+    260,
+    287,
+    642,
+    1092,
+    1160,
+    1236,
+    1340,
+    1403,
+    1455,
+    1544,
+    1665,
+    1760,
+    2049,
+    2091,
+    2257,
+    2394,
+    2451,
+    2459,
+    2470,
+    2554,
+    2855,
+    3173,
+    3255,
+    3279,
+    3460,
+    3703,
+    3727,
+    3873,
+    3944,
+    3951
+  ],
+  "subset_input_sha256": "7ad710faa7a14673c3eea74913a0378975a69b33f4af26e146e19e372bf5006a",
+  "cpu_ids": [
+    0,
+    33,
+    66,
+    71,
+    99,
+    132,
+    165,
+    198,
+    226,
+    231,
+    264,
+    297,
+    330,
+    363,
+    396,
+    429,
+    462,
+    495,
+    528,
+    561,
+    594,
+    627,
+    660,
+    693,
+    726,
+    759,
+    792,
+    825,
+    828,
+    858,
+    891,
+    921,
+    924,
+    957,
+    990,
+    1023
+  ],
+  "gpu_fp64_ids": [
+    0,
+    33,
+    66,
+    71,
+    99,
+    132,
+    165,
+    198,
+    226,
+    231,
+    264,
+    297,
+    330,
+    363,
+    396,
+    429,
+    462,
+    495,
+    528,
+    561,
+    594,
+    627,
+    660,
+    693,
+    726,
+    759,
+    792,
+    825,
+    858,
+    891,
+    924,
+    957,
+    990,
+    1023
+  ],
+  "results": [
+    {
+      "implementation": "current",
+      "method": "fp64",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "fp64",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "fp64",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "int8",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "int8",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "int8",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "e3m4",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "e3m4",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "e3m4",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "fp16",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "fp16",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "current",
+      "method": "fp16",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp64",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp64",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp64",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "int8",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "int8",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "int8",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "e3m4",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "e3m4",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "e3m4",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp16",
+      "repeat": 0,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp16",
+      "repeat": 1,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    },
+    {
+      "implementation": "keeper",
+      "method": "fp16",
+      "repeat": 2,
+      "count": 34,
+      "output_sha256": "f99b989aee49571eef8611eb870cee46c079352f1ef1201891b6e024b4eb8887",
+      "cpu_equal": false,
+      "gpu_extra_ids": [],
+      "gpu_missing_ids": [
+        828,
+        921
+      ]
+    }
+  ],
+  "differing_pairs": [
+    {
+      "pair_id": 828,
+      "subset_rows": [
+        25,
+        28
+      ],
+      "parent_rows": [
+        3279,
+        3727
+      ],
+      "threshold_hex": "0x1.74120418f0f3ep-4",
+      "values": {
+        "numpy_sum512": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "numpy_two_sum256": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "sequential512": {
+          "hex": "0x1.74120418f0f3ap-4",
+          "decimal": 0.09083749390179899,
+          "inside": true,
+          "threshold_ulps": -4.0
+        },
+        "math_fsum_rounded_squares": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        },
+        "exact_rational_rounded_once": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        }
+      },
+      "exact_rational_inside": false,
+      "exact_minus_threshold_numerator": "4277",
+      "exact_minus_threshold_denominator": "295147905179352825856"
+    },
+    {
+      "pair_id": 921,
+      "subset_rows": [
+        28,
+        25
+      ],
+      "parent_rows": [
+        3727,
+        3279
+      ],
+      "threshold_hex": "0x1.74120418f0f3ep-4",
+      "values": {
+        "numpy_sum512": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "numpy_two_sum256": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "sequential512": {
+          "hex": "0x1.74120418f0f3ap-4",
+          "decimal": 0.09083749390179899,
+          "inside": true,
+          "threshold_ulps": -4.0
+        },
+        "math_fsum_rounded_squares": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        },
+        "exact_rational_rounded_once": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        }
+      },
+      "exact_rational_inside": false,
+      "exact_minus_threshold_numerator": "4277",
+      "exact_minus_threshold_denominator": "295147905179352825856"
+    }
+  ],
+  "all_methods_match_gpu_fp64": true,
+  "scope": "Numerical diagnosis only; no performance estimator or gate promotion."
+}

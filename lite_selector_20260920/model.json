@@ -1,0 +1,7 @@
+{
+  "status": "not_trained",
+  "reason": "G0 stopped before G1: the added NumPy CPU reference and frozen GPU FP64 predicate disagree at a one-ULP boundary.",
+  "main_model": null,
+  "candidates": ["DT1", "DT3", "RF32"],
+  "test_performance_observed": false
+}

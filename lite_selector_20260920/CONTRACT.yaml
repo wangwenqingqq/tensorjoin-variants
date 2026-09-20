@@ -1,0 +1,189 @@
+{
+  "experiment": "tensorjoin_20260920_lite_selector_host_to_host",
+  "created_utc": "2026-09-20",
+  "keeper_commit": "5386c33e2e34b5d4e4245fbb3f5099f76cb7df79",
+  "plan_file": "TensorJoin_LiteSelector_Minimal_Test_Plan.md",
+  "plan_sha256": "316d23e66302cf2f42e0720fe29ff87d4887e9e9af49592f9d63e9c90aea3440",
+  "state": "preregistered_before_implementation_and_measurement",
+  "novelty_gate": "Generic precision routing and hidden SM120 E3M4 are prior art. This is a bounded application feasibility screen, not a paper novelty claim.",
+  "hardware": {
+    "class": "RTX PRO 6000 Blackwell Server Edition",
+    "sm": 120,
+    "physical_gpu": 7,
+    "driver": "590.48.01",
+    "ptxas": "13.1",
+    "cuda_toolkit": "13.1.115",
+    "gpu_uuid": "private preflight record; publish salted-free SHA256 identity only",
+    "isolation": "one existing GPU guard around all gated subprocesses; five idle samples; ancestry monitor; 12 GiB cap; no foreign process termination or clock/power changes",
+    "cpu_threads": 4,
+    "cpu_activity": "sample /proc/stat, loadavg and process count; not isolated"
+  },
+  "environment": {
+    "python": "3.12.3",
+    "numpy": "2.3.1",
+    "torch": "2.11.0+cu130",
+    "triton": "3.6.0",
+    "sklearn": "absent at G0/G1; if G1 passes, pin in an isolated environment before any training"
+  },
+  "input": {
+    "dtype": "C-contiguous pageable NumPy float32",
+    "d": 512,
+    "n": [
+      1024,
+      4096
+    ],
+    "finite": true,
+    "abs_max": 1,
+    "threshold": "nonnegative finite binary64; decimal and float.hex recorded; full legality scan inside all timed calls"
+  },
+  "output": "directed sorted uint64 canonical IDs including self pairs; mirror non-diagonal upper pairs; full arrays compared outside timing to frozen GPU FP64; not exact-real semantics",
+  "workloads": {
+    "families": [
+      "clustered",
+      "outlier",
+      "logrange",
+      "mixed"
+    ],
+    "seeds": {
+      "train": [
+        101,
+        102,
+        103
+      ],
+      "validation": [
+        201
+      ],
+      "test": [
+        301,
+        302
+      ]
+    },
+    "counts": {
+      "train": 48,
+      "validation": 16,
+      "test": 32
+    },
+    "parent": "family/seed; generate4096 first;1024 is prefix; same seed stays same split across families",
+    "generator": "PCG64; clustered/outlier match retained generator except N/seed; mixed uses SeedSequence(seed).spawn(3) for independent halves and permutation",
+    "thresholds": {
+      "sample_pairs": 65536,
+      "rng": "fresh independent PCG64(9001) for each parent/N, shared across both k values",
+      "unique": "uniform without replacement over unordered off-diagonal pair ranks",
+      "distance": "CPU float64 subtraction, square, np.sum(axis=1); batching only, no cross-row reductions",
+      "quantile": "sort ascending, index ceil(65536*k/(N-1))-1",
+      "target_k": [
+        8,
+        128
+      ]
+    },
+    "test_blinding": "manifest generation allowed; no test GPU validation or timing before frozen model; G0/G1 use train/validation only",
+    "known_anchor": {
+      "case": "cifar4096",
+      "threshold": 0.5686872086178483,
+      "hex": "0x1.232af8455599ap-1",
+      "use": "G0 regression; G3 timed separately; never train/tune/aggregate as unseen real data"
+    }
+  },
+  "features": {
+    "rows": 64,
+    "rng": "fresh PCG64(1729), uniform without replacement every invocation",
+    "dtype": "CPU float64 statistics",
+    "names": [
+      "log2_N",
+      "p95_row_absmax_over_rms",
+      "nonzero_fraction_below_int8_scale_half",
+      "zero_fraction",
+      "row_l2_cv",
+      "threshold_over_mean_squared_norm_clipped"
+    ],
+    "int8_scale": "correctly rounded float32 max/127; max<2^-100 -> 1; no nonzeros -> feature zero",
+    "all_zero": "fallback int8",
+    "ratio_clip": [
+      0,
+      1000000
+    ],
+    "fallback": "nonfinite features or load failure -> int8 with reason; invalid input always errors"
+  },
+  "methods": [
+    "int8",
+    "e3m4",
+    "fp16",
+    "DT1",
+    "DT3",
+    "RF32"
+  ],
+  "models": {
+    "DT1": {
+      "max_depth": 1,
+      "min_samples_leaf": 4,
+      "random_state": 0
+    },
+    "DT3": {
+      "max_depth": 3,
+      "min_samples_leaf": 4,
+      "random_state": 0
+    },
+    "RF32": {
+      "n_estimators": 32,
+      "max_depth": 4,
+      "min_samples_leaf": 4,
+      "max_features": "sqrt",
+      "bootstrap": true,
+      "n_jobs": 1,
+      "random_state": 0
+    }
+  },
+  "measurement": {
+    "processes": 4,
+    "warmups": 2,
+    "retained": 5,
+    "method_order": "fresh permutation in every round from PCG64(20260920+process_index); record sequence; canonical config traversal",
+    "scope": "synchronized monotonic host input-to-sorted-host-IDs including input scan; exclude I/O, context, compile, model load/train, post-call output equality/hashes/serialization and compiled registry",
+    "init": "context and each config/method compiler preparation recorded separately; no partial compile charged as inference",
+    "reuse": "no features, choices, quantized inputs or output allocations cached across calls",
+    "labels": "geomean of four within-process five-sample medians",
+    "tie": "<=3% difference or inconsistent winner across processes; retain in evaluation, exclude training",
+    "weight": "abs(t8-tE)/min(t8,tE)"
+  },
+  "gates": {
+    "G0": "native identity, N97 interval containment, 14 fixtures plus N33/extreme/duplicate cases; train/val complete IDs with CPU32 subset; four sanitizers on real512 and boundary32;32 alternating full calls with pointer churn. Router/model checks conditional on G1 and required before selector timing.",
+    "G1": {
+      "consistent_win_ratio": 1.05,
+      "independent_parents_per_format": 2,
+      "parent_count_rule": "at least one configuration in parent wins >1.05 in every process; also report parent-aggregate dominance",
+      "oracle": "free O2=min(t8,tE) on train/validation only",
+      "validation_oracle_vs_best_fixed_gm": 1.1,
+      "failure": "stop; do not train or inspect held-out performance"
+    },
+    "G2": {
+      "main_model": "minimum full validation geometric latency; within1% prefer DT1,DT3,RF32",
+      "validation_speedup_vs_each_fixed": 1.05,
+      "failure": "stop before test",
+      "freeze": "no retraining after model selected; save model, source, sampling and hashes"
+    },
+    "G3": {
+      "speedup_vs_each_fixed": 1.05,
+      "process_t95_lower_gt": 1,
+      "O3_ratio_p95_max": [
+        1.1,
+        1.25
+      ],
+      "cifar_regression_max": 1.05,
+      "overhead_fraction_diagnostic": 0.02
+    }
+  },
+  "aggregation": "average log ratios within each four-config parent; equal-weight parents; four process aggregates yield log Student-t df3 CI; not sampling uncertainty across real-world datasets",
+  "failure_policy": "retain every error/timeout/OOM/environment abort; never discard a slow observation; only invalid environment/correctness invalidates entire comparison group; no certificate/threshold relaxation",
+  "scope_exclusions": [
+    "block32",
+    "tile routing",
+    "online GPU sampling or Graph calibration",
+    "full dual-format quantization",
+    "cross-call feature/selection cache",
+    "new error envelope",
+    "external join baseline",
+    "60K",
+    "multi-GPU generalization"
+  ],
+  "delivery": "CONTRACT.yaml (JSON subset),workloads.jsonl,runs/raw evidence,REPORT.md,tables/plots; model artifacts only if G1 permits training; explicit NOT_RUN otherwise"
+}

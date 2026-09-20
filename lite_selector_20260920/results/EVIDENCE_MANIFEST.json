@@ -1,0 +1,32 @@
+{
+  "files_sha256": {
+    "results/GPU_SUPERVISION.json": "6e328b6f329ebc5110ef171f354f3c6369af8cb05c3e9de676dee022bd76f1f2",
+    "results/failure_terminal.code.ptx": "f5b2aae253c5104905c005b6aebba8503958dc4ea16ec7689ea0dfc3b79e569c",
+    "results/g0_failure_diagnosis_v1.compiled.json": "c59d7a7e65946dac8f1e04ea32ae0c228e22a4e43cb9ee651c205c2906c157c0",
+    "results/g0_failure_diagnosis_v1.json": "2b75d210afb09d62e42ab75e28cf84b7b4f0437b3b15802045f77ec2ce57f0cc",
+    "results/g0_failure_subset_v1.npy": "a0981569c9788e242429ae013830dc0dc3887571680fd7937a52d9781c42a0f8",
+    "results/g0_probe_v1.compiled.json": "5e6b5da39e0048ce67c31362508975cc9572bbb4ec6174824fc921d0e9752ea8",
+    "results/g0_probe_v1.json": "3df0f7cac2039d07ce2c495a9528da71fb235f2ad60baaefd279402c23f26d94",
+    "results/g0_probe_v1.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "results/g0_regression_v1.compiled.json": "076c8bc0b2cb550a77bc0e1a20dda4e19a2945d1c5daa15139cc9a5fed808448",
+    "results/g0_regression_v1.json": "ccd266c97a646e96ce9a19d730f83564ea48440eab981744d2dd0667856ba1f1",
+    "results/g0_regression_v1.jsonl": "8c9ff7926ec79716ee66c4aaa2cd6f2e94e29ef64e93da914cdb1c744798a2a3",
+    "results/g0_validate_v1.compiled.json": "81e43c8361327300ba1691b4f754205e39e14870cc8c3e5d704cfec35bb8b3a7",
+    "results/g0_validate_v1.json": "1ec381e19882ab116c5ceda9258479d9c18c481124647baff90bc8c53aebf46b",
+    "results/g0_validate_v1.jsonl": "0e2598567626c613730a3cf92f15f4a508b95f18e7d2c2a38bc3e8092f2782bd",
+    "results/lite_20260920_g0_diagnose_v1.log": "d4c732633556cdba1669a668d975b4d6fa1470d94d383ee62fb47e5e30d10fab",
+    "results/lite_20260920_g0_g1_v1.log": "b0d0cf2666fa6c2eae22a5deeca46f76d0d65c0bc6e7310a2c7e17c6dbbd5df4"
+  },
+  "workloads_sha256": "f0333a6408a017641b7db86e27648f991b3dc72677ae05717cce6e5691ec9451",
+  "original_ptx_sha256": "670f62046f0dedcd70b4b0dc8d51e6366544812c919346b1af6b0d81e8183523",
+  "original_logs_sha256": {
+    "lite_20260920_g0_g1_v1.log": "f66b65659f65773b8c82af769e4b812778be8ef9c1e78af02e5eb01eae6e7563",
+    "lite_20260920_g0_diagnose_v1.log": "d4c732633556cdba1669a668d975b4d6fa1470d94d383ee62fb47e5e30d10fab"
+  },
+  "curation": "Structured results and synthetic subset are byte-preserved. Private paths in traceback logs are substituted. PTX file paths are reduced to basenames and debug sections removed. GPU UUID/PID/process-name telemetry omitted; original hashes retained.",
+  "diagnostic_helper_sha256": {
+    "diagnose_g0.py": "afe6335fc7df712b75c7cdf2ba31a172ff6f90bf61c44aadf5648b21434f3f35",
+    "replay_failure.py": "0b157913b569eea3ff9fdd499740a0fd2dfd7c28a4c2a2ef86509ac24c65ed17"
+  },
+  "diagnostic_helper_hash_scope": "Recorded at artifact curation; separate from the ten-file runtime source manifest."
+}

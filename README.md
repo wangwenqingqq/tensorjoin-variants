@@ -13,6 +13,9 @@ Follow-ups on the same branch:
 - [Block32 E3M4 TensorJoin screen](e3m4_blockscaled_tensorjoin/README.md):
   nonuniform native scaled GEMM and full-cascade verification pass; the
   same-campaign INT8/FP16 end-to-end admission gate fails.
+- [Lightweight selector G0 checkpoint](lite_selector_20260920/REPORT.md):
+  stopped at an independent CPU-reference reduction-order mismatch; no selector
+  timing, training or held-out performance was run.
 
 
 This branch contains the `tensorjoin_20260902_certified_exact_join/` snapshot only, plus archive metadata and the

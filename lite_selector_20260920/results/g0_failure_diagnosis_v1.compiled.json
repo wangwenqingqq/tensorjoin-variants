@@ -1,0 +1,78 @@
+{
+  "metadata_fp16:bf90c21afb4dea55166cc0b7bd34389ec900297e111e7dd8412eeff41392a492": {
+    "name": "metadata_fp16",
+    "cubin_sha256": "bf90c21afb4dea55166cc0b7bd34389ec900297e111e7dd8412eeff41392a492",
+    "registers": 40,
+    "spills": 0,
+    "shared_bytes": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "constants": {
+      "(8,)": "512",
+      "(9,)": "fp16"
+    }
+  },
+  "dot_fp16_fp16_32_512:2756e131fa1b9113dbcc838aeb0fd33041edd764f83bc68bcf2033f6c89e677d": {
+    "name": "dot_fp16_fp16_32_512",
+    "cubin_sha256": "2756e131fa1b9113dbcc838aeb0fd33041edd764f83bc68bcf2033f6c89e677d",
+    "registers": 48,
+    "spills": 0,
+    "shared_bytes": 8192,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "constants": {
+      "(3,)": "32",
+      "(4,)": "512",
+      "(5,)": "fp16",
+      "(6,)": "fp16",
+      "(7,)": "32",
+      "(8,)": "32",
+      "(9,)": "64"
+    }
+  },
+  "classify_fp16:e34b67e777badb719b97105bb1588b1f613198b26bba356e3f3900e9f82d1049": {
+    "name": "classify_fp16",
+    "cubin_sha256": "e34b67e777badb719b97105bb1588b1f613198b26bba356e3f3900e9f82d1049",
+    "registers": 73,
+    "spills": 0,
+    "shared_bytes": 1024,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "constants": {
+      "(12,)": "32",
+      "(13,)": "32",
+      "(14,)": "32",
+      "(15,)": "1024",
+      "(16,)": "0.00012232370499987155",
+      "(17,)": "0.0908374935388565",
+      "(18,)": "1024",
+      "(19,)": "False"
+    }
+  },
+  "fp32_refine:2420d8a0d7c5e968bf7340363918d65c68c6a98558018dcf5f8de5c25532536e": {
+    "name": "fp32_refine",
+    "cubin_sha256": "2420d8a0d7c5e968bf7340363918d65c68c6a98558018dcf5f8de5c25532536e",
+    "registers": 32,
+    "spills": 0,
+    "shared_bytes": 16,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "constants": {
+      "(11,)": "32",
+      "(12,)": "512",
+      "(13,)": "1024",
+      "(14,)": "256"
+    }
+  },
+  "fp64:0e77e6549bd59058330ef05f0ab20fdd792dad00f6da919a1c0f294e848fb7dc": {
+    "name": "fp64",
+    "cubin_sha256": "0e77e6549bd59058330ef05f0ab20fdd792dad00f6da919a1c0f294e848fb7dc",
+    "registers": 30,
+    "spills": 0,
+    "shared_bytes": 32,
+    "target": "GPUTarget(backend='cuda', arch=120, warp_size=32)",
+    "constants": {
+      "(5,)": "0.09083749390179904",
+      "(6,)": "32",
+      "(7,)": "512",
+      "(8,)": "1024",
+      "(9,)": "256"
+    }
+  }
+}

@@ -1,0 +1,102 @@
+readelf: Warning: [18]: Unexpected value (12) in info field.
+readelf: Warning: [18]: Unexpected value (12) in info field.
+{
+  "all_methods_match_gpu_fp64": true,
+  "comparisons": 24,
+  "differing_pairs": [
+    {
+      "pair_id": 828,
+      "subset_rows": [
+        25,
+        28
+      ],
+      "parent_rows": [
+        3279,
+        3727
+      ],
+      "threshold_hex": "0x1.74120418f0f3ep-4",
+      "values": {
+        "numpy_sum512": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "numpy_two_sum256": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "sequential512": {
+          "hex": "0x1.74120418f0f3ap-4",
+          "decimal": 0.09083749390179899,
+          "inside": true,
+          "threshold_ulps": -4.0
+        },
+        "math_fsum_rounded_squares": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        },
+        "exact_rational_rounded_once": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        }
+      },
+      "exact_rational_inside": false,
+      "exact_minus_threshold_numerator": "4277",
+      "exact_minus_threshold_denominator": "295147905179352825856"
+    },
+    {
+      "pair_id": 921,
+      "subset_rows": [
+        28,
+        25
+      ],
+      "parent_rows": [
+        3727,
+        3279
+      ],
+      "threshold_hex": "0x1.74120418f0f3ep-4",
+      "values": {
+        "numpy_sum512": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "numpy_two_sum256": {
+          "hex": "0x1.74120418f0f3ep-4",
+          "decimal": 0.09083749390179904,
+          "inside": true,
+          "threshold_ulps": 0.0
+        },
+        "sequential512": {
+          "hex": "0x1.74120418f0f3ap-4",
+          "decimal": 0.09083749390179899,
+          "inside": true,
+          "threshold_ulps": -4.0
+        },
+        "math_fsum_rounded_squares": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        },
+        "exact_rational_rounded_once": {
+          "hex": "0x1.74120418f0f3fp-4",
+          "decimal": 0.09083749390179906,
+          "inside": false,
+          "threshold_ulps": 1.0
+        }
+      },
+      "exact_rational_inside": false,
+      "exact_minus_threshold_numerator": "4277",
+      "exact_minus_threshold_denominator": "295147905179352825856"
+    }
+  ]
+}
