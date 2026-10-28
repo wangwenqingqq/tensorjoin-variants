@@ -1,0 +1,68 @@
+[
+  {
+    "variant": "baseline",
+    "n": 3,
+    "public_seconds": 0.8239661739789881,
+    "join_excluding_shared_sort_seconds": 0.7454849269997794,
+    "host_preprocess_seconds": 0.4890129529812839,
+    "setup_seconds": 0.7096065019723028,
+    "shared_host_canonical_seconds": 0.07848124697920866,
+    "graph_setup_seconds": 0.0,
+    "all_correct": true
+  },
+  {
+    "variant": "nobubble",
+    "n": 3,
+    "public_seconds": 0.7681525240186602,
+    "join_excluding_shared_sort_seconds": 0.6887466960179154,
+    "host_preprocess_seconds": 0.46011865499895066,
+    "setup_seconds": 0.664227015018696,
+    "shared_host_canonical_seconds": 0.0794058280007448,
+    "graph_setup_seconds": 0.0,
+    "all_correct": true
+  },
+  {
+    "variant": "graph",
+    "n": 3,
+    "public_seconds": 0.768018928996753,
+    "join_excluding_shared_sort_seconds": 0.6922487749834545,
+    "host_preprocess_seconds": 0.46934167499421164,
+    "setup_seconds": 0.6708491449826397,
+    "shared_host_canonical_seconds": 0.07789354800479487,
+    "graph_setup_seconds": 0.0009834029769990593,
+    "all_correct": true
+  },
+  {
+    "variant": "chunked_baseline",
+    "n": 3,
+    "public_seconds": 0.38482592601212673,
+    "join_excluding_shared_sort_seconds": 0.3013432979932986,
+    "host_preprocess_seconds": 0.24742485501337796,
+    "setup_seconds": 0.2665181799966376,
+    "shared_host_canonical_seconds": 0.08348262801882811,
+    "graph_setup_seconds": 0.0,
+    "all_correct": true
+  },
+  {
+    "variant": "chunked_nobubble",
+    "n": 3,
+    "public_seconds": 0.3741358710103668,
+    "join_excluding_shared_sort_seconds": 0.29114524301257916,
+    "host_preprocess_seconds": 0.24619720201008022,
+    "setup_seconds": 0.26527214000816457,
+    "shared_host_canonical_seconds": 0.08299062799778767,
+    "graph_setup_seconds": 0.0,
+    "all_correct": true
+  },
+  {
+    "variant": "chunked_graph",
+    "n": 3,
+    "public_seconds": 0.37436402702587657,
+    "join_excluding_shared_sort_seconds": 0.2916566460044123,
+    "host_preprocess_seconds": 0.24881272402126342,
+    "setup_seconds": 0.26875741602270864,
+    "shared_host_canonical_seconds": 0.08270738102146424,
+    "graph_setup_seconds": 0.000837730010971427,
+    "all_correct": true
+  }
+]

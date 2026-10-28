@@ -1,0 +1,14 @@
+{
+  "workload": "CIFAR-GIST 60000x512 host FP32",
+  "contract": {
+    "epsilon": 0.62890625,
+    "expected_count": 3926078,
+    "expected_hash": "13cae87e6a0f75a13f3e9a7881b33c42ab77680f6d13e99dcc00fa2de5963495",
+    "metadata_sha256": "5c8daf9cba6cbd83390d467b53ebb4a97521638a038837df2fe7f91bfc041ae4",
+    "smoke_summary_sha256": "b68f1d56e45d550b2cea60029e21a818c0cbd9b3dd3d84e39fbac27b561a101c",
+    "source_npy_sha256": "95048090f7834759a0f0fffb41a663807f8ef1c2255a5412f045071fdbd6198c",
+    "source_raw_sha256": "f7b51da49d6555fff8e094584b27c8c5c4efbfdcde1db2b7f86e58d9142af326",
+    "threshold_d2": 0.3955230712890625
+  },
+  "included_data": false
+}

@@ -1,0 +1,25 @@
+{
+  "publication_scope": "New task-owned sources and curated numeric evidence only; no archival collection redistribution, datasets, papers, checkpoints, credentials, host configuration or visibility changes.",
+  "baseline_repository_path": "tensorjoin_20260902_certified_exact_join/src",
+  "evidence_redactions": {
+    "results/ab.json": {
+      "source_sha256": "6f5c02859a37f9efc6da0ca1bc287e0555a12e20f9203a65f6b869dda63734cd",
+      "redaction": "Removed foreign-process paths/PIDs and host timestamps only; timings/output validation unchanged."
+    },
+    "results/formal.json": {
+      "source_sha256": "aaa1d0ce9f8a1b5c410d9f31f405d1f0ca03fb67a33f1de2c872f91f5d782366",
+      "redaction": "Removed foreign-process paths/PIDs and host timestamps only; timings/output validation unchanged."
+    }
+  },
+  "original_integrity_audit_sha256": "5893d72769dee50bae167b3cfcc2000b8fb9d6c311e4b54633478dcc5b48a09e",
+  "integrity_audit_verdict": "CLEAN within audited task-source/raw-log/record scope; no complete session export was reviewed.",
+  "campaign_source_hashes": {
+    "bench.py": "6831e00f73f9dd525b24fa0be3792dc9483a8466109a90e61c405ef1fc808c76",
+    "g2b_public_common.py": "f9aa29e81146e2fc2220ecdf1832e480527693b35120bdf011606a13d26c736c",
+    "run_d1_triton.py": "a522375f9147a9b4a082b85939c0b100da563401ef34f70b3d32a5309be1e52f",
+    "run_g2a2_tensorjoin_triangular.py": "9eeaa7e21fa7137812e2fcccf09dde654e0a07ab4d95181f2e87bd6326f3f892",
+    "run_g2a_tensorjoin.py": "84f611fa029e0ce798c3945fad54600598bc7a708f630ebd5fc07fe7dac1e6d8",
+    "run_g2b_tensorjoin_public.py": "f1aab6e90a769360766691e399516b78dfea6001c96e0889afe97fb628d7a0e7",
+    "tensorjoin_device_counts.py": "d2a9b521d8dbe69bd6a35740c99a8cebdd8ff78c33955f6fbb8ded4f2a6ce432"
+  }
+}
