@@ -1,0 +1,1214 @@
+diff --git a/src/bench.py b/src/bench.py
+new file mode 100644
+index 0000000..f7c4d29
+--- /dev/null
++++ b/src/bench.py
+@@ -0,0 +1,279 @@
++#!/usr/bin/env python3
++"""Frozen full-workload A/B; no data/method state is reused across timed calls."""
++from __future__ import annotations
++
++import argparse
++import gc
++import json
++import os
++import platform
++import subprocess
++import time
++from pathlib import Path
++
++import numpy as np
++import torch
++
++from g2b_public_common import (
++    D, N, PROJECT, atomic_json, load_contract, load_pageable_source,
++    validate_canonical, sha256_file,
++)
++from run_d1_triton import quantize_per_vector, upward_float32
++from run_g2b_tensorjoin_public import (
++    BLOCK_M, BLOCK_N, BLOCK_K, REFINE_BLOCK_K, TILES_PER_BATCH,
++    BOUND_PAD, FP32_DISTANCE_GUARD, compile_exact_specializations,
++    triangular_int8_certificate_compact_i64,
++    filter_ambiguous_fp32_i64, refine_ambiguous_fp64_i64,
++)
++from tensorjoin_device_counts import (
++    scan_device_start, filter_device_count, refine_device_count,
++)
++
++CAPACITY = TILES_PER_BATCH * BLOCK_M * BLOCK_N
++FILTER_GRID = 16384
++REFINE_GRID = 1024
++
++
++def chunked_preprocess(vectors):
++    """Bound the temporary working set without changing per-row NumPy operations."""
++    n = len(vectors)
++    codes = np.empty(vectors.shape, dtype=np.int8)
++    scales = np.empty(n, dtype=np.float32)
++    errors = np.empty(n, dtype=np.float64)
++    norms = np.empty(n, dtype=np.float64)
++    codes_t = np.empty((D, n), dtype=np.int8)
++    for a in range(0, n, 1024):
++        b = min(a + 1024, n)
++        c, s, e = quantize_per_vector(vectors[a:b])
++        codes[a:b], scales[a:b], errors[a:b] = c, s, e
++        norms[a:b] = (np.sum(c.astype(np.int64) ** 2, axis=1).astype(np.float64)
++                      * s.astype(np.float64) ** 2)
++        codes_t[:, a:b] = c.T
++    return codes, scales, errors, norms, codes_t
++
++
++def compile_candidates(threshold):
++    """JIT on a zero 64-row fixture, never compute the full timed input."""
++    device = 'cuda'
++    codes = torch.zeros((64,D), dtype=torch.int8, device=device)
++    codes_t = torch.zeros((D,N), dtype=torch.int8, device=device)
++    v = torch.ones(64, device=device)
++    tile = torch.zeros(1, dtype=torch.int32, device=device)
++    queues = [torch.zeros(4096, dtype=torch.int64, device=device) for _ in range(3)]
++    counters = torch.zeros(5, dtype=torch.int32, device=device)
++    vectors = torch.zeros((64,D), device=device)
++    scan_device_start[(1,)](codes,codes_t,v,v,v,v,v,v,tile,tile,tile,
++        queues[0],queues[1],counters,threshold,BOUND_PAD,
++        M=N,N_=N,K=D,CAPACITY=CAPACITY,BLOCK_M=64,BLOCK_N=64,BLOCK_K=64,
++        num_warps=4,num_stages=3)
++    counters.zero_()
++    counters[1] = 1
++    filter_device_count[(FILTER_GRID,)](vectors,vectors,queues[1],queues[0],queues[2],
++        counters,threshold,FP32_DISTANCE_GUARD,N_=N,K=D,CAPACITY=CAPACITY,
++        BLOCK_K=256,num_warps=4)
++    counters.zero_()
++    counters[3] = 1
++    refine_device_count[(REFINE_GRID,)](vectors,vectors,queues[2],queues[0],counters,
++        threshold,N_=N,K=D,CAPACITY=CAPACITY,BLOCK_K=256,num_warps=4)
++    torch.cuda.synchronize()
++
++
++def gpu_state():
++    return subprocess.check_output(['nvidia-smi',
++        '--query-gpu=index,memory.used,utilization.gpu','--format=csv'],text=True)
++
++
++def isolation_state():
++    raw = subprocess.check_output(['nvidia-smi','--id=4',
++        '--query-compute-apps=pid,process_name,used_gpu_memory',
++        '--format=csv,noheader,nounits'],text=True)
++    foreign = [row for row in raw.splitlines() if row.strip() and
++               int(row.split(',')[0].strip()) != os.getpid()]
++    return {'compute_processes':raw,'foreign_processes':foreign,
++            'eligible':not foreign,'gpu_state':gpu_state()}
++
++
++def run_once(vectors, contract, variant):
++    torch.cuda.synchronize()
++    torch.cuda.reset_peak_memory_stats()
++    started = time.perf_counter()
++    chunked = variant.startswith('chunked')
++    graph_mode = 'graph' in variant
++    device_counts = variant not in ('baseline', 'chunked_baseline')
++    if chunked:
++        codes,scales,errors,norms,codes_t = chunked_preprocess(vectors)
++    else:
++        codes,scales,errors = quantize_per_vector(vectors)
++        norms = (np.sum(codes.astype(np.int64) ** 2, axis=1).astype(np.float64)
++                 * scales.astype(np.float64) ** 2)
++    extent = (N+63)//64
++    tile_rows,tile_columns = np.triu_indices(extent)
++    tile_rows = np.asarray(tile_rows,dtype=np.int32)
++    tile_columns = np.asarray(tile_columns,dtype=np.int32)
++    scheduled = len(tile_rows)
++    preprocess_seconds = time.perf_counter() - started
++    vectors_gpu = torch.from_numpy(vectors).to('cuda')
++    codes_gpu = torch.from_numpy(codes).to('cuda')
++    codes_t_gpu = torch.from_numpy(codes_t if chunked else codes.T.copy()).to('cuda')
++    scales_gpu = torch.from_numpy(scales).to('cuda')
++    norms_gpu = torch.from_numpy(norms.astype(np.float32)).to('cuda')
++    errors_gpu = torch.from_numpy(upward_float32(errors)).to('cuda')
++    rows_gpu = torch.from_numpy(tile_rows).to('cuda')
++    columns_gpu = torch.from_numpy(tile_columns).to('cuda')
++    result_ids,ambiguous_ids,fp64_ids = [
++        torch.empty(CAPACITY,dtype=torch.int64,device='cuda') for _ in range(3)]
++    threshold = float(contract['threshold_d2'])
++    parts = []
++    records = []
++    graph_setup_seconds = 0.
++    if device_counts:
++        counters = torch.zeros(5,dtype=torch.int32,device='cuda')
++        device_start = torch.zeros(1,dtype=torch.int32,device='cuda')
++
++        def submit(tiles):
++            counters.zero_()
++            scan_device_start[(tiles,)](codes_gpu,codes_t_gpu,
++                scales_gpu,scales_gpu,norms_gpu,norms_gpu,errors_gpu,errors_gpu,
++                rows_gpu,columns_gpu,device_start,result_ids,ambiguous_ids,counters,
++                threshold,BOUND_PAD,M=N,N_=N,K=D,CAPACITY=CAPACITY,
++                BLOCK_M=64,BLOCK_N=64,BLOCK_K=64,num_warps=4,num_stages=3)
++            filter_device_count[(FILTER_GRID,)](vectors_gpu,vectors_gpu,
++                ambiguous_ids,result_ids,fp64_ids,counters,threshold,FP32_DISTANCE_GUARD,
++                N_=N,K=D,CAPACITY=CAPACITY,BLOCK_K=256,num_warps=4)
++            refine_device_count[(REFINE_GRID,)](vectors_gpu,vectors_gpu,fp64_ids,
++                result_ids,counters,threshold,N_=N,K=D,CAPACITY=CAPACITY,
++                BLOCK_K=256,num_warps=4)
++
++        if graph_mode:
++            t = time.perf_counter()
++            graph = torch.cuda.CUDAGraph()
++            with torch.cuda.graph(graph):
++                submit(TILES_PER_BATCH)
++            graph_setup_seconds = time.perf_counter() - t
++    setup_seconds = time.perf_counter() - started
++    for a in range(0,scheduled,TILES_PER_BATCH):
++        b = min(a+TILES_PER_BATCH,scheduled)
++        if device_counts:
++            device_start.fill_(a)
++            if graph_mode and b-a == TILES_PER_BATCH:
++                graph.replay()
++            else:
++                submit(b-a)
++            counts = counters.cpu().numpy().astype(np.int64)
++            final_count = int(counts[0])
++            overflow = int(counts[2]) + int(max(counts[0],counts[1],counts[3])>CAPACITY)
++        else:
++            counters = torch.zeros(5,dtype=torch.int32,device='cuda')
++            triangular_int8_certificate_compact_i64[(b-a,)](codes_gpu,codes_t_gpu,
++                scales_gpu,scales_gpu,norms_gpu,norms_gpu,errors_gpu,errors_gpu,
++                rows_gpu[a:b],columns_gpu[a:b],result_ids,ambiguous_ids,counters,
++                threshold,BOUND_PAD,M=N,N_=N,K=D,CAPACITY=CAPACITY,
++                BLOCK_M=64,BLOCK_N=64,BLOCK_K=64,num_warps=4,num_stages=3)
++            torch.cuda.synchronize()
++            scan_counts = counters.cpu().numpy().astype(np.int64)
++            if scan_counts[1]:
++                filter_ambiguous_fp32_i64[(int(scan_counts[1]),)](vectors_gpu,vectors_gpu,
++                    ambiguous_ids,result_ids,fp64_ids,counters,threshold,FP32_DISTANCE_GUARD,
++                    N_=N,K=D,CAPACITY=CAPACITY,BLOCK_K=256,num_warps=4)
++                torch.cuda.synchronize()
++            fp32_counts = counters.cpu().numpy().astype(np.int64)
++            if fp32_counts[3]:
++                refine_ambiguous_fp64_i64[(int(fp32_counts[3]),)](vectors_gpu,vectors_gpu,
++                    fp64_ids,result_ids,counters,threshold,N_=N,K=D,CAPACITY=CAPACITY,
++                    BLOCK_K=256,num_warps=4)
++                torch.cuda.synchronize()
++            counts = counters.cpu().numpy().astype(np.int64)
++            final_count = int(counts[0])
++            overflow = int(counts[2]) + int(max(*scan_counts[:2],fp32_counts[0],fp32_counts[3],final_count)>CAPACITY)
++        parts.append(result_ids[:min(final_count,CAPACITY)].cpu().numpy().astype(np.uint64,copy=True))
++        records.append({'tile_start':a,'tiles':b-a,'final':final_count,
++                        'ambiguous':int(counts[1]),'fp64':int(counts[3]),'overflow':overflow})
++    torch.cuda.synchronize()
++    before_sort = time.perf_counter()
++    # Keep the two shared host sorts and reverse construction byte-for-byte equivalent.
++    upper = np.sort(np.concatenate(parts).astype(np.uint64,copy=False))
++    upper_rows = upper // np.uint64(N)
++    upper_columns = upper - upper_rows * np.uint64(N)
++    nonself = upper_rows < upper_columns
++    reverse = upper_columns[nonself] * np.uint64(N) + upper_rows[nonself]
++    canonical = np.sort(np.concatenate((upper,reverse)).astype(np.uint64,copy=False))
++    stopped = time.perf_counter()
++    correct = validate_canonical(canonical,contract)
++    correct['upper_duplicates'] = int(np.count_nonzero(upper[1:]==upper[:-1]))
++    correct['invalid_or_lower_upper_pairs'] = int(np.count_nonzero((upper>=np.uint64(N)*np.uint64(N)) | (upper_rows>upper_columns)))
++    correct['overflow_events'] = sum(r['overflow'] for r in records)
++    correct['exact_contract_pass'] = bool(correct['exact_contract_pass'] and
++        not correct['upper_duplicates'] and not correct['invalid_or_lower_upper_pairs'] and not correct['overflow_events'])
++    return {'variant':variant,'public_seconds':stopped-started,
++            'shared_host_canonical_seconds':stopped-before_sort,
++            'join_excluding_shared_sort_seconds':before_sort-started,
++            'host_preprocess_seconds':preprocess_seconds,'setup_seconds':setup_seconds,
++            'graph_setup_seconds':graph_setup_seconds,'batches':records,
++            'peak_gpu_bytes':torch.cuda.max_memory_allocated(),'correctness':correct}
++
++
++def main():
++    parser = argparse.ArgumentParser(__doc__)
++    parser.add_argument('--record-id',required=True)
++    parser.add_argument('--variants',default='baseline,nobubble,graph,chunked_graph')
++    parser.add_argument('--repeats',type=int,default=1)
++    parser.add_argument('--ab',action='store_true')
++    args = parser.parse_args()
++    import re
++    assert re.fullmatch(r'[a-z0-9][a-z0-9_-]{0,79}',args.record_id)
++    assert os.environ.get('CUDA_VISIBLE_DEVICES') == '4'
++    assert torch.cuda.device_count() == 1
++    path = PROJECT / f'results/{args.record_id}.json'
++    if path.exists():
++        raise FileExistsError(path)
++    variants = args.variants.split(',')
++    assert set(variants) <= {'baseline','nobubble','graph','chunked_graph','chunked_nobubble','chunked_baseline'}
++    admission = isolation_state()
++    if not admission['eligible']:
++        atomic_json(path, {'record_id':args.record_id,'ineligible':admission})
++        raise RuntimeError('GPU4 has foreign compute processes; refusing launch')
++    contract = load_contract()
++    vectors = load_pageable_source()
++    torch.cuda.init()
++    compile_exact_specializations(CAPACITY,float(contract['threshold_d2']))
++    if any(v!='baseline' for v in variants):
++        compile_candidates(float(contract['threshold_d2']))
++    gc.collect()
++    torch.cuda.empty_cache()
++    torch.cuda.synchronize()
++    order = []
++    for i in range(args.repeats):
++        order.extend(variants[::-1] if args.ab and i%2 else variants)
++    result = {'record_id':args.record_id,'contract':contract,'gpu':torch.cuda.get_device_name(),
++              'gpu_index':4,'host':platform.node(),'pid':os.getpid(),'torch':torch.__version__,
++              'order':order,'samples':[],'before':gpu_state(),'admission':admission,
++              'source_hashes':{name:sha256_file(PROJECT/'src'/name) for name in
++                  ['bench.py','tensorjoin_device_counts.py','run_g2b_tensorjoin_public.py',
++                   'run_g2a_tensorjoin.py','run_g2a2_tensorjoin_triangular.py','run_d1_triton.py','g2b_public_common.py']}}
++    print(json.dumps({k:v for k,v in result.items() if k!='samples'}),flush=True)
++    for idx,variant in enumerate(order):
++        gc.collect()
++        # No method tensors, captured graph or computed answers survive this call.
++        before = isolation_state()
++        if not before['eligible']:
++            result['interrupted_by_contention'] = before
++            break
++        sample = run_once(vectors,contract,variant)
++        after = isolation_state()
++        sample['isolation_before'] = before
++        sample['isolation_after'] = after
++        sample['eligible'] = bool(before['eligible'] and after['eligible'])
++        sample['observation'] = idx
++        sample['pair'] = idx//len(variants)
++        sample['timestamp'] = time.time()
++        result['samples'].append(sample)
++        print('SAMPLE '+json.dumps(sample,sort_keys=True),flush=True)
++        if not sample['correctness']['exact_contract_pass'] or not sample['eligible']:
++            result['invalid'] = True
++            break
++    result['after'] = gpu_state()
++    atomic_json(path,result)
++    assert not result.get('invalid') and not result.get('interrupted_by_contention'), 'Candidate invalidated: exact output mismatch'
++
++if __name__ == '__main__':
++    main()
+diff --git a/src/tensorjoin_device_counts.py b/src/tensorjoin_device_counts.py
+new file mode 100644
+index 0000000..0519047
+--- /dev/null
++++ b/src/tensorjoin_device_counts.py
+@@ -0,0 +1,212 @@
++"""Device-count scheduling variants; mathematical bodies match the frozen kernels."""
++import triton
++import triton.language as tl
++
++@triton.jit
++def scan_device_start(
++    query_codes,
++    base_codes_transposed,
++    query_scales,
++    base_scales,
++    query_reconstructed_norm2,
++    base_reconstructed_norm2,
++    query_errors,
++    base_errors,
++    tile_rows,
++    tile_columns,
++    tile_start,
++    result_ids,
++    ambiguous_ids,
++    counters,
++    threshold_d2,
++    bound_pad,
++    M: tl.constexpr,
++    N_: tl.constexpr,
++    K: tl.constexpr,
++    CAPACITY: tl.constexpr,
++    BLOCK_M: tl.constexpr,
++    BLOCK_N: tl.constexpr,
++    BLOCK_K: tl.constexpr,
++):
++    program = tl.load(tile_start) + tl.program_id(axis=0)
++    program_m = tl.load(tile_rows + program)
++    program_n = tl.load(tile_columns + program)
++    offsets_m = program_m * BLOCK_M + tl.arange(0, BLOCK_M)
++    offsets_n = program_n * BLOCK_N + tl.arange(0, BLOCK_N)
++    offsets_k = tl.arange(0, BLOCK_K)
++    query_ptrs = query_codes + offsets_m[:, None] * K + offsets_k[None, :]
++    base_ptrs = base_codes_transposed + offsets_k[:, None] * N_ + offsets_n[None, :]
++    accumulator = tl.zeros((BLOCK_M, BLOCK_N), dtype=tl.int32)
++    for _ in range(0, tl.cdiv(K, BLOCK_K)):
++        query_block = tl.load(
++            query_ptrs,
++            mask=(offsets_m[:, None] < M) & (offsets_k[None, :] < K),
++            other=0,
++        )
++        base_block = tl.load(
++            base_ptrs,
++            mask=(offsets_k[:, None] < K) & (offsets_n[None, :] < N_),
++            other=0,
++        )
++        accumulator = tl.dot(query_block, base_block, accumulator, out_dtype=tl.int32)
++        query_ptrs += BLOCK_K
++        base_ptrs += BLOCK_K * N_
++
++    query_scale = tl.load(query_scales + offsets_m, mask=offsets_m < M, other=0.0)
++    base_scale = tl.load(base_scales + offsets_n, mask=offsets_n < N_, other=0.0)
++    query_norm2 = tl.load(
++        query_reconstructed_norm2 + offsets_m, mask=offsets_m < M, other=0.0
++    )
++    base_norm2 = tl.load(
++        base_reconstructed_norm2 + offsets_n, mask=offsets_n < N_, other=0.0
++    )
++    query_error = tl.load(query_errors + offsets_m, mask=offsets_m < M, other=0.0)
++    base_error = tl.load(base_errors + offsets_n, mask=offsets_n < N_, other=0.0)
++    dot = accumulator.to(tl.float32) * query_scale[:, None] * base_scale[None, :]
++    reconstructed_d2 = query_norm2[:, None] + base_norm2[None, :] - 2.0 * dot
++    reconstructed_d = tl.sqrt(tl.maximum(reconstructed_d2, 0.0))
++    radius = query_error[:, None] + base_error[None, :] + bound_pad
++    lower = tl.maximum(reconstructed_d - radius, 0.0)
++    upper = reconstructed_d + radius
++    lower_d2 = lower * lower
++    upper_d2 = upper * upper
++    valid = (
++        (offsets_m[:, None] < M)
++        & (offsets_n[None, :] < N_)
++        & (offsets_m[:, None] <= offsets_n[None, :])
++    )
++    accept = valid & (upper_d2 <= threshold_d2)
++    reject = valid & (lower_d2 > threshold_d2)
++    ambiguous = valid & ~(accept | reject)
++    pair_ids = (
++        offsets_m[:, None].to(tl.int64) * N_ + offsets_n[None, :].to(tl.int64)
++    )
++
++    counter_lanes = tl.zeros((BLOCK_M, BLOCK_N), dtype=tl.int32)
++    accept_positions = tl.atomic_add(
++        counters + counter_lanes, 1, mask=accept, sem="relaxed"
++    )
++    accept_store = accept & (accept_positions < CAPACITY)
++    tl.store(result_ids + accept_positions, pair_ids, mask=accept_store)
++    tl.atomic_add(
++        counters + 2 + counter_lanes,
++        1,
++        mask=accept & ~accept_store,
++        sem="relaxed",
++    )
++
++    ambiguous_positions = tl.atomic_add(
++        counters + 1 + counter_lanes, 1, mask=ambiguous, sem="relaxed"
++    )
++    ambiguous_store = ambiguous & (ambiguous_positions < CAPACITY)
++    tl.store(ambiguous_ids + ambiguous_positions, pair_ids, mask=ambiguous_store)
++    tl.atomic_add(
++        counters + 2 + counter_lanes,
++        1,
++        mask=ambiguous & ~ambiguous_store,
++        sem="relaxed",
++    )
++
++
++@triton.jit
++def filter_device_count(
++    query,
++    base,
++    ambiguous_ids,
++    result_ids,
++    fp64_ids,
++    counters,
++    threshold_d2,
++    fp32_guard,
++    N_: tl.constexpr,
++    K: tl.constexpr,
++    CAPACITY: tl.constexpr,
++    BLOCK_K: tl.constexpr,
++):
++    count = tl.minimum(tl.load(counters + 1), CAPACITY)
++    for pair_index in range(tl.program_id(0), count, tl.num_programs(0)):
++        pair_id = tl.load(ambiguous_ids + pair_index)
++        query_row = pair_id // N_
++        base_row = pair_id - query_row * N_
++        offsets_k = tl.arange(0, BLOCK_K)
++        distance_d2 = tl.zeros((1,), dtype=tl.float32)
++        different_coordinates = tl.zeros((1,), dtype=tl.int32)
++        for block_start in range(0, K, BLOCK_K):
++            k = block_start + offsets_k
++            query_values = tl.load(query + query_row * K + k, mask=k < K, other=0.0)
++            base_values = tl.load(base + base_row * K + k, mask=k < K, other=0.0)
++            delta = query_values - base_values
++            distance_d2 += tl.sum(delta * delta, axis=0)
++            different_coordinates += tl.sum((query_values != base_values).to(tl.int32), axis=0)
++
++        bitwise_equal = different_coordinates == 0
++        accept = bitwise_equal | (distance_d2 <= threshold_d2 - fp32_guard)
++        reject = (~bitwise_equal) & (distance_d2 > threshold_d2 + fp32_guard)
++        needs_fp64 = ~(accept | reject)
++        counter_lane = tl.zeros((1,), dtype=tl.int32)
++        position = tl.atomic_add(counters + counter_lane, 1, mask=accept, sem="relaxed")
++        can_store = accept & (position < CAPACITY)
++        tl.store(result_ids + position, pair_id, mask=can_store)
++        tl.atomic_add(
++            counters + 2 + counter_lane,
++            1,
++            mask=accept & ~can_store,
++            sem="relaxed",
++        )
++        fp64_position = tl.atomic_add(
++            counters + 3 + counter_lane, 1, mask=needs_fp64, sem="relaxed"
++        )
++        fp64_store = needs_fp64 & (fp64_position < CAPACITY)
++        tl.store(fp64_ids + fp64_position, pair_id, mask=fp64_store)
++        tl.atomic_add(
++            counters + 2 + counter_lane,
++            1,
++            mask=needs_fp64 & ~fp64_store,
++            sem="relaxed",
++        )
++        tl.atomic_add(counters + 4 + counter_lane, 1, mask=bitwise_equal, sem="relaxed")
++
++
++@triton.jit
++def refine_device_count(
++    query,
++    base,
++    fp64_ids,
++    result_ids,
++    counters,
++    threshold_d2,
++    N_: tl.constexpr,
++    K: tl.constexpr,
++    CAPACITY: tl.constexpr,
++    BLOCK_K: tl.constexpr,
++):
++    count = tl.minimum(tl.load(counters + 3), CAPACITY)
++    for pair_index in range(tl.program_id(0), count, tl.num_programs(0)):
++        pair_id = tl.load(fp64_ids + pair_index)
++        query_row = pair_id // N_
++        base_row = pair_id - query_row * N_
++        offsets_k = tl.arange(0, BLOCK_K)
++        distance_d2 = tl.zeros((1,), dtype=tl.float64)
++        for block_start in range(0, K, BLOCK_K):
++            k = block_start + offsets_k
++            query_values = tl.load(query + query_row * K + k, mask=k < K, other=0.0).to(
++                tl.float64
++            )
++            base_values = tl.load(base + base_row * K + k, mask=k < K, other=0.0).to(
++                tl.float64
++            )
++            delta = query_values - base_values
++            distance_d2 += tl.sum(delta * delta, axis=0)
++        inside = distance_d2 <= threshold_d2
++        counter_lane = tl.zeros((1,), dtype=tl.int32)
++        position = tl.atomic_add(counters + counter_lane, 1, mask=inside, sem="relaxed")
++        can_store = inside & (position < CAPACITY)
++        tl.store(result_ids + position, pair_id, mask=can_store)
++        tl.atomic_add(
++            counters + 2 + counter_lane,
++            1,
++            mask=inside & ~can_store,
++            sem="relaxed",
++        )
++
++
+diff --git a/src/profile_baseline.py b/src/profile_baseline.py
+new file mode 100644
+index 0000000..6c2082b
+--- /dev/null
++++ b/src/profile_baseline.py
+@@ -0,0 +1,447 @@
++#!/usr/bin/env python3
++"""Run one TensorJoin process under the frozen G2B public denominator."""
++
++from __future__ import annotations
++
++from collections import defaultdict
++from contextlib import contextmanager
++
++import gc
++import json
++import os
++import platform
++import sys
++import time
++from pathlib import Path
++
++import numpy as np
++import torch
++import triton
++
++from g2b_public_common import (
++    D,
++    N,
++    PROJECT,
++    atomic_json,
++    load_contract,
++    load_pageable_source,
++    max_rss_kib,
++    parse_public_args,
++    sha256_file,
++    validate_canonical,
++)
++from run_d1_triton import quantize_per_vector, upward_float32
++from run_g2a_tensorjoin import (
++    filter_ambiguous_fp32_i64,
++    refine_ambiguous_fp64_i64,
++)
++from run_g2a2_tensorjoin_triangular import triangular_int8_certificate_compact_i64
++
++
++EXPERIMENT_ID = "tensorjoin_20260903_g2b_public_screen"
++BOUND_PAD = 1e-4
++FP32_DISTANCE_GUARD = 1e-3
++BLOCK_M = 64
++BLOCK_N = 64
++BLOCK_K = 64
++REFINE_BLOCK_K = 256
++TILES_PER_BATCH = 4_096
++
++
++def compile_exact_specializations(capacity: int, threshold_d2: float) -> None:
++    """Compile exact full-run specializations without retaining method state."""
++    device = torch.device("cuda:0")
++    warm_codes = torch.zeros((BLOCK_M, D), dtype=torch.int8, device=device)
++    # N is a compile-time leading stride for the transposed operand.
++    warm_codes_t = torch.zeros((D, N), dtype=torch.int8, device=device)
++    warm_vector = torch.ones(BLOCK_M, dtype=torch.float32, device=device)
++    warm_tile_rows = torch.zeros(1, dtype=torch.int32, device=device)
++    warm_tile_columns = torch.zeros(1, dtype=torch.int32, device=device)
++    warm_results = torch.empty(BLOCK_M * BLOCK_N, dtype=torch.int64, device=device)
++    warm_ambiguous = torch.empty(BLOCK_M * BLOCK_N, dtype=torch.int64, device=device)
++    warm_fp64 = torch.empty(BLOCK_M * BLOCK_N, dtype=torch.int64, device=device)
++    warm_counters = torch.zeros(5, dtype=torch.int32, device=device)
++    warm_vectors = torch.zeros((BLOCK_M, D), dtype=torch.float32, device=device)
++
++    triangular_int8_certificate_compact_i64[(1,)](
++        warm_codes,
++        warm_codes_t,
++        warm_vector,
++        warm_vector,
++        warm_vector,
++        warm_vector,
++        warm_vector,
++        warm_vector,
++        warm_tile_rows,
++        warm_tile_columns,
++        warm_results,
++        warm_ambiguous,
++        warm_counters,
++        threshold_d2,
++        BOUND_PAD,
++        M=N,
++        N_=N,
++        K=D,
++        CAPACITY=capacity,
++        BLOCK_M=BLOCK_M,
++        BLOCK_N=BLOCK_N,
++        BLOCK_K=BLOCK_K,
++        num_warps=4,
++        num_stages=3,
++    )
++    warm_ambiguous[0] = 0
++    warm_counters.zero_()
++    filter_ambiguous_fp32_i64[(1,)](
++        warm_vectors,
++        warm_vectors,
++        warm_ambiguous,
++        warm_results,
++        warm_fp64,
++        warm_counters,
++        threshold_d2,
++        FP32_DISTANCE_GUARD,
++        N_=N,
++        K=D,
++        CAPACITY=capacity,
++        BLOCK_K=REFINE_BLOCK_K,
++        num_warps=4,
++    )
++    warm_fp64[0] = 0
++    warm_counters.zero_()
++    refine_ambiguous_fp64_i64[(1,)](
++        warm_vectors,
++        warm_vectors,
++        warm_fp64,
++        warm_results,
++        warm_counters,
++        threshold_d2,
++        N_=N,
++        K=D,
++        CAPACITY=capacity,
++        BLOCK_K=REFINE_BLOCK_K,
++        num_warps=4,
++    )
++    torch.cuda.synchronize()
++    del (
++        warm_codes,
++        warm_codes_t,
++        warm_vector,
++        warm_tile_rows,
++        warm_tile_columns,
++        warm_results,
++        warm_ambiguous,
++        warm_fp64,
++        warm_counters,
++        warm_vectors,
++    )
++    gc.collect()
++    torch.cuda.empty_cache()
++    torch.cuda.synchronize()
++
++
++class Profile:
++    def __init__(self):
++        self.host = defaultdict(float)
++        self.events = defaultdict(list)
++        self.calls = defaultdict(int)
++
++    @contextmanager
++    def span(self, name, cuda=False):
++        if cuda:
++            a, b = [torch.cuda.Event(enable_timing=True) for _ in range(2)]
++            a.record()
++        start = time.perf_counter()
++        yield
++        self.host[name] += time.perf_counter() - start
++        self.calls[name] += 1
++        if cuda:
++            b.record()
++            self.events[name].append((a,b))
++
++    def summary(self):
++        torch.cuda.synchronize()
++        return {"host_ms": {k:v*1000 for k,v in self.host.items()},
++                "cuda_ms": {k:sum(a.elapsed_time(b) for a,b in v) for k,v in self.events.items()},
++                "calls": dict(self.calls)}
++
++
++def main() -> int:
++    args = parse_public_args(__doc__ or "TensorJoin public adapter")
++    record_id = args.record_id
++    visible = os.environ.get("CUDA_VISIBLE_DEVICES")
++    if visible is None or not visible.isdigit():
++        raise RuntimeError(
++            f"Expected a single numeric CUDA_VISIBLE_DEVICES, got {visible!r}"
++        )
++    if not torch.cuda.is_available() or torch.cuda.device_count() != 1:
++        raise RuntimeError("Expected exactly one visible CUDA device")
++    result_path = PROJECT / f"results/profile_baseline_{record_id}.json"
++    if result_path.exists():
++        raise FileExistsError(result_path)
++
++    contract = load_contract()
++    vectors = load_pageable_source()
++    tile_extent = (N + BLOCK_M - 1) // BLOCK_M
++    scheduled_tiles = tile_extent * (tile_extent + 1) // 2
++    capacity = TILES_PER_BATCH * BLOCK_M * BLOCK_N
++    torch.cuda.init()
++    compile_exact_specializations(capacity, float(contract["threshold_d2"]))
++
++    run = {
++        "experiment_id": EXPERIMENT_ID,
++        "phase": args.phase,
++        "record_id": record_id,
++        "method": "tensorjoin_exact_mixed_precision",
++        "host": platform.node(),
++        "python": sys.version,
++        "numpy": np.__version__,
++        "torch": torch.__version__,
++        "triton": triton.__version__,
++        "cuda_visible_devices": visible,
++        "gpu": torch.cuda.get_device_name(0),
++        "compute_capability": list(torch.cuda.get_device_capability(0)),
++        "shape": [N, D],
++        "source_dtype": "float32",
++        "epsilon": contract["epsilon"],
++        "threshold_d2": contract["threshold_d2"],
++        "source_npy_sha256": contract["source_npy_sha256"],
++        "metadata_sha256": contract["metadata_sha256"],
++        "smoke_summary_sha256": contract["smoke_summary_sha256"],
++        "runner_sha256": sha256_file(Path(__file__).resolve()),
++        "triangular_kernel_source_sha256": sha256_file(
++            PROJECT / "src/run_g2a2_tensorjoin_triangular.py"
++        ),
++        "refinement_source_sha256": sha256_file(
++            PROJECT / "src/run_g2a_tensorjoin.py"
++        ),
++        "quantization_source_sha256": sha256_file(PROJECT / "src/run_d1_triton.py"),
++        "timing_scope": "f32 pageable host -> sorted canonical u64 host",
++        "excluded_before_timer": [
++            "file_io",
++            "process_startup",
++            "cuda_context_initialization",
++            "triton_compilation",
++        ],
++        "excluded_after_timer": ["hashing", "correctness_checks", "json_write"],
++        "tile_extent": tile_extent,
++        "scheduled_tiles": scheduled_tiles,
++        "tiles_per_batch": TILES_PER_BATCH,
++        "buffer_capacity_per_stage": capacity,
++        "capacity_rule": "tiles_per_batch * 64 * 64 worst-case upper-pair slots",
++    }
++    print("RUN_START " + json.dumps(run, sort_keys=True), flush=True)
++
++    profile = Profile()
++    torch.cuda.reset_peak_memory_stats()
++    public_started = time.perf_counter()
++
++    with profile.span("host_preprocess", cuda=False):
++        codes, scales, errors = quantize_per_vector(vectors)
++        reconstructed_norm2 = (
++            np.sum(codes.astype(np.int64) ** 2, axis=1).astype(np.float64)
++            * scales.astype(np.float64) ** 2
++        )
++        tile_rows, tile_columns = np.triu_indices(tile_extent)
++        tile_rows = np.asarray(tile_rows, dtype=np.int32)
++        tile_columns = np.asarray(tile_columns, dtype=np.int32)
++        if tile_rows.size != scheduled_tiles:
++            raise AssertionError("Triangular tile schedule size mismatch")
++
++    with profile.span("h2d_and_workspace", cuda=True):
++        device = torch.device("cuda:0")
++        vectors_gpu = torch.from_numpy(vectors).to(device)
++        codes_gpu = torch.from_numpy(codes).to(device)
++        with profile.span("host_codes_transpose"):
++            codes_transposed = codes.T.copy()
++        with profile.span("h2d_codes_transpose", cuda=True):
++            codes_t_gpu = torch.from_numpy(codes_transposed).to(device)
++        scales_gpu = torch.from_numpy(scales).to(device)
++        norms_gpu = torch.from_numpy(reconstructed_norm2.astype(np.float32)).to(device)
++        errors_gpu = torch.from_numpy(upward_float32(errors)).to(device)
++        tile_rows_gpu = torch.from_numpy(tile_rows).to(device)
++        tile_columns_gpu = torch.from_numpy(tile_columns).to(device)
++        result_ids = torch.empty(capacity, dtype=torch.int64, device=device)
++        ambiguous_ids = torch.empty(capacity, dtype=torch.int64, device=device)
++        fp64_ids = torch.empty(capacity, dtype=torch.int64, device=device)
++
++    accepted_parts: list[np.ndarray] = []
++    batch_records: list[dict[str, int]] = []
++    total_direct = 0
++    total_ambiguous = 0
++    total_fp32_accept = 0
++    total_fp64 = 0
++    total_equality = 0
++    total_overflow = 0
++    for batch_index, tile_start in enumerate(range(0, scheduled_tiles, TILES_PER_BATCH)):
++        tile_stop = min(tile_start + TILES_PER_BATCH, scheduled_tiles)
++        batch_tiles = tile_stop - tile_start
++        counters = torch.zeros(5, dtype=torch.int32, device=device)
++        with profile.span("stage1_submit", cuda=True):
++            triangular_int8_certificate_compact_i64[(batch_tiles,)](
++                codes_gpu,
++                codes_t_gpu,
++                scales_gpu,
++                scales_gpu,
++                norms_gpu,
++                norms_gpu,
++                errors_gpu,
++                errors_gpu,
++                tile_rows_gpu[tile_start:tile_stop],
++                tile_columns_gpu[tile_start:tile_stop],
++                result_ids,
++                ambiguous_ids,
++                counters,
++                float(contract["threshold_d2"]),
++                BOUND_PAD,
++                M=N,
++                N_=N,
++                K=D,
++                CAPACITY=capacity,
++                BLOCK_M=BLOCK_M,
++                BLOCK_N=BLOCK_N,
++                BLOCK_K=BLOCK_K,
++                num_warps=4,
++                num_stages=3,
++            )
++        with profile.span("stage1_wait"):
++            torch.cuda.synchronize()
++        with profile.span("stage1_counts_d2h", cuda=True):
++            scan_counts = counters.cpu().numpy().astype(np.int64)
++            direct_count = int(scan_counts[0])
++            ambiguous_count = int(scan_counts[1])
++
++        if ambiguous_count:
++            with profile.span("stage2_submit", cuda=True):
++                filter_ambiguous_fp32_i64[(ambiguous_count,)](
++                    vectors_gpu,
++                    vectors_gpu,
++                    ambiguous_ids,
++                    result_ids,
++                    fp64_ids,
++                    counters,
++                    float(contract["threshold_d2"]),
++                    FP32_DISTANCE_GUARD,
++                    N_=N,
++                    K=D,
++                    CAPACITY=capacity,
++                    BLOCK_K=REFINE_BLOCK_K,
++                    num_warps=4,
++                )
++            with profile.span("stage2_wait"):
++                torch.cuda.synchronize()
++        with profile.span("stage2_counts_d2h", cuda=True):
++            after_fp32 = counters.cpu().numpy().astype(np.int64)
++            after_fp32_count = int(after_fp32[0])
++            fp64_count = int(after_fp32[3])
++            equality_count = int(after_fp32[4])
++
++        if fp64_count:
++            with profile.span("stage3_submit", cuda=True):
++                refine_ambiguous_fp64_i64[(fp64_count,)](
++                    vectors_gpu,
++                    vectors_gpu,
++                    fp64_ids,
++                    result_ids,
++                    counters,
++                    float(contract["threshold_d2"]),
++                    N_=N,
++                    K=D,
++                    CAPACITY=capacity,
++                    BLOCK_K=REFINE_BLOCK_K,
++                    num_warps=4,
++                )
++            with profile.span("stage3_wait"):
++                torch.cuda.synchronize()
++        with profile.span("batch_counts_and_result_d2h", cuda=True):
++            final_counts = counters.cpu().numpy().astype(np.int64)
++            final_count = int(final_counts[0])
++            overflow = int(final_counts[2])
++            if max(direct_count, ambiguous_count, after_fp32_count, fp64_count, final_count) > capacity:
++                overflow += 1
++            accepted_parts.append(
++                result_ids[: min(final_count, capacity)]
++                .cpu()
++                .numpy()
++                .astype(np.uint64, copy=True)
++            )
++        total_direct += direct_count
++        total_ambiguous += ambiguous_count
++        total_fp32_accept += after_fp32_count - direct_count
++        total_fp64 += fp64_count
++        total_equality += equality_count
++        total_overflow += overflow
++        batch_records.append(
++            {
++                "batch_index": batch_index,
++                "tile_start": tile_start,
++                "tile_stop": tile_stop,
++                "scheduled_tiles": batch_tiles,
++                "direct_accept_upper_pairs": direct_count,
++                "ambiguous_upper_pairs": ambiguous_count,
++                "fp32_accept_upper_pairs": after_fp32_count - direct_count,
++                "fp64_refine_upper_pairs": fp64_count,
++                "final_accept_upper_pairs": final_count,
++                "overflow_events": overflow,
++            }
++        )
++
++    torch.cuda.synchronize()
++    with profile.span("host_canonical_sort", cuda=False):
++        accepted_upper = np.sort(
++            np.concatenate(accepted_parts).astype(np.uint64, copy=False)
++        )
++        upper_rows = accepted_upper // np.uint64(N)
++        upper_columns = accepted_upper - upper_rows * np.uint64(N)
++        nonself = upper_rows < upper_columns
++        reverse = upper_columns[nonself] * np.uint64(N) + upper_rows[nonself]
++        canonical = np.sort(
++            np.concatenate((accepted_upper, reverse)).astype(np.uint64, copy=False)
++        )
++    public_seconds = time.perf_counter() - public_started
++
++    correctness = validate_canonical(canonical, contract)
++    correctness["upper_duplicates"] = int(
++        np.count_nonzero(accepted_upper[1:] == accepted_upper[:-1])
++    )
++    correctness["invalid_or_lower_upper_pairs"] = int(
++        np.count_nonzero(
++            (accepted_upper >= np.uint64(N) * np.uint64(N))
++            | (upper_rows > upper_columns)
++        )
++    )
++    correctness["overflow_events"] = total_overflow
++    correctness["exact_contract_pass"] = bool(
++        correctness["exact_contract_pass"]
++        and correctness["upper_duplicates"] == 0
++        and correctness["invalid_or_lower_upper_pairs"] == 0
++        and total_overflow == 0
++    )
++    result = {
++        **run,
++        "measurement_status": (
++            "formal_public_denominator_exact_candidate"
++            if args.phase == "formal"
++            else "diagnostic_public_denominator_cheap_screen"
++        ),
++        "public_seconds": public_seconds,
++        "profile": profile.summary(),
++        "batch_count": len(batch_records),
++        "batches": batch_records,
++        "direct_accept_upper_pairs": total_direct,
++        "ambiguous_upper_pairs": total_ambiguous,
++        "fp32_accept_upper_pairs": total_fp32_accept,
++        "fp64_refine_upper_pairs": total_fp64,
++        "equality_upper_pairs": total_equality,
++        "accepted_upper_pairs": int(accepted_upper.size),
++        "torch_peak_memory_allocated_bytes": int(torch.cuda.max_memory_allocated()),
++        "torch_peak_memory_reserved_bytes": int(torch.cuda.max_memory_reserved()),
++        "max_rss_kib_after_run": max_rss_kib(),
++        "correctness": correctness,
++    }
++    atomic_json(result_path, result)
++    print("RUN_COMPLETE " + json.dumps(result, sort_keys=True), flush=True)
++    return 0 if correctness["exact_contract_pass"] else 2
++
++
++if __name__ == "__main__":
++    raise SystemExit(main())
+diff --git a/src/test_optimization.py b/src/test_optimization.py
+new file mode 100644
+index 0000000..e36ef0b
+--- /dev/null
++++ b/src/test_optimization.py
+@@ -0,0 +1,131 @@
++#!/usr/bin/env python3
++"""Bit-exact preprocessing, queue boundaries, pointer churn and Graph replay tests."""
++import argparse
++import gc
++import json
++import os
++import numpy as np
++import torch
++
++from bench import chunked_preprocess
++from g2b_public_common import load_pageable_source
++from run_d1_triton import quantize_per_vector, upward_float32
++from run_g2a_tensorjoin import filter_ambiguous_fp32_i64, refine_ambiguous_fp64_i64
++from run_g2a2_tensorjoin_triangular import triangular_int8_certificate_compact_i64
++from tensorjoin_device_counts import scan_device_start, filter_device_count, refine_device_count
++
++
++def bit_equal(a,b):
++    assert a.shape==b.shape and a.dtype==b.dtype
++    assert np.array_equal(a.view(np.uint8).reshape(-1),b.view(np.uint8).reshape(-1))
++
++
++def test_preprocess():
++    full = load_pageable_source()
++    c,s,e = quantize_per_vector(full)
++    norms = np.sum(c.astype(np.int64)**2,axis=1).astype(np.float64)*s.astype(np.float64)**2
++    cc,ss,ee,nn,ct = chunked_preprocess(full)
++    for name,a,b in [('codes',c,cc),('scales',s,ss),('errors',e,ee),('norms',norms,nn),('transpose',c.T.copy(),ct)]:
++        bit_equal(a,b)
++        print('BIT_EXACT '+name,flush=True)
++    del full,c,s,e,norms,cc,ss,ee,nn,ct
++    gc.collect()
++
++
++def sorted_queue(queue,count):
++    return np.sort(queue[:min(int(count),queue.numel())].cpu().numpy())
++
++
++def test_queues():
++    rng = np.random.default_rng(20261028)
++    x = rng.normal(size=(37,512)).astype(np.float32)/np.float32(np.sqrt(512))
++    x[7]=x[2]
++    t = torch.from_numpy(x).cuda()
++    # Deliberately force both filters with unordered, repeated valid IDs.
++    cap=131
++    ids=rng.integers(0,37*37,size=cap,dtype=np.int64)
++    ids[:4]=[0,2*37+7,7*37+2,3*37+3]
++    for count in [0,1,6,7,8,130,131,137]:
++        for stage in [2,3]:
++            outputs=[]
++            for optimized in [False,True]:
++                q=torch.from_numpy(ids.copy()).cuda()
++                result=torch.empty(cap,dtype=torch.int64,device='cuda')
++                fp64=torch.empty_like(result)
++                counters=torch.zeros(5,dtype=torch.int32,device='cuda')
++                counters[1 if stage==2 else 3]=count
++                active=min(count,cap)
++                grid=7 if optimized else active
++                if grid:
++                    if stage==2:
++                        fn=filter_device_count if optimized else filter_ambiguous_fp32_i64
++                        fn[(grid,)](t,t,q,result,fp64,counters,2.,1e-3,
++                            N_=37,K=512,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++                    else:
++                        fn=refine_device_count if optimized else refine_ambiguous_fp64_i64
++                        fn[(grid,)](t,t,q,result,counters,2.,
++                            N_=37,K=512,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++                c=counters.cpu().numpy()
++                outputs.append((c,sorted_queue(result,c[0]),sorted_queue(fp64,c[3]) if stage==2 else None))
++            for a,b in zip(*outputs):
++                if a is not None: assert np.array_equal(a,b),(count,stage,a,b)
++    print('QUEUE_BOUNDARIES_PASS counts=0,1,6,7,8,130,131,137 cap=131 grid=7',flush=True)
++
++
++def test_pipeline_graph():
++    rng=np.random.default_rng(7123)
++    for churn in range(3):
++        n=129; d=512; cap=2*64*64
++        x=rng.normal(size=(n,d)).astype(np.float32)/np.float32(np.sqrt(d))
++        x[7]=x[2]
++        codes,scales,errors,norms,ct=chunked_preprocess(x)
++        tensors=[torch.from_numpy(a).cuda() for a in [x,codes,ct,scales,norms.astype(np.float32),upward_float32(errors)]]
++        v,c,ct,s,norm,e=tensors
++        rows,cols=[torch.from_numpy(a.astype(np.int32)).cuda() for a in np.triu_indices(3)]
++        start=torch.zeros(1,dtype=torch.int32,device='cuda')
++        result,amb,fp64=[torch.empty(cap,dtype=torch.int64,device='cuda') for _ in range(3)]
++        counters=torch.zeros(5,dtype=torch.int32,device='cuda')
++        threshold=2.
++        def optimized():
++            counters.zero_()
++            scan_device_start[(2,)](c,ct,s,s,norm,norm,e,e,rows,cols,start,result,amb,counters,
++                threshold,1e-4,M=n,N_=n,K=d,CAPACITY=cap,BLOCK_M=64,BLOCK_N=64,BLOCK_K=64,num_warps=4,num_stages=3)
++            filter_device_count[(7,)](v,v,amb,result,fp64,counters,threshold,1e-3,N_=n,K=d,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++            refine_device_count[(7,)](v,v,fp64,result,counters,threshold,N_=n,K=d,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++        expected={}
++        for a in [0,2,4]:
++            counters.zero_()
++            triangular_int8_certificate_compact_i64[(2,)](c,ct,s,s,norm,norm,e,e,rows[a:a+2],cols[a:a+2],result,amb,counters,
++                threshold,1e-4,M=n,N_=n,K=d,CAPACITY=cap,BLOCK_M=64,BLOCK_N=64,BLOCK_K=64,num_warps=4,num_stages=3)
++            count=int(counters[1].item())
++            if count:
++                filter_ambiguous_fp32_i64[(count,)](v,v,amb,result,fp64,counters,threshold,1e-3,N_=n,K=d,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++            count=int(counters[3].item())
++            if count:
++                refine_ambiguous_fp64_i64[(count,)](v,v,fp64,result,counters,threshold,N_=n,K=d,CAPACITY=cap,BLOCK_K=256,num_warps=4)
++            cc=counters.cpu().numpy()
++            expected[a]=(cc,sorted_queue(result,cc[0]))
++        optimized()
++        torch.cuda.synchronize()
++        graph=torch.cuda.CUDAGraph()
++        with torch.cuda.graph(graph): optimized()
++        for i in range(30):
++            a=[0,4,2][i%3]
++            start.fill_(a)
++            graph.replay()
++            actual=counters.cpu().numpy()
++            assert np.array_equal(actual,expected[a][0])
++            assert np.array_equal(sorted_queue(result,actual[0]),expected[a][1])
++        del graph
++    print('GRAPH_POINTER_CHURN_PASS fixtures=3 replays=90 starts=0,4,2 ragged_rows=129',flush=True)
++
++
++def main():
++    p=argparse.ArgumentParser();p.add_argument('--skip-full-preprocess',action='store_true');args=p.parse_args()
++    assert os.environ.get('CUDA_VISIBLE_DEVICES')=='4'
++    if not args.skip_full_preprocess:test_preprocess()
++    test_queues()
++    test_pipeline_graph()
++    print('ALL_TESTS_PASS',flush=True)
++
++if __name__=='__main__': main()
+diff --git a/src/summarize_campaign.py b/src/summarize_campaign.py
+new file mode 100644
+index 0000000..207e17c
+--- /dev/null
++++ b/src/summarize_campaign.py
+@@ -0,0 +1,66 @@
++#!/usr/bin/env python3
++"""Report all retained observations with frozen marginal and paired estimators."""
++import argparse
++import json
++import math
++from pathlib import Path
++import numpy as np
++
++A='baseline'; B='chunked_nobubble'
++METRICS=['public_seconds','join_excluding_shared_sort_seconds','shared_host_canonical_seconds']
++
++def distribution(values):
++    a=np.asarray(values,dtype=np.float64)
++    return {'n':len(a),'median':float(np.median(a)),'p10':float(np.percentile(a,10)),
++            'p90':float(np.percentile(a,90)),'arithmetic_mean':float(np.mean(a)),
++            'geometric_mean':float(np.exp(np.mean(np.log(a)))),'raw':a.tolist()}
++
++
++def summarize(paths):
++    documents=[json.loads(Path(p).read_text()) for p in paths]
++    samples=[s for d in documents for s in d['samples']]
++    assert all(s['eligible'] and s['correctness']['exact_contract_pass'] for s in samples)
++    pairs=[]
++    for process,d in enumerate(documents):
++        assert not d.get('invalid') and not d.get('interrupted_by_contention')
++        for i in range(0,len(d['samples']),2):
++            ab={s['variant']:s for s in d['samples'][i:i+2]}
++            assert set(ab)=={A,B}
++            pairs.append({'process':process,'order':d['samples'][i]['variant'],**ab})
++    rng=np.random.default_rng(20261028)
++    bootstrap=rng.integers(0,len(pairs),size=(10000,len(pairs)))
++    metrics={}
++    for metric in METRICS:
++        av=np.asarray([p[A][metric] for p in pairs]);bv=np.asarray([p[B][metric] for p in pairs])
++        marginal=np.median(av)/np.median(bv)
++        boot=np.median(av[bootstrap],axis=1)/np.median(bv[bootstrap],axis=1)
++        log=np.log(av/bv)
++        paired=np.exp(np.mean(log))
++        pairedboot=np.exp(np.mean(log[bootstrap],axis=1))
++        order={}
++        for first in [A,B]:
++            idx=[i for i,p in enumerate(pairs) if p['order']==first]
++            if idx:order[first+'_first']={'n':len(idx),
++                'median_A':float(np.median(av[idx])),'median_B':float(np.median(bv[idx])),
++                'marginal_ratio':float(np.median(av[idx])/np.median(bv[idx]))}
++        metrics[metric]={'A':distribution(av),'B':distribution(bv),
++            'marginal_median_speedup':float(marginal),
++            'marginal_paired_bootstrap_95_ci':np.percentile(boot,[2.5,97.5]).tolist(),
++            'paired_geometric_speedup':float(paired),
++            'paired_geometric_95_ci':np.percentile(pairedboot,[2.5,97.5]).tolist(),
++            'B_wins':int(np.count_nonzero(bv<av)),'pairs':len(pairs),'order_split':order,
++            'raw_pair_ratios':(av/bv).tolist()}
++    passed=all(metrics[m]['marginal_median_speedup']>=1.10 for m in METRICS[:2])
++    return {'A':A,'B':B,'processes':len(documents),'pairs':len(pairs),
++            'source_records':paths,'metrics':metrics,'screen_gate_pass':passed,
++            'all_correct':True,'all_isolated':True,'bootstrap_seed':20261028,
++            'bootstrap_resamples':10000,'samples':samples}
++
++if __name__=='__main__':
++    p=argparse.ArgumentParser();p.add_argument('--output',required=True);p.add_argument('paths',nargs='+');a=p.parse_args()
++    path=Path(a.output)
++    if path.exists():raise FileExistsError(path)
++    r=summarize(a.paths)
++    path.write_text(json.dumps(r,indent=2)+'\n')
++    for k,v in r['metrics'].items():print(k,v['A']['median'],v['B']['median'],v['marginal_median_speedup'],v['marginal_paired_bootstrap_95_ci'],v['B_wins'])
++    print('SCREEN_GATE_PASS',r['screen_gate_pass'])
+diff --git a/src/inspect_kernels.py b/src/inspect_kernels.py
+new file mode 100644
+index 0000000..bb23114
+--- /dev/null
++++ b/src/inspect_kernels.py
+@@ -0,0 +1,43 @@
++#!/usr/bin/env python3
++"""Retain generated-code evidence without changing the timed benchmark source."""
++import hashlib
++import json
++import re
++import subprocess
++from pathlib import Path
++import bench
++import run_g2b_tensorjoin_public as baseline
++from g2b_public_common import PROJECT, atomic_json, load_contract
++
++out=PROJECT/'raw/kernel_static'
++out.mkdir(parents=True,exist_ok=True)
++records=[]
++class Capture:
++    def __init__(self,name,kernel):self.name,self.kernel=name,kernel
++    def __getitem__(self,grid):
++        def launch(*args,**kwargs):
++            k=self.kernel[grid](*args,**kwargs)
++            cubin=k.asm['cubin']
++            path=out/(self.name+'.cubin')
++            path.write_bytes(cubin)
++            (out/(self.name+'.ptx')).write_text(k.asm['ptx'])
++            sass=subprocess.check_output(['nvdisasm',str(path)],text=True)
++            (out/(self.name+'.sass')).write_text(sass)
++            normalized='\n'.join(line.strip() for line in sass.splitlines() if line.strip() and not line.lstrip().startswith('//'))
++            records.append({'name':self.name,'registers':k.n_regs,'spills':k.n_spills,
++                'shared_bytes':k.metadata.shared,'metadata':str(k.metadata),
++                'cubin_sha256':hashlib.sha256(cubin).hexdigest(),
++                'sass_text_sha256':hashlib.sha256(sass.encode()).hexdigest(),
++                'normalized_sass_sha256':hashlib.sha256(normalized.encode()).hexdigest(),
++                'ptx_target':[x for x in k.asm['ptx'].splitlines() if '.target' in x or '.version' in x]})
++            return k
++        return launch
++
++for module,names in [(bench,['scan_device_start','filter_device_count','refine_device_count']),
++    (baseline,['triangular_int8_certificate_compact_i64','filter_ambiguous_fp32_i64','refine_ambiguous_fp64_i64'])]:
++    for name in names:setattr(module,name,Capture(name,getattr(module,name)))
++threshold=float(load_contract()['threshold_d2'])
++baseline.compile_exact_specializations(bench.CAPACITY,threshold)
++bench.compile_candidates(threshold)
++atomic_json(PROJECT/'results/kernel_static.json',records)
++print(json.dumps(records,indent=2),flush=True)

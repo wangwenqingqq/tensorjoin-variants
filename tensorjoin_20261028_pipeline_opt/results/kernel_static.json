@@ -1,0 +1,80 @@
+[
+  {
+    "cubin_sha256": "c2f89ebe1f56b8f2bfe6bc9bca05b24b5e9951496ace3a23ba943af138826ff7",
+    "name": "triangular_int8_certificate_compact_i64",
+    "normalized_sass_sha256": "827d6cdfe71e6ca3b745f559db533f1d8952767fa4e086546f3959f468a12dbc",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 140,
+    "sass_text_sha256": "f6cf19f3280c02f96d9617f78c7207feaf300e9ff7ba4ca5a3e7bd834b878ada",
+    "shared_bytes": 16384,
+    "spills": 0
+  },
+  {
+    "cubin_sha256": "8092a8a86dfd923b4b29fe6541b83b93ad103a78067312de9837d19264527f62",
+    "name": "filter_ambiguous_fp32_i64",
+    "normalized_sass_sha256": "aaefa0494c640c3b1862b8c66eb3ffa07b47b799148acf4c2ac3f8800e1eb387",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 25,
+    "sass_text_sha256": "edfeef406c84d913cfbaa5787ff24faa5a84cb8f076b7e2a555cbfb246cc5d86",
+    "shared_bytes": 16,
+    "spills": 0
+  },
+  {
+    "cubin_sha256": "c79f77ed7a65ea0fd548453761c8b32436deac71fdbd9e21e1a25b10b813fd3c",
+    "name": "refine_ambiguous_fp64_i64",
+    "normalized_sass_sha256": "739cce65ff1a82dc8d97082f364424aeb1ea9fa529666d0650b8e6e496a39744",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 30,
+    "sass_text_sha256": "880bfdd53778cdcc266f965d6c65aae7b6213e3fa07c7decff24bca05173c850",
+    "shared_bytes": 32,
+    "spills": 0
+  },
+  {
+    "cubin_sha256": "35ba4dfff1d22e3c27017cca5b0b44c04c0705b248f55ae4f60589d451488e8c",
+    "name": "scan_device_start",
+    "normalized_sass_sha256": "7a3593f232e2adb0f9201fcc5309857910399b884ddc3396c769e1e80a993625",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 140,
+    "sass_text_sha256": "8128b3606e211fe1cb48532a0607e5c809f6822744aa0038d8d2c8db7725723a",
+    "shared_bytes": 16384,
+    "spills": 0
+  },
+  {
+    "cubin_sha256": "ea22376a6ec8ed9eecad702109354f442f0e4d6f99b2c4f32d5c9cb87fa71bb8",
+    "name": "filter_device_count",
+    "normalized_sass_sha256": "b43a4ee1f861ee564d26eec49b44af28c2a944c65f6d333a03b8379cc88a04aa",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 38,
+    "sass_text_sha256": "c603c2b8fb8ff25c7a6ea01df5cbec5fd9abaa5af858101520a42a85d35b2403",
+    "shared_bytes": 16,
+    "spills": 0
+  },
+  {
+    "cubin_sha256": "ee27a0553e29f73e8bc77c6b938db7c2156d998b30d609ecd26940f307b58fc6",
+    "name": "refine_device_count",
+    "normalized_sass_sha256": "17b3bdf1d3894572f1d38ebe55fe46e144df170dbe20d8236e6af2d10777cbfd",
+    "ptx_target": [
+      ".version 8.8",
+      ".target sm_120a"
+    ],
+    "registers": 38,
+    "sass_text_sha256": "68c4cb8c9d6bbca7ed1858b5c56605cdcdd28531ff48c86d78be495c03290114",
+    "shared_bytes": 32,
+    "spills": 0
+  }
+]

@@ -1,0 +1,35 @@
+{
+  "n": 3,
+  "raw_logs": [
+    "raw/profile_baseline_p3.log",
+    "raw/profile_baseline_p4.log",
+    "raw/profile_baseline_p5.log"
+  ],
+  "median_public_seconds": 1.2900298360036686,
+  "host_median_ms": {
+    "batch_counts_and_result_d2h": 10.967699898174033,
+    "h2d_and_workspace": 219.10288400249556,
+    "h2d_codes_transpose": 2.283907000673935,
+    "host_canonical_sort": 118.65263601066545,
+    "host_codes_transpose": 199.63269200525247,
+    "host_preprocess": 901.7608690191992,
+    "stage1_counts_d2h": 2.185660705436021,
+    "stage1_submit": 4.06713888514787,
+    "stage1_wait": 9.090011182706803,
+    "stage2_counts_d2h": 1.8721520900726318,
+    "stage2_submit": 2.3131379566621035,
+    "stage2_wait": 1.4836410118732601,
+    "stage3_submit": 2.1314060140866786,
+    "stage3_wait": 0.843970978166908
+  },
+  "cuda_median_ms": {
+    "batch_counts_and_result_d2h": 11.984959963709116,
+    "h2d_and_workspace": 219.14207458496094,
+    "h2d_codes_transpose": 2.324320077896118,
+    "stage1_counts_d2h": 3.0657280161976814,
+    "stage1_submit": 13.824480034410954,
+    "stage2_counts_d2h": 2.7131840027868748,
+    "stage2_submit": 4.317184003069997,
+    "stage3_submit": 3.0562560074031353
+  }
+}
